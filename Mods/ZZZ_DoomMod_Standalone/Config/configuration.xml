@@ -4,7 +4,7 @@
 
        <ServerGroup Name="Doom Survival (Classic Doom)" Logo="" Description="">
 
-               <Server Name="Doom Survival (Classic Doom)" Logo="https://raw.githubusercontent.com/Frantic-Dan/Spencer-Mansion-Incident-v1-Mod-v5.0/main/Mods/ZZYSpencerMansion_Standalone/Config/backgrounds/ML-Imagedisplay.png">
+               <Server Name="Doom Survival (Classic Doom)" Logo="https://raw.githubusercontent.com/Frantic-Dan/Doom-Survival-for-v3/refs/heads/main/Mods/ZZZ_DoomMod_Standalone/Resources/ML_cover.png">
 
                        <Description>
 What would it be like if Classic Doom was an open world survival sandbox game?
@@ -49,7 +49,7 @@ It is recommended to stay away from other biomes, until you have enough gear to 
 
                        <Downloads>
 
-                       <Download>github link here</Download>
+                       <Download>https://github.com/Frantic-Dan/Doom-Survival-for-v3</Download>
 					   
 
                  </Downloads>
