@@ -1,0 +1,717 @@
+<configs>
+
+<remove	xpath="/Sounds/SoundDataNode[@name='ui_weather_alert']"/>
+
+<set xpath="/Sounds/SoundDataNode[@name='PlayerMaleRunLoop']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='PlayerFemaleRunLoop']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player2sprint1_lp']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player2stamina']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player1sprint1_lp']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player1stamina']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='zpack_spawn']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='throwstonehitorganic']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='rabbitdeath']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player1smoke']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='player2smoke']/AudioClip/@ClipName">none</set>
+<set xpath="/Sounds/SoundDataNode[@name='keystone_impact_overlay']/AudioClip/@ClipName">none</set>
+
+<set xpath="/Sounds/SoundDataNode[@name='molotov_explosion']/AudioClip[1]/@ClipName">@:Sounds/Hazards/Flame/flametrap_end.wav</set>
+<set xpath="/Sounds/SoundDataNode[@name='molotov_explosion']/AudioClip[2]/@ClipName">@:Sounds/Hazards/Flame/flametrap_end.wav</set>
+<set xpath="/Sounds/SoundDataNode[@name='molotov_explosion']/AudioClip[3]/@ClipName">@:Sounds/Hazards/Flame/flametrap_end.wav</set>
+
+<set xpath="/Sounds/SoundDataNode[@name='bullethitorganic']/AudioClip/@ClipName">none</set>
+
+<remove xpath="/Sounds/SoundDataNode[@name='bullethitorganic']"/>
+
+<set xpath="/Sounds/SoundDataNode[@name='craft_click_craft']/AudioClip/@ClipName">#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav</set>
+
+<set xpath="/Sounds/SoundDataNode[@name='glassdestroy']/Noise[@heat_map_strength='1.5']/@heat_map_strength">0.3</set>
+<set xpath="/Sounds/SoundDataNode[@name='chainsaw_fire_start']/Noise[@heat_map_strength='1.0']/@heat_map_strength">0.1</set>
+<set xpath="/Sounds/SoundDataNode[@name='metaldestroy']/Noise[@heat_map_strength='1.42']/@heat_map_strength">.142</set>
+<set xpath="/Sounds/SoundDataNode[@name='stonedestroy']/Noise[@heat_map_strength='.25']/@heat_map_strength">0.025</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy']/Noise[@heat_map_strength='0.6']/@heat_map_strength">0.06</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy1']/Noise[@heat_map_strength='0.6']/@heat_map_strength">0.06</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy2']/Noise[@heat_map_strength='0.6']/@heat_map_strength">0.06</set>
+<set xpath="/Sounds/SoundDataNode[@name='wooddestroy3']/Noise[@heat_map_strength='0.6']/@heat_map_strength">0.06</set>
+<set xpath="/Sounds/SoundDataNode[@name='metalhitmetal']/Noise[@heat_map_strength='0.05']/@heat_map_strength">0.005</set>
+<set xpath="/Sounds/SoundDataNode[@name='stonehitmetal']/Noise[@heat_map_strength='0.05']/@heat_map_strength">0.005</set>
+<set xpath="/Sounds/SoundDataNode[@name='turret_fire']/Noise[@heat_map_strength='0.65']/@heat_map_strength">0.065</set>
+<set xpath="/Sounds/SoundDataNode[@name='junkturret_fire']/Noise[@heat_map_strength='0.25']/@heat_map_strength">0.025</set>
+<set xpath="/Sounds/SoundDataNode[@name='explosion1']/Noise[@heat_map_strength='5']/@heat_map_strength">.5</set>
+<set xpath="/Sounds/SoundDataNode[@name='explosion2']/Noise[@heat_map_strength='5']/@heat_map_strength">.5</set>
+<set xpath="/Sounds/SoundDataNode[@name='explosion3']/Noise[@heat_map_strength='5']/@heat_map_strength">.5</set>
+<set xpath="/Sounds/SoundDataNode[@name='explosion_grenade']/Noise[@heat_map_strength='5']/@heat_map_strength">.5</set>
+<set xpath="/Sounds/SoundDataNode[@name='explosion_charge']/Noise[@heat_map_strength='5']/@heat_map_strength">.5</set>
+
+
+<remove	xpath="/Sounds/SoundDataNode[@name='player_death_stinger']"/>
+<remove	xpath="/Sounds/SoundDataNode[@name='player_death_stinger_lp']"/>
+<remove	xpath="/Sounds/SoundDataNode[@name='spawnInStinger']"/>
+<remove	xpath="/Sounds/SoundDataNode[@name='levelupplayer']"/>
+
+<append xpath="/Sounds">
+	<SoundDataNode name="player_death_stinger"> <AudioSource name="@:Sounds/Prefabs/AudioSource_DeathStinger.prefab"/>
+		<AudioClip ClipName="none" Loop="false"/>
+		<VibrateController value="false" />
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="15.0"/> </SoundDataNode>
+
+	<SoundDataNode name="player_death_stinger_lp"> <AudioSource name="@:Sounds/Prefabs/AudioSource_DeathStinger.prefab"/>
+		<AudioClip ClipName="none" Loop="false"/>
+		<VibrateController value="false" />
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="15.0"/> </SoundDataNode>
+		
+	<SoundDataNode name="player_died"> <AudioSource name="@:Sounds/Prefabs/AudioSource_DeathStinger.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PlayerDie1.wav" Loop="false"/>
+		<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PlayerDie2.wav" Loop="false"/>
+		<VibrateController value="false" />
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="15.0"/> </SoundDataNode>
+		
+	<SoundDataNode name="spawnInStinger"> <AudioSource name="@:Sounds/Prefabs/AudioSource_DeathStinger.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?Teleport.wav"/>
+		<VibrateController value="false" />
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+		
+	<SoundDataNode name="levelupplayer"> <AudioSource name="@:Sounds/Prefabs/AudioSource_DeathStinger.prefab"/>
+		<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?Secret.wav"/>
+		<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1.0"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+		
+	<SoundDataNode name="doommenu_hover"> <AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <maxVoicesPerEntity value="1"/> <MaxVoices value="1"/> <MaxRepeatRate value="1"/> </SoundDataNode>
+	
+	<SoundDataNode name="doommenu_click"> <AudioSource name="@:Sounds/Prefabs/AudioSource_UI.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="3"/> <MaxRepeatRate value="1"/> </SoundDataNode>
+	
+	
+	<SoundDataNode name="ChinalakeGL_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="120" time="2" muffled_when_crouched="1" heat_map_strength="0.7" heat_map_time="60"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?ChinalakeGL_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="20"/> <MaxVoicesPerEntity value="20"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+</append>
+
+<!-- Handgun -->
+<append xpath="/Sounds">
+<SoundDataNode name="M9pistol_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="80" time="2" muffled_when_crouched="0.8" heat_map_strength="0.05" heat_map_time="180"/>
+		<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_fire"/>
+		<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_fire01"/>
+		<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_fire02"/>
+		<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_fire03"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="400"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+</append>
+
+<append xpath="/Sounds">
+<SoundDataNode name="M9pistol_silen_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="17" time="2" muffled_when_crouched="0.8" heat_map_strength="0.05" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_silen_fire"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_silen_fire01"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?M9pistol_silen_fire02"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="400"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+</append>
+
+	<!-- Pump Shotgun -->
+	<!-- Super Shotgun -->
+<append xpath="/Sounds">
+	<SoundDataNode name="VRpumpSG_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="120" time="2" muffled_when_crouched="0.8" heat_map_strength="0.2" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?VRpumpSG_fire1"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?VRpumpSG_fire2"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?VRpumpSG_fire3"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	<!-- Chaingun -->
+	<SoundDataNode name="M134s_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="100" time="2" muffled_when_crouched="0.8" heat_map_strength="0.025" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?M134s_fire_01"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?M134s_fire_02"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?M134s_fire_03"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+
+<SoundDataNode name="M2FT_fire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="25" time="2" muffled_when_crouched="0.8" heat_map_strength="0.025" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?M2FT_fire"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+
+<SoundDataNode name="M2FT_loop"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="25" time="2" muffled_when_crouched="0.8" heat_map_strength="0.025" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?M2FT_loop"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+	
+<SoundDataNode name="M2FT_end"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="25" time="2" muffled_when_crouched="0.8" heat_map_strength="0.025" heat_map_time="180"/>
+	<AudioClip ClipName="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?M2FT_end"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="300"/> <MaxVoicesPerEntity value="300"/> <MaxRepeatRate value="0.001"/> </SoundDataNode>
+
+<SoundDataNode name="RocketLaunched">	<AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/>
+	<Noise ID="0" noise="10" time="2" muffled_when_crouched="0.8" />
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RocketLaunched.wav"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> </SoundDataNode>
+
+<SoundDataNode name="PlasmaFire"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="10" time="2" muffled_when_crouched="0.8" />
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PlasmaRifleFired.wav"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+</SoundDataNode>
+
+<SoundDataNode name="ProjectileImpactAudio"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Explosion.prefab"/>
+	<Noise ID="0" noise="10" time="2" muffled_when_crouched="0.8" />
+	<AudioClip ClipName="#@modfolder:Resources/GenericImpactSound.unity3d?ProjectileImpact.wav"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+</SoundDataNode>
+
+<SoundDataNode name="BFGfired"> <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab"/> <NetworkAudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire_Network.prefab"/>
+	<Noise ID="0" noise="10" time="2" muffled_when_crouched="0.8" />
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?BFGfired.wav"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+</SoundDataNode>
+
+<SoundDataNode name="BFGImpactAudio"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Explosion.prefab"/>
+	<Noise ID="0" noise="10" time="2" muffled_when_crouched="0.8" />
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?BFGImpact.wav"/>
+	<LocalCrouchVolumeScale value="1"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="60"/> <MaxVoicesPerEntity value="30"/> <MaxRepeatRate value="0.001"/>
+</SoundDataNode>
+
+<SoundDataNode name="use_powerup"> <AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab"/>
+	<Noise ID="1" noise="7" time="1" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PowerUpUsed.wav"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> </SoundDataNode>
+
+<SoundDataNode name="FormerHumanRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanRoaming.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="FormerHumanAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanAlerted1.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanAlerted2.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanAlerted3.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="FormerHumanDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanDeath1.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanDeath2.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?FormerHumanDeath3.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="ImpAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ImpAlerted.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ImpAlerted2.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="ImpRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ImpSearching.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="ImpHumanHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?HumanImpHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="1"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="ImpDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ImpDeath1.wav"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ImpDeath2.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="PinkyAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PinkyAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="PinkyAttack">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PinkyAttack.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="PinkyDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PinkyDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="LostSoulAttack">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?LostSoulAttack.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="CacodemonBabyAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CacodemonAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="1.75"/>
+	<HighestPitch name="1.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="GenericBabyRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?GenericRoaming.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="1.75"/>
+	<HighestPitch name="1.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="GenericBabyHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?GenericHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="1"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="1.75"/>
+	<HighestPitch name="1.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="CacodemonBabyDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CacodemonDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="1.75"/>
+	<HighestPitch name="1.85"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="CacodemonAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CacodemonAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="CacodemonDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CacodemonDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="KnightAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?KnightAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="KnightDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?KnightDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="BaronAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?BaronAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="BaronDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?BaronDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="PainElementalAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PainElementalAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="PainElementalHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PainElementalHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="0"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="PainElementalDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?PainElementalDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="DemonClawAttack">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?DemonClawAttack.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="DemonFireballThrown">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?DemonFireballThrown.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="RevenantAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="RevenantRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantRoaming.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="RevenantDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="RevenantAtkSwing">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantAtkSwing.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="RevenantAttackHit">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantAttackHit.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="RevenantMissile">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?RevenantMissile.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="GenericRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?GenericRoaming.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="GenericHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?GenericHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="1"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="CyberdemonAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="CyberdemonFootstep">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Footsteps.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+	
+<SoundDataNode name="CyberdemonDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="MancubusAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?MancubusAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="MancubusHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?MancubusHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="1"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="MancabusAttack">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?MancabusAttack.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="MancabusDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?MancabusDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="ArchvileAlerted">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ArchvileAlerted.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="ArchvileRoaming">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ArchvileRoaming.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="ArchvileHurt">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ArchvileHurt.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="1"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="ArchvileDeath">	<AudioSource name="@:Sounds/Prefabs/AudioSource_PainLG.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ArchvileDeath.wav"/>
+	<Channel name="Mouth"/>
+	<Priority name="0"/>
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+	
+<SoundDataNode name="ArchvileAttack">	<AudioSource name="@:Sounds/Prefabs/AudioSource_Creatures.prefab"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?ArchvileAttack.wav"/>
+	<Channel name="Mouth"/>
+	<!-- <Priority name="2"/> -->
+	<maxVoicesPerEntity value="10"/>
+	<LowestPitch name="0.95"/>
+	<HighestPitch name="1.05"/>
+	<LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="1"/> <NoiseScale value="1"/> <MaxVoices value="10"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepbush"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepcloth"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="0" noise="3" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepdirt"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="0" noise="5" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepleaves"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepfern"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepgrass"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="0" noise="6" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepgravel"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepmetal"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="10" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootsteporganic"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="0" noise="6" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepsand"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="0" noise="4" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepsnow"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="8" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepstone"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="10" time="1.5" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.2"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootsteptallgrass"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="2" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.1"/>
+	<HighestPitch name="0.2"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootsteptrash"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="15" time="3" muffled_when_crouched="0.5"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.1"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootsteptree"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="7" time="1" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepwater"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="11" time="3" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="2"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+<SoundDataNode name="CyberdemonFootstepwood"> <AudioSource name="@:Sounds/Prefabs/AudioSource_FootstepsLG.prefab"/>
+	<Noise ID="2" noise="10" time="1.5" muffled_when_crouched="0.507"/>
+	<AudioClip ClipName="#@modfolder:Resources/HighDefinitionAudio.unity3d?CyberdemonFootstep.wav"/>
+	<LowestPitch name="0.9"/>
+	<HighestPitch name="1.0"/>
+	<LocalCrouchVolumeScale value="0.5"/> <CrouchNoiseScale value="0.4002"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.01"/> <runningvolumescale value="2"/> </SoundDataNode>
+
+</append>
+
+</configs>

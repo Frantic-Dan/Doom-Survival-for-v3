@@ -1,0 +1,5 @@
+<configs>	
+	<!-- MAKE VEHICLE STORAGE WINDOW BIGGER -->
+	<set xpath="/windows/window[@name='windowBagStorage']/grid[@name='queue']/@rows">15</set>
+	<set xpath="/windows/window[@name='windowBagStorage']/grid[@name='queue']/@cols">15</set>
+</configs>

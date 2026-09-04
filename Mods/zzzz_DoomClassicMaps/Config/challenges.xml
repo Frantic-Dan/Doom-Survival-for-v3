@@ -1,0 +1,336 @@
+<configs>
+
+	<insertafter xpath="/challenges/challenge_category[@name='Advanced']">
+		<challenge_category name="FirstDoomLevels" title_key="xuiGameSettingsFirstDoomLevels" icon="ui_game_symbol_challenge_category1"/>
+		<challenge_category name="SecondDoomLevels" title_key="xuiGameSettingsSecondDoomLevels" icon="ui_game_symbol_challenge_category2"/>
+	</insertafter>
+
+	<insertafter xpath="/challenges/challenge_group[@name='Slayer2']">
+		<challenge_group category="FirstDoomLevels" name="EpisodeOne" title_key="challengeGroupEpisodeOne"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="FirstDoomLevels" name="EpisodeTwo" title_key="challengeGroupEpisodeTwo"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="FirstDoomLevels" name="EpisodeThree" title_key="challengeGroupEpisodeThree"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="FirstDoomLevels" name="EpisodeFour" title_key="challengeGroupEpisodeFour"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="SecondDoomLevels" name="QuarterOne" title_key="challengeGroupQuarterOne"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="SecondDoomLevels" name="QuarterTwo" title_key="challengeGroupQuarterTwo"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="SecondDoomLevels" name="QuarterThree" title_key="challengeGroupQuarterThree"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+		<challenge_group category="SecondDoomLevels" name="QuarterFour" title_key="challengeGroupQuarterFour"
+		reward_text_key="challengeRewardSkillPoint" reward_event="challenge_group_SkillPointReward" link_challenges="true"/>
+
+	</insertafter>
+
+	<insertafter xpath="/challenges/challenge_group[@name='QuarterFour']">
+		<challenge name="doom_ch_e1m1" title_key="doom_e1m1_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m1_subtitle" description_key="doom_e1m1_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m1" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m2" title_key="doom_e1m2_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m2_subtitle" description_key="doom_e1m2_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m2" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m3" title_key="doom_e1m3_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m3_subtitle" description_key="doom_e1m3_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m3" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m4" title_key="doom_e1m4_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m4_subtitle" description_key="doom_e1m4_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m4" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m5" title_key="doom_e1m5_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m5_subtitle" description_key="doom_e1m5_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m5" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m6" title_key="doom_e1m6_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m6_subtitle" description_key="doom_e1m6_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m6" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m7" title_key="doom_e1m7_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m7_subtitle" description_key="doom_e1m7_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m7" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m8" title_key="doom_e1m8_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m8_subtitle" description_key="doom_e1m8_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m8" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e1m9" title_key="doom_e1m9_name" icon="DoomTeleporterHD" group="EpisodeOne"
+			short_description_key="doom_e1m9_subtitle" description_key="doom_e1m9_desc">
+			<objective type="QuestComplete" quest_tag="doom_e1m9" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_e2m1" title_key="doom_e2m1_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m1_subtitle" description_key="doom_e2m1_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m1" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m2" title_key="doom_e2m2_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m2_subtitle" description_key="doom_e2m2_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m2" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m3" title_key="doom_e2m3_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m3_subtitle" description_key="doom_e2m3_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m3" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m4" title_key="doom_e2m4_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m4_subtitle" description_key="doom_e2m4_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m4" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m5" title_key="doom_e2m5_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m5_subtitle" description_key="doom_e2m5_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m5" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m6" title_key="doom_e2m6_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m6_subtitle" description_key="doom_e2m6_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m6" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m7" title_key="doom_e2m7_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m7_subtitle" description_key="doom_e2m7_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m7" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m8" title_key="doom_e2m8_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m8_subtitle" description_key="doom_e2m8_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m8" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e2m9" title_key="doom_e2m9_name" icon="DoomTeleporterHD" group="EpisodeTwo"
+			short_description_key="doom_e2m9_subtitle" description_key="doom_e2m9_desc">
+			<objective type="QuestComplete" quest_tag="doom_e2m9" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_e3m1" title_key="doom_e3m1_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m1_subtitle" description_key="doom_e3m1_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m1" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m2" title_key="doom_e3m2_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m2_subtitle" description_key="doom_e3m2_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m2" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m3" title_key="doom_e3m3_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m3_subtitle" description_key="doom_e3m3_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m3" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m4" title_key="doom_e3m4_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m4_subtitle" description_key="doom_e3m4_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m4" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m5" title_key="doom_e3m5_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m5_subtitle" description_key="doom_e3m5_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m5" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m6" title_key="doom_e3m6_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m6_subtitle" description_key="doom_e3m6_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m6" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m7" title_key="doom_e3m7_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m7_subtitle" description_key="doom_e3m7_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m7" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m8" title_key="doom_e3m8_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m8_subtitle" description_key="doom_e3m8_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m8" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e3m9" title_key="doom_e3m9_name" icon="DoomTeleporterHD" group="EpisodeThree"
+			short_description_key="doom_e3m9_subtitle" description_key="doom_e3m9_desc">
+			<objective type="QuestComplete" quest_tag="doom_e3m9" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_e4m1" title_key="doom_e4m1_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m1_subtitle" description_key="doom_e4m1_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m1" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m2" title_key="doom_e4m2_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m2_subtitle" description_key="doom_e4m2_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m2" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m3" title_key="doom_e4m3_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m3_subtitle" description_key="doom_e4m3_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m3" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m4" title_key="doom_e4m4_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m4_subtitle" description_key="doom_e4m4_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m4" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m5" title_key="doom_e4m5_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m5_subtitle" description_key="doom_e4m5_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m5" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m6" title_key="doom_e4m6_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m6_subtitle" description_key="doom_e4m6_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m6" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m7" title_key="doom_e4m7_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m7_subtitle" description_key="doom_e4m7_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m7" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m8" title_key="doom_e4m8_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m8_subtitle" description_key="doom_e4m8_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m8" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_e4m9" title_key="doom_e4m9_name" icon="DoomTeleporterHD" group="EpisodeFour"
+			short_description_key="doom_e4m9_subtitle" description_key="doom_e4m9_desc">
+			<objective type="QuestComplete" quest_tag="doom_e4m9" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_map01" title_key="doom_map01_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map01_subtitle" description_key="doom_map01_desc">
+			<objective type="QuestComplete" quest_tag="doom_map01" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map02" title_key="doom_map02_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map02_subtitle" description_key="doom_map02_desc">
+			<objective type="QuestComplete" quest_tag="doom_map02" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map03" title_key="doom_map03_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map03_subtitle" description_key="doom_map03_desc">
+			<objective type="QuestComplete" quest_tag="doom_map03" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map04" title_key="doom_map04_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map04_subtitle" description_key="doom_map04_desc">
+			<objective type="QuestComplete" quest_tag="doom_map04" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map05" title_key="doom_map05_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map05_subtitle" description_key="doom_map05_desc">
+			<objective type="QuestComplete" quest_tag="doom_map05" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map06" title_key="doom_map06_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map06_subtitle" description_key="doom_map06_desc">
+			<objective type="QuestComplete" quest_tag="doom_map06" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map07" title_key="doom_map07_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map07_subtitle" description_key="doom_map07_desc">
+			<objective type="QuestComplete" quest_tag="doom_map07" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map08" title_key="doom_map08_name" icon="DoomTeleporterHD" group="QuarterOne"
+			short_description_key="doom_map08_subtitle" description_key="doom_map08_desc">
+			<objective type="QuestComplete" quest_tag="doom_map08" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_map09" title_key="doom_map09_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map09_subtitle" description_key="doom_map09_desc">
+			<objective type="QuestComplete" quest_tag="doom_map09" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map10" title_key="doom_map10_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map10_subtitle" description_key="doom_map10_desc">
+			<objective type="QuestComplete" quest_tag="doom_map10" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map11" title_key="doom_map11_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map11_subtitle" description_key="doom_map11_desc">
+			<objective type="QuestComplete" quest_tag="doom_map11" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map12" title_key="doom_map12_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map12_subtitle" description_key="doom_map12_desc">
+			<objective type="QuestComplete" quest_tag="doom_map12" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map13" title_key="doom_map13_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map13_subtitle" description_key="doom_map13_desc">
+			<objective type="QuestComplete" quest_tag="doom_map13" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map14" title_key="doom_map14_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map14_subtitle" description_key="doom_map14_desc">
+			<objective type="QuestComplete" quest_tag="doom_map14" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map15" title_key="doom_map15_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map15_subtitle" description_key="doom_map15_desc">
+			<objective type="QuestComplete" quest_tag="doom_map15" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map16" title_key="doom_map16_name" icon="DoomTeleporterHD" group="QuarterTwo"
+			short_description_key="doom_map16_subtitle" description_key="doom_map16_desc">
+			<objective type="QuestComplete" quest_tag="doom_map16" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_map17" title_key="doom_map17_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map17_subtitle" description_key="doom_map17_desc">
+			<objective type="QuestComplete" quest_tag="doom_map17" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map18" title_key="doom_map18_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map18_subtitle" description_key="doom_map18_desc">
+			<objective type="QuestComplete" quest_tag="doom_map18" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map19" title_key="doom_map19_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map19_subtitle" description_key="doom_map19_desc">
+			<objective type="QuestComplete" quest_tag="doom_map19" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map20" title_key="doom_map20_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map20_subtitle" description_key="doom_map20_desc">
+			<objective type="QuestComplete" quest_tag="doom_map20" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map21" title_key="doom_map21_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map21_subtitle" description_key="doom_map21_desc">
+			<objective type="QuestComplete" quest_tag="doom_map21" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map22" title_key="doom_map22_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map22_subtitle" description_key="doom_map22_desc">
+			<objective type="QuestComplete" quest_tag="doom_map22" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map23" title_key="doom_map23_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map23_subtitle" description_key="doom_map23_desc">
+			<objective type="QuestComplete" quest_tag="doom_map23" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map24" title_key="doom_map24_name" icon="DoomTeleporterHD" group="QuarterThree"
+			short_description_key="doom_map24_subtitle" description_key="doom_map24_desc">
+			<objective type="QuestComplete" quest_tag="doom_map24" count="1"/>
+		</challenge>
+
+		<challenge name="doom_ch_map25" title_key="doom_map25_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map25_subtitle" description_key="doom_map25_desc">
+			<objective type="QuestComplete" quest_tag="doom_map25" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map26" title_key="doom_map26_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map26_subtitle" description_key="doom_map26_desc">
+			<objective type="QuestComplete" quest_tag="doom_map26" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map27" title_key="doom_map27_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map27_subtitle" description_key="doom_map27_desc">
+			<objective type="QuestComplete" quest_tag="doom_map27" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map28" title_key="doom_map28_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map28_subtitle" description_key="doom_map28_desc">
+			<objective type="QuestComplete" quest_tag="doom_map28" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map29" title_key="doom_map29_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map29_subtitle" description_key="doom_map29_desc">
+			<objective type="QuestComplete" quest_tag="doom_map29" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map30" title_key="doom_map30_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map30_subtitle" description_key="doom_map30_desc">
+			<objective type="QuestComplete" quest_tag="doom_map30" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map31" title_key="doom_map31_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map31_subtitle" description_key="doom_map31_desc">
+			<objective type="QuestComplete" quest_tag="doom_map31" count="1"/>
+		</challenge>
+		<challenge name="doom_ch_map32" title_key="doom_map32_name" icon="DoomTeleporterHD" group="QuarterFour"
+			short_description_key="doom_map32_subtitle" description_key="doom_map32_desc">
+			<objective type="QuestComplete" quest_tag="doom_map32" count="1"/>
+		</challenge>
+
+	</insertafter>
+
+	<set xpath="/challenges/challenge_group[@name='Shelter']/@reward_text_key">challengeShelterRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='Shelter']/@reward_event">challenge_group_TeleporterReward</set>
+	<set xpath="/challenges/challenge_group[@name='BasicSurvival']/@reward_text_key">challengeBasicSurvivalRewardDoubleTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='BasicSurvival']/@reward_event">challenge_group_DoubleTeleporterReward</set>
+	<set xpath="/challenges/challenge_group[@name='AdvancedSurvival']/@reward_text_key">challengeAdvancedSurvivalRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='AdvancedSurvival']/@reward_event">challenge_group_TripleTeleporterReward</set>
+	<set xpath="/challenges/challenge_group[@name='Exploration']/@reward_text_key">challengeExplorationRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='Exploration']/@reward_event">challenge_group_QuadTeleporterReward</set>
+	
+	<set xpath="/challenges/challenge_group[@name='Upgrader']/@reward_text_key">challengeReward10BackpackBFG</set>
+	<set xpath="/challenges/challenge_group[@name='Upgrader']/@reward_event">challenge_group_BFGReward</set>
+	<set xpath="/challenges/challenge_group[@name='ToolMan']/@reward_text_key">challengeExplorationRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='ToolMan']/@reward_event">challenge_group_QuadTeleporterReward</set>
+	<set xpath="/challenges/challenge_group[@name='Slayer1']/@reward_text_key">challengeExplorationRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='Slayer1']/@reward_event">challenge_group_QuadTeleporterReward</set>
+	<set xpath="/challenges/challenge_group[@name='Slayer2']/@reward_text_key">challengeExplorationRewardTeleporter</set>
+	<set xpath="/challenges/challenge_group[@name='Slayer2']/@reward_event">challenge_group_QuadTeleporterReward</set>
+
+</configs>

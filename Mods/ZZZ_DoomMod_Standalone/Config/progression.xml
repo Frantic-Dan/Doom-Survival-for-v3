@@ -1,0 +1,2560 @@
+<configs>
+
+<set xpath="/progression/level[@max_level='300']/@max_level">100</set>
+<set xpath="/progression/level[@exp_to_level]/@exp_to_level">2500</set>
+<set xpath="/progression/level[@experience_multiplier]/@experience_multiplier">1.0512</set>
+
+<remove xpath="/progression/attributes"/>
+<remove xpath="/progression/skills[@min_level='1']"/>
+<remove xpath="/progression/crafting_skills"/>
+<remove xpath="/progression/perks"/>
+
+<append xpath="/progression">
+
+<attributes>
+	<attribute name="attCombatPerks" name_key="Combat_Perks" desc_key="Combat_perks_for_all" icon="ui_game_symbol_specters_grace" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+	</attribute>
+
+	<attribute name="attGeneralPerks" name_key="General_Perks" desc_key="General_perks_for_all" icon="ui_game_symbol_modded" min_level="0" max_level="0" base_skill_point_cost="1" hidden="true">
+		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>
+	</attribute>
+
+	<attribute name="attBooks" name_key="attBooks" desc_key="attBooks" icon="ui_game_symbol_book" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
+	<attribute name="attCrafting" name_key="attCrafting" desc_key="attCrafting" icon="ui_game_symbol_hammer" min_level="0" max_level="0" base_skill_point_cost="0"/>
+
+</attributes>
+<skills min_level="0" max_level="1">
+
+	<skill name="skillGeneralPerks" parent="attGeneralPerks" name_key="General_TestKey" desc_key="General_TestDesc" long_desc_key="General_TestLongDesc" icon="ui_game_symbol_modded" hidden="true"><effect_group/></skill>
+	<skill name="skillCombatPerks" parent="attCombatPerks" name_key="Combat_Key" desc_key="Combat_Desc" long_desc_key="Combat_LongDesc" icon="ui_game_symbol_modded" hidden="true"><effect_group/></skill>
+	<!-- <skill name="lbu_GeneralSkills" parent="attLearnByUse" name_key="Gun_Crafting" desc_key="Gun_CraftingDesc" icon="ui_game_symbol_pistol"/> -->
+	
+	<book_group name="skillArchery" parent="attBooks" name_key="perkRangers0Name" desc_key="perkRangers0Desc" long_desc_key="perkBookGroupLongDesc" icon="gunBowT3CompoundCrossbow"><effect_group/></book_group>
+	<book_group name="skillPistolPete" parent="attBooks" name_key="perkPistolPete0Name" desc_key="perkPistolPete0Desc" long_desc_key="perkBookGroupLongDesc" icon="IZYgunHandgunT1Pistol"><effect_group/></book_group>
+	<book_group name="skillTechJunkie" parent="attBooks" name_key="perkTechJunkie0Name" desc_key="perkTechJunkie0Desc" long_desc_key="perkBookGroupLongDesc" icon="gunBotT2JunkTurret"><effect_group/></book_group>
+	<book_group name="skillShotguns" parent="attBooks" name_key="perkShotgunMessiah0Name" desc_key="perkShotgunMessiah0Desc" long_desc_key="perkBookGroupLongDesc" icon="IZYgunShotgunT2PumpShotgun"><effect_group/></book_group>
+	<book_group name="skillAutoWeapons" parent="attBooks" name_key="perkAutoWeapons0Name" desc_key="perkAutoWeapons0Desc" long_desc_key="perkBookGroupLongDesc" icon="IZYgunT5HeavyWeaponM134MinigunGatling"><effect_group/></book_group>
+	<book_group name="skillRocketLauncher" parent="attBooks" name_key="perkRocketLauncher0NameDM" desc_key="perkRocketLauncher0DescDM" long_desc_key="perkBookGroupLongDesc" icon="gunchinalake"><effect_group/></book_group>
+	<book_group name="skillSniper" parent="attBooks" name_key="perkSniper0NameDM" desc_key="perkSniper0DescDM" long_desc_key="perkBookGroupLongDesc" icon="UACPlasmaRifle"><effect_group/></book_group>
+	<book_group name="skillArtOfMining" parent="attBooks" name_key="perkArtOfMining0Name" desc_key="perkArtOfMining0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_mining"><effect_group/></book_group>
+	<book_group name="skillFiremansAlmanac" parent="attBooks" name_key="perkFiremansAlmanac0Name" desc_key="perkFiremansAlmanac0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_fire"><effect_group/></book_group>
+	<book_group name="skillHuntingJournal" parent="attBooks" name_key="perkHuntingJournal0Name" desc_key="perkHuntingJournal0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_armor_leather"><effect_group/></book_group>
+	<book_group name="skillLuckyLooter" parent="attBooks" name_key="perkLuckyLooter0Name" desc_key="perkLuckyLooter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></book_group>
+	<book_group name="skillWasteTreasures" parent="attBooks" name_key="perkWasteTreasures0Name" desc_key="perkWasteTreasures0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_treasure"><effect_group/></book_group>
+	
+	<!-- <skill name="skillAmmoBackpacks" parent="attAmmoBackpacks" name_key="AmmoBackpacks_TestKey" desc_key="AmmoBackpacks_TestDesc" long_desc_key="General_TestLongDesc" icon="ui_game_symbol_backpack" hidden="true"><effect_group/></skill> -->
+	
+</skills>
+
+<ammo_pouches min_level="0" complete_sound="levelupplayer">
+
+	<!-- <ammo_pouch name="perkHandgunAmmoPouch" max_level="40" parent="attCrafting" name_key="perkHandgunAmmoPouchName" desc_key="perkHandgunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</ammo_pouch> -->
+	
+	<!-- <crafting_skill name="perkCrossbowAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkCrossbowAmmoPouchName" desc_key="perkCrossbowAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkTurretAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkTurretAmmoPouchName" desc_key="perkTurretAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkShotgunAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkShotgunAmmoPouchName" desc_key="perkShotgunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkChaingunAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkChaingunAmmoPouchName" desc_key="perkChaingunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkFuelAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkFuelAmmoPouchName" desc_key="perkFuelAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkRocketAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkRocketAmmoPouchName" desc_key="perkRocketAmmoPouchDesc" icon="ui_game_symbol_backpack" >
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill> -->
+
+</ammo_pouches>
+
+<crafting_skills min_level="0" complete_sound="ui_mag_read_set">
+		<!-- *** HARVESTING_TOOL_SKILLS -->
+	<crafting_skill name="craftingHarvestingTools" max_level="100" parent="attCrafting" name_key="craftingHarvestingToolsName" desc_key="craftingHarvestingToolsDesc" long_desc_key="craftingHarvestingToolsLongDesc" icon="ui_game_symbol_tool">
+
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="Q2toolsName" has_quality="false" unlock_level="20" >
+			<unlock_entry item="FireaxeQ2,ShovelQ2,PickaxeQ2,ChainsawQ2" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="Q3toolsName" has_quality="false" unlock_level="40" >
+			<unlock_entry item="FireaxeQ3,ShovelQ3,PickaxeQ3,ChainsawQ3" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="Q4toolsName" has_quality="false" unlock_level="60" >
+			<unlock_entry item="FireaxeQ4,ShovelQ4,PickaxeQ4,ChainsawQ4" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="Q5toolsName" has_quality="false" unlock_level="80" >
+			<unlock_entry item="FireaxeQ5,ShovelQ5,PickaxeQ5,ChainsawQ5" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolPickT2SteelPickaxe" name_key="Q6toolsName" has_quality="false" unlock_level="100" >
+			<unlock_entry item="FireaxeQ6,ShovelQ6,PickaxeQ6,ChainsawQ6" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,100" value="1" tags="FireaxeQ2,ShovelQ2,PickaxeQ2,ChainsawQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="FireaxeQ3,ShovelQ3,PickaxeQ3,ChainsawQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="FireaxeQ4,ShovelQ4,PickaxeQ4,ChainsawQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="FireaxeQ5,ShovelQ5,PickaxeQ5,ChainsawQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="FireaxeQ6,ShovelQ6,PickaxeQ6,ChainsawQ6"/>
+		</effect_group>
+	</crafting_skill>
+
+		<!-- *** REPAIRING_TOOL_SKILLS -->
+	<crafting_skill name="craftingRepairTools" max_level="125" parent="attCrafting" name_key="craftingRepairToolsName" desc_key="craftingRepairToolsDesc" long_desc_key="craftingRepairToolsLongDesc" icon="ui_game_symbol_hammer">
+
+		<display_entry icon="meleeToolSalvageT1Wrench" name_key="ClawHammerWrenchQ2" has_quality="false" unlock_level="10" >
+			<unlock_entry item="ClawHammerQ2,WrenchQ2" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolSalvageT1Wrench" name_key="ClawHammerWrenchQ3" has_quality="false" unlock_level="20" >
+			<unlock_entry item="ClawHammerQ3,WrenchQ3" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolSalvageT1Wrench" name_key="ClawHammerWrenchQ4" has_quality="false" unlock_level="30" >
+			<unlock_entry item="ClawHammerQ4,WrenchQ4" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolSalvageT1Wrench" name_key="ClawHammerWrenchQ5" has_quality="false" unlock_level="40" >
+			<unlock_entry item="ClawHammerQ5,WrenchQ5" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="meleeToolSalvageT1Wrench" name_key="ClawHammerWrenchQ6" has_quality="false" unlock_level="50" >
+			<unlock_entry item="ClawHammerQ6,WrenchQ2" unlock_tier="1"/>
+		</display_entry>
+		<display_entry item="ImpactDriverQ2" unlock_level="65"/>
+		<display_entry item="ImpactDriverQ3" unlock_level="80"/>
+		<display_entry item="ImpactDriverQ4" unlock_level="95"/>
+		<display_entry item="ImpactDriverQ5" unlock_level="110"/>
+		<display_entry item="ImpactDriverQ6" unlock_level="125"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,125" value="1" tags="ClawHammerQ2,WrenchQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,125" value="1" tags="ClawHammerQ3,WrenchQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,125" value="1" tags="ClawHammerQ4,WrenchQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,125" value="1" tags="ClawHammerQ5,WrenchQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50,125" value="1" tags="ClawHammerQ6,WrenchQ6"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="65,125" value="1" tags="ImpactDriverQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,125" value="1" tags="ImpactDriverQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="95,125" value="1" tags="ImpactDriverQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="110,125" value="1" tags="ImpactDriverQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="125" value="1" tags="ImpactDriverQ6"/>
+		</effect_group>
+	</crafting_skill>
+
+		<!-- *** KNUCKLE_SKILLS -->
+	<crafting_skill name="craftingKnuckles" max_level="50" parent="attCrafting" name_key="craftingKnucklesName" desc_key="craftingKnucklesDesc" long_desc_key="craftingKnucklesLongDesc" icon="ui_game_symbol_boxer">
+
+		<display_entry item="BrassKnucklesQ2" unlock_level="10"/>
+		<display_entry item="BrassKnucklesQ3" unlock_level="20"/>
+		<display_entry item="BrassKnucklesQ4" unlock_level="30"/>
+		<display_entry item="BrassKnucklesQ5" unlock_level="40"/>
+		<display_entry item="BrassKnucklesQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="BrassKnucklesQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="BrassKnucklesQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="BrassKnucklesQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="BrassKnucklesQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="BrassKnucklesQ6"/>
+		</effect_group>
+	</crafting_skill>
+
+		<!-- *** BLADE_SKILLS -->
+	<crafting_skill name="craftingBlades" max_level="50" parent="attCrafting" name_key="craftingBladesName" desc_key="craftingBladesDesc" long_desc_key="craftingBladesLongDesc" icon="ui_game_symbol_knife">
+
+		<display_entry item="CombatKnifeQ2" unlock_level="10"/>
+		<display_entry item="CombatKnifeQ3" unlock_level="20"/>
+		<display_entry item="CombatKnifeQ4" unlock_level="30"/>
+		<display_entry item="CombatKnifeQ5" unlock_level="40"/>
+		<display_entry item="CombatKnifeQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="CombatKnifeQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="CombatKnifeQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="CombatKnifeQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="CombatKnifeQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="CombatKnifeQ6"/>
+		</effect_group>
+	</crafting_skill>
+
+		<!-- *** BOW_SKILLS -->
+	<!-- <crafting_skill name="craftingBows" max_level="50" parent="attCrafting" name_key="craftingBowsName" desc_key="craftingBowsDesc" long_desc_key="craftingBowsLongDesc" icon="ui_game_symbol_archery">
+
+		<display_entry item="CompoundCrossbowQ2" unlock_level="10"/>
+		<display_entry item="CompoundCrossbowQ3" unlock_level="20"/>
+		<display_entry item="CompoundCrossbowQ4" unlock_level="30"/>
+		<display_entry item="CompoundCrossbowQ5" unlock_level="40"/>
+		<display_entry item="CompoundCrossbowQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="CompoundCrossbowQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="CompoundCrossbowQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="CompoundCrossbowQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="CompoundCrossbowQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="CompoundCrossbowQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** HANDGUN_SKILLS -->
+	<!-- <crafting_skill name="craftingHandguns" max_level="50" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
+
+		<display_entry item="HandgunQ2" unlock_level="10"/>
+		<display_entry item="HandgunQ3" unlock_level="20"/>
+		<display_entry item="HandgunQ4" unlock_level="30"/>
+		<display_entry item="HandgunQ5" unlock_level="40"/>
+		<display_entry item="HandgunQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="HandgunQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="HandgunQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="HandgunQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="HandgunQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="HandgunQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** SHOTGUN_SKILLS -->
+	<!-- <crafting_skill name="craftingShotguns" max_level="50" parent="attCrafting" name_key="craftingShotgunsName" desc_key="craftingShotgunsDesc" long_desc_key="craftingShotgunsLongDesc" icon="ui_game_symbol_shotgun">
+		
+		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ2" has_quality="false" unlock_level="10" >
+			<unlock_entry item="PumpShotgunQ2,SuperShotgunQ2" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ3" has_quality="false" unlock_level="20" >
+			<unlock_entry item="PumpShotgunQ3,SuperShotgunQ3" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ4" has_quality="false" unlock_level="30" >
+			<unlock_entry item="PumpShotgunQ4,SuperShotgunQ4" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ5" has_quality="false" unlock_level="40" >
+			<unlock_entry item="PumpShotgunQ5,SuperShotgunQ5" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ6" has_quality="false" unlock_level="50" >
+			<unlock_entry item="PumpShotgunQ6,SuperShotgunQ6" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="PumpShotgunQ2,SuperShotgunQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="PumpShotgunQ3,SuperShotgunQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="PumpShotgunQ4,SuperShotgunQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="PumpShotgunQ5,SuperShotgunQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="PumpShotgunQ6,SuperShotgunQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** MACHINE_GUN_SKILLS -->
+	<!-- <crafting_skill name="craftingMachineGuns" max_level="50" parent="attCrafting" name_key="craftingMachineGunsName" desc_key="craftingMachineGunsDesc" long_desc_key="craftingMachineGunsLongDesc" icon="ui_game_symbol_rifle">
+
+		<display_entry item="ChaingunQ2" unlock_level="10"/>
+		<display_entry item="ChaingunQ3" unlock_level="20"/>
+		<display_entry item="ChaingunQ4" unlock_level="30"/>
+		<display_entry item="ChaingunQ5" unlock_level="40"/>
+		<display_entry item="ChaingunQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="ChaingunQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="ChaingunQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="ChaingunQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="ChaingunQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="ChaingunQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** EXPLOSIVE_SKILLS -->
+	<!-- <crafting_skill name="craftingExplosives" max_level="50" parent="attCrafting" name_key="craftingExplosivesName" desc_key="craftingExplosivesDesc" long_desc_key="craftingExplosivesLongDesc" icon="ui_game_symbol_explosion">
+		
+		<display_entry icon="FlameThrowerQ2" name_key="ExplosivesQ2" has_quality="false" unlock_level="10" >
+			<unlock_entry item="RocketLauncherQ2,FlameThrowerQ2" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="FlameThrowerQ3" name_key="ExplosivesQ3" has_quality="false" unlock_level="20" >
+			<unlock_entry item="RocketLauncherQ3,FlameThrowerQ3" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="RocketLauncherQ4" name_key="ExplosivesQ4" has_quality="false" unlock_level="30" >
+			<unlock_entry item="RocketLauncherQ4,FlameThrowerQ4" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="RocketLauncherQ5" name_key="ExplosivesQ5" has_quality="false" unlock_level="40" >
+			<unlock_entry item="RocketLauncherQ5,FlameThrowerQ5" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="RocketLauncherQ6" name_key="ExplosivesQ6" has_quality="false" unlock_level="50" >
+			<unlock_entry item="RocketLauncherQ6,FlameThrowerQ6" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="RocketLauncherQ2,FlameThrowerQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="RocketLauncherQ3,FlameThrowerQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="RocketLauncherQ4,FlameThrowerQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="RocketLauncherQ5,FlameThrowerQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="RocketLauncherQ6,FlameThrowerQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** ROBOTIC_SKILLS -->
+	<!-- <crafting_skill name="craftingRobotics" max_level="50" parent="attCrafting" name_key="craftingRoboticsName" desc_key="craftingRoboticsDesc" long_desc_key="craftingRoboticsLongDesc" icon="ui_game_symbol_junk_turret">
+
+		<display_entry item="JunkTurretQ2" unlock_level="10"/>
+		<display_entry item="JunkTurretQ3" unlock_level="20"/>
+		<display_entry item="JunkTurretQ4" unlock_level="30"/>
+		<display_entry item="JunkTurretQ5" unlock_level="40"/>
+		<display_entry item="JunkTurretQ6" unlock_level="50"/>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="JunkTurretQ2"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="JunkTurretQ3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="JunkTurretQ4"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="JunkTurretQ5"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="JunkTurretQ6"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** MEDICAL_SKILLS -->
+	<!-- <crafting_skill name="craftingMedical" max_level="100" parent="attCrafting" name_key="craftingMedicalName" desc_key="craftingMedicalDesc" long_desc_key="craftingMedicalLongDesc" icon="ui_game_symbol_medical">
+
+		<display_entry icon="drugHerbalAntibiotics,stimPack" name_key="medicalT2-2,medicalT1-1DM" has_quality="false" unlock_level="10,25" >
+			<unlock_entry item="drugHerbalAntibioticsBundle" unlock_tier="1"/>
+			<unlock_entry item="stimPackBundle" unlock_tier="2"/>
+		</display_entry>
+		<display_entry icon="medicalPlasterCast,mediKit,stimPackBlue,drugAntibiotics" name_key="medicalT2-1,medicalT2-2DM,medicalT2-3DM" has_quality="false" unlock_level="40,55,70" >
+			<unlock_entry item="medicalPlasterCastBundle" unlock_tier="1"/>
+			<unlock_entry item="mediKitBundle" unlock_tier="2"/>
+			<unlock_entry item="stimPackBlueBundle,drugAntibioticsBundle" unlock_tier="3"/>
+		</display_entry>
+		<display_entry icon="MedikitBlue,healthPotion" name_key="medicalT3-1DM,medicalT3-2DM,medicalT3-3" has_quality="false" unlock_level="85,100" >
+			<unlock_entry item="mediKitBlueBundle" unlock_tier="1"/>
+			<unlock_entry item="healthPotionBundle" unlock_tier="2"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="drugHerbalAntibioticsBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="stimPackBundle"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="medicalPlasterCastBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="mediKitBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="stimPackBlueBundle,drugAntibioticsBundle"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="mediKitBlueBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="healthPotionBundle"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** FOOD_SKILLS -->
+	<!-- <crafting_skill name="craftingFood" max_level="100" parent="attCrafting" name_key="craftingFoodName" desc_key="craftingFoodDesc" long_desc_key="craftingFoodLongDesc" icon="ui_game_symbol_fork">
+
+		<display_entry icon="foodCornOnTheCob,foodCornBread,foodGrilledMeat,foodBoiledMeat,foodBaconAndEggs" name_key="foodT1-2,foodT1-3,foodT1-4,foodT1-5" has_quality="false" unlock_level="4,6,8,10" >
+			<unlock_entry item="foodCornOnTheCob,foodBakedPotato" unlock_tier="1"/>
+			<unlock_entry item="foodCornBreadBundle,drinkJarGoldenRodTea" unlock_tier="1"/>
+			<unlock_entry item="foodGrilledMeat,drinkJarRedTea" unlock_tier="2"/>
+			<unlock_entry item="foodBoiledMeatBundle,drinkJarYuccaJuice" unlock_tier="3"/>
+			<unlock_entry item="foodBaconAndEggs,drinkJarCoffee" unlock_tier="4"/>
+		</display_entry>
+		<display_entry icon="foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5DM" has_quality="false" unlock_level="11,14,18,22,26" >
+			<unlock_entry item="foodPumpkinBreadBundle,foodBlueberryPieBundle,foodChickenNuggets" unlock_tier="1"/>
+			<unlock_entry item="foodPumpkinPieBundle,drinkJarHoneyTea" unlock_tier="2"/>
+			<unlock_entry item="foodPumpkinCheesecakeBundle,foodRoadrunnerChickenJerkyBundle" unlock_tier="3"/>
+			<unlock_entry item="foodVegetableStewBundle,foodMeatStewBundle" unlock_tier="4"/>
+			<unlock_entry item="foodSteakAndPotato,drinkJarRedHoneyTea,foodAshChickenStewBundle" unlock_tier="5"/>
+		</display_entry>
+		<display_entry icon="drinkYuccaJuiceSmoothie,foodHoboStewBundle,foodFishTacos,foodChiliDog,foodShamChowder" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4DM,foodT3-5" has_quality="false" unlock_level="27,35,43,51,59" >
+			<unlock_entry item="drinkYuccaJuiceSmoothie,drinkJarBeer" unlock_tier="1"/>
+			<unlock_entry item="foodHoboStewBundle,drinkJarHoneyCoffee" unlock_tier="2"/>
+			<unlock_entry item="foodFishTacos" unlock_tier="3"/>
+			<unlock_entry item="foodChiliDog,foodChickenWings" unlock_tier="4"/>
+			<unlock_entry item="foodShamChowderBundle,foodHoneyGlazedSham" unlock_tier="5"/>
+		</display_entry>
+		<display_entry icon="foodTunaFishGravyToast,foodShepardsPie,foodSpaghetti,foodHoneyBrisket,foodGumboStew" name_key="foodT4-1DM,foodT4-2DM,foodT4-3DM,foodT4-4,foodT4-5" has_quality="false" unlock_level="60,70,80,90,100" >
+			<unlock_entry item="foodTunaFishGravyToast" unlock_tier="1"/>
+			<unlock_entry item="foodShepardsPie" unlock_tier="2"/>
+			<unlock_entry item="foodHoneyBrisket" unlock_tier="3"/>
+			<unlock_entry item="foodSpaghettiBundle" unlock_tier="4"/>
+			<unlock_entry item="foodGumboStewBundle" unlock_tier="5"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,100" value="1" tags="foodCornOnTheCob,foodBakedPotato"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="foodCornBreadBundle,drinkJarGoldenRodTea"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="foodGrilledMeat,drinkJarRedTea"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="foodBoiledMeatBundle,drinkJarYuccaJuice"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="foodBaconAndEggs,drinkJarCoffee"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="foodPumpkinBreadBundle,foodBlueberryPieBundle,foodChickenNuggets"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="foodPumpkinPieBundle,drinkJarHoneyTea"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="foodPumpkinCheesecakeBundle,foodRoadrunnerChickenJerkyBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="foodVegetableStewBundle,foodMeatStewBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="foodSteakAndPotato,drinkJarRedHoneyTea,foodAshChickenStewBundle"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="drinkYuccaJuiceSmoothie,drinkJarBeer"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="foodHoboStewBundle,drinkJarHoneyCoffee"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="43,100" value="1" tags="foodFishTacos"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="51,100" value="1" tags="foodChiliDog,foodChickenWings"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="59,100" value="1" tags="foodShamChowderBundle,foodHoneyGlazedSham"/>
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="foodTunaFishGravyToast"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="foodShepardsPie"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="foodHoneyBrisket"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="foodSpaghettiBundle"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="foodGumboStewBundle"/>
+		</effect_group>
+	</crafting_skill> -->
+
+		<!-- *** ELECTRICIAN_SKILLS -->
+	<crafting_skill name="craftingElectrician" max_level="120" parent="attCrafting" name_key="craftingElectricianName" desc_key="craftingElectricianDesc" long_desc_key="craftingElectricianLongDesc" icon="ui_game_symbol_electric_generator">
+
+		<display_entry icon="generatorBankA" name_key="electricianT1" has_quality="false" unlock_level="25" >
+			<unlock_entry item="generatorbank,electricwirerelay,switch,tripwirepost,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="motionsensor" name_key="electricianT2" has_quality="false" unlock_level="45" >
+			<unlock_entry item="motionsensor,electrictimerrelay,pressureplate,pressureplateLong,spotlightPlayer,speaker" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="batterybank" name_key="electricianT3" has_quality="false" unlock_level="55" >
+			<unlock_entry item="batterybank,vaultDoor01_Powered,vaultDoor01Double_Powered,vaultHatch01_Powered,ironGarageDoor_PoweredBlockVariantHelper,woodenGarageDoor3x3_PoweredBlockVariantHelper,woodenGarageDoor4x3_PoweredBlockVariantHelper,woodenGarageDoor5x3_PoweredBlockVariantHelper,steelGarageDoor3x3_PoweredBlockVariantHelper,steelGarageDoor4x3_PoweredBlockVariantHelper,steelGarageDoor5x3_PoweredBlockVariantHelper,metalReinforcedWoodDrawBridgePowered" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="carBattery" name_key="electricianT4" has_quality="true" unlock_level="55,60,65,70,75,80" >
+			<unlock_entry item="carBattery" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="solarCell" name_key="electricianT5" has_quality="true" unlock_level="90,95,100,105,110,120" >
+			<unlock_entry item="solarCell" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,120" value="1" tags="generatorbank,electricwirerelay,switch,tripwirepost,ceilingLight01_player,industrialLight01_player,industrialLight02_player,ceilingLight07_player"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="45,120" value="1" tags="motionsensor,electrictimerrelay,pressureplate,pressureplateLong,spotlightPlayer,speaker"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,120" value="1" tags="batterybank,vaultDoor01_Powered,vaultDoor01Double_Powered,vaultHatch01_Powered,ironGarageDoor_PoweredBlockVariantHelper,woodenGarageDoor3x3_PoweredBlockVariantHelper,woodenGarageDoor4x3_PoweredBlockVariantHelper,woodenGarageDoor5x3_PoweredBlockVariantHelper,steelGarageDoor3x3_PoweredBlockVariantHelper,steelGarageDoor4x3_PoweredBlockVariantHelper,steelGarageDoor5x3_PoweredBlockVariantHelper,metalReinforcedWoodDrawBridgePowered"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,120" value="1" tags="carBattery"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,120" value="1" tags="solarCell"/>
+
+			<passive_effect name="CraftingTier" operation="base_add" level="60,65,70,75,80,120" value="1,2,3,4,5,5" tags="carBattery"/>
+			<passive_effect name="CraftingTier" operation="base_add" level="95,100,105,110,120" value="1,2,3,4,5" tags="solarCell"/>
+
+		</effect_group>
+	</crafting_skill>
+
+		<!-- *** VEHICLE_SKILLS -->
+	<crafting_skill name="craftingVehicles" max_level="150" parent="attCrafting" name_key="craftingVehiclesName" desc_key="craftingVehiclesDesc" long_desc_key="craftingVehiclesLongDesc" icon="ui_game_symbol_4x4">
+
+		<display_entry icon="vehicleMotorcyclePlaceable" name_key="vehiclesT3" has_quality="false" unlock_level="30" >
+			<unlock_entry item="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,resourceOil,ammoGasCan" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="vehicleTruck4x4Placeable" name_key="vehiclesT4" has_quality="false" unlock_level="60" >
+			<unlock_entry item="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories" unlock_tier="1"/>
+		</display_entry>
+		<display_entry icon="vehicleGyrocopterPlaceable" name_key="vehiclesT5" has_quality="false" unlock_level="100" >
+			<unlock_entry item="vehicleGyroCopterChassis,vehicleGyroCopterAccessories" unlock_tier="1"/>
+		</display_entry>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,150" value="1" tags="vehicleMotorcycleChassis,vehicleMotorcycleHandlebars,resourceOil,ammoGasCan"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,150" value="1" tags="vehicleTruck4x4Chassis,vehicleTruck4x4Accessories"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,150" value="1" tags="vehicleGyroCopterChassis,vehicleGyroCopterAccessories"/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkHandgunAmmoPouch" max_level="40" parent="attCrafting" name_key="perkHandgunAmmoPouchName" desc_key="perkHandgunAmmoPouchDesc" icon="HandgunAmmoMagazine" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkCrossbowAmmoPouch" max_level="40" parent="attCrafting" name_key="perkCrossbowAmmoPouchName" desc_key="perkCrossbowAmmoPouchDesc" icon="ammoArrowSteelAP" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkTurretAmmoPouch" max_level="40" parent="attCrafting" name_key="perkTurretAmmoPouchName" desc_key="perkTurretAmmoPouchDesc" icon="ammoJunkTurretRegular" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkShotgunAmmoPouch" max_level="40" parent="attCrafting" name_key="perkShotgunAmmoPouchName" desc_key="perkShotgunAmmoPouchDesc" icon="ShotgunBoxedAmmo" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkChaingunAmmoPouch" max_level="40" parent="attCrafting" name_key="perkChaingunAmmoPouchName" desc_key="perkChaingunAmmoPouchDesc" icon="ChaingunBoxedAmmo" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkFuelAmmoPouch" max_level="40" parent="attCrafting" name_key="perkFuelAmmoPouchName" desc_key="perkFuelAmmoPouchDesc" icon="ammoGasCan" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkRocketAmmoPouch" max_level="40" parent="attCrafting" name_key="perkRocketAmmoPouchName" desc_key="perkRocketAmmoPouchDesc" icon="RocketLauncherRocket" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<crafting_skill name="perkPlasmaAmmoPouch" max_level="40" parent="attCrafting" name_key="perkPlasmaAmmoPouchName" desc_key="perkPlasmaAmmoPouchDesc" icon="PlasmaCellBattery" >
+		<effect_group>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+		</effect_group>
+	</crafting_skill>
+	
+	<!-- <crafting_skill name="perkInventoryPouch" max_level="4" parent="attCrafting" name_key="perkInventoryPouchName" desc_key="perkInventoryPouchDesc" icon="HandgunAmmoMagazine" >
+
+		<effect_group>
+			
+			<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4" value="5,10,15,20"/>
+			<passive_effect name="BagSize" operation="base_add" level="1,2,3,4" value="5,10,15,20"/>
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</crafting_skill> -->
+</crafting_skills>
+
+<perks min_level="0" max_level="5" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="5">
+
+	<!-- Utility Perks -->
+
+	<perk name="perkQuickerCrafting" max_level="5" parent="skillGeneralPerks" name_key="perkQuickerCraftingName" desc_key="perkQuickerCraftingDesc" icon="ui_game_symbol_misc_crafting" override_cost="1,1,1,1,1">
+	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,1,2,3,4,5" value="0,1,2,3,4,5" tags="perkQuickerCrafting"/>	
+			<passive_effect name="CraftingTime" operation="perc_add" level="1,2,3,4,5" value="-.15,-.3,-.45,-.6,-.75" tags="packMuleCrafting"/>
+			<passive_effect name="CraftingTime" operation="perc_add" level="1,2,3,4,5" value="-.6,-.1.2,-1.8,-2.4,-3" tags="perkMasterChef"/>
+			
+			<effect_description level="1" desc_key="perkQuickerCraftingRank1Desc" long_desc_key="perkQuickerCraftingRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkQuickerCraftingRank2Desc" long_desc_key="perkQuickerCraftingRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkQuickerCraftingRank3Desc" long_desc_key="perkQuickerCraftingRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkQuickerCraftingRank4Desc" long_desc_key="perkQuickerCraftingRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkQuickerCraftingRank5Desc" long_desc_key="perkQuickerCraftingRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkResourcefulUpgrader" max_level="5" parent="skillGeneralPerks" name_key="perkResourcefulUpgraderName" desc_key="perkResourcefulUpgraderDesc" icon="ui_game_symbol_misc_crafting" override_cost="2,2,2,2,2">
+	
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkResourcefulUpgrader"/>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkResourcefulUpgraderRank1Desc" long_desc_key="perkResourcefulUpgraderRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkResourcefulUpgraderRank2Desc" long_desc_key="perkResourcefulUpgraderRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkResourcefulUpgraderRank3Desc" long_desc_key="perkResourcefulUpgraderRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkResourcefulUpgraderRank4Desc" long_desc_key="perkResourcefulUpgraderRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkResourcefulUpgraderRank5Desc" long_desc_key="perkResourcefulUpgraderRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkAnimalTracker" max_level="5" parent="skillGeneralPerks" name_key="perkAnimalTrackerName" desc_key="perkAnimalTrackerDesc" icon="ui_game_symbol_animal_tracker" override_cost="1,1,1,1,1">
+
+		<effect_group>
+		
+			<passive_effect name="TrackDistance" operation="base_set" level="0,1,2,3,4,5" value="0,100,100,100,100,100"/>
+			
+			<!-- Animal Tracking -->
+			<triggered_effect trigger="onSelfCrouch" action="AddBuff" buff="buffAnimalTracker">
+				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquired"/>
+				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="GT" value="0"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfCrouchWalk" action="AddBuff" buff="buffAnimalTracker">
+				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquired"/>
+				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="GT" value="0"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfCrouchRun" action="AddBuff" buff="buffAnimalTracker">
+				<requirement name="NotHasBuff" buff="buffAnimalTrackerAcquired"/>
+				<requirement name="ProgressionLevel" progression_name="perkAnimalTracker" operation="GT" value="0"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkAnimalTrackerRank1Desc" long_desc_key="perkAnimalTrackerRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkAnimalTrackerRank2Desc" long_desc_key="perkAnimalTrackerRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkAnimalTrackerRank3Desc" long_desc_key="perkAnimalTrackerRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkAnimalTrackerRank4Desc" long_desc_key="perkAnimalTrackerRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkAnimalTrackerRank5Desc" long_desc_key="perkAnimalTrackerRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkLockPicking" max_level="3" parent="skillGeneralPerks" name_key="perkLockPickingNameDM" desc_key="perkLockPickingDescDM" icon="ui_game_symbol_unlock" override_cost="1,1,1">
+
+		<effect_group>
+			<passive_effect name="LockPickTime" operation="perc_subtract" level="1,3" value=".17,.375"/>
+			<passive_effect name="LockPickBreakChance" operation="perc_subtract" level="1,3" value=".12,.36"/>
+
+			<!-- Increase the chance to find lockpicks with each perk rank -->
+			<passive_effect name="LootQuantity" operation="base_add" level="0,1,2,3" value="1,1,2,3" tags="lockPickSkill"/>
+
+			<!-- Increase the chance to find workstation crafting skill magazines with each perk rank up to crafting skill 15 -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,2,3" value=".5,1,1.5" tags="workstationCSM"/>
+
+			<effect_description level="1" desc_key="perkLockPickingRank1Desc" long_desc_key="perkLockPickingRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkLockPickingRank2Desc" long_desc_key="perkLockPickingRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkLockPickingRank3Desc" long_desc_key="perkLockPickingRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkParkour" max_level="4" parent="skillGeneralPerks" name_key="perkParkourName" desc_key="perkParkourDesc" icon="ui_game_symbol_parkour" override_cost="1,1,1,1">
+
+		<effect_group>
+			<!-- <passive_effect name="JumpStrength" operation="perc_add" level="2,3,4" value=".39,.39,.75"/> -->
+			<!-- .125 is min jump with a broken leg, .16 = 1.5m easy, .175 = 2m barely, .186 = 2m plus a bit, .22 = 2.3m (1.6 + 39%), .276 = 3.3m  (1.6 + 75%) -->
+
+			<!-- Increase parkourBonus with each level of the perk -->
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$parkourBonus" operation="set" value="0,.01414,.02828,.044,.05656"/>
+
+			<effect_description level="1" desc_key="perkParkourRank1Desc" long_desc_key="perkParkourRankDM1LongDesc"/>
+			<effect_description level="2" desc_key="perkParkourRank2Desc" long_desc_key="perkParkourRankDM2LongDesc"/>
+			<effect_description level="3" desc_key="perkParkourRank3Desc" long_desc_key="perkParkourRankDM3LongDesc"/>
+			<effect_description level="4" desc_key="perkParkourRank4Desc" long_desc_key="perkParkourRankDM4LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkStrongLegs" max_level="3" parent="skillGeneralPerks" name_key="perkStrongLegsName" desc_key="perkStrongLegsDesc" icon="ui_game_symbol_twitch_jump" override_cost="1,1,1">
+	
+		<effect_group>
+			<passive_effect name="JumpStrength" operation="perc_add" level="1,2,3" value=".39,.78,1.17"/>
+			
+			<effect_description level="1" desc_key="perkStrongLegsRank1Desc" long_desc_key="perkStrongLegsRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkStrongLegsRank2Desc" long_desc_key="perkStrongLegsRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkStrongLegsRank3Desc" long_desc_key="perkStrongLegsRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkRuleOneCardio" parent="skillGeneralPerks" name_key="perkRuleOneCardioName" desc_key="perkCardioDesc" icon="ui_game_symbol_cardio" override_cost="1,1,1,1,1">
+
+		<effect_group>
+
+			<passive_effect name="RunSpeed" operation="perc_add" level="1,2,3,4,5" value=".07,.14,.21,.28,.35"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.3,.4,.5"/>
+
+			<effect_description level="1" desc_key="perkCardioNameRank1Desc" long_desc_key="perkCardioNameRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkCardioNameRank2Desc" long_desc_key="perkCardioNameRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkCardioNameRank3Desc" long_desc_key="perkCardioNameRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkCardioNameRank4Desc" long_desc_key="perkCardioNameRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkCardioNameRank5Desc" long_desc_key="perkCardioNameRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkMotherLode" parent="skillGeneralPerks" name_key="perkMotherLodeName" desc_key="perkMotherLodeDesc" icon="ui_game_symbol_mother_load" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="perc_add" level="1,5" value=".2,1" tags="oreWoodHarvest"/>
+
+			<effect_description level="1" desc_key="perkMotherLodeRank1Desc" long_desc_key="perkMotherLodeRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkMotherLodeRank2Desc" long_desc_key="perkMotherLodeRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkMotherLodeRank3Desc" long_desc_key="perkMotherLodeRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkMotherLodeRank4Desc" long_desc_key="perkMotherLodeRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkMotherLodeRank5Desc" long_desc_key="perkMotherLodeRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkTreasureHunter" parent="skillGeneralPerks" name_key="perkTreasureHunterName" desc_key="perkTreasureHunterDesc" icon="ui_game_symbol_treasure" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<!-- Reduces the number of blocks to dig before the search radius shrinks -->
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" level="0,1,2,3,4,5" value="0,-1,-2,-3,-4,-5"/><!-- base value in quests is 10 -->
+			
+			<!-- Find more stuff in buried chests -->
+			<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" tags="buriedTreasure"/>
+			
+			<!-- Do more damage to dirt -->
+			<passive_effect name="BlockDamage" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" tags="treasureHunter"/>
+			
+			<!-- Level 4 adds dukes and cash in buried chests -->
+			<!-- Handled by loot list requirements -->
+			
+			<!-- Level 5 adds an extra weapon, armor, or rare item in buried chests -->
+			<!-- Handled by loot list requirements -->
+
+			<effect_description level="1" desc_key="perkTreasureHunterRank1Desc" long_desc_key="perkTreasureHunterDMRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkTreasureHunterRank2Desc" long_desc_key="perkTreasureHunterDMRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkTreasureHunterRank3Desc" long_desc_key="perkTreasureHunterDMRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkTreasureHunterRank4Desc" long_desc_key="perkTreasureHunterDMRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkTreasureHunterRank5Desc" long_desc_key="perkTreasureHunterDMRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkChemistExpert" max_level="3" parent="skillGeneralPerks" name_key="perkChemistExpertName" desc_key="perkChemistExpertDesc" icon="ui_game_symbol_explosion" override_cost="2,2,2">
+
+		<effect_group>
+			<passive_effect name="CraftingTier" operation="base_set" level="0,1,2,3" value="0,1,2,3" tags="perkChemistExpert"/>		
+			<effect_description level="1" desc_key="perkChemistExpertRank1Desc" long_desc_key="perkChemistExpertRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkChemistExpertRank2Desc" long_desc_key="perkChemistExpertRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkChemistExpertRank3Desc" long_desc_key="perkChemistExpertRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkJunkMiner" max_level="4" parent="skillGeneralPerks" name_key="perkJunkMinerName" desc_key="perkJunkMinerDesc" icon="ui_game_symbol_junk_miner" override_cost="1,1,1,1">
+
+		<effect_group>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1,2,3,4" value=".5,1,1.5,2" tags="perkJunkMiner"/>
+
+			<effect_description level="1" desc_key="perkJunkMinerRank1Desc" long_desc_key="perkJunkMinerRankDM1LongDesc"/>
+			<effect_description level="2" desc_key="perkJunkMinerRank2Desc" long_desc_key="perkJunkMinerRankDM2LongDesc"/>
+			<effect_description level="3" desc_key="perkJunkMinerRank3Desc" long_desc_key="perkJunkMinerRankDM3LongDesc"/>
+			<effect_description level="4" desc_key="perkJunkMinerRank4Desc" long_desc_key="perkJunkMinerRankDM4LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkGreaseMonkey" parent="skillGeneralPerks" name_key="perkGreaseMonkeyName" desc_key="perkGreaseMonkeyDesc" icon="ui_game_symbol_service" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<!-- fake crafting perk that is used to scale resources or quality like on carBattery -->
+			<passive_effect name="CraftingTier" operation="base_set" level="0,5" value="0,5" tags="perkGreaseMonkey"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" level="1,5" value="-.05,-.25" tags="vehicle"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" level="0,5" value="-.1" tags="truckdmgres"/>
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" level="1,2,3,4,5" value="-.05,-.1,-.15,-.2,-.25" />
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" level="1,2,3,4,5" value=".02,.04,.06,.08,.1"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" level="1,2,3,4,5" value=".03,.06,.09,.12,.15"/>
+
+			<!-- Increase the chance to find vehicles with each perk rank -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value=".4,2" tags="vehiclesSkill"/>
+
+			<!-- Increase the chance to find vehicle crafting skill magazines with each perk rank up to crafting skill 50 -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value=".2,1" tags="vehiclesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="LT" value="50"/>
+			</passive_effect>
+
+			<!-- Once vehicle crafting skill reaches 100, set the probability bonus of finding vehicle crafting skill magazines to 0 -->
+			<passive_effect name="LootProb" operation="base_set" level="1,5" value="1,1" tags="vehiclesCSM">
+				<requirement name="ProgressionLevel" progression_name="craftingVehicles" operation="Equals" value="50"/>
+			</passive_effect>
+
+			<effect_description level="1" desc_key="perkGreaseMonkeyRank1Desc" long_desc_key="perkGreaseMonkeyDMRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkGreaseMonkeyRank2Desc" long_desc_key="perkGreaseMonkeyDMRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkGreaseMonkeyRank3Desc" long_desc_key="perkGreaseMonkeyDMRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkGreaseMonkeyRank4Desc" long_desc_key="perkGreaseMonkeyDMRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkGreaseMonkeyRank5Desc" long_desc_key="perkGreaseMonkeyDMRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkBookWorm" parent="skillGeneralPerks" name_key="perkBookWormName" desc_key="perkBookWormDesc" icon="ui_game_symbol_challenge_crafting_read_magazine" override_cost="1,1,1,1,1">
+		
+		<effect_group>
+			<!-- Adds a chance to loot an additional book, magazine, or schematic -->
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="6">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="9">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="3"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="12">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="15">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="5"/>
+			</triggered_effect>
+
+			<!-- Clear perkBookwormChance if progression is reset or attribute reduced by crit -->
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$perkBookwormChance" operation="set" value="0">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		
+		<effect_group>
+		<!-- Set the flag to 1 if the flag is not set and progression is enabled -->
+			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$pointChanceFlag" operation="set" value="1">
+				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="LT" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
+			</triggered_effect> -->
+
+			<!-- Adds a chance to gain 2 skill points when reading magazines -->
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="6">
+				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="12">
+				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="18">
+				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="3"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="24">
+				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="30">
+				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="5"/>
+			</triggered_effect>
+			
+			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="add" value="@$perkIntellectMasteryPointChance">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
+				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/>
+			</triggered_effect> -->
+
+			<!-- Set the flag to 2 to stop adding -->
+			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$pointChanceFlag" operation="add" value="1">
+				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
+			</triggered_effect> -->
+		</effect_group>
+
+		<effect_group>
+			<!-- Clear CVars if progression is reset -->
+			<triggered_effect trigger="onSelfProgressionUpdate" action="RemoveCVar" cvar="$perkIntellectMasteryPointChance,$pointChanceFlag,$nerdOutfitSkillPointChance">
+				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="LTE" value="0"/>
+				<requirement name="CVarCompare" cvar="$perkIntellectMasteryPointChance" operation="GT" value="0"/>
+			</triggered_effect>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkBookWormRank1Desc" long_desc_key="perkBookWormRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkBookWormRank2Desc" long_desc_key="perkBookWormRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkBookWormRank3Desc" long_desc_key="perkBookWormRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkBookWormRank4Desc" long_desc_key="perkBookWormRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkBookWormRank5Desc" long_desc_key="perkBookWormRank5LongDesc"/>
+		</effect_group>
+	</perk>
+		
+	<perk name="perkAmmoScrounger" max_level="3" parent="skillGeneralPerks" name_key="perkAmmoScroungerName" desc_key="perkAmmoScroungerDesc" icon="ui_game_symbol_shape_ammo" override_cost="2,2,2">
+	
+		<effect_group>
+			
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="0,1,2" tags="ScroungerRocket"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="1,2,3" tags="ScroungerBolt"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="2,4,6" tags="ScroungerShells"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="4,8,12" tags="ScroungerChaingun"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="2,4,6" tags="ScroungerCells"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="4,8,12" tags="ScroungerHandgun"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="6,12,18" tags="gasoline"/>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkAmmoScroungerRank1Desc" long_desc_key="perkAmmoScroungerRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkAmmoScroungerRank2Desc" long_desc_key="perkAmmoScroungerRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkAmmoScroungerRank3Desc" long_desc_key="perkAmmoScroungerRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<!-- Combat Perks -->
+	<perk name="perkStrongArm" max_level="5" parent="skillCombatPerks" name_key="perkStrongArmName" desc_key="perkStrongArmDesc" icon="ui_game_symbol_muscle" override_cost="1,1,1,1,1">
+	
+		<effect_group>
+		<requirement name="HoldingItemHasTags" tags="perkBrawler,knife"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1,2,3,4,5" value="2,4,6,8,10" />
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkBrawlerRank1Desc" long_desc_key="perkStrongArmRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkBrawlerRank2Desc" long_desc_key="perkStrongArmRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkBrawlerRank3Desc" long_desc_key="perkStrongArmRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkBrawlerRank4Desc" long_desc_key="perkStrongArmRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkBrawlerRank5Desc" long_desc_key="perkStrongArmRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkSiphoningStrikes" parent="skillCombatPerks" name_key="perkSiphoningStrikesName" desc_key="perkSiphoningStrikesDesc" icon="ui_game_symbol_siphoning_strikes" override_cost="1,1,1,1,1">
+
+		<effect_group>
+		<requirement name="ItemHasTags" tags="melee"/>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="1">
+				<requirement name="ProgressionLevel" progression_name="perkSiphoningStrikes" operation="EQ" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="2">
+				<requirement name="ProgressionLevel" progression_name="perkSiphoningStrikes" operation="EQ" value="2"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="3">
+				<requirement name="ProgressionLevel" progression_name="perkSiphoningStrikes" operation="EQ" value="3"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="4">
+				<requirement name="ProgressionLevel" progression_name="perkSiphoningStrikes" operation="EQ" value="4"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfKilledOther" action="ModifyStats" stat="Health" operation="add" value="5">
+				<requirement name="ProgressionLevel" progression_name="perkSiphoningStrikes" operation="EQ" value="5"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkSiphoningStrikesRank1Desc" long_desc_key="perkSiphoningStrikesRank1DMLongDesc"/>
+			<effect_description level="2" desc_key="perkSiphoningStrikesRank2Desc" long_desc_key="perkSiphoningStrikesRank2DMLongDesc"/>
+			<effect_description level="3" desc_key="perkSiphoningStrikesRank3Desc" long_desc_key="perkSiphoningStrikesRank3DMLongDesc"/>
+			<effect_description level="4" desc_key="perkSiphoningStrikesRank4Desc" long_desc_key="perkSiphoningStrikesRank4DMLongDesc"/>
+			<effect_description level="5" desc_key="perkSiphoningStrikesRank5Desc" long_desc_key="perkSiphoningStrikesRank5DMLongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkMedic" parent="skillCombatPerks" name_key="perkMedicName" desc_key="perkMedicDesc" icon="ui_game_symbol_medical" override_cost="1,1,1,1,1">
+
+		<effect_group>
+
+			<passive_effect name="LootProb" operation="perc_add" level="1,5" value=".4,2" tags="medicalSkill"/>
+
+			<effect_description level="1" desc_key="perkMedicRank1Desc" long_desc_key="perkMedicRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkMedicRank2Desc" long_desc_key="perkMedicRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkMedicRank3Desc" long_desc_key="perkMedicRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkMedicRank4Desc" long_desc_key="perkMedicRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkMedicRank5Desc" long_desc_key="perkMedicRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkBonusBooster" max_level="4" parent="skillCombatPerks" name_key="perkBonusBoosterName" desc_key="perkBonusBoosterDesc" icon="ui_game_symbol_twitch_shield" override_cost="1,1,1,1">
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkBonusBoosterRank1Desc" long_desc_key="perkBonusBoosterRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkBonusBoosterRank2Desc" long_desc_key="perkBonusBoosterRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkBonusBoosterRank3Desc" long_desc_key="perkBonusBoosterRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkBonusBoosterRank4Desc" long_desc_key="perkBonusBoosterRank4LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkPenetrator" parent="skillCombatPerks" name_key="perkPenetratorName" desc_key="perkPenetratorDMDesc" icon="ui_game_symbol_paint_copy_block" override_cost="2,2,2,2,2">
+
+		<effect_group>
+
+			<passive_effect name="EntityPenetrationCount" operation="base_add" level="1,5" value="1,1" tags="pistol"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_add" level="2,5" value="1,1" tags="turretRanged"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_add" level="3,5" value="1,1" tags="pumpShotgun"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_add" level="4,5" value="1,1" tags="chainGun"/>
+			<passive_effect name="EntityPenetrationCount" operation="base_add" level="5" value="1" tags="superShotgun"/>
+
+			<effect_description level="1" desc_key="perkPenetratorRankDM1Desc" long_desc_key="perkPenetratorDMRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkPenetratorRankDM2Desc" long_desc_key="perkPenetratorDMRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkPenetratorRankDM3Desc" long_desc_key="perkPenetratorDMRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkPenetratorRankDM4Desc" long_desc_key="perkPenetratorDMRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkPenetratorRankDM5Desc" long_desc_key="perkPenetratorDMRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkAdrenalineRush" max_level="4" parent="skillCombatPerks" name_key="perkAdrenalineRushName" desc_key="perkAdrenalineRushDesc" icon="ui_game_symbol_boxer" override_cost="3,3,3,3">
+		
+		<effect_group>
+			<requirement name="StatCompareCurrent" stat="health" operation="LTE" value="50"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="2,2,2" tags="9mmGun"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="8,8,8" tags="crossbow"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="2,2,2" tags="turretRanged"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="2,2,2" tags="shotgun"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="2,2,2" tags="chaingun"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="2,2,2" tags="flamethrower"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="4,4,4" tags="PlasmaRifle"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="2,3,4" value="20,20,20" tags="perkDemolitionsExpert"/>
+				<passive_effect name="ExplosionEntityDamage" operation="base_add" level="2,3,4" value="20,20,20" tags="perkDemolitionsExpert"/>
+				<passive_effect name="ExplosionEntityDamage" operation="base_add" level="2,3,4" value="120,120,120" tags="perkBFGExpert"/>
+				<passive_effect name="ExplosionEntityDamage" operation="base_add" level="2,3,4" value="120,120,120" tags="perkBFGExpert">
+				<requirement name="EntityTagCompare" target="other" tags="CyberDamage"/>
+			</passive_effect>
+		</effect_group>
+		
+		<effect_group>
+			<effect_description level="1" desc_key="perkAdrenalineRushRank1Desc" long_desc_key="perkAdrenalineRushRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkAdrenalineRushRank2Desc" long_desc_key="perkAdrenalineRushRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkAdrenalineRushRank3Desc" long_desc_key="perkAdrenalineRushRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkAdrenalineRushRank4Desc" long_desc_key="perkAdrenalineRushRank4LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkPassiveHealing" parent="skillCombatPerks" name_key="perkPassiveHealingName" desc_key="perkPassiveHealingDesc" icon="ui_game_symbol_healing_factor" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<!-- You cannot regen without food or water -->
+			<requirement name="NotHasBuff" buff="buffStatusHungry03"/>
+			<requirement name="NotHasBuff" buff="buffStatusThirsty03"/>
+
+			<passive_effect name="HealthChangeOT" operation="base_add" level="1,2,3,4,5" value=".01,.02,.03,.04,.05">
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value=".599"/>
+			</passive_effect>
+			
+			<passive_effect name="WaterLossPerHealthPointGained" operation="perc_add" level="0,5" value="-1,-1"/>
+			<passive_effect name="FoodLossPerHealthPointGained" operation="perc_add" level="0,5" value="-1,-1"/>
+			
+			<effect_description level="1" desc_key="perkHealingFactorRank1Desc" long_desc_key="perkPassiveHealingRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkHealingFactorRank2Desc" long_desc_key="perkPassiveHealingRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkHealingFactorRank3Desc" long_desc_key="perkPassiveHealingRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkHealingFactorRank4Desc" long_desc_key="perkPassiveHealingRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkHealingFactorRank5Desc" long_desc_key="perkPassiveHealingRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkSelfRepairingArmour" parent="skillCombatPerks" name_key="perkSelfRepairingArmourName" desc_key="perkSelfRepairingArmourDesc" icon="ui_game_symbol_twitch_tough" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			
+			<!-- effect in buffs -->
+			
+			<effect_description level="1" desc_key="perkSelfRepairingArmourRank1Desc" long_desc_key="perkSelfRepairingArmourRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkSelfRepairingArmourRank2Desc" long_desc_key="perkSelfRepairingArmourRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkSelfRepairingArmourRank3Desc" long_desc_key="perkSelfRepairingArmourRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkSelfRepairingArmourRank4Desc" long_desc_key="perkSelfRepairingArmourRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkSelfRepairingArmourRank5Desc" long_desc_key="perkSelfRepairingArmourRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkSlowAbsoption" parent="skillCombatPerks" name_key="perkSlowAbsoptionName" desc_key="perkSlowAbsoptionDesc" icon="ui_game_symbol_stomach" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<!-- Increase MetabolismDuration with each level of the perk -->
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetabolismDuration" operation="set" value="1,.833,.714,.625,.5555,.5"/>
+
+			<effect_description level="1" desc_key="perkSlowMetabolismRank1Desc" long_desc_key="perkSlowAbsoptionRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkSlowMetabolismRank2Desc" long_desc_key="perkSlowAbsoptionRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkSlowMetabolismRank3Desc" long_desc_key="perkSlowAbsoptionRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkSlowMetabolismRank4Desc" long_desc_key="perkSlowAbsoptionRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkSlowMetabolismRank5Desc" long_desc_key="perkSlowAbsoptionRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkPainTolerance" max_level="3" parent="skillCombatPerks" name_key="perkPainToleranceName" desc_key="perkPainToleranceDMDesc" icon="ui_game_symbol_character" override_cost="2,2,2">
+
+		<effect_group>
+			<!-- perk effects attached to demon's hands directly -->
+
+			<effect_description level="1" desc_key="perkPainToleranceRank1Desc" long_desc_key="perkPainToleranceDMRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkPainToleranceRank2Desc" long_desc_key="perkPainToleranceDMRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkPainToleranceRank3Desc" long_desc_key="perkPainToleranceDMRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkReinforcedArmour" max_level="3" parent="skillCombatPerks" name_key="perkReinforcedArmourName" desc_key="perkReinforcedArmourDesc" icon="ui_game_symbol_defense" override_cost="2,2,2">
+
+		<effect_group>
+			<!-- perk effects attached to demon's hands directly -->
+
+			<effect_description level="1" desc_key="perkReinforcedArmourRank1Desc" long_desc_key="perkReinforcedArmourRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkReinforcedArmourRank2Desc" long_desc_key="perkReinforcedArmourRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkReinforcedArmourRank3Desc" long_desc_key="perkReinforcedArmourRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkStrengthenedConstitution" parent="skillCombatPerks" name_key="perkStrengthenedConstitutionName" desc_key="perkStrengthenedConstitutionDesc" icon="ui_game_symbol_candy_health_bar" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<passive_effect name="HealthMax" operation="base_add" level="1,2,3,4,5" value="10,20,30,40,50" />
+			<passive_effect name="StaminaMax" operation="base_add" level="1,2,3,4,5" value="10,20,30,40,50" />
+			
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="0,-2,-4,-4,-6,-6"/>
+			
+			<effect_description level="1" desc_key="perkStrengthenedConstitutionRank1Desc" long_desc_key="perkStrengthenedConstitutionRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkStrengthenedConstitutionRank2Desc" long_desc_key="perkStrengthenedConstitutionRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkStrengthenedConstitutionRank3Desc" long_desc_key="perkStrengthenedConstitutionRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkStrengthenedConstitutionRank4Desc" long_desc_key="perkStrengthenedConstitutionRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkStrengthenedConstitutionRank5Desc" long_desc_key="perkStrengthenedConstitutionRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkSturdyBody" parent="skillCombatPerks" name_key="perkSturdyBodyName" desc_key="perkSturdyBodyDesc" icon="ui_game_symbol_twitch_crit_immune" override_cost="1,1,1,1,1">
+
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_add" level="1,2,3,4,5" value=".2,.4,.6,.8,99" tags="buffArmSprainedCHTrigger,buffArmBroken,buffArmSprained,buffLegSprainedCHTrigger,buffLegBroken,buffLegSprained,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+			<passive_effect name="BuffResistance" operation="base_add" level="0,1,2,3,4,5" value=".8,.84,.88,.92,.96,99" tags="buff2ndDegreeBurn"/>
+			<passive_effect name="BuffResistance" operation="base_add" level="0,1,2,3,4,5" value=".6,.6,.6,.6,.6,.6" tags="buffInfectionMain"/>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$BurntHazardTimerMax" operation="GT" value="300"/></triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$DesertHazardTimerMax" operation="GT" value="300"/></triggered_effect>
+				
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$SnowHazardTimerMax" operation="GT" value="300"/></triggered_effect>
+				
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="GT" value="300"/></triggered_effect>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="GT" value="300"/></triggered_effect>
+				
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="300">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="GT" value="300"/></triggered_effect>
+				
+			
+			<effect_description level="1" desc_key="perkSturdyBodyRank1Desc" long_desc_key="perkSturdyBodyRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkSturdyBodyRank2Desc" long_desc_key="perkSturdyBodyRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkSturdyBodyRank3Desc" long_desc_key="perkSturdyBodyRank3LongDesc"/>
+			<effect_description level="4" desc_key="perkSturdyBodyRank4Desc" long_desc_key="perkSturdyBodyRank4LongDesc"/>
+			<effect_description level="5" desc_key="perkSturdyBodyRank5Desc" long_desc_key="perkSturdyBodyRank5LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkKnowThyEnemy" max_level="3" parent="skillCombatPerks" name_key="perkKnowThyEnemyName" desc_key="perkKnowThyEnemyDesc" icon="ui_game_symbol_intellect" override_cost="1,1,2">
+
+		<effect_group>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="1" tags="9mmGun"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="4" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="1" tags="turretRanged"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="1" tags="shotgun"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="1" tags="chaingun"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="1" tags="flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="2" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="3" value="10" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="3" value="10" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="3" value="60" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="3" value="60" tags="perkBFGExpert">
+				<requirement name="EntityTagCompare" target="other" tags="CyberDamage"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<effect_description level="1" desc_key="perkKnowThyEnemyRank1Desc" long_desc_key="perkKnowThyEnemyRank1LongDesc"/>
+			<effect_description level="2" desc_key="perkKnowThyEnemyRank2Desc" long_desc_key="perkKnowThyEnemyRank2LongDesc"/>
+			<effect_description level="3" desc_key="perkKnowThyEnemyRank3Desc" long_desc_key="perkKnowThyEnemyRank3LongDesc"/>
+		</effect_group>
+	</perk>
+	
+	<!-- <perk name="perkHandgunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkHandgunAmmoPouchName" desc_key="perkHandgunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkCrossbowAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkCrossbowAmmoPouchName" desc_key="perkCrossbowAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkTurretAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkTurretAmmoPouchName" desc_key="perkTurretAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkShotgunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkShotgunAmmoPouchName" desc_key="perkShotgunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkChaingunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkChaingunAmmoPouchName" desc_key="perkChaingunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkFuelAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkFuelAmmoPouchName" desc_key="perkFuelAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk>
+	
+	<perk name="perkRocketAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkRocketAmmoPouchName" desc_key="perkRocketAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
+
+		<effect_group>
+
+			<effect_description level="1" desc_key="" long_desc_key=""/>
+
+		</effect_group>
+	</perk> -->
+
+<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_01_WATER -->
+	<book name="perkFiremansAlmanacHeat" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacHeatDesc" long_desc_key="perkFiremansAlmanacHeatLongDesc">
+		<!-- Adds a chance to loot more water -->
+		<effect_group>
+			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<passive_effect name="LootQuantity" operation="perc_add" level="1" value="1" tags="riverWater"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacHeat">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacHeat" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacHeat">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacHeat" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_02_THE_FIREMAN_AXE_MOD -->
+	<book name="perkFiremansAlmanacAxes" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" name_key="bookFiremansAlmanacAxes" desc_key="perkFiremansAlmanacAxesDescDM" long_desc_key="perkFiremansAlmanacAxesLongDescDM">
+		<effect_group>
+			<passive_effect name="HyperthermalResist" operation="base_add" level="1" value="2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacAxes">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacAxes" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacAxes">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacAxes" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_03_SPEED -->
+	<book name="perkFiremansAlmanacSpeed" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacSpeedDesc" long_desc_key="perkFiremansAlmanacSpeedLongDesc">
+		<effect_group>
+				<passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value="0.05" tags="axe"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacSpeed">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacSpeed" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacSpeed">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacSpeed" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_04_MOLOTOV -->
+	<book name="perkFiremansAlmanacMolotov" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacMolotovDescDM" long_desc_key="perkFiremansAlmanacMolotovLongDescDM">
+		<effect_group>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1" tags="flamethrower"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacMolotov">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacMolotov">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacMolotov" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_05_PREVENTION -->
+	<book name="perkFiremansAlmanacPrevention" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacPreventionDesc" long_desc_key="perkFiremansAlmanacPreventionLongDesc">
+		<effect_group>
+			<passive_effect name="BuffResistance" operation="base_add" level="1" value="0.25" tags="buffBurningMolotov,buffBurningElement,buffBurningEnvironment,buffBurningEnvironmentHack"/>
+			<passive_effect name="BuffResistance" operation="base_add" level="1" value="0.05" tags="buff2ndDegreeBurn"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacPrevention">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacPrevention" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacPrevention">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacPrevention" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_06_HARVEST -->
+	<book name="perkFiremansAlmanacHarvest" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacHarvestDesc" long_desc_key="perkFiremansAlmanacHarvestLongDesc">
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="perc_add" level="1" value="0.1" tags="coalBurnedDmg"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacHarvest">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacHarvest" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacHarvest">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacHarvest" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_07_EQUIPMENT -->
+	<book name="perkFiremansAlmanacEquipment" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" name_key="bookFiremansAlmanacEquipment" desc_key="perkFiremansAlmanacEquipmentDesc" long_desc_key="perkFiremansAlmanacEquipmentLongDesc">
+		<effect_group>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" level="1" value="-.25" tags="vehicle"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacEquipment">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookFiremansAlmanacEquipment">
+				<requirement name="ProgressionLevel" progression_name="perkFiremansAlmanacEquipment" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 THE_FIREMAN'S_ALMANAC_COMPLETE -->
+	<book name="perkFiremansAlmanacComplete" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacCompleteDescDM" long_desc_key="perkFiremansAlmanacCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2" tags="chainsaw"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** LUCKY_LOOTER_VOLUME_01_DUKES -->
+	<book name="perkLuckyLooterDukes" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterDukesDesc" long_desc_key="perkLuckyLooterDukesLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="dukes"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterDukes">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterDukes" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterDukes">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterDukes" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_02_AMMUNITION -->
+	<book name="perkLuckyLooterAmmunition" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterAmmoDesc" long_desc_key="perkLuckyLooterAmmoLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ammo"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterAmmunition">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterAmmunition" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterAmmunition">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterAmmunition" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_03_BRASS -->
+	<book name="perkLuckyLooterBrass" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterBrassDesc" long_desc_key="perkLuckyLooterBrassLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="brass"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterBrass">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterBrass" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterBrass">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterBrass" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_04_LEAD -->
+	<book name="perkLuckyLooterLead" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterLeadDesc" long_desc_key="perkLuckyLooterLeadLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="lead"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterLead">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterLead" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterLead">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterLead" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_05_JUNK -->
+	<book name="perkLuckyLooterBooks" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterBooksDesc" long_desc_key="perkLuckyLooterBooksLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="junk"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterBooks">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterBooks" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterBooks">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterBooks" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_06_FOOD -->
+	<book name="perkLuckyLooterFood" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterFoodDesc" long_desc_key="perkLuckyLooterFoodLongDesc">
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" level="1" value=".2" tags="food"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterFood">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterFood" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterFood">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterFood" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** LUCKY_LOOTER_VOLUME_07_MEDICAL -->
+	<book name="perkLuckyLooterMedical" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterMedicalDesc" long_desc_key="perkLuckyLooterMedicalLongDesc">
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" level="1" value=".2" tags="powerupitem,medicalDM"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterMedical">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterMedical" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookLuckyLooterMedical">
+				<requirement name="ProgressionLevel" progression_name="perkLuckyLooterMedical" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 LUCKY_LOOTER_COMPLETE -->
+	<book name="perkLuckyLooterComplete" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterCompleteDescDM" long_desc_key="perkLuckyLooterCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" level="1" value=".2" tags="itembonus"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** WASTELAND_TREASURES_VOLUME_01_HONEY -->
+	<book name="perkWasteTreasuresHoney" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresHoneyDesc" long_desc_key="perkWasteTreasuresHoneyLongDesc">
+		<effect_group>
+				<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresHoneyHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresHoney">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresHoney" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresHoney">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresHoney" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_02_COFFINS -->
+	<book name="perkWasteTreasuresCoffins" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresCoffinsDesc" long_desc_key="perkWasteTreasuresCoffinsLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresCoffinHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresCoffins">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCoffins" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresCoffins">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCoffins" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_03_ACID -->
+	<book name="perkWasteTreasuresAcid" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresAcidDesc" long_desc_key="perkWasteTreasuresAcidLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresAcidHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresAcid">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresAcid" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresAcid">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresAcid" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_04_PURE_MINERAL_WATER -->
+	<book name="perkWasteTreasuresWater" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" name_key="bookWasteTreasuresWater" desc_key="perkWasteTreasuresWaterDesc" long_desc_key="perkWasteTreasuresWaterLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkJarPureMineralWaterBundle"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresWater">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresWater" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresWater">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresWater" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_05_DOOR_KNOBS -->
+	<book name="perkWasteTreasuresDoors" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresDoorsDesc" long_desc_key="perkWasteTreasuresDoorsLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresDoorHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresDoors">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresDoors" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresDoors">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresDoors" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_06_CLOTH -->
+	<book name="perkWasteTreasuresCloth" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" name_key="bookWasteTreasuresCloth" desc_key="perkWasteTreasuresClothDesc" long_desc_key="perkWasteTreasuresClothLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceCloth"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresCloth">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCloth" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresCloth">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresCloth" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** WASTELAND_TREASURES_VOLUME_07_SINKS -->
+	<book name="perkWasteTreasuresSinks" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresSinksDesc" long_desc_key="perkWasteTreasuresSinksLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="WasteTreasuresSinkHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookWasteTreasuresSinks">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresSinks" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookWasteTreasuresSinks">
+				<requirement name="ProgressionLevel" progression_name="perkWasteTreasuresSinks" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 WASTELAND_TREASURES_COMPLETE -->
+	<book name="perkWasteTreasuresComplete" parent="skillWasteTreasures" max_level="1" base_skill_point_cost="0" desc_key="perkWasteTreasuresCompleteDesc" long_desc_key="perkWasteTreasuresCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" level="1" value="2" tags="WasteTreasuresCompleteHarvest"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** HUNTING_JOURNAL_VOLUME_01_BEARS -->
+	<book name="perkHuntingJournalBears" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalBearsDesc" long_desc_key="perkHuntingJournalBearsLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="bear"/>
+			</passive_effect>
+		</effect_group>	
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalBears">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalBears" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalBears">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalBears" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_02_WOLVES -->
+	<book name="perkHuntingJournalWolves" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalWolvesDesc" long_desc_key="perkHuntingJournalWolvesLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="wolf,dog"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalWolves">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalWolves" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalWolves">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalWolves" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_03_COYOTES -->
+	<book name="perkHuntingJournalCoyotes" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalCoyotesDesc" long_desc_key="perkHuntingJournalCoyotesLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="coyote"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalCoyotes">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalCoyotes" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalCoyotes">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalCoyotes" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_04_MOUNTAINLIONS -->
+	<book name="perkHuntingJournalMountainLions" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalMountainLionsDesc" long_desc_key="perkHuntingJournalMountainLionsLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="mountainlion"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalMountainLions">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalMountainLions" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalMountainLions">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalMountainLions" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_05_DEER -->
+	<book name="perkHuntingJournalDeer" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalDeerDesc" long_desc_key="perkHuntingJournalDeerLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="deer"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalDeer">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalDeer" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalDeer">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalDeer" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_06_VULTURES -->
+	<book name="perkHuntingJournalVultures" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalVulturesDescDM" long_desc_key="perkHuntingJournalVulturesLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalVultures">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalVultures" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalVultures">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalVultures" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** HUNTING_JOURNAL_VOLUME_07_SELF_DEFENSE -->
+	<book name="perkHuntingJournalSelfDefense" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalSelfDefenseDescDM" long_desc_key="perkHuntingJournalSelfDefenseLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="knife,perkBrawler,chainsaw,9mmGun,shotgun,turretRanged,chaingun,flamethrower"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="2">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="4">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="human,zombie,demon"/>
+				<requirement name="!EntityTagCompare" target="other" tags="bear,wolf,dog,coyote,mountainlion,deer,vulture,flyingdemon"/>
+			</passive_effect>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60">
+				<requirement name="EntityTagCompare" target="other" tags="CyberDamage"/>
+			</passive_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHuntingJournalSelfDefense">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalSelfDefense" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHuntingJournalSelfDefense">
+				<requirement name="ProgressionLevel" progression_name="perkHuntingJournalSelfDefense" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 HUNTING_JOURNAL_COMPLETE -->
+	<book name="perkHuntingJournalComplete" parent="skillHuntingJournal" max_level="1" base_skill_point_cost="0" desc_key="perkHuntingJournalCompleteDesc" long_desc_key="perkHuntingJournalCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="butcherHarvest"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** ART_OF_MINING_VOLUME_01_LUCKY_STRIKE -->
+	<book name="perkArtOfMiningLuckyStrike" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningLuckyStrikeDesc" long_desc_key="perkArtOfMiningLuckyStrikeLongDesc">
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_set" level="1" value="1" tags="artOfMiningLuckyStrikeHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningLuckyStrike">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningLuckyStrike">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningLuckyStrike" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_02_DIAMOND_TIP_MOD -->
+	<book name="perkArtOfMiningDiamondTools" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningDiamondTools" desc_key="perkArtOfMiningDiamondToolsDescDM" long_desc_key="perkArtOfMiningDiamondToolsLongDescDM">
+		<effect_group>
+			<passive_effect name="AttacksPerMinute" operation="perc_add" level="1" value="0.1" tags="miningTool,shovel"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningDiamondTools">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningDiamondTools" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningDiamondTools">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningDiamondTools" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_03_COFFEE -->
+	<book name="perkArtOfMiningCoffee" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningCoffee" desc_key="perkArtOfMiningCoffeeDesc" long_desc_key="perkArtOfMiningCoffeeLongDesc">
+		<effect_group>
+			<requirement name="HasBuff" buff="buffCoffee"/>
+			<requirement name="ItemHasTags" tags="miningTool"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="HasBuff" buff="buffBlackStrapCoffee"/>
+			<requirement name="ItemHasTags" tags="miningTool"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".1" tags="oreWoodHarvest"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningCoffee">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningCoffee" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningCoffee">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningCoffee" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_04_BLACK_STRAP -->
+	<book name="perkArtOfMiningBlackStrap" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningBlackStrap" desc_key="perkArtOfMiningBlackStrapDesc" long_desc_key="perkArtOfMiningBlackStrapLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="drinkjarBlackStrapCoffee"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningBlackStrap">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningBlackStrap" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningBlackStrap">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningBlackStrap" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_05_BUNDLES -->
+	<book name="perkArtOfMiningPallets" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningPallets" desc_key="perkArtOfMiningPalletsDesc" long_desc_key="perkArtOfMiningPalletsLongDesc">
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="resourceRockSmallBundle,resourceWoodBundle,resourceScrapIronBundle,resourceOilShaleBundle,resourcePotassiumNitratePowderBundle,resourceLeadBundle,resourceCoalBundle,resourceClayLumpBundle,resourceScrapBrassBundle,resourceGunPowderBundle"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningPallets">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningPallets">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningPallets" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_06_AVALANCHE -->
+	<book name="perkArtOfMiningAvalanche" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningAvalancheDesc" long_desc_key="perkArtOfMiningAvalancheLongDesc">
+		<effect_group>
+			<passive_effect name="FallingBlockDamage" operation="perc_add" level="1" value="-.5"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningAvalanche">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningAvalanche" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningAvalanche">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningAvalanche" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ART_OF_MINING_VOLUME_07_DAMAGE -->
+	<book name="perkArtOfMiningDamage" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" name_key="bookArtOfMiningDamage" desc_key="perkArtOfMiningDamageDesc" long_desc_key="perkArtOfMiningDamageLongDesc">
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="perc_add" level="1" value=".1" tags="perkMiner69r"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookArtOfMiningDamage">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookArtOfMiningDamage">
+				<requirement name="ProgressionLevel" progression_name="perkArtOfMiningDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 ART_OF_MINING_COMPLETE -->
+	<book name="perkArtOfMiningComplete" parent="skillArtOfMining" max_level="1" base_skill_point_cost="0" desc_key="perkArtOfMiningCompleteDesc" long_desc_key="perkArtOfMiningCompleteLongDesc">
+		<effect_group>
+			<requirement name="ItemHasTags" tags="miningTool"/>
+				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="oreWoodHarvest"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** RANGER'S_GUIDE_TO_ARCHERY_VOLUME_01_ARROW_RECOVERY -->
+	<book name="perkRangersArrowRecovery" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersArrowRecoveryDesc" long_desc_key="perkRangersArrowRecoveryLongDesc">
+		<effect_group>
+			<passive_effect name="ProjectileStickChance" operation="perc_add" level="1" value=".2"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRangersArrowRecovery">
+				<requirement name="ProgressionLevel" progression_name="perkRangersArrowRecovery" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRangersArrowRecovery">
+				<requirement name="ProgressionLevel" progression_name="perkRangersArrowRecovery" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** RANGER'S_GUIDE_TO_ARCHERY_VOLUME_02_DAMAGE -->
+	<book name="perkRangersExplodingBolts" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="bookRangersExplodingBolts" desc_key="perkRangersExplodingBoltsDescDM" long_desc_key="perkRangersExplodingBoltsLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="6"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRangersExplodingBolts">
+				<requirement name="ProgressionLevel" progression_name="perkRangersExplodingBolts" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRangersExplodingBolts">
+				<requirement name="ProgressionLevel" progression_name="perkRangersExplodingBolts" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** RANGER'S_GUIDE_TO_ARCHERY_VOLUME_05_Ammunition -->
+	<book name="perkRangersFlamingArrows" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="bookRangersFlamingArrows" desc_key="perkRangersFlamingArrowsDescDM" long_desc_key="perkRangersFlamingArrowsLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRangersFlamingArrows">
+				<requirement name="ProgressionLevel" progression_name="perkRangersFlamingArrows" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRangersFlamingArrows">
+				<requirement name="ProgressionLevel" progression_name="perkRangersFlamingArrows" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** RANGER'S_GUIDE_TO_ARCHERY_VOLUME_06_MAINTENANCE -->
+	<book name="perkRangersForestGuide" parent="skillArchery" max_level="1" base_skill_point_cost="0" desc_key="perkRangersForestGuideDescDM" long_desc_key="perkRangersForestGuideLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="crossbow"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="1" value=".2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRangersForestGuide">
+				<requirement name="ProgressionLevel" progression_name="perkRangersForestGuide" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRangersForestGuide">
+				<requirement name="ProgressionLevel" progression_name="perkRangersForestGuide" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 RANGER'S_GUIDE_TO_ARCHERY_COMPLETE -->
+	<book name="perkRangersComplete" parent="skillArchery" max_level="1" base_skill_point_cost="0" name_key="perkRangersCompleteName" desc_key="perkRangersCompleteDescDM" long_desc_key="perkRangersCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ScroungerBolt"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** PISTOL_PETE_VOLUME_01_TAKE_AIM -->
+	<book name="perkPistolPeteTakeAim" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteTakeAimDesc" long_desc_key="perkPistolPeteTakeAimLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="9mmGun"/>
+				<passive_effect name="MaxRange" operation="perc_add" level="1" value=".2" />
+				<passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookPistolPeteTakeAim">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteTakeAim" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookPistolPeteTakeAim">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteTakeAim" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** PISTOL_PETE_VOLUME_03_STEADY_HAND -->
+	<book name="perkPistolPeteSteadyHand" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteSteadyHandDescDM" long_desc_key="perkPistolPeteSteadyHandLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="9mmGun"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="-.25" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookPistolPeteSteadyHand">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteSteadyHand" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookPistolPeteSteadyHand">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteSteadyHand" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** PISTOL_PETE_VOLUME_04_MAINTENANCE -->
+	<book name="perkPistolPeteMaintenance" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteMaintenanceDescDM" long_desc_key="perkPistolPeteMaintenanceLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="9mmGun"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookPistolPeteMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteMaintenance" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookPistolPeteMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteMaintenance" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** PISTOL_PETE_VOLUME_07_DAMAGE -->
+	<book name="perkPistolPeteDamage" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" desc_key="perkPistolPeteDamageDMDesc" long_desc_key="perkPistolPeteDamageDMLongDesc">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="9mmGun"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="1" value="1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookPistolPeteDamage">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookPistolPeteDamage">
+				<requirement name="ProgressionLevel" progression_name="perkPistolPeteDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 PISTOL_PETE_COMPLETE -->
+	<book name="perkPistolPeteComplete" parent="skillPistolPete" max_level="1" base_skill_point_cost="0" name_key="perkPistolPeteCompleteName" desc_key="perkPistolPeteCompleteDMDescDM" long_desc_key="perkPistolPeteCompleteDMLongDescDM">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ScroungerHandgun"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** TECH_JUNKIE_VOLUME_01_DAMAGE -->
+	<book name="perkTechJunkie1Damage" parent="skillTechJunkie" max_level="1" base_skill_point_cost="0" desc_key="perkTechJunkie1DamageDesc" long_desc_key="perkTechJunkie1DamageLongDesc">
+		<effect_group name="held and deployed">
+			<passive_effect name="EntityDamage" operation="base_add" level="1" value="1" tags="perkTurrets,deployed"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookTechJunkie1Damage">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie1Damage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookTechJunkie1Damage">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie1Damage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** TECH_JUNKIE_VOLUME_02_MAINTENANCE -->
+	<book name="perkTechJunkie2Maintenance" parent="skillTechJunkie" max_level="1" base_skill_point_cost="0" desc_key="perkTechJunkie2MaintenanceDescDM" long_desc_key="perkTechJunkie2MaintenanceLongDescDM">
+		<effect_group>
+			<passive_effect name="MaxRange" operation="perc_add" level="1" value=".2" tags="perkTurrets,deployed"/>
+			<passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".2" tags="perkTurrets,deployed"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookTechJunkie2Maintenance">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie2Maintenance" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookTechJunkie2Maintenance">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie2Maintenance" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** TECH_JUNKIE_VOLUME_03_APAMMO -->
+	<book name="perkTechJunkie3APAmmo" parent="skillTechJunkie" max_level="1" base_skill_point_cost="0" name_key="bookTechJunkie3APAmmo" desc_key="perkTechJunkie3APAmmoDescDM" long_desc_key="perkTechJunkie3APAmmoLongDescDM">
+		<effect_group>
+			<passive_effect name="MagazineSize" operation="perc_add" level="1" value=".2" tags="perkTurrets,deployed"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookTechJunkie3APAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie3APAmmo" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookTechJunkie3APAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie3APAmmo" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** TECH_JUNKIE_VOLUME_07_HYDRAULICS -->
+	<book name="perkTechJunkie7Hydraulics" parent="skillTechJunkie" max_level="1" base_skill_point_cost="0" desc_key="perkTechJunkie7HydraulicsDesc" long_desc_key="perkTechJunkie7HydraulicsLongDesc">
+		<effect_group>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" tags="turretRanged"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" tags="turretRanged,deployed"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookTechJunkie7Hydraulics">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie7Hydraulics" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookTechJunkie7Hydraulics">
+				<requirement name="ProgressionLevel" progression_name="perkTechJunkie7Hydraulics" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 TECH_JUNKIE_COMPLETE -->
+	<book name="perkTechJunkie8Complete" parent="skillTechJunkie" max_level="1" base_skill_point_cost="0" name_key="bookTechJunkie8Complete" desc_key="perkTechJunkie8CompleteDescDM" long_desc_key="perkTechJunkie8CompleteLongDescDM">
+		<effect_group>
+			<!-- 
+			Effect in buffs
+			<passive_effect name="JunkTurretActiveCount" operation="base_set" value="2"/>
+			<passive_effect name="JunkTurretActiveRange" operation="base_add"  value="5"/> -->
+		</effect_group>
+	</book>
+	
+	<!-- *** SHOTGUN_MESSIAH_VOLUME_01_DAMAGE -->
+	<book name="perkShotgunMessiahDamage" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahDamageDescDM" long_desc_key="perkShotgunMessiahDamageLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="1" value="1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookShotgunMessiahDamage">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookShotgunMessiahDamage">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SHOTGUN_MESSIAH_VOLUME_05_MAINTENANCE -->
+	<book name="perkShotgunMessiahMaintenance" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahMaintenanceDescDM" long_desc_key="perkShotgunMessiahMaintenanceLongDescDM">
+		<effect_group>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" tags="pumpShotgun"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" level="1" value=".1" tags="superShotgun"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookShotgunMessiahMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMaintenance" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookShotgunMessiahMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMaintenance" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SHOTGUN_MESSIAH_VOLUME_06_TUBE_EXTENDER_MAGAZINE -->
+	<book name="perkShotgunMessiahMagazine" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="bookShotgunMessiahMagazine" desc_key="perkShotgunMessiahMagazineDescDM" long_desc_key="perkShotgunMessiahMagazineLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<passive_effect name="MaxRange" operation="perc_add" level="1" value=".2" />
+				<passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookShotgunMessiahMagazine">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMagazine" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookShotgunMessiahMagazine">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahMagazine" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SHOTGUN_MESSIAH_VOLUME_07_PARTY_STARTER -->
+	<book name="perkShotgunMessiahPartyStarter" parent="skillShotguns" max_level="1" base_skill_point_cost="0" desc_key="perkShotgunMessiahPartyStarterDescDM" long_desc_key="perkShotgunMessiahPartyStarterLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="shotgun"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="-.15" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookShotgunMessiahPartyStarter">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahPartyStarter" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookShotgunMessiahPartyStarter">
+				<requirement name="ProgressionLevel" progression_name="perkShotgunMessiahPartyStarter" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 SHOTGUN_MESSIAH_COMPLETE -->
+	<book name="perkShotgunMessiahComplete" parent="skillShotguns" max_level="1" base_skill_point_cost="0" name_key="perkShotgunMessiahCompleteName" desc_key="perkShotgunMessiahCompleteDMDesc" long_desc_key="perkShotgunMessiahCompleteDMLongDesc">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ScroungerShells"/>
+		</effect_group>
+	</book>
+
+	<!-- *** AUTOMATIC_WEAPONS_HANDBOOK_VOLUME_01_DAMAGE -->
+	<book name="perkAutoWeaponsDamage" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsDamageDescDM" long_desc_key="perkAutoWeaponsDamageLongDescDM">
+		<effect_group>
+				<passive_effect name="EntityDamage" operation="base_add" level="1" value="1" tags="chaingun"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookAutoWeaponsDamage">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookAutoWeaponsDamage">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** AUTOMATIC_WEAPONS_HANDBOOK_VOLUME_03_MAINTENANCE -->
+	<book name="perkAutoWeaponsMaintenance" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsMaintenanceDescDM" long_desc_key="perkAutoWeaponsMaintenanceLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="chaingun"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookAutoWeaponsMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMaintenance" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookAutoWeaponsMaintenance">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMaintenance" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** AUTOMATIC_WEAPONS_HANDBOOK_VOLUME_05_RECOIL -->
+	<book name="perkAutoWeaponsRecoil" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsRecoilDesc" long_desc_key="perkAutoWeaponsRecoilLongDesc">
+		<effect_group>
+			<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+				<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+			</triggered_effect>
+		</effect_group>
+
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsRecoil" operation="Equals" value="1"/>
+			<requirement name="ItemHasTags" tags="perkBookAutoWeapons"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0">
+					<requirement name="RoundsInMagazine" operation="LT" value="1"/>
+				</triggered_effect>
+
+				<!-- to do
+				check balancing when mod installation works again -->
+
+				<!-- ak47 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.9"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.7"/>-->
+				 <!-- M60 <passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="1.5"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value="0.83"/>-->
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.015"/>
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="multiply" value="@.AutoWeaponsRecoilCount"/>
+
+				<triggered_effect trigger="onSelfRangedBurstShotStart" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="-.5">
+					<requirement name="CVarCompare" cvar=".AutoWeaponsRecoilEffect" operation="LT" value="-.5"/>
+				</triggered_effect>
+
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="@.AutoWeaponsRecoilEffect"/>
+		</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilCount" operation="set" value="0"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".AutoWeaponsRecoilEffect" operation="set" value="0"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookAutoWeaponsRecoil">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsRecoil" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookAutoWeaponsRecoil">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsRecoil" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** AUTOMATIC_WEAPONS_HANDBOOK_VOLUME_07_Hipfire -->
+	<book name="perkAutoWeaponsMachineGuns" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" name_key="bookAutoWeaponsMachineGuns" desc_key="perkAutoWeaponsMachineGunsDesc" long_desc_key="perkAutoWeaponsMachineGunsLongDesc">
+		<effect_group>
+			<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" operation="Equals" value="1"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" level="1" value="-.2" tags="perkBookAutoWeapons"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookAutoWeaponsMachineGuns">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookAutoWeaponsMachineGuns">
+				<requirement name="ProgressionLevel" progression_name="perkAutoWeaponsMachineGuns" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 AUTOMATIC_WEAPONS_HANDBOOK_COMPLETE -->
+	<book name="perkAutoWeaponsComplete" parent="skillAutoWeapons" max_level="1" base_skill_point_cost="0" desc_key="perkAutoWeaponsCompleteDescDM" long_desc_key="perkAutoWeaponsCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ScroungerChaingun"/>
+		</effect_group>
+	</book>
+	<!-- *** SNIPER_VOLUME_01_DAMAGE -->
+	<book name="perkSniperDamage" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperDamageDescDM" long_desc_key="perkSniperDamageLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+				<passive_effect name="EntityDamage" operation="base_add" level="1" value="2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookSniperDamage">
+				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookSniperDamage">
+				<requirement name="ProgressionLevel" progression_name="perkSniperDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SNIPER_VOLUME_04_RELOAD -->
+	<book name="perkSniperReload" parent="skillSniper" max_level="1" base_skill_point_cost="0" desc_key="perkSniperReloadDescDM" long_desc_key="perkSniperReloadLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookSniperReload">
+				<requirement name="ProgressionLevel" progression_name="perkSniperReload" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookSniperReload">
+				<requirement name="ProgressionLevel" progression_name="perkSniperReload" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SNIPER_VOLUME_06_APAMMO -->
+	<book name="perkSniperAPAmmo" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="bookSniperAPAmmo" desc_key="perkSniperAPAmmoDescDM" long_desc_key="perkSniperAPAmmoLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="1" value=".2" tags="perkDeadEye"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookSniperAPAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkSniperAPAmmo" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookSniperAPAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkSniperAPAmmo" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** SNIPER_VOLUME_07_HPAMMO -->
+	<book name="perkSniperHPAmmo" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="bookSniperHPAmmo" desc_key="perkSniperHPAmmoDescDM" long_desc_key="perkSniperHPAmmoLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="PlasmaRifle"/>
+				<passive_effect name="MaxRange" operation="perc_add" level="1" value=".2" />
+				<passive_effect name="DamageFalloffRange" operation="perc_add" level="1" value=".2" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookSniperHPAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkSniperHPAmmo" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookSniperHPAmmo">
+				<requirement name="ProgressionLevel" progression_name="perkSniperHPAmmo" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7/7 SNIPER_COMPLETE -->
+	<book name="perkSniperComplete" parent="skillSniper" max_level="1" base_skill_point_cost="0" name_key="perkSniperCompleteName" desc_key="perkSniperCompleteDescDM" long_desc_key="perkSniperCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ScroungerCells"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60" tags="perkBFGExpert"/>
+			<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="60" tags="perkBFGExpert">
+				<requirement name="EntityTagCompare" target="other" tags="CyberDamage"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	
+	<!-- *** ROCKETLAUNCHER_VOLUME_01 -->
+	<book name="perkRocketLauncherDamage" parent="skillRocketLauncher" max_level="1" base_skill_point_cost="0" desc_key="perkRocketLauncherDamageDescDM" long_desc_key="perkRocketLauncherDamageLongDescDM">
+		<effect_group>
+				<passive_effect name="EntityDamage" operation="base_add" level="1" value="10" tags="perkDemolitionsExpert"/>
+				<passive_effect name="ExplosionEntityDamage" operation="base_add" level="1" value="10" tags="perkDemolitionsExpert"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRocketLauncherDamage">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherDamage" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRocketLauncherDamage">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherDamage" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ROCKETLAUNCHER_VOLUME_02 -->
+	<book name="perkRocketLauncherFirerate" parent="skillRocketLauncher" max_level="1" base_skill_point_cost="0" desc_key="perkRocketLauncherFirerateDescDM" long_desc_key="perkRocketLauncherFirerateLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+				<passive_effect name="RoundsPerMinute" operation="perc_add" level="1" value=".1" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRocketLauncherFirerate">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherFirerate" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRocketLauncherFirerate">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherFirerate" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ROCKETLAUNCHER_VOLUME_03 -->
+	<book name="perkRocketLauncherVelocity" parent="skillRocketLauncher" max_level="1" base_skill_point_cost="0" name_key="bookRocketLauncherVelocity" desc_key="perkRocketLauncherVelocityDescDM" long_desc_key="perkRocketLauncherVelocityLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+				<passive_effect name="ProjectileVelocity" operation="perc_add" level="1" value=".2"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRocketLauncherVelocity">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherVelocity" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRocketLauncherVelocity">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherVelocity" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** ROCKETLAUNCHER_VOLUME_04 -->
+	<book name="perkRocketLauncherRecoil" parent="skillRocketLauncher" max_level="1" base_skill_point_cost="0" name_key="bookRocketLauncherRecoil" desc_key="perkRocketLauncherRecoilDescDM" long_desc_key="perkRocketLauncherRecoilLongDescDM">
+		<effect_group>
+			<requirement name="HoldingItemHasTags" tags="perkDemolitionsExpert"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.25"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.25"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.25"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.25"/>
+				<passive_effect name="WeaponHandling" operation="perc_add" value=".25"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value="1.5" tags="bookRocketLauncherRecoil">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherRecoil" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookRocketLauncherRecoil">
+				<requirement name="ProgressionLevel" progression_name="perkRocketLauncherRecoil" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 4/4 ROCKETLAUNCHER_COMPLETE -->
+	<book name="perkRocketLauncherComplete" parent="skillRocketLauncher" max_level="1" base_skill_point_cost="0" name_key="perkRocketLauncherCompleteName" desc_key="perkRocketLauncherCompleteDescDM" long_desc_key="perkRocketLauncherCompleteLongDescDM">
+		<effect_group>
+			<passive_effect name="LootQuantity" operation="base_add" level="1" value="1" tags="ScroungerRocket"/>
+		</effect_group>
+	</book>
+</perks>
+</append>
+<!-- <set xpath="/progression/level[@skill_points_per_level='1']/@skill_points_per_level">0</set> -->
+<setattribute xpath="/progression/level" name="skill_point_level_cap">60</setattribute>
+</configs>

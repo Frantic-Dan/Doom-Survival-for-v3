@@ -1,0 +1,49 @@
+Doomed: Survival wouldn't have been possible without the help from other people in both the Doom and 7 Days to Die communities.
+If I have missed anyone in the credits, or credited the wrong person/people, please let me know.
+
+Custom HUD/UI												AuroraGiggleFairy
+12 slot toolbelt											AuroraGiggleFairy
+Legacy Vanilla Hunting Knife								TFP for model, Janik07 for converting model to v2
+Flamethrower												izayo
+Super Shotgun												izayo
+Pump Shotgun												izayo
+Chaingun													izayo
+Handgun														izayo
+Rocket Launcher												Closer_ex, M14's ZettaiRyouiki, ChoccyMilk (Can't remember who so I'm crediting everyone)
+Plasma Rifle and BFG 9000 Models							NotARealStudio
+Unity rigging Plasma Rifle									Mumphy
+Unity rigging BFG 9000										Shrader97
+HD Icons													MarcelusSK
+HD classic doom sounds										ID Software for original sounds, SeanTheBermanator for HD version
+Ammo stack size (Stack Master)								PxntxrezOfficial
+
+3D Demon models												vasyan777 and Alchee66 
+Credits for textures: Chilvence, KuriKai, freelanzer (Jacob Ostergaard / freelanzer@gmail.com), reinchard, Tea Monster, Jive, Cpt Howdy, Fredrik Johansson, Dorian, gray, Zimond, harryboam, esselfortium, DaniJ, Envid, Tabun, MR_Rocket (Ron Goode), flaviofak, John Doe, Doomenator, wardust
+3D Models of monsters by DaniJ, Sitters, ID Software, Recurracy, Tabun, -=Dark-Assassin=-, Cheb, chilvence, Tea Monster: https://slackbuilds.org/repository/14.0/games/ds-models/
+
+Rigging of Cacodemon Models									Killerbunny264
+Daylight Fix (Middle of night is always midnight) 			Byteblazar
+Keep Reloading												Closer_ex
+Khelldon-CustomMenu											Khelldon
+Main Menu Music												Davester2296
+Main Menu Music Changer Mod									Nordmann
+Ammo Press Workstation										Oakraven and arramus
+Learn By Shooting											JoeSloeMoe
+Always Stand When Sprinting									RedBeard
+Knife Offset Fix											RedBeard
+Path Smoothing												RedBeard
+Skip News													RedBeard
+POI Scourge Lite											jucah.ai
+Suppress Ambient Sounds										w00kien00kie
+Remove Camera Shake											w00kien00kie
+PersistGameOptions											w00kien00kie
+OcbCustomTextures											ocbMaurice
+OcbLawnTractor												ocbMaurice
+Pyro Paints													Pyrokar
+Difficulty													Mythix
+Unlock Open Doors											Dizor
+StayClear													Ryuyan
+TelricsDecorationsPackV2									Telric
+DoomGuy faces												Reinchard2
+OmniSprint													ZehMatt
+Custom Music												HellsJanitor

@@ -1,0 +1,11 @@
+<configs>
+	<insertafter xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT5']">
+		<display_entry icon="UH60" name_key="vehicleUH60placeable" has_quality="false" unlock_level="150">
+			<unlock_entry item="vehicleUH60chassis,vehicleUH60accessories" unlock_tier="1"/>
+		</display_entry>
+	</insertafter>
+	
+	<append xpath="//crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="150,150" value="1" tags="vehicleUH60chassis,vehicleUH60accessories"/>
+	</append>	
+ </configs>

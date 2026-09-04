@@ -1,0 +1,121 @@
+<configs>
+
+<append xpath="/recipes">	
+
+<!-- AMMO PRESS -->
+							  
+<recipe name="ammopress" count="1" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+	<ingredient name="resourceForgedIron" count="125"/>
+	<ingredient name="resourceMechanicalParts" count="200"/>
+	<ingredient name="resourceScrapPolymers" count="200"/>
+	<ingredient name="resourceGlue" count="10"/>
+	<ingredient name="resourceWood" count="250"/>
+	<ingredient name="workstationSkillMagazine" count="10"/>
+</recipe>
+	
+	
+<!-- AMMO PRESS RECIPES -->
+
+<recipe name="resourceGunPowder" count="100" craft_time="10" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourcePotassiumNitratePowder" count="60"/>
+	<ingredient name="resourceCoal" count="30"/>
+	<ingredient name="resourceFertiliser" count="10"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-6,-12,-18" tags="resourcePotassiumNitratePowder"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-3,-6,-9" tags="resourceCoal"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-1,-2,-3" tags="resourceFertiliser"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="9mmBulletDM" count="1" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="10"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-1,-2,-3" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="ShotgunShellDM" count="1" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceBuckshot" count="1"/>
+	<ingredient name="resourceGunPowder" count="80"/>
+	<ingredient name="resourcePaper" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-8,-16,-24" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="762mmBulletDM" count="1" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceBulletTip" count="1"/>
+	<ingredient name="resourceGunPowder" count="10"/>
+	<ingredient name="resourceBulletCasing" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-1,-2,-3" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="TurretAmmoDM" count="10" craft_time="10" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceScrapBrass" count="20"/>
+	<ingredient name="resourceScrapLead" count="10"/>
+	<ingredient name="resourceScrapIron" count="30"/>
+	<ingredient name="resourceGunPowder" count="50"/>
+	<ingredient name="resourceClayLump" count="3"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-5,-10,-15" tags="resourceGunPowder"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="RocketFragDM" count="5" craft_time="100" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceRocketTip" count="5"/>
+	<ingredient name="resourceGunPowder" count="600"/>
+	<ingredient name="resourceGlue" count="1"/>
+	<ingredient name="ammoGasCan" count="200"/>
+	<ingredient name="resourceRocketCasing" count="5"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-60,-120,-180" tags="resourceGunPowder"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-10,-20,-30" tags="ammoGasCan"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="PlasmaCellDM" count="20" craft_time="100" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting,perkChemistExpert">
+	<ingredient name="resourceScrapIron" count="50"/>
+	<ingredient name="resourceScrapBrass" count="30"/>
+	<ingredient name="resourceScrapLead" count="30"/>
+	<ingredient name="resourceGunPowder" count="50"/>
+	<ingredient name="resourceOilShale" count="20"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+	<ingredient name="foodCropMushroomsRadiated" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-5,-10,-15" tags="resourceGunPowder"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-1,-2,-3" tags="resourceOilShale"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="thrownTimedCharge" count="1" craft_time="60" craft_area="ammopress" craft_exp_gain="0" tags="workbenchCrafting,perkChemistExpert">
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceScrapIron" count="50"/>
+	<ingredient name="resourceOilShale" count="40"/>
+	<ingredient name="resourceGunPowder" count="100"/>
+	<ingredient name="resourceElectricParts" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-10,-20,-30" tags="resourceGunPowder"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-2,-4,-6" tags="resourceOilShale"/>
+	</effect_group>	
+</recipe>
+
+<recipe name="DismantleHandgunAmmo" count="1" craft_time="5" craft_area="ammopress" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="9mmBulletDM" count="10"/>
+</recipe>
+
+<recipe name="DismantleShotgunAmmo" count="1" craft_time="5" craft_area="ammopress" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="ShotgunShellDM" count="10"/>
+</recipe>
+
+<recipe name="DismantleChaingunAmmo" count="1" craft_time="5" craft_area="ammopress" is_trackable="false" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="762mmBulletDM" count="10"/>
+</recipe>
+
+</append>
+	
+</configs>

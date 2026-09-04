@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+  <append xpath="/Sounds">
+    <SoundDataNode name="doom_dsbarexp">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI_Item.prefab" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbarexp" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbdcls">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Door.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbdcls" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbdopn">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Door.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbdopn" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsboscub">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsboscub" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbosdth">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbosdth" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+      <DistantFadeStart value="40" /><DistantFadeEnd value="200" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbospit">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbospit" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+      <DistantFadeStart value="40" /><DistantFadeEnd value="200" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbospn">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbospn" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+      <DistantFadeStart value="120" /><DistantFadeEnd value="400" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsbossit">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_WeaponFire.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsbossit" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+      <DistantFadeStart value="120" /><DistantFadeEnd value="400" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsdorcls">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Door.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsdorcls" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsdoropn">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Door.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsdoropn" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsitemup">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI_Item.prefab" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsitemup" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsoof">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI_Item.prefab" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsoof" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dspistol">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI_Item.prefab" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dspistol" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dspstart">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dspstart" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dspstop">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dspstop" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dssecret">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UseAction.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dssecret" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsstnmov">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsstnmov" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsstnmov_lp">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_Interact.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsstnmov" Loop="true" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsswtchn">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UseAction.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsswtchn" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dsswtchx">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UseAction.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dsswtchx" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dstelept">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UseAction.prefab" />
+      <Noise ID="2" noise="11" time="3" muffled_when_crouched="0.5" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dstelept" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+    <SoundDataNode name="doom_dswpnup">
+      <AudioSource name="@:Sounds/Prefabs/AudioSource_UI_Item.prefab" />
+      <AudioClip ClipName="#@modfolder:Resources/doomworldsfx.bundle?dswpnup" />
+      <MaxVoices value="10" /><MaxRepeatRate value="0.01" />
+    </SoundDataNode>
+  </append>
+</configs>

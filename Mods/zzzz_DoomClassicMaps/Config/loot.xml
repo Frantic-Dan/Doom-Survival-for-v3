@@ -1,0 +1,23 @@
+<configs>
+
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupBuriedTreasure']/item[@group='groupAmmoPileLarge']">
+	<item name="doomNoteSelector" count="1"/>
+</insertafter>
+
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupMilitaryFootlocker']/item[@group='groupDoomArmor']">
+	<item name="doomNoteSelector" count="1" loot_prob_template="veryLow" force_prob="true"/>
+</insertafter>
+
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupReinforcedChestT3']/item[@name='AmmoStackPouch']">
+	<item name="doomNoteSelector" count="1" loot_prob_template="veryLow" force_prob="true"/>
+</insertafter>
+
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupHardenedChestT4']/item[@name='AmmoStackPouch']">
+	<item name="doomNoteSelector" count="1" loot_prob_template="low" force_prob="true"/>
+</insertafter>
+
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupHardenedChestT5']/item[@name='AmmoStackPouch']">
+	<item name="doomNoteSelector" count="1" loot_prob_template="medLow" force_prob="true"/>
+</insertafter>
+
+</configs>

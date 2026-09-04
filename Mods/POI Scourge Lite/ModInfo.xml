@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xml>
+	<Name        value="POI_Scourge_Lite" />
+	<DisplayName value="POI Scourge Lite" />
+	<Author      value="jucah.ai" />
+	<Description value="Marks the map when a POI is Cleared" />
+	<Version     value="1.5.1" />
+</xml>

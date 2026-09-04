@@ -1,0 +1,138 @@
+<configs>
+
+<append xpath="/rwgmixer">
+	
+	<prefab_spawn_adjust partial_name="trader_rekt" biomeTags="forest" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="trader_jen" biomeTags="burntforest" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="trader_bob" biomeTags="desert" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="trader_hugh" biomeTags="snow" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="trader_joel" biomeTags="wasteland" bias="0" min_count="0" max_count="0"/>
+	
+	<prefab_spawn_adjust partial_name="oldwest_business_12" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="remnant_business_03" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="store_book_01" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="store_book_02" bias="0" min_count="0" max_count="0"/>
+	<prefab_spawn_adjust partial_name="store_book_04" bias="0" min_count="0" max_count="0"/>
+	
+</append>
+	<!-- tiny -->	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='count']/@value">3, 5, 7</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_countrytown']/property[@name='tiles']/@value">6, 6</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='bforest_countrytown']/property[@name='count']/@value">3, 3, 5</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='bforest_countrytown']/property[@name='tiles']/@value">6, 7</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='bforest_town']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='bforest_town']/property[@name='tiles']/@value">8, 9</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='countrytown']/property[@name='count']/@value">3, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='countrytown']/property[@name='tiles']/@value">7, 8</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='town']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='town']/property[@name='tiles']/@value">9, 10</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='city']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='city']/property[@name='tiles']/@value">13, 17</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_city']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_city']/property[@name='tiles']/@value">10, 16</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='citybig']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='citybig']/property[@name='tiles']/@value">35, 45</set>
+	
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='roadside']/property[@name='count']/@value">6, 9, 12</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='wilderness']/property[@name='count']/@value">24, 36, 48</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='forest_wilderness']/property[@name='count']/@value">24, 36, 48</set>
+	<set xpath="/rwgmixer/world[@name='tiny']/property[@class='wasteland_wilderness']/property[@name='count']/@value">32, 48, 64</set>
+	<!-- small -->
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='count']/@value">3, 5, 7</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_countrytown']/property[@name='tiles']/@value">7, 7</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='bforest_countrytown']/property[@name='count']/@value">3, 4, 5</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='bforest_countrytown']/property[@name='tiles']/@value">7, 8</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='bforest_town']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='bforest_town']/property[@name='tiles']/@value">9, 10</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='countrytown']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='countrytown']/property[@name='tiles']/@value">8, 9</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='town']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='town']/property[@name='tiles']/@value">10, 11</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='city']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='city']/property[@name='tiles']/@value">14, 18</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_city']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_city']/property[@name='tiles']/@value">11, 17</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='citybig']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='citybig']/property[@name='tiles']/@value">35, 45</set>
+	
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='roadside']/property[@name='count']/@value">8, 12, 16</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='wilderness']/property[@name='count']/@value">54, 81, 108</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='forest_wilderness']/property[@name='count']/@value">54, 81, 108</set>
+	<set xpath="/rwgmixer/world[@name='small']/property[@class='wasteland_wilderness']/property[@name='count']/@value">60, 96, 132</set>
+	<!-- medium -->
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='count']/@value">3, 5, 7</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_countrytown']/property[@name='tiles']/@value">8, 9</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='bforest_countrytown']/property[@name='count']/@value">3, 4, 6</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='bforest_countrytown']/property[@name='tiles']/@value">9, 10</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='bforest_town']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='bforest_town']/property[@name='tiles']/@value">10, 11</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='countrytown']/property[@name='count']/@value">3, 4, 6</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='countrytown']/property[@name='tiles']/@value">9, 10</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='town']/property[@name='count']/@value">2, 3, 5</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='town']/property[@name='tiles']/@value">11, 12</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='city']/property[@name='count']/@value">2, 3, 5</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='city']/property[@name='tiles']/@value">14, 18</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_city']/property[@name='count']/@value">3, 4, 5</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_city']/property[@name='tiles']/@value">12, 18</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='citybig']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='citybig']/property[@name='tiles']/@value">35, 45</set>
+	
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='roadside']/property[@name='count']/@value">12, 16, 20</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='wilderness']/property[@name='count']/@value">90, 135, 180</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='forest_wilderness']/property[@name='count']/@value">90, 135, 180</set>
+	<set xpath="/rwgmixer/world[@name='medium']/property[@class='wasteland_wilderness']/property[@name='count']/@value">120, 180, 240</set>
+	<!-- large -->
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='count']/@value">4, 6, 8</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_countrytown']/property[@name='tiles']/@value">9, 10</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='bforest_countrytown']/property[@name='count']/@value">3, 5, 7</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='bforest_countrytown']/property[@name='tiles']/@value">10, 11</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='bforest_town']/property[@name='count']/@value">1, 2, 3</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='bforest_town']/property[@name='tiles']/@value">12, 13</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='countrytown']/property[@name='count']/@value">4, 5, 7</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='countrytown']/property[@name='tiles']/@value">10, 11</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='town']/property[@name='count']/@value">3, 4, 6</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='town']/property[@name='tiles']/@value">13, 13</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='city']/property[@name='count']/@value">2, 3, 5</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='city']/property[@name='tiles']/@value">15, 20</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_city']/property[@name='count']/@value">3, 4, 5</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_city']/property[@name='tiles']/@value">13, 18</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='citybig']/property[@name='count']/@value">2, 3, 4</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='citybig']/property[@name='tiles']/@value">35, 45</set>
+	
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='roadside']/property[@name='count']/@value">15, 20, 25</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='wilderness']/property[@name='count']/@value">150, 225, 300</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='forest_wilderness']/property[@name='count']/@value">125, 200, 275</set>
+	<set xpath="/rwgmixer/world[@name='large']/property[@class='wasteland_wilderness']/property[@name='count']/@value">150, 250, 350</set>
+	
+	<!-- <set xpath="/rwgmixer/township[@name='town']/property[@name='biomes']/@value">forest,desert,snow</set> -->
+	<set xpath="/rwgmixer/township[@name='city']/property[@name='biomes']/@value">burntforest,desert,snow</set>
+	
+</configs>

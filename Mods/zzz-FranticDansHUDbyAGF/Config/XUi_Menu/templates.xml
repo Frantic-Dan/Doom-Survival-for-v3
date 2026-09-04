@@ -1,0 +1,45 @@
+<configs>
+	<!-- Center each option caption in the 400-wide column (vanilla is left + ResizeFreely). -->
+	<remove xpath="/templates/mainmenubutton"/>
+	<append xpath="/templates">
+		<mainmenubutton
+				depth="0" pos="0,0" width="400" height="50"
+				align_right="false"
+				caption="" caption_key=""
+				color_default="0,0,0,0" color_hovered="228,18,21,255" color_disabled="0,0,0,0"
+				text_color_default="[labelColor]" text_color_hovered="228,18,21,255" text_color_disabled="[disabledLabelColor]"
+				sound_on_click="[default_click]" sound_on_hover="[default_hover]"
+				visible="true" enabled="true" nav_up="" nav_down="" nav_left="" nav_right=""
+				tooltip_key="" disabled_tooltip_key=""
+				bg_sprite1="ui3_selection_grunge_left" bg_flip1="nothing"
+				bg_sprite2="ui3_selection_grunge_right" bg_flip2="nothing"
+				>
+			<label name="${name}" controller="Button"
+					visible="${visible}" enabled="${enabled}"
+					pos="0,-25" depth="${depth}"
+					on_press="true" on_hover="true" use_selection_box="false"
+					nav_up="${nav_up}" nav_down="${nav_down}" nav_left="${nav_left}" nav_right="${nav_right}"
+					tooltip_key="${tooltip_key}" disabled_tooltip_key="${disabled_tooltip_key}"
+					sound="${sound_on_click}" sound_play_on_hover="${sound_on_hover}"
+					width="400" height="${height}"
+					font_size="{% btn_hovered ? ${height-4} : ${height-16} }"
+					color="{% !btn_enabled ? color(${text_color_disabled}) : (btn_hovered ? color(${text_color_hovered}) : color(${text_color_default}) ) }"
+					upper_case="true"
+					text="${caption}" text_key="${caption_key}" effect="outline"
+					pivot="center" justify="center"
+					>
+
+				<sprite name="bgLeft" sprite="${bg_sprite1}" flip="${bg_flip1}"
+						anchor_left="${name},0.5,-220" anchor_right="${name},0.5,-10"
+						anchor_bottom="${name},0.5,-11" anchor_top="${name},0.5,12"
+						type="sliced" pivot="right"
+						color="{% !btn_enabled ? color(${color_disabled}) : ( btn_hovered ? color(${color_hovered}) : color(${color_default}) ) }" />
+				<sprite name="bgRight" sprite="${bg_sprite2}" flip="${bg_flip2}"
+						anchor_left="${name},0.5,10" anchor_right="${name},0.5,220"
+						anchor_bottom="${name},0.5,-11" anchor_top="${name},0.5,12"
+						type="sliced" pivot="left"
+						color="{% !btn_enabled ? color(${color_disabled}) : ( btn_hovered ? color(${color_hovered}) : color(${color_default}) ) }" />
+			</label>
+		</mainmenubutton>
+	</append>
+</configs>

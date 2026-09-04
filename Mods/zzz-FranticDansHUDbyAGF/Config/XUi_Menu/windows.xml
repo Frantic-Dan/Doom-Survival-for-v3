@@ -1,0 +1,36 @@
+<configs>
+	<!-- Twitch paging xpath breaks on v3; leave commented. -->
+	<!--
+	<remove xpath="/windows/window[@name='optionsPaging']//pagingheader_button[@name='btnTwitch']"/>
+	<insertafter xpath="/windows/window[@name='optionsPaging']//pagingheader_button[@name='btnAccount']">
+		<pagingheader_button name="btnTwitch" pivot="center" width="400" height="50" caption_key="xuiBtnOptionsTwitch" enabled="false" gamepad_selectable="false" />
+	</insertafter>
+	-->
+
+	<!-- Top-anchor: pos.x is the window CENTER. pos=0 centers the options column. -->
+	<set xpath="/windows/window[@name='mainMenu']/@pos">0,-125</set>
+	<set xpath="/windows/window[@name='mainMenu']/@width">400</set>
+	<remove xpath="/windows/window[@name='mainMenu']/grid/mainmenubutton[@name='btnCredits']"/>
+	<remove xpath="/windows/window[@name='mainMenu']/grid/mainmenubutton[@name='btnNews']"/>
+	<set xpath="/windows/window[@name='mainMenu']/grid/mainmenubutton[@name='btnPlayGame']/@nav_up">btnQuit</set>
+	<!-- Keep grid at local 0 (same center line as the logo). Do not offset -200. -->
+	<set xpath="/windows/window[@name='mainMenu']/grid/@pos">0,-450</set>
+	<set xpath="/windows/window[@name='mainMenu']/grid/@cell_width">400</set>
+	
+	<set xpath="/windows/window[@name='mainMenuPlayerName']/@pos">-570,-50</set>
+	<set xpath="/windows/window[@name='mainMenuPlayerName']/@anchor">top</set>
+	
+	<set xpath="/windows/window[@name='mainMenuVersion']/@pos">-810,-50</set>
+	<set xpath="/windows/window[@name='mainMenuVersion']/@anchor">top</set>
+	
+	<set xpath="/windows/window[@name='mainMenuDiscordButton']/@pos">810,-50</set>
+	<set xpath="/windows/window[@name='mainMenuDiscordButton']/@anchor">top</set>
+	
+	<!-- Doom logo centered on screen (same center as the window) -->
+	<!-- <set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@texture">@modfolder:UIAtlases/ItemIconAtlas/logo.png</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@aspect_ratio">2.3</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@keep_aspect_ratio">BasedOnHeight</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@height">400</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@pivot">center</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@pos">0,-200</set> -->
+</configs>

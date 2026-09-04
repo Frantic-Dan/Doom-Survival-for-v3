@@ -1,0 +1,445 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,KeepLoaded,english
+doom_objective_clear,quests,Quest,,,,Find the Exit
+xuiGameSettingsFirstDoomLevels,challenges,Quest,,,,DOOM
+xuiGameSettingsSecondDoomLevels,challenges,Quest,,,,DOOM II
+challengeGroupEpisodeOne,challenges,Quest,,,,Episode 1: Knee-Deep in the Dead
+challengeGroupEpisodeTwo,challenges,Quest,,,,Episode 2: The Shores of Hell
+challengeGroupEpisodeThree,challenges,Quest,,,,Episode 3: Inferno
+challengeGroupEpisodeFour,challenges,Quest,,,,Episode 4: Thy Flesh Consumed
+challengeGroupQuarterOne,challenges,Quest,,,,MAP01 - MAP08
+challengeGroupQuarterTwo,challenges,Quest,,,,MAP09 - MAP16
+challengeGroupQuarterThree,challenges,Quest,,,,MAP17 - MAP24
+challengeGroupQuarterFour,challenges,Quest,,,,MAP25 - MAP32
+challengeShelterRewardTeleporter,challenges,Quest,,,,1x Teleport
+challengeBasicSurvivalRewardDoubleTeleporter,challenges,Quest,,,,2x Teleport
+challengeAdvancedSurvivalRewardTeleporter,challenges,Quest,,,,3x Teleport
+challengeExplorationRewardTeleporter,challenges,Quest,,,,4x Teleport\n1x Perk Point
+doomNoteSelector,items,Item,,,,Destination Selector
+doomNoteSelectorDesc,items,Item,,,,This allows you to select the teleportation destination of your choice.
+doomNoteE1M1,items,Item,,,,E1M1 Teleporter ([42C234]Easy[-])
+doomNoteE1M1Desc,items,Item,,,,A teleporter pad that takes you into E1M1: Hangar.
+doom_e1m1_name,quests,Quest,,,,E1M1: Hangar
+doom_e1m1_subtitle,quests,Quest,,,,E1M1: Hangar
+doom_e1m1_desc,quests,Quest,,,,Find a way into E1M1 and clear it out.
+doom_e1m1_offer,quests,Quest,,,,"You're about to embark on a dangerous mission.\n\nMake sure you have enough supplies for your trip, as there's only two ways back, finding the exit, or dying.\n\n[42C234]It is recommended to have at least 2 rows of empty inventory.[-]"
+doomKeyBlue,items,Item,,,,Blue Keycard
+doomKeyBlueDesc,items,Item,,,,Opens blue-locked doors in DOOM levels.
+doomKeyYellow,items,Item,,,,Yellow Keycard
+doomKeyYellowDesc,items,Item,,,,Opens yellow-locked doors in DOOM levels.
+doomKeyRed,items,Item,,,,Red Keycard
+doomKeyRedDesc,items,Item,,,,Opens red-locked doors in DOOM levels.
+BackpackFullAmmo,items,Item,,,,Backpack full of ammo
+BackpackFullAmmoDesc,items,Item,,,,A backpack containing a small amount of 8 different types of ammo.
+doom_door_locked,quests,Quest,,,,You need the {0}.
+doom_door_needs,quests,Quest,,,,{0} Use {1} ([DECEA3]Locked: requires {2}[-])
+doom_secret_found,quests,Quest,,,,A secret is revealed!
+doom_finished,quests,Quest,,,,FINISHED
+doom_kills,quests,Quest,,,,KILLS
+doom_items,quests,Quest,,,,ITEMS
+doom_secrets,quests,Quest,,,,SECRET
+doom_time,quests,Quest,,,,TIME
+doom_par,quests,Quest,,,,PAR
+doom_continue,quests,Quest,,,,CONTINUE
+doom_cleared,quests,Quest,,,,LEVELS CLEARED
+doomNoteE1M2,items,Item,,,,E1M2 Teleporter ([42C234]Easy[-])
+doomNoteE1M2Desc,items,Item,,,,A teleporter pad that takes you into E1M2: Nuclear Plant.
+doom_e1m2_name,quests,Quest,,,,E1M2: Nuclear Plant
+doom_e1m2_subtitle,quests,Quest,,,,E1M2: Nuclear Plant
+doom_e1m2_desc,quests,Quest,,,,"You're about to embark on a dangerous mission.\n\nMake sure you have enough supplies for your trip, as there's only two ways back, finding the exit, or dying.\n\n[42C234]It is recommended to have at least 2 rows of empty inventory.[-]"
+doom_e1m2_offer,quests,Quest,,,,Accept to enter E1M2.
+doomNoteE1M3,items,Item,,,,E1M3 Teleporter ([42C234]Easy[-])
+doomNoteE1M3Desc,items,Item,,,,A teleporter pad that takes you into E1M3: Toxin Refinery.
+doom_e1m3_name,quests,Quest,,,,E1M3: Toxin Refinery
+doom_e1m3_subtitle,quests,Quest,,,,E1M3: Toxin Refinery
+doom_e1m3_desc,quests,Quest,,,,Find a way into E1M3 and clear it out.
+doom_e1m3_offer,quests,Quest,,,,Accept to enter E1M3.
+doomNoteE1M4,items,Item,,,,E1M4 Teleporter ([42C234]Easy[-])
+doomNoteE1M4Desc,items,Item,,,,A teleporter pad that takes you into E1M4: Command Control.
+doom_e1m4_name,quests,Quest,,,,E1M4: Command Control
+doom_e1m4_subtitle,quests,Quest,,,,E1M4: Command Control
+doom_e1m4_desc,quests,Quest,,,,Find a way into E1M4 and clear it out.
+doom_e1m4_offer,quests,Quest,,,,Accept to enter E1M4.
+doomNoteE1M5,items,Item,,,,E1M5 Teleporter ([42C234]Easy[-])
+doomNoteE1M5Desc,items,Item,,,,A teleporter pad that takes you into E1M5: Phobos Lab.
+doom_e1m5_name,quests,Quest,,,,E1M5: Phobos Lab
+doom_e1m5_subtitle,quests,Quest,,,,E1M5: Phobos Lab
+doom_e1m5_desc,quests,Quest,,,,Find a way into E1M5 and clear it out.
+doom_e1m5_offer,quests,Quest,,,,Accept to enter E1M5.
+doomNoteE1M6,items,Item,,,,E1M6 Teleporter ([42C234]Easy[-])
+doomNoteE1M6Desc,items,Item,,,,A teleporter pad that takes you into E1M6: Central Processing.
+doom_e1m6_name,quests,Quest,,,,E1M6: Central Processing
+doom_e1m6_subtitle,quests,Quest,,,,E1M6: Central Processing
+doom_e1m6_desc,quests,Quest,,,,Find a way into E1M6 and clear it out.
+doom_e1m6_offer,quests,Quest,,,,Accept to enter E1M6.
+doomNoteE1M7,items,Item,,,,E1M7 Teleporter ([42C234]Easy[-])
+doomNoteE1M7Desc,items,Item,,,,A teleporter pad that takes you into E1M7: Computer Station.
+doom_e1m7_name,quests,Quest,,,,E1M7: Computer Station
+doom_e1m7_subtitle,quests,Quest,,,,E1M7: Computer Station
+doom_e1m7_desc,quests,Quest,,,,Find a way into E1M7 and clear it out.
+doom_e1m7_offer,quests,Quest,,,,Accept to enter E1M7.
+doomNoteE1M8,items,Item,,,,E1M8 Teleporter ([42C234]Easy[-])
+doomNoteE1M8Desc,items,Item,,,,A teleporter pad that takes you into E1M8: Phobos Anomaly.
+doom_e1m8_name,quests,Quest,,,,E1M8: Phobos Anomaly
+doom_e1m8_subtitle,quests,Quest,,,,E1M8: Phobos Anomaly
+doom_e1m8_desc,quests,Quest,,,,Find a way into E1M8 and clear it out.
+doom_e1m8_offer,quests,Quest,,,,Accept to enter E1M8.
+doomNoteE1M9,items,Item,,,,E1M9 Teleporter ([42C234]Easy[-])
+doomNoteE1M9Desc,items,Item,,,,A teleporter pad that takes you into E1M9: Military Base.
+doom_e1m9_name,quests,Quest,,,,E1M9: Military Base
+doom_e1m9_subtitle,quests,Quest,,,,E1M9: Military Base
+doom_e1m9_desc,quests,Quest,,,,Find a way into E1M9 and clear it out.
+doom_e1m9_offer,quests,Quest,,,,Accept to enter E1M9.
+doomNoteE2M1,items,Item,,,,E2M1 Teleporter ([42C234]Easy[-])
+doomNoteE2M1Desc,items,Item,,,,A teleporter pad that takes you into E2M1: Deimos Anomaly.
+doom_e2m1_name,quests,Quest,,,,E2M1: Deimos Anomaly
+doom_e2m1_subtitle,quests,Quest,,,,E2M1: Deimos Anomaly
+doom_e2m1_desc,quests,Quest,,,,Find a way into E2M1 and clear it out.
+doom_e2m1_offer,quests,Quest,,,,Accept to enter E2M1.
+doomNoteE2M2,items,Item,,,,E2M2 Teleporter ([42C234]Easy[-])
+doomNoteE2M2Desc,items,Item,,,,A teleporter pad that takes you into E2M2: Containment Area.
+doom_e2m2_name,quests,Quest,,,,E2M2: Containment Area
+doom_e2m2_subtitle,quests,Quest,,,,E2M2: Containment Area
+doom_e2m2_desc,quests,Quest,,,,Find a way into E2M2 and clear it out.
+doom_e2m2_offer,quests,Quest,,,,Accept to enter E2M2.
+doomNoteE2M3,items,Item,,,,E2M3 Teleporter ([42C234]Easy[-])
+doomNoteE2M3Desc,items,Item,,,,A teleporter pad that takes you into E2M3: Refinery.
+doom_e2m3_name,quests,Quest,,,,E2M3: Refinery
+doom_e2m3_subtitle,quests,Quest,,,,E2M3: Refinery
+doom_e2m3_desc,quests,Quest,,,,Find a way into E2M3 and clear it out.
+doom_e2m3_offer,quests,Quest,,,,Accept to enter E2M3.
+doomNoteE2M4,items,Item,,,,E2M4 Teleporter ([42C234]Easy[-])
+doomNoteE2M4Desc,items,Item,,,,A teleporter pad that takes you into E2M4: Deimos Lab.
+doom_e2m4_name,quests,Quest,,,,E2M4: Deimos Lab
+doom_e2m4_subtitle,quests,Quest,,,,E2M4: Deimos Lab
+doom_e2m4_desc,quests,Quest,,,,Find a way into E2M4 and clear it out.
+doom_e2m4_offer,quests,Quest,,,,Accept to enter E2M4.
+doomNoteE2M5,items,Item,,,,E2M5 Teleporter ([42C234]Easy[-])
+doomNoteE2M5Desc,items,Item,,,,A teleporter pad that takes you into E2M5: Command Center.
+doom_e2m5_name,quests,Quest,,,,E2M5: Command Center
+doom_e2m5_subtitle,quests,Quest,,,,E2M5: Command Center
+doom_e2m5_desc,quests,Quest,,,,Find a way into E2M5 and clear it out.
+doom_e2m5_offer,quests,Quest,,,,Accept to enter E2M5.
+doomNoteE2M6,items,Item,,,,E2M6 Teleporter ([42C234]Easy[-])
+doomNoteE2M6Desc,items,Item,,,,A teleporter pad that takes you into E2M6: Halls of the Damned.
+doom_e2m6_name,quests,Quest,,,,E2M6: Halls of the Damned
+doom_e2m6_subtitle,quests,Quest,,,,E2M6: Halls of the Damned
+doom_e2m6_desc,quests,Quest,,,,Find a way into E2M6 and clear it out.
+doom_e2m6_offer,quests,Quest,,,,Accept to enter E2M6.
+doomNoteE2M7,items,Item,,,,E2M7 Teleporter ([42C234]Easy[-])
+doomNoteE2M7Desc,items,Item,,,,A teleporter pad that takes you into E2M7: Spawning Vats.
+doom_e2m7_name,quests,Quest,,,,E2M7: Spawning Vats
+doom_e2m7_subtitle,quests,Quest,,,,E2M7: Spawning Vats
+doom_e2m7_desc,quests,Quest,,,,Find a way into E2M7 and clear it out.
+doom_e2m7_offer,quests,Quest,,,,Accept to enter E2M7.
+doomNoteE2M8,items,Item,,,,E2M8 Teleporter ([42C234]Easy[-])
+doomNoteE2M8Desc,items,Item,,,,A teleporter pad that takes you into E2M8: Tower of Babel.
+doom_e2m8_name,quests,Quest,,,,E2M8: Tower of Babel
+doom_e2m8_subtitle,quests,Quest,,,,E2M8: Tower of Babel
+doom_e2m8_desc,quests,Quest,,,,Find a way into E2M8 and clear it out.
+doom_e2m8_offer,quests,Quest,,,,Accept to enter E2M8.
+doomNoteE2M9,items,Item,,,,E2M9 Teleporter ([42C234]Easy[-])
+doomNoteE2M9Desc,items,Item,,,,A teleporter pad that takes you into E2M9: Fortress of Mystery.
+doom_e2m9_name,quests,Quest,,,,E2M9: Fortress of Mystery
+doom_e2m9_subtitle,quests,Quest,,,,E2M9: Fortress of Mystery
+doom_e2m9_desc,quests,Quest,,,,Find a way into E2M9 and clear it out.
+doom_e2m9_offer,quests,Quest,,,,Accept to enter E2M9.
+doomNoteE3M1,items,Item,,,,E3M1 Teleporter ([42C234]Easy[-])
+doomNoteE3M1Desc,items,Item,,,,A teleporter pad that takes you into E3M1: Hell Keep.
+doom_e3m1_name,quests,Quest,,,,E3M1: Hell Keep
+doom_e3m1_subtitle,quests,Quest,,,,E3M1: Hell Keep
+doom_e3m1_desc,quests,Quest,,,,Find a way into E3M1 and clear it out.
+doom_e3m1_offer,quests,Quest,,,,Accept to enter E3M1.
+doomNoteE3M2,items,Item,,,,E3M2 Teleporter ([42C234]Easy[-])
+doomNoteE3M2Desc,items,Item,,,,A teleporter pad that takes you into E3M2: Slough of Despair.
+doom_e3m2_name,quests,Quest,,,,E3M2: Slough of Despair
+doom_e3m2_subtitle,quests,Quest,,,,E3M2: Slough of Despair
+doom_e3m2_desc,quests,Quest,,,,Find a way into E3M2 and clear it out.
+doom_e3m2_offer,quests,Quest,,,,Accept to enter E3M2.
+doomNoteE3M3,items,Item,,,,E3M3 Teleporter ([42C234]Easy[-])
+doomNoteE3M3Desc,items,Item,,,,A teleporter pad that takes you into E3M3: Pandemonium.
+doom_e3m3_name,quests,Quest,,,,E3M3: Pandemonium
+doom_e3m3_subtitle,quests,Quest,,,,E3M3: Pandemonium
+doom_e3m3_desc,quests,Quest,,,,Find a way into E3M3 and clear it out.
+doom_e3m3_offer,quests,Quest,,,,Accept to enter E3M3.
+doomNoteE3M4,items,Item,,,,E3M4 Teleporter ([42C234]Easy[-])
+doomNoteE3M4Desc,items,Item,,,,A teleporter pad that takes you into E3M4: House of Pain.
+doom_e3m4_name,quests,Quest,,,,E3M4: House of Pain
+doom_e3m4_subtitle,quests,Quest,,,,E3M4: House of Pain
+doom_e3m4_desc,quests,Quest,,,,Find a way into E3M4 and clear it out.
+doom_e3m4_offer,quests,Quest,,,,Accept to enter E3M4.
+doomNoteE3M5,items,Item,,,,E3M5 Teleporter ([42C234]Easy[-])
+doomNoteE3M5Desc,items,Item,,,,A teleporter pad that takes you into E3M5: Unholy Cathedral.
+doom_e3m5_name,quests,Quest,,,,E3M5: Unholy Cathedral
+doom_e3m5_subtitle,quests,Quest,,,,E3M5: Unholy Cathedral
+doom_e3m5_desc,quests,Quest,,,,Find a way into E3M5 and clear it out.
+doom_e3m5_offer,quests,Quest,,,,Accept to enter E3M5.
+doomNoteE3M6,items,Item,,,,E3M6 Teleporter ([42C234]Easy[-])
+doomNoteE3M6Desc,items,Item,,,,A teleporter pad that takes you into E3M6: Mt. Erebus.
+doom_e3m6_name,quests,Quest,,,,E3M6: Mt. Erebus
+doom_e3m6_subtitle,quests,Quest,,,,E3M6: Mt. Erebus
+doom_e3m6_desc,quests,Quest,,,,Find a way into E3M6 and clear it out.
+doom_e3m6_offer,quests,Quest,,,,Accept to enter E3M6.
+doomNoteE3M7,items,Item,,,,E3M7 Teleporter ([42C234]Easy[-])
+doomNoteE3M7Desc,items,Item,,,,A teleporter pad that takes you into E3M7: Limbo.
+doom_e3m7_name,quests,Quest,,,,E3M7: Limbo
+doom_e3m7_subtitle,quests,Quest,,,,E3M7: Limbo
+doom_e3m7_desc,quests,Quest,,,,Find a way into E3M7 and clear it out.
+doom_e3m7_offer,quests,Quest,,,,Accept to enter E3M7.
+doomNoteE3M8,items,Item,,,,E3M8 Teleporter ([42C234]Easy[-])
+doomNoteE3M8Desc,items,Item,,,,A teleporter pad that takes you into E3M8: Dis.
+doom_e3m8_name,quests,Quest,,,,E3M8: Dis
+doom_e3m8_subtitle,quests,Quest,,,,E3M8: Dis
+doom_e3m8_desc,quests,Quest,,,,Find a way into E3M8 and clear it out.
+doom_e3m8_offer,quests,Quest,,,,Accept to enter E3M8.
+doomNoteE3M9,items,Item,,,,E3M9 Teleporter ([42C234]Easy[-])
+doomNoteE3M9Desc,items,Item,,,,A teleporter pad that takes you into E3M9: Warrens.
+doom_e3m9_name,quests,Quest,,,,E3M9: Warrens
+doom_e3m9_subtitle,quests,Quest,,,,E3M9: Warrens
+doom_e3m9_desc,quests,Quest,,,,Find a way into E3M9 and clear it out.
+doom_e3m9_offer,quests,Quest,,,,Accept to enter E3M9.
+doomNoteE4M1,items,Item,,,,E4M1 Teleporter ([42C234]Easy[-])
+doomNoteE4M1Desc,items,Item,,,,A teleporter pad that takes you into E4M1: Hell Beneath.
+doom_e4m1_name,quests,Quest,,,,E4M1: Hell Beneath
+doom_e4m1_subtitle,quests,Quest,,,,E4M1: Hell Beneath
+doom_e4m1_desc,quests,Quest,,,,Find a way into E4M1 and clear it out.
+doom_e4m1_offer,quests,Quest,,,,Accept to enter E4M1.
+doomNoteE4M2,items,Item,,,,E4M2 Teleporter ([42C234]Easy[-])
+doomNoteE4M2Desc,items,Item,,,,A teleporter pad that takes you into E4M2: Perfect Hatred.
+doom_e4m2_name,quests,Quest,,,,E4M2: Perfect Hatred
+doom_e4m2_subtitle,quests,Quest,,,,E4M2: Perfect Hatred
+doom_e4m2_desc,quests,Quest,,,,Find a way into E4M2 and clear it out.
+doom_e4m2_offer,quests,Quest,,,,Accept to enter E4M2.
+doomNoteE4M3,items,Item,,,,E4M3 Teleporter ([42C234]Easy[-])
+doomNoteE4M3Desc,items,Item,,,,A teleporter pad that takes you into E4M3: Sever the Wicked.
+doom_e4m3_name,quests,Quest,,,,E4M3: Sever the Wicked
+doom_e4m3_subtitle,quests,Quest,,,,E4M3: Sever the Wicked
+doom_e4m3_desc,quests,Quest,,,,Find a way into E4M3 and clear it out.
+doom_e4m3_offer,quests,Quest,,,,Accept to enter E4M3.
+doomNoteE4M4,items,Item,,,,E4M4 Teleporter ([42C234]Easy[-])
+doomNoteE4M4Desc,items,Item,,,,A teleporter pad that takes you into E4M4: Unruly Evil.
+doom_e4m4_name,quests,Quest,,,,E4M4: Unruly Evil
+doom_e4m4_subtitle,quests,Quest,,,,E4M4: Unruly Evil
+doom_e4m4_desc,quests,Quest,,,,Find a way into E4M4 and clear it out.
+doom_e4m4_offer,quests,Quest,,,,Accept to enter E4M4.
+doomNoteE4M5,items,Item,,,,E4M5 Teleporter ([42C234]Easy[-])
+doomNoteE4M5Desc,items,Item,,,,A teleporter pad that takes you into E4M5: They Will Repent.
+doom_e4m5_name,quests,Quest,,,,E4M5: They Will Repent
+doom_e4m5_subtitle,quests,Quest,,,,E4M5: They Will Repent
+doom_e4m5_desc,quests,Quest,,,,Find a way into E4M5 and clear it out.
+doom_e4m5_offer,quests,Quest,,,,Accept to enter E4M5.
+doomNoteE4M6,items,Item,,,,E4M6 Teleporter ([42C234]Easy[-])
+doomNoteE4M6Desc,items,Item,,,,A teleporter pad that takes you into E4M6: Against thee Wickedly.
+doom_e4m6_name,quests,Quest,,,,E4M6: Against thee Wickedly
+doom_e4m6_subtitle,quests,Quest,,,,E4M6: Against thee Wickedly
+doom_e4m6_desc,quests,Quest,,,,Find a way into E4M6 and clear it out.
+doom_e4m6_offer,quests,Quest,,,,Accept to enter E4M6.
+doomNoteE4M7,items,Item,,,,E4M7 Teleporter ([42C234]Easy[-])
+doomNoteE4M7Desc,items,Item,,,,A teleporter pad that takes you into E4M7: And Hell Followed.
+doom_e4m7_name,quests,Quest,,,,E4M7: And Hell Followed
+doom_e4m7_subtitle,quests,Quest,,,,E4M7: And Hell Followed
+doom_e4m7_desc,quests,Quest,,,,Find a way into E4M7 and clear it out.
+doom_e4m7_offer,quests,Quest,,,,Accept to enter E4M7.
+doomNoteE4M8,items,Item,,,,E4M8 Teleporter ([42C234]Easy[-])
+doomNoteE4M8Desc,items,Item,,,,A teleporter pad that takes you into E4M8: Unto the Cruel.
+doom_e4m8_name,quests,Quest,,,,E4M8: Unto the Cruel
+doom_e4m8_subtitle,quests,Quest,,,,E4M8: Unto the Cruel
+doom_e4m8_desc,quests,Quest,,,,Find a way into E4M8 and clear it out.
+doom_e4m8_offer,quests,Quest,,,,Accept to enter E4M8.
+doomNoteE4M9,items,Item,,,,E4M9 Teleporter ([42C234]Easy[-])
+doomNoteE4M9Desc,items,Item,,,,A teleporter pad that takes you into E4M9: Fear.
+doom_e4m9_name,quests,Quest,,,,E4M9: Fear
+doom_e4m9_subtitle,quests,Quest,,,,E4M9: Fear
+doom_e4m9_desc,quests,Quest,,,,Find a way into E4M9 and clear it out.
+doom_e4m9_offer,quests,Quest,,,,Accept to enter E4M9.
+doomNoteMAP01,items,Item,,,,MAP01 Teleporter ([42C234]Easy[-])
+doomNoteMAP01Desc,items,Item,,,,A teleporter pad that takes you into MAP01: Entryway.
+doom_map01_name,quests,Quest,,,,MAP01: Entryway
+doom_map01_subtitle,quests,Quest,,,,MAP01: Entryway
+doom_map01_desc,quests,Quest,,,,Find a way into MAP01 and clear it out.
+doom_map01_offer,quests,Quest,,,,Accept to enter MAP01.
+doomNoteMAP02,items,Item,,,,MAP02 Teleporter ([42C234]Easy[-])
+doomNoteMAP02Desc,items,Item,,,,A teleporter pad that takes you into MAP02: Underhalls.
+doom_map02_name,quests,Quest,,,,MAP02: Underhalls
+doom_map02_subtitle,quests,Quest,,,,MAP02: Underhalls
+doom_map02_desc,quests,Quest,,,,Find a way into MAP02 and clear it out.
+doom_map02_offer,quests,Quest,,,,Accept to enter MAP02.
+doomNoteMAP03,items,Item,,,,MAP03 Teleporter ([42C234]Easy[-])
+doomNoteMAP03Desc,items,Item,,,,A teleporter pad that takes you into MAP03: The Gantlet.
+doom_map03_name,quests,Quest,,,,MAP03: The Gantlet
+doom_map03_subtitle,quests,Quest,,,,MAP03: The Gantlet
+doom_map03_desc,quests,Quest,,,,Find a way into MAP03 and clear it out.
+doom_map03_offer,quests,Quest,,,,Accept to enter MAP03.
+doomNoteMAP04,items,Item,,,,MAP04 Teleporter ([42C234]Easy[-])
+doomNoteMAP04Desc,items,Item,,,,A teleporter pad that takes you into MAP04: The Focus.
+doom_map04_name,quests,Quest,,,,MAP04: The Focus
+doom_map04_subtitle,quests,Quest,,,,MAP04: The Focus
+doom_map04_desc,quests,Quest,,,,Find a way into MAP04 and clear it out.
+doom_map04_offer,quests,Quest,,,,Accept to enter MAP04.
+doomNoteMAP05,items,Item,,,,MAP05 Teleporter ([42C234]Easy[-])
+doomNoteMAP05Desc,items,Item,,,,A teleporter pad that takes you into MAP05: The Waste Tunnels.
+doom_map05_name,quests,Quest,,,,MAP05: The Waste Tunnels
+doom_map05_subtitle,quests,Quest,,,,MAP05: The Waste Tunnels
+doom_map05_desc,quests,Quest,,,,Find a way into MAP05 and clear it out.
+doom_map05_offer,quests,Quest,,,,Accept to enter MAP05.
+doomNoteMAP06,items,Item,,,,MAP06 Teleporter ([42C234]Easy[-])
+doomNoteMAP06Desc,items,Item,,,,A teleporter pad that takes you into MAP06: The Crusher.
+doom_map06_name,quests,Quest,,,,MAP06: The Crusher
+doom_map06_subtitle,quests,Quest,,,,MAP06: The Crusher
+doom_map06_desc,quests,Quest,,,,Find a way into MAP06 and clear it out.
+doom_map06_offer,quests,Quest,,,,Accept to enter MAP06.
+doomNoteMAP07,items,Item,,,,MAP07 Teleporter ([42C234]Easy[-])
+doomNoteMAP07Desc,items,Item,,,,A teleporter pad that takes you into MAP07: Dead Simple.
+doom_map07_name,quests,Quest,,,,MAP07: Dead Simple
+doom_map07_subtitle,quests,Quest,,,,MAP07: Dead Simple
+doom_map07_desc,quests,Quest,,,,Find a way into MAP07 and clear it out.
+doom_map07_offer,quests,Quest,,,,Accept to enter MAP07.
+doomNoteMAP08,items,Item,,,,MAP08 Teleporter ([42C234]Easy[-])
+doomNoteMAP08Desc,items,Item,,,,A teleporter pad that takes you into MAP08: Tricks and Traps.
+doom_map08_name,quests,Quest,,,,MAP08: Tricks and Traps
+doom_map08_subtitle,quests,Quest,,,,MAP08: Tricks and Traps
+doom_map08_desc,quests,Quest,,,,Find a way into MAP08 and clear it out.
+doom_map08_offer,quests,Quest,,,,Accept to enter MAP08.
+doomNoteMAP09,items,Item,,,,MAP09 Teleporter([42C234]Easy[-])
+doomNoteMAP09Desc,items,Item,,,,A teleporter pad that takes you into MAP09: The Pit.
+doom_map09_name,quests,Quest,,,,MAP09: The Pit
+doom_map09_subtitle,quests,Quest,,,,MAP09: The Pit
+doom_map09_desc,quests,Quest,,,,Find a way into MAP09 and clear it out.
+doom_map09_offer,quests,Quest,,,,Accept to enter MAP09.
+doomNoteMAP10,items,Item,,,,MAP10 Teleporter ([42C234]Easy[-])
+doomNoteMAP10Desc,items,Item,,,,A teleporter pad that takes you into MAP10: Refueling Base.
+doom_map10_name,quests,Quest,,,,MAP10: Refueling Base
+doom_map10_subtitle,quests,Quest,,,,MAP10: Refueling Base
+doom_map10_desc,quests,Quest,,,,Find a way into MAP10 and clear it out.
+doom_map10_offer,quests,Quest,,,,Accept to enter MAP10.
+doomNoteMAP11,items,Item,,,,MAP11 Teleporter ([42C234]Easy[-])
+doomNoteMAP11Desc,items,Item,,,,A teleporter pad that takes you into MAP11: Circle of Death.
+doom_map11_name,quests,Quest,,,,MAP11: Circle of Death
+doom_map11_subtitle,quests,Quest,,,,MAP11: Circle of Death
+doom_map11_desc,quests,Quest,,,,Find a way into MAP11 and clear it out.
+doom_map11_offer,quests,Quest,,,,Accept to enter MAP11.
+doomNoteMAP12,items,Item,,,,MAP12 Teleporter ([42C234]Easy[-])
+doomNoteMAP12Desc,items,Item,,,,A teleporter pad that takes you into MAP12: The Factory.
+doom_map12_name,quests,Quest,,,,MAP12: The Factory
+doom_map12_subtitle,quests,Quest,,,,MAP12: The Factory
+doom_map12_desc,quests,Quest,,,,Find a way into MAP12 and clear it out.
+doom_map12_offer,quests,Quest,,,,Accept to enter MAP12.
+doomNoteMAP13,items,Item,,,,MAP13 Teleporter ([42C234]Easy[-])
+doomNoteMAP13Desc,items,Item,,,,A teleporter pad that takes you into MAP13: Downtown.
+doom_map13_name,quests,Quest,,,,MAP13: Downtown
+doom_map13_subtitle,quests,Quest,,,,MAP13: Downtown
+doom_map13_desc,quests,Quest,,,,Find a way into MAP13 and clear it out.
+doom_map13_offer,quests,Quest,,,,Accept to enter MAP13.
+doomNoteMAP14,items,Item,,,,MAP14 Teleporter ([42C234]Easy[-])
+doomNoteMAP14Desc,items,Item,,,,A teleporter pad that takes you into MAP14: The Inmost Dens.
+doom_map14_name,quests,Quest,,,,MAP14: The Inmost Dens
+doom_map14_subtitle,quests,Quest,,,,MAP14: The Inmost Dens
+doom_map14_desc,quests,Quest,,,,Find a way into MAP14 and clear it out.
+doom_map14_offer,quests,Quest,,,,Accept to enter MAP14.
+doomNoteMAP15,items,Item,,,,MAP15 Teleporter ([42C234]Easy[-])
+doomNoteMAP15Desc,items,Item,,,,A teleporter pad that takes you into MAP15: Industrial Zone.
+doom_map15_name,quests,Quest,,,,MAP15: Industrial Zone
+doom_map15_subtitle,quests,Quest,,,,MAP15: Industrial Zone
+doom_map15_desc,quests,Quest,,,,Find a way into MAP15 and clear it out.
+doom_map15_offer,quests,Quest,,,,Accept to enter MAP15.
+doomNoteMAP16,items,Item,,,,MAP16 Teleporter ([42C234]Easy[-])
+doomNoteMAP16Desc,items,Item,,,,A teleporter pad that takes you into MAP16: Suburbs.
+doom_map16_name,quests,Quest,,,,MAP16: Suburbs
+doom_map16_subtitle,quests,Quest,,,,MAP16: Suburbs
+doom_map16_desc,quests,Quest,,,,Find a way into MAP16 and clear it out.
+doom_map16_offer,quests,Quest,,,,Accept to enter MAP16.
+doomNoteMAP17,items,Item,,,,MAP17 Teleporter ([42C234]Easy[-])
+doomNoteMAP17Desc,items,Item,,,,A teleporter pad that takes you into MAP17: Tenements.
+doom_map17_name,quests,Quest,,,,MAP17: Tenements
+doom_map17_subtitle,quests,Quest,,,,MAP17: Tenements
+doom_map17_desc,quests,Quest,,,,Find a way into MAP17 and clear it out.
+doom_map17_offer,quests,Quest,,,,Accept to enter MAP17.
+doomNoteMAP18,items,Item,,,,MAP18 Teleporter ([42C234]Easy[-])
+doomNoteMAP18Desc,items,Item,,,,A teleporter pad that takes you into MAP18: The Courtyard.
+doom_map18_name,quests,Quest,,,,MAP18: The Courtyard
+doom_map18_subtitle,quests,Quest,,,,MAP18: The Courtyard
+doom_map18_desc,quests,Quest,,,,Find a way into MAP18 and clear it out.
+doom_map18_offer,quests,Quest,,,,Accept to enter MAP18.
+doomNoteMAP19,items,Item,,,,MAP19 Teleporter ([42C234]Easy[-])
+doomNoteMAP19Desc,items,Item,,,,A teleporter pad that takes you into MAP19: The Citadel.
+doom_map19_name,quests,Quest,,,,MAP19: The Citadel
+doom_map19_subtitle,quests,Quest,,,,MAP19: The Citadel
+doom_map19_desc,quests,Quest,,,,Find a way into MAP19 and clear it out.
+doom_map19_offer,quests,Quest,,,,Accept to enter MAP19.
+doomNoteMAP20,items,Item,,,,MAP20 Teleporter ([42C234]Easy[-])
+doomNoteMAP20Desc,items,Item,,,,A teleporter pad that takes you into MAP20: Gotcha!
+doom_map20_name,quests,Quest,,,,MAP20: Gotcha!
+doom_map20_subtitle,quests,Quest,,,,MAP20: Gotcha!
+doom_map20_desc,quests,Quest,,,,Find a way into MAP20 and clear it out.
+doom_map20_offer,quests,Quest,,,,Accept to enter MAP20.
+doomNoteMAP21,items,Item,,,,MAP21 Teleporter ([42C234]Easy[-])
+doomNoteMAP21Desc,items,Item,,,,A teleporter pad that takes you into MAP21: Nirvana.
+doom_map21_name,quests,Quest,,,,MAP21: Nirvana
+doom_map21_subtitle,quests,Quest,,,,MAP21: Nirvana
+doom_map21_desc,quests,Quest,,,,Find a way into MAP21 and clear it out.
+doom_map21_offer,quests,Quest,,,,Accept to enter MAP21.
+doomNoteMAP22,items,Item,,,,MAP22 Teleporter ([42C234]Easy[-])
+doomNoteMAP22Desc,items,Item,,,,A teleporter pad that takes you into MAP22: The Catacombs.
+doom_map22_name,quests,Quest,,,,MAP22: The Catacombs
+doom_map22_subtitle,quests,Quest,,,,MAP22: The Catacombs
+doom_map22_desc,quests,Quest,,,,Find a way into MAP22 and clear it out.
+doom_map22_offer,quests,Quest,,,,Accept to enter MAP22.
+doomNoteMAP23,items,Item,,,,MAP23 Teleporter ([42C234]Easy[-])
+doomNoteMAP23Desc,items,Item,,,,A teleporter pad that takes you into MAP23: Barrels o' Fun.
+doom_map23_name,quests,Quest,,,,MAP23: Barrels o' Fun
+doom_map23_subtitle,quests,Quest,,,,MAP23: Barrels o' Fun
+doom_map23_desc,quests,Quest,,,,Find a way into MAP23 and clear it out.
+doom_map23_offer,quests,Quest,,,,Accept to enter MAP23.
+doomNoteMAP24,items,Item,,,,MAP24 Teleporter ([42C234]Easy[-])
+doomNoteMAP24Desc,items,Item,,,,A teleporter pad that takes you into MAP24: The Chasm.
+doom_map24_name,quests,Quest,,,,MAP24: The Chasm
+doom_map24_subtitle,quests,Quest,,,,MAP24: The Chasm
+doom_map24_desc,quests,Quest,,,,Find a way into MAP24 and clear it out.
+doom_map24_offer,quests,Quest,,,,Accept to enter MAP24.
+doomNoteMAP25,items,Item,,,,MAP25 Teleporter ([42C234]Easy[-])
+doomNoteMAP25Desc,items,Item,,,,A teleporter pad that takes you into MAP25: Bloodfalls.
+doom_map25_name,quests,Quest,,,,MAP25: Bloodfalls
+doom_map25_subtitle,quests,Quest,,,,MAP25: Bloodfalls
+doom_map25_desc,quests,Quest,,,,Find a way into MAP25 and clear it out.
+doom_map25_offer,quests,Quest,,,,Accept to enter MAP25.
+doomNoteMAP26,items,Item,,,,MAP26 Teleporter ([42C234]Easy[-])
+doomNoteMAP26Desc,items,Item,,,,A teleporter pad that takes you into MAP26: The Abandoned Mines.
+doom_map26_name,quests,Quest,,,,MAP26: The Abandoned Mines
+doom_map26_subtitle,quests,Quest,,,,MAP26: The Abandoned Mines
+doom_map26_desc,quests,Quest,,,,Find a way into MAP26 and clear it out.
+doom_map26_offer,quests,Quest,,,,Accept to enter MAP26.
+doomNoteMAP27,items,Item,,,,MAP27 Teleporter ([42C234]Easy[-])
+doomNoteMAP27Desc,items,Item,,,,A teleporter pad that takes you into MAP27: Monster Condo.
+doom_map27_name,quests,Quest,,,,MAP27: Monster Condo
+doom_map27_subtitle,quests,Quest,,,,MAP27: Monster Condo
+doom_map27_desc,quests,Quest,,,,Find a way into MAP27 and clear it out.
+doom_map27_offer,quests,Quest,,,,Accept to enter MAP27.
+doomNoteMAP28,items,Item,,,,MAP28 Teleporter ([42C234]Easy[-])
+doomNoteMAP28Desc,items,Item,,,,A teleporter pad that takes you into MAP28: The Spirit World.
+doom_map28_name,quests,Quest,,,,MAP28: The Spirit World
+doom_map28_subtitle,quests,Quest,,,,MAP28: The Spirit World
+doom_map28_desc,quests,Quest,,,,Find a way into MAP28 and clear it out.
+doom_map28_offer,quests,Quest,,,,Accept to enter MAP28.
+doomNoteMAP29,items,Item,,,,MAP29 Teleporter ([42C234]Easy[-])
+doomNoteMAP29Desc,items,Item,,,,A teleporter pad that takes you into MAP29: The Living End.
+doom_map29_name,quests,Quest,,,,MAP29: The Living End
+doom_map29_subtitle,quests,Quest,,,,MAP29: The Living End
+doom_map29_desc,quests,Quest,,,,Find a way into MAP29 and clear it out.
+doom_map29_offer,quests,Quest,,,,Accept to enter MAP29.
+doomNoteMAP30,items,Item,,,,MAP30 Teleporter ([42C234]Easy[-])
+doomNoteMAP30Desc,items,Item,,,,A teleporter pad that takes you into MAP30: Icon of Sin.
+doom_map30_name,quests,Quest,,,,MAP30: Icon of Sin
+doom_map30_subtitle,quests,Quest,,,,MAP30: Icon of Sin
+doom_map30_desc,quests,Quest,,,,Find a way into MAP30: Icon of Sin
+doom_map30_offer,quests,Quest,,,,Accept to enter MAP30: Icon of Sin.
+doomNoteMAP31,items,Item,,,,MAP31 Teleporter ([42C234]Easy[-])
+doomNoteMAP31Desc,items,Item,,,,A teleporter pad that takes you into MAP31: Wolfenstein.
+doom_map31_name,quests,Quest,,,,MAP31: Wolfenstein
+doom_map31_subtitle,quests,Quest,,,,MAP31: Wolfenstein
+doom_map31_desc,quests,Quest,,,,Find a way into MAP31: Wolfenstein
+doom_map31_offer,quests,Quest,,,,Accept to enter MAP31: Wolfenstein.
+doomNoteMAP32,items,Item,,,,MAP32 Teleporter ([42C234]Easy[-])
+doomNoteMAP32Desc,items,Item,,,,A teleporter pad that takes you into MAP32: Grosse.
+doom_map32_name,quests,Quest,,,,MAP32: Grosse
+doom_map32_subtitle,quests,Quest,,,,MAP32: Grosse
+doom_map32_desc,quests,Quest,,,,Find a way into MAP32: Grosse
+doom_map32_offer,quests,Quest,,,,Accept to enter MAP32: Grosse.

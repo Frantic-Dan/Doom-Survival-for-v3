@@ -1,0 +1,1525 @@
+Key,english
+goGameWorldDM,[42C234]Create New World[-]
+goDifficultyDM,[FF4F00]Difficulty (Read me)[-]
+goDifficultyDMDesc,"[9C8867]Can I play, Daddy?[-]\nEnemy HP: 90%. Enemy Projectile Speed: 80%. Enemy Hitscan Accurancy: 4.0 degrees. Biome Respawn Time: 1.3 days. LS: +16 Take less damage.\n[CF7F29]Be Gentle![-]\nEnemy HP: 100%. Enemy Projectile Speed 100%. Enemy Hitscan Accurancy: 3.7 degrees. Biome Respawn Time: 1.2 days. Lootstage: +12 \n[A2A41B]Bring it on![-]\nEnemy HP: 110%. Enemy Projectile Speed 120%. Enemy Hitscan Accurancy: 3.4 degrees. Biome Respawn Time: 1.1 days. LS: +8 GS: +4\n[42C234]Hurt Me Plenty![-]\nEnemy HP: 120%. Enemy Projectile Speed 140%. Enemy Hitscan Accurancy: 3.1 degrees. Biome Respawn Time: 1.0 days. LS: +4 GS: +8\n[780803]Ultra-Violence![-]\nEnemy HP: 130%. Enemy Projectile Speed 160%. Enemy Hitscan Accurancy: 2.8 degrees. Biome Respawn Time: 0.9 days. GameStage: +12\n[000000]I am Death Incarnate![-]\nEnemy HP: 140%. Enemy Projectile Speed 180%. Enemy Hitscan Accurancy: 2.5 degrees. Biome Respawn Time: 0.8 days. GS +16. Take more damage."
+goDifficulty1DM,"[9C8867]Can I play, Daddy?[-]"
+goDifficulty2DM,[CF7F29]Be Gentle![-]
+goDifficulty3DM,[A2A41B]Bring it on![-]
+goDifficulty4DM,[42C234]Hurt Me Plenty![-]
+goDifficulty5DM,[840ACC]Ultra-Violence![-]
+goDifficulty6DM,[000000]I am Death Incarnate![-]
+loadingTipDM1,"You thought you killed all of the demons from Hell, but you were mistaken. And now they are taking revenge and have invaded and overrun planet Earth, most people were killed before they could escape into space. You're the only one left to fight the demonic hordes of Hell.\n\nRip and Tear, until it is done!!                              ([42C234]Tips: You can sprint in all directions! Headshots don't matter.[-])"
+loadingTipDM1_title,Doom: Survival
+loadingTipDM2,"You can find and earn teleporters as you survive the demon invasion, these teleporters will allow you to visit any of the 68 levels from Doom and Doom II."
+loadingTipDM2_title,The Classic Levels (Optional Content)
+loadingTipDM3,"'Story in a game is like a story in a p*rn movie. It's expected to be there, but it's not important.'\n\n- John Carmack"
+loadingTipDM3_title,Discover things on your own
+loadingTipDM4,"You will be held solely responsible for any and all permanently lost items if you don't have 'drop nothing on death' for your server."
+loadingTipDM4_title,Attention: Server Admins
+Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
+ModNotInstalledCorrectlyText,"[FF4F00]This mod hasn't been installed correctly and is missing critical files required for the mod to be 100% functional.[-]"
+
+
+esc_footer_discord_label, Join the Discord!
+ttLevelUp,You are now level {0}!
+ttCraftingSkillUnlockQuality,You have unlocked {0} - {1}
+buffCampfireAOEEffectDescDM,You are warmed by the fire.\n\nCold Resist +20\nHeat Resist -10
+cntWoodenChestPlayer,Storage Chest Box
+statStormDuration,Extended Storm Protection
+utilitySinkDMwater,[57B9FF]Hold Jar to collect Water[-]
+sinkKitchenDMwater,[57B9FF]Hold Jar to collect Water[-]
+pedestalSinkDMwater,[57B9FF]Hold Jar to collect Water[-]
+wallMountSinkCommercialDMwater,[57B9FF]Hold Jar to collect Water[-]
+counterMountedSinkCommercialDMwater,[57B9FF]Hold Jar to collect Water[-]
+counterMountedSinkCommercialOffsetDMwater,[57B9FF]Hold Jar to collect Water[-]
+cntToilet01DMwater,[57B9FF]Hold Jar to collect Water[-]
+cntToilet01DMdry,Toilet
+cntToilet02DMwater,[57B9FF]Hold Jar to collect Water[-]
+cntToilet02DMdry,Fancy Toilet
+cntBarrelPlasticSingle00DMwater,[57B9FF]Hold Jar to collect Water[-]
+cntBarrelPlasticSingle45DMwater,[57B9FF]Hold Jar to collect Water[-]
+cntBarrelPlasticQuadADMwater,[57B9FF]Hold Jar to collect Water[-]
+cntBarrelPlasticQuadBDMwater,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerFullDMcleanwater,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerFullDMpure,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerFullSideCenteredDMcleanwater,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerFullSideCenteredDMpure,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerFullDMlootable,Water Cooler
+cntWaterCoolerFullSideCenteredDMlootable,Water Cooler
+cntWaterCoolerBottleDMcleanwater,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerBottleDMpure,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerBottleSideCenteredDMcleanwater,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerBottleSideCenteredDMpure,[57B9FF]Hold Jar to collect Water[-]
+cntWaterCoolerBottleDMlootable,Water Cooler Bottle
+cntWaterCoolerBottleSideCenteredDMlootable,Water Cooler Bottle
+BoiledbucketWater,Bucket of Boiled Water
+bucketBoiledWaterDesc,"Even though this is boiled, this can still make you sick and will give you an 8% infection due to the water being contaminated."
+bucketInfectedWaterDesc,"It is strongly recommended to boil this water before drinking. Even then, it's not going to be safe to drink.\n\nYou'd have to be desperate to drink this."
+AmmoFromDemonDesc,A bunch of ammo dropped from a former human.
+HandgunDemonAmmo,Handful of Handgun Ammo
+ShotgunDemonAmmo,Handful of Shotgun Ammo
+ChaingunDemonAmmo,Handful of Chaingun Ammo
+drinkJarRiverWaterDew,Murky Dew Water
+drinkJarRiverWaterDewDesc,Dirty water gathered from a dew collector.\nNeeds to be poured into a jar.
+drinkJarBoiledWaterDew,Clean Dew Water
+drinkJarBoiledWaterDewDesc,Clean water gathered from a dew collector.\nNeeds to be poured into a jar.
+CraftedItemJarRefundDesc,Were you careful enough to reuse your jar?\n\nIt is faster to receive your items by using the secondary action on your toolbelt.
+foodSkillMagazineDescDM,Increases cooking XP by 500.\nCan give another 500 XP when you get a bonus from Book Worm perk.\n\n[FF4F00]Be mindful that XP will be lost if your XP needed for next level is less than 500.[-]
+medicalSkillMagazineDescDM,Increases medical XP by 500.\nCan give another 500 XP when you get a bonus from Book Worm perk.\n\n[FF4F00]Be mindful that XP will be lost if your XP needed for next level is less than 500.[-]
+foodBoneBrothBundle,Bone Broth
+foodEggBoiledBundle,Boiled Egg
+farmPlotBlockVariantHelperBundle,Farm Plot
+drinkJarPureMineralWaterBundle,Pure Mineral Water
+drugAntibioticsBundle,Antibiotics
+drugHerbalAntibioticsBundle,Herbal Antibiotics
+foodBlueberryPieBundle,Blueberry Pie
+foodPumpkinPieBundle,Pumpkin Pie
+foodPumpkinCheesecakeBundle,Pumpkin Cheesecake
+foodPumpkinBreadBundle,Pumpkin Bread
+foodBoiledMeatBundle,Boiled Meat
+foodCornBreadBundle,Corn Bread
+BoiledEggsBundle,Cooked Boiled Egg
+foodAshChickenStewBundle,Ash Chicken Stew
+foodRoadrunnerChickenJerkyBundle,Roadrunner Chicken Jerky
+foodHoboStewBundle,Hobo Stew
+foodMeatStewBundle,Meat Stew
+foodGumboStewBundle,Gumbo Stew
+foodSpaghettiBundle,Spaghetti
+foodShamChowder,Shame Chowder
+foodShamChowderBundle,Shame Chowder
+foodCanSham,Can of Shame
+foodShamSandwich,Old Shame Sandwich
+foodHoneyGlazedSham,Honey Glazed Shame
+foodVegetableStewBundle,Vegetable Stew
+stimPackBundle,Stimpack
+stimPackBlueBundle,Blue Stimpack
+mediKitBundle,Medikit
+mediKitBlueBundle,Blue Medikit
+healthPotionBundle,Health Potion
+medicalPlasterCastBundle,Plaster Cast
+resourceConcreteMixBundle,Concrete Mix
+resourceConcreteMixBundleDesc,Craft a batch of 100.\nRefunds the empty bucket.
+resourceGlueBundle,Glue
+resourcePaperBundle,Paper
+resourceFertiliserBundle,Fertiliser
+oldCashDescDM,"Vending machines like to eat cash for breakfast. Doesn't matter if this is legal tender or counterfeit, vending machines don't discriminate!"
+ammoGasCan,Petrol
+ammoGasCanDescDM,"Can be used to fuel chainsaws and vehicles and flamethrowers.\n\nStacks to 2000.\nFinding backpacks will increase the stack size, up to 10000."
+DummyFuel,Dummy Petrol
+DummyFuelDMDesc,"Due to game limitations, you'll need to load this ammo into the flamethrower and chainsaw for them to function."
+ammoGasCanBundle,Petrol (5000)
+ammoGasCanBundleDesc,This is a compact stack of petrol. Use this item to open and unpack it.
+resourceAnimalHide,Animal Hide
+resourceAnimalHidedesc,"Can't be used as is, can be cured by placing on the floor.\n\nCure time: 50 minutes."
+resourceScrapSteel,Scrap Steel
+rebarShapesDesc,A more convenient way to build with concrete.
+rebarShapes:VariantHelper,Rebar Block
+materialMrebar_weak_shapes,Rebar
+banditMetalVariantHelper,Bandit Metal Building Block
+banditWoodVariantHelper,Bandit Wooden Building Block
+resourceBricks,Bricks
+BricksDesc,Used to upgrade cobblestone blocks.
+ArmourCosmeticDesc,Changes your appearance and provides no protection or effects.
+ArmourSlot,Armour Slot
+armourSecurityGreenBadge,Security Armour
+armourSecurityGreenPowerUp,Security Armour ([42C234]Power Up[-])
+SecurityArmourBadgeDesc,"While wearing this Security Armour, you'll take 40% less damage for as long as your armour has durability.\n\nWill break when your armour reaches 0."
+SecurityArmourDesc,"Repairs 100 armour points.\n\nIf you are wearing Mega Armour (Blue, 60% protection), this will downgrade your armour to Security (Green, 40% protection)."
+armourMegaBlueBadge,Mega Armour
+armourMegaBluePowerUp,Mega Armour ([42C234]Power Up[-])
+MegaArmourBadgeDesc,"While wearing this Mega Armour, you'll take 60% less damage for as long as your armour has durability.\n\nWill break when your armour reaches 0."
+MegaArmourDesc,"Repairs 200 armour points.\n\nThis will upgrade your armour to 60% protection."
+armourShard,Armour Shard
+ArmourShardDesc,Repairs 4 armour points.\n\nRepairs up to 8 with Bonus Booster Perk.
+healthPotion,Health Potion
+HealthPotionDesc,Recovers 4 health points.\n\nRecovers up to 8 with Bonus Booster Perk.
+stimPackweak,Stimpack (weak)
+StimPackweakDesc,"Recovers 5 health points, up to 50% of max health.\nCures bleeding.\n\nCosts 1 food."
+stimPack,Stimpack
+StimPackDesc,"Recovers 10 health points, up to 50% of max health.\nCures bleeding.\n\nCosts 2 food."
+mediKitweak,Medikit (weak)
+MediKitweakDesc,"Recovers 13 health points, up to 50% of max health.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 2 food."
+mediKit,Medikit
+MediKitDesc,"Recovers 25 health points, up to 50% of max health.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 4 food."
+stimPackBlue,Blue Stimpack
+StimPackBlueDesc,Recovers 10 health points.\n\nCosts 2 food.\nCures bleeding.
+mediKitBlue,Blue Medikit
+MediKitBlueDesc,"Recovers 25 health points.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 4 food."
+berserkPack,Berserk Pack ([42C234]Power Up[-])
+berserkPackDesc,"Will recover all health, up to 50%.\n\nIncreases damage with knuckles and knives by x5 for 150 seconds.\n\nYou shrug off 20% damage, this makes you thirsty."
+LightAmplificationPowerup,Light Amplification Goggles
+LightAmplificationPowerupDesc,Will provide 5 minutes of full visibility to overcome the darkness.\n\nCan stack up to 3 uses.
+buffLightAmplificationName,Light Amplification Goggles
+buffLightAmplificationDesc,You have full visibility to overcome the darkness.
+buffLightAmplificationTooltip,Visibility has improved for you.
+HazmatSuitPowerup,Hazmat Suit ([42C234]Power Up[-])
+HazmatSuitPowerupDesc,Using this will protect you from the radiation in the wasteland biome while outdoors for 30 minutes.
+InvulnerabilityPowerup,Invulnerability ([42C234]Power Up[-])
+InvulnerabilityPowerupDesc,Will make you immortal for 40 seconds.\n\nDoes not stack.\n\nDoes NOT apply to storms or biome hazards.
+soulSphere,Soul Sphere ([42C234]Power Up[-])
+soulSphereDesc,Recovers 100 health points.
+megaSphere,Mega Sphere ([42C234]Power Up[-])
+megaSphereDesc,Recovers 200 health points.\nRepairs 200 armour points.
+NutrientGracePeriod,Grace Period
+NutrientGracePeriodDesc,"For 70 minutes, your Hunger and Thirst will remain full, you're immune to infection and your armour won't fully break.\n\nYour health will recover by 1 every 60 seconds.\nYou and your armour take less damage for every hit you receive."
+buffBerserk,Berserk
+buffBerserkName,Berserk
+buffBerserkDesc,Melee damage increased to 500%.
+buffBerserkTooltip,[CF7F29]RIP AND TEAR!![-]
+buffHazmatSuitName,Hazmat Suit
+buffHazmatSuitDesc,You are protected from the radiation in the wasteland for as long as your suit endures the harmful effects of the biome.
+buffHazmatSuitTooltip,You're wearing a Hazmat Suit.
+DamagedHazmatSuitToolTip,[FF4F00]Hazmat Suit Critically Damaged![-]
+buffInvulnerability,Invulnerability
+buffInvulnerabilityName,Invulnerability
+buffInvulnerabilityDesc,You're immune to all damage and critical injuries.
+buffInvulnerabilityTooltip,[CF7F29]You are Immortal![-]
+foodChickenNuggetsDescDM,"Light, lean, and perfect for life on the road. This simple chicken meal won't weigh you down and keeps you moving like a true wasteland wanderer.\n\nTemporarily jump higher!"
+buffChickenNuggetsDescDM,"You mean to tell me that DoomGuy could jump this whole time? He just chose not to!"
+ttOutOfStamina,[FF4F00]Your Armour Broke![-]
+ZeroArmourtooltip,[FF4F00]Your Armour Broke![-]
+EquipArmourToolTip,[FF4F00]Use Security Armour to Equip Your Armour![-]
+buffInfection01DMUntreatedDesc,"You have a mild infection.\nIt will get worse until treated by antibiotics.\n\nAs your infection gets worse, your max health will fall.\n\nYou have a mild fever that increases your rate of hunger and thirst by 10%."
+buffInfection01GetBetterDesc,"You have treated your infection.\n\nYour max health starts to recover.\n\nYou still have a mild fever that increases your rate of hunger and thirst by 10%."
+buffInfection02DMUntreatedDesc,"You have a growing infection.\n\nYour max health continues to fall.\n\nYour fever has worsened and increases your rate of hunger and thirst by 20%."
+buffInfection02GetBetterDesc,"You have treated your infection. But is it enough?\n\nYour max health starts to recover.\n\nYour fever continues to increase your rate of hunger and thirst by 20%."
+buffInfection03DMUntreatedDesc,"Your infection is in its final stage, without treatment you WILL die!\n\nYour max health has fallen critically.\n\nYour fever is severe and increases your rate of hunger and thirst by 30%.\n\nYour infection is starting to slowly kill you!"
+buffInfection03GetBetterDesc,"You have treated your infection, but you're a long way from recovery!\n\nYour max health starts to recover.\n\nYour fever is still severe and increases your rate of hunger and thirst by 30%."
+buffStatusHungry01DescDM,"You're starting to get hungry and your max health is dropping. \n\nMax health lowered by {cvar($buffStatusPeckishBlockage:0.0)} x2"
+buffStatusHungry02DescDM,"You're getting very hungry and your max health is dropping further. \n\nMax health lowered by {cvar($buffStatusPeckishBlockage:0.0)} x2"
+buffStatusHungry03DescDM,"You're starving and your max health has dropped. \n\nMax health lowered by {cvar($buffStatusPeckishBlockage:0.0)} x2"
+buffStatusThirsty01DescDM,"You're starting to get thirsty and your max health is dropping. \n\nMax health lowered by {cvar($buffStatusParchedBlockage:0.0)} x2"
+buffStatusThirsty02DescDM,"You're getting very thirsty and your max health is dropping further. \n\nMax health lowered by {cvar($buffStatusParchedBlockage:0.0)} x2"
+buffStatusThirsty03DescDM,"You're severely dehydrated and your max health has dropped. \n\nMax health lowered by {cvar($buffStatusParchedBlockage:0.0)} x2"
+buffStatusHungry01TooltipDM,"You're peckish, max health is reducing"
+buffStatusHungry02TooltipDM,"You're hungry, max health has drastically reduced"
+buffStatusHungry03TooltipDM,"You're starving, max health has critically reduced, you're dying!"
+buffStatusThirsty01TooltipDM,"You're parched, max health is reducing"
+buffStatusThirsty02TooltipDM,"You're thirsty, max health has drastically reduced"
+buffStatusThirsty03TooltipDM,"You're dehydrated, max health has critically reduced, you're dying!"
+
+JarCoffeeDescDM,"Coffee is life, coffee is love.\nSlowly recovers health.\n\nUp to 60% max health."
+drinkJarCoffeeDescDM,"The caffeine is revitalising, slowly healing you and warming you up!."
+JarHoneyCoffeeDescDM,"Coffee sweetened with honey, provides some nutrients and healing.\nCoffee is life, coffee is love.\nSlowly recovers health."
+buffRedTeaDMDesc,Red tea temporarily slows down your metabolism.\n\nYour hunger and hydration has slowed down by 25%.
+drinkJarRedHoneyTea,Red Honey Tea
+drinkJarRedHoneyTeaDesc,"Provides efficient digestion, fills you up and makes you feel rejuvinated."
+drinkJarHoneyCoffee,Honey Coffee
+drinkYuccaJuiceDesc,"Helps keep you cool in the heat but makes you colder in low temperatures."
+drinkYuccaJuice,Yucca Juice
+medicalBloodDrawKit,Blood Draw Kit
+medicalBloodDrawKitDesc,"Allows you to draw your own blood, but be careful not to over do it!\n\nCosts 20 Health, 20 Water and 10 Food.\n\nWill make you fatigued.\nMay cause infection!"
+
+WaterPurifier,Water Purifier
+WaterPurifierDesc,"Allows you to mostly drink safer at any water source.\nBuilds up a dormant infection instead of instantly infecting you.\n\nTo use, hold it in your toolbelt, look at water, and press interact.\n\nAllows for 50 drinks." 
+
+buffFatiguedDMName,Fatigued
+buffFatiguedDMDesc,"Drawing your blood has made you fatigued, you take 1 more damage every time you're hit.\n\nWalk and run speed reduced by 15%."
+buffFatiguedTooltip,[FF4F00]Drawing too much blood can be fatal![-]
+
+buffBurnt01DescDM,Thick smoke burns your lungs.\n\nTaking shelter or increasing your Strengthened Constitution and Sturdy Body perks will extend your survival time.
+buffDesert01DescDM,Sand and dust fill your lungs.\n\nTaking shelter or increasing your Strengthened Constitution and Sturdy Body perks will help extend your survival time.
+buffSnow01DescDM,Brutal cold freezes your lungs.\n\nTaking shelter or increasing your Strengthened Constitution and Sturdy Body perks will extend your survival time.
+buffWasteland01DescDM,Leave the area immediately or put on a hazmat suit!
+buffWasteland02DescDM,Leave the area immediately or put on a hazmat suit!
+
+buffBloodLossName,Severe Blood Loss
+buffBloodLossDesc,"You have drawn too much blood too quickly, drawing more blood will be fatal!\n\nAttempting to draw more blood will [FF4F00]PERMANENTLY[-] lower your max health!!"
+buffBloodLossTooltip,[FF4F00]You're drawn too much blood![-]
+
+buffBloodLossDeathPenaltyName,Blood Draw Death Penalty
+buffBloodLossDeathPenaltyDesc,"You died while attempting to draw too much blood, your max health lowers by 10 each time."
+
+buff2ndDegreeBurnName,2nd Degree Burns
+buff2ndDegreeBurnDesc,A demon's fire ball has burned your skin. You slowly take damage and have an increased chance to get infected.\nGetting hit also adds more damage taken.\n\nTreated with Snowberry Cream.
+buff2ndDegreeBurnTooltip,[FF4F00]You have 2nd degree burns![-]
+
+resourceHandgunRepairKit,Handgun Repair Kit
+resourceCrossbowRepairKit,Crossbow Repair Kit
+resourceTurretRepairKit,Turret Repair Kit
+resourceShotgunRepairKit,Shotgun Repair Kit
+resourceMechanicalRepairKit,Mechanical Repair Kit
+resourceChaingunRepairKit,Chaingun Repair Kit
+resourceLauncherRepairKit,Rocket Launcher Repair Kit
+
+resourceClayLumpBundle,Clay Bundle (6000)
+resourceScrapBrassBundle,Brass Bundle (6000)
+
+DismantleCrossbowAmmo,Dismantle Crossbow Ammo
+DismantleHandgunAmmo,Dismantle Handgun Ammo
+DismantleShotgunAmmo,Dismantle Shotgun Ammo
+DismantleChaingunAmmo,Dismantle Chaingun Ammo
+DismantleAmmodesc,You get back 80% of ammunition crafting resources.
+DismantleMotorcycleChassis,Dismantle Motorcycle Chassis
+DismantleMotorcycleHandlebars,Dismantle Motorcycle Handlebars
+DismantleTruck4x4Chassis,Dismantle Truck4x4 Chassis
+DismantleTruck4x4Accessories,Dismantle Truck4x4 Accessories
+DismantleGyroCopterChassis,Dismantle GyroCopter Chassis
+DismantleGyroCopterAccessories,Dismantle GyroCopter Accessories
+DismantleVehicledesc,Dismantle unwanted vehicle parts for a small portion of their recipe cost.
+
+TimedChargedescDM,"The super lockpick, breaks open the toughest of locks in one explosion.\n\nYou need to be holding this for it to work."
+StoneAxedesc,"Better than punching boulders, can't be repaired and will eventually break.\nCan only upgrade to wood and scrap iron.\n\nEntity/Block Damage: 6/50\n[FF4F00]Butcher: 50%[-]\nRepair Amount: 50\nRange: 3m\nSpeed: 60/minute\nMod Slots: 0\nDurability: 200"
+StoneShoveldesc,"You don't dig this shovel at all, can't be repaired and will eventually break.\n\nEntity/Block Damage: 8/30\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0\nDurability: 200"
+StoneKnife,Stone Knife
+StoneKnifedesc,"Better than your bare fist, can't be repaired and will eventually break.\n\nEntity/Block Damage: 7/5\nButcher: 100%\nRange: 2.25m\nSpeed: 120/minute\nMod Slots: 0\nDurability: 200"
+PrimitiveBowdesc,"Weak and fragile, but it lets you attack from a distance.\n\nEntity Damage: 30\nRange: 20m\nVelocity: 35\nMod Slots: 0\nDurability: 100"
+StoneArrowDM,Stone Arrow
+StoneArrowDMdesc,"Base Entity Damage: 30.\n\nStacks to 100."
+plantedSnowberryDesc,Snowberry seeds can be planted on dirt and grassy ground.
+foodCropSnowberries,Snowberries
+SnowberryDesc,Used for its medicinal properties. Can be eaten raw but may make you sick.
+medicalSnowberryCream,Snowberry Cream
+medicalSnowberryCreamdesc,Used for treating burns.
+foodSackOfSeeds,Sack of Seeds
+foodSackOfSeedsDesc,"A sack of random seeds. Can be 'extracted' for a random seed."
+foodEdibleSackOfSeeds,Edible Sack of Seeds
+foodEdibleSackOfSeedsDesc,"This seed can be eaten if you don't want to plant it."
+foodStackofCans,Stack of Cans
+foodStackofCansDesc,"A stack of canned food. Can be 'extracted' for a random can of food."
+foodHoneycomb,Honeycomb,,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb,Honeycomb
+foodHoneyDescDM,"Honey is one of mother nature's miracles. It gives you some energy, tastes great!"
+foodEdiblePineSeed,Edible Pine Seed
+foodEdiblePineSeedDesc,"Hard and not very tasty, but it'll keep you going for a little longer!"
+foodBoneBroth,Bone Broth
+foodBoneBrothDescDM,"It's not much, but it'll keep you going for a little longer!"
+plantedMushroom3HarvestPlayerDM,Mushroom
+plantedYucca3HarvestPlayerDM,Yucca Plant
+plantedCotton3HarvestPlayerDM,Cotton Plant
+plantedCoffee3HarvestPlayerDM,Coffee Plant
+plantedGoldenrod3HarvestPlayerDM,Goldenrod Flower
+plantedAloe3HarvestPlayerDM,Aloe Vera Plant
+plantedBlueberry3HarvestPlayerDM,Blueberry Bush
+plantedPotato3HarvestPlayerDM,Potato Plant
+plantedChrysanthemum3HarvestPlayerDM,Chrysanthemum Flower
+plantedCorn3HarvestPlayerDM,Corn Plant
+plantedGraceCorn3HarvestPlayerDM,Super Corn Plant
+plantedHop3HarvestPlayerDM,Hops Plant
+plantedSnowberry3HarvestPlayerDM,Snowberry Bush
+plantedPumpkin3HarvestPlayerDM,Pumpkin Plant
+resourceFertiliser,Fertiliser
+resourceFertiliserdesc,Used for making farm plots and gunpowder.
+
+Q2toolsName,[CF7F29][Quality 2][-] Tools
+Q3toolsName,[A2A41B][Quality 3][-] Tools
+Q4toolsName,[42C234][Quality 4][-] Tools
+Q5toolsName,[315DCE][Quality 5][-] Tools
+Q6toolsName,[400073][Quality 6][-] Tools
+
+FireaxeQ1,[9C8867][Quality 1][-] Fireaxe
+FireaxeQ2,[CF7F29][Quality 2][-] Fireaxe
+FireaxeQ3,[A2A41B][Quality 3][-] Fireaxe
+FireaxeQ4,[42C234][Quality 4][-] Fireaxe
+FireaxeQ5,[315DCE][Quality 5][-] Fireaxe
+FireaxeQ6,[400073][Quality 6][-] Fireaxe
+FireaxeQ1desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 10/100\nHarvest: 100%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0"
+FireaxeQ2desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 11/150\nHarvest: 110%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 66/minute\nMod Slots: 0"
+FireaxeQ3desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 12/200\nHarvest: 120%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 72/minute\nMod Slots: 1"
+FireaxeQ4desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 13/250\nHarvest: 130%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 78/minute\nMod Slots: 1"
+FireaxeQ5desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 14/300\nHarvest: 140%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 84/minute\nMod Slots: 1"
+FireaxeQ6desc,"There's no point in Axing the demons any questions!\n\nEntity/Block Damage: 15/400\nHarvest: 150%\n[FF4F00]Butcher: 50%[-]\nRange: 3.5m\nSpeed: 90/minute\nMod Slots: 2"
+
+PickaxeQ1,[9C8867][Quality 1][-] Pickaxe
+PickaxeQ2,[CF7F29][Quality 2][-] Pickaxe
+PickaxeQ3,[A2A41B][Quality 3][-] Pickaxe
+PickaxeQ4,[42C234][Quality 4][-] Pickaxe
+PickaxeQ5,[315DCE][Quality 5][-] Pickaxe
+PickaxeQ6,[400073][Quality 6][-] Pickaxe
+PickaxeQ1desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 10/100\nHarvest: 100%\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0"
+PickaxeQ2desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 11/150\nHarvest: 110%\nRange: 3.5m\nSpeed: 66/minute\nMod Slots: 0"
+PickaxeQ3desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 12/200\nHarvest: 120%\nRange: 3.5m\nSpeed: 72/minute\nMod Slots: 1"
+PickaxeQ4desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 13/275\nHarvest: 130%\nRange: 3.5m\nSpeed: 78/minute\nMod Slots: 1"
+PickaxeQ5desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 14/350\nHarvest: 140%\nRange: 3.5m\nSpeed: 84/minute\nMod Slots: 1"
+PickaxeQ6desc,"I really want to pick the brains of Frantic Dan. I should be ripping and tearing!\n\nEntity/Block Damage: 15/500\nHarvest: 150%\nRange: 3.5m\nSpeed: 90/minute\nMod Slots: 2"
+
+ShovelQ1,[9C8867][Quality 1][-] Shovel
+ShovelQ2,[CF7F29][Quality 2][-] Shovel
+ShovelQ3,[A2A41B][Quality 3][-] Shovel
+ShovelQ4,[42C234][Quality 4][-] Shovel
+ShovelQ5,[315DCE][Quality 5][-] Shovel
+ShovelQ6,[400073][Quality 6][-] Shovel
+ShovelQ1desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 10/50\nHarvest: 100%\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0"
+ShovelQ2desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 11/84\nHarvest: 110%\nRange: 3.5m\nSpeed: 66/minute\nMod Slots: 0"
+ShovelQ3desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 12/135\nHarvest: 120%\nRange: 3.5m\nSpeed: 72/minute\nMod Slots: 1"
+ShovelQ4desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 13/200\nHarvest: 130%\nRange: 3.5m\nSpeed: 78/minute\nMod Slots: 1"
+ShovelQ5desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 14/310\nHarvest: 140%\nRange: 3.5m\nSpeed: 84/minute\nMod Slots: 1"
+ShovelQ6desc,"I am a DoomGuy and I'm digging your grave!\n\nEntity/Block Damage: 15/390\nHarvest: 150%\nRange: 3.5m\nSpeed: 90/minute\nMod Slots: 2"
+
+ClawHammerWrenchQ2,[CF7F29][Quality 2][-] Claw Hammer and Wrench
+ClawHammerWrenchQ3,[A2A41B][Quality 3][-] Claw Hammer and Wrench
+ClawHammerWrenchQ4,[42C234][Quality 4][-] Claw Hammer and Wrench
+ClawHammerWrenchQ5,[315DCE][Quality 5][-] Claw Hammer and Wrench
+ClawHammerWrenchQ6,[400073][Quality 6][-] Claw Hammer and Wrench
+
+ClawHammerQ1,[9C8867][Quality 1][-] Claw Hammer
+ClawHammerQ2,[CF7F29][Quality 2][-] Claw Hammer
+ClawHammerQ3,[A2A41B][Quality 3][-] Claw Hammer
+ClawHammerQ4,[42C234][Quality 4][-] Claw Hammer
+ClawHammerQ5,[315DCE][Quality 5][-] Claw Hammer
+ClawHammerQ6,[400073][Quality 6][-] Claw Hammer
+ClawHammerQ1desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 10/20\nRepair Amount: 250\nHarvest: 20%\nRange: 3m\nSpeed: 60/minute"
+ClawHammerQ2desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 11/22\nRepair Amount: 300\nHarvest: 20%\nRange: 3m\nSpeed: 66/minute"
+ClawHammerQ3desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 12/24\nRepair Amount: 350\nHarvest: 20%\nRange: 3m\nSpeed: 72/minute"
+ClawHammerQ4desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 13/26\nRepair Amount: 400\nHarvest: 20%\nRange: 3m\nSpeed: 78/minute"
+ClawHammerQ5desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 14/28\nRepair Amount: 450\nHarvest: 20%\nRange: 3m\nSpeed: 84/minute"
+ClawHammerQ6desc,"It's Hammer Time, Demons!\n\nEntity/Block Damage: 15/30\nRepair Amount: 500\nHarvest: 20%\nRange: 3m\nSpeed: 90/minute"
+
+WrenchQ1,[9C8867][Quality 1][-] Wrench
+WrenchQ2,[CF7F29][Quality 2][-] Wrench
+WrenchQ3,[A2A41B][Quality 3][-] Wrench
+WrenchQ4,[42C234][Quality 4][-] Wrench
+WrenchQ5,[315DCE][Quality 5][-] Wrench
+WrenchQ6,[400073][Quality 6][-] Wrench
+WrenchQ1desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 10/40\nHarvest: 100%\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0"
+WrenchQ2desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 11/50\nHarvest: 110%\nRange: 3.5m\nSpeed: 66/minute\nMod Slots: 0"
+WrenchQ3desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 12/63\nHarvest: 120%\nRange: 3.5m\nSpeed: 72/minute\nMod Slots: 1"
+WrenchQ4desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 13/80\nHarvest: 130%\nRange: 3.5m\nSpeed: 78/minute\nMod Slots: 1"
+WrenchQ5desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 14/100\nHarvest: 140%\nRange: 3.5m\nSpeed: 84/minute\nMod Slots: 1"
+WrenchQ6desc,"My profession is to slay demons, but this has thrown a wrench into the works!\n\nEntity/Block Damage: 15/125\nHarvest: 150%\nRange: 3.5m\nSpeed: 90/minute\nMod Slots: 2"
+
+ImpactDriverQ1,[9C8867][Quality 1][-] Impact Driver
+ImpactDriverQ2,[CF7F29][Quality 2][-] Impact Driver
+ImpactDriverQ3,[A2A41B][Quality 3][-] Impact Driver
+ImpactDriverQ4,[42C234][Quality 4][-] Impact Driver
+ImpactDriverQ5,[315DCE][Quality 5][-] Impact Driver
+ImpactDriverQ6,[400073][Quality 6][-] Impact Driver
+ImpactDriverQ1desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 10/100\nRepair Amount: 750\nHarvest: 130%\nRange: 3.5m\nSpeed: 60/minute\nMod Slots: 0"
+ImpactDriverQ2desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 11/125\nRepair Amount: 900\nHarvest: 140%\nRange: 3.5m\nSpeed: 66/minute\nMod Slots: 0"
+ImpactDriverQ3desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 12/157\nRepair Amount: 1050\nHarvest: 150%\nRange: 3.5m\nSpeed: 72/minute\nMod Slots: 1"
+ImpactDriverQ4desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 13/200\nRepair Amount: 1200\nHarvest: 160%\nRange: 3.5m\nSpeed: 78/minute\nMod Slots: 1"
+ImpactDriverQ5desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 14/250\nRepair Amount: 1350\nHarvest: 170%\nRange: 3.5m\nSpeed: 84/minute\nMod Slots: 1"
+ImpactDriverQ6desc,"This should impact my progression nicely, and drive up my construction!\n\nEntity/Block Damage: 15/312\nRepair Amount: 1500\nHarvest: 180%\nRange: 3.5m\nSpeed: 90/minute\nMod Slots: 2"
+
+BrassKnucklesQ1,[9C8867][Quality 1][-] Brass Knuckles
+BrassKnucklesQ2,[CF7F29][Quality 2][-] Brass Knuckles
+BrassKnucklesQ3,[A2A41B][Quality 3][-] Brass Knuckles
+BrassKnucklesQ4,[42C234][Quality 4][-] Brass Knuckles
+BrassKnucklesQ5,[315DCE][Quality 5][-] Brass Knuckles
+BrassKnucklesQ6,[400073][Quality 6][-] Brass Knuckles
+BrassKnucklesQ1desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 10\nRange: 2m\nSpeed: 100/minute\nMod Slots: 0"
+BrassKnucklesQ2desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 11\nRange: 2m\nSpeed: 110/minute\nMod Slots: 0"
+BrassKnucklesQ3desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 12\nRange: 2m\nSpeed: 120/minute\nMod Slots: 1"
+BrassKnucklesQ4desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 13\nRange: 2m\nSpeed: 130/minute\nMod Slots: 1"
+BrassKnucklesQ5desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 14\nRange: 2m\nSpeed: 140/minute\nMod Slots: 1"
+BrassKnucklesQ6desc,"Better than your bare fist, punch those demons back to hell from whence they came!\n\nEntity Damage: 15\nRange: 2m\nSpeed: 150/minute\nMod Slots: 2"
+
+CombatKnifeQ1,[9C8867][Quality 1][-] Combat Knife
+CombatKnifeQ2,[CF7F29][Quality 2][-] Combat Knife
+CombatKnifeQ3,[A2A41B][Quality 3][-] Combat Knife
+CombatKnifeQ4,[42C234][Quality 4][-] Combat Knife
+CombatKnifeQ5,[315DCE][Quality 5][-] Combat Knife
+CombatKnifeQ6,[400073][Quality 6][-] Combat Knife
+CombatKnifeQ1desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 10\nButcher: 100%\nRange: 2.25m\nSpeed: 120/minute\nMod Slots: 0"
+CombatKnifeQ2desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 11\nButcher: 100%\nRange: 2.25m\nSpeed: 132/minute\nMod Slots: 0"
+CombatKnifeQ3desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 12\nButcher: 100%\nRange: 2.25m\nSpeed: 144/minute\nMod Slots: 1"
+CombatKnifeQ4desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 13\nButcher: 100%\nRange: 2.25m\nSpeed: 156/minute\nMod Slots: 1"
+CombatKnifeQ5desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 14\nButcher: 100%\nRange: 2.25m\nSpeed: 168/minute\nMod Slots: 1"
+CombatKnifeQ6desc,"Better than your bare fist, rip and tear those demons back to hell from whence they came!\n\nEntity Damage: 15\nButcher: 100%\nRange: 2.25m\nSpeed: 180/minute\nMod Slots: 2"
+
+HandlebarsQ1,[9C8867][Quality 1][-] Handlebars
+HandlebarsQ2,[CF7F29][Quality 2][-] Handlebars
+HandlebarsQ3,[A2A41B][Quality 3][-] Handlebars
+HandlebarsQ4,[42C234][Quality 4][-] Handlebars
+HandlebarsQ5,[315DCE][Quality 5][-] Handlebars
+HandlebarsQ6,[400073][Quality 6][-] Handlebars
+
+ChainsawQ1,[9C8867][Quality 1][-] Chainsaw
+ChainsawQ2,[CF7F29][Quality 2][-] Chainsaw
+ChainsawQ3,[A2A41B][Quality 3][-] Chainsaw
+ChainsawQ4,[42C234][Quality 4][-] Chainsaw
+ChainsawQ5,[315DCE][Quality 5][-] Chainsaw
+ChainsawQ6,[400073][Quality 6][-] Chainsaw
+ChainsawQ1desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 10/32\nHarvest: 130%\nButcher: 100%\nRange: 2.5m\nSpeed: 600/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Petrol[-]"
+ChainsawQ2desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 11/48\nHarvest: 140%\nButcher: 100%\nRange: 2.5m\nSpeed: 630/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Petrol[-]"
+ChainsawQ3desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 12/64\nHarvest: 150%\nButcher: 100%\nRange: 2.5m\nSpeed: 660/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
+ChainsawQ4desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 13/80\nHarvest: 160%\nButcher: 100%\nRange: 2.5m\nSpeed: 690/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
+ChainsawQ5desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 14/96\nHarvest: 170%\nButcher: 100%\nRange: 2.5m\nSpeed: 720/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
+ChainsawQ6desc,"Runs on good old petroleum. Go find some meat!\n\nEntity/Block Damage: 15/128\nHarvest: 180%\nButcher: 100%\nRange: 2.5m\nSpeed: 750/minute\nMod Slots: 2\n\n[FF4F00]Load this with Dummy Petrol[-]"
+
+CompoundCrossbowQ1,[9C8867][Quality 1][-] Compound Crossbow
+CompoundCrossbowQ2,[CF7F29][Quality 2][-] Compound Crossbow
+CompoundCrossbowQ3,[A2A41B][Quality 3][-] Compound Crossbow
+CompoundCrossbowQ4,[42C234][Quality 4][-] Compound Crossbow
+CompoundCrossbowQ5,[315DCE][Quality 5][-] Compound Crossbow
+CompoundCrossbowQ6,[400073][Quality 6][-] Compound Crossbow
+CompoundCrossbowQ1desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 40\nRange: 60m\nRoF: 40/minute\nVelocity: 100m/s\nMod Slots: 0"
+CompoundCrossbowQ2desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 44\nRange: 66m\nRoF: 42/minute\nVelocity: 105m/s\nMod Slots: 0"
+CompoundCrossbowQ3desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 48\nRange: 72m\nRoF: 44/minute\nVelocity: 110m/s\nMod Slots: 1"
+CompoundCrossbowQ4desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 52\nRange: 78m\nRoF: 46/minute\nVelocity: 115m/s\nMod Slots: 1"
+CompoundCrossbowQ5desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 56\nRange: 84m\nRoF: 48/minute\nVelocity: 120m/s\nMod Slots: 1"
+CompoundCrossbowQ6desc,"Not as powerful as a shotgun, but has more range and accuracy.\n\nEntity Damage: 60\nRange: 90m\nRoF: 50/minute\nVelocity: 125m/s\nMod Slots: 2"
+CompoundCrossbowQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Compound Crossbow!
+CompoundCrossbowQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Compound Crossbow!
+CompoundCrossbowQ4Unlocked,Unlocked [42C234][Quality 4][-] Compound Crossbow!
+CompoundCrossbowQ5Unlocked,Unlocked [315DCE][Quality 5][-] Compound Crossbow!
+CompoundCrossbowQ6Unlocked,Unlocked [400073][Quality 6][-] Compound Crossbow!
+
+CrossbowBoltDM,Crossbow Ammo
+CrossbowBoltDMdesc,"Base Entity Damage: 40.\n\nStacks to 40.\nFinding backpacks will increase the stack size, up to 200."
+
+HandgunQ1,[9C8867][Quality 1][-] Handgun
+HandgunQ2,[CF7F29][Quality 2][-] Handgun
+HandgunQ3,[A2A41B][Quality 3][-] Handgun
+HandgunQ4,[42C234][Quality 4][-] Handgun
+HandgunQ5,[315DCE][Quality 5][-] Handgun
+HandgunQ6,[400073][Quality 6][-] Handgun
+HandgunQ1desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 12\nRange: 40m\nRoF: 150/minute\nMod Slots: 0"
+HandgunQ2desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 13\nRange: 44m\nRoF: 157/minute\nMod Slots: 0"
+HandgunQ3desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 14\nRange: 48m\nRoF: 164/minute\nMod Slots: 1"
+HandgunQ4desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 15\nRange: 52m\nRoF: 171/minute\nMod Slots: 1"
+HandgunQ5desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 16\nRange: 56m\nRoF: 178/minute\nMod Slots: 2"
+HandgunQ6desc,"Better than nothing, effective against the lesser demons.\n\nEntity Damage: 18\nRange: 60m\nRoF: 185/minute\nMod Slots: 2\n[400073]Penetrate 1 extra target[-]"
+HandgunQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Handgun!
+HandgunQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Handgun!
+HandgunQ4Unlocked,Unlocked [42C234][Quality 4][-] Handgun!
+HandgunQ5Unlocked,Unlocked [315DCE][Quality 5][-] Handgun!
+HandgunQ6Unlocked,Unlocked [400073][Quality 6][-] Handgun!
+
+9mmBulletDM,Handgun Ammo
+9mmBulletDMdesc,"Base Entity Damage: 12.\n\nStacks to 100.\nFinding backpacks will increase the stack size, up to 500."
+
+PumpShotgunQ1,[9C8867][Quality 1][-] Pump Shotgun
+PumpShotgunQ2,[CF7F29][Quality 2][-] Pump Shotgun
+PumpShotgunQ3,[A2A41B][Quality 3][-] Pump Shotgun
+PumpShotgunQ4,[42C234][Quality 4][-] Pump Shotgun
+PumpShotgunQ5,[315DCE][Quality 5][-] Pump Shotgun
+PumpShotgunQ6,[400073][Quality 6][-] Pump Shotgun
+PumpShotgunQ1desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 9 x8 pellets\nRange: 40m\nSpread: 8 degrees\nRoF: 55/minute\nMod Slots: 0"
+PumpShotgunQ2desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 10 x8 pellets\nRange: 44m\nSpread: 7.6 degrees\nRoF: 57/minute\nMod Slots: 0"
+PumpShotgunQ3desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 11 x8 pellets\nRange: 48m\nSpread: 7.2 degrees\nRoF: 59/minute\nMod Slots: 1"
+PumpShotgunQ4desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 12 x8 pellets\nRange: 52m\nSpread: 6.8 degrees\nRoF: 61/minute\nMod Slots: 1"
+PumpShotgunQ5desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 13 x8 pellets\nRange: 56m\nSpread: 6.4 degrees\nRoF: 63/minute\nMod Slots: 2"
+PumpShotgunQ6desc,"Now we're talking! Pump action sure is mind-blowing!\n\nEntity Damage: 14 x8 pellets\nRange: 60m\nSpread: 6.0 degrees\nRoF: 65/minute\nMod Slots: 2\n[400073]Penetrate 1 extra target[-]"
+
+SuperShotgunQ1,[9C8867][Quality 1][-] Super Shotgun
+SuperShotgunQ2,[CF7F29][Quality 2][-] Super Shotgun
+SuperShotgunQ3,[A2A41B][Quality 3][-] Super Shotgun
+SuperShotgunQ4,[42C234][Quality 4][-] Super Shotgun
+SuperShotgunQ5,[315DCE][Quality 5][-] Super Shotgun
+SuperShotgunQ6,[400073][Quality 6][-] Super Shotgun
+SuperShotgunQ1desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 9 x20 pellets\nRange: 40m\nSpread: 12 degrees\nRoF: 40/minute\nMod Slots: 0"
+SuperShotgunQ2desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 10 x20 pellets\nRange: 44m\nSpread: 11.4 degrees\nRoF: 42/minute\nMod Slots: 0"
+SuperShotgunQ3desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 11 x20 pellets\nRange: 48m\nSpread: 10.8 degrees\nRoF: 44/minute\nMod Slots: 1"
+SuperShotgunQ4desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 12 x20 pellets\nRange: 52m\nSpread: 10.2 degrees\nRoF: 46/minute\nMod Slots: 1"
+SuperShotgunQ5desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 13 x20 pellets\nRange: 56m\nSpread: 9.6 degrees\nRoF: 48/minute\nMod Slots: 2"
+SuperShotgunQ6desc,"Double the barrels, for double the fun! There's no shortage of red paint now!\n\nEntity Damage: 14 x20 pellets\nRange: 60m\nSpread: 9 degrees\nRoF: 50/minute\nMod Slots: 2\n[400073]Penetrate 1 extra target[-]"
+ShotgunQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Shotguns!
+ShotgunQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Shotguns!
+ShotgunQ4Unlocked,Unlocked [42C234][Quality 4][-] Shotguns!
+ShotgunQ5Unlocked,Unlocked [315DCE][Quality 5][-] Shotguns!
+ShotgunQ6Unlocked,Unlocked [400073][Quality 6][-] Shotguns!
+
+ShotgunShellDM,Shotgun Ammo
+ShotgunShellDMdesc,"Base Entity Damage: 9 per pellet.\n\nStacks to 60.\nFinding backpacks will increase the stack size, up to 300."
+
+ChaingunQ1,[9C8867][Quality 1][-] Chaingun
+ChaingunQ2,[CF7F29][Quality 2][-] Chaingun
+ChaingunQ3,[A2A41B][Quality 3][-] Chaingun
+ChaingunQ4,[42C234][Quality 4][-] Chaingun
+ChaingunQ5,[315DCE][Quality 5][-] Chaingun
+ChaingunQ6,[400073][Quality 6][-] Chaingun
+ChaingunQ1desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 10\nRange: 40m\nSpread: 4 degrees\nRoF: 600/minute\nMod Slots: 0"
+ChaingunQ2desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 11\nRange: 44m\nSpread: 3.8 degrees\nRoF: 630/minute\nMod Slots: 0"
+ChaingunQ3desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 12\nRange: 48m\nSpread: 3.6 degrees\nRoF: 660/minute\nMod Slots: 1"
+ChaingunQ4desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 13\nRange: 52m\nSpread: 3.4 degrees\nRoF: 690/minute\nMod Slots: 1"
+ChaingunQ5desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 14\nRange: 56m\nSpread: 3.2 degrees\nRoF: 720/minute\nMod Slots: 2"
+ChaingunQ6desc,"It's spraying lead, hallelujah it's spraying lead!\n\nEntity Damage: 15\nRange: 60m\nSpread: 3 degrees\nRoF: 750/minute\nMod Slots: 2\n[400073]Penetrate 1 extra target[-]"
+ChaingunQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Chaingun!
+ChaingunQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Chaingun!
+ChaingunQ4Unlocked,Unlocked [42C234][Quality 4][-] Chaingun!
+ChaingunQ5Unlocked,Unlocked [315DCE][Quality 5][-] Chaingun!
+ChaingunQ6Unlocked,Unlocked [400073][Quality 6][-] Chaingun!
+
+762mmBulletDM,Chaingun Ammo
+762mmBulletDMdesc,"Base Entity Damage: 10.\n\nStacks to 300.\nFinding backpacks will increase the stack size, up to 1500."
+
+RocketLauncherQ1,[9C8867][Quality 1][-] Rocket Launcher
+RocketLauncherQ2,[CF7F29][Quality 2][-] Rocket Launcher
+RocketLauncherQ3,[A2A41B][Quality 3][-] Rocket Launcher
+RocketLauncherQ4,[42C234][Quality 4][-] Rocket Launcher
+RocketLauncherQ5,[315DCE][Quality 5][-] Rocket Launcher
+RocketLauncherQ6,[400073][Quality 6][-] Rocket Launcher
+RocketLauncherQ1desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 100/20\nExplosion Entity/Block Damage: 100/20\nRadius: 5m\nRoF: 60/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Rockets[-]"
+RocketLauncherQ2desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 110/20\nExplosion Entity/Block Damage: 110/20\nRadius: 5m\nRoF: 63/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Rockets[-]"
+RocketLauncherQ3desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 120/20\nExplosion Entity/Block Damage: 120/20\nRadius: 5m\nRoF: 66/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Rockets[-]"
+RocketLauncherQ4desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 130/20\nExplosion Entity/Block Damage: 130/20\nRadius: 5m\nRoF: 69/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Rockets[-]"
+RocketLauncherQ5desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 140/20\nExplosion Entity/Block Damage: 140/20\nRadius: 5m\nRoF: 72/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Rockets[-]"
+RocketLauncherQ6desc,"Perfect for crowd control, what a blast! Caution, self-inflicted death is non-refundable!\n\nImpact Entity/Block Damage: 150/20\nExplosion Entity/Block Damage: 150/20\nRadius: 5m\nRoF: 75/minute\nMod Slots: 2\n[400073]Explosion Radius +1 metre[-]"
+RocketLauncherQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Rocket Launcher!
+RocketLauncherQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Rocket Launcher!
+RocketLauncherQ4Unlocked,Unlocked [42C234][Quality 4][-] Rocket Launcher!
+RocketLauncherQ5Unlocked,Unlocked [315DCE][Quality 5][-] Rocket Launcher!
+RocketLauncherQ6Unlocked,Unlocked [400073][Quality 6][-] Rocket Launcher!
+
+RocketFragDM,Rocket Frag
+RocketFragDMdesc,"Base Entity/Explosion Damage: 100.\nBase Block/Explosion Damage: 20.\n\nStacks to 30.\nFinding backpacks will increase the stack size, up to 150."
+DummyRocket,Dummy Rocket
+DummyRocketQ6,[400073][Quality 6][-] Dummy Rocket
+DummyRocketDMdesc,"Due to game limitations, you'll need to load this ammo into the Rocket Launcher for it to function."
+DummyRocketQ6DMdesc,"Due to game limitations, you'll need to load this ammo into the Quality 6 Rocket Launcher for it to function."
+
+PlasmaRifleQ1,[9C8867][Quality 1][-] Plasma Rifle
+PlasmaRifleQ2,[CF7F29][Quality 2][-] Plasma Rifle
+PlasmaRifleQ3,[A2A41B][Quality 3][-] Plasma Rifle
+PlasmaRifleQ4,[42C234][Quality 4][-] Plasma Rifle
+PlasmaRifleQ5,[315DCE][Quality 5][-] Plasma Rifle
+PlasmaRifleQ6,[400073][Quality 6][-] Plasma Rifle
+PlasmaRifleQ1desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 25\nRange: 60m\nVelocity: 50m/s\nRoF: 500/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Energy Cells[-]"
+PlasmaRifleQ2desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 27\nRange: 60m\nVelocity: 50m/s\nRoF: 525/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Energy Cells[-]"
+PlasmaRifleQ3desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 29\nRange: 60m\nVelocity: 50m/s\nRoF: 550/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Energy Cells[-]"
+PlasmaRifleQ4desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 31\nRange: 60m\nVelocity: 50m/s\nRoF: 575/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Energy Cells[-]"
+PlasmaRifleQ5desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 33\nRange: 60m\nVelocity: 50m/s\nRoF: 600/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Energy Cells[-]"
+PlasmaRifleQ6desc,"Now we're talking! Melt the toughest of demons within seconds.\n\nEntity Damage: 35\nRange: 60m\nVelocity: 50m/s\nRoF: 625/minute\nMod Slots: 0\n[400073]25% chance Energy Cells get recharged[-]"
+PlasmaRifleQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Plasma Rifle!
+PlasmaRifleQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Plasma Rifle!
+PlasmaRifleQ4Unlocked,Unlocked [42C234][Quality 4][-] Plasma Rifle!
+PlasmaRifleQ5Unlocked,Unlocked [315DCE][Quality 5][-] Plasma Rifle!
+PlasmaRifleQ6Unlocked,Unlocked [400073][Quality 6][-] Plasma Rifle!
+
+UACs_secretWeapon,UAC's Secret Weapon
+UACs_secretWeapon_offer,"The UAC has sent you the location of their most powerful weapon, dig it up and show those demons who they're really up against!"
+cntBuriedLootStashChestBFG, UAC's Secret Stash
+cntBuriedLootStashChestBFGInsecure, UAC's Secret Stash
+
+BFG9001,[400073][Legendary][-] Big Fucking Gun 9001
+BFG9001desc,"IT'S OVER 9000!!\n\nA modified BFG9000 that requires 40 Energy Cells to fire.\nThis model is capable of firing energy for damaging only living targets, or destroying everything.\n\n[FF4F00]Load this with BFG Core[-]"
+DummyBFGCellEntity,BFG Core (Entities Only)
+DummyBFGCellEntitydesc,This functionality focuses on only damaging living targets. (Excluding players)\n\n600 Entity Damage.\n5 Block Damage.
+DummyBFGCellBlock,BFG Core (Everything)
+DummyBFGCellBlockdesc,This functionality will destroy everything in the detonated radius. (Excluding players)\n\n600 Entity Damage.\n3500 Block Damage.
+
+FlameThrowerQ1,[9C8867][Quality 1][-] Flamethrower
+FlameThrowerQ2,[CF7F29][Quality 2][-] Flamethrower
+FlameThrowerQ3,[A2A41B][Quality 3][-] Flamethrower
+FlameThrowerQ4,[42C234][Quality 4][-] Flamethrower
+FlameThrowerQ5,[315DCE][Quality 5][-] Flamethrower
+FlameThrowerQ6,[400073][Quality 6][-] Flamethrower
+FlameThrowerQ1Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 40/s\nRange: 7m\nRoF: 300/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Petrol[-]"
+FlameThrowerQ2Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 44/s\nRange: 7.7m\nRoF: 315/minute\nMod Slots: 0\n\n[FF4F00]Load this with Dummy Petrol[-]"
+FlameThrowerQ3Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 48/s\nRange: 8.4m\nRoF: 330/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
+FlameThrowerQ4Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 52/s\nRange: 9.1m\nRoF: 345/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
+FlameThrowerQ5Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 56/s\nRange: 9.8m\nRoF: 360/minute\nMod Slots: 2\n\n[FF4F00]Load this with Dummy Petrol[-]"
+FlameThrowerQ6Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 60/s\nRange: 10.5m\nRoF: 375/minute\nMod Slots: 2\n[400073]Use 33% less Petrol[-]"
+
+PlasmaCellDM,Energy Cell
+PlasmaCellDMdesc,"Base Entity Damage: 25.\n\nStacks to 400.\nFinding backpacks will increase the stack size, up to 2000."
+DummyCell,Dummy Energy Cell
+DummyCellDMdesc,"Due to game limitations, you'll need to load this ammo into the plasma rifle for it to function."
+
+JunkTurretQ1,[9C8867][Quality 1][-] Junk Turret
+JunkTurretQ2,[CF7F29][Quality 2][-] Junk Turret
+JunkTurretQ3,[A2A41B][Quality 3][-] Junk Turret
+JunkTurretQ4,[42C234][Quality 4][-] Junk Turret
+JunkTurretQ5,[315DCE][Quality 5][-] Junk Turret
+JunkTurretQ6,[400073][Quality 6][-] Junk Turret
+JunkTurretQ1desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 10\nRange: 20m\nSpread: 5 degrees\nRoF: 120/minute\nMod Slots: 0\nCapacity: 100"
+JunkTurretQ2desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 11\nRange: 22m\nSpread: 4.5 degrees\nRoF: 126/minute\nMod Slots: 0\nCapacity: 120"
+JunkTurretQ3desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 12\nRange: 24m\nSpread: 4 degrees\nRoF: 132/minute\nMod Slots: 1\nCapacity: 140"
+JunkTurretQ4desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 13\nRange: 26m\nSpread: 3.5 degrees\nRoF: 138/minute\nMod Slots: 1\nCapacity: 160"
+JunkTurretQ5desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 14\nRange: 28m\nSpread: 3 degrees\nRoF: 144/minute\nMod Slots: 2\nCapacity: 180"
+JunkTurretQ6desc,"Your new best friend in a demon infested world!\nCan have 2 active at once.\n\nEntity Damage: 15\nRange: 30m\nSpread: 2.5 degrees\nRoF: 150/minute\nMod Slots: 2\nCapacity: 200\n[400073]Penetrate 1 extra target[-]"
+JunkTurretQ2Unlocked,Unlocked [CF7F29][Quality 2][-] Flamethrower!
+JunkTurretQ3Unlocked,Unlocked [A2A41B][Quality 3][-] Flamethrower!
+JunkTurretQ4Unlocked,Unlocked [42C234][Quality 4][-] Flamethrower!
+JunkTurretQ5Unlocked,Unlocked [315DCE][Quality 5][-] Flamethrower!
+JunkTurretQ6Unlocked,Unlocked [400073][Quality 6][-] Flamethrower!
+
+TurretAmmoDM,Turret Ammo
+TurretAmmoDMdesc,"Base Entity Damage: 10.\n\nStacks to 200.\nFinding backpacks will increase the stack size, up to 1000."
+
+modNonFunctionalDesc,"This modification isn't functional.\n\nUpgrades will restore and enhance its effects.\n\nCan be smelted for 27 Scrap Steel or scrapped for 20 Scrap Steel."
+
+modArmorTreasureHunterQ2,[CF7F29][Quality 2][-] Treasure Hunter's Mod
+modArmorTreasureHunterQ3,[A2A41B][Quality 3][-] Treasure Hunter's Mod
+modArmorTreasureHunterQ4,[42C234][Quality 4][-] Treasure Hunter's Mod
+modArmorTreasureHunterQ5,[315DCE][Quality 5][-] Treasure Hunter's Mod
+modArmorTreasureHunterQ6,[400073][Quality 6][-] Treasure Hunter's Mod
+modArmorTreasureHunterQ2Desc,Installs onto gloves\n\nLoot Stage: + 3\nLoot Stage: +2%\nLooting Time: -10%\nXP Gain: +3%
+modArmorTreasureHunterQ3Desc,Installs onto gloves\n\nLoot Stage: + 6\nLoot Stage: +4%\nLooting Time: -20%\nXP Gain: +6%
+modArmorTreasureHunterQ4Desc,Installs onto gloves\n\nLoot Stage: + 9\nLoot Stage: +6%\nLooting Time: -30%\nXP Gain: +9%
+modArmorTreasureHunterQ5Desc,Installs onto gloves\n\nLoot Stage: + 12\nLoot Stage: +8%\nLooting Time: -40%\nXP Gain: +12%
+modArmorTreasureHunterQ6Desc,Installs onto gloves\n\nLoot Stage: + 15\nLoot Stage: +10%\nLooting Time: -50%\nXP Gain: +15%\nTreasure Radius: -1
+
+modGunBarrelExtenderQ2,[CF7F29][Quality 2][-] Barrel Extender Mod
+modGunBarrelExtenderQ3,[A2A41B][Quality 3][-] Barrel Extender Mod
+modGunBarrelExtenderQ4,[42C234][Quality 4][-] Barrel Extender Mod
+modGunBarrelExtenderQ5,[315DCE][Quality 5][-] Barrel Extender Mod
+modGunBarrelExtenderQ6,[400073][Quality 6][-] Barrel Extender Mod
+modGunBarrelExtenderQ2Desc,Reduces spread by 6%.\n\nInstalls in  Chainguns.
+modGunBarrelExtenderQ3Desc,Reduces spread by 12%.\n\nInstalls in Chainguns.
+modGunBarrelExtenderQ4Desc,Reduces spread by 18%.\n\nInstalls in Chainguns.
+modGunBarrelExtenderQ5Desc,Reduces spread by 24%.\n\nInstalls in Chainguns.
+modGunBarrelExtenderQ6Desc,Reduces spread by 30%.\n\nInstalls in Chainguns.
+
+modGunMuzzleBrakeQ2,[CF7F29][Quality 2][-] Muzzle Brake Mod
+modGunMuzzleBrakeQ3,[A2A41B][Quality 3][-] Muzzle Brake Mod
+modGunMuzzleBrakeQ4,[42C234][Quality 4][-] Muzzle Brake Mod
+modGunMuzzleBrakeQ5,[315DCE][Quality 5][-] Muzzle Brake Mod
+modGunMuzzleBrakeQ6,[400073][Quality 6][-] Muzzle Brake Mod
+modGunMuzzleBrakeQ2Desc,Reduces recoil by 7%.\nIncreases weapon handling by 7%.\n\nInstalls in Handguns and Junk Turrets.
+modGunMuzzleBrakeQ3Desc,Reduces recoil by 14%.\nIncreases weapon handling by 14%.\n\nInstalls in Handguns and Junk Turrets.
+modGunMuzzleBrakeQ4Desc,Reduces recoil by 21%.\nIncreases weapon handling by 21%.\n\nInstalls in Handguns and Junk Turrets.
+modGunMuzzleBrakeQ5Desc,Reduces recoil by 28%.\nIncreases weapon handling by 28%.\n\nInstalls in Handguns and Junk Turrets.
+modGunMuzzleBrakeQ6Desc,Reduces recoil by 35%.\nIncreases weapon handling by 35%.\n\nInstalls in Handguns and Junk Turrets.
+
+modGunTriggerGroupAutomaticQ2,[CF7F29][Quality 2][-] Trigger Group: Full Auto Mod
+modGunTriggerGroupAutomaticQ3,[A2A41B][Quality 3][-] Trigger Group: Full Auto Mod
+modGunTriggerGroupAutomaticQ4,[42C234][Quality 4][-] Trigger Group: Full Auto Mod
+modGunTriggerGroupAutomaticQ5,[315DCE][Quality 5][-] Trigger Group: Full Auto Mod
+modGunTriggerGroupAutomaticQ6,[400073][Quality 6][-] Trigger Group: Full Auto Mod
+modGunTriggerGroupAutomaticQ2Desc,Sets the trigger mode to automatic.\nFire rate reduced by 8%.\nIncremental Spread: 5%.\n\nInstalls in Handguns and Junk Turrets.
+modGunTriggerGroupAutomaticQ3Desc,Sets the trigger mode to automatic.\nHas no fire rate penalty.\nIncremental Spread: 4.5%.\n\nInstalls in Handguns and Junk Turrets.
+modGunTriggerGroupAutomaticQ4Desc,Sets the trigger mode to automatic.\nFire rate increased by 8%.\nIncremental Spread: 4%.\n\nInstalls in Handguns and Junk Turrets.
+modGunTriggerGroupAutomaticQ5Desc,Sets the trigger mode to automatic.\nFire rate increased by 16%.\nIncremental Spread: 3.5%.\n\nInstalls in Handguns and Junk Turrets.
+modGunTriggerGroupAutomaticQ6Desc,Sets the trigger mode to automatic.\nFire rate increased by 24%.\nIncremental Spread: 3%.\n\nInstalls in Handguns and Junk Turrets.
+
+modGunForegripQ2,[CF7F29][Quality 2][-] Fore Grip Mod
+modGunForegripQ3,[A2A41B][Quality 3][-] Fore Grip Mod
+modGunForegripQ4,[42C234][Quality 4][-] Fore Grip Mod
+modGunForegripQ5,[315DCE][Quality 5][-] Fore Grip Mod
+modGunForegripQ6,[400073][Quality 6][-] Fore Grip Mod
+modGunForegripQ2Desc,"Reduces spread by 4%.\nIncreases weapon handling by 4%.\n\nInstalls in Shotguns and Chainguns."
+modGunForegripQ3Desc,"Reduces spread by 8%.\nIncreases weapon handling by 8%.\n\nInstalls in Shotguns and Chainguns."
+modGunForegripQ4Desc,"Reduces spread by 12%.\nIncreases weapon handling by 12%.\n\nInstalls in Shotguns and Chainguns."
+modGunForegripQ5Desc,"Reduces spread by 16%.\nIncreases weapon handling by 16%.\n\nInstalls in Shotguns and Chainguns."
+modGunForegripQ6Desc,"Reduces spread by 20%.\nIncreases weapon handling by 20%.\n\nInstalls in Shotguns and Chainguns."
+
+modGunRetractingStockQ2,[CF7F29][Quality 2][-] Retracting Stock Mod
+modGunRetractingStockQ3,[A2A41B][Quality 3][-] Retracting Stock Mod
+modGunRetractingStockQ4,[42C234][Quality 4][-] Retracting Stock Mod
+modGunRetractingStockQ5,[315DCE][Quality 5][-] Retracting Stock Mod
+modGunRetractingStockQ6,[400073][Quality 6][-] Retracting Stock Mod
+modGunRetractingStockQ2Desc,"Reduces recoil by 8%.\n\nInstalls in Shotguns, Chainguns and Rocket Launchers."
+modGunRetractingStockQ3Desc,"Reduces recoil by 16%.\n\nInstalls in Shotguns, Chainguns and Rocket Launchers."
+modGunRetractingStockQ4Desc,"Reduces recoil by 24%.\n\nInstalls in Shotguns, Chainguns and Rocket Launchers."
+modGunRetractingStockQ5Desc,"Reduces recoil by 32%.\n\nInstalls in Shotguns, Chainguns and Rocket Launchers."
+modGunRetractingStockQ6Desc,"Reduces recoil by 40%.\n\nInstalls in Shotguns, Chainguns and Rocket Launchers."
+
+modShotgunSawedOffBarrelQ2,[CF7F29][Quality 2][-] Sawed-Off Shotgun Mod
+modShotgunSawedOffBarrelQ3,[A2A41B][Quality 3][-] Sawed-Off Shotgun Mod
+modShotgunSawedOffBarrelQ4,[42C234][Quality 4][-] Sawed-Off Shotgun Mod
+modShotgunSawedOffBarrelQ5,[315DCE][Quality 5][-] Sawed-Off Shotgun Mod
+modShotgunSawedOffBarrelQ6,[400073][Quality 6][-] Sawed-Off Shotgun Mod
+modShotgunSawedOffBarrelQ2Desc,Increases spread by 10%.\n\nInstalls in Shotguns.
+modShotgunSawedOffBarrelQ3Desc,Increases spread by 20%.\n\nInstalls in Shotguns.
+modShotgunSawedOffBarrelQ4Desc,Increases spread by 30%.\n\nInstalls in Shotguns.
+modShotgunSawedOffBarrelQ5Desc,Increases spread by 40%.\n\nInstalls in Shotguns.
+modShotgunSawedOffBarrelQ6Desc,Increases spread by 50%.\n\nInstalls in Shotguns.
+
+modGunDuckbillQ2,[CF7F29][Quality 2][-] Shotgun Duckbill Mod
+modGunDuckbillQ3,[A2A41B][Quality 3][-] Shotgun Duckbill Mod
+modGunDuckbillQ4,[42C234][Quality 4][-] Shotgun Duckbill Mod
+modGunDuckbillQ5,[315DCE][Quality 5][-] Shotgun Duckbill Mod
+modGunDuckbillQ6,[400073][Quality 6][-] Shotgun Duckbill Mod
+modGunDuckbillQ2Desc,Decreases vertical spread by 20%.\nIncreases horizontal spread by 40%.\n\nInstalls in Shotguns.
+modGunDuckbillQ3Desc,Decreases vertical spread by 30%.\nIncreases horizontal spread by 60%.\n\nInstalls in Shotguns.
+modGunDuckbillQ4Desc,Decreases vertical spread by 40%.\nIncreases horizontal spread by 80%.\n\nInstalls in Shotguns.
+modGunDuckbillQ5Desc,Decreases vertical spread by 50%.\nIncreases horizontal spread by 100%.\n\nInstalls in Shotguns.
+modGunDuckbillQ6Desc,Decreases vertical spread by 60%.\nIncreases horizontal spread by 120%.\n\nInstalls in Shotguns.
+
+modGunChokeQ2,[CF7F29][Quality 2][-] Shotgun Choke Mod
+modGunChokeQ3,[A2A41B][Quality 3][-] Shotgun Choke Mod
+modGunChokeQ4,[42C234][Quality 4][-] Shotgun Choke Mod
+modGunChokeQ5,[315DCE][Quality 5][-] Shotgun Choke Mod
+modGunChokeQ6,[400073][Quality 6][-] Shotgun Choke Mod
+modGunChokeQ2Desc,Reduces spread by 7%.\n\nInstalls in Shotguns and Junk Turrets.
+modGunChokeQ3Desc,Reduces spread by 14%.\n\nInstalls in Shotguns and Junk Turrets.
+modGunChokeQ4Desc,Reduces spread by 21%.\n\nInstalls in Shotguns and Junk Turrets.
+modGunChokeQ5Desc,Reduces spread by 28%.\n\nInstalls in Shotguns and Junk Turrets.
+modGunChokeQ6Desc,Reduces spread by 35%.\n\nInstalls in Shotguns and Junk Turrets.
+
+modGunMagazineExtenderQ2,[CF7F29][Quality 2][-] Magazine Extender Mod
+modGunMagazineExtenderQ3,[A2A41B][Quality 3][-] Magazine Extender Mod
+modGunMagazineExtenderQ4,[42C234][Quality 4][-] Magazine Extender Mod
+modGunMagazineExtenderQ5,[315DCE][Quality 5][-] Magazine Extender Mod
+modGunMagazineExtenderQ6,[400073][Quality 6][-] Magazine Extender Mod
+modGunMagazineExtenderQ2Desc,Increases ammo capacity by 2.\n\nInstalls in Handguns.
+modGunMagazineExtenderQ3Desc,Increases ammo capacity by 4.\n\nInstalls in Handguns.
+modGunMagazineExtenderQ4Desc,Increases ammo capacity by 6.\n\nInstalls in Handguns.
+modGunMagazineExtenderQ5Desc,Increases ammo capacity by 8.\n\nInstalls in Handguns.
+modGunMagazineExtenderQ6Desc,Increases ammo capacity by 10.\n\nInstalls in Handguns.
+
+modGunDrumMagazineExtenderQ2,[CF7F29][Quality 2][-] Drum Magazine Mod
+modGunDrumMagazineExtenderQ3,[A2A41B][Quality 3][-] Drum Magazine Mod
+modGunDrumMagazineExtenderQ4,[42C234][Quality 4][-] Drum Magazine Mod
+modGunDrumMagazineExtenderQ5,[315DCE][Quality 5][-] Drum Magazine Mod
+modGunDrumMagazineExtenderQ6,[400073][Quality 6][-] Drum Magazine Mod
+modGunDrumMagazineExtenderQ2Desc,Increases ammo capacity by 20.\n\nInstalls in Junk Turrets.
+modGunDrumMagazineExtenderQ3Desc,Increases ammo capacity by 40.\n\nInstalls in Junk Turrets.
+modGunDrumMagazineExtenderQ4Desc,Increases ammo capacity by 60.\n\nInstalls in Junk Turrets.
+modGunDrumMagazineExtenderQ5Desc,Increases ammo capacity by 80.\n\nInstalls in Junk Turrets.
+modGunDrumMagazineExtenderQ6Desc,Increases ammo capacity by 100.\n\nInstalls in Junk Turrets.
+
+
+modGunShotgunTubeExtenderMagazineQ2,[CF7F29][Quality 2][-] Tube Extender Mod
+modGunShotgunTubeExtenderMagazineQ3,[A2A41B][Quality 3][-] Tube Extender Mod
+modGunShotgunTubeExtenderMagazineQ4,[42C234][Quality 4][-] Tube Extender Mod
+modGunShotgunTubeExtenderMagazineQ5,[315DCE][Quality 5][-] Tube Extender Mod
+modGunShotgunTubeExtenderMagazineQ6,[400073][Quality 6][-] Tube Extender Mod
+modGunShotgunTubeExtenderMagazineQ2Desc,Increases ammo capacity by 1.\n\nInstalls in Pump Shotguns and Rocket Launchers.
+modGunShotgunTubeExtenderMagazineQ3Desc,Increases ammo capacity by 2.\nIncreases reload speed by 5%.\n\nInstalls in Pump Shotguns and Rocket Launchers.
+modGunShotgunTubeExtenderMagazineQ4Desc,Increases ammo capacity by 3.\nIncreases reload speed by 10%.\n\nInstalls in Pump Shotguns and Rocket Launchers.
+modGunShotgunTubeExtenderMagazineQ5Desc,Increases ammo capacity by 4.\nIncreases reload speed by 15%.\n\nInstalls in Pump Shotguns and Rocket Launchers.
+modGunShotgunTubeExtenderMagazineQ6Desc,Increases ammo capacity by 5.\nIncreases reload speed by 20%.\n\nInstalls in Pump Shotguns and Rocket Launchers.
+
+modGunBowPolymerStringQ2,[CF7F29][Quality 2][-] Polymer String Mod
+modGunBowPolymerStringQ3,[A2A41B][Quality 3][-] Polymer String Mod
+modGunBowPolymerStringQ4,[42C234][Quality 4][-] Polymer String Mod
+modGunBowPolymerStringQ5,[315DCE][Quality 5][-] Polymer String Mod
+modGunBowPolymerStringQ6,[400073][Quality 6][-] Polymer String Mod
+modGunBowPolymerStringQ2Desc,Increases projectile velocity by 5%.\nIncreases entity damage by 2.\n\nInstalls in Crossbows.
+modGunBowPolymerStringQ3Desc,Increases projectile velocity by 10%.\nIncreases entity damage by 4.\n\nInstalls in Crossbows.
+modGunBowPolymerStringQ4Desc,Increases projectile velocity by 15%.\nIncreases entity damage by 6.\n\nInstalls in Crossbows.
+modGunBowPolymerStringQ5Desc,Increases projectile velocity by 20%.\nIncreases entity damage by 8.\n\nInstalls in Crossbows.
+modGunBowPolymerStringQ6Desc,Increases projectile velocity by 25%.\nIncreases entity damage by 10.\n\nInstalls in Crossbows.
+
+modMeleeStructuralBraceQ2,[CF7F29][Quality 2][-] Structural Brace Mod
+modMeleeStructuralBraceQ3,[A2A41B][Quality 3][-] Structural Brace Mod
+modMeleeStructuralBraceQ4,[42C234][Quality 4][-] Structural Brace Mod
+modMeleeStructuralBraceQ5,[315DCE][Quality 5][-] Structural Brace Mod
+modMeleeStructuralBraceQ6,[400073][Quality 6][-] Structural Brace Mod
+modMeleeStructuralBraceQ2Desc,Reduces durability degradation by 5%.\n\nInstalls in Tools and Firearms.
+modMeleeStructuralBraceQ3Desc,Reduces durability degradation by 10%.\n\nInstalls in Tools and Firearms.
+modMeleeStructuralBraceQ4Desc,Reduces durability degradation by 15%.\n\nInstalls in Tools and Firearms.
+modMeleeStructuralBraceQ5Desc,Reduces durability degradation by 20%.\n\nInstalls in Tools and Firearms.
+modMeleeStructuralBraceQ6Desc,Reduces durability degradation by 25%.\n\nInstalls in Tools and Firearms.
+
+modMeleeGraveDiggerQ2,[CF7F29][Quality 2][-] Grave Digger Mod
+modMeleeGraveDiggerQ3,[A2A41B][Quality 3][-] Grave Digger Mod
+modMeleeGraveDiggerQ4,[42C234][Quality 4][-] Grave Digger Mod
+modMeleeGraveDiggerQ5,[315DCE][Quality 5][-] Grave Digger Mod
+modMeleeGraveDiggerQ6,[400073][Quality 6][-] Grave Digger Mod
+modMeleeGraveDiggerQ2Desc,Increases damage to dirt by 6%.
+modMeleeGraveDiggerQ3Desc,Increases damage to dirt by 12%.
+modMeleeGraveDiggerQ4Desc,Increases damage to dirt by 18%.
+modMeleeGraveDiggerQ5Desc,Increases damage to dirt by 24%.
+modMeleeGraveDiggerQ6Desc,Increases damage to dirt by 30%.
+
+modMeleeBunkerBusterQ2,[CF7F29][Quality 2][-] Bunker Buster Mod
+modMeleeBunkerBusterQ3,[A2A41B][Quality 3][-] Bunker Buster Mod
+modMeleeBunkerBusterQ4,[42C234][Quality 4][-] Bunker Buster Mod
+modMeleeBunkerBusterQ5,[315DCE][Quality 5][-] Bunker Buster Mod
+modMeleeBunkerBusterQ6,[400073][Quality 6][-] Bunker Buster Mod
+modMeleeBunkerBusterQ2Desc,Increases damage to stone by 6%.
+modMeleeBunkerBusterQ3Desc,Increases damage to stone by 12%.
+modMeleeBunkerBusterQ4Desc,Increases damage to stone by 18%.
+modMeleeBunkerBusterQ5Desc,Increases damage to stone by 24%.
+modMeleeBunkerBusterQ6Desc,Increases damage to stone by 30%.
+
+modMeleeIronBreakerQ2,[CF7F29][Quality 2][-] Iron Breaker Mod
+modMeleeIronBreakerQ3,[A2A41B][Quality 3][-] Iron Breaker Mod
+modMeleeIronBreakerQ4,[42C234][Quality 4][-] Iron Breaker Mod
+modMeleeIronBreakerQ5,[315DCE][Quality 5][-] Iron Breaker Mod
+modMeleeIronBreakerQ6,[400073][Quality 6][-] Iron Breaker Mod
+modMeleeIronBreakerQ2Desc,Increases damage to iron by 6%.
+modMeleeIronBreakerQ3Desc,Increases damage to iron by 12%.
+modMeleeIronBreakerQ4Desc,Increases damage to iron by 18%.
+modMeleeIronBreakerQ5Desc,Increases damage to iron by 24%.
+modMeleeIronBreakerQ6Desc,Increases damage to iron by 30%.
+
+modMeleeWoodSplitterQ2,[CF7F29][Quality 2][-] Wood Splitter Mod
+modMeleeWoodSplitterQ3,[A2A41B][Quality 3][-] Wood Splitter Mod
+modMeleeWoodSplitterQ4,[42C234][Quality 4][-] Wood Splitter Mod
+modMeleeWoodSplitterQ5,[315DCE][Quality 5][-] Wood Splitter Mod
+modMeleeWoodSplitterQ6,[400073][Quality 6][-] Wood Splitter Mod
+modMeleeWoodSplitterQ2Desc,Increases damage to wood by 6%.
+modMeleeWoodSplitterQ3Desc,Increases damage to wood by 12%.
+modMeleeWoodSplitterQ4Desc,Increases damage to wood by 18%.
+modMeleeWoodSplitterQ5Desc,Increases damage to wood by 24%.
+modMeleeWoodSplitterQ6Desc,Increases damage to wood by 30%.
+
+modMeleeDiamondTipQ2,[CF7F29][Quality 2][-] Diamond Blade Tip Mod
+modMeleeDiamondTipQ3,[A2A41B][Quality 3][-] Diamond Blade Tip Mod
+modMeleeDiamondTipQ4,[42C234][Quality 4][-] Diamond Blade Tip Mod
+modMeleeDiamondTipQ5,[315DCE][Quality 5][-] Diamond Blade Tip Mod
+modMeleeDiamondTipQ6,[400073][Quality 6][-] Diamond Blade Tip Mod
+modMeleeDiamondTipQ2Desc,Reduces durability degradation by 5%.\n\nInstalls in Tools.
+modMeleeDiamondTipQ3Desc,Reduces durability degradation by 10%.\n\nInstalls in Tools.
+modMeleeDiamondTipQ4Desc,Reduces durability degradation by 15%.\n\nInstalls in Tools.
+modMeleeDiamondTipQ5Desc,Reduces durability degradation by 20%.\n\nInstalls in Tools.
+modMeleeDiamondTipQ6Desc,Reduces durability degradation by 25%.\n\nInstalls in Tools.
+
+modFuelTankLargeQ2,[CF7F29][Quality 2][-] Fuel Tank Mod
+modFuelTankLargeQ3,[A2A41B][Quality 3][-] Fuel Tank Mod
+modFuelTankLargeQ4,[42C234][Quality 4][-] Fuel Tank Mod
+modFuelTankLargeQ5,[315DCE][Quality 5][-] Fuel Tank Mod
+modFuelTankLargeQ6,[400073][Quality 6][-] Fuel Tank Mod
+modFuelTankLargeQ2Desc,Increases fuel capacity by 20.\n\nInstalls in Chainsaws and Flamethrowers.
+modFuelTankLargeQ3Desc,Increases fuel capacity by 40.\n\nInstalls in Chainsaws and Flamethrowers.
+modFuelTankLargeQ4Desc,Increases fuel capacity by 60.\n\nInstalls in Chainsaws and Flamethrowers.
+modFuelTankLargeQ5Desc,Increases fuel capacity by 80.\n\nInstalls in Chainsaws and Flamethrowers.
+modFuelTankLargeQ6Desc,Increases fuel capacity by 100.\n\nInstalls in Chainsaws and Flamethrowers.
+
+modVehicleFuelSaverQ2,[CF7F29][Quality 2][-] Fuel Saver Mod
+modVehicleFuelSaverQ3,[A2A41B][Quality 3][-] Fuel Saver Mod
+modVehicleFuelSaverQ4,[42C234][Quality 4][-] Fuel Saver Mod
+modVehicleFuelSaverQ5,[315DCE][Quality 5][-] Fuel Saver Mod
+modVehicleFuelSaverQ6,[400073][Quality 6][-] Fuel Saver Mod
+modVehicleFuelSaverQ2Desc,Vehicles use 10% less fuel.
+modVehicleFuelSaverQ3Desc,Vehicles use 16% less fuel.
+modVehicleFuelSaverQ4Desc,Vehicles use 23% less fuel.
+modVehicleFuelSaverQ5Desc,Vehicles use 31% less fuel.
+modVehicleFuelSaverQ6Desc,Vehicles use 40% less fuel.
+
+modVehicleSuperChargerQ2,[CF7F29][Quality 2][-] Super Charger Mod
+modVehicleSuperChargerQ3,[A2A41B][Quality 3][-] Super Charger Mod
+modVehicleSuperChargerQ4,[42C234][Quality 4][-] Super Charger Mod
+modVehicleSuperChargerQ5,[315DCE][Quality 5][-] Super Charger Mod
+modVehicleSuperChargerQ6,[400073][Quality 6][-] Super Charger Mod
+modVehicleSuperChargerQ2Desc,Increases vehicle speed by 6%.
+modVehicleSuperChargerQ3Desc,Increases vehicle speed by 12%.
+modVehicleSuperChargerQ4Desc,Increases vehicle speed by 18%.
+modVehicleSuperChargerQ5Desc,Increases vehicle speed by 24%.
+modVehicleSuperChargerQ6Desc,Increases vehicle speed by 30%.
+
+modVehicleReserveFuelTankQ2,[CF7F29][Quality 2][-] Reserve Fuel Tank Mod
+modVehicleReserveFuelTankQ3,[A2A41B][Quality 3][-] Reserve Fuel Tank Mod
+modVehicleReserveFuelTankQ4,[42C234][Quality 4][-] Reserve Fuel Tank Mod
+modVehicleReserveFuelTankQ5,[315DCE][Quality 5][-] Reserve Fuel Tank Mod
+modVehicleReserveFuelTankQ6,[400073][Quality 6][-] Reserve Fuel Tank Mod
+modVehicleReserveFuelTankQ2Desc,Increases vehicle fuel capacity by 20%.
+modVehicleReserveFuelTankQ3Desc,Increases vehicle fuel capacity by 40%.
+modVehicleReserveFuelTankQ4Desc,Increases vehicle fuel capacity by 60%.
+modVehicleReserveFuelTankQ5Desc,Increases vehicle fuel capacity by 80%.
+modVehicleReserveFuelTankQ6Desc,Increases vehicle fuel capacity by 100%.
+
+modVehiclePlowQ2,[CF7F29][Quality 2][-] Vehicle Plow Mod
+modVehiclePlowQ3,[A2A41B][Quality 3][-] Vehicle Plow Mod
+modVehiclePlowQ4,[42C234][Quality 4][-] Vehicle Plow Mod
+modVehiclePlowQ5,[315DCE][Quality 5][-] Vehicle Plow Mod
+modVehiclePlowQ6,[400073][Quality 6][-] Vehicle Plow Mod
+modVehiclePlowQ2Desc,Increases vehicle Entity and Block damage by 10%.\nReduces vehicle damage taken by 10%.\n\nInstalls onto the Truck.
+modVehiclePlowQ3Desc,Increases vehicle Entity and Block damage by 20%.\nReduces vehicle damage taken by 20%.\n\nInstalls onto the Truck.
+modVehiclePlowQ4Desc,Increases vehicle Entity and Block damage by 30%.\nReduces vehicle damage taken by 30%.\n\nInstalls onto the Truck.
+modVehiclePlowQ5Desc,Increases vehicle Entity and Block damage by 40%.\nReduces vehicle damage taken by 40%.\n\nInstalls onto the Truck.
+modVehiclePlowQ6Desc,Increases vehicle Entity and Block damage by 50%.\nReduces vehicle damage taken by 50%.\n\nInstalls onto the Truck.
+
+modVehicleArmorQ2,[CF7F29][Quality 2][-] Vehicle Armour Mod
+modVehicleArmorQ3,[A2A41B][Quality 3][-] Vehicle Armour Mod
+modVehicleArmorQ4,[42C234][Quality 4][-] Vehicle Armour Mod
+modVehicleArmorQ5,[315DCE][Quality 5][-] Vehicle Armour Mod
+modVehicleArmorQ6,[400073][Quality 6][-] Vehicle Armour Mod
+modVehicleArmorQ2Desc,Increases vehicle Entity and Block damage by 10%.\nReduces vehicle damage taken by 10%.\n\nInstalls onto the Motorcycle and Gyrocopter.
+modVehicleArmorQ3Desc,Increases vehicle Entity and Block damage by 20%.\nReduces vehicle damage taken by 20%.\n\nInstalls onto the Motorcycle and Gyrocopter.
+modVehicleArmorQ4Desc,Increases vehicle Entity and Block damage by 30%.\nReduces vehicle damage taken by 30%.\n\nInstalls onto the Motorcycle and Gyrocopter.
+modVehicleArmorQ5Desc,Increases vehicle Entity and Block damage by 40%.\nReduces vehicle damage taken by 40%.\n\nInstalls onto the Motorcycle and Gyrocopter.
+modVehicleArmorQ6Desc,Increases vehicle Entity and Block damage by 50%.\nReduces vehicle damage taken by 50%.\n\nInstalls onto the Motorcycle and Gyrocopter.
+
+AmmoStackPouch,Ammo Capacity Backpack
+AmmoStackPouchDesc,Increases ammo stack size of your choice by 10%.
+backpackHandgunAmmo,Handgun Capacity Backpack
+backpackHandgunAmmoDesc,Increases your handgun ammo stack size by 10%.
+backpackCrossbowAmmo,Crossbow Capacity Backpack
+backpackCrossbowAmmoDesc,Increases your crossbow ammo stack size by 10%.
+backpackTurretAmmo,Turret Capacity Backpack
+backpackTurretAmmoDesc,Increases your turret ammo stack size by 10%.
+backpackShotgunAmmo,Shotgun Capacity Backpack
+backpackShotgunAmmoDesc,Increases your shotgun ammo stack size by 10%.
+backpackChaingunAmmo,Chaingun Capacity Backpack
+backpackChaingunAmmoDesc,Increases your chaingun ammo stack size by 10%.
+backpackFuelAmmo,Fuel Capacity Backpack
+backpackFuelAmmoDesc,Increases your fuel stack size by 10%.
+backpackRocketAmmo,Rocket Capacity Backpack
+backpackRocketAmmoDesc,Increases your rocket ammo stack size by 10%.
+backpackPlasmaAmmo,Energy Cell Capacity Backpack
+backpackPlasmaAmmoDesc,Increases your plasma cell ammo stack size by 10%.
+
+medicalT1-1DM,Tier 1: Stimpack
+medicalT2-2DM,Tier 2: Medikit
+medicalT2-3DM,Tier 2: Blue Stimpack and Antibiotics
+medicalT3-1DM,Tier 3: Blue Medikit
+medicalT3-2DM,Tier 3: Health Potion
+
+foodT2-5DM,Tier 2: Steak and Potato Meal, Red Honey Tea & Ash Chicken Stew
+foodT3-1DM,Tier 3: Yucca Juice Smoothie
+foodT3-2DM,Tier 3: Hobo Stew & Honey Coffee
+foodT3-4DM,Tier 3: Chili Dog & Chicken Wings
+foodT3-5DM,Tier 3: Shame Chowder, Honey Glazed Shame & Tuna Fish Gravy Toast
+foodT4-1DM,Tier 4: Tuna Fish Gravy Toast
+foodT4-2DM,Tier 4: Shepherd's Pie
+foodT4-3DM,Tier 4: Honey Brisket
+
+
+ShotgunsQ2,"[CF7F29][Quality 2][-] Pump Shotgun, [CF7F29][Quality 2][-] Super Shotgun"
+ShotgunsQ3,"[A2A41B][Quality 3][-] Pump Shotgun, [A2A41B][Quality 3][-] Super Shotgun"
+ShotgunsQ4,"[42C234][Quality 4][-] Pump Shotgun, [42C234][Quality 4][-] Super Shotgun"
+ShotgunsQ5,"[315DCE][Quality 5][-] Pump Shotgun, [315DCE][Quality 5][-] Super Shotgun"
+ShotgunsQ6,"[400073][Quality 6][-] Pump Shotgun, [400073][Quality 6][-] Super Shotgun"
+
+ExplosivesQ2,"[CF7F29][Quality 2][-] Rocket Launcher, [CF7F29][Quality 2][-] Flamethrower"
+ExplosivesQ3,"[A2A41B][Quality 3][-] Rocket Launcher, [A2A41B][Quality 3][-] Flamethrower"
+ExplosivesQ4,"[42C234][Quality 4][-] Rocket Launcher, [42C234][Quality 4][-] Flamethrower"
+ExplosivesQ5,"[315DCE][Quality 5][-] Rocket Launcher, [315DCE][Quality 5][-] Flamethrower"
+ExplosivesQ6,"[400073][Quality 6][-] Rocket Launcher, [400073][Quality 6][-] Flamethrower" 
+
+attcombatperks,Combat Perks
+attammobackpacks,Ammo Backpacks
+
+perkQuickerCrafting,Quicker Crafting
+perkQuickerCraftingName,Quicker Crafting
+perkQuickerCraftingDesc,"Craft everything faster, everything!"
+perkQuickerCraftingRank1Desc,Hurry up already!
+perkQuickerCraftingRank2Desc,"Okay, that's a bit faster!"
+perkQuickerCraftingRank3Desc,"Look Mum, no hands!"
+perkQuickerCraftingRank4Desc,Done in a jiffy!
+perkQuickerCraftingRank5Desc,"Woah, that was quick!"
+perkQuickerCraftingRank1LongDesc,Craft time for everything is reduced by 15%.
+perkQuickerCraftingRank2LongDesc,Craft time for everything is reduced by 30%.
+perkQuickerCraftingRank3LongDesc,Craft time for everything is reduced by 45%.
+perkQuickerCraftingRank4LongDesc,Craft time for everything is reduced by 60%.
+perkQuickerCraftingRank5LongDesc,Craft time for everything is reduced by 75%.
+
+perkLockPickingNameDM,Forge Ahead + Lock Picking
+perkLockPickingDescDM,Find more Forge Ahead magazines in loot.\n\nLearn to pick locks faster and break fewer lockpicks.
+
+perkCardioDesc,Walk and Run faster.
+perkCardioNameRank1LongDesc,Walk 10% faster.\nRun 7% faster.
+perkCardioNameRank2LongDesc,Walk 20% faster.\nRun 14% faster.
+perkCardioNameRank3LongDesc,Walk 30% faster.\nRun 21% faster.
+perkCardioNameRank4LongDesc,Walk 40% faster.\nRun 28% faster.
+perkCardioNameRank5LongDesc,Walk 50% faster.\nRun 35% faster.
+
+perkTreasureHunterDMRank1LongDesc,"Treasure radius decreases 1m for every 9 blocks dug instead of 10.\nDo 10% more damage to dirt.\nFind 10% more items in buried chests."
+perkTreasureHunterDMRank2LongDesc,"Treasure radius decreases 1m for every 8 blocks dug.\nDo 20% more damage to dirt.\nFind 20% more items in buried chests."
+perkTreasureHunterDMRank3LongDesc,"Treasure radius decreases 1m for every 7 blocks dug.\nDo 30% more damage to dirt.\nFind 30% more items in buried chests."
+perkTreasureHunterDMRank4LongDesc,"Treasure radius decreases 1m for every 6 blocks dug.\nDo 40% more damage to dirt.\nFind 40% more items in buried chests.\n\nAdds extra cash to all buried chests."
+perkTreasureHunterDMRank5LongDesc,"Treasure radius decreases 1m for every 5 blocks dug.\nDo 50% more damage to dirt.\nFind 50% more items in buried chests.\n\nAdds extra weapon, armor, and rare item to all buried chests."
+
+perkChemistExpertName,Chemist Expert
+perkChemistExpertDesc,"When crafting ammo, you require less gunpowder or petrol.\nWhen crafting gunpowder or petrol, you require less nitrate, coal and fertiliser, or oil Shale."
+perkChemistExpertRank1Desc,Yes! Science!
+perkChemistExpertRank2Desc,Exceeding Experimentation
+perkChemistExpertRank3Desc,Master of Chemisty
+perkChemistExpertRank1LongDesc,"When crafting ammo, use 10% less gunpowder and 5% less petrol.\nWhen crafting gunpowder, use 10% less nitrate and coal.\nWhen crafting petrol and oil, use 5% less oil shale."
+perkChemistExpertRank2LongDesc,"When crafting ammo, use 20% less gunpowder and 10% less petrol.\nWhen crafting gunpowder, use 20% less nitrate and coal.\nWhen crafting petrol and oil, use 10% less oil shale."
+perkChemistExpertRank3LongDesc,"When crafting ammo, use 30% less gunpowder and 15% less petrol.\nWhen crafting gunpowder, use 30% less nitrate and coal.\nWhen crafting petrol and oil, use 15% less oil shale."
+
+perkJunkMinerRankDM1LongDesc,"Gain 50% more resources from harvesting junk such as cloth, plastic etc."
+perkJunkMinerRankDM2LongDesc,"Gain 100% more resources from harvesting junk such as cloth, plastic etc."
+perkJunkMinerRankDM3LongDesc,"Gain 150% more resources from harvesting junk such as cloth, plastic etc."
+perkJunkMinerRankDM4LongDesc,"Gain 200% more resources from harvesting junk such as cloth, plastic etc."
+perkJunkMinerRankDM5LongDesc,"Gain 300% more resources from harvesting junk such as cloth, plastic etc."
+
+perkGreaseMonkeyDMRank1LongDesc,Repair kits are 10% more effective on vehicles.\nVehicles take 5% less damage.\nVehicles use 5% less fuel.\nAccelerate 3% faster.\nFind 20% more Vehicle Adventures magazines in loot.
+perkGreaseMonkeyDMRank2LongDesc,Repair kits are 20% more effective on vehicles.\nVehicles take 10% less damage.\nVehicles use 10% less fuel.\nAccelerate 6% faster.\nFind 40% more Vehicle Adventures magazines in loot.
+perkGreaseMonkeyDMRank3LongDesc,Repair kits are 30% more effective on vehicles.\nVehicles take 15% less damage.\nVehicles use 15% less fuel.\nAccelerate 9% faster.\nFind 60% more Vehicle Adventures magazines in loot.\nMotercycle is 33% cheaper to craft.
+perkGreaseMonkeyDMRank4LongDesc,Repair kits are 40% more effective on vehicles.\nVehicles take 20% less damage.\nVehicles use 20% less fuel.\nAccelerate 12% faster.\nFind 80% more Vehicle Adventures magazines in loot.\nTruck is 33% cheaper to craft.
+perkGreaseMonkeyDMRank5LongDesc,Repair kits are 50% more effective on vehicles.\nVehicles take 25% less damage.\nVehicles use 25% less fuel.\nAccelerate 15% faster.\nFind 100% more Vehicle Adventures magazines in loot.\nGyrocopter is 33% cheaper to craft.
+
+
+perkParkourRankDM1LongDesc,Increase safe fall distance by 1 metre.
+perkParkourRankDM2LongDesc,Increase safe fall distance by 2 metres.
+perkParkourRankDM3LongDesc,Increase safe fall distance by 3 metres.
+perkParkourRankDM4LongDesc,Increase safe fall distance by 4 metres.
+
+perkStrongLegsName,Strong Legs
+perkStrongLegsDesc,Jump higher than the normal person.
+perkStrongLegsRank1Desc,Boing!
+perkStrongLegsRank2Desc,Ha-yup!
+perkStrongLegsRank3Desc,Whoosh!
+perkStrongLegsRank1LongDesc,Jump 1 metre higher.
+perkStrongLegsRank2LongDesc,Jump 2 metres higher.
+perkStrongLegsRank3LongDesc,Jump 3 metres higher.
+
+perkBookWormName,Book Worm
+perkBookWormDesc,"Adds a chance to find books in general looting, as well as adding a chance to get 2 skill points when reading magazines."
+perkBookWormRank1Desc,Reading? In my video game?
+perkBookWormRank2Desc,Elementary Reading
+perkBookWormRank3Desc,Inspectional Reading
+perkBookWormRank4Desc,Analytical Reading
+perkBookWormRank5Desc,Syntopical Reading
+perkBookWormRank1LongDesc,Have a 3% chance to find books in general looting and a 6% chance to get 2 skill points when reading magazines.
+perkBookWormRank2LongDesc,Have a 6% chance to find books in general looting and a 12% chance to get 2 skill points when reading magazines.
+perkBookWormRank3LongDesc,Have a 9% chance to find books in general looting and a 18% chance to get 2 skill points when reading magazines.
+perkBookWormRank4LongDesc,Have a 12% chance to find books in general looting and a 24% chance to get 2 skill points when reading magazines.
+perkBookWormRank5LongDesc,Have a 15% chance to find books in general looting and a 30% chance to get 2 skill points when reading magazines.
+
+perkAmmoScroungerName,Ammo Scrounger
+perkAmmoScroungerDesc,Find more ammo in loot.\n\nDoesn't affect ammo dropped by former humans.
+perkAmmoScroungerRank1Desc,"Ooooo, shiny!"
+perkAmmoScroungerRank2Desc,Mags loaded!
+perkAmmoScroungerRank3Desc,Swimming in ammo!
+perkAmmoScroungerRank1LongDesc,"When looting ammo, you find more quantity.\n\n+2 Shotgun Shells, Plasma Cells.\n+4 Handgun Ammo and Chaingun Ammo.\n+6  Fuel.\n+1  Crossbow Bolt."
+perkAmmoScroungerRank2LongDesc,"When looting ammo, you find more quantity.\n\n+4 Shotgun Shells, Plasma Cells.\n+8 Handgun Ammo and Chaingun Ammo.\n+12  Fuel.\n+2  Crossbow Bolts.\n+1  Rocket."
+perkAmmoScroungerRank3LongDesc,"When looting ammo, you find more quantity.\n\n+6 Shotgun Shells, Plasma Cells.\n+12 Handgun Ammo and Chaingun Ammo.\n+18  Fuel.\n+3  Crossbow Bolts.\n+2  Rockets."
+
+perkStrongArmName,Strong Arm
+perkStrongArmDesc,Deal more damage with knuckles and knives.
+perkStrongArmRank1LongDesc,Increases base damage by 2 with knuckles and knives.
+perkStrongArmRank2LongDesc,Increases base damage by 4 with knuckles and knives.
+perkStrongArmRank3LongDesc,Increases base damage by 6 with knuckles and knives.
+perkStrongArmRank4LongDesc,Increases base damage by 8 with knuckles and knives.
+perkStrongArmRank5LongDesc,Increases base damage by 10 with knuckles and knives.
+
+perkSiphoningStrikesRank1DMLongDesc,Melee kills recover your health by 1.
+perkSiphoningStrikesRank2DMLongDesc,Melee kills recover your health by 2.
+perkSiphoningStrikesRank3DMLongDesc,Melee kills recover your health by 3.
+perkSiphoningStrikesRank4DMLongDesc,Melee kills recover your health by 4.
+perkSiphoningStrikesRank5DMLongDesc,Melee kills recover your health by 5.
+
+perkMedicName,Field Medic
+perkMedicDesc,Increases potency of Stimpacks and Medikits.
+perkMedicRank1Desc,Intern
+perkMedicRank2Desc,Doctor
+perkMedicRank3Desc,Surgeon
+perkMedicRank4Desc,Miracle Worker
+perkMedicRank5Desc,Field Medic
+perkMedicRank1LongDesc,Stimpacks and Medikits are 20% more potent.
+perkMedicRank2LongDesc,Stimpacks and Medikits are 40% more potent.\n\nSplints and casts instantly cure sprained limbs.
+perkMedicRank3LongDesc,Stimpacks and Medikits are 60% more potent.
+perkMedicRank4LongDesc,Stimpacks and Medikits are 80% more potent.
+perkMedicRank5LongDesc,Stimpacks and Medikits are 100% more potent.\n\nCasts instantly cure broken limbs.
+
+perkResourcefulUpgraderName,Resourceful Upgrader
+perkResourcefulUpgraderDesc,"The more skilled you are at upgrading your weapons and tools, the fewer resources you need to do so."
+perkResourcefulUpgraderRank1Des,
+perkResourcefulUpgraderRank2Des,
+perkResourcefulUpgraderRank3Des,
+perkResourcefulUpgraderRank4Des,
+perkResourcefulUpgraderRank5Des,
+perkResourcefulUpgraderRank1LongDesc,"Upgrading your weapons and tools requires 4% less resources."
+perkResourcefulUpgraderRank2LongDesc,"Upgrading your weapons and tools requires 8% less resources."
+perkResourcefulUpgraderRank3LongDesc,"Upgrading your weapons and tools requires 12% less resources."
+perkResourcefulUpgraderRank4LongDesc,"Upgrading your weapons and tools requires 16% less resources."
+perkResourcefulUpgraderRank5LongDesc,"Upgrading your weapons and tools requires 20% less resources."
+
+perkPenetratorDMDesc,Penetrate enemies with hitscan weaponry.
+perkPenetratorRankDM1Desc,Handgun Penetration
+perkPenetratorRankDM2Desc,Turret Penetration
+perkPenetratorRankDM3Desc,Pump Shotgun Penetration
+perkPenetratorRankDM4Desc,Chaingun Penetration
+perkPenetratorRankDM5Desc,Super Shotgun Penetration
+perkPenetratorDMRank1LongDesc,"Your Handgun penetrates one extra target."
+perkPenetratorDMRank2LongDesc,"Your Portable Turret penetrates one extra target."
+perkPenetratorDMRank3LongDesc,"Your Pump Shotgun penetrates one extra target."
+perkPenetratorDMRank4LongDesc,"Your Chaingun penetrates one extra target."
+perkPenetratorDMRank5LongDesc,"Your Super Shotgun penetrates one extra target."
+
+perkAdrenalineRushName,Adrenaline Rush
+perkAdrenalineRushDesc,"When you're at 50 or less health, you gain a variety of benefits. For those who like to live dangerously!"
+perkAdrenalineRushRank1Des,
+perkAdrenalineRushRank2Des,
+perkAdrenalineRushRank3Des,
+perkAdrenalineRushRank4Des,
+perkAdrenalineRushRank1LongDesc,You recover 1 health every 8 seconds while low on health.\n\nDoesn't work if you're suffering from stage 3 hunger or dehydration.
+perkAdrenalineRushRank2LongDesc,You deal more damage with ranged weapons while low on health.\n\nExtra damage is equivalent to 2 quality level upgrades.
+perkAdrenalineRushRank3LongDesc,"While low on health, you take 1 less damage per hit and your armour takes 1 less damage per hit."
+perkAdrenalineRushRank4LongDesc,You become invulnerable for 5 seconds when low on health.\n\nRecharges every 60 seconds.\n\nDuration can be increased up to 10 seconds with Slow Absorption perk.
+
+AdrenalineRushCooldown,Adrenaline Rush Cooldown
+AdrenalineRushCooldownDesc,Invulnerability cooldown period before Adrenaline Rush Invulnerability kicks in again at 50 or less health.
+
+perkBonusBoosterName,Bonus Booster
+perkBonusBoosterDesc,Increases how much health and armour you get when using health potions and armour shards.
+perkBonusBoosterRank1Des,
+perkBonusBoosterRank2Des,
+perkBonusBoosterRank3Des,
+perkBonusBoosterRank4Des,
+perkBonusBoosterRank5Des,
+perkBonusBoosterRank1LongDesc,Gain 1 extra armour with armour shards.\n\nGain 1 extra health with health potions.
+perkBonusBoosterRank2LongDesc,Gain 2 extra armour with armour shards.\n\nGain 2 extra health with health potions.
+perkBonusBoosterRank3LongDesc,Gain 3 extra armour with armour shards.\n\nGain 3 extra health with health potions.
+perkBonusBoosterRank4LongDesc,Gain 4 extra armour with armour shards.\n\nGain 4 extra health with health potions.
+
+perkPassiveHealingName,Passive Healing
+perkPassiveHealingDesc,"Gradually recover health over time, up to 60% of max health, while not hungry or thirsty.\n\nDoesn't work if you're suffering from stage 3 hunger or dehydration."
+perkPassiveHealingRank1LongDesc,Recover 1 health every 100 seconds.\n(36 Per Hour)\n\n(Up to 60% of max health)
+perkPassiveHealingRank2LongDesc,Recover 1 health every 50 seconds.\n(72 Per Hour)\n\n(Up to 60% of max health)
+perkPassiveHealingRank3LongDesc,Recover 1 health every 33.33 seconds.\n(108 Per Hour)\n\n(Up to 60% of max health)
+perkPassiveHealingRank4LongDesc,Recover 1 health every 25 seconds.\n(144 Per Hour)\n\n(Up to 60% of max health)
+perkPassiveHealingRank5LongDesc,Recover 1 health every 20 seconds.\n(180 Per Hour)\n\n(Up to 60% of max health)
+
+perkSelfRepairingArmourName,Self Repairing Armour
+perkSelfRepairingArmourDesc,"Your armour gradually self repairs, up to 60% of max armour."
+perkSelfRepairingArmourRank1Des,
+perkSelfRepairingArmourRank2Des,
+perkSelfRepairingArmourRank3Des,
+perkSelfRepairingArmourRank4Des,
+perkSelfRepairingArmourRank5Des,
+perkSelfRepairingArmourRank1LongDesc,Your armour gradually self repairs 1 point every 100 seconds.\n(36 Per Hour)\n\n(Up to 60% of max armour)
+perkSelfRepairingArmourRank2LongDesc,Your armour gradually self repairs 1 point every 50 seconds.\n(72 Per Hour)\n\n(Up to 60% of max armour)
+perkSelfRepairingArmourRank3LongDesc,Your armour gradually self repairs 1 point every 33.33 seconds.\n(108 Per Hour)\n\n(Up to 60% of max armour)
+perkSelfRepairingArmourRank4LongDesc,Your armour gradually self repairs 1 point every 25 seconds.\n(144 Per Hour)\n\n(Up to 60% of max armour)
+perkSelfRepairingArmourRank5LongDesc,Your armour gradually self repairs 1 point every 20 seconds.\n(180 Per Hour)\n\n(Up to 60% of max armour)
+
+perkSlowAbsoptionName,Slow Absorption
+perkSlowAbsoptionDesc,Increases the duration of Power Up's that have a duration.
+perkSlowAbsoptionRank1Des,
+perkSlowAbsoptionRank2Des,
+perkSlowAbsoptionRank3Des,
+perkSlowAbsoptionRank4Des,
+perkSlowAbsoptionRank5Des,
+perkSlowAbsoptionRank1LongDesc,Power Up's with a duration last 20% longer.
+perkSlowAbsoptionRank2LongDesc,Power Up's with a duration last 40% longer.
+perkSlowAbsoptionRank3LongDesc,Power Up's with a duration last 60% longer.
+perkSlowAbsoptionRank4LongDesc,Power Up's with a duration last 80% longer.
+perkSlowAbsoptionRank5LongDesc,Power Up's with a duration last 100% longer.
+
+perkPainToleranceDMDesc,"Each hit you take from entities deals less damage to your health."
+perkPainToleranceDMRank1LongDesc,"You lose 1 less health point per hit."
+perkPainToleranceDMRank2LongDesc,"You lose 2 less health points per hit."
+perkPainToleranceDMRank3LongDesc,"You lose 3 less health points per hit."
+
+perkReinforcedArmourName,Reinforced Armour
+perkReinforcedArmourDesc,Reduce the damage your armour takes per hit from any source of damage.
+perkReinforcedArmourRank1Des,
+perkReinforcedArmourRank2Des,
+perkReinforcedArmourRank3Des,
+perkReinforcedArmourRank1LongDesc,"Your armour takes 1 less damage per hit."
+perkReinforcedArmourRank2LongDesc,"Your armour takes 2 less damage per hit."
+perkReinforcedArmourRank3LongDesc,"Your armour takes 3 less damage per hit."
+
+perkStrengthenedConstitutionName,Strengthened Constitution
+perkStrengthenedConstitutionDesc,Increase your Maximum Health and Armour.
+perkStrengthenedConstitutionRank1Des,
+perkStrengthenedConstitutionRank2Des,
+perkStrengthenedConstitutionRank3Des,
+perkStrengthenedConstitutionRank4Des,
+perkStrengthenedConstitutionRank5Des,
+perkStrengthenedConstitutionRank1LongDesc,Max Health +20\nMax Armour +20.\n\nYou recover from biome hazards 25% faster.\n\nReduces chance to get dysentery by 2%.
+perkStrengthenedConstitutionRank2LongDesc,Max Health +40\nMax Armour +40.\n\nReduces chance to get dysentery by 4%.
+perkStrengthenedConstitutionRank3LongDesc,Max Health +60\nMax Armour +60.\n\nYou recover from biome hazards 50% faster.
+perkStrengthenedConstitutionRank4LongDesc,Max Health +80\nMax Armour +80.\n\nReduces chance to get dysentery by 6%.
+perkStrengthenedConstitutionRank5LongDesc,Max Health +100\nMax Armour +100.\n\nYou recover from biome hazards 75% faster.
+
+perkSturdyBodyName,Sturdy Body
+perkSturdyBodyDesc,Increase resistance to critical injuries.
+perkSturdyBodyRank1Des,
+perkSturdyBodyRank2Des,
+perkSturdyBodyRank3Des,
+perkSturdyBodyRank4Des,
+perkSturdyBodyRank5Des,
+perkSturdyBodyRank1LongDesc,"You're 20% resistant to critical injuries.\n\nYou can endure the elements of the Burnt, Desert and Snow biomes for 6 minutes."
+perkSturdyBodyRank2LongDesc,"You're 40% resistant to critical injuries.\n\nYou can endure the elements of the Burnt, Desert and Snow biomes for 7 minutes."
+perkSturdyBodyRank3LongDesc,"You're 60% resistant to critical injuries.\n\nYou can endure the elements of the Burnt, Desert and Snow biomes for 8 minutes.\n\nYou gain temporary immunity to infection when curing an infection."
+perkSturdyBodyRank4LongDesc,"You're 80% resistant to critical injuries.\n\nYou can endure the elements of the Burnt, Desert and Snow biomes for 9 minutes."
+perkSturdyBodyRank5LongDesc,"You're immune to critical injuries.\n\nYou can endure the elements of the Burnt, Desert and Snow biomes for 10 minutes."
+
+perkKnowThyEnemyName,Know Thy Enemy
+perkKnowThyEnemyDesc,"You know who you're fighting from a distance, just by looking at them."
+perkKnowThyEnemyRank1Desc,Know Thy Name
+perkKnowThyEnemyRank2Desc,Know Thy Health
+perkKnowThyEnemyRank3Desc,Know Thy Weakness
+perkKnowThyEnemyRank1LongDesc,You know the name of your enemies.
+perkKnowThyEnemyRank2LongDesc,You know how healthy or injured your enemies are.
+perkKnowThyEnemyRank3LongDesc,"You know your enemies weakness, all of your ranged attacks inflict more damage.\n\nHandgun damage +1.\nShotgun damage +1.\nChaingun damage +1.\nCrossbow damage +4.\nRocket Launcher damage +10.\nPlasma Rifle damage +2.\nBFG9001 damage +60."
+
+perkFiremansAlmanacAxesDescDM,Your naturally have an extra 2 heat resist.
+perkFiremansAlmanacAxesLongDescDM,"After dealing with so many fires, you have gained a tolerance to high temperature."
+perkFiremansAlmanacMolotovDescDM,Flamethrower deals 1 extra damage.
+perkFiremansAlmanacMolotovLongDescDM,"Each 'hit' with the flamethrower deals 1 extra damage."
+perkFiremansAlmanacCompleteDescDM,You deal 2 more damage with the chainsaw.
+perkFiremansAlmanacCompleteLongDescDM,You deal 2 more damage with the chainsaw.
+perkLuckyLooterCompleteDescDM,Find more Armour Shards and Healing Potions in loot.
+perkLuckyLooterCompleteLongDescDM,You find more Armour Shards and Healing Potions in loot.
+perkHuntingJournalVulturesDescDM,Deal extra damage to flying demons and vultures.
+perkHuntingJournalVulturesLongDescDM,Deal extra damage to flying demons and vultures.
+perkHuntingJournalSelfDefenseDescDM,Deal extra damage to humans and ground-based demons.
+perkHuntingJournalSelfDefenseLongDescDM,Deal extra damage to humans and ground-based demons.
+perkArtOfMiningDiamondToolsDescDM,"Swing your stone axe, pickaxes and shovels 10% faster."
+perkArtOfMiningDiamondToolsLongDescDM,"Swing your stone axe, pickaxes and shovels 10% faster."
+perkRangersExplodingBoltsLongDescDM,Deal 6 more damage with the crossbow.
+perkRangersExplodingBoltsDescDM,Deal 6 more damage with the crossbow.
+perkRangersExplodingBoltsLongDescDM,Deal 6 more damage with the crossbow.
+perkRangersFlamingArrowsDescDM,You're able to reload crossbows 20% faster.
+perkRangersFlamingArrowsLongDescDM,Crossbows reload 20% faster.
+perkRangersForestGuideDescDM,Crossbow Bolt velocity +20%.
+perkRangersForestGuideLongDescDM,Bolts fired from the crossbow travel 20% faster.
+perkRangersCompleteDescDM,Find 20% more bolts in loot.
+perkRangersCompleteLongDescDM,Find 20% more bolts in loot.
+perkPistolPeteSteadyHandDescDM,Handguns have 25% less spread.
+perkPistolPeteSteadyHandLongDescDM,"You've learnt to steady your aim with handguns, reducing the spread by 25%."
+perkPistolPeteMaintenanceDescDM,Handguns fire rate increased by 10%.
+perkPistolPeteMaintenanceLongDescDM,You've mastered being able to fire your handgun 10% faster.
+perkPistolPeteDamageDMDesc,Deal 1 more damage with the handgun.
+perkPistolPeteDamageDMLongDesc,Deal 1 more damage with the handgun.
+perkPistolPeteCompleteDMDescDM,Find 20% more handgun ammo in loot.
+perkPistolPeteCompleteDMLongDescDM, Find 20% more handgun ammo in loot.
+perkTechJunkie2MaintenanceDescDM,Increases the range of your robotic turrets by 20%.
+perkTechJunkie2MaintenanceLongDescDM,Increases the range of your robotic turrets by 20%.
+perkTechJunkie3APAmmoDescDM,Your robotic turrets can hold 20% more rounds.
+perkTechJunkie3APAmmoLongDescDM,Your robotic turrets can hold 20% more rounds.
+perkTechJunkie8CompleteDescDM,"Deploy 3 robotic turrets instead of 2, with 25 metres active range instead of 20."
+perkTechJunkie8CompleteLongDescDM,"You can now deploy up to 3 robotic turrets instead of 2, and they will remain active up to 25 metres from your position instead of 20 metres."
+perkShotgunMessiahDamageDescDM,Each pellet deals 1 extra damage.
+perkShotgunMessiahDamageLongDescDM,Each pellet deals 1 extra damage.
+perkShotgunMessiahMaintenanceDescDM,Increases Pump Shotgun fire rate by 10% and Super Shotgun reload speed by 10%.
+perkShotgunMessiahMaintenanceLongDescDM,Increases Pump Shotgun fire rate by 10% and Super Shotgun reload speed by 10%.
+perkShotgunMessiahMagazineDescDM,Shotguns have 20% more range.
+perkShotgunMessiahMagazineLongDescDM,Shotguns have 20% more range.
+perkShotgunMessiahPartyStarterDescDM,Shotguns have 15% less spread.
+perkShotgunMessiahPartyStarterLongDescDM,Shotguns have 15% less spread.
+perkShotgunMessiahCompleteDMDesc,Find 20% more shotgun shells in loot.
+perkShotgunMessiahCompleteDMLongDesc,Find 20% more shotgun shells in loot.
+perkSniper0NameDM,UAC Soldier
+perkSniper0DescDM,Improve your skills with the Plasma Rifle
+perkSniperDamageDescDM,Deal 2 more damage with the Plasma Rifle.
+perkSniperDamageLongDescDM,Deal 2 more damage with the Plasma Rifle.
+perkSniperReloadDescDM,Increases the fire rate of the Plasma Rifle by 10%.
+perkSniperReloadLongDescDM,Increases the fire rate of the Plasma Rifle by 10%.
+perkSniperAPAmmoDescDM,Energy Cells fired by the Plasma Rifle travel 20% faster.
+perkSniperAPAmmoLongDescDM,Energy Cells fired by the Plasma Rifle travel 20% faster.
+perkSniperHPAmmoDescDM,Plasma Rifle has 20% more range.
+perkSniperHPAmmoLongDescDM,Energy Cells fired by the Plasma Rifle travels 20% further.
+perkSniperCompleteDescDM,Find 20% more energy cells in loot.\nBFG9001 deals 60 more damage.
+perkSniperCompleteLongDescDM,Find 20% more energy cells in loot.\nBFG9001 deals 30 more damage.
+perkAutoWeaponsDamageDescDM,Deal 1 more damage with the Chaingun.
+perkAutoWeaponsDamageLongDescDM,Deal 1 more damage with the Chaingun.
+perkAutoWeaponsMaintenanceDescDM,Rate of fire for the chaingun is increased by 10%.
+perkAutoWeaponsMaintenanceLongDescDM,Rate of fire for the chaingun is increased by 10%.
+perkAutoWeaponsCompleteDescDM,Find 20% more chaingun ammo in loot.
+perkAutoWeaponsCompleteLongDescDM,Find 20% more chaingun ammo in loot.
+perkRocketLauncher0NameDM,Crowd Controller
+perkRocketLauncher0DescDM,Improve your skills with the Rocket Launcher
+bookRocketLauncherDamage,Explosive Crowd Control Vol 1
+bookRocketLauncherFirerate,Explosive Crowd Control Vol 2
+bookRocketLauncherVelocity,Explosive Crowd Control Vol 3
+bookRocketLauncherRecoil,Explosive Crowd Control Vol 4
+perkRocketLauncherDamageDescDM,Increases impact damage and explosion damage of rockets by 10 each.
+perkRocketLauncherDamageLongDescDM,Increases impact damage and explosion damage of rockets by 10 each.
+perkRocketLauncherFirerateDescDM,Fire rate of the Rocket Launcher is 10% faster.
+perkRocketLauncherFirerateLongDescDM,Fire rate of the Rocket Launcher is 10% faster.
+perkRocketLauncherVelocityDescDM,Rockets travel 20% faster.
+perkRocketLauncherVelocityLongDescDM,Rockets travel 20% faster.
+perkRocketLauncherRecoilDescDM,Rocket Launcher has 25% less recoil when fired.
+perkRocketLauncherRecoilLongDescDM,Rocket Launcher has 25% less recoil when fired.
+perkRocketLauncherCompleteDescDM,Find more rockets in loot.
+perkRocketLauncherCompleteLongDescDM,Find more rockets in loot.
+
+perkHandgunAmmoPouchName,Handgun Ammo Backpack
+perkHandgunAmmoPouchDesc,Increases your handgun ammo stack size by 10% per level.
+perkCrossbowAmmoPouchName,Crossbow Ammo Backpack
+perkCrossbowAmmoPouchDesc,Increases your crossbow ammo stack size by 10% per level.
+perkTurretAmmoPouchName,Turret Ammo Backpack
+perkTurretAmmoPouchDesc,Increases your turret ammo stack size by 10% per level.
+perkShotgunAmmoPouchName,Shotgun Ammo Backpack
+perkShotgunAmmoPouchDesc,Increases your shotgun ammo stack size by 10% per level.
+perkChaingunAmmoPouchName,Chaingun Ammo Backpack
+perkChaingunAmmoPouchDesc,Increases your chaingun ammo stack size by 10% per level.
+perkFuelAmmoPouchName,Fuel Backpack
+perkFuelAmmoPouchDesc,Increases your fuel stack size by 10% per level.
+perkRocketAmmoPouchName,Rocket Ammo Backpack
+perkRocketAmmoPouchDesc,Increases your rocket ammo stack size by 10% per level.
+perkPlasmaAmmoPouchName,Energy Cell Ammo Backpack
+perkPlasmaAmmoPouchDesc,Increases your energy cell ammo stack size by 10% per level.
+
+<!-- Challenges -->
+
+challengeGroupSetUpBase,Establish Shelter
+challengeRewardBackpack,1x Ammo Capacity Backpack
+challengeRewardDoubleBackpack,2x Ammo Capacity Backpack
+challengeRewardTripleBackpack,3x Ammo Capacity Backpack
+challengeReward4Backpack1Point,4x Ammo Capacity Backpack\n1x Perk Point
+challengeReward4Backpack1PointBFG,1x Perk Point\nBFG Location
+challengeReward10BackpackBFG,10x Backpack\nBFG Location
+challengeReward10Backpack,10x Backpack
+drinkYuccaJuiceSmoothieDMdesc,Keeps you cool in the heat but will make you freeze in the cold.
+challengeCraftSnowberrycream,Craft Snowberry Cream
+challengecraftSnowberrycreamShort,Snowberries don't need farm plots to grow.
+challengecraftSnowberrycreamDesc,"Snowberries can be eaten raw (may make you sick), and are used in various medical items to treat burns, infections and general healing."
+challengeCraftBoneBroth,Craft Bone Broth
+challengeCraftBoneBrothShort,"Cook Bone Broth from bone, plant fibers and murky water."
+challengeCraftBoneBrothDesc,"It might take awhile before you obtain a cooking pot, but Bone Broth will help keep you fed and hydrated in the meantime without risk of getting sick."
+challengeCraftEdiblePineSeed,Craft Edible Pine Cones
+challengeCraftEdiblePineSeedShort,Cook pine cones gathered from pine trees.
+challengeCraftEdiblePineSeedDesc,"While not ideal at all, there are pine nuts inside for when you're desperate to hold back starvation for a little while longer."
+challengeForestShelter,Find or Build Shelter
+challengeForestShelterShort,Find or build a shelter in the Forest.
+challengeForestShelterDesc,"The orange bar below your health is your armour, your armour will absorb some of the damage your receive from demons and animals.\n\nArmour doesn't protect you against other forms of damage. You'll know what type of armour you're wearing by the colour, green is 40% protection and blue is 60%. If there is no icon, you have no protection.\n\nFind a structure to take shelter. Be mindful of holes, windows, or doors that will prevent a proper shelter status.\nShelter is needed to recover from biome hazards or for protection against deadly storms.\n\nAnother option is to build your own shelter.\nTake shelter while in the [DECEA3]Forest[-]."
+challengeStatForestShelterDesc,Forest Biome Shelter
+challengeGroupBasicSurvival,Basic Survival
+challengeCookingTools,Cooking Pot and Grill
+challengeCookingToolsShort,Find or craft some cooking tools.
+challengeCookingToolsDesc,"Without a pot and grill, you'll be very limited on your survival capabilities. You can find them while looting or use a forge to craft your own."
+challengePlaceAnimalHide,Place Animal Hide
+challengeAnimalHideShort,Cure Animal Hides into Leather.
+challengeAnimalHideDesc,"In order to obtain leather, animal hide's need 50 real minutes to cure by placing them on the floor. They'll change colour to let you know they're ready to collect."
+challengeHarvestHoneyDescDM,"Honey won't cure infection, but is used in various cooking recipes and a main ingredient in crafting health potions."
+challengeDrinkWaterSourceDescDM,"Water has been infected because of the demon invasion, a water purifier will remove most of the harmful effects.\n\nThe best way to get drinking water will be from gathering jars and filling them from sinks, toilets, coolers and water barrels."
+challengeBasicfood,Craft Edible Seed
+challengeCraftBasicfoodShort,Eat any unwanted seed.
+challengeCraftBasicfoodDesc,"Instead of throwing out any seeds you don't want, you can eat them for some a small amount of food."
+challengeCraftRebarFrames,Craft Rebar Frames
+challengeCraftRebarFramesShort,Bypass the upgrades straight to concrete.
+challengeCraftRebarFramesDesc,"Rebar frames are back baby! Save your wood, cobblestones and bricks by upgrading straight to concrete, without having to wait for it to dry!"
+challengeCraftBricks,Craft Bricks
+challengeCraftBricksShort,Use your forge to craft bricks.
+challengeCraftBricksDesc,"Bricks are used to upgrade cobblestone blocks, to help bridge to upgrade path between cobblestone and concrete."
+challengeCraftFertiliser,Craft Fertiliser
+challengeCraftFertiliserShort,Fertiliser is back! Did you miss me?
+challengeCraftFertiliserDesc,"Fertiliser is used to make farm plots as well as gunpowder, so you're gonna need a lot!"
+challengeCraftGunpowder,Craft Gunpowder
+challengeCraftGunpowderShort,Your pew pews need Gunpowder.
+challengeCraftGunpowderDesc,"Gunpowder can be crafted on your person or at a workbench for an increased price, or at a chemistry station. Crafting gunpowder in stacks of 10,000 will save your even more resources."
+challengeCraftMeltSnow,Melt Snow
+challengeCraftMeltSnowShort,Dig up some snow to melt.
+challengeCraftMeltSnowDesc,"Melting snow is also back! Venturing into the snow biome has its risks, but gathering an abundance of snow will help with your glue production and ease off all your water demands."
+challengeCraftDismantleAmmo,Dismantle Ammo
+challengeCraftDismantleAmmoShort,Dismantle Some Handgun Ammo.
+challengeCraftDismantleAmmoDesc,"There is plenty of ammo in Doom: Survival, you can dismantle any unwanted ammo for a 30% gunpowder loss, allowing you to make the ammo you do want."
+challengeCraftAcid,Craft Acid
+challengeCraftAcidShort,Craft Acid from a Car Battery.
+challengeCraftAcidDesc,"If you are lacking in Acid but have an abundance in car batteries, you can use a Chemistry Station to extract the acid from batteries."
+challengeGroupExploration,Exploration
+challengegatherCash,"Gather $30,000 in cash"
+challengegatherCashShort,Notes are used to purchase items from vending machines.
+challengegatherCashDesc,"You'll find plenty of notes in cash registers and ATM's.\n\nYou can also craft money in the chemistry station."
+challengeWeaponCollector,Expand your arsenal
+challengeWeaponCollectorShort,Gather various weapons throughout the world.
+challengeWeaponCollectorDesc,"You're not going to be able to do much with just a Handgun and Pump Shotgun. You're going to have to explore the other biomes if you wish to collect 'em all."
+challengeQuestTreasure,Dig up Treasure
+challengeQuestTreasureShort,Find treasure maps to find treasure locations.
+challengeQuestTreasureDesc,"Before people evacuated the Earth, some left behind their prized possessions. Make sure to bring lockpicks or timed charges!"
+challengeBurntExploreMinutes,Explore the Burnt Forest Biome
+challengeBurntExploreMinutesShort,Spend an hour in the Burnt Forest.
+challengeBurntExploreMinutesDesc,"The demons are all over the place, even in the Burnt Forest. Rip and Tear while you're exploring, oh, and bring something to drink!.\n\nYou might find some gear that can only be found in the Burnt Forest."
+challengeDesertExploreMinutes,Explore the Desert Biome
+challengeDesertExploreMinutesShort,Spend an hour in the Desert.
+challengeDesertExploreMinutesDesc,"The demons are here in the desert too! Make sure you're got plenty to drink! You know what to do, Rip and Tear!\n\nYou might find some gear that can only be found in the Desert."
+challengeSnowExploreMinutes,Explore the Snow Biome
+challengeSnowExploreMinutesShort,Spend an hour in the Snow.
+challengeSnowExploreMinutesDesc,"The demons don't seem to be bothered about the cold, unfortunately for you, being cold makes your body burn your food reserves.\n\nYou might find some gear that can only be found in the Snow."
+challengeWastelandExploreMinutes,Explore the Wasteland Biome
+challengeWastelandExploreMinutesShort,Spend an hour in the Wasteland.
+challengeWastelandExploreMinutesDesc,"The Wasteland is a deadly place, if you go in without any protective gear, you will perish within seconds!\n\nYou might find UAC's most advanced weaponry in the Wasteland."
+challengeGroupUpgrader,Upgrader
+challengeupgradeHandgun,Almost perfect Handgun.
+challengeupgradeHandgunShort,Upgrade your handhun to quality 5.
+challengeupgradeHandgunDesc,Quality 5 handgun will gain a second mod slot.
+challengeupgradeCrossbow,Almost perfect Crossbow.
+challengeupgradeCrossbowShort,Upgrade your crossbow to quality 5.
+challengeupgradeCrossbowDesc,Quality 5 crossbow is one upgrade away from perfection.
+challengeTurretFlamethrower,Almost perfect Junk Turret & Flamethrower.
+challengeTurretFlamethrowerShort,Upgrade your junk turret & flamethrower to quality 5.
+challengeTurretFlamethrowerDesc,Quality 5 junk turret & flamethrower is one upgrade away from perfection.
+challengeupgradeShotguns,Almost perfect Shotguns.
+challengeupgradeShotgunsShort,Upgrade your shotguns to quality 5.
+challengeupgradeShotgunsDesc,Quality 5 shotguns will gain a second mod slot.
+challengeupgradeChaingun,Almost perfect Chaingun.
+challengeupgradeChaingunShort,Upgrade your chaingun to quality 5.
+challengeupgradeChaingunDesc,Quality 5 chaingun will gain a second mod slot.
+challengeupgradeRocketLauncher,Almost perfect Rocket Launcher.
+challengeupgradeRocketLauncherShort,Upgrade your rocket launcher to quality 5.
+challengeupgradeRocketLauncherDesc,Quality 5 rocket launcher is one upgrade away from perfection.
+challengeupgradePlasmaRifle,Almost perfect Plasma Rifle.
+challengeupgradePlasmaRifleShort,Upgrade your plasma rifle to quality 5.
+challengeupgradePlasmaRifleDesc,Quality 5 plasma rifle is one upgrade away from perfection.
+challengeGroupToolMan,Tool Man!
+challengeupgradeWrench,Almost perfect Wrench.
+challengeupgradeWrenchShort,Upgrade your wrench to quality 5.
+challengeupgradeWrenchDesc,Quality 5 wrench.
+challengeupgradeClawHammer,Almost perfect Claw Hammer.
+challengeupgradeClawHammerShort,Upgrade your claw hammer to quality 5.
+challengeupgradeClawHammerDesc,Quality 5 claw hammer.
+challengeupgradeFireaxe,Almost perfect Fireaxe.
+challengeupgradeFireaxeShort,Upgrade your fireaxe to quality 5.
+challengeupgradeFireaxeDesc,Quality 5 fireaxe.
+challengeupgradeShovel,Almost perfect Shovel.
+challengeupgradeShovelShort,Upgrade your shovel to quality 5.
+challengeupgradeShovelDesc,Quality 5 shovel.
+challengeupgradePickaxe,Almost perfect Pickaxe.
+challengeupgradePickaxeShort,Upgrade your pickaxe to quality 5.
+challengeupgradePickaxeDesc,Quality 5 pickaxe.
+challengeupgradeImpactDriver,Almost perfect Impact Driver.
+challengeupgradeImpactDriverShort,Upgrade your impact driver to quality 5.
+challengeupgradeImpactDriverDesc,Quality 5 impact driver.
+challengeupgradeChainsaw,Almost perfect Chainsaw.
+challengeupgradeChainsawShort,Upgrade your chainsaw to quality 5.
+challengeupgradeChainsawDesc,Quality 5 chainsaw.
+challengeGroupSlayer,Doomguy
+challengeKillFormerHumans,Kill Former Humans.
+challengeKillFormerHumansShort,Massacre Hundreds of Former Humans.
+challengeKillFormerHumansDesc,"Former Humans know how to use guns, they can shred you and your armour fast if you're not careful."
+challengeKillImps,Kill Imps and Spectre Imps.
+challengeKillImpsShort,Massacre Hundreds of Imps.
+challengeKillImpsDesc,"Imps are the lessor demons of the Hell Spawn, they do minimal damage and their fireballs are easy to dodge."
+challengeKillNightmareImps,Kill Nightmare Imps.
+challengeKillNightmareImpsShort,Massacre Hundreds of Nightmare Imps.
+challengeKillNightmareImpsDesc,"Nightmare Imps are faster and more resilient than regular Imps, their fireballs are also faster than regular Imps."
+challengeKillPinkies,Kill Pinkies and Spectres.
+challengeKillPinkiesShort,Massacre Hundreds of Pinkies and Spectres.
+challengeKillPinkiesDesc,"Pinkies and Spectres don't have any ranged attack, but move very fast to catch their target."
+challengeKillYoungDemons,Kill Lost Souls and Baby Cacodemons.
+challengeKillYoungDemonsShort,Massacre Hundreds of Lost Souls and Baby Cacodemons.
+challengeKillYoungDemonsDesc,"Lost Souls are fast in the air and constantly burn, making it easy to hear them coming towards you. Baby Cacodemons typically spit their fireballs from a distance, sometimes they fly in to bite their target."
+challengeKillCacodemons,Kill Cacodemons.
+challengeKillCacodemonsShort,Massacre Hundreds of Cacodemons.
+challengeKillCacodemonsDesc,"Fully grown Cacodemons are slower than their children, but are more resilient and deal more damage."
+challengeKillPainElementals,Kill Pain Elementals.
+challengeKillPainElementalsShort,Massacre Dozens of Pain Elementals.
+challengeKillPainElementalsDesc,"Pain Elementals spit Lost Souls and can quickly overwhelm their target by surrounding them with their children."
+challengeKillHellKnights,Kill Hell Knights.
+challengeKillHellKnightsShort,Massacre Hundreds of Hell Knights.
+challengeKillHellKnightsDesc,"Hell Knights are an intermediate demon, more threatening than a Nightmare Imp, but using the same strategy works just as well to deal with them."
+challengeKillBarons,Kill Barons of Hell.
+challengeKillBaronsShort,Massacre Hundreds of Barons of Hell.
+challengeKillBaronsDesc,"Barons of Hell are one of the biggest baddest demons, they are the bigger brother of the Hell Knight and are much harder to kill."
+challengeKillRevenants,Kill Revenants.
+challengeKillRevenantsShort,Massacre Hundreds of Revenants.
+challengeKillRevenantsDesc,Revenants are the glass cannon of the demons, easy to kill, but move fast and fire a high velocity rocket that does devastating damage."
+challengeKillMancubi,Kill Mancubi.
+challengeKillMancubiShort,Massacre Hundreds of Mancubi.
+challengeKillMancubiDesc,"Mancubi can fire multiple volleys of fireballs in somewhat random directions, making them dangerous in numbers."
+challengeKillArchviles,Kill Archviles.
+challengeKillArchvilesShort,Massacre Dozens of Archviles.
+challengeKillArchvilesDesc,Archviles have an aura around them that is capable of igniting their target on fire if they manage to get in range. Keep your distance at all costs!
+challengeKillDemonicAnimals,Kill Demonic Bears and Wolves.
+challengeKillDemonicAnimalsShort,Massacre Dozens of Demonic Bears and Wolves.
+challengeKillDemonicAnimalsDesc,The demon invasion has had a devastating effect on some of Earth's animals, making them far more dangerous than they already were.
+challengeKillCybers,Kill Cyberdemons.
+challengeKillCybersShort,Massacre Dozens of Cyberdemons.
+challengeKillCybersDesc,"Cyberdemons are half flesh half mechanical, it takes a lot of firepower to take one down."
+challengeFarmingFlowers,Farming Flowers
+challengeFarmingFlowersShort,Harvest some Goldenrod and Chrysanthemum.
+challengeFarmingFlowersDesc,"[DECEA3]Chrysanthemum Flowers[-] can be harvested from [DECEA3]Chrysanthemum Plants[-]. [DECEA3]Chrysanthemum Flowers[-] are used in some recipes at the [DECEA3]Campfire[-], like [DECEA3]Red Tea[-], which grants an [DECEA3]Efficient Digestion[-] buff that makes [DECEA3]Food[-] and [DECEA3]Drink[-] last longer when consumed.\n\n[DECEA3]Goldenrod Flowers[-] are a flowering plant with vibrant, golden-yellow blooms. [DECEA3]Goldenrod Flowers[-] are used in some recipes at the [DECEA3]Campfire[-], like [DECEA3]Goldenrod Tea[-], which is used to treat [DECEA3]Dysentery[-]."
+challengeFarmingCotton,Farming Cotton
+challengeFarmingCottonShort,Harvest some Cotton.
+challengeFarmingCottonDesc,[DECEA3]Cotton[-] can be harvested from [DECEA3]Cotton Plants[-]. [DECEA3]Cotton[-] is used in some recipes,like [DECEA3]Snowberry Cream[-] and [DECEA3]Sewing Kits[-].
+challengeCraftStimpack,Craft Stimpacks
+challengeCraftStimpackShort,Craft some Stimpacks to maintain health.
+challengeCraftStimpackDesc,"[DECEA3]Stimpacks[-] are the main source of recovering your lost health, so be mindful of gathering all the resources required to craft as much as possible."
+challengeCraftMedikit,Craft Medikits
+challengeCraftMedikitShort,Craft some Medikits to maintain health faster.
+challengeCraftMedikitDesc,"[DECEA3]Medikits[-] can be used instantly for rapid health recovery in the heat of combat."
+challengeHealer2ndDegreeBurn,Heal 2nd Degree Burn
+challengeHealer2ndDegreeBurnShort,Treat 2nd Degree Burns
+challengeHealer2ndDegreeBurnDesc,"A [DECEA3]2nd Degree Burn[-] is a [DECEA3]Critical Injury[-] inflicted on the player during [DECEA3]Combat[-].\n\n[DECEA3]2nd Degree Burns[-] gradually reduce your [DECEA3]Health[-]."
+challenge_reward_campfireitem,48 Snowballs
+challenge_reward_300xp,300 XP
+challenge_reward_750xp,750 XP
+
+animalRabbit,Not Daisy
+animalChicken,Nuggies
+demonFormerSoldier,Zombieman (Former Soldier)
+EntityLootContainerFormerSoldier,Former Soldier Loot
+demonFormerSergeant,Shotgun Guy (Former Sergeant)
+EntityLootContainerFormerSergeant,Former Sergeant Loot
+demonFormerCommando,Heavy Weapon Dude (Former Commando)
+EntityLootContainerFormerCommando,Former Commando Loot
+demonFormerSoldierBM,Zombieman (Former Soldier)
+EntityLootContainerFormerSoldierBM,Former Soldier Loot
+demonFormerSergeantBM,Shotgun Guy (Former Sergeant)
+EntityLootContainerFormerSergeantBM,Former Sergeant Loot
+demonFormerCommandoBM,Heavy Weapon Dude (Former Commando)
+EntityLootContainerFormerCommandoBM,Former Commando Loot
+demonDefaultImp,Imp
+demonNightmareImp,Nightmare Imp
+demonNightmareImpLevel,Nightmare Imp
+demonSpectreImp,Spectre Imp
+demonPinky,Demon (Pinky)
+demonSpectre,Spectre
+demonLostSoul,Lost Soul
+demonCacodemon,Cacodemon
+demonBabyCacodemon,Baby Cacodemon
+demonCacodemonSpectre,Cacodemon Spectre
+demonHellKnight,Hell Knight
+demonBaronOfHell,Baron of Hell
+demonPainElemental,Pain Elemental
+demonPainElementalSpectre,Pain Elemental Spectre
+demonMancubus,Mancubus
+demonArchvile,Archvile
+demonRevenant,Revenant
+demonCyber,Cyberdemon
+EntityLootContainerCyberdemon,Cyberdemon Loot
+
+lblContextActionOpen,Extract

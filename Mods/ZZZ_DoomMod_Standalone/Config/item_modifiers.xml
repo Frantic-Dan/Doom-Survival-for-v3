@@ -1,0 +1,2188 @@
+<FranticDan>
+
+<!-- <set xpath="/item_modifiers/item_modifier[@name]/property[@name='CreativeMode']/@value">None</set>
+<insertafter xpath="/item_modifiers/item_modifier[@name]/property[1]">
+	<property name="CreativeMode" value="None"/>
+</insertafter> -->
+
+<remove xpath="//item_modifier//property[@name='TraderStageTemplate']"/>
+<remove xpath="//item_modifier//property[@name='UnlockedBy']"/>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+	
+		<item_property_overrides name="HandgunQ3">
+			<property name="SideOffset" value="0,.0198,.0475"/>
+			<property name="SideScale" value=".75,.75,.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="SuperShotgunQ3">
+			<property name="SideOffset" value="0,-.03,.066"/>
+			<property name="SideScale" value=".4,.4,.4"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="PumpShotgunQ3">
+			<property name="SideOffset" value="0,0,.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+	</append>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modArmorTreasureHunter']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorIntellect']">
+	<item_modifier name="modArmorTreasureHunter" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+
+		<effect_group tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modArmorTreasureHunterQ2" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modArmorTreasureHunterQ2Desc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="LootStage" operation="base_add" value="3"/>
+			<passive_effect name="LootStage" operation="perc_add" value=".02"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".1"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".03"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="0"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modArmorTreasureHunterQ3" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modArmorTreasureHunterQ3Desc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="LootStage" operation="base_add" value="6"/>
+			<passive_effect name="LootStage" operation="perc_add" value=".04"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".2"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".06"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="0"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modArmorTreasureHunterQ4" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modArmorTreasureHunterQ4Desc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="LootStage" operation="base_add" value="9"/>
+			<passive_effect name="LootStage" operation="perc_add" value=".06"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".3"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".09"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="0"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modArmorTreasureHunterQ5" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modArmorTreasureHunterQ5Desc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="LootStage" operation="base_add" value="12"/>
+			<passive_effect name="LootStage" operation="perc_add" value=".08"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".4"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".12"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="0"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modArmorTreasureHunterQ6" installable_tags="armorHands" modifier_tags="boostTreasure" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modArmorTreasureHunterQ6Desc"/>
+		<property name="CustomIcon" value="modArmorTreasureHunter"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="LootStage" operation="base_add" value="15"/>
+			<passive_effect name="LootStage" operation="perc_add" value=".1"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value=".5"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value=".15"/>
+			<passive_effect name="TreasureBlocksPerReduction" operation="base_add" value="-1"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modDyeWhite']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorNightVision']">
+	<item_modifier name="modDyeWhite" installable_tags="weapon,tool,vehicle,drone" modifier_tags="dye,modDyeWhite" type="attachment" cosmetic_install_chance="0">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="DescriptionKey" value="modDyeGroupDesc"/>
+		<property name="Material" value="Mpaint"/>
+		<property name="Weight" value="20"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="EconomicValue" value="50"/>
+		<property name="SoundPickup" value="dye_grab"/>
+		<property name="SoundPlace" value="dye_place"/>
+		
+		<item_property_overrides name="*">
+			<property name="TintColor" value="255,255,255"/>
+			<property name="CustomIconTint" value="255,255,255"/>
+		</item_property_overrides>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGeneralMaster']">
+	<item_modifier name="modGunBarrelExtender" installable_tags="barrelAttachments,turretRanged,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIconTint" value="000000"/>
+
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBarrelExtenderQ2" installable_tags="barrelAttachments,turretRanged,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBarrelExtenderQ2Desc"/>
+		<property name="CustomIcon" value="modGunBarrelExtender"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.06"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.06"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBarrelExtenderQ3" installable_tags="barrelAttachments,turretRanged,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBarrelExtenderQ3Desc"/>
+		<property name="CustomIcon" value="modGunBarrelExtender"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.12"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.12"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBarrelExtenderQ4" installable_tags="barrelAttachments,turretRanged,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBarrelExtenderQ4Desc"/>
+		<property name="CustomIcon" value="modGunBarrelExtender"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.18"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.18"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBarrelExtenderQ5" installable_tags="barrelAttachments,turretRanged,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBarrelExtenderQ5Desc"/>
+		<property name="CustomIcon" value="modGunBarrelExtender"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.24"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.24"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBarrelExtenderQ6" installable_tags="barrelAttachments,chaingun" modifier_tags="barrelAttachment" blocked_tags="noMods,pistol,shotgun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBarrelExtenderQ6Desc"/>
+		<property name="CustomIcon" value="modGunBarrelExtender"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.30"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.30"/>
+		</effect_group>
+	</item_modifier>
+
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']">
+	<item_modifier name="modGunMuzzleBrake" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIconTint" value="000000"/>
+		<effect_group tiered="false">
+			
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMuzzleBrakeQ2" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMuzzleBrakeQ2Desc"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.07"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.07"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.07"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.07"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".07"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMuzzleBrakeQ3" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMuzzleBrakeQ3Desc"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.14"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.14"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.14"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.14"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".14"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMuzzleBrakeQ4" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMuzzleBrakeQ4Desc"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.21"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.21"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.21"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.21"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".21"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMuzzleBrakeQ5" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMuzzleBrakeQ5Desc"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.28"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.28"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.28"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.28"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".28"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMuzzleBrakeQ6" installable_tags="barrelAttachments,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods,shotgun,chaingun,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMuzzleBrakeQ6Desc"/>
+		<property name="CustomIcon" value="modGunMuzzleBrake"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.35"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.35"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.35"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.35"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".35"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3']">
+	<item_modifier name="modGunTriggerGroupAutomatic" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunTriggerGroupAutomaticQ2" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunTriggerGroupAutomaticQ2Desc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value="-.08"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".05"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunTriggerGroupAutomaticQ3" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunTriggerGroupAutomaticQ3Desc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".045"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunTriggerGroupAutomaticQ4" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunTriggerGroupAutomaticQ4Desc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".08"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".04"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunTriggerGroupAutomaticQ5" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunTriggerGroupAutomaticQ5Desc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".16"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".035"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunTriggerGroupAutomaticQ6" installable_tags="firingMode,turretRanged" modifier_tags="trigger" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunTriggerGroupAutomaticQ6Desc"/>
+		<property name="CustomIcon" value="modGunTriggerGroupAutomatic"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="BurstRoundCount" operation="base_set" value="0"/>
+			<passive_effect name="RoundsPerMinute" operation="perc_add" value=".24"/>
+			<passive_effect name="IncrementalSpreadMultiplier" operation="perc_add" value=".03"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunForegrip']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunBipod']">
+	<item_modifier name="modGunForegrip" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunForegripQ2" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunForegripQ2Desc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.04"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.04"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.04"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".04"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunForegripQ3" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunForegripQ3Desc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.08"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.08"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.08"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".08"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunForegripQ4" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunForegripQ4Desc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.12"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.12"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.12"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".12"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunForegripQ5" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunForegripQ5Desc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.16"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.16"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.16"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".16"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunForegripQ6" installable_tags="bottomAttachments" modifier_tags="grips" blocked_tags="noMods,crossbow,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunForegripQ6Desc"/>
+		<property name="CustomIcon" value="modGunForegrip"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadMultiplierCrouching" operation="perc_add" value="-.2"/>
+			<passive_effect name="SpreadMultiplierHip" operation="perc_add" value="-.2"/>
+			<passive_effect name="SpreadMultiplierWalking" operation="perc_add" value="-.2"/>
+			<passive_effect name="WeaponHandling" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunForegripQ6']">
+	<item_modifier name="modGunRetractingStock" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunRetractingStockQ2" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunRetractingStockQ2Desc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.08"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.08"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.08"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.08"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunRetractingStockQ3" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunRetractingStockQ3Desc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.16"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.16"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.16"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.16"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunRetractingStockQ4" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunRetractingStockQ4Desc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.24"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.24"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.24"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.24"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunRetractingStockQ5" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunRetractingStockQ5Desc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.32"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.32"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.32"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.32"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunRetractingStockQ6" installable_tags="stock" modifier_tags="stocks" blocked_tags="noMods,flamethrower" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunRetractingStockQ6Desc"/>
+		<property name="CustomIcon" value="modGunRetractingStock"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="KickDegreesVerticalMin" operation="perc_add" value="-.4"/>
+			<passive_effect name="KickDegreesVerticalMax" operation="perc_add" value="-.4"/>
+			<passive_effect name="KickDegreesHorizontalMin" operation="perc_add" value="-.4"/>
+			<passive_effect name="KickDegreesHorizontalMax" operation="perc_add" value="-.4"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunRetractingStockQ6']">
+	<item_modifier name="modShotgunSawedOffBarrel" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false" name="Base Effects">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modShotgunSawedOffBarrelQ2" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modShotgunSawedOffBarrelQ2Desc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false" name="Base Effects">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".1"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modShotgunSawedOffBarrelQ3" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modShotgunSawedOffBarrelQ3Desc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false" name="Base Effects">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".2"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modShotgunSawedOffBarrelQ4" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modShotgunSawedOffBarrelQ4Desc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false" name="Base Effects">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".3"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".3"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modShotgunSawedOffBarrelQ5" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modShotgunSawedOffBarrelQ5Desc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false" name="Base Effects">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".4"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modShotgunSawedOffBarrelQ6" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods,dBarrel" type="attachment" icon="resourceScrapIron">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modShotgunSawedOffBarrelQ6Desc"/>
+		<property name="CustomIcon" value="modShotgunSawedOffBarrel"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false" name="Base Effects">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value=".5"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".5"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunDuckbill']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrelQ6']">
+	<item_modifier name="modGunDuckbill" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDuckbillQ2" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDuckbillQ2Desc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.2"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDuckbillQ3" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDuckbillQ3Desc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.3"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".6"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDuckbillQ4" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDuckbillQ4Desc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.4"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value=".8"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDuckbillQ5" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDuckbillQ5Desc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.5"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDuckbillQ6" installable_tags="shotgun" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDuckbillQ6Desc"/>
+		<property name="CustomIcon" value="modGunDuckbill"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.6"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="1.2"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunChoke']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunDuckbillQ6']">
+	<item_modifier name="modGunChoke" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunChokeQ2" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunChokeQ2Desc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.07"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.07"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunChokeQ3" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunChokeQ3Desc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.14"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.14"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunChokeQ4" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunChokeQ4Desc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.21"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.21"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunChokeQ5" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunChokeQ5Desc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.28"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.28"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunChokeQ6" installable_tags="shotgun,turretRanged" modifier_tags="barrelAttachment" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunChokeQ6Desc"/>
+		<property name="CustomIcon" value="modGunChoke"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="-.35"/>
+			<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="-.35"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunChokeQ6']">
+	<item_modifier name="modGunMagazineExtender" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMagazineExtenderQ2" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMagazineExtenderQ2Desc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMagazineExtenderQ3" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMagazineExtenderQ3Desc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMagazineExtenderQ4" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMagazineExtenderQ4Desc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="6"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMagazineExtenderQ5" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMagazineExtenderQ5Desc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="8"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunMagazineExtenderQ6" installable_tags="magazine" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunMagazineExtenderQ6Desc"/>
+		<property name="CustomIcon" value="modGunMagazineExtender"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="10"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtenderQ6']">
+	<item_modifier name="modGunDrumMagazineExtender" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDrumMagazineExtenderQ2" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDrumMagazineExtenderQ2Desc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="20"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDrumMagazineExtenderQ3" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDrumMagazineExtenderQ3Desc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="40"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDrumMagazineExtenderQ4" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDrumMagazineExtenderQ4Desc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="60"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDrumMagazineExtenderQ5" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDrumMagazineExtenderQ5Desc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="80"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunDrumMagazineExtenderQ6" installable_tags="drumMagazine" modifier_tags="magazine" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunDrumMagazineExtenderQ6Desc"/>
+		<property name="CustomIcon" value="modGunDrumMagazineExtender"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="100"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtenderQ6']">
+	<item_modifier name="modGunShotgunTubeExtenderMagazine" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunShotgunTubeExtenderMagazineQ2" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunShotgunTubeExtenderMagazineQ2Desc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunShotgunTubeExtenderMagazineQ3" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunShotgunTubeExtenderMagazineQ3Desc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="2"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".05"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunShotgunTubeExtenderMagazineQ4" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunShotgunTubeExtenderMagazineQ4Desc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="3"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunShotgunTubeExtenderMagazineQ5" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunShotgunTubeExtenderMagazineQ5Desc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="4"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".15"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunShotgunTubeExtenderMagazineQ6" installable_tags="modGunShotgunTubeExtenderMagazine,launcher" modifier_tags="magazine" blocked_tags="noMods,chaingun" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunShotgunTubeExtenderMagazineQ6Desc"/>
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="5"/>
+			<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modGunBowPolymerString']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunCrippleEm']">
+	<item_modifier name="modGunBowPolymerString" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="Material" value="Mplastics"/>
+		<property name="Material" value="MresourceScrapPolymers"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBowPolymerStringQ2" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBowPolymerStringQ2Desc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".05"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBowPolymerStringQ3" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBowPolymerStringQ3Desc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".1"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBowPolymerStringQ4" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBowPolymerStringQ4Desc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".15"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="6"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBowPolymerStringQ5" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBowPolymerStringQ5Desc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".2"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="8"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modGunBowPolymerStringQ6" installable_tags="perkArchery" modifier_tags="velocity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modGunBowPolymerStringQ6Desc"/>
+		<property name="CustomIcon" value="modGunBowPolymerString"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="ProjectileVelocity" operation="perc_add" value=".25"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="10"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeStructuralBrace']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeWeightedHead']">
+	<item_modifier name="modMeleeStructuralBrace" installable_tags="melee,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.25" tags="perkArchery,perkMiner69r,perkSalvageOperations,perkElectrocutioner,perkJavelinMaster,perkPummelPete,perkSkullCrusher,perkDeepCuts,perkBrawler,admin"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeStructuralBraceQ2" installable_tags="melee,gun,launcher,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeStructuralBraceQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.05"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeStructuralBraceQ3" installable_tags="melee,gun,launcher,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeStructuralBraceQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeStructuralBraceQ4" installable_tags="melee,gun,launcher,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeStructuralBraceQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeStructuralBraceQ5" installable_tags="melee,gun,launcher,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeStructuralBraceQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeStructuralBraceQ6" installable_tags="melee,gun,launcher,perkArchery" modifier_tags="durability" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeStructuralBraceQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeStructuralBrace"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.25"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDigger']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeFiremansAxeMod']">
+	<item_modifier name="modMeleeGraveDigger" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeGraveDiggerQ2" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeGraveDiggerQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".06" tags="earth"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeGraveDiggerQ3" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeGraveDiggerQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".12" tags="earth"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeGraveDiggerQ4" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeGraveDiggerQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".18" tags="earth"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeGraveDiggerQ5" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeGraveDiggerQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".24" tags="earth"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeGraveDiggerQ6" installable_tags="melee" modifier_tags="damageDirt" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeGraveDiggerQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeGraveDigger"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="earth"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBuster']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeGraveDiggerQ6']">
+	<item_modifier name="modMeleeBunkerBuster" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeBunkerBusterQ2" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeBunkerBusterQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".06" tags="stone"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeBunkerBusterQ3" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeBunkerBusterQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".12" tags="stone"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeBunkerBusterQ4" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeBunkerBusterQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".18" tags="stone"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeBunkerBusterQ5" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeBunkerBusterQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".24" tags="stone"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeBunkerBusterQ6" installable_tags="melee" modifier_tags="damageStone" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeBunkerBusterQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeBunkerBuster"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="stone"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreaker']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeBunkerBusterQ6']">
+	<item_modifier name="modMeleeIronBreaker" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeIronBreakerQ2" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeIronBreakerQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".06" tags="metal"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeIronBreakerQ3" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeIronBreakerQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".12" tags="metal"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeIronBreakerQ4" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeIronBreakerQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".18" tags="metal"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeIronBreakerQ5" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeIronBreakerQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".24" tags="metal"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeIronBreakerQ6" installable_tags="melee" modifier_tags="damageIron" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeIronBreakerQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeIronBreaker"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="metal"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitter']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeIronBreakerQ6']">
+	<item_modifier name="modMeleeWoodSplitter" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeWoodSplitterQ2" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeWoodSplitterQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".06" tags="wood"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeWoodSplitterQ3" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeWoodSplitterQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".12" tags="wood"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeWoodSplitterQ4" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeWoodSplitterQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".18" tags="wood"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeWoodSplitterQ5" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeWoodSplitterQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".24" tags="wood"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeWoodSplitterQ6" installable_tags="melee" modifier_tags="damageWood" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeWoodSplitterQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeWoodSplitter"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DamageModifier" operation="perc_add" value=".3" tags="wood"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modMeleeDiamondTip']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeWoodSplitterQ6']">
+	<item_modifier name="modMeleeDiamondTip" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.3"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeDiamondTipQ2" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods,noBlades" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeDiamondTipQ2Desc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.03"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="1"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="5"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeDiamondTipQ3" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods,noBlades" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeDiamondTipQ3Desc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.06"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="2"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="10"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeDiamondTipQ4" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods,noBlades" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeDiamondTipQ4Desc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.09"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="3"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="15"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeDiamondTipQ5" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods,noBlades" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeDiamondTipQ5Desc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.12"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="4"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="20"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modMeleeDiamondTipQ6" installable_tags="tool" modifier_tags="damageEntity" blocked_tags="noMods,noBlades" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modMeleeDiamondTipQ6Desc"/>
+		<property name="CustomIcon" value="modMeleeDiamondTip"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="DegradationPerUse" operation="perc_add" value="-.15"/>
+			<passive_effect name="EntityDamage" operation="base_add" value="5"/>
+			<passive_effect name="BlockDamage" operation="base_add" value="25"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modFuelTankLarge']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modFuelTankSmall']">
+	<item_modifier name="modFuelTankLarge" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="Material" value="MresourceScrapPolymers"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<effect_group tiered="false">
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modFuelTankLargeQ2" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modFuelTankLargeQ2Desc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="20"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modFuelTankLargeQ3" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modFuelTankLargeQ3Desc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="40"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modFuelTankLargeQ4" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modFuelTankLargeQ4Desc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="60"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modFuelTankLargeQ5" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modFuelTankLargeQ5Desc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="80"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modFuelTankLargeQ6" installable_tags="motorTool,flamethrower" modifier_tags="fuel" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster" param1="CustomIcon"/>
+		<property name="DescriptionKey" value="modFuelTankLargeQ6Desc"/>
+		<property name="CustomIcon" value="modFuelTankLarge"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="base_add" value="100"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modVehicleFuelSaver']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleMega']">
+	<item_modifier name="modVehicleFuelSaver" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleFuelSaverQ2" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleFuelSaverQ2Desc"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleFuelSaverQ3" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleFuelSaverQ3Desc"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.16"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleFuelSaverQ4" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleFuelSaverQ4Desc"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.23"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleFuelSaverQ5" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleFuelSaverQ5Desc"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.31"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleFuelSaverQ6" installable_tags="vengine" modifier_tags="fuelsaver" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleFuelSaverQ6Desc"/>
+		<property name="CustomIcon" value="modVehicleFuelSaver"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelUsePer" operation="perc_add" value="-.4"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modVehicleSuperCharger']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']">
+	<item_modifier name="modVehicleSuperCharger" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleSuperChargerQ2" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSuperChargerQ2Desc"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".04"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".06"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleSuperChargerQ3" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSuperChargerQ3Desc"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".08"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".12"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleSuperChargerQ4" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSuperChargerQ4Desc"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".12"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".18"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleSuperChargerQ5" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSuperChargerQ5Desc"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".16"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".24"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleSuperChargerQ6" installable_tags="vengine" modifier_tags="speed" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleSuperChargerQ6Desc"/>
+		<property name="CustomIcon" value="modVehicleSuperCharger"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleMotorTorquePer" operation="perc_add" value=".2"/>
+			<passive_effect name="VehicleVelocityMaxPer" operation="perc_add" value=".3"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+<remove xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTank']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']">
+	<item_modifier name="modVehicleReserveFuelTank" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleReserveFuelTankQ2" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleReserveFuelTankQ2Desc"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="1.2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleReserveFuelTankQ3" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleReserveFuelTankQ3Desc"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="1.4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleReserveFuelTankQ4" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleReserveFuelTankQ4Desc"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="1.6"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleReserveFuelTankQ5" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleReserveFuelTankQ5Desc"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="1.8"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleReserveFuelTankQ6" installable_tags="vfuel" modifier_tags="fueltank" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleReserveFuelTankQ6Desc"/>
+		<property name="CustomIcon" value="modVehicleReserveFuelTank"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleFuelMaxPer" operation="perc_set" value="2"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+
+<remove xpath="/item_modifiers/item_modifier[@name='modVehiclePlow']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleReserveFuelTankQ6']">
+	<item_modifier name="modVehiclePlow" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehiclePlowQ2" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehiclePlowQ2Desc"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".1"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".1"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehiclePlowQ3" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehiclePlowQ3Desc"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehiclePlowQ4" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehiclePlowQ4Desc"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.3"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehiclePlowQ5" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehiclePlowQ5Desc"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehiclePlowQ6" installable_tags="vplow" modifier_tags="plow" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehiclePlowQ6Desc"/>
+		<property name="CustomIcon" value="modVehiclePlow"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.5"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+
+<remove xpath="/item_modifiers/item_modifier[@name='modVehicleArmor']"/>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehiclePlowQ6']">
+	<item_modifier name="modVehicleArmor" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modNonFunctionalDesc"/>
+		<property name="Material" value="MresourceForgedSteel"/>
+		<property name="CustomIconTint" value="000000"/>
+		<property name="Weight" value="27"/>
+		<property name="ScrapTimeOverride" value="10.0"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<effect_group tiered="false">
+
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleArmorQ2" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleArmorQ2Desc"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<property name="CustomIconTint" value="CF7F29"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".1"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".1"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.1"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleArmorQ3" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleArmorQ3Desc"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<property name="CustomIconTint" value="A2A41B"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".2"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.2"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleArmorQ4" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleArmorQ4Desc"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<property name="CustomIconTint" value="42C234"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".3"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.3"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleArmorQ5" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleArmorQ5Desc"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<property name="CustomIconTint" value="315DCE"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".4"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.4"/>
+		</effect_group>
+	</item_modifier>
+	
+	<item_modifier name="modVehicleArmorQ6" installable_tags="varmor" modifier_tags="armor" blocked_tags="noMods" type="attachment">
+		<property name="Extends" value="modGeneralMaster"/>
+		<property name="DescriptionKey" value="modVehicleArmorQ6Desc"/>
+		<property name="CustomIcon" value="modVehicleArmor"/>
+		<property name="CustomIconTint" value="400073"/>
+		<property name="Candrop" value="false"/>
+		<property name="NoScrapping" value="true"/>
+		<effect_group tiered="false">
+			<passive_effect name="VehicleEntityDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="VehicleBlockDamage" operation="perc_add" value=".5"/>
+			<passive_effect name="VehicleSelfDamage" operation="perc_add" value="-.5"/>
+		</effect_group>
+	</item_modifier>
+</insertafter>
+
+
+<set xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='Material']/@value">MresourceForgedSteel</set>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorImpactBracing']/property[@name='Material']">
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/property[@name='Material']/@value">MresourceForgedSteel</set>
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/property[@name='Material']">
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modMeleeClubBurningShaft']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleOffRoadHeadlights']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleExpandedSeat']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modVehicleStorage']/property[@name='Extends']">
+	<property name="Material" value="MresourceForgedSteel"/>
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+<set xpath="/item_modifiers/item_modifier[@name='modVehicleStorage']/property[@name='MaxModsAllowed']/@value">3</set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/effect_group/passive_effect[@name='HyperthermalResist']/@value">1</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HypothermalResist']/@value">4</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HyperthermalResist']/@value">2</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HypothermalResist']/@value">6</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HyperthermalResist']/@value">3</set>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/property[@name='Material']">
+	<property name="Weight" value="27"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/property[@name='Material']">
+	<property name="Weight" value="47"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/property[@name='Material']">
+	<property name="Weight" value="67"/>
+	<property name="ScrapTimeOverride" value="10.0"/>
+</insertafter>
+
+<append xpath="/item_modifiers">
+
+	
+
+
+	</append>
+</FranticDan>

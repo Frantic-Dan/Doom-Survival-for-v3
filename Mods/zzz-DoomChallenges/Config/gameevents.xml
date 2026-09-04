@@ -1,0 +1,125 @@
+<FranticDan>
+
+<insertafter xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='Delay']">
+		<!-- <action class="Delay">
+			<property name="time" value="1" />
+			<property name="phase" value="2" />
+		</action> -->
+
+		<action class="SetItemSlots">
+				<property name="items_location" value="Equipment" />
+				<property name="items" value="armorNomadHelmet,armorNomadOutfit,armorNomadGloves,armorNomadBoots" />
+				<property name="item_counts" value="1-1,1-1,1-1,1-1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="drugHerbalAntibiotics,StoneArrowDM,9mmBulletDM,9mmBulletDM,InvulnerabilityPowerup,armourSecurityGreenPowerUp" />
+			<property name="added_item_counts" value="1,100,100,100,1,1" />
+		</action>
+		<action class="AddBuff">
+			<property name="buff_name" value="buffNutrientGracePeriod" />
+		</action>
+		<action class="AddSkillPoints">
+			<property name="skill_points" value="{sandbox.StarterSkillPoints}" />
+		</action>
+</insertafter>
+
+<remove xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action[@class='AddQuest']"/>
+
+
+<append xpath="/gameevents">
+
+<action_sequence name="challenge_group_BackpackReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="1" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_DoubleBackpackReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="2" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_TripleBackpackReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="3" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_SkillPointBackpackReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="AddSkillPoints">
+			<property name="skill_points" value="1" />
+		</action>
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="4" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_SkillPointBackpackBFGReward">
+		<!-- <property name="allow_user_trigger" value="false" /> -->
+		<property name="action_type" value="Game" />
+		
+		<action class="AddSkillPoints">
+			<property name="skill_points" value="1" />
+		</action>
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="4" />
+		</action>
+		<action class="AddQuest">
+			<property name="quest" value="UACs_secretWeapon" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_reward_300">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddXP">
+			<property name="xp_amount" value="300" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_reward_750">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddXP">
+			<property name="xp_amount" value="750" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_reward_campfire">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddXP">
+			<property name="xp_amount" value="200" />
+		</action>
+		<action class="AddItems">
+				<property name="added_items" value="resourceSnowBall"/>
+				<property name="added_item_counts" value="48"/>
+		</action>
+</action_sequence>
+
+
+</append>
+
+</FranticDan>

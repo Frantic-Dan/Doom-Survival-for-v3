@@ -1,0 +1,14 @@
+<FranticDan>
+
+	<set xpath="/styles/global/style_entry[@name='default_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav</set>
+	<set xpath="/styles/global/style_entry[@name='default_hover']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+	<set xpath="/styles/global/style_entry[@name='start']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav</set>
+	<set xpath="/styles/global/style_entry[@name='back']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav</set>
+	<set xpath="/styles/global/style_entry[@name='craft_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?CubeSpit.wav</set>
+	<set xpath="/styles/global/style_entry[@name='paging_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+	<set xpath="/styles/global/style_entry[@name='recipe_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+	<set xpath="/styles/global/style_entry[@name='pickup_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+	<set xpath="/styles/global/style_entry[@name='place_click']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+	<set xpath="/styles/global/style_entry[@name='remove_waypoint']/@value">#@modfolder:Resources/HighDefinitionAudio.unity3d?ItemPickup.wav</set>
+
+</FranticDan>

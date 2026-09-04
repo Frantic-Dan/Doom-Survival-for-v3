@@ -1,0 +1,128 @@
+<configs>
+<!-- <remove xpath="/traders"/> -->
+<!-- <set xpath="/traders"> -->
+<!-- <append xpath="/traders"> -->
+<!-- <traders buy_markup="3" sell_markdown="0" quality_mod="1,2" currency_item="oldCash" quest_tier_mod="0,0.05,0.1,0.15,0.2,0.25,0.3" > -->
+
+<set xpath="/traders[@sell_markdown='0.2']/@sell_markdown">0</set>
+<set xpath="/traders[@currency_item='casinoCoin']/@currency_item">oldCash</set>
+
+<remove xpath="/traders/traderstage_templates"/>
+<!-- <remove xpath="/traders/trader_item_groups"/> -->
+
+<remove xpath="/traders/trader_info[@id='1']"/>
+<remove xpath="/traders/trader_info[@id='6']"/>
+<remove xpath="/traders/trader_info[@id='2']"/>
+<remove xpath="/traders/trader_info[@id='7']"/>
+<remove xpath="/traders/trader_info[@id='8']"/>
+<remove xpath="/traders/trader_info[@id='9']"/>
+
+<!-- <append xpath="/traders"> -->
+
+<set xpath="/traders/trader_item_groups">
+<!-- <insertbefore xpath="/traders/trader_info"> -->
+<!-- *** FOOD_VENDING -->
+	<!-- <trader_item_groups> -->
+		<trader_item_group name="cannedfood">
+			<item name="foodStackofCans" count="1,2"/>
+		</trader_item_group>
+		
+		<!-- *** CANDY -->
+		<trader_item_group name="foodPowerUps">
+			<item name="stimPackBlue" count="6,9"/>
+			<item name="mediKitBlue" count="4,6"/>
+			<item name="berserkPack" count="2,3"/>
+			<item name="InvulnerabilityPowerup" count="2,3"/>
+			<item name="HazmatSuitPowerup" count="2,3"/>
+			<item name="soulSphere" count="2,3"/>
+			<item name="megaSphere" prob="0.25"/>
+			<item name="armourSecurityGreenPowerUp" count="2,3"/>
+			<item name="armourMegaBluePowerUp" prob="0.4"/>
+			<item name="drugHealthBar" count="6,9"/>
+			<item name="AmmoStackPouch" count="2,3"/>
+			<item name="LightAmplificationPowerup" count="8,12"/>
+		</trader_item_group>
+		
+		<trader_item_group name="groupDrinks">
+			<item name="drinkJarYuccaJuice" count="4,6"/>
+			<item name="drinkJarBoiledWater" count="8,12"/>
+			<item name="drinkJarGoldenRodTea" count="4,6"/>
+			<item name="drinkJarRedTea" count="4,6"/>
+			<item name="drinkJarCoffee" count="4,6"/>
+			<item name="drinkJarBeer" count="4,6"/>
+			<item name="drinkYuccaJuiceSmoothie" count="2,3"/>
+			<item name="drinkJarGrandpasForgettingElixir" prob="0.25"/>
+		</trader_item_group>
+
+		<!-- *** SPECIAL_DRINKS -->
+		<!-- <trader_item_group name="groupDrinksSpecial">
+			<item name="drinkJarBlackStrapCoffee" count="1,2"/>
+			<item name="drinkCanMegaCrush" count="1,2"/>
+			<item name="drinkJarGrandpasMoonshine" count="1,2"/>
+			<item name="drinkJarGrandpasLearningElixir" count="1,2"/>
+			<item name="drinkJarGrandpasAwesomeSauce" count="1,2"/>
+		</trader_item_group> -->
+
+		<trader_item_group name="foodVending" >
+			<item group="cannedfood"/>
+		</trader_item_group>
+
+		<!-- *** DRINK_VENDING -->
+		<trader_item_group name="drinkVending" >
+			<item group="groupDrinks"/>
+		</trader_item_group>
+
+		<!-- *** DRINK_SPECIAL_VENDING -->
+		<!-- <trader_item_group name="drinkSpecialVending" >
+			<item group="groupDrinksSpecial"/>
+		</trader_item_group> -->
+	<!-- </trader_item_groups> -->
+</set>
+
+<remove xpath="/traders/trader_info[@id='4']"/>
+<insertafter xpath="/traders/trader_info[@id='3']">
+
+<!-- </append> -->
+
+<!-- <trader_info id="3" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" player_owned="true"/> -->
+
+<!-- *** POI DRINK VENDING MACHINES ID:4 -->
+	<trader_info id="4" reset_interval="9999" override_buy_markup="1" allow_sell="false" >
+		<trader_items>
+			<item group="drinkVending" count="60"/>
+			<item group="foodPowerUps" count="40"/>
+		</trader_items>
+	</trader_info>
+</insertafter>
+<!-- *** POI FOOD/CANDY VENDING MACHINES ID:10 -->
+
+<remove xpath="/traders/trader_info[@id='10']"/>
+<insertafter xpath="/traders/trader_info[@id='4']">
+	<trader_info id="10" reset_interval="9999" override_buy_markup="1" allow_sell="false" >
+		<trader_items>
+			<item group="foodVending" count="60"/>
+			<item group="foodPowerUps" count="40"/>
+		</trader_items>
+	</trader_info>
+</insertafter>
+<!-- *** RENTED VENDING MACHINES ID:5 -->
+	<!-- <trader_info id="5" reset_interval="-1" override_buy_markup="1.0" override_sell_markup="1.0" allow_sell="false" rentable="true" rent_cost="2500" rent_time="30"/> -->
+
+
+<!-- *** PLAY_TEST_TRADER ID:9 -->
+	<!-- <trader_info id="9" reset_interval="3" open_time="4:05" close_time="21:50"> -->
+	
+	<!-- Copy of trader Joel, but can be used for testing other item lists in a play test session -->
+	
+		<!-- *** SPECIALTY -->
+		<!-- <trader_items count="0">
+
+		</trader_items>
+
+		<trader_items count="0">
+
+		</trader_items>
+	</trader_info> -->
+	<!-- </traders> -->
+<!-- </set> -->
+</configs>

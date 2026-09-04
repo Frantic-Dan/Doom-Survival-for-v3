@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+
+  <insertafter xpath="/recipes/recipe[@name='armourShard'][@tags='salvageScrap']">
+    <recipe name="doomNoteSelector" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
+  </insertafter>
+
+  <append xpath="/recipes">
+    <recipe name="doomNoteE1M1" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M2" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M3" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M4" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M5" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M6" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M7" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M8" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE1M9" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M1" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M2" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M3" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M4" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M5" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M6" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M7" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M8" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE2M9" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M1" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M2" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M3" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M4" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M5" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M6" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M7" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M8" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE3M9" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M1" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M2" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M3" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M4" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M5" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M6" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M7" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M8" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteE4M9" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP01" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP02" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP03" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP04" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP05" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP06" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP07" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP08" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP09" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP10" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP11" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP12" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP13" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP14" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP15" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP16" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP17" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP18" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP19" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP20" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP21" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP22" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP23" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP24" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP25" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP26" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP27" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP28" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP29" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP30" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP31" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+    <recipe name="doomNoteMAP32" count="1" craft_time="1" craft_exp_gain="0">
+      <ingredient name="doomNoteSelector" count="1" />
+    </recipe>
+  </append>
+
+</configs>

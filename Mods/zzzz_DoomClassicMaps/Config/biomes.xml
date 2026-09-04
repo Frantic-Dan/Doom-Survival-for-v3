@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <append xpath="/worldgeneration/biomes">
+    <biomemap id="20" name="doom" />
+    <biome name="doom" biomemapcolor="#FF00FF" difficulty="1">
+      <weather name="default" prob="100" duration="600">
+        <Temperature range="72,72" />
+        <CloudThickness range="0,0" />
+        <Precipitation range="0,0" />
+        <Fog range="0,0" />
+        <Wind range="0,0" />
+      </weather>
+      <layers>
+        <layer depth="2" blockname="terrDestroyedStone,terrDestroyedGrass" />
+        <layer depth="2" blockname="terrDirt" />
+        <layer depth="*" blockname="terrStone" />
+        <layer depth="3" blockname="terrBedrock" />
+      </layers>
+    </biome>
+  </append>
+</config>

@@ -1,0 +1,83 @@
+<configs>
+
+<append xpath="/gameevents">
+
+<action_sequence name="challenge_group_TeleporterReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="doomNoteE1M1Tutorial" />
+			<property name="added_item_counts" value="1" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_DoubleTeleporterReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="doomNoteSelector" />
+			<property name="added_item_counts" value="2" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_TripleTeleporterReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="doomNoteSelector" />
+			<property name="added_item_counts" value="3" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_QuadTeleporterReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="doomNoteSelector" />
+			<property name="added_item_counts" value="4" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_SkillPointReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="AddSkillPoints">
+			<property name="skill_points" value="1" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_BFGReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="10" />
+		</action>
+		<action class="AddQuest">
+			<property name="quest" value="UACs_secretWeapon" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_group_10BackpackReward">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="AddItems">
+			<property name="added_items" value="AmmoStackPouch" />
+			<property name="added_item_counts" value="10" />
+		</action>
+		<action class="AddQuest">
+			<property name="quest" value="UACs_secretWeapon" />
+		</action>
+</action_sequence>
+
+</append>
+
+
+</configs>

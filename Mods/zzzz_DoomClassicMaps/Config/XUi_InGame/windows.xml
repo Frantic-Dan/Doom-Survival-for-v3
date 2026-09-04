@@ -1,0 +1,68 @@
+<configs>
+  <append xpath="/windows">
+    <!-- Each window is its own UIPanel and the panel takes depth+1, so a high depth here puts
+         the whole tally above the HUD's panels and the opaque background covers them. -->
+    <window name="doomIntermissionWindow" anchor="Center" cursor_area="true" depth="1000">
+      <texture depth="1" name="background" color="[white]" texture="{tally}"
+               globalopacitymod="0"
+               anchor_left="#cam,0,0" anchor_right="#cam,1,0"
+               anchor_bottom="#cam,0,0" anchor_top="#cam,1,0"
+               keepsourceaspectratio="false" />
+
+      <label depth="3" pos="0,300" width="900" height="44" pivot="center" justify="center"
+             text="{levelname}" font_size="40" color="[white]" />
+      <label depth="3" pos="0,256" width="900" height="40" pivot="center" justify="center"
+             text="{finished}" font_size="34" color="220,32,32,255" />
+
+      <rect depth="3" pos="-300,180" width="600" height="240">
+        <label pos="0,0" width="300" height="40" justify="left" font_size="32"
+               color="220,32,32,255" text="{killslabel}" />
+        <label pos="300,0" width="300" height="40" justify="right" font_size="32"
+               color="220,32,32,255" text="{kills}" />
+
+        <label pos="0,-50" width="300" height="40" justify="left" font_size="32"
+               color="220,32,32,255" text="{itemslabel}" />
+        <label pos="300,-50" width="300" height="40" justify="right" font_size="32"
+               color="220,32,32,255" text="{items}" />
+
+        <label pos="0,-100" width="300" height="40" justify="left" font_size="32"
+               color="220,32,32,255" text="{secretslabel}" />
+        <label pos="300,-100" width="300" height="40" justify="right" font_size="32"
+               color="220,32,32,255" text="{secrets}" />
+
+        <label pos="0,-180" width="300" height="40" justify="left" font_size="32"
+               color="220,32,32,255" text="{timelabel}" />
+        <label pos="300,-180" width="300" height="40" justify="right" font_size="32"
+               color="220,32,32,255" text="{time}" />
+
+        <label pos="0,-230" width="300" height="40" justify="left" font_size="32"
+               color="220,32,32,255" text="{parlabel}" />
+        <label pos="300,-230" width="300" height="40" justify="right" font_size="32"
+               color="220,32,32,255" text="{par}" />
+
+        <label pos="0,-290" width="300" height="40" justify="left" font_size="32"
+               color="255,180,32,255" text="{clearedlabel}" />
+        <label pos="300,-290" width="300" height="40" justify="right" font_size="32"
+               color="255,180,32,255" text="{cleared}" />
+      </rect>
+
+      <rect name="btnContinue" depth="4" pos="-100,-300" width="200" height="46"
+            controller="SimpleButton">
+        <button depth="1" name="clickable" sprite="menu_empty" type="sliced"
+                defaultcolor="0,0,0,200" hovercolor="[white]" hoversprite="ui_game_select_row"
+                hoverscale="1.0" sound="[default_click]" sound_play_on_hover="[default_hover]" />
+        <label depth="2" name="btnLabel" width="200" height="46" justify="center"
+               font_size="30" color="[white]" text="{continue}" />
+      </rect>
+
+      <rect name="btnNext" depth="4" pos="120,-300" width="200" height="46"
+            controller="SimpleButton">
+        <button depth="1" name="clickable" sprite="menu_empty" type="sliced"
+                defaultcolor="0,0,0,200" hovercolor="[white]" hoversprite="ui_game_select_row"
+                hoverscale="1.0" sound="[default_click]" sound_play_on_hover="[default_hover]" />
+        <label depth="2" name="btnLabel" width="200" height="46" justify="center"
+               font_size="30" color="255,180,32,255" text="{nextlabel}" />
+      </rect>
+    </window>
+  </append>
+</configs>

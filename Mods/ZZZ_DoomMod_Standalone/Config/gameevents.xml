@@ -1,0 +1,680 @@
+<FranticDan>
+	
+	<set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddBuff']/property[@name='buff_name']/@value">buffFirstSpawnArmour</set>
+	<set xpath="/gameevents/action_sequence[@name='block_car_alarm_start']/action[1]/property[@name='entity_names']/@value">demonBaronOfHell</set>
+	<set xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action[@class='AddSkillPoints']/property[@name='skill_points']/@value">1</set>
+	<set xpath="/gameevents/action_sequence[@name='action_give_points']/action[@class='AddSkillPoints']/property[@name='skill_points']/@value">1</set>
+	<set xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']/requirement[1]/property[@name='value']/@value">40</set>
+	<remove xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']/decision/action[@class='AddItems']"/>
+	<set xpath="/gameevents/action_sequence[@name='block_tree_stump_bees']/action[@class='AddItems']/property[@name='added_items']/@value">foodHoneycomb</set>
+	
+<append xpath="/gameevents">
+	
+	<action_sequence name="action_give_one_point">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+		</action>
+		
+		<action class="AddSkillPoints">
+			<property name="skill_points" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="respawn_half_health_armour">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<!-- <action class="ModifyEntityStat">
+			<property name="stat" value="Stamina" />
+			<property name="value" value=".5" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action> -->
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Food" />
+			<property name="value" value=".51" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Water" />
+			<property name="value" value=".51" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+		
+		<action class="Delay">
+			<property name="time" value="1" />
+		</action>
+		
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Health" />
+			<property name="value" value=".5" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="basic_healing_cap">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="ModifyEntityStat">
+			<property name="stat" value="Health" />
+			<property name="value" value=".5" />
+			<property name="is_percent" value="true" />
+			<property name="operation" value="Set" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="EventEquipSecurityArmour">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="AddItems">
+			<property name="items_location" value="BiomeBadge" />
+			<property name="added_items" value="armourSecurityGreenBadge"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="EventEquipMegaArmour">
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="AddItems">
+			<property name="items_location" value="BiomeBadge" />
+			<property name="added_items" value="armourMegaBlueBadge"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RefundCasing">
+        <action class="AddItems">
+			<property name="added_items" value="resourceScrapBrass"/>
+			<property name="added_item_counts" value="2"/>
+		</action>
+    </action_sequence>
+	
+	<action_sequence name="RefundShell">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+        <requirement class="RandomRoll">
+			<property name="min_max" value="0,100"/>
+			<property name="operation" value="LTE"/>
+			<property name="value" value="50"/>
+		</requirement>
+        <action class="AddItems">
+			<property name="added_items" value="resourceScrapPolymers"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+    </action_sequence>
+	
+	<action_sequence name="RefundShells">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+        <action class="AddItems">
+			<property name="added_items" value="resourceScrapPolymers"/>
+			<property name="added_item_counts" value="1"/>
+			
+			<requirement class="RandomRoll">
+				<property name="min_max" value="1,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="50"/>
+			</requirement>
+		</action>
+
+        <action class="AddItems">
+			<property name="added_items" value="resourceScrapPolymers"/>
+			<property name="added_item_counts" value="1"/>
+			
+			<requirement class="RandomRoll">
+				<property name="min_max" value="1,100"/>
+				<property name="operation" value="LTE"/>
+				<property name="value" value="50"/>
+			</requirement>
+		</action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveHandgunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="HandgunSpend" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveShell">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+        <property name="target_type" value="Entity" />
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt,Backpack" />
+            <property name="items_tags" value="ammoShells"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="RemoveChaingunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<!-- <property name="phase" value="1" /> -->
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="ChaingunSpend" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveChainsawFuel">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="FuelSpend" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="2" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveFlameFuel">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="FuelSpend" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="6" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveFlameFuelQ6">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="FuelSpend" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="4" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveRocketAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="RemoveRocket" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveEnergyCell">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="RemoveCell" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RemoveEnergyCell40">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="RemoveCell" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="40" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RechargeEnergyCell">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		
+		<action class="ModifyVarInt">
+			<property name="var_name" value="Recharge_chance"/>
+			<property name="value" value="1-100"/>
+		</action>
+		
+		<decision class="If">
+			<property name="phase" value="1"/>
+			<requirement class="VarInt">
+				<property name="operation" value="LTE"/>
+				<property name="var_name" value="Recharge_chance"/>
+				<property name="value" value="25"/>
+			</requirement>
+			
+			<action class="AddItems">
+				<property name="added_items" value="PlasmaCellDM"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+		</decision>
+	</action_sequence>
+	
+	<action_sequence name="SpawnSingleLostSoul">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<property name="allow_while_dead" value="true"/>
+		<action class="SpawnEntity">
+			<property name="entity_names" value="demonLostSoul"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="1"/>
+			<property name="phase" value="0"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="min_distance" value="1"/>
+			<property name="max_distance" value="1"/>
+			<property name="target_group" value="party"/>
+			<property name="spawn_type" value="Position"/>
+			<property name="attack_target" value="false"/>
+			<property name="air_spawn" value="true"/>
+			<!-- <property name="is_aggressive" value="true"/> -->
+		</action>
+	</action_sequence>
+	
+	<!-- action_sequence name="SpawnTripleLostSoul">
+		<property name="allow_user_trigger" value="true" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<property name="allow_while_dead" value="true"/>
+		<action class="SpawnEntity">
+			<property name="entity_names" value="demonLostSoul"/>
+			<property name="single_choice" value="true"/>
+			<property name="spawn_count" value="3"/>
+			<property name="phase" value="0"/>
+			<property name="add_to_group" value="zombies"/>
+			<property name="safe_spawn" value="true"/>
+			<property name="min_distance" value="2"/>
+			<property name="max_distance" value="2"/>
+			<property name="target_group" value="party"/>
+			<property name="spawn_type" value="Position"/>
+			<property name="attack_target" value="true"/>
+			<property name="air_spawn" value="true"/>
+		</action>
+		<action class="ExplodeTarget">
+			<property name="phase" value="4" />
+			<property name="blast_power" value="75" />
+			<property name="block_damage" value="300" />
+			<property name="block_radius" value="6" />
+			<property name="entity_damage" value="5000" />
+			<property name="entity_radius" value="6" />
+			<property name="target_group" value="targets" />
+		</action>
+	</action_sequence> -->
+	
+	<action_sequence name="action_damage_held_item">
+            <action class="AddItemDurability">
+                <property name="items_location" value="Held" />
+                <property name="amount" value="1" />
+                <property name="is_negative" value="true" />
+                <property name="is_percent" value="false" />
+            </action>
+	</action_sequence>
+	
+	<action_sequence name="FillJar">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		
+		<action class="AddItems">
+			<property name="added_items" value="drinkJarRiverWater"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="FillJarClean">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		
+		<requirement class="HasBuff">
+			<property name="buff_name" value="buffFillJar" />
+		</requirement>
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="EmptyJar" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="drinkJarBoiledWater"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+		
+		<action class="BlockDowngrade"/>
+		
+		<action class="PlaySound">
+			<property name="sound" value="bucketfill_water" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="FillJarPure">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		
+		<requirement class="HasBuff">
+			<property name="buff_name" value="buffFillJar" />
+		</requirement>
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="EmptyJar" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="drinkJarPureMineralWater"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+		
+		<action class="BlockDowngrade"/>
+		
+		<action class="PlaySound">
+			<property name="sound" value="bucketfill_water" />
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="RefundIron">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+			
+			<action class="AddItems">
+				<property name="added_items" value="resourceScrapIron"/>
+				<property name="added_item_counts" value="5"/>
+			</action>
+	</action_sequence>
+	
+	<action_sequence name="RefundJar">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+	
+		<action class="ModifyVarInt">
+			<property name="var_name" value="jar_chance"/>
+			<property name="value" value="1-100"/>
+		</action>
+		
+		<decision class="If">
+			<property name="phase" value="1"/>
+			<requirement class="VarInt">
+				<property name="operation" value="LT"/>
+				<property name="var_name" value="jar_chance"/>
+				<property name="value" value="21"/>
+			</requirement>
+			
+			<action class="AddItems">
+				<property name="added_items" value="resourceBrokenGlass"/>
+				<property name="added_item_counts" value="2"/>
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="glassdestroy"/>
+			</action>
+		</decision>
+		
+		<decision class="If">
+			<property name="phase" value="1"/>
+			<requirement class="VarInt">
+				<property name="operation" value="GTE"/>
+				<property name="var_name" value="jar_chance"/>
+				<property name="value" value="21"/>
+			</requirement>
+			
+			<action class="AddItems">
+				<property name="added_items" value="drinkJarEmpty"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="jars_empty_place"/>
+			</action>
+		</decision>
+	</action_sequence>
+	
+	<action_sequence name="TradeHandgunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="HandgunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="9mmBulletDM"/>
+			<property name="added_item_counts" value="5"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeShotgunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="ShotgunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="ShotgunShellDM"/>
+			<property name="added_item_counts" value="2"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeChaingunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="ChaingunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="762mmBulletDM"/>
+			<property name="added_item_counts" value="7"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeDismantledCrossbowAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="DismantledCrossbowRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceFeather"/>
+			<property name="added_item_counts" value="5,5,5"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeDismantledHandgunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="DismantledHandgunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
+			<property name="added_item_counts" value="10,70,10"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeDismantledShotgunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="DismantledShotgunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="resourceBuckshot,resourceGunPowder,resourcePaper,resourceScrapPolymers"/>
+			<property name="added_item_counts" value="10,560,10,10"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="TradeDismantledChaingunAmmo">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		
+		<action class="RemoveItems">
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="DismantledChaingunRoundTrading" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="AddItems">
+			<property name="added_items" value="resourceBulletCasing,resourceGunPowder,resourceBulletTip"/>
+			<property name="added_item_counts" value="10,70,10"/>
+		</action>
+	</action_sequence>
+	
+	<action_sequence name="C4_Explosive">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		
+		<requirement class="HasBuff">
+			<property name="buff_name" value="buffC4Explosive" />
+		</requirement>
+		
+		<action class="RemoveItems">
+			<property name="phase" value="1" />
+			<property name="items_location" value="Toolbelt,Backpack" />
+			<property name="items_tags" value="perkGreatHeistSafes" />
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="2" />
+			<property name="sound" value="charge_keypress" />
+			<property name="delay" value="0.05" />
+		</action>
+		
+		<action class="Delay">
+			<property name="phase" value="3" />
+			<property name="time" value=".20" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="4" />
+			<property name="sound" value="charge_keypress" />
+			<property name="delay" value="0.25" />
+		</action>
+		
+		<action class="Delay">
+			<property name="phase" value="5" />
+			<property name="time" value=".20" />
+		</action>
+		
+		<action class="PlaySound">
+			<property name="phase" value="6" />
+			<property name="sound" value="charge_keypress_armed" />
+			<property name="delay" value="0.25" />
+		</action>
+		
+		<action class="Delay">
+			<property name="phase" value="7" />
+			<property name="time" value="1" />
+		</action>
+		
+		<action class="ExplodePosition">
+			<property name="phase" value="8" />
+			<property name="blast_power" value="0" />
+			<property name="block_radius" value="0" />
+			<property name="entity_radius" value="0" />
+			<property name="entity_damage" value="0" />
+			<property name="entity_radius" value="0" />
+			<property name="particle_index" value="21" />
+		</action>
+		
+		<action class="BlockDowngrade">
+			<property name="phase" value="9" />
+		</action>	
+	</action_sequence>
+	
+	<action_sequence name="RemoveLockPick">
+		<property name="allow_user_trigger" value="false" />
+        <property name="action_type" value="Game" />
+        <property name="target_type" value="Block" />
+        
+        <action class="RemoveItems">
+            <property name="items_location" value="Toolbelt,Backpack" />
+            <property name="items_tags" value="lockPickSkill"/>
+			<property name="count_type" value="Items"/>
+			<property name="count" value="1"/>			
+        </action>
+    </action_sequence>
+	
+	<action_sequence name="archvile_revive">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<property name="allow_while_dead" value="true"/>
+		<property name="single_instance" value="true"/>
+
+		<action class="CallGameEvent">
+			<property name="phase" value="0"/>
+			<property name="game_events" value="archvile_revive_spawn"/>
+		</action>
+	</action_sequence>
+
+	<action_sequence name="archvile_revive_spawn">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Entity" />
+		<property name="allow_while_dead" value="true"/>
+
+		<action class="RespawnEntity">
+			<property name="phase" value="0"/>
+			<property name="delay" value="0"/>
+		</action>
+	</action_sequence>
+	</append>
+</FranticDan>

@@ -1,0 +1,383 @@
+<StackMasterConfig>
+    <!-- Configuration for perks that affect stack sizes -->
+    <Perks>
+        <!-- 
+        Multiple perks can be added
+        name = perk name in progression.xml
+        itemFilter = which items are affected (if empty - all items)
+        -->
+        
+        <!-- Main perk for all items -->
+        <!-- <Perk name="perkStackMaster" itemFilter="">
+            <Level level="1" multiplier="1.25"/>
+            <Level level="2" multiplier="1.5"/>
+            <Level level="3" multiplier="1.75"/>
+            <Level level="4" multiplier="2.0"/>
+            <Level level="5" multiplier="2.5"/>
+        </Perk> -->
+		
+        <Perk name="perkHandgunAmmoPouch" itemFilter="9mmBulletDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkCrossbowAmmoPouch" itemFilter="CrossbowBoltDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkTurretAmmoPouch" itemFilter="TurretAmmoDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkShotgunAmmoPouch" itemFilter="ShotgunShellDM">
+			<Level level="0" multiplier="1"/>
+            <Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkChaingunAmmoPouch" itemFilter="762mmBulletDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkFuelAmmoPouch" itemFilter="ammoGasCan">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkRocketAmmoPouch" itemFilter="RocketFragDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+		<Perk name="perkPlasmaAmmoPouch" itemFilter="PlasmaCellDM">
+            <Level level="0" multiplier="1"/>
+			<Level level="1" multiplier="1.1"/>
+            <Level level="2" multiplier="1.2"/>
+            <Level level="3" multiplier="1.3"/>
+			<Level level="4" multiplier="1.4"/>
+			<Level level="5" multiplier="1.5"/>
+			<Level level="6" multiplier="1.6"/>
+			<Level level="7" multiplier="1.7"/>
+			<Level level="8" multiplier="1.8"/>
+			<Level level="9" multiplier="1.9"/>
+			<Level level="10" multiplier="2.0"/>
+			<Level level="11" multiplier="2.1"/>
+            <Level level="12" multiplier="2.2"/>
+            <Level level="13" multiplier="2.3"/>
+			<Level level="14" multiplier="2.4"/>
+			<Level level="15" multiplier="2.5"/>
+			<Level level="16" multiplier="2.6"/>
+			<Level level="17" multiplier="2.7"/>
+			<Level level="18" multiplier="2.8"/>
+			<Level level="19" multiplier="2.9"/>
+			<Level level="20" multiplier="3.0"/>
+			<Level level="21" multiplier="3.1"/>
+            <Level level="22" multiplier="3.2"/>
+            <Level level="23" multiplier="3.3"/>
+			<Level level="24" multiplier="3.4"/>
+			<Level level="25" multiplier="3.5"/>
+			<Level level="26" multiplier="3.6"/>
+			<Level level="27" multiplier="3.7"/>
+			<Level level="28" multiplier="3.8"/>
+			<Level level="29" multiplier="3.9"/>
+			<Level level="30" multiplier="4.0"/>
+			<Level level="31" multiplier="4.1"/>
+            <Level level="32" multiplier="4.2"/>
+            <Level level="33" multiplier="4.3"/>
+			<Level level="34" multiplier="4.4"/>
+			<Level level="35" multiplier="4.5"/>
+			<Level level="36" multiplier="4.6"/>
+			<Level level="37" multiplier="4.7"/>
+			<Level level="38" multiplier="4.8"/>
+			<Level level="39" multiplier="4.9"/>
+			<Level level="40" multiplier="5.0"/>
+        </Perk>
+		
+        <!-- Example: Pack Mule for resources
+        <Perk name="perkPackMule" itemFilter="resource">
+            <Level level="1" multiplier="1.2"/>
+            <Level level="2" multiplier="1.4"/>
+            <Level level="3" multiplier="1.6"/>
+        </Perk> -->
+		
+    </Perks>
+    <!-- Global exclusions (apply to all perks) -->
+    <GlobalExclusions>
+        <!-- <Item name="resourceWood"/> -->
+    </GlobalExclusions>
+</StackMasterConfig>

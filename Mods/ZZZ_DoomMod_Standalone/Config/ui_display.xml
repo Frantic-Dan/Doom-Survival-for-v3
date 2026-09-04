@@ -1,0 +1,58 @@
+<Frantic_Dan>		
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']/display_entry[@name='dHyperthermalResist']">
+		<display_entry name="dHypothermalResist" title_key="statHypothermalResist"/>
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='waterCoffee']/display_entry[@name='dHypothermalResist']">
+		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkWithHoney']/display_entry[@name='$waterAmountAdd']">
+		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWithHoney']/display_entry[@name='$foodAmountAdd']">
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='$foodAmountAdd']">
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='$foodAmountAdd']">
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	</insertafter>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='dCarryCapacity']/@title_key">statJumpStrength</set>
+	
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingDisplay']/display_entry[@name='HypothermalResist']/@display_type">Decimal2</set>
+	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingDisplay']/display_entry[@name='HyperthermalResist']/@display_type">Decimal2</set>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingDisplay']/display_entry[@name='HyperthermalResist']">
+		<display_entry name="dDuration" title_key="statStormDuration" display_type="Time"/>
+	</insertafter>
+	
+	
+	<append xpath="/ui_display_info/item_display">
+	
+	<item_display_info display_type="waterRedHoneyTea" display_group="groupConsumables">
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+		<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+		<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+		<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+	</item_display_info>
+	
+	<item_display_info display_type="waterHoneyCoffee" display_group="groupConsumables">
+		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+		<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
+		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
+		<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
+		<display_entry name="dHypothermalResist" title_key="statHypothermalResist"/>
+		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
+		<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+	</item_display_info>
+	
+	</append>
+	
+</Frantic_Dan>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="ExcludePOICulling" value="True" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="DifficultyTier" value="0" />
+  <property name="PrefabSize" value="100, 15, 148" />
+  <property name="RotationToFaceNorth" value="0" />
+  <property name="YOffset" value="0" />
+  <property name="Zoning" value="none" />
+  <property name="Tags" value="doom,doomsky3" />
+  <property name="EditorGroups" value="Wilderness" />
+</prefab>

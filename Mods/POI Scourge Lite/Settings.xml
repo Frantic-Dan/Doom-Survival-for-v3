@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ScourgeLiteSettings>
+  <!-- ================================================================= -->
+  <!-- UI SETTINGS                                                       -->
+  <!-- ================================================================= -->
+  <ShowMapStatsPanel>true</ShowMapStatsPanel>
+  <ShowChatMessages>true</ShowChatMessages>
+
+  <!-- ================================================================= -->
+  <!-- CLEARED MAP MARKER SETTINGS                                       -->
+  <!-- ================================================================= -->
+  <ShowMapMarkers>true</ShowMapMarkers>
+  <MarkerTextPrefix></MarkerTextPrefix>
+
+  <SpriteTier0>ui_game_symbol_check</SpriteTier0>
+  <SpriteTier1>ui_game_symbol_check</SpriteTier1>
+  <SpriteTier2>ui_game_symbol_check</SpriteTier2>
+  <SpriteTier3>ui_game_symbol_check</SpriteTier3>
+  <SpriteTier4>ui_game_symbol_check</SpriteTier4>
+  <SpriteTier5>ui_game_symbol_check</SpriteTier5>
+  <SpriteTier6>ui_game_symbol_check</SpriteTier6>
+
+  <ColorTier0>#9C8867</ColorTier0>
+  <ColorTier1>#CF7F29</ColorTier1>
+  <ColorTier2>#A2A41B</ColorTier2>
+  <ColorTier3>#42C234</ColorTier3>
+  <ColorTier4>#315DCE</ColorTier4>
+  <ColorTier5>#400073</ColorTier5>
+  <ColorTier6>#FF0000</ColorTier6>
+
+  <!-- ================================================================= -->
+  <!-- UNCLEARED POI MARKERS                                             -->
+  <!-- ================================================================= -->
+  <ShowUnclearedMapMarkers>true</ShowUnclearedMapMarkers>
+  <ShowUnclearedTier0>true</ShowUnclearedTier0>
+
+  <UnclearedSpriteTier0>ui_game_symbol_x</UnclearedSpriteTier0>
+  <UnclearedSpriteTier1>ui_game_symbol_x</UnclearedSpriteTier1>
+  <UnclearedSpriteTier2>ui_game_symbol_x</UnclearedSpriteTier2>
+  <UnclearedSpriteTier3>ui_game_symbol_x</UnclearedSpriteTier3>
+  <UnclearedSpriteTier4>ui_game_symbol_x</UnclearedSpriteTier4>
+  <UnclearedSpriteTier5>ui_game_symbol_x</UnclearedSpriteTier5>
+  <UnclearedSpriteTier6>ui_game_symbol_x</UnclearedSpriteTier6>
+
+  <UnclearedColorTier0>#780606</UnclearedColorTier0>
+  <UnclearedColorTier1>#780606</UnclearedColorTier1>
+  <UnclearedColorTier2>#780606</UnclearedColorTier2>
+  <UnclearedColorTier3>#780606</UnclearedColorTier3>
+  <UnclearedColorTier4>#780606</UnclearedColorTier4>
+  <UnclearedColorTier5>#780606</UnclearedColorTier5>
+  <UnclearedColorTier6>#780606</UnclearedColorTier6>
+
+</ScourgeLiteSettings>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="ZZZ_Guaranteed_POI_Spawns_Mod_friendly" />
+  <DisplayName value="Guaranteed POI Spawns - Mod Friendly" />
+  <Version value="3.0.0" />
+  <Description value="Forces specific POIs to always spawn in RWG worlds. Updated for 7 Days To Die 3.0." />
+  <Author value="Eregios" />
+  <Website value="" />
+</xml>

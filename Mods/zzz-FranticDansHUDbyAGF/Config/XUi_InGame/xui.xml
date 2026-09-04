@@ -1,0 +1,17 @@
+<FranticDan>
+
+<remove xpath="//window_group[@name='toolbelt']"/>
+<insertafter xpath="//window_group[@name='throwpower']">
+	<!-- v3 parses attribute name "actionset" (lowercase). camelCase actionSet is ignored and locks move/ESC. -->
+	<window_group name="toolbelt" actionset="false">
+		<window name="windowToolbelt" />
+		<window name="HUDLeftStatBars" />
+		<window name="HUDCenterStatBars" />
+		<window name="HUDRightStatBars" />
+		<window name="windowQuestTracker" />
+		<window name="windowRecipeTracker" />
+		<window name="windowGroupBars" />
+	</window_group>
+</insertafter>
+
+</FranticDan>

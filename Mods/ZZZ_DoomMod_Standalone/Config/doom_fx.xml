@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<doom_fx>
+
+  <effect name="doomPickupFlash" type="tint" color="216,185,68,5" />
+  <effect name="doomBerserk" type="tint" color="254,1,1,5" />
+  <effect name="doomLightAmp" type="light" strength="1" />
+
+</doom_fx>

@@ -1,0 +1,38 @@
+<FranticDan>
+<append xpath="/quests">
+
+	<quest id="UACs_secretWeapon">
+		<property name="name_key" value="UACs_secretWeapon" param1="name"/>
+		<property name="subtitle_key" value="UACs_secretWeapon" param1="name"/>
+		<property name="description_key" value="UACs_secretWeapon_offer" param1="offer"/>
+		<property name="icon" value="ui_game_symbol_map"/>
+		<property name="repeatable" value="false"/>
+		<property name="category_key" value="treasure"/>
+		<property name="offer_key" value="treasure_taylor_offer" param1="offer"/>
+		<property name="add_to_tier_complete" value="false"/>
+		<property name="shareable" value="false"/>
+
+		<objective type="TreasureChest">
+			<property name="block" value="cntBuriedLootStashChestBFG"/>
+			<property name="alt_block" value="cntBuriedLootStashChestBFGInsecure"/>
+			<property name="distance" value="1000-1250"/>
+			<property name="default_radius" value="45"/>
+			<property name="nav_object" value="treasure"/>
+			<property name="direct_nav_object" value="treasure_direct"/>
+			<property name="blocks_per_reduction" value="18"/>
+			<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+		</objective>
+		
+		<event type="TreasureRadiusReduction">
+			<property name="chance" value="0.75" param1="spawn_chance"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="BloodMoonHorde"/>
+				<property name="count" value="4-6" param1="spawn_count"/>
+			</action>
+		</event>
+	</quest>
+	</append>
+	
+<remove xpath="/quests/quest[@id='treasure_taylor']/objective/property[@name='explosion_event']"/>
+	
+</FranticDan>

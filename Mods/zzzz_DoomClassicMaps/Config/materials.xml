@@ -1,0 +1,28 @@
+<configs>
+
+<append xpath="/materials">
+
+<material id="MdoomNoteSelector">
+	<property name="damage_category" value="cloth"/>
+	<property name="surface_category" value="cloth"/>
+	<property name="forge_category" value="doomNoteSelector"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="Mdoombrain">
+	<property name="damage_category" value="organic"/>
+	<property name="surface_category" value="organic"/>
+	<property name="particle_category" value="organic"/>
+	<property name="Hardness" type="float" value="15"/>
+	<property name="stepsound" value="organic"/>
+	<property name="stability_glue" value="0"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="MaxIncomingDamage" value="1"/>
+	<property name="MaxDamage" value="3"/>
+	<property name="Experience" value="2"/>
+</material>
+
+</append>
+
+</configs>

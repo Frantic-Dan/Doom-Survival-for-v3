@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+  <Name value="DoomSandbox" />
+  <DisplayName value="Doom Sandbox" />
+  <Description value="Owns Doom sandbox options and Difficulty presets from Config/sandbox_options.txt and Config/sandbox_difficulties.txt" />
+  <Author value="AGF / Doom" />
+  <Version value="0.1.0" />
+  <Website value="" />
+</xml>

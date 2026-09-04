@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <append xpath="/quests">
+    <quest id="doom_e1m1">
+      <property name="name_key" value="doom_e1m1_name" />
+      <property name="subtitle_key" value="doom_e1m1_subtitle" />
+      <property name="description_key" value="doom_e1m1_desc" />
+      <property name="offer_key" value="doom_e1m1_offer" />
+      <property name="extra_tags" value="doom_e1m1" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M1">
+        <property name="map" value="E1M1" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m2">
+      <property name="name_key" value="doom_e1m2_name" />
+      <property name="subtitle_key" value="doom_e1m2_subtitle" />
+      <property name="description_key" value="doom_e1m2_desc" />
+      <property name="offer_key" value="doom_e1m2_offer" />
+      <property name="extra_tags" value="doom_e1m2" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M2">
+        <property name="map" value="E1M2" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m3">
+      <property name="name_key" value="doom_e1m3_name" />
+      <property name="subtitle_key" value="doom_e1m3_subtitle" />
+      <property name="description_key" value="doom_e1m3_desc" />
+      <property name="offer_key" value="doom_e1m3_offer" />
+      <property name="extra_tags" value="doom_e1m3" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M3">
+        <property name="map" value="E1M3" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m4">
+      <property name="name_key" value="doom_e1m4_name" />
+      <property name="subtitle_key" value="doom_e1m4_subtitle" />
+      <property name="description_key" value="doom_e1m4_desc" />
+      <property name="offer_key" value="doom_e1m4_offer" />
+      <property name="extra_tags" value="doom_e1m4" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M4">
+        <property name="map" value="E1M4" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m5">
+      <property name="name_key" value="doom_e1m5_name" />
+      <property name="subtitle_key" value="doom_e1m5_subtitle" />
+      <property name="description_key" value="doom_e1m5_desc" />
+      <property name="offer_key" value="doom_e1m5_offer" />
+      <property name="extra_tags" value="doom_e1m5" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M5">
+        <property name="map" value="E1M5" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m6">
+      <property name="name_key" value="doom_e1m6_name" />
+      <property name="subtitle_key" value="doom_e1m6_subtitle" />
+      <property name="description_key" value="doom_e1m6_desc" />
+      <property name="offer_key" value="doom_e1m6_offer" />
+      <property name="extra_tags" value="doom_e1m6" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M6">
+        <property name="map" value="E1M6" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m7">
+      <property name="name_key" value="doom_e1m7_name" />
+      <property name="subtitle_key" value="doom_e1m7_subtitle" />
+      <property name="description_key" value="doom_e1m7_desc" />
+      <property name="offer_key" value="doom_e1m7_offer" />
+      <property name="extra_tags" value="doom_e1m7" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M7">
+        <property name="map" value="E1M7" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m8">
+      <property name="name_key" value="doom_e1m8_name" />
+      <property name="subtitle_key" value="doom_e1m8_subtitle" />
+      <property name="description_key" value="doom_e1m8_desc" />
+      <property name="offer_key" value="doom_e1m8_offer" />
+      <property name="extra_tags" value="doom_e1m8" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M8">
+        <property name="map" value="E1M8" />
+      </objective>
+    </quest>
+    <quest id="doom_e1m9">
+      <property name="name_key" value="doom_e1m9_name" />
+      <property name="subtitle_key" value="doom_e1m9_subtitle" />
+      <property name="description_key" value="doom_e1m9_desc" />
+      <property name="offer_key" value="doom_e1m9_offer" />
+      <property name="extra_tags" value="doom_e1m9" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E1M9">
+        <property name="map" value="E1M9" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m1">
+      <property name="name_key" value="doom_e2m1_name" />
+      <property name="subtitle_key" value="doom_e2m1_subtitle" />
+      <property name="description_key" value="doom_e2m1_desc" />
+      <property name="offer_key" value="doom_e2m1_offer" />
+      <property name="extra_tags" value="doom_e2m1" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M1">
+        <property name="map" value="E2M1" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m2">
+      <property name="name_key" value="doom_e2m2_name" />
+      <property name="subtitle_key" value="doom_e2m2_subtitle" />
+      <property name="description_key" value="doom_e2m2_desc" />
+      <property name="offer_key" value="doom_e2m2_offer" />
+      <property name="extra_tags" value="doom_e2m2" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M2">
+        <property name="map" value="E2M2" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m3">
+      <property name="name_key" value="doom_e2m3_name" />
+      <property name="subtitle_key" value="doom_e2m3_subtitle" />
+      <property name="description_key" value="doom_e2m3_desc" />
+      <property name="offer_key" value="doom_e2m3_offer" />
+      <property name="extra_tags" value="doom_e2m3" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M3">
+        <property name="map" value="E2M3" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m4">
+      <property name="name_key" value="doom_e2m4_name" />
+      <property name="subtitle_key" value="doom_e2m4_subtitle" />
+      <property name="description_key" value="doom_e2m4_desc" />
+      <property name="offer_key" value="doom_e2m4_offer" />
+      <property name="extra_tags" value="doom_e2m4" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M4">
+        <property name="map" value="E2M4" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m5">
+      <property name="name_key" value="doom_e2m5_name" />
+      <property name="subtitle_key" value="doom_e2m5_subtitle" />
+      <property name="description_key" value="doom_e2m5_desc" />
+      <property name="offer_key" value="doom_e2m5_offer" />
+      <property name="extra_tags" value="doom_e2m5" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M5">
+        <property name="map" value="E2M5" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m6">
+      <property name="name_key" value="doom_e2m6_name" />
+      <property name="subtitle_key" value="doom_e2m6_subtitle" />
+      <property name="description_key" value="doom_e2m6_desc" />
+      <property name="offer_key" value="doom_e2m6_offer" />
+      <property name="extra_tags" value="doom_e2m6" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M6">
+        <property name="map" value="E2M6" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m7">
+      <property name="name_key" value="doom_e2m7_name" />
+      <property name="subtitle_key" value="doom_e2m7_subtitle" />
+      <property name="description_key" value="doom_e2m7_desc" />
+      <property name="offer_key" value="doom_e2m7_offer" />
+      <property name="extra_tags" value="doom_e2m7" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M7">
+        <property name="map" value="E2M7" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m8">
+      <property name="name_key" value="doom_e2m8_name" />
+      <property name="subtitle_key" value="doom_e2m8_subtitle" />
+      <property name="description_key" value="doom_e2m8_desc" />
+      <property name="offer_key" value="doom_e2m8_offer" />
+      <property name="extra_tags" value="doom_e2m8" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M8">
+        <property name="map" value="E2M8" />
+      </objective>
+    </quest>
+    <quest id="doom_e2m9">
+      <property name="name_key" value="doom_e2m9_name" />
+      <property name="subtitle_key" value="doom_e2m9_subtitle" />
+      <property name="description_key" value="doom_e2m9_desc" />
+      <property name="offer_key" value="doom_e2m9_offer" />
+      <property name="extra_tags" value="doom_e2m9" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E2M9">
+        <property name="map" value="E2M9" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m1">
+      <property name="name_key" value="doom_e3m1_name" />
+      <property name="subtitle_key" value="doom_e3m1_subtitle" />
+      <property name="description_key" value="doom_e3m1_desc" />
+      <property name="offer_key" value="doom_e3m1_offer" />
+      <property name="extra_tags" value="doom_e3m1" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M1">
+        <property name="map" value="E3M1" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m2">
+      <property name="name_key" value="doom_e3m2_name" />
+      <property name="subtitle_key" value="doom_e3m2_subtitle" />
+      <property name="description_key" value="doom_e3m2_desc" />
+      <property name="offer_key" value="doom_e3m2_offer" />
+      <property name="extra_tags" value="doom_e3m2" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M2">
+        <property name="map" value="E3M2" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m3">
+      <property name="name_key" value="doom_e3m3_name" />
+      <property name="subtitle_key" value="doom_e3m3_subtitle" />
+      <property name="description_key" value="doom_e3m3_desc" />
+      <property name="offer_key" value="doom_e3m3_offer" />
+      <property name="extra_tags" value="doom_e3m3" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M3">
+        <property name="map" value="E3M3" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m4">
+      <property name="name_key" value="doom_e3m4_name" />
+      <property name="subtitle_key" value="doom_e3m4_subtitle" />
+      <property name="description_key" value="doom_e3m4_desc" />
+      <property name="offer_key" value="doom_e3m4_offer" />
+      <property name="extra_tags" value="doom_e3m4" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M4">
+        <property name="map" value="E3M4" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m5">
+      <property name="name_key" value="doom_e3m5_name" />
+      <property name="subtitle_key" value="doom_e3m5_subtitle" />
+      <property name="description_key" value="doom_e3m5_desc" />
+      <property name="offer_key" value="doom_e3m5_offer" />
+      <property name="extra_tags" value="doom_e3m5" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M5">
+        <property name="map" value="E3M5" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m6">
+      <property name="name_key" value="doom_e3m6_name" />
+      <property name="subtitle_key" value="doom_e3m6_subtitle" />
+      <property name="description_key" value="doom_e3m6_desc" />
+      <property name="offer_key" value="doom_e3m6_offer" />
+      <property name="extra_tags" value="doom_e3m6" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M6">
+        <property name="map" value="E3M6" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m7">
+      <property name="name_key" value="doom_e3m7_name" />
+      <property name="subtitle_key" value="doom_e3m7_subtitle" />
+      <property name="description_key" value="doom_e3m7_desc" />
+      <property name="offer_key" value="doom_e3m7_offer" />
+      <property name="extra_tags" value="doom_e3m7" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M7">
+        <property name="map" value="E3M7" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m8">
+      <property name="name_key" value="doom_e3m8_name" />
+      <property name="subtitle_key" value="doom_e3m8_subtitle" />
+      <property name="description_key" value="doom_e3m8_desc" />
+      <property name="offer_key" value="doom_e3m8_offer" />
+      <property name="extra_tags" value="doom_e3m8" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M8">
+        <property name="map" value="E3M8" />
+      </objective>
+    </quest>
+    <quest id="doom_e3m9">
+      <property name="name_key" value="doom_e3m9_name" />
+      <property name="subtitle_key" value="doom_e3m9_subtitle" />
+      <property name="description_key" value="doom_e3m9_desc" />
+      <property name="offer_key" value="doom_e3m9_offer" />
+      <property name="extra_tags" value="doom_e3m9" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E3M9">
+        <property name="map" value="E3M9" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m1">
+      <property name="name_key" value="doom_e4m1_name" />
+      <property name="subtitle_key" value="doom_e4m1_subtitle" />
+      <property name="description_key" value="doom_e4m1_desc" />
+      <property name="offer_key" value="doom_e4m1_offer" />
+      <property name="extra_tags" value="doom_e4m1" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M1">
+        <property name="map" value="E4M1" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m2">
+      <property name="name_key" value="doom_e4m2_name" />
+      <property name="subtitle_key" value="doom_e4m2_subtitle" />
+      <property name="description_key" value="doom_e4m2_desc" />
+      <property name="offer_key" value="doom_e4m2_offer" />
+      <property name="extra_tags" value="doom_e4m2" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M2">
+        <property name="map" value="E4M2" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m3">
+      <property name="name_key" value="doom_e4m3_name" />
+      <property name="subtitle_key" value="doom_e4m3_subtitle" />
+      <property name="description_key" value="doom_e4m3_desc" />
+      <property name="offer_key" value="doom_e4m3_offer" />
+      <property name="extra_tags" value="doom_e4m3" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M3">
+        <property name="map" value="E4M3" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m4">
+      <property name="name_key" value="doom_e4m4_name" />
+      <property name="subtitle_key" value="doom_e4m4_subtitle" />
+      <property name="description_key" value="doom_e4m4_desc" />
+      <property name="offer_key" value="doom_e4m4_offer" />
+      <property name="extra_tags" value="doom_e4m4" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M4">
+        <property name="map" value="E4M4" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m5">
+      <property name="name_key" value="doom_e4m5_name" />
+      <property name="subtitle_key" value="doom_e4m5_subtitle" />
+      <property name="description_key" value="doom_e4m5_desc" />
+      <property name="offer_key" value="doom_e4m5_offer" />
+      <property name="extra_tags" value="doom_e4m5" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M5">
+        <property name="map" value="E4M5" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m6">
+      <property name="name_key" value="doom_e4m6_name" />
+      <property name="subtitle_key" value="doom_e4m6_subtitle" />
+      <property name="description_key" value="doom_e4m6_desc" />
+      <property name="offer_key" value="doom_e4m6_offer" />
+      <property name="extra_tags" value="doom_e4m6" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M6">
+        <property name="map" value="E4M6" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m7">
+      <property name="name_key" value="doom_e4m7_name" />
+      <property name="subtitle_key" value="doom_e4m7_subtitle" />
+      <property name="description_key" value="doom_e4m7_desc" />
+      <property name="offer_key" value="doom_e4m7_offer" />
+      <property name="extra_tags" value="doom_e4m7" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M7">
+        <property name="map" value="E4M7" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m8">
+      <property name="name_key" value="doom_e4m8_name" />
+      <property name="subtitle_key" value="doom_e4m8_subtitle" />
+      <property name="description_key" value="doom_e4m8_desc" />
+      <property name="offer_key" value="doom_e4m8_offer" />
+      <property name="extra_tags" value="doom_e4m8" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M8">
+        <property name="map" value="E4M8" />
+      </objective>
+    </quest>
+    <quest id="doom_e4m9">
+      <property name="name_key" value="doom_e4m9_name" />
+      <property name="subtitle_key" value="doom_e4m9_subtitle" />
+      <property name="description_key" value="doom_e4m9_desc" />
+      <property name="offer_key" value="doom_e4m9_offer" />
+      <property name="extra_tags" value="doom_e4m9" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="E4M9">
+        <property name="map" value="E4M9" />
+      </objective>
+    </quest>
+    <quest id="doom_map01">
+      <property name="name_key" value="doom_map01_name" />
+      <property name="subtitle_key" value="doom_map01_subtitle" />
+      <property name="description_key" value="doom_map01_desc" />
+      <property name="offer_key" value="doom_map01_offer" />
+      <property name="extra_tags" value="doom_map01" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP01">
+        <property name="map" value="MAP01" />
+      </objective>
+    </quest>
+    <quest id="doom_map02">
+      <property name="name_key" value="doom_map02_name" />
+      <property name="subtitle_key" value="doom_map02_subtitle" />
+      <property name="description_key" value="doom_map02_desc" />
+      <property name="offer_key" value="doom_map02_offer" />
+      <property name="extra_tags" value="doom_map02" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP02">
+        <property name="map" value="MAP02" />
+      </objective>
+    </quest>
+    <quest id="doom_map03">
+      <property name="name_key" value="doom_map03_name" />
+      <property name="subtitle_key" value="doom_map03_subtitle" />
+      <property name="description_key" value="doom_map03_desc" />
+      <property name="offer_key" value="doom_map03_offer" />
+      <property name="extra_tags" value="doom_map03" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP03">
+        <property name="map" value="MAP03" />
+      </objective>
+    </quest>
+    <quest id="doom_map04">
+      <property name="name_key" value="doom_map04_name" />
+      <property name="subtitle_key" value="doom_map04_subtitle" />
+      <property name="description_key" value="doom_map04_desc" />
+      <property name="offer_key" value="doom_map04_offer" />
+      <property name="extra_tags" value="doom_map04" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP04">
+        <property name="map" value="MAP04" />
+      </objective>
+    </quest>
+    <quest id="doom_map05">
+      <property name="name_key" value="doom_map05_name" />
+      <property name="subtitle_key" value="doom_map05_subtitle" />
+      <property name="description_key" value="doom_map05_desc" />
+      <property name="offer_key" value="doom_map05_offer" />
+      <property name="extra_tags" value="doom_map05" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP05">
+        <property name="map" value="MAP05" />
+      </objective>
+    </quest>
+    <quest id="doom_map06">
+      <property name="name_key" value="doom_map06_name" />
+      <property name="subtitle_key" value="doom_map06_subtitle" />
+      <property name="description_key" value="doom_map06_desc" />
+      <property name="offer_key" value="doom_map06_offer" />
+      <property name="extra_tags" value="doom_map06" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP06">
+        <property name="map" value="MAP06" />
+      </objective>
+    </quest>
+    <quest id="doom_map07">
+      <property name="name_key" value="doom_map07_name" />
+      <property name="subtitle_key" value="doom_map07_subtitle" />
+      <property name="description_key" value="doom_map07_desc" />
+      <property name="offer_key" value="doom_map07_offer" />
+      <property name="extra_tags" value="doom_map07" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP07">
+        <property name="map" value="MAP07" />
+      </objective>
+    </quest>
+    <quest id="doom_map08">
+      <property name="name_key" value="doom_map08_name" />
+      <property name="subtitle_key" value="doom_map08_subtitle" />
+      <property name="description_key" value="doom_map08_desc" />
+      <property name="offer_key" value="doom_map08_offer" />
+      <property name="extra_tags" value="doom_map08" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP08">
+        <property name="map" value="MAP08" />
+      </objective>
+    </quest>
+    <quest id="doom_map09">
+      <property name="name_key" value="doom_map09_name" />
+      <property name="subtitle_key" value="doom_map09_subtitle" />
+      <property name="description_key" value="doom_map09_desc" />
+      <property name="offer_key" value="doom_map09_offer" />
+      <property name="extra_tags" value="doom_map09" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP09">
+        <property name="map" value="MAP09" />
+      </objective>
+    </quest>
+    <quest id="doom_map10">
+      <property name="name_key" value="doom_map10_name" />
+      <property name="subtitle_key" value="doom_map10_subtitle" />
+      <property name="description_key" value="doom_map10_desc" />
+      <property name="offer_key" value="doom_map10_offer" />
+      <property name="extra_tags" value="doom_map10" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP10">
+        <property name="map" value="MAP10" />
+      </objective>
+    </quest>
+    <quest id="doom_map11">
+      <property name="name_key" value="doom_map11_name" />
+      <property name="subtitle_key" value="doom_map11_subtitle" />
+      <property name="description_key" value="doom_map11_desc" />
+      <property name="offer_key" value="doom_map11_offer" />
+      <property name="extra_tags" value="doom_map11" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP11">
+        <property name="map" value="MAP11" />
+      </objective>
+    </quest>
+    <quest id="doom_map12">
+      <property name="name_key" value="doom_map12_name" />
+      <property name="subtitle_key" value="doom_map12_subtitle" />
+      <property name="description_key" value="doom_map12_desc" />
+      <property name="offer_key" value="doom_map12_offer" />
+      <property name="extra_tags" value="doom_map12" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP12">
+        <property name="map" value="MAP12" />
+      </objective>
+    </quest>
+    <quest id="doom_map13">
+      <property name="name_key" value="doom_map13_name" />
+      <property name="subtitle_key" value="doom_map13_subtitle" />
+      <property name="description_key" value="doom_map13_desc" />
+      <property name="offer_key" value="doom_map13_offer" />
+      <property name="extra_tags" value="doom_map13" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP13">
+        <property name="map" value="MAP13" />
+      </objective>
+    </quest>
+    <quest id="doom_map14">
+      <property name="name_key" value="doom_map14_name" />
+      <property name="subtitle_key" value="doom_map14_subtitle" />
+      <property name="description_key" value="doom_map14_desc" />
+      <property name="offer_key" value="doom_map14_offer" />
+      <property name="extra_tags" value="doom_map14" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP14">
+        <property name="map" value="MAP14" />
+      </objective>
+    </quest>
+    <quest id="doom_map15">
+      <property name="name_key" value="doom_map15_name" />
+      <property name="subtitle_key" value="doom_map15_subtitle" />
+      <property name="description_key" value="doom_map15_desc" />
+      <property name="offer_key" value="doom_map15_offer" />
+      <property name="extra_tags" value="doom_map15" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP15">
+        <property name="map" value="MAP15" />
+      </objective>
+    </quest>
+    <quest id="doom_map16">
+      <property name="name_key" value="doom_map16_name" />
+      <property name="subtitle_key" value="doom_map16_subtitle" />
+      <property name="description_key" value="doom_map16_desc" />
+      <property name="offer_key" value="doom_map16_offer" />
+      <property name="extra_tags" value="doom_map16" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP16">
+        <property name="map" value="MAP16" />
+      </objective>
+    </quest>
+    <quest id="doom_map17">
+      <property name="name_key" value="doom_map17_name" />
+      <property name="subtitle_key" value="doom_map17_subtitle" />
+      <property name="description_key" value="doom_map17_desc" />
+      <property name="offer_key" value="doom_map17_offer" />
+      <property name="extra_tags" value="doom_map17" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP17">
+        <property name="map" value="MAP17" />
+      </objective>
+    </quest>
+    <quest id="doom_map18">
+      <property name="name_key" value="doom_map18_name" />
+      <property name="subtitle_key" value="doom_map18_subtitle" />
+      <property name="description_key" value="doom_map18_desc" />
+      <property name="offer_key" value="doom_map18_offer" />
+      <property name="extra_tags" value="doom_map18" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP18">
+        <property name="map" value="MAP18" />
+      </objective>
+    </quest>
+    <quest id="doom_map19">
+      <property name="name_key" value="doom_map19_name" />
+      <property name="subtitle_key" value="doom_map19_subtitle" />
+      <property name="description_key" value="doom_map19_desc" />
+      <property name="offer_key" value="doom_map19_offer" />
+      <property name="extra_tags" value="doom_map19" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP19">
+        <property name="map" value="MAP19" />
+      </objective>
+    </quest>
+    <quest id="doom_map20">
+      <property name="name_key" value="doom_map20_name" />
+      <property name="subtitle_key" value="doom_map20_subtitle" />
+      <property name="description_key" value="doom_map20_desc" />
+      <property name="offer_key" value="doom_map20_offer" />
+      <property name="extra_tags" value="doom_map20" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP20">
+        <property name="map" value="MAP20" />
+      </objective>
+    </quest>
+    <quest id="doom_map21">
+      <property name="name_key" value="doom_map21_name" />
+      <property name="subtitle_key" value="doom_map21_subtitle" />
+      <property name="description_key" value="doom_map21_desc" />
+      <property name="offer_key" value="doom_map21_offer" />
+      <property name="extra_tags" value="doom_map21" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP21">
+        <property name="map" value="MAP21" />
+      </objective>
+    </quest>
+    <quest id="doom_map22">
+      <property name="name_key" value="doom_map22_name" />
+      <property name="subtitle_key" value="doom_map22_subtitle" />
+      <property name="description_key" value="doom_map22_desc" />
+      <property name="offer_key" value="doom_map22_offer" />
+      <property name="extra_tags" value="doom_map22" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP22">
+        <property name="map" value="MAP22" />
+      </objective>
+    </quest>
+    <quest id="doom_map23">
+      <property name="name_key" value="doom_map23_name" />
+      <property name="subtitle_key" value="doom_map23_subtitle" />
+      <property name="description_key" value="doom_map23_desc" />
+      <property name="offer_key" value="doom_map23_offer" />
+      <property name="extra_tags" value="doom_map23" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP23">
+        <property name="map" value="MAP23" />
+      </objective>
+    </quest>
+    <quest id="doom_map24">
+      <property name="name_key" value="doom_map24_name" />
+      <property name="subtitle_key" value="doom_map24_subtitle" />
+      <property name="description_key" value="doom_map24_desc" />
+      <property name="offer_key" value="doom_map24_offer" />
+      <property name="extra_tags" value="doom_map24" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP24">
+        <property name="map" value="MAP24" />
+      </objective>
+    </quest>
+    <quest id="doom_map25">
+      <property name="name_key" value="doom_map25_name" />
+      <property name="subtitle_key" value="doom_map25_subtitle" />
+      <property name="description_key" value="doom_map25_desc" />
+      <property name="offer_key" value="doom_map25_offer" />
+      <property name="extra_tags" value="doom_map25" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP25">
+        <property name="map" value="MAP25" />
+      </objective>
+    </quest>
+    <quest id="doom_map26">
+      <property name="name_key" value="doom_map26_name" />
+      <property name="subtitle_key" value="doom_map26_subtitle" />
+      <property name="description_key" value="doom_map26_desc" />
+      <property name="offer_key" value="doom_map26_offer" />
+      <property name="extra_tags" value="doom_map26" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP26">
+        <property name="map" value="MAP26" />
+      </objective>
+    </quest>
+    <quest id="doom_map27">
+      <property name="name_key" value="doom_map27_name" />
+      <property name="subtitle_key" value="doom_map27_subtitle" />
+      <property name="description_key" value="doom_map27_desc" />
+      <property name="offer_key" value="doom_map27_offer" />
+      <property name="extra_tags" value="doom_map27" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP27">
+        <property name="map" value="MAP27" />
+      </objective>
+    </quest>
+    <quest id="doom_map28">
+      <property name="name_key" value="doom_map28_name" />
+      <property name="subtitle_key" value="doom_map28_subtitle" />
+      <property name="description_key" value="doom_map28_desc" />
+      <property name="offer_key" value="doom_map28_offer" />
+      <property name="extra_tags" value="doom_map28" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP28">
+        <property name="map" value="MAP28" />
+      </objective>
+    </quest>
+    <quest id="doom_map29">
+      <property name="name_key" value="doom_map29_name" />
+      <property name="subtitle_key" value="doom_map29_subtitle" />
+      <property name="description_key" value="doom_map29_desc" />
+      <property name="offer_key" value="doom_map29_offer" />
+      <property name="extra_tags" value="doom_map29" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP29">
+        <property name="map" value="MAP29" />
+      </objective>
+    </quest>
+    <quest id="doom_map30">
+      <property name="name_key" value="doom_map30_name" />
+      <property name="subtitle_key" value="doom_map30_subtitle" />
+      <property name="description_key" value="doom_map30_desc" />
+      <property name="offer_key" value="doom_map30_offer" />
+      <property name="extra_tags" value="doom_map30" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP30">
+        <property name="map" value="MAP30" />
+      </objective>
+    </quest>
+    <quest id="doom_map31">
+      <property name="name_key" value="doom_map31_name" />
+      <property name="subtitle_key" value="doom_map31_subtitle" />
+      <property name="description_key" value="doom_map31_desc" />
+      <property name="offer_key" value="doom_map31_offer" />
+      <property name="extra_tags" value="doom_map31" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP31">
+        <property name="map" value="MAP31" />
+      </objective>
+    </quest>
+    <quest id="doom_map32">
+      <property name="name_key" value="doom_map32_name" />
+      <property name="subtitle_key" value="doom_map32_subtitle" />
+      <property name="description_key" value="doom_map32_desc" />
+      <property name="offer_key" value="doom_map32_offer" />
+      <property name="extra_tags" value="doom_map32" />
+      <property name="icon" value="ui_game_symbol_map" />
+      <property name="repeatable" value="true" />
+      <property name="category_key" value="quest" />
+      <property name="shareable" value="false" />
+      <property name="add_to_tier_complete" value="false" />
+      <property name="difficulty" value="veryhard" />
+      <objective type="DoomLevels.Clear, DoomLevels" value="MAP32">
+        <property name="map" value="MAP32" />
+      </objective>
+    </quest>
+  </append>
+</config>

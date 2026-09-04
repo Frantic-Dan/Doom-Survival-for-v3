@@ -1,0 +1,4 @@
+<FranticDan>
+	<!-- v3: hide news side panels (original removed News button only; panel is new in v3). -->
+	<remove xpath="/xui/window_group[@name='mainMenu']/window[@name='mainMenuNews']"/>
+</FranticDan>

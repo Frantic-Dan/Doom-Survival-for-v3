@@ -1,0 +1,40 @@
+﻿<configs>
+	<!--
+	  UI notes (FranticDan / prior Doom menu work):
+	  - mainMenu is Top-anchored: pos.x is the window CENTER (0 = centered column).
+	  - On Top-anchored windows, more-negative pos.y moves content DOWN the screen
+	    (numerically smaller Y = lower). Larger Y = higher up.
+	  - #cam anchors are screen/camera space. menuBackground window-local pos is NOT
+	    the same space as full-screen #cam textures — keep SURVIVAL on #cam with the art.
+	  - Folder zzzz_* loads after zzz-FranticDansHUDbyAGF so these mainMenu sets stick.
+	-->
+	<set xpath="/windows/window[@name='menuBackground']">
+		<sprite depth="0" color="[black]" globalopacitymod="0" anchor_left="#cam,0,-5" anchor_bottom="#cam,0,-5" anchor_right="#cam,1,5" anchor_top="#cam,1,5" />
+		<!-- Art fills from top of screen down to the fire strip. -->
+		<texture depth="1" color="[white]" globalopacitymod="1" name="bgTexture"
+			texture="@modfolder:Resources/DoomMainMenu1.png"
+			anchor_left="#cam,0,0" anchor_right="#cam,1,0"
+			anchor_bottom="#cam,0.16,0" anchor_top="#cam,1,0"
+			keepsourceaspectratio="false" />
+		<!-- Fire loop from this mod's Video folder (no StreamingAssets copy needed). -->
+		<video name="videoTexture" depth="2"
+			uri="@modfolder(DoomMod_Standalone):/Video/FireLoop"
+			loop="true" videoaspect="FitOutside"
+			anchor_left="#cam,0,0" anchor_right="#cam,1,0"
+			anchor_bottom="#cam,0,0" anchor_top="#cam,0.16,0" />
+		<!-- SURVIVAL: midpoint between prior left (center 0) and right (center +55) → +28. -->
+		<texture depth="3" color="[white]" globalopacitymod="1" name="survivalLogo"
+			texture="@modfolder:Resources/DoomSurvivalLogo1.png"
+			anchor_left="#cam,0.5,-198" anchor_right="#cam,0.5,252"
+			anchor_bottom="#cam,0.70,0" anchor_top="#cam,0.80,0"
+			keepsourceaspectratio="false" foregroundlayer="true"/>
+	</set>
+
+	<!-- Hide FranticDan logo overlay (MainMenu1 already includes DOOM). -->
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@visible">false</set>
+	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@height">0</set>
+
+	<!-- Options: slight lower nudge (more-negative Y = lower) for visible flame tops. -->
+	<set xpath="/windows/window[@name='mainMenu']/@pos">0,-125</set>
+	<set xpath="/windows/window[@name='mainMenu']/grid/@pos">0,-345</set>
+</configs>

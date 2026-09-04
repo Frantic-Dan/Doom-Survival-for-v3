@@ -1,0 +1,317 @@
+<configs>
+
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='aa01']/@respawndelay">1.1</set>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '0'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">1.3</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '1'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">1.2</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '2'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">1.1</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '3'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">1.0</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '4'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">0.9</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '5'">
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='dz01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='nz01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@id='ne01']/@respawndelay">0.8</set>
+	</if>
+</conditional>
+
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz01']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz04']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@maxcount">2</set>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '0'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">1.3</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '1'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">1.2</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '2'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">1.1</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '3'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">1.0</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '4'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">0.9</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '5'">
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='dz04']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='nz01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ae01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@id='ne01']/@respawndelay">0.8</set>
+	</if>
+</conditional>
+
+<!-- <set xpath="/spawning/biome[@name='desert']/spawn[@id='dz01']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz04']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@maxcount">2</set> -->
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '0'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">1.3</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '1'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">1.2</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '2'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">1.1</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '3'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">1.0</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '4'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">0.9</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '5'">
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='dz04']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='nz01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ae01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@id='ne01']/@respawndelay">0.8</set>
+	</if>
+</conditional>
+
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz01']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='nz04']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@maxcount">2</set>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '0'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">1.3</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '1'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">1.2</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '2'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">1.1</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '3'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">1.0</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '4'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">0.9</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '5'">
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='dz04']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ae01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@id='ne01']/@respawndelay">0.8</set>
+	</if>
+</conditional>
+
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@maxcount">2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz03']/@maxcount">2</set>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '0'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">1.3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">1.3</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '1'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">1.2</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">1.2</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '2'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">1.1</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">1.1</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '3'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">1.0</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">1.0</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '4'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">0.9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">0.9</set>
+	</if>
+</conditional>
+
+<conditional>
+	<if cond="gamepref('GameDifficulty') == '5'">
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz01']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz04']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz02']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='nz02']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='dz03']/@respawndelay">0.8</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@id='na01']/@respawndelay">0.8</set>
+	</if>
+</conditional>
+
+<set xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='TotalAlive']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='TotalPerWave']/@value">0</set>
+<!-- <set xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='DelayBetweenSpawns']/@value">10</set> -->
+<!-- <remove xpath="/spawning/entityspawner[@name='Scouts1']/day/property[@name='DelayBetweenSpawns']"/> -->
+
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='TotalAlive']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='TotalPerWave']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='DelayBetweenSpawns']/@value">10</set>
+<!-- <remove xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='DelayBetweenSpawns']"/> -->
+
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='EntityGroupName']/@value">ZombieScouts</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalAlive']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='TotalPerWave']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='DelayBetweenSpawns']/@value">10</set>
+<!-- <remove xpath="/spawning/entityspawner[@name='ScoutsFeral']/day/property[@name='DelayBetweenSpawns']"/> -->
+
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='EntityGroupName']/@value">ZombieScouts</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalAlive']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='TotalPerWave']/@value">0</set>
+<set xpath="/spawning/entityspawner[@name='Scouts2']/day/property[@name='DelayBetweenSpawns']/@value">10</set>
+<!-- <remove xpath="/spawning/entityspawner[@name='ScoutsRadiated']/day/property[@name='DelayBetweenSpawns']"/> -->
+
+</configs>

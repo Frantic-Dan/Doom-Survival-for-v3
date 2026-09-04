@@ -1,0 +1,93 @@
+<config>
+
+<setattribute xpath="/worldgeneration/biomes/biome[@name='burnt_forest']" name="gamestage_modifier">0.25</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='burnt_forest']" name="gamestage_bonus">5</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='desert']" name="gamestage_modifier">0.5</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='snow']" name="gamestage_modifier">0.75</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='snow']" name="gamestage_bonus">15</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='wasteland']" name="gamestage_modifier">1</setattribute>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='wasteland']" name="gamestage_bonus">20</setattribute>
+
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='rainheavy']/Fog/@range">3,4</set>
+<setattribute xpath="/worldgeneration/biomes/biome[@name='pine_forest']/weather[@name='storm']" name="duration">0.5</setattribute>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/layers/layer[4]/resource[@blockname='terrOreCoal']/@blockname">terrOreIron</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/decorations/decoration[@name='deco_coal_vein']/@name">deco_iron_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/layers/layer[4]/resource[@blockname='terrOreLead']/@blockname">terrOreIron</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/decorations/decoration[@name='deco_lead_vein']/@name">deco_iron_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/layers/layer[4]/resource[@blockname='terrOrePotassiumNitrate']/@blockname">terrOreIron</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/decorations/decoration[@name='deco_nitrate_vein']/@name">deco_iron_vein</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[1]/decorations/decoration[@blockname='plantedGoldenrod3Harvest']/@prob">.021</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[1]/decorations/decoration[@blockname='plantedCotton3Harvest']/@prob">.021</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[1]/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@prob">.021</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[7]/decorations/decoration[@blockname='plantedCotton3Harvest']/@prob">.007</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[7]/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@prob">.007</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[8]/decorations/decoration[@blockname='plantedCotton3Harvest']/@prob">.007</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[8]/decorations/decoration[@blockname='plantedChrysanthemum3Harvest']/@prob">.007</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/weather[@name='rainheavy']/Fog/@range">3,4</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[1]/layers/layer[4]/resource[@blockname='terrOreIron']/@blockname">terrOrePotassiumNitrate</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[1]/decorations/decoration[@name='deco_iron_vein']/@name">deco_nitrate_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[2]/layers/layer[4]/resource[@blockname='terrOreLead']/@blockname">terrOrePotassiumNitrate</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[2]/decorations/decoration[@name='deco_lead_vein']/@name">deco_nitrate_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[3]/layers/layer[4]/resource[@blockname='terrOreCoal']/@blockname">terrOrePotassiumNitrate</set>
+<set xpath="/worldgeneration/biomes/biome[@name='burnt_forest']/subbiome[3]/decorations/decoration[@name='deco_coal_vein']/@name">deco_nitrate_vein</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/weather[@name='rainheavy']/Fog/@range">3,4</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[3]/layers/layer[3]/resource[@blockname='terrOreLead']/@blockname">terrOreOilDeposit</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[3]/decorations/decoration[@name='deco_lead_vein']/@name">deco_shale_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[4]/layers/layer[2]/resource[@blockname='terrOreIron']/@blockname">terrOreOilDeposit</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[4]/decorations/decoration[@name='deco_iron_vein']/@name">deco_shale_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[5]/layers/layer[3]/resource[@blockname='terrOrePotassiumNitrate']/@blockname">terrOreOilDeposit</set>
+<set xpath="/worldgeneration/biomes/biome[@name='desert']/subbiome[5]/decorations/decoration[@name='deco_nitrate_vein']/@name">deco_shale_vein</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/weather[@name='snowheavy']/Fog/@range">3,4</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[1]/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[2]/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[3]/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[4]/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[5]/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/layers/layer[1]/@depth">2</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[1]/layers/layer[3]/resource[@blockname='terrOreIron']/@blockname">terrOreCoal</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[1]/decorations/decoration[@name='deco_iron_vein']/@name">deco_coal_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[2]/layers/layer[4]/resource[@blockname='terrOrePotassiumNitrate']/@blockname">terrOreCoal</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[2]/decorations/decoration[@name='deco_nitrate_vein']/@name">deco_coal_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[3]/layers/layer[4]/resource[@blockname='terrOreLead']/@blockname">terrOreCoal</set>
+<set xpath="/worldgeneration/biomes/biome[@name='snow']/subbiome[3]/decorations/decoration[@name='deco_lead_vein']/@name">deco_coal_vein</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/weather[@name='rainheavy']/Fog/@range">3,4</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[3]/layers/layer[4]/resource[@blockname='terrOreCoal']/@blockname">terrOreLead</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[3]/decorations/decoration[@name='deco_coal_vein']/@name">deco_lead_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[4]/layers/layer[4]/resource[@blockname='terrOrePotassiumNitrate']/@blockname">terrOreLead</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[4]/decorations/decoration[@name='deco_nitrate_vein']/@name">deco_lead_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[5]/layers/layer[4]/resource[@blockname='terrOreIron']/@blockname">terrOreLead</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[5]/decorations/decoration[@name='deco_iron_vein']/@name">deco_lead_vein</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[3]/decorations/decoration[@blockname='cntBarrelGenericSingle45']/@blockname">cntBarrelAcidSingle45</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[4]/decorations/decoration[@blockname='cntBarrelWhiteSingle45']/@blockname">cntBarrelAcidSingle45</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[5]/decorations/decoration[@blockname='cntBarrelWhiteSingle45']/@blockname">cntBarrelAcidSingle45</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[6]/decorations/decoration[@blockname='cntBarrelWhiteSingle45']/@blockname">cntBarrelAcidSingle45</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/subbiome[7]/decorations/decoration[@blockname='cntBarrelPlasticSingle45']/@blockname">cntBarrelAcidSingle45</set>
+<set xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations/decoration[@blockname='cntBarrelRadiatedSingle45']/@blockname">cntBarrelAcidSingle45</set>
+
+<!-- <remove xpath="/worldgeneration/biomes/biome[@name='wasteland']/spectrum[@name='wasteland']"/> -->
+
+<!-- <set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[3]/decorations//decoration[1]/@prob">0</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/decorations//decoration[1]/@prob">0</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[4]/decorations//decoration[7]/@prob">0</set>
+
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[5]/decorations//decoration[7]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/layers/layer[4]//resource[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/decorations//decoration[1]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/decorations//decoration[6]/@prob">0</set>
+<set xpath="/worldgeneration/biomes/biome[@name='pine_forest']/subbiome[6]/decorations//decoration[7]/@prob">0</set> -->
+
+
+</config>
+

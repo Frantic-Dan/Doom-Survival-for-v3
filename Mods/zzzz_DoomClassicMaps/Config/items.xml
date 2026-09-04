@@ -1,0 +1,1114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <append xpath="/items">
+    <item name="doomNoteSelector">
+      <property name="Extends" value="questMaster" param1="Action0" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+    </item>
+	<item name="doomNoteE1M1Tutorial">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="0" />
+      <property name="NoScrapping" value="true" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m1" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M1">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m1" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M2">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m2" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M3">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m3" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M4">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m4" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M5">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m5" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M6">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m6" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M7">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m7" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M8">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m8" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE1M9">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e1m9" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M1">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m1" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M2">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m2" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M3">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m3" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M4">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m4" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M5">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m5" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M6">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m6" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M7">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m7" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M8">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m8" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE2M9">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e2m9" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M1">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m1" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M2">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m2" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M3">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m3" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M4">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m4" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M5">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m5" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M6">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m6" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M7">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m7" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M8">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m8" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE3M9">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e3m9" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M1">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m1" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M2">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m2" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M3">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m3" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M4">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m4" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M5">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m5" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M6">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m6" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M7">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m7" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M8">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m8" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteE4M9">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_e4m9" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP01">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map01" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP02">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map02" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP03">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map03" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP04">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map04" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP05">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map05" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP06">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map06" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP07">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map07" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP08">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map08" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP09">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map09" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP10">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map10" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP11">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map11" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP12">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map12" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP13">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map13" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP14">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map14" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP15">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map15" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP16">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map16" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP17">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map17" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP18">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map18" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP19">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map19" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP20">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map20" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP21">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map21" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP22">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map22" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP23">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map23" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP24">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map24" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP25">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map25" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP26">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map26" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP27">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map27" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP28">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map28" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP29">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map29" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP30">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map30" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP31">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map31" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+    <item name="doomNoteMAP32">
+      <property name="Extends" value="questMaster" />
+      <property name="Material" value="MdoomNoteSelector" />
+      <property name="Weight" value="1" />
+      <property name="NoScrapping" value="false" />
+      <property name="ScrapTimeOverride" value="1.0" />
+      <property name="CustomIcon" value="DoomTeleporterHD" />
+      <property name="Tags" value="doomnote" />
+      <property class="Action0">
+        <property name="Class" value="Quest" />
+        <property name="QuestGiven" value="doom_map32" />
+        <property name="Delay" value="0.5" />
+        <property name="UseAnimation" value="false" />
+        <requirement name="!HasBuff" buff="doomBuffInLevel" />
+      </property>
+    </item>
+  </append>
+</config>

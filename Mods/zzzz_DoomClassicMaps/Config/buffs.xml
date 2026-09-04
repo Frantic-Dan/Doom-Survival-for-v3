@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <append xpath="/buffs">
+    <buff name="doomBuffInLevel" hidden="true">
+      <stack_type value="replace" />
+      <effect_group>
+        <passive_effect name="DisableItem" operation="base_set" value="1" tags="doomnote" />
+        <passive_effect name="JumpStrength" operation="perc_set" value=".5" />
+        <passive_effect name="RunSpeed" operation="perc_add" value=".4">
+			<requirement name="!HasBuff" buff="doomBuffTeleport"/>
+		</passive_effect>
+        <passive_effect name="WalkSpeed" operation="perc_add" value=".75">
+			<requirement name="!HasBuff" buff="doomBuffTeleport"/>
+		</passive_effect>
+        <passive_effect name="PlayerExpGain" operation="perc_set" value=".5" />
+      </effect_group>
+    </buff>
+    <buff name="buffBlueKeyHeld" name_key="doomKeyBlue" icon="DoomBlueKeycard" remove_on_death="true">
+      <stack_type value="ignore" />
+      <duration value="0" />
+      <display_value_key value="doomKeyBlue" />
+      <display_value value="xxx" />
+    </buff>
+    <buff name="buffRedKeyHeld" name_key="doomKeyRed" icon="DoomRedKeycard" remove_on_death="true">
+      <stack_type value="ignore" />
+      <duration value="0" />
+      <display_value_key value="doomKeyRed" />
+      <display_value value="xxx" />
+    </buff>
+    <buff name="buffYellowKeyHeld" name_key="doomKeyYellow" icon="DoomYellowKeycard" remove_on_death="true">
+      <stack_type value="ignore" />
+      <duration value="0" />
+      <display_value_key value="doomKeyYellow" />
+      <display_value value="xxx" />
+    </buff>
+    <buff name="doomBuffTeleport" hidden="true">
+      <stack_type value="replace" />
+      <duration value="1" />
+      <effect_group>
+        <passive_effect name="RunSpeed" operation="base_set" value="0" />
+        <passive_effect name="WalkSpeed" operation="base_set" value="0" />
+        <passive_effect name="CrouchSpeed" operation="base_set" value="0" />
+        <passive_effect name="JumpStrength" operation="base_set" value="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomBuffPickup" hidden="true">
+      <stack_type value="duration" />
+      <duration value="0.1714" />
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="doomPickupFlash" intensity="1.0" fade="0" />
+        <triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="doomPickupFlash" intensity="0" fade="0" />
+        <triggered_effect trigger="onSelfLeaveGame" action="ModifyScreenEffect" effect_name="doomPickupFlash" intensity="0" fade="0" />
+        <triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" effect_name="doomPickupFlash" intensity="0" fade="0" />
+        <triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="doomPickupFlash" intensity="0" fade="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomBuffHealthPotion" hidden="true">
+      <stack_type value="replace" />
+      <duration value="0.1" />
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="add" value="3" />
+        <triggered_effect trigger="onSelfBuffStack" action="ModifyStats" stat="Health" operation="add" value="3" />
+      </effect_group>
+    </buff>
+    <buff name="doomBuffArmourShard" hidden="true">
+      <stack_type value="replace" />
+      <duration value="0.1" />
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="DoomArmour.Armour, DoomArmour" operation="add" value="3" />
+        <triggered_effect trigger="onSelfBuffStack" action="DoomArmour.Armour, DoomArmour" operation="add" value="3" />
+      </effect_group>
+      <effect_group>
+        <requirement name="CVarCompare" cvar="armourType" operation="Equals" value="0" />
+        <requirement name="CVarCompare" cvar="armourTypeBlue" operation="Equals" value="0" />
+        <triggered_effect trigger="onSelfBuffStart" action="CallGameEvent" target="self" event="EventEquipSecurityArmour" allow_client_call="true" />
+        <triggered_effect trigger="onSelfBuffStack" action="CallGameEvent" target="self" event="EventEquipSecurityArmour" allow_client_call="true" />
+      </effect_group>
+      <effect_group>
+        <triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffEquippedArmour" />
+        <triggered_effect trigger="onSelfBuffStack" action="AddBuff" buff="buffEquippedArmour" />
+      </effect_group>
+    </buff>
+    <buff name="doomHazardNukage" hidden="true">
+      <damage_type value="radiation" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="1.234" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="10" damage_type="radiation" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HasBuff" buff="buffHazmatSuit" />
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffHazmatSuitDuration" operation="subtract" value="36" />
+      </effect_group>
+      <effect_group>
+        <requirement name="!HasBuff" target="self" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="1" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="2">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="2" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="3">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="3" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkAdrenalineRush" operation="GTE" value="3" />
+          <requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="50" />
+        </triggered_effect>
+      </effect_group>
+      <effect_group>
+        <passive_effect name="JumpStrength" operation="perc_set" value="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomHazardHellslime" hidden="true">
+      <damage_type value="corrosive" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="0.914" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="10" damage_type="corrosive" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HasBuff" buff="buffHazmatSuit" />
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffHazmatSuitDuration" operation="subtract" value="30" />
+      </effect_group>
+      <effect_group>
+        <requirement name="!HasBuff" target="self" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="1" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="2">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="2" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="3">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="3" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkAdrenalineRush" operation="GTE" value="3" />
+          <requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="50" />
+        </triggered_effect>
+      </effect_group>
+      <effect_group>
+        <passive_effect name="JumpStrength" operation="perc_set" value="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomHazardSuperslime" hidden="true">
+      <damage_type value="radiation" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="0.914" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="20" damage_type="radiation" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HasBuff" buff="buffHazmatSuit" />
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffHazmatSuitDuration" operation="subtract" value="36" />
+      </effect_group>
+      <effect_group>
+        <requirement name="!HasBuff" target="self" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="1" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="2">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="2" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="3">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="3" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkAdrenalineRush" operation="GTE" value="3" />
+          <requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="50" />
+        </triggered_effect>
+      </effect_group>
+      <effect_group>
+        <passive_effect name="JumpStrength" operation="perc_set" value="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomHazardStrobe" hidden="true">
+      <damage_type value="heat" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="0.914" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="20" damage_type="heat" />
+      </effect_group>
+      <effect_group>
+        <requirement name="HasBuff" buff="buffHazmatSuit" />
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffHazmatSuitDuration" operation="subtract" value="36" />
+      </effect_group>
+      <effect_group>
+        <requirement name="!HasBuff" target="self" buff="buffHazmatSuit,buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="1" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="2">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="2" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="3">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkPainTolerance" operation="EQ" value="3" />
+        </triggered_effect>
+        <triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="add" value="1">
+          <requirement name="ProgressionLevel" target="self" progression_name="perkAdrenalineRush" operation="GTE" value="3" />
+          <requirement name="StatCompareCurrent" target="self" stat="health" operation="LTE" value="50" />
+        </triggered_effect>
+      </effect_group>
+      <effect_group>
+        <passive_effect name="JumpStrength" operation="perc_set" value="0" />
+      </effect_group>
+    </buff>
+    <buff name="doomHazardExit" hidden="true">
+      <damage_type value="heat" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="0.914" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="20" damage_type="heat" />
+      </effect_group>
+    </buff>
+    <buff name="doomCrushed" hidden="true">
+      <damage_type value="crushing" />
+      <stack_type value="replace" />
+      <duration value="0" />
+      <update_rate value="0.114" />
+      <effect_group>
+        <requirement name="!HasBuff" buff="buffInvulnerability" />
+        <triggered_effect trigger="onSelfBuffUpdate" action="DoomLevels.Damage, DoomLevels" amount="10" damage_type="crushing" />
+      </effect_group>
+    </buff>
+  </append>
+</config>

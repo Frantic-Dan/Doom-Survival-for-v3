@@ -1,0 +1,2990 @@
+<configs>
+
+<!-- <remove xpath="/entitygroups/entitygroup[contains(@name,'zombie')]"/> -->
+<!-- <remove xpath="/entitygroups/entitygroup[starts-with(@name,'zombie')]"/> -->
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+	<e n="demonFormerSoldier" p=".25" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".32" />
+	<e n="demonPinky" p=".15" />
+	<e n="demonBabyCacodemon" p=".1" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+	<e n="demonFormerSoldier" p=".2" />
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonSpectreImp" p=".30" />
+	<e n="demonSpectre" p=".15" />
+	<e n="demonLostSoul" p=".1" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesDowntown']">
+	<e n="demonFormerSoldier" p=".2" />
+	<e n="demonFormerSergeant" p=".17" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".24" />
+	<e n="demonPinky" p=".14" />
+	<e n="demonBabyCacodemon" p=".09" />
+	<e n="demonCacodemon" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntown']">
+	<e n="demonFormerSoldier" p=".2" />
+	<e n="demonFormerSergeant" p=".17" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonPinky" p=".14" />
+	<e n="demonBabyCacodemon" p=".08" />
+	<e n="demonLostSoul" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesForestDowntownNight']">
+	<e n="demonFormerSergeant" p=".2" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonSpectreImp" p=".14" />
+	<e n="demonNightmareImp" p=".14" />
+	<e n="demonSpectre" p=".12" />
+	<e n="demonBabyCacodemon" p=".1" />
+	<e n="demonLostSoul" p=".1" />
+	<e n="demonCacodemon" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesBurntForest']">
+	<e n="demonFormerSoldier" p=".2" />
+	<e n="demonFormerSergeant" p=".17" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonPinky" p=".14" />
+	<e n="demonBabyCacodemon" p=".08" />
+	<e n="demonLostSoul" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesBurntForestNight']">
+	<e n="demonFormerSergeant" p=".2" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonSpectreImp" p=".14" />
+	<e n="demonNightmareImp" p=".14" />
+	<e n="demonSpectre" p=".12" />
+	<e n="demonCacodemon" p=".1" />
+	<e n="demonLostSoul" p=".1" />
+	<e n="demonHellKnight" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesDesert']">
+	<e n="demonFormerSergeant" p=".17" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".13" />
+	<e n="demonPinky" p=".12" />
+	<e n="demonLostSoul" p=".15" />
+	<e n="demonCacodemon" p=".1" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesDesertNight']">
+	<e n="demonFormerSergeant" p=".17" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".13" />
+	<e n="demonSpectre" p=".12" />
+	<e n="demonCacodemonSpectre" p=".15" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesSnow']">
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".08" />
+	<e n="demonSpectreImp" p=".12" />
+	<e n="demonSpectre" p=".12" />
+	<e n="demonCacodemon" p=".13" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonMancubus" p=".1" />
+	<e n="demonBaronOfHell" p=".07" />
+	<e n="demonPainElemental" p=".03" />
+</set>		
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesSnowNight']">
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".08" />
+	<e n="demonSpectreImp" p=".12" />
+	<e n="demonSpectre" p=".12" />
+	<e n="demonCacodemonSpectre" p=".13" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonHellKnight" p=".07" />
+	<e n="demonMancubus" p=".1" />
+	<e n="demonBaronOfHell" p=".1" />
+	<e n="demonPainElementalSpectre" p=".03" />
+</set>	
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+	<e n="demonBabyCacodemon" p=".19" />
+	<e n="demonCacodemon" p=".15" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonHellKnight" p=".17" />
+	<e n="demonMancubus" p=".14" />
+	<e n="demonBaronOfHell" p=".12" />
+	<e n="demonPainElemental" p=".04" />
+	<e n="demonArchvile" p=".05" />
+	<e n="demonCyber" p=".02" />
+</set>	
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesAllWasteland']">
+	<e n="demonBabyCacodemon" p=".19" />
+	<e n="demonCacodemon" p=".15" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonHellKnight" p=".17" />
+	<e n="demonMancubus" p=".14" />
+	<e n="demonBaronOfHell" p=".12" />
+	<e n="demonPainElemental" p=".04" />
+	<e n="demonArchvile" p=".05" />
+	<e n="demonCyber" p=".02" />
+</set>	
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+	<e n="demonCacodemonSpectre" p=".19" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonHellKnight" p=".19" />
+	<e n="demonMancubus" p=".17" />
+	<e n="demonBaronOfHell" p=".15" />
+	<e n="demonPainElementalSpectre" p=".06" />
+	<e n="demonArchvile" p=".07" />
+	<e n="demonCyber" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandDowntown']">
+	<e n="demonBabyCacodemon" p=".19" />
+	<e n="demonCacodemon" p=".15" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonHellKnight" p=".17" />
+	<e n="demonMancubus" p=".14" />
+	<e n="demonBaronOfHell" p=".12" />
+	<e n="demonPainElemental" p=".04" />
+	<e n="demonArchvile" p=".05" />
+	<e n="demonCyber" p=".02" />
+</set>
+
+<!-- <set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNightNoBears']">
+	demonCacodemonSpectre, .19
+	demonRevenant, .15
+	demonHellKnight, .19
+	demonMancubus, .17
+	demonBaronOfHell, .15
+	demonPainElementalSpectre, .06
+	demonArchvile, .07
+	demonCyber, .02
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2']">
+	demonCacodemonSpectre, .19
+	demonRevenant, .15
+	demonHellKnight, .19
+	demonMancubus, .17
+	demonBaronOfHell, .15
+	demonPainElementalSpectre, .06
+	demonArchvile, .07
+	demonCyber, .02
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight2NoBears']">
+	demonCacodemonSpectre, .19
+	demonRevenant, .15
+	demonHellKnight, .19
+	demonMancubus, .17
+	demonBaronOfHell, .15
+	demonPainElementalSpectre, .06
+	demonArchvile, .07
+	demonCyber, .02
+</set> -->
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieScouts']">
+	<e n="demonArchvile" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieScoutsFeral']">
+	<e n="demonArchvile" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieScoutsRadiated']">
+	<e n="demonArchvile" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesCrawlers']">
+	<e n="demonFormerSoldier" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieLumberjackGroup')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesBoss']">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesCave']">
+	<e n="demonFormerSoldier" p=".35" />
+	<e n="demonFormerSergeant" p=".25" />
+	<e n="demonDefaultImp" p=".2" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieArlene')]">
+	<e n="demonFormerSoldier" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieMarlene')]">
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombiePartyGirl')]">
+	<e n="demonFormerSoldier" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieNurse')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieJoe')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSteve')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSpider')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieTomClark')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBusinessMan')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBurnt')]">
+	<e n="demonLostSoul" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBoe')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieInmate')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieJanitor')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieMoe')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieLab')]">
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieDarlene')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieYo')]">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieUtilityWorker')]">
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBiker')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieLumberjack')]">
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieFemaleFat')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieFatHawaiian')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBowler')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieMaleHazmat')]">
+	<e n="demonPinky" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieFatCop')]">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSkateboarder')]">
+	<e n="demonPinky" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSoldier')]">
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieWight')]">
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieMutated')]">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieDemolition']">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSteveCrawler')]">
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieScreamer')]">
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombiePlagueSpitter')]">
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieRancher')]">
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieFrostclaw')]">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieChuck')]">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='animalZombieBoar']">
+	<e n="animalBossGrace" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieBusinessManGroup')]">
+	<e n="demonPinky" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieFatCopGroup')]">
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieBurntGroup')]">
+	<e n="demonLostSoul" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombiesFeral']">
+	<e n="demonSpectre" />
+	<e n="demonSpectreImp" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieFeralRadiatedGroup']">
+	<e n="demonCacodemon" />
+	<e n="demonHellKnight" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieChargedGroup']">
+	<e n="demonRevenant" />
+	<e n="demonCacodemonSpectre" />
+	<e n="demonBaronOfHell" />
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieInfernalGroup']">
+	<e n="demonRevenant" />
+	<e n="demonCacodemonSpectre" />
+	<e n="demonBaronOfHell" />
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieBadassGroup']">
+	<e n="demonRevenant" />
+	<e n="demonNightmareImp" />
+	<e n="demonCacodemon" />
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieFarmGroup']">
+	<e n="animalZombieDog" />
+	<e n="animalBoar" />
+	<e n="animalChicken" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieSoldierGroup')]">
+	<e n="demonRevenant" />
+	<e n="demonHellKnight" />
+	<e n="demonFormerCommando" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSoldierGroupGS')]">
+	<e n="demonRevenant" />
+	<e n="demonHellKnight" />
+	<e n="demonFormerCommando" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieSoldierGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieMaleHazmatGroup')]">
+	<e n="demonRevenant" />
+	<e n="demonCacodemon" />
+	<e n="demonFormerCommando" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieMaleHazmatGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieUtilityWorkerGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieUtilityWorkerGroupGS')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieJanitorGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieJanitorGroupGS')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieJanitorGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieBusinessManFeralGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieBusinessManFeralGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieUtilityWorkerFeralGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieUtilityWorkerFeralGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieLabFeralGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieLabFeralGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieNurseFeralGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieNurseFeralGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSoldierFeralGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieSoldierFeralGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieInmateFeralGroup')]">
+	<e n="demonNightmareImp" />
+	<e n="demonSpectreImp" />
+	<e n="demonPinky" />
+	<e n="demonSpectre" />
+	<e n="demonRevenant" />
+	<e n="demonHellKnight" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieInmateFeralGroupGS1']">
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieFatHawaiianFeralGroup')]">
+	<e n="demonRevenant" />
+	<e n="demonHellKnight" />
+	<e n="demonBaronOfHell" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieFatHawaiianFeralGroupGS1']">
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieGhostTownGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonFormerCommando" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieGhostTownGroupGS1']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'HospitalGroup')]">
+	<e n="demonPinky" />
+	<e n="demonSpectre" />
+	<e n="demonLostSoul" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieHospitalGroupGS')]">
+	<e n="demonPinky" />
+	<e n="demonSpectre" />
+	<e n="demonLostSoul" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieLabWorkerGroup')]">
+	<e n="demonFormerCommando" />
+	<e n="demonCacodemon" />
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombieLabWorkerGroupGS1']">
+	<e n="demonFormerSergeant" />
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'PrisonGroup')]">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" />
+	<e n="demonNightmareImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombiePrisonGroupGS')]">
+	<e n="demonCacodemon" />
+	<e n="demonHellKnight" />
+	<e n="demonBaronOfHell" p=".3" />
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='zombiePrisonGroupGS1']">
+	<e n="demonNightmareImp" />
+	<e n="demonBabyCacodemon" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'zombieSpiderGroupGS')]">
+	<e n="demonLostSoul" />
+	<e n="demonBabyCacodemon" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieBikerBarGroup')]">
+	<e n="demonHellKnight" p=".29" />
+	<e n="demonBaronOfHell" p=".13" />
+	<e n="demonCacodemon" p=".29" />
+	<e n="demonRevenant" p=".29" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieBikerBarGroupGS1']">
+	<e n="demonNightmareImp" p=".42" />
+	<e n="demonBabyCacodemon" p=".42" />
+	<e n="demonRevenant" p=".16" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieNightClubGroup')]">
+	<e n="demonDefaultImp" />
+	<e n="demonNightmareImp" />
+	<e n="demonSpectreImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieSpecialInfectedGroup')]">
+	<e n="demonBaronOfHell" />
+	<e n="demonHellKnight" />
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='ZombieSpecialInfectedGroupGS1']">
+	<e n="demonHellKnight" />
+	<e n="demonRevenant" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'ZombieAnimalsGroup')]">
+	<e n="animalZombieDog" p=".6" />
+	<e n="animalZombieVulture" p=".4" />
+</set>
+
+<!-- wandering horde -->
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS1']">
+	<e n="demonDefaultImp" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS2']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS5']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS8']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS11']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS14']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS18']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS22']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS27']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS31']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS36']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS41']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS46']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS52']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS58']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS64']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS70']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS76']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='wanderingHordeStageGS82']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS1']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS2']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS4']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS7']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS10']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS13']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS16']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS19']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS23']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS27']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS31']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS35']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS40']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS44']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS49']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS54']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS59']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='FwanderingHordeStageGS64']">
+	<e n="demonDefaultImp" />
+	<e n="animalZombieDog" p=".2" />
+</set>
+
+<!-- Generic sleepers -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'sleeperHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS2']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS5']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS11']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS14']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS18']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS22']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" p=".7" />
+	<e n="demonFormerCommando" p=".3" />
+	<e n="demonNightmareImp" />
+	<e n="demonPinky" p=".3" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS27']">
+	<e n="demonFormerSoldier" />
+	<e n="demonFormerSergeant" p=".7" />
+	<e n="demonFormerCommando" p=".3" />
+	<e n="demonNightmareImp" />
+	<e n="demonPinky" p=".3" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS31']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS36']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS41']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS46']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS52']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS58']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS64']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS70']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS76']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS82']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS89']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS96']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS103']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS110']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS117']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS125']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS132']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS140']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS148']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS156']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS164']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".22" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS172']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".22" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS181']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".22" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS189']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS198']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS207']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS216']">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".07" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS225']">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='sleeperHordeStageGS234']">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<!-- badassHorde -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'badassHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS3']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS13']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS21']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS30']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS40']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS51']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS65']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS79']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS95']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS112']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS130']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS150']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS171']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".22" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS194']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS217']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassHordeStageGS242']">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<!-- badass only -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'badassOnlyHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS3']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS13']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS21']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS30']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS40']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS51']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS65']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS79']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS95']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS112']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS130']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS150']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS171']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".22" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS194']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS217']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='badassOnlyHordeStageGS242']">
+	<e n="demonFormerSergeant" p=".11" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".18" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".07" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".15" />
+	<e n="demonRevenant" p=".15" />
+	<e n="demonBaronOfHell" p=".06" />
+</set>
+
+<!-- Archvile scouts -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'scoutHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS2']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS5']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS11']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS14']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS18']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS22']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS27']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS31']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS36']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS41']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS46']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS52']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS58']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS64']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS70']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS76']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS82']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS89']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS96']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS103']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS110']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS117']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS125']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS132']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS140']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS148']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS156']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS164']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS172']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS181']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS189']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS198']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS207']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS216']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS225']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='scoutHordeStageGS234']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<!-- Bloodmoon -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'feralHordeStageGS')]">
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".21" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonHellKnight" p=".16" />
+	<e n="demonRevenant" p=".177" />
+	<e n="demonMancubus" p=".11" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".05" />
+	<e n="demonCyber" p=".003" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS1']">
+	<e n="demonFormerSoldierBM" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS2']">
+	<e n="demonFormerSoldierBM" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS4']">
+	<e n="demonFormerSoldierBM" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS7']">
+	<e n="demonFormerSoldierBM" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS10']">
+	<e n="demonFormerSoldierBM" p=".3" />
+	<e n="demonFormerSergeantBM" p=".15" />
+	<e n="demonDefaultImp" p=".55" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS13']">
+	<e n="demonFormerSoldierBM" p=".3" />
+	<e n="demonFormerSergeantBM" p=".15" />
+	<e n="demonDefaultImp" p=".55" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS16']">
+	<e n="demonFormerSoldierBM" p=".3" />
+	<e n="demonFormerSergeantBM" p=".15" />
+	<e n="demonDefaultImp" p=".55" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS19']">
+	<e n="demonFormerSoldierBM" p=".3" />
+	<e n="demonFormerSergeantBM" p=".15" />
+	<e n="demonDefaultImp" p=".55" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS23']">
+	<e n="demonFormerSoldierBM" p=".22" />
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS27']">
+	<e n="demonFormerSoldierBM" p=".22" />
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS31']">
+	<e n="demonFormerSoldierBM" p=".22" />
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS35']">
+	<e n="demonFormerSoldierBM" p=".22" />
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS40']">
+	<e n="demonFormerSoldierBM" p=".17" />
+	<e n="demonFormerSergeantBM" p=".13" />
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS44']">
+	<e n="demonFormerSoldierBM" p=".17" />
+	<e n="demonFormerSergeantBM" p=".13" />
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS49']">
+	<e n="demonFormerSoldierBM" p=".17" />
+	<e n="demonFormerSergeantBM" p=".13" />
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS54']">
+	<e n="demonFormerSoldierBM" p=".17" />
+	<e n="demonFormerSergeantBM" p=".13" />
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS59']">
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonFormerCommandoBM" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS64']">
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonFormerCommandoBM" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS69']">
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonFormerCommandoBM" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS74']">
+	<e n="demonFormerSergeantBM" p=".18" />
+	<e n="demonFormerCommandoBM" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS80']">
+	<e n="demonFormerSergeantBM" p=".16" />
+	<e n="demonFormerCommandoBM" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS85']">
+	<e n="demonFormerSergeantBM" p=".16" />
+	<e n="demonFormerCommandoBM" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS91']">
+	<e n="demonFormerSergeantBM" p=".16" />
+	<e n="demonFormerCommandoBM" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS97']">
+	<e n="demonFormerSergeantBM" p=".16" />
+	<e n="demonFormerCommandoBM" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS103']">
+	<e n="demonFormerSergeantBM" p=".16" />
+	<e n="demonFormerCommandoBM" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS109']">
+	<e n="demonFormerCommandoBM" p=".17" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".22" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS115']">
+	<e n="demonFormerCommandoBM" p=".17" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".22" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS121']">
+	<e n="demonFormerCommandoBM" p=".17" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".22" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS127']">
+	<e n="demonFormerCommandoBM" p=".17" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".22" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS133']">
+	<e n="demonFormerCommandoBM" p=".13" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonMancubus" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS140']">
+	<e n="demonFormerCommandoBM" p=".13" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonMancubus" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS147']">
+	<e n="demonFormerCommandoBM" p=".13" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonMancubus" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS153']">
+	<e n="demonFormerCommandoBM" p=".13" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".12" />
+	<e n="demonMancubus" p=".08" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS160']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS167']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS174']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS181']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS188']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS195']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS202']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS210']">
+	<e n="demonFormerCommandoBM" p=".1" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonLostSoul" p=".06" />
+	<e n="demonHellKnight" p=".12" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS217']">
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".21" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonHellKnight" p=".16" />
+	<e n="demonRevenant" p=".177" />
+	<e n="demonMancubus" p=".11" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".05" />
+	<e n="demonCyber" p=".003" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS225']">
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".21" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonHellKnight" p=".16" />
+	<e n="demonRevenant" p=".177" />
+	<e n="demonMancubus" p=".11" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".05" />
+	<e n="demonCyber" p=".003" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='feralHordeStageGS232']">
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".21" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonHellKnight" p=".16" />
+	<e n="demonRevenant" p=".177" />
+	<e n="demonMancubus" p=".11" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonBaronOfHell" p=".05" />
+	<e n="demonCyber" p=".003" />
+</set>
+
+<!-- Police car -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'policeCarHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS3']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS13']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS21']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS30']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS40']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS51']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS65']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS79']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS95']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS112']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS130']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS150']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS171']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS194']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS217']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='policeCarHordeStageGS242']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<!-- Defence horde -->
+<set xpath="/entitygroups/entitygroup[starts-with(@name,'defenseHordeStageGS')]">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS1']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS2']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS5']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS8']">
+	<e n="demonFormerSoldier" p=".4" />
+	<e n="demonDefaultImp" p=".6" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS11']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS14']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS18']">
+	<e n="demonFormerSoldier" p=".22" />
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonDefaultImp" p=".48" />
+	<e n="demonPinky" p=".12" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS22']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS27']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS31']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".4" />
+	<e n="demonPinky" p=".2" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS36']">
+	<e n="demonFormerSoldier" p=".17" />
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS41']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p="35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS46']">
+	<e n="demonFormerSergeant" p=".24" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".35" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS52']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS58']">
+	<e n="demonFormerSergeant" p=".18" />
+	<e n="demonFormerCommando" p=".18" />
+	<e n="demonNightmareImp" p=".34" />
+	<e n="demonSpectre" p=".2" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS64']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS70']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS76']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS82']">
+	<e n="demonFormerSergeant" p=".16" />
+	<e n="demonFormerCommando" p=".16" />
+	<e n="demonNightmareImp" p=".3" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".05" />
+	<e n="demonLostSoul" p=".05" />
+	<e n="demonHellKnight" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS89']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS96']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS103']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".25" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonBabyCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS110']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS117']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS125']">
+	<e n="demonFormerSergeant" p=".15" />
+	<e n="demonFormerCommando" p=".15" />
+	<e n="demonNightmareImp" p=".23" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".06" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS132']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS140']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS148']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS156']">
+	<e n="demonFormerSergeant" p=".14" />
+	<e n="demonFormerCommando" p=".14" />
+	<e n="demonNightmareImp" p=".21" />
+	<e n="demonSpectre" p=".19" />
+	<e n="demonCacodemon" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".09" />
+	<e n="demonRevenant" p=".09" />
+	<e n="demonMancubus" p=".06" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS164']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS172']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS181']">
+	<e n="demonFormerSergeant" p=".13" />
+	<e n="demonFormerCommando" p=".13" />
+	<e n="demonNightmareImp" p=".2" />
+	<e n="demonSpectre" p=".18" />
+	<e n="demonCacodemonSpectre" p=".04" />
+	<e n="demonLostSoul" p=".04" />
+	<e n="demonHellKnight" p=".1" />
+	<e n="demonRevenant" p=".1" />
+	<e n="demonMancubus" p=".05" />
+	<e n="demonBaronOfHell" p=".03" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS189']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS198']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS207']">
+	<e n="demonFormerSergeant" p=".12" />
+	<e n="demonFormerCommando" p=".12" />
+	<e n="demonNightmareImp" p=".19" />
+	<e n="demonSpectre" p=".17" />
+	<e n="demonCacodemonSpectre" p=".05" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".11" />
+	<e n="demonRevenant" p=".11" />
+	<e n="demonMancubus" p=".07" />
+	<e n="demonBaronOfHell" p=".04" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS216']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS225']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+<set xpath="/entitygroups/entitygroup[@name='defenseHordeStageGS234']">
+	<e n="demonFormerSergeant" p=".1" />
+	<e n="demonFormerCommando" p=".1" />
+	<e n="demonNightmareImp" p=".17" />
+	<e n="demonSpectre" p=".16" />
+	<e n="demonCacodemonSpectre" p=".06" />
+	<e n="demonPainElemental" p=".02" />
+	<e n="demonHellKnight" p=".13" />
+	<e n="demonRevenant" p=".13" />
+	<e n="demonMancubus" p=".08" />
+	<e n="demonBaronOfHell" p=".05" />
+</set>
+
+</configs>

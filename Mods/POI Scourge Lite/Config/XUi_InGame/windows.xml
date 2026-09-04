@@ -1,0 +1,23 @@
+<configs>
+    <append xpath="/windows/window[@name='mapArea']/rect[@name='content']">
+        <panel name="scourgeStats" depth="20" pos="10, -50" width="300" height="430" controller="POIScourgeLite.XUiC_ScourgeStats, POIScourgeLite" disableautobackground="true" visible="{showmap}">
+            
+            <sprite depth="1" name="headerBg" pos="0,0" width="300" height="30" type="sliced" color="0,0,0,220" />
+            <label depth="2" pos="10,-2" width="200" height="26" text_key="poi_progress_header" justify="Left" font_size="26" color="[white]" />
+            <simplebutton name="btnOpen" depth="3" pos="240,0" width="60" height="30" caption_key="scourge_btn_open" font_size="22" sound="[paging_click]" visible="false" style="press" />
+            <simplebutton name="btnClose" depth="3" pos="240,0" width="60" height="30" caption_key="scourge_btn_close" font_size="22" sound="[paging_click]" visible="true" style="press" />
+
+            <panel name="contentPanel" pos="0,-30" width="300" height="400">
+                <sprite depth="1" name="contentBg" color="0,0,0,150" type="sliced" width="300" height="400" pos="0,0" />
+                <label depth="2" name="lblStats" pos="10,-5" width="280" height="350" text="Loading..." font_size="22" color="[white]" justify="Left" overflow="ShrinkContent" />
+                
+                <simplebutton name="btnHideCleared" depth="3" pos="10,-360" width="135" height="30" caption_key="scourge_btn_hide_cleared" font_size="18" sound="[paging_click]" style="press" />
+                <simplebutton name="btnShowCleared" depth="3" pos="10,-360" width="135" height="30" caption_key="scourge_btn_show_cleared" font_size="18" sound="[paging_click]" style="press" />
+
+                <simplebutton name="btnHideUncleared" depth="3" pos="155,-360" width="135" height="30" caption_key="scourge_btn_hide_uncleared" font_size="18" sound="[paging_click]" style="press" />
+                <simplebutton name="btnShowUncleared" depth="3" pos="155,-360" width="135" height="30" caption_key="scourge_btn_show_uncleared" font_size="18" sound="[paging_click]" style="press" />
+            </panel>
+
+        </panel>
+    </append>
+</configs>

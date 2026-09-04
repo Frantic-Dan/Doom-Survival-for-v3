@@ -1,0 +1,112 @@
+<FranticDan>
+
+<!-- <set xpath="/materials/material[@id='MresourceForgedSteel']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MHandGunParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MJunkTurretParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MShotgunParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MMachineGunParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MRocketLauncherParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MRifleParts']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MmeleeToolAllSteel']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='MMotorToolParts']//property[@name='forge_category']/@value">steel</set> -->
+<set xpath="/materials/material[@id='MresourceForgedSteel']//property[@name='forge_category']/@value">steel</set>
+<set xpath="/materials/material[@id='Mcloth']//property[@name='Experience']/@value">0</set>
+<set xpath="/materials/material[@id='Mmetal_shapes']//property[@name='Experience']/@value">.5</set>
+<set xpath="/materials/material[@id='MtrapSpikesIron']//property[@name='Experience']/@value">10</set>
+<set xpath="/materials/material[@id='Mwood_regular']//property[@name='MaxDamage']/@value">224</set>
+<set xpath="/materials/material[@id='Mstone']//property[@name='MaxDamage']/@value">1000</set>
+<set xpath="/materials/material[@id='Mboulder']//property[@name='MaxDamage']/@value">1200</set>
+<set xpath="/materials/material[@id='Mcobblestone']//property[@name='MaxDamage']/@value">2500</set>
+<set xpath="/materials/material[@id='Mmetal_shapes']//property[@name='MaxDamage']/@value">1500</set>
+<set xpath="/materials/material[@id='Mcobblestone_shapes']//property[@name='MaxDamage']/@value">2500</set>
+<set xpath="/materials/material[@id='MrConcrete']//property[@name='MaxDamage']/@value">6000</set>
+<set xpath="/materials/material[@id='Mconcrete_shapes']//property[@name='MaxDamage']/@value">6000</set>
+<set xpath="/materials/material[@id='MrConcrete_shapes']//property[@name='MaxDamage']/@value">6000</set>
+<set xpath="/materials/material[@id='MoreMetal']//property[@name='MaxDamage']/@value">10000</set>
+<set xpath="/materials/material[@id='MoreStone']//property[@name='MaxDamage']/@value">10000</set>
+<set xpath="/materials/material[@id='MtreeWoodSmall']//property[@name='MaxDamage']/@value">1000</set>
+<set xpath="/materials/material[@id='MtreeWoodMedium']//property[@name='MaxDamage']/@value">2000</set>
+<set xpath="/materials/material[@id='MtreeWoodLarge']//property[@name='MaxDamage']/@value">3000</set>
+<set xpath="/materials/material[@id='MtreeWoodFull']//property[@name='MaxDamage']/@value">4000</set>
+<set xpath="/materials/material[@id='MmetalBladeTrap']//property[@name='MaxDamage']/@value">3000</set>
+<set xpath="/materials/material[@id='Mgravel']//property[@name='MaxDamage']/@value">400</set>
+<set xpath="/materials/material[@id='Mdirt']//property[@name='MaxDamage']/@value">400</set>
+<set xpath="/materials/material[@id='Mrubble']//property[@name='MaxDamage']/@value">400</set>
+<set xpath="/materials/material[@id='MforestGround']//property[@name='MaxDamage']/@value">500</set>
+<set xpath="/materials/material[@id='MDesertGround']//property[@name='MaxDamage']/@value">360</set>
+<set xpath="/materials/material[@id='Msand']//property[@name='MaxDamage']/@value">200</set>
+<set xpath="/materials/material[@id='Msnow']//property[@name='MaxDamage']/@value">120</set>
+<set xpath="/materials/material[@id='Mbrick']//property[@name='MaxDamage']/@value">4000</set>
+<set xpath="/materials/material[@id='Mbrick_shapes']//property[@name='MaxDamage']/@value">4000</set>
+<set xpath="/materials/material[@id='Mcorn']//property[@name='stability_glue']/@value">1</set>
+
+
+<insertafter xpath="/materials/material[@id='MresourceCoal']">
+<material id="MresourceCoalSmelt">
+	<property name="damage_category" value="stone"/>
+	<property name="surface_category" value="stone"/>
+	<property name="forge_category" value="carbon"/>
+	<property name="Experience" value="6"/>
+</material>
+</insertafter>
+
+<insertafter xpath="/materials/material[@id='Mmetal_weak']">
+<material id="Mrebar_weak_shapes">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="steel"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="120"/>
+	<property name="Mass" type="int" value="10"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Experience" value="2"/>
+</material>
+</insertafter>
+
+<append xpath="/materials">
+
+<material id="MAmmoStackPouch">
+	<property name="damage_category" value="cloth"/>
+	<property name="surface_category" value="cloth"/>
+	<property name="forge_category" value="AmmoStackPouch"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MArmourShard">
+	<property name="damage_category" value="cloth"/>
+	<property name="surface_category" value="cloth"/>
+	<property name="forge_category" value="armourShard"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<material id="MplantsDM">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="plant"/>
+	<property name="particle_category" value="plant"/>
+	<property name="forge_category" value="plants"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="tallgrass"/>
+	<property name="lightopacity" value="1"/>
+	<property name="stability_glue" value="0"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="plant" value="true"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="MaxDamage" value="200"/>
+	<property name="Experience" value="0"/>
+</material>
+
+<!-- <material id="Mplasma">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="plant"/>
+	<property name="particle_category" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_PlasmaBlue$PlasmaImpact"/>
+	<property name="forge_category" value="plants"/>
+	<property name="Hardness" type="float" value="1"/>
+	<property name="stepsound" value="tallgrass"/>
+	<property name="Mass" type="int" value="1"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="Experience" value="0"/>
+</material> -->
+</append>
+
+</FranticDan>

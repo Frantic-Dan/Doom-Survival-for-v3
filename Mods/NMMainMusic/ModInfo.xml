@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+    <Name value="NMMainMusic" />
+	<DisplayName value="NMMainMusic" />
+    <Description value="This Mod changed the main menu music to DOOM 64" />
+    <Author value="NORDMANN" />
+    <Version value="1.0.0" />
+	<Youtube value="https://www.youtube.com/@NordicYT" />
+	<Twitch value="https://www.twitch.tv/nordmann845" />
+	<Discord value="https://discord.gg/WsTceMvHN8" />
+	<SUPPORTTHEMOD value="https://streamelements.com/nordmann845/tip" />
+	
+	<SPECIAL_THANKS_TO_MY_TEAM value="CHAOSQUEEN - TOBI - REX - KORK - DIRKILLERGAMING" /> 	
+
+</xml>

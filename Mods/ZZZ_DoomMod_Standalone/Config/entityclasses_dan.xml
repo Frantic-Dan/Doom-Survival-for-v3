@@ -1,0 +1,2158 @@
+<FranticDan>
+
+<set xpath="/entity_classes/entity_class//property[@name='ExperienceGain']/@value">0</set>
+<!-- <remove xpath="/entity_classes/entity_class//property[@name='EntityType']"/> -->
+<!-- <insertafter xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='EntityFlags']">
+	<property name="EntityType" value="Player"/>
+</insertafter> -->
+
+<!-- set vanilla zombie health to 1 for easy kill -->
+<!-- <set xpath="/entity_classes/replace_passive_effect//property[@name='healthZombieTemplate']/@value">1</set> -->
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSlim']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSlimFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSlimRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSlimCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSlimInfernal']/@value">1</set>
+<!-- <set xpath="/entity_classes/replace_passive_effect//property[@name='healthBusinessManRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthBusinessManCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthBusinessManInfernal']/@value">1</set> -->
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthNormal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthNormalFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthNormalRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthNormalCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthNormalInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthUtilityWorkerRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthUtilityWorkerCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthUtilityWorkerInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSturdy']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSturdyFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSturdyRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSturdyCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthSturdyInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthStrong']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthStrongFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthStrongRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthStrongCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthStrongInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthFit']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthFitFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthFitRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthFitCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthFitInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthWightFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthWightRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthWightCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthWightInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthScreamer']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthScreamerFeral']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthScreamerRadiated']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthScreamerCharged']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthScreamerInfernal']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthDemo']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthCrawler']/@value">1</set>
+<set xpath="/entity_classes/replace_passive_effect//property[@name='healthCrawlerFeral']/@value">1</set>
+<!-- <set xpath="/entity_classes/replace_passive_effect/property[starts-with(@name,'zombie')]/@value">1</set> -->
+<!-- any vanilla zombies that spawn will respect the armour system -->
+<set xpath="/entity_classes/entity_class//property[@name='HandItem']/@value">meleeHandVanillaWeak</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']//property[@name='HandItem']/@value">meleeHandPlayer</set>
+<!-- animal rebalance -->
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']//effect_group/passive_effect[@name='HealthMax']/@value">60</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='Tags']/@value">entity,animal,zombie,zombieAnimal,hostile,dog,perkAT03,perkAT04,perkAT05,FormerHumanVanillaDamage</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalZombieDog']/property[@name='HandItem']">
+		<property name="ExperienceGain" value="30"/>
+</insertafter>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']//effect_group/passive_effect[@name='HealthMax']/@value">60</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='Tags']/@value">entity,animal,hostile,wolf,perkAT03,perkAT04,perkAT05,FormerHumanVanillaDamage</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalWolf']/property[@name='HandItem']">
+		<property name="ExperienceGain" value="30"/>
+</insertafter>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='Tags']/@value">entity,animal,zombie,zombieAnimal,hostile,vulture,FormerHumanVanillaDamage</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='HandItem']">
+		<property name="ExperienceGain" value="15"/>
+</insertafter>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']//effect_group/passive_effect[@name='HealthMax']/@value">120</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='HandItem']/@value">meleeHandVanillaMedium</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='Tags']/@value">entity,animal,hostile,boar,perkAT02,perkAT03,perkAT04,perkAT05,BabyCacoVanillaDamage</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='HandItem']">
+		<property name="ExperienceGain" value="60"/>
+		<property name="AITask-1" value="BreakBlock" />
+		<property name="AITask-2" value="DestroyArea" />
+		<property name="AITask-3" value="Territorial" />
+		<property name="AITask-4" value="ApproachAndAttackTarget" data="class=EntityPlayer,30,EntityBandit,15,EntityZombie,10" />
+		<property name="AITask-5" value="ApproachSpot" />
+		<property name="AITask-6" value="Look" />
+		<property name="AITask-7" value="Wander" />
+		<property name="AITask-8" value="" />
+		<property name="AITarget-1" value="SetAsTargetIfHurt" />
+		<property name="AITarget-2" value="BlockingTargetTask" />
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityBandit,0,-4,EntityZombie,0,-4" />
+		<property name="AITarget-4" value="" />
+</insertafter>
+
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']//effect_group/passive_effect[@name='HealthMax']/@value">250</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='HandItem']/@value">meleeHandVanillaMedium</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='Tags']/@value">entity,animal,hostile,mountainlion,perkAT04,perkAT05,BabyCacoVanillaDamage</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalMountainLion']/property[@name='HandItem']">
+		<property name="ExperienceGain" value="100"/>
+</insertafter>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']//effect_group/passive_effect[@name='HealthMax']/@value">60</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='ExperienceGain']/@value">30</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='Tags']/@value">entity,animal,hostile,coyote,perkAT03,perkAT04,perkAT05,FormerHumanVanillaDamage</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalInsectSwarm']/property[@name='Tags']/@value">animal,zombie,FormerHumanVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalBeeSwarm']/property[@name='Tags']/@value">animal,zombie,FormerHumanVanillaDamage</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']//effect_group/passive_effect[@name='HealthMax']/@value">800</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='HandItem']/@value">meleeHandVanillaGiant</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='Tags']/@value">entity,animal,zombie,zombieAnimal,hostile,wolf,perkAT05,BaronVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='ExperienceGain']/@value">360</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']//effect_group/passive_effect[@name='HealthMax']/@value">400</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/property[@name='HandItem']/@value">meleeHandVanillaMedium</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/property[@name='Tags']/@value">entity,animal,hostile,bear,perkAT04,perkAT05,BabyCacoVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/property[@name='ExperienceGain']/@value">160</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']//effect_group/passive_effect[@name='HealthMax']/@value">700</set>
+<set xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='HandItem']/@value">meleeHandVanillaLarge</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='Tags']/@value">entity,animal,hostile,bear,perkAT04,perkAT05,ArchvileVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='ExperienceGain']/@value">280</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']//effect_group/passive_effect[@name='HealthMax']/@value">1000</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='HandItem']/@value">meleeHandVanillaGiant</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='Tags']/@value">entity,animal,zombie,zombieAnimal,hostile,bear,perkAT05,BaronVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='ExperienceGain']/@value">400</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']//effect_group/passive_effect[@name='HealthMax']/@value">1000</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='HandItem']/@value">meleeHandVanillaGiant</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='Tags']/@value">entity,animal,zombieAnimal,hostile,boar,boss,BaronVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">400</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='MoveSpeedAggro']/@value">1,1</set>
+
+<!-- Random Max Health -->
+<set xpath="/entity_classes/entity_class//passive_effect[@name='HealthMax'][@operation='perc_add']/@value">0</set>
+<insertafter xpath="/entity_classes/entity_class//passive_effect[@name='HealthMax'][@operation='perc_add']">
+		<!-- <passive_effect name="HealthMax" operation="perc_add" value="-.1">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+		<passive_effect name="HealthMax" operation="perc_add" value="0">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+		<passive_effect name="HealthMax" operation="perc_add" value=".1">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+		<passive_effect name="HealthMax" operation="perc_add" value=".2">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+		<passive_effect name="HealthMax" operation="perc_add" value=".3">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+		<passive_effect name="HealthMax" operation="perc_add" value=".4">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffEntitySpawnHeal"/>
+</insertafter>
+
+<set xpath="/entity_classes/entity_class[@name='vehicleTruck4x4']/property[@name='Tags']/@value">vehicle,usesGas,truckdmgres</set>
+
+
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedRand']/@value">0, 0</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">60</set>
+
+<set xpath="//entity_class//property[@name='LootDropProb']/@value">0</set>
+
+<!-- remove pain and death zombie sounds -->
+
+<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']//property[@name='SoundHurt']"/>
+<remove xpath="/entity_classes/entity_class[@name='animalZombieDog']//property[@name='SoundDeath']"/>
+
+
+<!-- Player -->
+
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@class='ItemsOnEnterGame']"/>
+	<!-- <remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvival']"/>
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalSP']"/>
+	<remove xpath="entity_classes/entity_class[@name='playerMale']/property[@name='ItemsOnEnterGame.GameModeSurvivalMP']"/> -->
+
+	<insertafter xpath="entity_classes/entity_class[@name='playerMale']/property[@name='DropInventoryBlock']">
+	<property class="ItemsOnEnterGame">
+		<property name="GameModeSurvival" value="meleeToolRepairT0StoneAxe,gunBowT0PrimitiveBow,HandgunQ1,StoneKnife,WaterPurifier,mediKit=10"/>
+		<property name="GameModeSurvivalSP" value="meleeToolRepairT0StoneAxe,gunBowT0PrimitiveBow,HandgunQ1,StoneKnife,WaterPurifier,mediKit=10"/>
+		<property name="GameModeSurvivalMP" value="meleeToolRepairT0StoneAxe,gunBowT0PrimitiveBow,HandgunQ1,StoneKnife,WaterPurifier,mediKit=10"/>
+	</property>
+	</insertafter>
+
+
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/property[@name='EntityFlags']/@value">player</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[4]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[7]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='WalkSpeed'and @value='1.53']/@value">2.0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='RunSpeed'and @value='1.10']/@value">1.32</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='StaminaChangeOT']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='WaterChangeOT']/@value">.0333</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='FoodChangeOT']/@value">.025</set>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='WaterChangeOT' and @tags='driving']"/>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='FoodChangeOT' and @tags='driving']"/>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]//passive_effect[1]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]//passive_effect[2]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]//passive_effect[3]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]//passive_effect[4]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[5]/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[6]/@value">0</set>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='CarryCapacity']/@value">72</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='BagSize']/@value">72</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='ProjectileStickChance' and @operation='base_set']/@value">.6</set>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='ProjectileStickChance' and @tags='glass']"/>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//passive_effect[@name='PlayerExpGain']/@value">-.5</set>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$BurntHazardTimerMax']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$DesertHazardTimerMax']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$SnowHazardTimerMax']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$WastelandHazardTimerMax']/@value">15</set>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$BurntHazardTimer']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$DesertHazardTimer']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$SnowHazardTimer']/@value">300</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfFirstSpawn'][@cvar='$WastelandHazardTimer']/@value">15</set>
+
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfEnteredGame'][@cvar='$BurntHazardTimerMax']"/>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfEnteredGame'][@cvar='$DesertHazardTimerMax']"/>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfEnteredGame'][@cvar='$SnowHazardTimerMax']"/>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfEnteredGame'][@cvar='$WastelandHazardTimerMax']"/>
+
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfEnteredGame']/@buff">buffStatusCheck01,buffStatusCheck05,buffEquipArmourNote,buffSmellCheck,buffDoubleHealthStamina,buffStatusHydrationCheck,buffStatusHungerCheck,buffAdrenalineRushCheck,buffPlayerDiedAudio,buffSelfRepairingArmourOne,buffSelfRepairingArmourTwo,buffSelfRepairingArmourThree,buffSelfRepairingArmourFour,buffSelfRepairingArmourFive</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[4]//triggered_effect[@trigger='onSelfRespawn']/@buff">buffStatusCheck01,buffStatusCheck05,buffSmellCheck,buffDeathFoodDrinkAdjust,buffZeroArmourandRespawn,buffDoubleHealthStamina,buffStatusHydrationCheck,buffStatusHungerCheck,buffAdrenalineRushCheck,buffPlayerDiedAudio,buffSelfRepairingArmourOne,buffSelfRepairingArmourTwo,buffSelfRepairingArmourThree,buffSelfRepairingArmourFour,buffSelfRepairingArmourFive</set>
+
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[5]"/>
+<remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[3]"/>
+
+<!-- animal harvests -->
+<set xpath="/entity_classes/entity_class[@name='animalTemplateTimid']/property[@name='EntityFlags']/@value">animal</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">12</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">4</set>
+<set xpath="/entity_classes/entity_class[@name='animalStag']/effect_group/passive_effect[@name='HealthMax']/@value">60</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalDoe']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalDoe']/property[@name='Mass']">
+	<passive_effect name="HealthMax" operation="base_set" value="30"/>
+</insertafter>
+
+<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalRabbit']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<!-- <insertafter xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='resourceFeather']">
+	<drop event="Harvest" name="foodEgg" tag="butcherHarvest" prob=".25" count="1"/>
+</insertafter> -->
+<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='resourceFeather' and @tag='butcherHarvest']/@count">15</set>
+<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalChicken']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<!-- <insertafter xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceFeather']">
+	<drop event="Harvest" name="foodEgg" tag="butcherHarvest" prob=".25" count="1"/>
+</insertafter> -->
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceFeather' and @tag='butcherHarvest']/@count">15</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/property[@name='HandItem']/@value">meleeHandVanillaWeak</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/effect_group/passive_effect[@name='HealthMax']/@value">30</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/property[@name='Tags']/@value">entity,animal,chicken,hostile,perkAT03,perkAT04,perkAT05,FormerHumanVanillaDamage</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalTemplateHostile']/property[@name='EntityFlags']/@value">animal</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">5</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">5</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">4</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">12</set>
+<set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">3</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='animalBear']/drop[@name='resourceTestosteroneExtract' and @tag='butcherHarvest']/@count">1</set> -->
+
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">6</set>
+<set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='animalBearSmall']/drop[@name='resourceTestosteroneExtract' and @tag='butcherHarvest']/@count">0</set> -->
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">10</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">5</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">0</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">12</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">3</set>
+<!-- <set xpath="/entity_classes/entity_class[@name='animalZombieBear']/drop[@name='resourceTestosteroneExtract' and @tag='butcherHarvest']/@count">1</set> -->
+
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalWolf']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">7</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">4</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">0</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">12</set>
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">3</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalDireWolf']/drop[@name='resourceAnimalFat']">
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="1"/>
+</insertafter>
+
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceFeather' and @tag='butcherHarvest']/@count">15</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalChickenHostile']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">4</set>
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalMountainLion']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@name='resourceFeather' and @tag='butcherHarvest']/@count">15</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@name='resourceFeather' and @tag='butcherHarvest']/@count">18</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">4</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">0</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieDog']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">1</set>
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='Tags']/@value">entity,animal,hostile,snake,perkAT01,perkAT02,perkAT03,perkAT04,perkAT05,FormerHumanVanillaDamage</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='foodRawMeat' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">2</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">3</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalBoar']/drop[@name='resourceBone' and @tag='allToolsHarvest']/@count">2</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='MoveSpeed']/@value">.5</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">20</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">15</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">0</set>
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">10</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalBossGrace']/drop[@name='resourceAnimalFat']">
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="5"/>
+</insertafter>
+
+<!-- <set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/property[@name='MoveSpeed']/@value">.5</set> -->
+<set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='foodRottingFlesh' and @tag='butcherHarvest']/@count">10</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@count">8</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='resourceLeather' and @tag='butcherHarvest']/@name">resourceAnimalHide</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='resourceAnimalFat' and @tag='butcherHarvest']/@count">0</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='resourceBone' and @tag='butcherHarvest']/@count">5</set>
+<insertafter xpath="/entity_classes/entity_class[@name='animalZombieBoar']/drop[@name='resourceAnimalFat']">
+	<drop event="Harvest" name="resourceTestosteroneExtract" tag="butcherHarvest" count="2"/>
+</insertafter>
+
+<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='YawRange']/@value">60</set>
+<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='TurnSpeed']/@value">30</set>
+<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxDistance']/@value">25</set>
+<set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxOwnerDistance']/@value">25</set>
+
+	<!-- <conditional>
+      <if cond="mod_loaded('TFP_Harmony') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('PathSmoothing') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('WMMPersistGameOptions') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('CustomMenuMusic') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional>
+	
+	<conditional>
+      <if cond="mod_loaded('DifficultyMod') == false">
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
+			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
+		</if>
+	</conditional> -->
+
+<append xpath="/entity_classes">
+
+	<entity_class name="demonFormerSoldier" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerSoldierModel.unity3d?FormerSoldier"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=1.5;duration=0.5;minRange=0;maxRange=40;sndStart=M9pistol_fire;sndRelease=M9pistol_fire|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.6, 0.6"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerSoldier"/>
+		<property name="ExperienceGain" value="32"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerSoldier"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="40"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="36">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="40">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="44">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="48">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="52">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="56">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonFormerSergeant" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerSergeantModel.unity3d?FormerSergeant"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=2;duration=.5;minRange=0;maxRange=40;sndStart=VRpumpSG_fire;sndRelease=VRpumpSG_fire|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerSergeant"/>
+		<property name="ExperienceGain" value="48"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerSergeant"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="54">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="60">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="66">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="78">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="84">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonFormerCommando" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerCommandoModel.unity3d?FormerCommando"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=0;duration=.3;minRange=0;maxRange=40;sndStart=M134s_fire;sndRelease=M134s_fire|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		
+		<!-- ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0| -->
+		
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerCommando"/>
+		<property name="ExperienceGain" value="64"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerCommando"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="80">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="88">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="96">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="104">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="112">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonFormerSoldierBM" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerSoldierModel.unity3d?FormerSoldier"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=1.5;duration=0.5;minRange=0;maxRange=40;sndStart=M9pistol_fire;sndRelease=M9pistol_fire|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.6, 0.6"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerSoldier"/>
+		<property name="ExperienceGain" value="32"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerSoldierBM"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="40"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="36">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="40">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="44">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="48">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="52">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="56">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonFormerSergeantBM" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerSergeantModel.unity3d?FormerSergeant"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=2;duration=.5;minRange=0;maxRange=40;sndStart=VRpumpSG_fire;sndRelease=VRpumpSG_fire|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerSergeant"/>
+		<property name="ExperienceGain" value="48"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerSergeantBM"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="54">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="60">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="66">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="78">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="84">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonFormerCommandoBM" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,FormerHumanVanillaDamage"/>
+		<property name="SizeScale" value=".9"/>
+		<property name="Mesh" value="#@modfolder:Resources/FormerCommandoModel.unity3d?FormerCommando"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=0;duration=.3;minRange=0;maxRange=40;sndStart=M134s_fire;sndRelease=M134s_fire|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		
+		<!-- ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0| -->
+		
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="FormerHumanAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="FormerHumanDeath"/>
+		<property name="SoundSense" value="FormerHumanAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandFormerCommando"/>
+		<property name="ExperienceGain" value="64"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerFormerCommandoBM"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="80">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="88">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="96">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="104">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="112">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="demonDefaultImp" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,ImpSoulDamage"/>
+		<property name="SizeScale" value=".95"/>
+		<property name="Mesh" value="#@modfolder:Resources/ImpTrio.unity3d?NormalImpDemon"/>
+		<property name="PrefabCombined" value="false"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="ImpRoaming"/>
+		<property name="SoundAlert" value="ImpAlerted"/>
+		<property name="SoundAttack" value="DemonClawAttack"/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="ImpDeath"/>
+		<property name="SoundSense" value="ImpAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonImp"/>
+		<property name="ExperienceGain" value="48"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="54">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="60">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="66">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="78">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="84">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonNightmareImp" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,ImpSoulDamage"/>
+		<property name="SizeScale" value=".95"/>
+		<property name="Mesh" value="#@modfolder:Resources/ImpTrio.unity3d?NightImpDemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="ImpRoaming"/>
+		<property name="SoundAlert" value="ImpAlerted"/>
+		<property name="SoundAttack" value="DemonClawAttack"/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="ImpDeath"/>
+		<property name="SoundSense" value="ImpAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.95, 0.95"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonNightmareImp"/>
+		<property name="ExperienceGain" value="144"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="180"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="108">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="120">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="132">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="144">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="156">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="168">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonSpectreImp" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,ImpSoulDamage"/>
+		<property name="SizeScale" value=".95"/>
+		<property name="Mesh" value="#@modfolder:Resources/ImpTrio.unity3d?InvisibleImpDemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="ImpRoaming"/>
+		<property name="SoundAlert" value="ImpAlerted"/>
+		<property name="SoundAttack" value="DemonClawAttack"/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="ImpDeath"/>
+		<property name="SoundSense" value="ImpAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonImp"/>
+		<property name="ExperienceGain" value="48"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="54">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="60">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="66">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="78">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="84">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonPinky" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,PinkyCacoDamage"/>
+		<property name="SizeScale" value=".8"/>
+		<property name="Mesh" value="#@modfolder:Resources/PinkySpectreModels.unity3d?NormalPinkyDemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="PinkyAlerted"/>
+		<property name="SoundAttack" value="PinkyAttack"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="PinkyDeath"/>
+		<property name="SoundSense" value="PinkyAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="220"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="MoveSpeedAggro" value="1.25, 1.25"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandPinkySpectre"/>
+		<property name="ExperienceGain" value="120"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="135">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="150">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="165">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="180">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="195">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="210">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+</entity_class>
+	
+	<entity_class name="demonSpectre" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,PinkyCacoDamage"/>
+		<property name="SizeScale" value=".8"/>
+		<property name="Mesh" value="#@modfolder:Resources/PinkySpectreModels.unity3d?InvisibleDemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="PinkyAlerted"/>
+		<property name="SoundAttack" value="PinkyAttack"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="PinkyDeath"/>
+		<property name="SoundSense" value="PinkyAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="220"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="1.25, 1.25"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandPinkySpectre"/>
+		<property name="ExperienceGain" value="120"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="135">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="150">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="165">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="180">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="195">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="210">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonLostSoul" extends="animalTemplateHostile" param1="Tags">
+		<property name="EntityFlags" value="zombie"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile,demon,ImpSoulDamage"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="RightHandJointName" value="Spine1"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/CacodemonInvisibleModel.unity3d?CacodemonInvisible"/>
+		<property name="SizeScale" value="0.5"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/>
+
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value=""/>
+		<property name="SoundAttack" value="LostSoulAttack"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value=""/>
+		<property name="SoundSense" value="GenericRoaming"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value="1.25"/>
+		<property name="MoveSpeedAggro" value="1.8, 1.8"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandLostSoul"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="1"/>
+		<property name="TimeStayAfterDeath" value="0"/>
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="64"/>
+
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="72">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="80">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="88">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="96">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="104">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="112">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,.9,-.1" local_rotation="0,0,0" local_scale="2.7,2.7,1.7" parent_transform="Spine1"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_onFire" local_scale="5.0,5.0,5.0" />
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="RightHand" />
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="Head" />
+			<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="0" entity_damage="0" entity_radius="0"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonCacodemon" extends="animalTemplateHostile" param1="Tags">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile,demon,revivable,PinkyCacoDamage"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="RightHandJointName" value="Spine1"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/CacodemonModel.unity3d?Cacodemon"/>
+		<property name="SizeScale" value="1.4"/>
+		<property name="LookAtAngle" value="0"/>
+		<!-- <property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/> -->
+		
+		<property name="AITask" value="
+		BreakBlock|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAnimalStag,0,0"/>
+		<property name="AITarget-4" value=""/>
+
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="CacodemonAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="CacodemonDeath"/>
+		<property name="SoundSense" value="CacodemonAlerted"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value=".5"/>
+		<property name="MoveSpeedAggro" value="0.9, 0.9"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandDemonCacodemon"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="200"/>
+
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="360">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="440">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="480">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="520">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="560">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonBabyCacodemon" extends="animalTemplateHostile" param1="Tags">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile,demon,revivable,BabyCacoVanillaDamage"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="RightHandJointName" value="Spine1"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/CacodemonModel.unity3d?Cacodemon"/>
+		<property name="SizeScale" value="1"/>
+		<property name="LookAtAngle" value="0"/>
+		<!-- <property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/> -->
+		
+		<property name="AITask" value="
+		BreakBlock|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAnimalStag,0,0"/>
+		<property name="AITarget-4" value=""/>
+
+		<property name="SoundRandom" value="GenericBabyRoaming"/>
+		<property name="SoundAlert" value="CacodemonBabyAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="GenericBabyHurt"/>
+		<property name="SoundDeath" value="CacodemonBabyDeath"/>
+		<property name="SoundSense" value="CacodemonBabyAlerted"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value=".75"/>
+		<property name="MoveSpeedAggro" value="1.5, 1.5"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandDemonBabyCaco"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="120"/>
+
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150" />
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="108">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="120">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="132">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="144">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="156">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="168">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonCacodemonSpectre" extends="animalTemplateHostile" param1="Tags">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile,demon,revivable,PinkyCacoDamage"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="RightHandJointName" value="Spine1"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/CacodemonSpectreModel.unity3d?CacodemonSpectre"/>
+		<property name="SizeScale" value="1.4"/>
+		<property name="LookAtAngle" value="0"/>
+		<!-- <property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/> -->
+		
+		<property name="AITask" value="
+		BreakBlock|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAnimalStag,0,0"/>
+		<property name="AITarget-4" value=""/>
+		
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="CacodemonAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="CacodemonDeath"/>
+		<property name="SoundSense" value="CacodemonAlerted"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value=".5"/>
+		<property name="MoveSpeedAggro" value="0.9, 0.9"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandDemonCacodemon"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="200"/>
+
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="360">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="440">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="480">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="520">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="560">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonHellKnight" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,KnightMancubusDamage"/>
+		<!-- <property name="SizeScale" value=".95"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/KnightDuo.unity3d?HellKnight"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="KnightAlerted"/>
+		<property name="SoundAttack" value="DemonClawAttack"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="KnightDeath"/>
+		<property name="SoundSense" value="KnightAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 0.7"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonHellKnight"/>
+		<property name="ExperienceGain" value="250"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="450">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="500">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="550">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="600">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="650">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="700">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonBaronOfHell" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,BaronVanillaDamage"/>
+		<!-- <property name="SizeScale" value=".95"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/KnightDuo.unity3d?BaronHell"/>
+		<!-- <property name="PhysicsBody" value="HellKnight"/> -->
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="BaronAlerted"/>
+		<property name="SoundAttack" value="DemonClawAttack"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="BaronDeath"/>
+		<property name="SoundSense" value="BaronAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.75, 0.75"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonBaronHell"/>
+		<property name="ExperienceGain" value="400"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="900">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="1000">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="1100">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="1200">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="1300">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="1400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand"/>
+		</effect_group>
+	</entity_class>
+	
+	<!-- Arachnotron -->
+	
+	<entity_class name="demonPainElemental" extends="animalTemplateHostile">
+		<property name="EntityFlags" value="zombie"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile,demon"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<!-- <property name="RightHandJointName" value="Spine1"/> -->
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/PainElementalModel.unity3d?PainElemental"/>
+		<property name="SizeScale" value="1.4"/>
+		<property name="LookAtAngle" value="0"/>
+		<!-- <property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/> -->
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=7;duration=5;minRange=1;maxRange=30|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAnimalStag,0,0"/>
+		<property name="AITarget-4" value=""/>
+		
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="PainElementalAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="PainElementalHurt"/>
+		<property name="SoundDeath" value="PainElementalDeath"/>
+		<property name="SoundSense" value="PainElementalAlerted"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value=".5"/>
+		<property name="MoveSpeedAggro" value="1.1, 1.1"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandPainElemental"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="200"/>
+		<property name="TimeStayAfterDeath" value="1"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="360">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="440">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="480">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="520">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="560">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffLostSoulSpawner"/>
+			<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="0" entity_damage="0" entity_radius="0"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonPainElementalSpectre" extends="animalTemplateHostile">
+		<property name="EntityFlags" value="zombie"/>
+		<property name="Class" value="EntityVulture"/>
+		<property name="UserSpawnType" value="Menu"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,hostile"/>
+		<property name="AvatarController" value="AvatarAnimalController"/>
+		<property name="RightHandJointName" value="Spine1"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="RootMotion" value="true"/>
+		<property name="Mass" value="145"/>
+		<property name="Mesh" value="#@modfolder:Resources/PainElementalSpectreModel.unity3d?PainElementalSpectre"/>
+		<property name="SizeScale" value="1.4"/>
+		<property name="LookAtAngle" value="0"/>
+		<!-- <property name="AITask-1" value=""/>
+		<property name="AITarget-1" value=""/> -->
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=7;duration=5;minRange=1;maxRange=30|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget-1" value="SetAsTargetIfHurt"/>
+		<property name="AITarget-2" value="BlockingTargetTask"/>
+		<property name="AITarget-3" value="SetNearestEntityAsTarget" data="class=EntityPlayer,0,0,EntityAnimalStag,0,0"/>
+		<property name="AITarget-4" value=""/>
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="PainElementalAlerted"/>
+		<property name="SoundAttack" value=""/>
+		<property name="SoundHurt" value="PainElementalHurt"/>
+		<property name="SoundDeath" value="PainElementalDeath"/>
+		<property name="SoundSense" value="PainElementalAlerted"/>
+		<property name="SoundGiveUp" value=""/>
+
+		<!-- Stealth -->
+		<property name="SightRange" value="70"/>
+
+		<!-- Gameplay  -->
+		<property name="MoveSpeed" value=".5"/>
+		<property name="MoveSpeedAggro" value="1.1, 1.1"/> <!-- Used when player in vehicle -->
+		<property name="MaxTurnSpeed" value="190"/>
+
+		<property name="HandItem" value="meleeHandPainElemental"/>
+		<property name="Immunity" value="sickness;disease;wellness"/> <!-- bleeding; -->
+
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+
+		<property name="DeadBodyHitPoints" value="1000"/>
+		<property name="ExperienceGain" value="200"/>
+		<property name="TimeStayAfterDeath" value="1"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="360">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="440">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="480">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="520">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="560">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffLostSoulSpawner"/>
+			<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="0" entity_damage="0" entity_radius="0"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonRevenant" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,RevenantDamage"/>
+		<!-- <property name="SizeScale" value=".95"/> -->
+		<!-- <property name="Mesh" value="#@modfolder:Resources/testBaronKnight.unity3d?UndeadBaron"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/RevenantModel.unity3d?RevenantDemon"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/BigBaronHell.unity3d?BaronHellBigger"/> -->
+		<!-- <property name="Mesh" value="#@modfolder:Resources/testBaronKnight.unity3d?UndeadBaron"/> -->
+		<!-- <property name="PhysicsBody" value="RevenantDemon"/> -->
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=RevenantMissile;sndRelease=RevenantMissile|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="RevenantRoaming"/>
+		<property name="SoundAlert" value="RevenantAlerted"/>
+		<property name="SoundAttack" value="RevenantAtkSwing"/>
+		<property name="SoundHurt" value="ImpHumanHurt"/>
+		<property name="SoundDeath" value="RevenantDeath"/>
+		<property name="SoundSense" value="RevenantAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<property name="RightHandJointName" value="Boulder"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="170"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="1.1, 1.1"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonRevenant"/>
+		<property name="ExperienceGain" value="150"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="270">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="300">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="330">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="360">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="390">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="420">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonMancubus" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie,32"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,revivable,KnightMancubusDamage"/>
+		<property name="SizeScale" value="1.1"/>
+		<property name="Mesh" value="#@modfolder:Resources/MancubusModel.unity3d?MancubusDemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=5;minRange=2;maxRange=40;sndStart=MancabusAttack;sndRelease=DemonFireballThrown|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="FormerHumanRoaming"/>
+		<property name="SoundAlert" value="MancubusAlerted"/>
+		<property name="SoundAttack" value="MancabusAttack"/>
+		<property name="SoundHurt" value="MancubusHurt"/>
+		<property name="SoundDeath" value="MancabusDeath"/>
+		<property name="SoundSense" value="MancubusAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="1"/>
+		<property name="Mass" value="200"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.5, 0.5"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonMancubus"/>
+		<property name="ExperienceGain" value="300"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="600"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="540">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="600">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="660">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="720">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="780">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="840">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonArchvile" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,ArchvileVanillaDamage"/>
+		<property name="SizeScale" value="1.15"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/testBaronKnight.unity3d?UndeadBaron"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/ArchvileModel.unity3d?ArchvileDemon"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/BigBaronHell.unity3d?BaronHellBigger"/> -->
+		<!-- <property name="Mesh" value="#@modfolder:Resources/testBaronKnight.unity3d?UndeadBaron"/> -->
+		<!-- <property name="PhysicsBody" value="RevenantDemon"/> -->
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+        SetAsTargetIfHurt|
+        BlockingTargetTask|
+        SetNearestCorpseAsTarget flags=32|
+        SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+        "/>
+
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="ArchvileRoaming"/>
+		<property name="SoundAlert" value="ArchvileAlerted"/>
+		<property name="SoundAttack" value="ArchvileAttack"/>
+		<property name="SoundHurt" value="ArchvileHurt"/>
+		<property name="SoundDeath" value="ArchvileDeath"/>
+		<property name="SoundSense" value="ArchvileAlerted"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+		<!-- <property name="RightHandJointName" value="Boulder"/> -->
+		<property name="WalkType" value="2"/>
+		<property name="Mass" value="400"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="1.4, 1.4"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandVanillaLarge"/>
+		<property name="ExperienceGain" value="350"/><!-- XP Normal Feral -->
+		<property name="LootDropProb" value="0"/> <!-- Feral -->
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="700"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="630">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="700">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="770">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="840">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="910">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="980">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffArchvileAOEattack"/>
+			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffArchvileAOEreviveTrigger"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" target="self" buff="buffArchvileAOEattack"/>
+			<triggered_effect trigger="onSelfDied" action="RemoveBuff" target="self" buff="buffArchvileAOEreviveTrigger"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="demonCyber" extends="zombieBoe">
+		<property name="EntityFlags" value="zombie"/>
+		<property name="EntityType" value="Zombie"/>
+		<property name="Tags" value="entity,zombie,walker,demon,CyberDamage"/>
+		<property name="SizeScale" value=".95"/>
+		<property name="Mesh" value="#@modfolder:Resources/CyberModel.unity3d?Cyberdemon"/>
+		<property name="PhysicsBody" value="mixamoConvertedStandardZombie"/>
+		<property name="AITask" value="
+		BreakBlock|
+		ApproachDistraction|
+		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=3;maxRange=40;sndStart=RocketLaunched;sndRelease=RocketLaunched|
+		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
+		ApproachSpot|
+		Look|
+		Wander|
+		"/>
+		<property name="AITarget" value="
+		SetAsTargetIfHurt|
+		BlockingTargetTask|
+		SetNearestEntityAsTarget class=EntityPlayer,0,0,EntityAnimalStag,0,0|
+		"/>
+		<property name="LookAtAngle" value="0"/>
+		<property name="UserSpawnType" value="Menu"/>
+			
+		<property name="SoundRandom" value="GenericRoaming"/>
+		<property name="SoundAlert" value="CyberdemonAlerted"/>
+		<property name="SoundAttack" value="CyberdemonAlerted"/>
+		<property name="SoundHurt" value="GenericHurt"/>
+		<property name="SoundDeath" value="CyberdemonDeath"/>
+		<property name="SoundSense" value="CyberdemonAlerted"/>
+		<!-- <property name="SoundStepType" value="animalhvyhoofstep"/> -->
+		<property name="SoundStepType" value="CyberdemonFootstep"/>
+		<property name="RightHandJointName" value="LeftHand"/>
+		<property name="WalkType" value="7"/>
+		<property name="Mass" value="400"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="HasRagdoll" value="true"/>
+		<property name="HasDeathAnim" value="true"/>
+		<property name="PushFactor" value="20"/>
+		<property name="RootMotion" value="true"/>
+		<property name="RagdollOnDeathChance" value="1"/>
+		<property name="DismemberMultiplierHead" value="0"/><property name="DismemberMultiplierArms" value="0"/><property name="DismemberMultiplierLegs" value="0"/>
+		<property name="PainResistPerHit" value="3"/>
+		<property name="MoveSpeedAggro" value="0.6, 0.6"/>
+		<property name="JumpMaxDistance" value="4.6, 5"/>
+		<property name="HandItem" value="meleeHandDemonCyber"/>
+		<property name="ExperienceGain" value="1600"/>
+		<property name="LootDropProb" value="1"/>
+		<property name="LootDropEntityClass" value="EntityLootContainerCyberdemon"/>
+		<property name="TimeStayAfterDeath" value="30"/>
+
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="4000"/>
+			<!-- <passive_effect name="HealthMax" operation="base_set" value="3600">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="0"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="4000">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="1"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="4400">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="2"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="4800">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="3"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="5200">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="4"/></passive_effect>
+			<passive_effect name="HealthMax" operation="base_set" value="5600">
+			<requirement name="CVarCompare" cvar="_difficulty" operation="Equals" value="5"/></passive_effect> -->
+			<passive_effect name="ElementalDamageResist" operation="base_add" value="100" tags="heat"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="EntityLootContainerFormerSoldier">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/> -->
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerSoldierloot"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demon_ammoloot"/>
+	</entity_class>
+	
+	<entity_class name="EntityLootContainerFormerSergeant">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/> -->
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerSergeantloot"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demon_ammoloot"/>
+	</entity_class>
+
+	<entity_class name="EntityLootContainerFormerCommando">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/> -->
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerCommandoloot"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demon_ammoloot"/>
+	</entity_class>
+	
+	<entity_class name="EntityLootContainerFormerSoldierBM">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerSoldierlootBM"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demonBM_ammoloot"/>
+	</entity_class>
+	
+	<entity_class name="EntityLootContainerFormerSergeantBM">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerSergeantlootBM"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demonBM_ammoloot"/>
+	</entity_class>
+
+	<entity_class name="EntityLootContainerFormerCommandoBM">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
+		<property name="Mesh" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="formerCommandolootBM"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demonBM_ammoloot"/>
+	</entity_class>
+	
+	<entity_class name="EntityLootContainerCyberdemon">
+		<property name="Class" value="EntityLootContainer"/>
+		<property name="UserSpawnType" value="Console"/>
+		<property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/>
+		<!-- <property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/> -->
+		<property name="ModelType" value="Custom"/>
+		<property name="Prefab" value="Backpack"/>
+		<property name="Parent" value="Backpack"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="TimeStayAfterDeath" value="3600"/>
+		<property name="LootList" value="Cyberdemonloot"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="demon_ammoloot"/>
+	</entity_class>
+	
+</append>
+
+</FranticDan>

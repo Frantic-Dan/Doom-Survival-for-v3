@@ -1,0 +1,66 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+lbu_GeneralSkills,Learn By Shooting
+attlearnbyuse,progression,Attribute,,,"Learn By Shooting"
+attLearnByUseName,progression,Attribute,,,"Learn By Shooting"
+attLearnByUseDesc,progression,Attribute,,,"Every 10th level in each skill tree will unlock the next Quality level."
+lbu_GeneralUseSkills,Learn By Using
+attlearnbyconsume,progression,Attribute,,,"Learn By Using"
+attlearnbyconsumeName,progression,Attribute,,,"Learn By Using"
+lbu_LuckyLooterName,progression,Perk,,,"Lucky Looter\n[DECEA3]{cvar($lbu_LuckyLooter_LevelXP:0)}xp To Next Level[-]" 
+lbu_LuckyLooterDesc,progression,Perk,,,"Loot any Container to increase your looting speed. Increases are applied cumulatively per Level."
+
+lbu_CookingName,progression,Perk,,,"Cooking\n[DECEA3]{cvar($lbu_Cooking_LevelXP:0)}xp To Next Level[-]"
+lbu_CookingDesc,progression,Perk,,,"Consuming food and drink will raise your cooking knowledge."
+
+perklbu_CookingRank1Desc,progression,Perk,,,"Corn Bread & Goldenrod Tea"
+perklbu_CookingRank2Desc,progression,Perk,,,"Grilled Meat & Red Tea"
+perklbu_CookingRank3Desc,progression,Perk,,,"Boiled Meat & Yucca Juice"
+perklbu_CookingRank4Desc,progression,Perk,,,"Bacon and Eggs & Coffee"
+perklbu_CookingRank5Desc,progression,Perk,,,"Pumpkin Bread, Blueberry Pie & Chicken Nuggets"
+perklbu_CookingRank6Desc,progression,Perk,,,"Pumpkin Pie & Honey Tea"
+perklbu_CookingRank7Desc,progression,Perk,,,"Pumpkin Cheesecake & Roadrunner Chicken Jerky"
+perklbu_CookingRank8Desc,progression,Perk,,,"Vegetable Stew & Meat Stew"
+perklbu_CookingRank9Desc,progression,Perk,,,"Steak and Potato, Red Honey Tea & Ash Chicken Stew"
+perklbu_CookingRank10Desc,progression,Perk,,,"Yucca Juice Smoothie & Beer"
+perklbu_CookingRank11Desc,progression,Perk,,,"Hobo Stew & Honey Coffee"
+perklbu_CookingRank12Desc,progression,Perk,,,"Fish Tacos"
+perklbu_CookingRank13Desc,progression,Perk,,,"Chili Dog & Chicken Wings"
+perklbu_CookingRank14Desc,progression,Perk,,,"Shame Chowder, Honey Glazed Shame & Tuna Fish Gravy Toast"
+perklbu_CookingRank15Desc,progression,Perk,,,"Shepherds Pie"
+perklbu_CookingRank16Desc,progression,Perk,,,"Honey Brisket"
+perklbu_CookingRank17Desc,progression,Perk,,,"Spaghetti"
+perklbu_CookingRank18Desc,progression,Perk,,,"Gumbo Stew"
+
+perklbu_MedicalRank1Desc,progression,Perk,,,"Herbal Antibiotics"
+perklbu_MedicalRank2Desc,progression,Perk,,,"Stimpack"
+perklbu_MedicalRank3Desc,progression,Perk,,,"Plaster Cast"
+perklbu_MedicalRank4Desc,progression,Perk,,,"Medikit"
+perklbu_MedicalRank5Desc,progression,Perk,,,"Blue Stimpack & Antibiotics"
+perklbu_MedicalRank6Desc,progression,Perk,,,"Blue Medikit"
+perklbu_MedicalRank7Desc,progression,Perk,,,"Health Potion"
+
+
+lbu_MedicalName,progression,Perk,,,"Medical\n[DECEA3]{cvar($lbu_Medical_LevelXP:0)}xp To Next Level[-]"
+lbu_MedicalDesc,progression,Perk,,,"Using medical items will raise your medical knowledge."
+lbu_DeadEyeName,progression,Perk,,,"Plasma Rifle\n[DECEA3]{cvar($lbu_DeadEye_LevelXP:0)}xp To Next Level[-]"
+lbu_DeadEyeDesc,progression,Perk,,,"Use a Plasma Rifle to increase your crafting quality every 10 levels."
+lbu_DemolitionName,progression,Perk,,,"Rocket Launcher\n[DECEA3]{cvar($lbu_Demolition_LevelXP:0)}xp To Next Level[-]"
+lbu_DemolitionDesc,progression,Perk,,,"Use a Rocket Laucnher to increase your crafting quality every 10 levels."
+lbu_BoomstickName,progression,Perk,,,"Pump Shotgun & Super Shotgun\n[DECEA3]{cvar($lbu_Boomstick_LevelXP:0)}xp To Next Level[-]" 
+lbu_BoomstickDesc,progression,Perk,,,"Use a Pump Shotgun & Super Shotgun to increase your crafting quality every 10 levels."
+lbu_MachineGunnerName,progression,Perk,,,"Chaingun\n[DECEA3]{cvar($lbu_MachineGunner_LevelXP:0)}xp To Next Level[-]" 
+lbu_MachineGunnerDesc,progression,Perk,,,"Use a Chaingun to increase your crafting quality every 10 levels."
+lbu_ArcheryName,progression,Perk,,,"Crossbow\n[DECEA3]{cvar($lbu_Archery_LevelXP:0)}xp To Next Level[-]" 
+lbu_ArcheryDesc,progression,Perk,,,"Use a Crossbow to increase your crafting quality every 10 levels."
+lbu_GunslingerName,progression,Perk,,,"Handgun\n[DECEA3]{cvar($lbu_Gunslinger_LevelXP:0)}xp To Next Level[-]" 
+lbu_GunslingerDesc,progression,Perk,,,"Use a Handgun to increase your crafting quality every 10 levels."
+
+lbu_MULTIPLAYERTURRETS_START,progression,Perk,,,"Multiplayer Turret Note, DELETE THE ENTRIES BELOW THIS LINE"
+lbu_RoboticsName,progression,Perk,,,"Flamethrower\n[DECEA3]{cvar($lbu_Robotics_LevelXP:0)}xp To Next Level[-]"  
+lbu_RoboticsDesc,progression,Perk,,,"Use a Flamethrower to increase your crafting quality every 10 levels."
+lbu_MULTIPLAYERTURRETS_END,progression,Perk,,,"Multiplayer Turret Note, DELETE THE ENTRIES ABOVE THIS LINE"
+
+
+buffDebug1,buffs,Buff,,,Stats Gamestage
+buffDebug2,buffs,Buff,,,Biome modifier
+buffDebug3,buffs,Buff,,,Biome Bonus

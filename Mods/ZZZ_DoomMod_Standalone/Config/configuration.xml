@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Servers>
+
+       <ServerGroup Name="Doom Survival (Classic Doom)" Logo="" Description="">
+
+               <Server Name="Doom Survival (Classic Doom)" Logo="https://raw.githubusercontent.com/Frantic-Dan/Spencer-Mansion-Incident-v1-Mod-v5.0/main/Mods/ZZYSpencerMansion_Standalone/Config/backgrounds/ML-Imagedisplay.png">
+
+                       <Description>
+What would it be like if Classic Doom was an open world survival sandbox game?
+The demons from hell have invaded Earth, most people are dead or escaped into space, traders included, and DoomGuy wants revenge on the demons for murdering his pet rabbit, Daisy.
+
+Features:
+- No stamina: sprint and jump as much as you desire.
+- Armour is now a stat that works together with your health to absorb a portion of the damage. But if destroyed, you'll be taking full damage.
+- Equalised damage: shooting a demon in their hand or their face deals the same damage.
+- 360 sprinting: you can sprint in any direction you desire.
+- No reloading: you'll never need to reload your guns. With a few exceptions, while the Crossbow and Super Shotgun automatically reload after firing, the Junk Turret needs to reload as it is it's own unit.
+- Biome specific loot: you can't get all the goodies in the forest, you have to face the invasion in tougher biomes, but make sure you're geared up first.
+- Monster infighting: demons are chaotic and will fight to kill their fellow demons if another demon harms them.
+- Custom sandbox options: your Doom experience can be customised using new options specific to the mod. (Your vanilla codes will break the mod)
+- Your weapons: Knuckles, Knife, Chainsaw, Primitive Bow, Handgun, Pump Shotgun, Compound Crossbow, Junk Turret, Flamethrower, Chaingun, Super Shotgun, Rocket Launcher, Plasma Rifle, Big Fucking Gun.
+- Optional content: if you're feeling nostalgic, you can visit 68 Classic Doom levels from both Doom and Doom II. You just need to find a way to get there.
+
+
+- For those playing multiplayer!
+The new v2.0.0 has optional content, 7 days to die has a spawn limit of 64, and this optional content will use up this limit for a single player if they play with this content, this means there will be no spawns for anyone else.
+In the future there may be an update that increases this limit so the optional content is more multiplayer friendly.
+
+- Sandbox settings!
+Doom Survival has it's own custom sandbox settings, so your saved vanilla codes ARE NOT supported. Create a new one to ensure you're playing with the intended available options.
+
+- What map should I use?
+The Random World Generation has modifications, increasing how many POI's spawn, so generate a new world, preferably using the 'Advanced Generation' option.
+
+- I spawned next to another biome.
+It is recommended to stay away from other biomes, until you have enough gear to take on another biome.
+
+
+                       </Description>
+
+                       <DownloadMode>Clone</DownloadMode>
+
+                       <SubscriptionLink></SubscriptionLink>
+
+                       <Version>v3.2 b10</Version>
+
+                       <ReleaseNotes/>
+
+                       <Downloads>
+
+                       <Download>github link here</Download>
+					   
+
+                 </Downloads>
+
+						 <Discord>https://discord.gg/HDftkUPQyN</Discord>
+						 
+						 <Donate>https://streamlabs.com/frantic_dan/tip</Donate>
+						 
+						 <Website>https://www.nexusmods.com/7daystodie/mods/9546</Website>
+
+               </Server>
+
+       </ServerGroup>
+
+</Servers>

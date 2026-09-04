@@ -1,0 +1,21 @@
+<configs>
+  <append xpath="/nav_object_classes">
+    
+    <nav_object_class name="scourge_marker_0"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="156,136,103,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.35" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_1"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="207,127,41,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.35" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_2"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="162,164,27,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.45" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_3"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="66,194,52,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.55" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_4"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="49,93,206,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.65" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_5"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="64,0,115,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.75" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_marker_6"><map_settings><property name="sprite_name" value="ui_game_symbol_check" /><property name="color" value="255,0,0,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.85" /></map_settings></nav_object_class>
+
+    <nav_object_class name="scourge_uncleared_marker_0"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.30" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_1"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.30" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_2"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.40" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_3"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.50" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_4"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.60" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_5"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.70" /></map_settings></nav_object_class>
+    <nav_object_class name="scourge_uncleared_marker_6"><map_settings><property name="sprite_name" value="ui_game_symbol_quest" /><property name="color" value="128,128,128,255" /><property name="layer" value="0" /><property name="icon_scale" value="0.80" /></map_settings></nav_object_class>
+
+  </append>
+</configs>

@@ -1,0 +1,596 @@
+<configs>
+	
+	<!-- Prevent players from cancelling quests -->
+	<set xpath="/windows/window[@name='windowQuestList']/rect[@name='content']/rect[@depth='3']//button[3]/@pos">-3120,-21</set>
+	
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/rect/rect/rect/rect[3]/@pos">102,1000</set>
+	<!--Removes the location / skulls-->
+	<remove xpath="/windows/window[@name='windowLocation']"/>
+
+	<!-- Pause-menu logo insert disabled: camera-anchored texture on ingameMenu was blocking ESC / player input on v3.
+	     Re-enable later with a non-fullscreen, non-anchor layout once ESC works. -->
+	<!--
+	<insertafter xpath="//window[@name='ingameMenu']/label">
+		<rect>
+			<texture depth="3" pos="280,200" color="[white]" texture="@modfolder:UIAtlases/ItemIconAtlas/logo.png" name="gameLogo" width="400" height="200" keep_aspect_ratio="BasedOnWidth" />
+			<label depth="7" name="TextContent" pos="280,-10" font_size="32" color="[green]" text="Version 1.1.2" width="135" height="35"/>
+			<sprite depth="1" name="backgroundMain" pos="275,-5" sprite="menu_empty3px" color="[darkestGrey]" type="sliced" fillcenter="true" width="140" height="40"/>
+		</rect>
+	</insertafter>
+	-->
+	
+<!--This is specifically my version of the compass, plus the positioning you requested. Do you like this?-->					
+	<!--Widened and centered the compass area.-->
+		<set xpath="/windows/window[@name='windowCompass']/@pos">-260,-9</set>
+		<set xpath="/windows/window[@name='windowCompass']/@width">520</set>
+	
+	<!--Adjusted colors of the compass backgrounds.-->
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='0']/@color">0,0,0,255</set>	
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='0']/@width">456</set>
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='0']/@pos">32,0</set>
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='1']/@color">120,120,120,255</set>	
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='1']/@width">450</set>	
+		<set xpath="/windows/window[@name='windowCompass']/sprite[@depth='1']/@pos">35,-3</set>	
+
+	<!--Adjusted the actual compass and its rotational stats.-->
+		<set xpath="/windows/window[@name='windowCompass']/texture/@width">450</set>
+		<set xpath="/windows/window[@name='windowCompass']/texture/@rect_size">0.35,1</set>
+		<set xpath="/windows/window[@name='windowCompass']/texture/@rect_offset">{#compass_rotation / 360 + 0.067 - 0.18},0</set>
+		<set xpath="/windows/window[@name='windowCompass']/texture/@pos">35,-12</set>			
+	
+	<!--Added a center mark on the compass.-->
+		<append xpath="/windows/window[@name='windowCompass']">
+			<label depth="20" name="TextContent" pos="69,5" width="380" height="60" text="I" font_size="60" color="22,22,22,235" justify="center"/>
+		</append>
+
+	<!--Removed original Day and Time set-up.-->
+		<remove xpath="/windows/window[@name='windowCompass']/sprite[@pos='240,-60']"/>
+		
+	<!--Recreated Day and Time seperately with backgrounds.-->
+		<append xpath="/windows/window[@name='windowCompass']">
+			<!--Day and Time-->		
+			<rect name="hud" pos="-150,-4" rows="1" cols="1" width="250" >
+					<sprite pos="0,6" name="Background" sprite="ui_game_header_fill" color="0,0,0,225" foregroundlayer="true" height="46" width="170" type="sliced" />
+					
+					<label depth="3" text="{daytitle}" width="50" font_size="20" justify="center" pos="100,2" height="28" visible="{showtime}"/>
+					<label depth="3" name="daycounter" text="[{daycolor}]{day}" width="50" font_size="20" justify="center" pos="100,-20" height="28" visible="{showtime}"/>
+					
+			
+			</rect>	
+				<rect name="nightDay" controller="PlayerStats, EnhancedAGF" pos="590,0">	<!-- -120,0 -->		
+					<sprite depth="8" name="Night" color="210,235,52" sprite="ui_game_symbol_twitch_special" width="40" height="40"  visible="{PlayerIsNight}" tooltip_key="Night" />
+					<sprite depth="8" name="Day" color="230,138,18" sprite="ui_game_symbol_hot" width="40" height="40"  visible="{PlayerIsDay}" tooltip_key="Day" />							
+				</rect>
+			<rect name="hud2" pos="496,-4" rows="1" cols="1" width="250">
+					<sprite pos="0,6" name="Background" sprite="ui_game_header_fill" color="0,0,0,225" foregroundlayer="true" height="46" width="170" type="sliced" />
+					
+					<label depth="3" text="{# localization('agfTime')}" width="85" font_size="20" justify="center" pos="0,2" height="28" visible="{showtime}"/>
+					<label depth="3" text="[DECEA3]{time}" width="85" font_size="20" justify="center" pos="0,-20" height="28" visible="{showtime}"/>
+		
+				<!-- 90,2 -->	<label depth="3" pos="-620,2" 	 height="28" width="60"  text="{# localization('xuifOutdoor')}" font_size="20" justify="center"  visible="{showtime}"/>
+				<!-- 90,-20 -->	<label depth="2" pos="-620,-20" 	 height="28" width="60"  text=" [{outsidetempcolor}]{outsidetemp}[-]" font_size="20"  upper_case="true"   justify="center" visible="{showtime}"/>
+			
+
+			</rect>	
+		</append>
+		
+		
+
+
+	<!--Removing Original Toolbelt and adding the new one. Removing in this case works well for overhauls.-->	
+	<remove xpath="/windows/window[@name='windowToolbelt']"/>
+	<remove xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud']/rect[@stat_type='Stamina']"/>	
+	<remove xpath="/windows/window[@name='HUDLeftStatBars']/rect[@name='hud']/rect[@stat_type='Health']"/>	
+	<set xpath="/windows/window[@name='HUDLeftStatBars']/rect[@pos='9,156']/@pos">9,56</set>
+	<set xpath="/windows/window[@name='HUDLeftStatBars']/rect[@pos='90,132']/@pos">90,32</set>
+	<set xpath="/windows/window[@name='windowEntering']/@anchor">RightTop</set>
+	<set xpath="/windows/window[@name='windowEntering']/rect/@pos">-435,0</set>
+	<remove xpath="/windows/window[@name='windowEntering']/rect/grid"/>
+	<insertbefore xpath="/windows/window[@name='windowEntering']/rect/label[@name='TextContent']">
+		<sprite depth="1" name="backgroundMain" sprite="menu_empty3px" color="[darkestGrey]" type="sliced" fillcenter="true" width="340" height="85"/>
+	</insertbefore>
+	
+	<!-- Split Doom HUD: ToolbeltWindow = slots/XP only. Stat bars live in HUDCenterStatBars (no cursor_area).
+	     Combined ToolbeltWindow+HUDStatBars was locking Player action set / ESC on v3. -->
+	<append xpath="/windows">
+		<window name="windowToolbelt" width="340" height="120" depth="5" anchor="CenterBottom" pos="-170,120" controller="ToolbeltWindow" cursor_area="true" xp_fill_speed="2.5">
+			<rect>
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" snap="false" gamepad_selectable="false"/>
+				<rect pos="2,-4" controller="Toolbelt">
+					<grid depth="10" name="inventory" rows="2" cols="6" pos="0,0" cell_width="56" cell_height="56" repeat_content="true">
+						<item_stackAGF name="0" cell_size="56"/>
+					</grid>
+					<button depth="3" name="btnClearInventory1" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="360,-32" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}" />
+					<grid depth="10" name="inventory2" rows="1" cols="12" pos="0,82" cell_width="56" cell_height="56" repeat_content="true" visible="{secondrow}">
+						<item_stackAGF name="0" cell_size="56"/>
+					</grid>
+					<button depth="3" name="btnClearInventory2" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="360,50" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{# creativewindowopen and secondrow}" />
+				</rect>
+				<rect name="agf12slots">
+					<sprite depth="19" pos="2,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="2,-5" width="16" height="16" text="[FF6400]1" font_size="14" justify="center"/>
+					<sprite depth="19" pos="58,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="58,-5" width="16" height="16" text="[FF6400]2" font_size="14" justify="center"/>
+					<sprite depth="19" pos="114,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="114,-5" width="16" height="16" text="[FF6400]3" font_size="14" justify="center"/>
+					<sprite depth="19" pos="170,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="170,-5" width="16" height="16" text="[FF6400]4" font_size="14" justify="center"/>
+					<sprite depth="19" pos="226,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="226,-5" width="16" height="16" text="[FF6400]5" font_size="14" justify="center"/>
+					<sprite depth="19" pos="282,-3" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="282,-5" width="16" height="16" text="[FF6400]6" font_size="14" justify="center"/>
+					<sprite depth="19" pos="2,-58" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="2,-61" width="16" height="16" text="[FF6400]7" font_size="14" justify="center"/>
+					<sprite depth="19" pos="58,-59" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="58,-61" width="16" height="16" text="[FF6400]8" font_size="14" justify="center"/>
+					<sprite depth="19" pos="114,-59" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="114,-61" width="16" height="16" text="[FF6400]9" font_size="14" justify="center"/>
+					<sprite depth="19" pos="170,-59" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="170,-61" width="16" height="16" text="[FF6400]0" font_size="14" justify="center"/>
+					<sprite depth="19" pos="226,-59" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="223,-57" width="20" height="20" text="[FF6400]-" font_size="20" justify="center"/>
+					<sprite depth="19" pos="282,-59" height="16" width="16" color="0,0,0,250" type="sliced" foregroundlayer="true" sprite="menu_empty3px"/>
+					<label depth="20" name="slot#" pos="281,-60" width="16" height="16" text="[FF6400]=" font_size="16" justify="center"/>
+				</rect>
+				<sprite depth="1" pos="0,10" height="12" width="340" color="0,0,0,140" sprite="menu_empty2px" globalopacity="false" type="sliced" />
+				<sprite depth="9" pos="0,10" height="12" width="340" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
+				<sprite depth="4" pos="1,10" height="12" width="338" color="{xpcolor}" globalopacity="false" type="filled" fill="{xp}" />
+			</rect>
+		</window>
+
+		<window name="HUDCenterStatBars" width="1150" height="120" depth="4" anchor="CenterBottom" pos="-540,120" cursor_area="false">
+			<rect width="1150" height="120">
+				<!-- Health -->
+				<rect width="280" height="58" pos="0,0" controller="HUDStatBar" stat_type="Health" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite name="DoomGuyFace" depth="10" atlas="ItemIconAtlas" sprite="{DoomGuyIcon}" size="92,112" pos="279,-2" foregroundlayer="true" controller="PlayerStats, EnhancedAGF"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="55,55,55,128" width="278" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" pos="1,0" color="255,0,0,255" width="278" type="filled" fill="{statfill}" />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="stimpack" size="55,55" pos="26,-29" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="44,-29" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="234" height="35"/>
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+				<!-- Armor (stamina bar) -->
+				<rect width="280" height="58" pos="0,-58" controller="HUDStatBar" stat_type="Stamina" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="55,55,55,128" width="278" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" pos="1,0" color="255,100,0,255" width="278" type="filled" fill="{statfill}" />
+					<sprite depth="6" visible="{cvar(armourType:true;false;false)}" name="Icon" atlas="{staticonatlas|once}" sprite="SecurityArmour" size="45,45" pos="26,-29" pivot="center" foregroundlayer="true"/>
+					<sprite depth="6" visible="{cvar(armourTypeBlue:true;false;false)}" name="Icon" atlas="{staticonatlas|once}" sprite="MegaArmour" size="45,45" pos="26,-29" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="44,-29" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="234" height="35"/>
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+				<!-- Food -->
+				<rect width="280" height="58" pos="707,0" controller="HUDStatBar" stat_type="Food" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="279" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" pos="1,0" color="0,255,54,128" width="279" type="filled" fill="{statfill}" />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="foodSteakAndPotato" size="45,45" pos="26,-29" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="44,-29" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="234" height="35"/>
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+				<!-- Water -->
+				<rect width="280" height="58" pos="707,-58" controller="HUDStatBar" stat_type="Water" visible="{statvisible}">
+					<sprite depth="1" name="border" color="0,0,0,128" type="sliced"/>
+					<sprite depth="2" name="background" color="0,0,0,140" type="sliced" />
+					<filledsprite depth="3" name="background" color="110,110,110,128" width="279" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="5" name="BarContent" pos="1,0" color="0,200,255,180" width="279" type="filled" fill="{statfill}" />
+					<sprite depth="6" name="Icon" atlas="{staticonatlas|once}" sprite="drinkJarBoiledWater" size="45,45" pos="26,-29" pivot="center" foregroundlayer="true"/>
+					<label depth="7" name="TextContent" pos="44,-29" font_size="32" color="[white]" justify="center" pivot="left" text="{statcurrentwithmax}" width="234" height="35"/>
+					<sprite depth="8" name="border" color="0,0,0,255" type="sliced" fillcenter="false"/>
+					<filledsprite depth="8" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+					<filledsprite depth="3" name="background" color="0,0,0,255" width="280" fillcenter="false" type="filled" fill="{statmodifiedmax}" />
+				</rect>
+				<!-- Ammo -->
+				<rect controller="PlayerStats, EnhancedAGF" name="ammoHud" pos="996,-28" height="57" width="150">
+					<sprite depth="2" name="border" color="0,0,0,255" type="sliced" fillcenter="false" visible="{PlayerCurrentAmmoVisible}"/>
+					<sprite depth="1" name="background" color="64,64,64,200" type="sliced" visible="{PlayerCurrentAmmoVisible}"/>
+					<sprite depth="3" name="ammoIcon" pos="105,-8" width="40" height="40" atlas="itemiconatlas" sprite="{PlayerCurrentAmmoIcon}"/>
+					<label depth="3" name="ammoCount" pos="-2,-12" width="110" height="40" justify="center" text="{PlayerCurrentAmmoCount}" font_size="34"/>
+				</rect>
+			</rect>
+		</window>
+	</append>	
+	
+	<set xpath="/windows/window[@name='toolTipPopups']/@pos">0,136</set>
+	<!-- <set xpath="/windows/window[@name='windowCraftingQueue']/rect/@width">378</set> -->
+	<!-- <set xpath="/windows/window[@name='windowCraftingQueue']/@height">59</set> -->
+	<!-- 4 crafting slots (v3: avoid XML 5th-slot expand; that needs DLL and can error) -->
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@rows">1</set>
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@cols">4</set>
+	<set xpath="/windows/window[@name='windowCraftingQueue']/rect/@pos">9,120</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[2]/grid/@rows">3</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/sprite[@height='153']/@height">228</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/@height">272</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[2]/@height">228</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[3]/@height">222</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[3]/grid/@rows">8</set>
+	<!-- <set xpath="/windows/window[@name='windowDewCollector']/rect/grid/@rows">2</set> -->
+
+
+
+<!--LOCKABLE SLOTS CHANGES, on backpack-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect/rect/button[@name='btnToggleLockMode']/@style">icon32px, press, agfLock</set>
+
+
+
+<!--Backpack Adjustments-->
+
+	<!--Raises the Backpack Inventory up a bit-->
+	<setattribute xpath="/windows/window[@name='windowBackpack']/rect[@name='header']" name="pos">0,6</setattribute>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/@pos">0,-37</set>
+	
+	<!--the background of the Backpack Window-->
+	<set xpath="/windows/window[@name='windowBackpack']/@width">675</set><!--grid cell_width X # of columns + 3-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/sprite[@name='backgroundMain']/@width">675</set><!--matches overall width-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/sprite[@name='backgroundMain']/@height">339</set><!--grid cell_height X # of rows + 1-->
+	
+	<!--The cells of the backpack-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@cols">12</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@rows">6</set>
+	
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@cell_width">56</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/@cell_height">56</set>			
+	
+	<!--Repositioning the header to match-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='header']/rect/@pos">338,0</set><!--half of overall width-->
+	
+	<!--Centering the backpack header icons-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='header']/rect/@pos">274,0</set>
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='header']/rect/button[@name='btnClearInventory']/@pos">200,-22</set>
+	
+	<!--Positioning of the Cost Icon to the widened header-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='header']/label[@width='80']/@pos">560,-10 </set><!--width - 134-->
+	<set xpath="/windows/window[@name='windowBackpack']/rect[@name='header']/sprite[@name='costIcon']/@pos">646,-10 </set><!--width - 29-->
+<!-- <remove xpath="/windows/window[@name='windowBackpack']"/>
+<append xpath="/windows">
+<window name="windowBackpack" width="675" height="349" panel="Center" controller="BackpackWindow" cursor_area="true">
+
+    <panel name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header" pos="0,6">
+
+      <sprite depth="3" name="windowIcon" style="icon32px" pivot="center" pos="21,-21" sprite="ui_game_symbol_backpack" />
+      <label depth="3" name="windowName" pos="42,-6" width="180" height="32" text="INVENTORY" text_key="xuiInventory" font_size="32" />
+      <rect pos="274,0" width="300" controller="ContainerStandardControls" move_start_bottom_left="true">
+
+        <button depth="3" name="btnClearInventory" sprite="ui_game_symbol_trash" tooltip_key="lblClearInventory" pos="200,-22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" visible="{creativewindowopen}" defaultcolor="[iconColor]" hovercolor="[hoverColor]" selectedcolor="[selectedColor]">
+
+        </button>
+        <button depth="3" name="btnToggleLockMode" sprite="ui_game_symbol_lock" tooltip_key="xuiStashLockModeToggle" pos="0, -22" style="icon32px, press, agfLock" pivot="center" sound="[paging_click]" selected="{userlockmode}">
+
+        </button>
+        <button depth="3" name="btnSort" sprite="ui_game_symbol_sort" tooltip_key="lblSortContainer" pos="50, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+        <rect pos="0, 0" visible="{lootingorvehiclestorage}">
+          <button depth="3" name="btnMoveFillAndSmart" sprite="ui_game_symbol_store_similar_down" tooltip_key="lblStashFillAndSmart" pos="100, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+          <button depth="3" name="btnMoveAll" sprite="ui_game_symbol_store_all_down" tooltip_key="lblStashAll" pos="150, -22" style="icon32px, press, hover" pivot="center" sound="[paging_click]" />
+
+        </rect>
+      </rect>
+      <label depth="2" pos="560,-10" width="80" height="28" text="{currencyamount}" justify="right">
+
+      </label>
+      <sprite depth="4" name="costIcon" sprite="ui_game_symbol_coin" size="24,24" pos="646,-10" color="[white]" foregroundlayer="true">
+
+      </sprite>
+    </panel>
+    <panel name="content" width="100%" height="303" depth="0" pos="0,-37" disableautobackground="true">
+
+      <sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,0" width="675" height="283" color="[black]" type="sliced" fillcenter="false" on_press="true" gamepad_selectable="false">
+      </sprite>
+      <grid depth="10" visible="{cvar($backpackSizeZero:true;false;false)}" name="inventory" rows="5" cols="8" pos="3,-3" cell_width="56" cell_height="56" controller="Backpack" repeat_content="true">
+        <item_stackAGF name="0">
+        </item_stackAGF>
+      </grid>
+	  <grid depth="10" visible="{cvar($backpackSizeOne:true;false;false)}" name="inventory" rows="5" cols="9" pos="3,-3" cell_width="56" cell_height="56" controller="Backpack" repeat_content="true">
+        <item_stackAGF name="0">
+        </item_stackAGF>
+      </grid>
+	  <grid depth="10" visible="{cvar($backpackSizeTwo:true;false;false)}" name="inventory" rows="5" cols="10" pos="3,-3" cell_width="56" cell_height="56" controller="Backpack" repeat_content="true">
+        <item_stackAGF name="0">
+        </item_stackAGF>
+      </grid>
+	  <grid depth="10" visible="{cvar($backpackSizeThree:true;false;false)}" name="inventory" rows="5" cols="11" pos="3,-3" cell_width="56" cell_height="56" controller="Backpack" repeat_content="true">
+        <item_stackAGF name="0">
+        </item_stackAGF>
+      </grid>
+	  <grid depth="10" visible="{cvar($backpackSizeFour:true;false;false)}" name="inventory" rows="5" cols="12" pos="3,-3" cell_width="56" cell_height="56" controller="Backpack" repeat_content="true">
+        <item_stackAGF name="0">
+        </item_stackAGF>
+      </grid>
+    </panel>
+</window>
+</append> -->
+
+<!--Storage Settings, this is REQUIRED-->
+	<!--Allows for larger storages!!!-->
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@rows">15</set>
+    <set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cols">15</set>		
+	
+	
+
+<!--Inventory Updates-->
+	<!--Utilizing a different stack style but SPECIFICALLY for backpack only-->
+	<remove xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']/item_stack"></remove>
+	<append xpath="/windows/window[@name='windowBackpack']/rect[@name='content']/grid[@name='inventory']">
+       <item_stackAGF name="0" cell_size="56"/>
+	</append>	
+	
+	<!--Utilizing a different stack style but SPECIFICALLY for Loot Containers Only-->
+	<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cell_width">56</set>
+	<set xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/@cell_height">56</set>	
+	<removeattribute xpath="/windows/window[@name='windowLooting']/rect/rect/@visible"/>
+	<set xpath="/windows/window[@name='windowLooting']/rect/label[@name='lootName']/@anchor_right">queue,1,-162</set>	
+	<remove xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']/item_stack"></remove>
+	<append xpath="/windows/window[@name='windowLooting']/rect[@name='content']/grid[@name='queue']">
+       <item_stackAGF name="0" cell_size="56"/>
+	</append>
+
+	<!-- Bag storage stacks (v3 HUDPlus / BackpackPlus pattern) -->
+	<remove xpath="/windows/window[@name='windowBagStorage']/grid[@name='queue']/item_stack"/>
+	<append xpath="/windows/window[@name='windowBagStorage']/grid[@name='queue']">
+		<item_stackAGF name="0" cell_size="67"/>
+	</append>
+	<set xpath="/windows/window[@name='windowBagStorage']/rect/rect/button[@name='btnToggleLockMode']/@style">icon32px, press, agfLock</set>
+
+	<!-- windowVehicleStorage does not exist in 7d2d v3 (storage is part of windowVehicle). Dead xpaths removed. -->
+
+<!--Adjustments to make the panel above the backpack match in width. Also requires edits in controls.xml.-->
+	<set xpath="/windows/window[@name='emptyInfoPanel']/@width">675</set>
+	<set xpath="/windows/window[@name='emptyInfoPanel']/rect[@name='contentCraftingInfo']/sprite[@depth='8']/@width">675</set>
+
+	<set xpath="/windows/window[@name='craftingInfoPanel']/@width">675</set>
+
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='searchControls']/@width">516</set>
+
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='description']/@width">515</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='description']/sprite/@width">525</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='description']/sprite/@height">302</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='description']/rect/label/@width">512</set>
+
+<!--	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='ingredients']/@width">519</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='ingredients']/grid/@width">519</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='ingredients']/grid/@height">230</set>
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/rect[@name='ingredients']/grid/@cell_width">519</set>-->
+
+	<set xpath="/windows/window[@name='craftingInfoPanel']/rect[@name='contentCraftingInfo']/sprite[@depth='5']/@width">675</set>
+
+
+
+	<set xpath="/windows/window[@name='itemInfoPanel']/@width">675</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='header']/label[@pos='575,-8']/@pos">647,-8</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='header']/sprite[@name='costIcon']/@pos">649,-10</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/sprite[@depth='5']/@width">675</set>
+	
+	<remove xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='3,-133']/grid/item_action_entry"/>
+	<append xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='3,-133']/grid">
+		<item_action_entry7 />
+	</append>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='3,-133']/grid/@rows">7</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='3,-133']/grid/@cell_height">30</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@pos='3,-133']/@pos">3,-132</set>
+	
+
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='searchControls']/@width">520</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='searchControls']/sprite/@width">521</set>
+
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/@width">519</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/sprite/@width">525</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/label/@width">512</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/rect/@width">525</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/rect/label/@width">512</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@name='description']/rect/rect/label/@width">502</set>
+	
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@pos">154,-271</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cell_width">74</set>
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/grid[@name='parts']/@cols">7</set>
+	
+		<!--the comparing notice to fit new size-->
+	<set xpath="/windows/window[@name='itemInfoPanel']/rect[@name='contentInfo']/rect[@visible='{iscomparing}']/@width">521</set>	
+
+
+<!--adjustments to make the active buff window match the width of the new backpack-->
+	<set xpath="/windows/window[@name='buffInfoPanel']/@width">675</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/sprite[@width='603']/@width">675</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/@width">520</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/sprite[@name='backgroundMain']/@width">525</set>
+	<set xpath="/windows/window[@name='buffInfoPanel']/rect/rect/rect/rect/label/@width">512</set>
+	
+
+
+
+<remove xpath="/windows/window[@name='windowCraftingList']"/>
+<append xpath="/windows">
+	<window name="windowCraftingList"  width="397" height="688" controller="CraftingListInfo" panel="Left" cursor_area="true" >
+
+		<rect name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite pos="4,-5" depth="2" name="windowIcon" style="icon32px" sprite="Craft_Icon_Basics"/>
+			<label style="header.name" text="basics" text_key="xuiBasics" />
+
+			<!-- <label pos="387, -6" depth="2" name="unlockedCount" width="64" height="32" text="0/65" font_size="32" color="[lightGrey]" justify="right" pivot="topright"/> -->
+			<!-- <sprite pos="328, -5" depth="2" name="unlockedIcon" style="icon32px" sprite="ui_game_symbol_book" color="[lightGrey]" pivot="topright"/> -->
+		</rect>
+
+		<rect name="content" height="650" depth="1" pos="0,-43" on_scroll="true" disableautobackground="true">
+
+			<rect depth="2" name="categorySelector" width="390" height="44" pos="3,-6">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[mediumGrey]" type="sliced" />
+				<grid name="categories" pos="23,-21" rows="1" cols="9" width="390" height="43" cell_width="43" cell_height="43" repeat_content="true" controller="CategoryList">
+					<category_icon />
+				</grid>
+			</rect>
+
+			<rect depth="3" name="searchControls" width="390" height="44" pos="3,-52">
+				<sprite name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="396" height="49" color="[black]" type="sliced" fillcenter="false" />
+				<sprite color="[darkGrey]" type="sliced" />
+				<button depth="4" name="favorites" style="icon30px, press" pos="18,-22" sprite="server_favorite" pivot="center" sound="[paging_click]" tooltip="Favorites" tooltip_key="lblFavorites" collider_scale="1.5" />
+
+				<rect pos="104,0" width="200" disableautobackground="true">
+					<sprite depth="4" name="searchIcon" style="icon30px" pos="0,-22" sprite="ui_game_symbol_search" pivot="center"/>
+					<textfield depth="5" name="searchInput" pos="22,-7" width="140" height="30" virtual_keyboard_prompt="vkPromptSearchTerm" search_field="true" close_group_on_tab="true" clear_button="true" />
+				</rect>
+
+				<rect pos="286,0" width="104" height="43" disableautobackground="true">
+					<pager name="pager" pos="4,-6" contents_parent="content"/>
+				</rect>
+			</rect>
+
+			<grid name="recipes" rows="5" cols="3" pos="3,-98" width="390" height="452" cell_width="132" cell_height="90" controller="RecipeList" repeat_content="true" arrangement="horizontal" >
+				<recipe_entryAGF name="0"/>
+			</grid>
+		</rect>
+	</window>
+</append>
+
+
+<remove xpath="/windows/window[@name='craftingInfoPanel']"/>
+<append xpath="/windows">
+	<window name="craftingInfoPanel" width="676" height="392" controller="CraftingInfoWindow" style="crafting.info.window" panel="Center" cursor_area="true" >
+		<rect name="header" height="43" depth="1" backgroundspritename="ui_game_panel_header">
+			<sprite depth="2" name="windowIcon" style="icon32px" pos="4,-5" sprite="{itemgroupicon}"/>
+			<label style="header.name" text="{itemname}" />
+
+			<rect pos="350,0" name="requiredToolOverlay">
+				<sprite size="24,24" depth="2" name="requiredToolCheckmark" pos="0,-8" sprite="ui_game_symbol_check" color="[red]"/>
+				<label depth="2" pos="35,-8" name="requiredToolText" width="200" height="32" text="Required" text_key="xuiRequired" font_size="32" upper_case="true" justify="left"/>
+			</rect>
+		</rect>
+
+		<rect name="contentCraftingInfo" height="381" depth="1" pos="0,-46">
+			<sprite depth="5" name="backgroundMain" sprite="menu_empty3px" width="678" height="348" color="[black]" type="sliced" fillcenter="false" />
+			<rect depth="1" pos="3,-3" name="preview" width="147" height="169">
+				<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="-3,3" width="153" height="175" color="[black]" type="sliced" fillcenter="false" />
+				<sprite depth="1" color="[lightBrown]" type="sliced" globalopacity="true" />
+				<sprite depth="12" name="itemPreview" width="110" height="110" atlas="ItemIconAtlas" sprite="{itemicon}" color="{itemicontint}" pos="74,-58" pivot="center" foregroundlayer="true"/>
+				<sprite depth="8" name="itemtypeicon" width="32" height="32" sprite="ui_game_symbol_{itemtypeicon}" pos="2,-2" foregroundlayer="true" visible="{hasitemtypeicon}" color="{itemtypeicontint}" />
+				<sprite depth="3" name="durabilityBackground" height="20" width="85" color="48,48,48,255" type="sliced" pos="31, -113" visible="{hasdurability}"/>
+				<filledsprite depth="4" name="durabilityBar" height="20" width="85" color="{durabilitycolor}" type="filled" pos="31, -113" fill="{durabilityfill}" visible="{hasdurability}" />
+				<label depth="12" name="durabilityValue" pos="0,-104" width="145" height="32" text="{durabilitytext}" font_size="30" justify="{durabilityjustify}" effect="outline" visible="false"/>
+
+				<sprite depth="3" name="clockIcon" size="24,24" sprite="ui_game_symbol_clock" pos="25, -142" type="sliced" color="[iconColor]" foregroundlayer="true" />
+				<!-- <label depth="3" name="TimeLabel" style="icon30px" pos="53, -119" text="TIME" text_key="xuiTime" font_size="22" /> -->
+				<label depth="3" name="craftingTime" width="100" height="32" pos="55, -143" text="{craftingtime}" font_size="26" color="[beige]"/>
+				<button depth="12" name="addQualityButton" style="icon22px, press" pos="132,-123" sprite="ui_game_symbol_arrow_menu" flip="Horizontally" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enableaddquality}" />
+				<button depth="12" name="subtractQualityButton" style="icon22px, press" pos="14,-123" sprite="ui_game_symbol_arrow_menu" pivot="center" sound="[paging_click]" visible="{hasdurability}" disabledcolor="[lightGrey]" enabled="{enablesubtractquality}" />
+			</rect>
+
+			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" pos="0,-174" width="153" height="173" color="[black]" type="sliced" fillcenter="false" />
+			<grid name="itemActions" rows="4" cols="1" pos="3,-176" width="148" cell_width="147" cell_height="42" controller="ItemActionList">
+				<rect depth="1" name="actions" width="147" height="225">
+					<sprite color="[mediumGrey]" type="sliced" height="45" />
+					<rect name="recipeCraftCountControl" width="120" height="210" pos="27,0" controller="RecipeCraftCount">
+						<button depth="2" name="countDown" style="icon30px, press, held" pos="-10,-20" sprite="ui_game_symbol_arrow_left" pivot="center" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enablecountdown}"/>
+						<textfield name="count_input" depth="2" pos="7,-6" width="40" height="28" character_limit="4" validation="integer" virtual_keyboard_prompt="vkPromptCount" />
+						<button depth="2" name="countUp" style="icon30px, press, held" pos="64,-20" sprite="ui_game_symbol_arrow_right" pivot="center" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enablecountup}"/>
+						<button depth="2" name="countMax" style="icon30px, press" pos="96,-20" sprite="ui_game_symbol_arrow_max" pivot="center" sound="[paging_click]" disabledcolor="[lightGrey]" enabled="{enablecountup}"/>
+					</rect>
+				</rect>
+				<item_action_entry />
+				<item_action_entry />
+				<item_action_entry />
+				<!-- <sprite depth="3" name="fillerBackground" height="22" color="[mediumGrey]" type="sliced"/> -->
+			</grid>
+
+			<rect depth="2" name="searchControls" width="526" height="43" pos="152,0">
+				<sprite depth="1" color="[mediumGrey]" type="sliced" globalopacity="true" />
+				<button depth="4" name="ingredientsButton" style="icon30px, press" pos="22,-22" sprite="ui_game_symbol_resource" pivot="center" tooltip_key="ingredient" sound="[paging_click]" selected="true" />
+				<button depth="4" name="descriptionButton" style="icon30px, press" pos="65,-22" sprite="ui_game_symbol_book" pivot="center" tooltip_key="lblBookDesc" sound="[paging_click]" />
+				<button depth="4" name="showunlocksButton" style="icon30px, press" pos="108,-22" sprite="ui_game_symbol_unlock" pivot="center" tooltip_key="xuiSkillUnlocks" sound="[paging_click]" visible="{showunlockedbytab}" />
+			</rect>
+
+
+			<rect depth="1" pos="153,-43" name="description" width="525" height="328" visible="{showdescription}">
+
+				<sprite depth="3" name="backgroundMain" sprite="menu_empty3px" pos="-3,0" width="528" height="303" color="[black]" type="sliced" fillcenter="false" />
+
+				<rect visible="true">
+					<sprite depth="1" color="[darkGrey]" type="sliced" globalopacity="true" height="301" />
+					<label depth="3" name="descriptionText" pos="6,-5" text="{itemdescription}"  width="440" height="294" parse_actions="true" />
+				</rect>
+
+			</rect>
+
+			<rect depth="1" pos="153,-45" name="ingredients" width="447" height="264" visible="{showingredients}">
+				<grid rows="2" cols="4" width="447" height="231" cell_width="132" cell_height="153" controller="IngredientList" arrangement="horizontal">
+					<ingredient_entryAGF name="1"/>
+					<ingredient_entryAGF name="2"/>
+					<ingredient_entryAGF name="3"/>
+					<ingredient_entryAGF name="4"/>
+					<ingredient_entryAGF name="5"/>
+					<ingredient_entryAGF name="6"/>
+					<ingredient_entryAGF name="7"/>
+					<ingredient_entryAGF name="8"/>
+				</grid>
+			</rect>
+
+			<rect depth="1" pos="153,-45" name="unlockedBy" width="528" height="264" visible="{showunlockedby}">
+				<grid rows="6" width="528" height="231" cell_height="50" cell_width="528" controller="UnlockByList" arrangement="vertical">
+					<unlocked_by_header name="0"/>
+					<unlocked_by_row name="1"/>
+					<unlocked_by_row name="2"/>
+					<unlocked_by_row name="3"/>
+					<unlocked_by_row name="4"/>
+					<unlocked_by_row name="5"/>
+				</grid>
+			</rect>
+		</rect>
+	</window>
+</append>
+
+
+
+
+
+
+
+
+
+	<!-- <set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/panel/rect[@pos='3,-3']/grid/@width">81</set>
+    <set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/panel/rect[@pos='3,-3']/grid/@cols">1</set>
+    <set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/panel/rect[@pos='3,-3']/grid/@cell_width">81</set>
+    <set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/panel/rect[@pos='3,-3']/grid/@cell_height">81</set> -->
+	
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/@cols">1</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/equipment_stack_sdcs[@slot='BiomeBadge']/@empty_sprite">SecurityArmour</set>
+	<set xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/equipment_stack_sdcs[@slot='BiomeBadge']/@empty_tooltip">ArmourSlot</set>
+    <remove xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/equipment_stack_sdcs[@slot='BiomeBadge2']"/>
+    <remove xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/equipment_stack_sdcs[@slot='BiomeBadge3']"/>
+    <remove xpath="/windows/window[@name='CharacterFrameWindow']/rect[2]/rect[2]/rect[3]/rect/grid/equipment_stack_sdcs[@slot='BiomeBadge4']"/>
+
+	<remove xpath="/windows/window[@name='windowTargetBar']"/>
+	<insertbefore xpath="/windows/window[@name='windowEntering']">
+	<window name="windowTargetBar" controller="TargetBar" anchor="CenterTop" visibility="always">
+	
+		<rect pos="-200,-85" width="400" height="0" visible="{cvar($hpBarNameVisible:true;false;false)}" >
+			<sprite depth="1" name="border" color="0,0,0,100" type="sliced" width="0" globalopacity="false"/>
+			<filledsprite depth="2" name="BarContent" type="filled" color="200,0,0,180" width="0" fill="{fill}" globalopacity="false"/>
+			<label depth="3" name="TextContent" pos="9,-4" font_size="45" color="0,200,255,255" justify="center" pivot="topleft" text="{name}" height="36" effect="Outline8" effect_color="0,0,0,255" effect_distance="3,3"/>
+		</rect>
+	
+		<rect pos="-267,-85" width="725" height="25" visible="{cvar($hpBarFullVisible:true;false;false)}" >
+			<sprite pos="60,-45" width="448" depth="1" name="border" color="0,0,0,255" type="sliced"  globalopacity="false"/>
+			<filledsprite pos="60,-45" width="448" depth="2" name="BarContent" type="filled" fill="{fill}" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar_HP" />
+			<!-- <sprite depth="3" name="Icon" size="84,84" pos="45,-42" pivot="center" sprite="{boss_sprite}" globalopacity="false" /> -->
+			<sprite depth="4" name="overlay" width="517" height="84" type="sliced" globalopacity="false" sprite="ui_game_symbol_twitch_boss_bar" />
+			
+			<label depth="5" name="TextContent" pos="100,-13" font_size="35" color="0,200,255,255" justify="left" pivot="topleft" text="{name}   {currentwithmax}" height="36" effect="Outline8" effect_color="0,0,0,255" effect_distance="3,3"/>
+			<!-- <label depth="5" name="MinionCount" pos="482,-13" font_size="30" color="[white]" justify="left" pivot="topleft" text="" height="30" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" /> -->
+		</rect>	
+	</window>
+	</insertbefore>
+
+
+
+
+</configs>
+
