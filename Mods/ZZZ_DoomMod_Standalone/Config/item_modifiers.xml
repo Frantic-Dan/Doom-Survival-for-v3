@@ -2158,11 +2158,12 @@
 </insertafter>
 <set xpath="/item_modifiers/item_modifier[@name='modVehicleStorage']/property[@name='MaxModsAllowed']/@value">3</set>
 
-<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/effect_group/passive_effect[@name='HyperthermalResist']/@value">1</set>
-<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HypothermalResist']/@value">4</set>
-<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HyperthermalResist']/@value">2</set>
-<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HypothermalResist']/@value">6</set>
-<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HyperthermalResist']/@value">3</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/effect_group/passive_effect[@name='HypothermalResist']/@value">1.2,1.6,2.0,2.4,2.8,3.2</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/effect_group/passive_effect[@name='HyperthermalResist']/@value">0.6,0.8,1.0,1.2,1.4,1.6</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HypothermalResist']/@value">3.6,4.0,4.4,4.8,5.2,5.6</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT2']/effect_group/passive_effect[@name='HyperthermalResist']/@value">1.8,2.0,2.2,2.4,2.6,2.8</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HypothermalResist']/@value">6.0,6.4,6.8,7.2,7.6,8.0</set>
+<set xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT3']/effect_group/passive_effect[@name='HyperthermalResist']/@value">3.0,3.2,3.4,3.6,3.8,4</set>
 
 <insertafter xpath="/item_modifiers/item_modifier[@name='modArmorInsulatedLinerT1']/property[@name='Material']">
 	<property name="Weight" value="27"/>
@@ -2178,6 +2179,15 @@
 	<property name="Weight" value="67"/>
 	<property name="ScrapTimeOverride" value="10.0"/>
 </insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modArmorHelmetLight']/effect_group/requirement[@name='IsEquipped']">
+	<requirement name="!HasBuff" buff="doomBuffInLevel"/>
+</insertafter>
+
+<insertafter xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']/effect_group/requirement[@name='HoldingItemHasTags']">
+	<requirement name="!HasBuff" buff="doomBuffInLevel"/>
+</insertafter>
+
 
 <append xpath="/item_modifiers">
 

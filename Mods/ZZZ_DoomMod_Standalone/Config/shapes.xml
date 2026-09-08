@@ -2,5 +2,8 @@
 
 <set xpath="/shapes/shape[@name='arrowSlit']/property[@name='Collide']/@value">movement,melee,rocket</set>
 <set xpath="/shapes/shape[@name='arrowSlitHalf']/property[@name='Collide']/@value">movement,melee,rocket</set>
+<set xpath="/shapes/shape[@name='arrowSlitHalfCross']/property[@name='Collide']/@value">movement,melee,rocket</set>
+<set xpath="/shapes/shape[@name='arrowSlitHalfTee']/property[@name='Collide']/@value">movement,melee,rocket</set>
+<set xpath="/shapes/shape[@name='arrowSlitHalfCorner']/property[@name='Collide']/@value">movement,melee,rocket</set>
 
 </configs>

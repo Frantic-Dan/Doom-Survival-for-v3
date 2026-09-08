@@ -977,11 +977,48 @@
 <set xpath="/items/item[contains (@name,'resourceCrop')]/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//property[@name='EconomicValue']/@value">10000</set>
 <set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//effect_group/triggered_effect[3]/@value">0</set>
-<set xpath="/items/item[@name='drugHealthBar']//effect_group/display_value[@name='dMaxHealthBonus']/@value">50</set>
+<!-- <set xpath="/items/item[@name='drugHealthBar']//effect_group/display_value[@name='dMaxHealthBonus']/@value">50</set>
 <set xpath="/items/item[@name='drugHealthBar']//effect_group/display_value[@name='dDuration']/@value">600</set>
 <set xpath="/items/item[@name='drugHealthBar']//effect_group/triggered_effect[1]/@value">603</set>
 <set xpath="/items/item[@name='drugHealthBar']//effect_group/triggered_effect[2]/@value">1803</set>
-<set xpath="/items/item[@name='drugHealthBar']//effect_group/triggered_effect[2]/requirement/@value">1803</set>
+<set xpath="/items/item[@name='drugHealthBar']//effect_group/triggered_effect[2]/requirement/@value">1803</set> -->
+
+<remove xpath="items/item[@name='drugHealthBar']"/>
+<insertafter xpath="/items/item[@name='drugHackers']">
+<item name="drugHealthBar">
+	<property name="Tags" value="medical,fitness" />
+    <property name="DisplayType" value="drugHealthBar"/>
+    <property name="HoldType" value="31" />
+    <property name="Meshfile" value="@:Other/Items/Food/parcelGenericPrefab.prefab" />
+    <property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab" />
+    <property name="Material" value="Morganic" />
+    <property name="EconomicValue" value="100" />
+    <property name="Stacknumber" value="10" />
+    <!-- STK loot -->
+    <property name="Group" value="Science,Medical" />
+	<property name="SoundPickup" value="drug_healthbar_grab"/>
+	<property name="SoundPlace" value="drug_healthbar_place"/>
+    <property class="Action0">
+      <property name="Class" value="Eat" />
+      <property name="Delay" value="1.0" />
+      <property name="Sound_start" value="player_eating" />
+	  <requirement name="StatCompareMax" stat="health" operation="GTE" value="100"/>
+    </property>
+	<effect_group tiered="false" name="Candy Tier 1">
+		<display_value name="dMaxHealthBonus" value="50"/>
+		<display_value name="dBuffResistance" value=".25"/>
+		<display_value name="dNaturalCritHealing" value="2"/>
+		<display_value name="dDuration" value="600"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugHealthBarDuration" operation="add" value="603"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffDrugHealthBarDuration" operation="set" value="1083">
+			<requirement name="CVarCompare" cvar="$buffDrugHealthBarDuration" operation="GT" value="1803"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDrugHealthBar"/>
+
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+</insertafter>
 <set xpath="/items/item[@name='foodShamSandwich']/effect_group/triggered_effect[1]/@value">10</set>
 <set xpath="/items/item[@name='foodShamSandwich']/effect_group/triggered_effect[2]/@value">-3</set>
 <set xpath="/items/item[@name='foodShamSandwich']/effect_group/display_value[1]/@value">-3</set>
@@ -1218,7 +1255,7 @@
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="500"/>
 </insertafter>
 <remove xpath="/items/item[@name='medicalSkillMagazine']/effect_group[3]/triggered_effect[@action='AddProgressionLevel']"/>
-<set xpath="/items/item[@name='medicalSkillMagazine']/property[@name='DescriptionKey']/@value">medicalSkillMagazineDM</set>
+<set xpath="/items/item[@name='medicalSkillMagazine']/property[@name='DescriptionKey']/@value">medicalSkillMagazineDescDM</set>
 <set xpath="/items/item[@name]/property[@name='UnlockedBy'][@value='craftingMedical']/@value">lbu_Medical</set>
 
 <set xpath="/items/item[@name='foodCanCatfood']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">15</set>
@@ -2060,6 +2097,7 @@
 	<property name="Stacknumber" value="100"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="CraftingIngredientTime" value="8"/>
+	<property name="TrackerIndexName" value="quest_snowberry"/>
 	<property name="SoundPickup" value="blueberries_grab"/>
 	<property name="SoundPlace" value="blueberries_place"/>
 	<property class="Action1">
@@ -7332,6 +7370,7 @@
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="BackpackFullAmmoDesc"/>
 	<property name="Material" value="Mcloth"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
@@ -7347,7 +7386,7 @@
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
 		<property name="Create_item" value="9mmBulletDM,ShotgunShellDM,CrossbowBoltDM,TurretAmmoDM,ammoGasCan,762mmBulletDM,RocketFragDM,PlasmaCellDM"/>
-		<property name="Create_item_count" value="10,2,4,20,60,15,1,10"/>
+		<property name="Create_item_count" value="15,2,4,20,60,15,1,10"/>
 	</property>
 </item>
 
@@ -9948,7 +9987,7 @@
 		<property name="Use_time" value="0"/>
 		<property name="Sound_start" value="close_garbage"/>
 		<property name="Create_item" value="resourceArrowHeadSteelAP,resourceScrapPolymers,resourceFeather"/>
-		<property name="Create_item_count" value="5,5,5"/>
+		<property name="Create_item_count" value="5,5,15"/>
 	</property>
 </item>
 
@@ -14942,7 +14981,7 @@
 	<property name="SoundPickup" value="shotgun_polymer_grab"/>
 	<property name="SoundPlace" value="shotgun_polymer_place"/>
 	<property class="Action0">
-		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="6"/>
+		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="5"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="3000"/>
 		<property class="HitSounds">
             <property name="Override0" value="organic" param1="fire"/>
@@ -15188,7 +15227,7 @@
 	<property name="SoundPickup" value="shotgun_polymer_grab"/>
 	<property name="SoundPlace" value="shotgun_polymer_place"/>
 	<property class="Action0">
-		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="6"/>
+		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="5"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="3000"/>
 		<property class="HitSounds">
             <property name="Override0" value="organic" param1="stonehitorganic"/>
@@ -15434,7 +15473,7 @@
 	<property name="SoundPickup" value="shotgun_polymer_grab"/>
 	<property name="SoundPlace" value="shotgun_polymer_place"/>
 	<property class="Action0">
-		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="6"/>
+		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="5"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="3000"/>
 		<property class="HitSounds">
             <property name="Override0" value="organic" param1="stonehitorganic"/>
@@ -15680,7 +15719,7 @@
 	<property name="SoundPickup" value="shotgun_polymer_grab"/>
 	<property name="SoundPlace" value="shotgun_polymer_place"/>
 	<property class="Action0">
-		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="6"/>
+		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="5"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="3000"/>
 		<property class="HitSounds">
             <property name="Override0" value="organic" param1="stonehitorganic"/>
@@ -15925,7 +15964,7 @@
 	<property name="SoundPickup" value="shotgun_polymer_grab"/>
 	<property name="SoundPlace" value="shotgun_polymer_place"/>
 	<property class="Action0">
-		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="6"/>
+		<requirement name="PlayerItemCount" item_name="ammoGasCan" operation="GTE" value="5"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="3000"/>
 		<property class="HitSounds">
             <property name="Override0" value="organic" param1="stonehitorganic"/>
@@ -16437,7 +16476,7 @@
 	<property name="Tags" value="ammo,ranged,attAgility,perkArchery,ScroungerCells,RemoveCell"/>
 	<property name="Material" value="Mcloth"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_PlasmaBlue"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_PlasmaBlue"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="PlasmaCellDMdesc"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
@@ -16474,7 +16513,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Weight" value="0"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_PlasmaBlue"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_PlasmaBlue"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyCellDMdesc"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
@@ -20608,7 +20647,7 @@
 	<property name="Tags" value="ammo,perkBFGExpert,corpseRemoval"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
 	<property name="CustomIconTint" value="0000FF"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BFGGreen"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BFGGreen"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyBFGCellEntitydesc"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -20662,7 +20701,7 @@
 	<property name="Tags" value="ammo,perkBFGExpert,corpseRemoval"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
 	<property name="CustomIconTint" value="FF0000"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BFGGreen"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BFGGreen"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyBFGCellBlockdesc"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -20846,7 +20885,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="1"/> -->
 		<!-- <property name="AnimWait" value="0.17"/>
 		<property name="WarningDelay" value=".1"/> -->
@@ -20923,7 +20962,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="1"/> -->
 		<!-- <property name="AnimWait" value="0.17"/>
 		<property name="WarningDelay" value=".1"/> -->
@@ -21002,7 +21041,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="1"/> -->
 		<!-- <property name="AnimWait" value="0.17"/>
 		<property name="WarningDelay" value=".1"/> -->
@@ -21083,7 +21122,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/>
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21114,7 +21153,7 @@
 </item>
 
 <item name="meleeHandDemonImpProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_ImpFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_ImpFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21167,7 +21206,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/>
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21198,7 +21237,7 @@
 </item>
 
 <item name="meleeHandDemonNightmareImpProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_NightmareFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_NightmareFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21305,7 +21344,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/> -->
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21337,7 +21376,7 @@
 </item>
 
 <item name="meleeHandDemonBabyCacoProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_CacoBall"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_CacoBall"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21390,7 +21429,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/> -->
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21422,7 +21461,7 @@
 </item>
 
 <item name="meleeHandDemonCacodemonProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_CacoBall"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_CacoBall"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21472,7 +21511,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/>
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21505,7 +21544,7 @@
 </item>
 
 <item name="meleeHandDemonHellKnightProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_KnightFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_KnightFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21554,7 +21593,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="2"/>
 		<property name="WarningMax" value="0"/>
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21587,7 +21626,7 @@
 </item>
 
 <item name="meleeHandDemonBaronHellProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BaronFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BaronFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21649,7 +21688,7 @@
 	</property> -->
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="2"/> -->
 		<!-- <property name="WarningMax" value="0"/> -->
 		<!-- <property name="Delay" value=".01"/> --> <!-- obsolete if rounds per minute exists -->
@@ -21709,7 +21748,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="1"/>
 		<property name="WarningMax" value="0"/>
 		<property name="Delay" value=".25"/> <!-- obsolete if rounds per minute exists -->
@@ -21742,7 +21781,7 @@
 </item>
 
 <item name="meleeHandDemonRevenantProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_RevenantFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_RevenantFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21788,7 +21827,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<!-- <property name="AnimType" value="2"/> -->
 		<property name="WarningMax" value="1"/>
 		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
@@ -21806,8 +21845,8 @@
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
-		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".01"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="7"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value=".01"/>
@@ -21827,7 +21866,7 @@
 </item>
 
 <item name="meleeHandDemonMancubusProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_Mancubus"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_Mancubus"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21876,7 +21915,7 @@
 	</property>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="Vomit"/>
-		<property name="Hitmask_override" value="Arrow"/>
+		<property name="Hitmask_override" value="Arrow,bullet"/>
 		<property name="AnimType" value="4"/>
 		<property name="Delay" value=".67"/>
 		<property name="Range" value="100"/>

@@ -1405,7 +1405,6 @@
 			
 			<passive_effect name="BuffResistance" operation="base_add" value="5" tags="buffInfectionCatch,buffInfectionMain,buffFatiguedTrigger,buffArmSprainedCHTrigger,buffArmBroken,buffArmSprained,buffLegSprainedCHTrigger,buffLegBroken,buffLegSprained,buffAbrasionCatch,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire,buff2ndDegreeBurn,buffArchvileIgnitePlayer"/>
 			
-			<!-- <triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" target="self" stat="Stamina" operation="subtract" value="0"/> -->
 			<triggered_effect trigger="onOtherDamagedSelf" action="DoomArmour.Armour, DoomArmour" target="self" operation="subtract" value="0"/>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" target="self" stat="Health" operation="subtract" value="0"/>
 			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
@@ -2606,9 +2605,9 @@
 </effect_group>
 </insertafter>
 
-<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group[5]/requirement[@name='!HasBuff']/@buff">buffDontBreakMyLeg,buffDrugOhShitzDrops,buffTwitchDontBreakLeg,doomBuffInLevel</set>
-<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group[8]/triggered_effect[3]/requirement[@name='!HasBuff']/@buff">buffDrugOhShitzDrops,buffTwitchDontBreakLeg,buffDontBreakMyLeg,god,doomBuffInLevel</set>
-<set xpath="/buffs/buff[@name='buffLegSprainedFallTrigger']/effect_group/requirement[@name='!HasBuff']/@buff">buffLegBroken,buffLegSplinted,buffLegCast,buffDontBreakMyLeg,buffDrugOhShitzDrops,buffTwitchDontBreakLeg,doomBuffInLevel</set>
+<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group[5]/requirement[@name='!HasBuff']/@buff">buffDontBreakMyLeg,buffDrugOhShitzDrops,buffTwitchDontBreakLeg,buffInvulnerability,doomBuffInLevel</set>
+<set xpath="/buffs/buff[@name='buffPlayerFallingDamage']/effect_group[8]/triggered_effect[3]/requirement[@name='!HasBuff']/@buff">buffDrugOhShitzDrops,buffTwitchDontBreakLeg,buffDontBreakMyLeg,god,buffInvulnerability,doomBuffInLevel</set>
+<set xpath="/buffs/buff[@name='buffLegSprainedFallTrigger']/effect_group/requirement[@name='!HasBuff']/@buff">buffLegBroken,buffLegSplinted,buffLegCast,buffDontBreakMyLeg,buffDrugOhShitzDrops,buffTwitchDontBreakLeg,buffInvulnerability,doomBuffInLevel</set>
 
 <set xpath="/buffs/buff[@name='buffLegSprained']/effect_group//requirement[@progression_name='perkPhysician']/@progression_name">perkMedic</set>
 <set xpath="/buffs/buff[@name='buffLegSprained']/effect_group//requirement[@progression_name='perkMedic']/@value">2</set>

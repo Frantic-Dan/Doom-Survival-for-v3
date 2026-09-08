@@ -1584,7 +1584,7 @@ toolDewFilter
 	<ingredient name="drinkJarRiverWater" count="1"/>
 </recipe>
 
-<recipe name="resourceGlueBundle" count="1" craft_time="99.98" craft_area="campfire" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
+<recipe name="resourceGlueBundle" count="1" craft_time="99.98" craft_area="campfire" craft_tool="toolCookingPot" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
 	<ingredient name="foodCropGraceCorn" count="1"/>
 	<ingredient name="foodCropPotato" count="1"/>
 	<ingredient name="foodCropYuccaFruit" count="1"/>
@@ -2983,6 +2983,7 @@ toolDewFilter
 	<ingredient name="resourceArrowHeadSteelAP" count="20"/>
 	<ingredient name="resourceGlue" count="1"/>
 	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourcePaint" count="20"/>
 	<ingredient name="resourceFeather" count="60"/>
 </recipe>
 

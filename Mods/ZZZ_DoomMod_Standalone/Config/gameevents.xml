@@ -35,6 +35,7 @@
 		</action> -->
 		
 		<action class="ModifyEntityStat">
+			<property name="phase" value="1" />
 			<property name="stat" value="Food" />
 			<property name="value" value=".51" />
 			<property name="is_percent" value="true" />
@@ -42,6 +43,7 @@
 		</action>
 
 		<action class="ModifyEntityStat">
+			<property name="phase" value="2" />
 			<property name="stat" value="Water" />
 			<property name="value" value=".51" />
 			<property name="is_percent" value="true" />
@@ -49,10 +51,12 @@
 		</action>
 		
 		<action class="Delay">
+			<property name="phase" value="3" />
 			<property name="time" value="1" />
 		</action>
 		
 		<action class="ModifyEntityStat">
+			<property name="phase" value="4" />
 			<property name="stat" value="Health" />
 			<property name="value" value=".5" />
 			<property name="is_percent" value="true" />
@@ -196,7 +200,7 @@
 			<property name="items_location" value="Toolbelt,Backpack" />
 			<property name="items_tags" value="FuelSpend" />
 			<property name="count_type" value="Items"/>
-			<property name="count" value="6" />
+			<property name="count" value="5" />
 		</action>
 	</action_sequence>
 	
@@ -676,5 +680,19 @@
 			<property name="delay" value="0"/>
 		</action>
 	</action_sequence>
+	
+	<action_sequence name="FormerSergeant_reload">
+		<action class="PlaySound">
+			<property name="sound" value="pump_shotgun_rack_fwd" />
+			<property name="inside_head" value="false" />
+			<property name="delay" value="0.5" />
+		</action>
+		<action class="PlaySound">
+			<property name="sound" value="pump_shotgun_rack_back" />
+			<property name="inside_head" value="false" />
+			<property name="delay" value="0.8" />
+		</action>
+	</action_sequence>
+	
 	</append>
 </FranticDan>

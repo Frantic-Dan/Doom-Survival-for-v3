@@ -142,7 +142,7 @@ MediKitweakDesc,"Recovers 13 health points, up to 50% of max health.\n\nCures La
 mediKit,Medikit
 MediKitDesc,"Recovers 25 health points, up to 50% of max health.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 4 food."
 stimPackBlue,Blue Stimpack
-StimPackBlueDesc,Recovers 10 health points.\n\nCosts 2 food.\nCures bleeding.
+StimPackBlueDesc,Recovers 10 health points.\nCures bleeding.\n\nCosts 2 food.
 mediKitBlue,Blue Medikit
 MediKitBlueDesc,"Recovers 25 health points.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 4 food."
 berserkPack,Berserk Pack ([42C234]Power Up[-])
@@ -153,7 +153,7 @@ buffLightAmplificationName,Light Amplification Goggles
 buffLightAmplificationDesc,You have full visibility to overcome the darkness.
 buffLightAmplificationTooltip,Visibility has improved for you.
 HazmatSuitPowerup,Hazmat Suit ([42C234]Power Up[-])
-HazmatSuitPowerupDesc,Using this will protect you from the radiation in the wasteland biome while outdoors for 30 minutes.
+HazmatSuitPowerupDesc,"Using this will protect you from the radiation in the wasteland biome while outdoors for 30 minutes.\n\nWhile in Classic Doom Levels, this will protect you from hazardous floors and degrades rapidly while doing so."
 InvulnerabilityPowerup,Invulnerability ([42C234]Power Up[-])
 InvulnerabilityPowerupDesc,Will make you immortal for 40 seconds.\n\nDoes not stack.\n\nDoes NOT apply to storms or biome hazards.
 soulSphere,Soul Sphere ([42C234]Power Up[-])
@@ -193,10 +193,10 @@ buffStatusThirsty02DescDM,"You're getting very thirsty and your max health is dr
 buffStatusThirsty03DescDM,"You're severely dehydrated and your max health has dropped. \n\nMax health lowered by {cvar($buffStatusParchedBlockage:0.0)} x2"
 buffStatusHungry01TooltipDM,"You're peckish, max health is reducing"
 buffStatusHungry02TooltipDM,"You're hungry, max health has drastically reduced"
-buffStatusHungry03TooltipDM,"You're starving, max health has critically reduced, you're dying!"
+buffStatusHungry03TooltipDM,"[FF4F00]You're starving, max health has critically reduced, you're dying!![-]"
 buffStatusThirsty01TooltipDM,"You're parched, max health is reducing"
 buffStatusThirsty02TooltipDM,"You're thirsty, max health has drastically reduced"
-buffStatusThirsty03TooltipDM,"You're dehydrated, max health has critically reduced, you're dying!"
+buffStatusThirsty03TooltipDM,"[FF4F00]You're dehydrated, max health has critically reduced, you're dying!![-]"
 
 JarCoffeeDescDM,"Coffee is life, coffee is love.\nSlowly recovers health.\n\nUp to 60% max health."
 drinkJarCoffeeDescDM,"The caffeine is revitalising, slowly healing you and warming you up!."
@@ -599,7 +599,7 @@ FlameThrowerQ2Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Dam
 FlameThrowerQ3Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 48/s\nRange: 8.4m\nRoF: 330/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
 FlameThrowerQ4Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 52/s\nRange: 9.1m\nRoF: 345/minute\nMod Slots: 1\n\n[FF4F00]Load this with Dummy Petrol[-]"
 FlameThrowerQ5Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 56/s\nRange: 9.8m\nRoF: 360/minute\nMod Slots: 2\n\n[FF4F00]Load this with Dummy Petrol[-]"
-FlameThrowerQ6Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 60/s\nRange: 10.5m\nRoF: 375/minute\nMod Slots: 2\n[400073]Use 33% less Petrol[-]"
+FlameThrowerQ6Desc,"Invite the whole neighbourhood over for a BBQ!\n\nEntity Damage: 60/s\nRange: 10.5m\nRoF: 375/minute\nMod Slots: 2\n[400073]Use 20% less Petrol[-]"
 
 PlasmaCellDM,Energy Cell
 PlasmaCellDMdesc,"Base Entity Damage: 25.\n\nStacks to 400.\nFinding backpacks will increase the stack size, up to 2000."
@@ -1143,17 +1143,17 @@ perkSelfRepairingArmourRank4LongDesc,Your armour gradually self repairs 1 point 
 perkSelfRepairingArmourRank5LongDesc,Your armour gradually self repairs 1 point every 20 seconds.\n(180 Per Hour)\n\n(Up to 60% of max armour)
 
 perkSlowAbsoptionName,Slow Absorption
-perkSlowAbsoptionDesc,Increases the duration of Power Up's that have a duration.
+perkSlowAbsoptionDesc,Increases the duration of Consumables and Power Up's that have a duration.
 perkSlowAbsoptionRank1Des,
 perkSlowAbsoptionRank2Des,
 perkSlowAbsoptionRank3Des,
 perkSlowAbsoptionRank4Des,
 perkSlowAbsoptionRank5Des,
-perkSlowAbsoptionRank1LongDesc,Power Up's with a duration last 20% longer.
-perkSlowAbsoptionRank2LongDesc,Power Up's with a duration last 40% longer.
-perkSlowAbsoptionRank3LongDesc,Power Up's with a duration last 60% longer.
-perkSlowAbsoptionRank4LongDesc,Power Up's with a duration last 80% longer.
-perkSlowAbsoptionRank5LongDesc,Power Up's with a duration last 100% longer.
+perkSlowAbsoptionRank1LongDesc,Consumables and Power Up's with a duration last 20% longer.
+perkSlowAbsoptionRank2LongDesc,Consumables and Power Up's with a duration last 40% longer.
+perkSlowAbsoptionRank3LongDesc,Consumables and Power Up's with a duration last 60% longer.
+perkSlowAbsoptionRank4LongDesc,Consumables and Power Up's with a duration last 80% longer.
+perkSlowAbsoptionRank5LongDesc,Consumables and Power Up's with a duration last 100% longer.
 
 perkPainToleranceDMDesc,"Each hit you take from entities deals less damage to your health."
 perkPainToleranceDMRank1LongDesc,"You lose 1 less health point per hit."

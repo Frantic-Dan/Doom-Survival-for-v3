@@ -801,6 +801,11 @@
 	<drop event="Harvest" name="resourceGoldNugget" count="1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="6" tag="salvageHarvest"/>
 </insertafter>
+<insertafter xpath="/blocks/block[@name='tableSaw']/property[@name='WorkstationWindow']">
+	<drop event="Harvest" name="smallEngine" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceGoldNugget" count="0" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0" tag="salvageHarvest"/>
+</insertafter>
 <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">2.5</set>
 <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">2500</set>
 <insertafter xpath="/blocks/block[@name='cntCollapsedChemistryStation']/drop[@event='Harvest' and @name='resourceMetalPipe']">
@@ -817,9 +822,176 @@
 <insertafter xpath="/blocks/block[@name='palletEmpty']/property[@name='Collide']">
 	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
 </insertafter>
-
 <insertafter xpath="/blocks/block[@name='palletEmptyStack']/property[@name='Collide']">
 	<drop event="Destroy" name="resourceNail" count="5" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBrownBoxesBase']/drop[@name='resourceScrapPolymers']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBrownBoxesTile']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBrownBoxesTop']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBrownBoxesTopSmall']/property[@name='SortOrder2']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBrownBoxesLoose']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBricksBase']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBricksTile']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBricksTop']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBricksLoose']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="0" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletTarpBaseWhite']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletTarpTileWhite']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<set xpath="/blocks/block[@name='palletTarpTileWhite']/drop[@name='resourceWood']/@count">2</set>
+<insertafter xpath="/blocks/block[@name='palletCompressedCardboard']/drop[@name='resourcePaper']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='bricksStack']/drop[@name='resourceBricks']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+	<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest,perkJunkMiner" />
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagCowFeedBaseFull']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagCowFeedBaseMed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagFlourBaseFull']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagFlourBaseMed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagSandBaseFull']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagSandBaseMed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagConcreteBaseFull']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagConcreteBaseMed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagConcreteBaseSml']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagFertilizerBaseFull']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagFertilizerBaseMed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullWhite']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedWhite']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullBrown']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedBrown']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullRed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedRed']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullOrange']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedOrange']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullYellow']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedYellow']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullGreen']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedGreen']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullBlue']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedBlue']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullPurple']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedPurple']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullGrey']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedGrey']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullBlack']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedBlack']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullPink']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedPink']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseFullArmyGreen']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='palletBagBlankBaseMedArmyGreen']/drop[@name='resourceWood']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+
+<insertafter xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']/drop[@name='resourceElectricParts']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
+</insertafter>
+<insertafter xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']/drop[@name='resourceElectricParts']">
+	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
 </insertafter>
 
 <set xpath="/blocks/block[@name='scrapIronNoUpgradeMaster']/property[@class='RepairItems']/property[@name='resourceScrapIron']/@value">100</set>
@@ -2537,6 +2709,7 @@
 	<property name="Extends" value="treeGrassMaster" />
 	<property name="Texture" value="568"/>
 	<property name="DisplayInfo" value="Name"/>
+	<property name="IndexName" value="quest_snowberry" />
 	<drop event="Harvest" name="foodCropSnowberries" count="1" tag="cropHarvest"/>
 	<drop event="Harvest" name="resourceYuccaFibers" count="1" tag="wildCropsHarvest,perkJunkMiner"/>
 	<property name="ExtendHarvestDrops" value="true"/>
