@@ -8,9 +8,10 @@
 <set xpath="/doc/tips//tip[2]/@key">loadingTipDM2</set>
 <set xpath="/doc/tips//tip[3]/@key">loadingTipDM3</set>
 <set xpath="/doc/tips//tip[4]/@key">loadingTipDM4</set>
+<set xpath="/doc/tips//tip[5]/@key">loadingTipDM5</set>
 
 <!-- <remove xpath="/doc/tips//tip[@key='loadingTipDistraction']"/> -->
-<remove xpath="/doc/tips//tip[@key='loadingTipStealth']"/>
+<!-- <remove xpath="/doc/tips//tip[@key='loadingTipStealth']"/> -->
 <remove xpath="/doc/tips//tip[@key='loadingTipEncumbrance']"/>
 <remove xpath="/doc/tips//tip[@key='loadingTipArmor']"/>
 <remove xpath="/doc/tips//tip[@key='loadingTipBandages']"/>

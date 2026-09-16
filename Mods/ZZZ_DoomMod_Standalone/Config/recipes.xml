@@ -23,35 +23,35 @@
 <recipe name="AmmoStackPouch" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="armourShard" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <!-- * * * * * * * * * * * * forge-emptying recipes: use_ingredient_modifier defaults to true and can disable the CraftingIngredientCount passive * * * * * * * * * * * * -->
-<recipe name="resourceClayLump" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceClayLump" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
 
-<recipe name="resourceCrushedSand" count="1" material_based="true" craft_area="forge" craft_time=".8" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceCrushedSand" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".8" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_glass" count="4"/>
 </recipe>
 
-<recipe name="resourceRockSmall" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceRockSmall" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_stone" count="5"/>
 </recipe>
 
-<recipe name="resourceScrapBrass" count="1" material_based="true" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapBrass" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_brass" count="1"/>
 </recipe>
 
-<recipe name="resourceScrapIron" count="1" material_based="true" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapIron" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_iron" count="1"/>
 </recipe>
 
-<recipe name="resourceScrapLead" count="1" material_based="true" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapLead" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_lead" count="1"/>
 </recipe>
 
-<recipe name="resourceForgedSteel" count="1" craft_time="15" material_based="true" craft_area="forge" is_trackable="false" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceForgedSteel" count="1" craft_time="15" material_based="true" is_trackable="false" craft_area="forge" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_steel" count="10"/>
 </recipe>
 
-<recipe name="resourceCoal" count="1" material_based="true" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceCoal" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_carbon" count="1"/>
 </recipe>
 
@@ -2987,7 +2987,7 @@ toolDewFilter
 	<ingredient name="resourceFeather" count="60"/>
 </recipe>
 
-<recipe name="resourceArrowHeadSteelAP" count="10" material_based="true" craft_time="75" craft_area="forge" craft_tool="toolAnvil" craft_exp_gain="0" tags="packMuleCrafting" >
+<recipe name="resourceArrowHeadSteelAP" count="10" material_based="true" is_trackable="false" craft_time="75" craft_area="forge" craft_tool="toolAnvil" craft_exp_gain="0" tags="packMuleCrafting" >
 	<ingredient name="unit_iron" count="50"/>
 	<ingredient name="unit_clay" count="25"/>
 	<ingredient name="unit_steel" count="10"/>

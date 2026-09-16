@@ -124,11 +124,16 @@
 <remove xpath="//lootcontainers/lootgroup[@name='groupWeaponsT1_Demolitionist']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupWeaponsT3_DeadEye']">
 <lootgroup name="groupWeaponsT1_Demolitionist" count="all">
-	<item name="RocketFragDM" count="1,2"/>
 	<item name="RocketLauncherQ1">
 	<requirement class="Biome" biomes="snow"/>
 	</item>
 	<item name="FlameThrowerQ1">
+	<requirement class="Biome" biomes="burnt_forest"/>
+	</item>
+	<item name="RocketFragDM" count="2,4">
+	<requirement class="Biome" biomes="snow"/>
+	</item>
+	<item name="ammoGasCan" count="50,100">
 	<requirement class="Biome" biomes="burnt_forest"/>
 	</item>
 </lootgroup>
@@ -137,11 +142,16 @@
 <remove xpath="//lootcontainers/lootgroup[@name='groupWeaponsT2_Demolitionist']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupWeaponsT1_Demolitionist']">
 <lootgroup name="groupWeaponsT2_Demolitionist" count="all">
-	<item name="RocketFragDM" count="1,2"/>
 	<item name="RocketLauncherQ1">
 	<requirement class="Biome" biomes="snow"/>
 	</item>
 	<item name="FlameThrowerQ1">
+	<requirement class="Biome" biomes="burnt_forest"/>
+	</item>
+	<item name="RocketFragDM" count="3,5">
+	<requirement class="Biome" biomes="snow"/>
+	</item>
+	<item name="ammoGasCan" count="75,125">
 	<requirement class="Biome" biomes="burnt_forest"/>
 	</item>
 </lootgroup>
@@ -156,7 +166,12 @@
 	<item name="FlameThrowerQ1">
 	<requirement class="Biome" biomes="burnt_forest"/>
 	</item>
-	<item group="groupAmmoRocket"/>
+	<item name="RocketFragDM" count="4,6">
+	<requirement class="Biome" biomes="snow"/>
+	</item>
+	<item name="ammoGasCan" count="100,150">
+	<requirement class="Biome" biomes="burnt_forest"/>
+	</item>
 </lootgroup>
 </insertafter>
 
@@ -530,7 +545,15 @@
 	<item name="bookWasteTreasuresHoney"/>
 	<item name="bookWasteTreasuresSinks"/>
 	<item name="bookWasteTreasuresWater"/>
-
+	
+	<item name="bookHardenedSurvivalFoodHeal"/>
+	<item name="bookHardenedSurvivalStorm"/>
+	<item name="bookHardenedSurvivalBreathing"/>
+	<item name="bookHardenedSurvivalInsulation"/>
+	<item name="bookHardenedSurvivalIronGut"/>
+	<item name="bookHardenedSurvivalSlowMetabolism"/>
+	<item name="bookHardenedSurvivalJars"/>
+	
 	<item name="bookFiremansAlmanacSpeed"/>
 	<item name="bookFiremansAlmanacAxes"/>
 	<item name="bookFiremansAlmanacEquipment"/>
@@ -743,6 +766,14 @@
 	<item name="bookRocketLauncherRecoil">
 	<requirement class="Biome" biomes="snow"/>
 	</item>
+	
+	<item name="bookHardenedSurvivalFoodHeal"/>
+	<item name="bookHardenedSurvivalStorm"/>
+	<item name="bookHardenedSurvivalBreathing"/>
+	<item name="bookHardenedSurvivalInsulation"/>
+	<item name="bookHardenedSurvivalIronGut"/>
+	<item name="bookHardenedSurvivalSlowMetabolism"/>
+	<item name="bookHardenedSurvivalJars"/>
 </lootgroup>
 </insertafter>
 
@@ -1139,21 +1170,21 @@
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupBirdNest']">
 <lootgroup name="group9mmSmall">
-	<item name="9mmBulletDM" count="8,10" tags="ScroungerHandgun" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group9mmSmall']">
 <lootgroup name="group9mmMedium">
-	<item name="9mmBulletDM" count="8,10" tags="ScroungerHandgun" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group9mmMedium']">
 <lootgroup name="group9mmLarge">
-	<item name="9mmBulletDM" count="8,10" tags="ScroungerHandgun" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
 </lootgroup>
 </insertafter>
 
@@ -1324,7 +1355,7 @@
 	<item group="group762mmSmall"/>
 	<item group="group44MagnumSmall" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellSmall"/>
-	<item group="groupAmmoRocket" count="1"/>
+	<item name="RocketFragDM" count="2,3"/>
 </lootgroup>
 </insertafter>
 
@@ -1335,7 +1366,7 @@
 	<item group="group762mmMedium"/>
 	<item group="group44MagnumMedium" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellMedium"/>
-	<item group="groupAmmoRocket" count="2"/>
+	<item name="RocketFragDM" count="3,5"/>
 </lootgroup>
 </insertafter>
 
@@ -1346,7 +1377,8 @@
 	<item group="group762mmLarge"/>
 	<item group="group44MagnumLarge" loot_prob_template="ProbT1Cap"/>
 	<item group="groupShotgunShellLarge"/>
-	<item group="groupAmmoRocket" count="3"/>
+	<item group="groupArrowLarge" loot_prob_template="ProbT0Delayed" />
+	<item name="RocketFragDM" count="4,7"/>
 </lootgroup>
 </insertafter>
 
@@ -1920,6 +1952,8 @@
 </lootgroup>
 </insertafter>
 
+<remove xpath="//lootcontainers/lootgroup[@name='groupShotgunMessiahCrate02']/item[@group='groupShotgunMessiahCrateMagazines']"/>
+
 <remove xpath="//lootcontainers/lootgroup[@name='groupShamwayMagazines']/item[@name='seedSkillMagazine']"/>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupPopNPillsBooks']"/>
@@ -2110,7 +2144,6 @@
 	<item name="RocketLauncherQ1">
 	<requirement class="Biome" biomes="snow"/>
 	</item>
-	<!-- <item name="BFG9000Q1"/> -->
 </lootgroup>
 </insertafter>
 
@@ -2168,7 +2201,7 @@
 <item name="foodVegetableStew" count="2"/>
 <item name="9mmBulletDM" count="40"/>
 <item name="ShotgunShellDM" count="10"/>
-<item name="762mmBulletDM" count="50"/>
+<item name="762mmBulletDM" count="60"/>
 </lootgroup>
 </insertafter>
 
@@ -2381,9 +2414,9 @@
 	<requirement class="Biome" biomes="pine_forest"/>
 	</item>
 	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="burnt_forest"/>
+	<requirement class="Biome" biomes="burnt_forest,desert,snow,wasteland"/>
 	</item>
-	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
+	<!-- <item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="desert"/>
 	</item>
 	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
@@ -2391,7 +2424,7 @@
 	</item>
 	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="wasteland"/>
-	</item>
+	</item> -->
 </lootgroup>
 
 <lootgroup name="groupformerSergeantloot" count="all">
@@ -2405,12 +2438,12 @@
 
 <lootgroup name="groupformerCommandolootWeaponPart" count="all">
 	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="pine_forest"/>
+	<requirement class="Biome" biomes="pine_forest,desert,snow,wasteland"/>
 	</item>
 	<item name="ChaingunQ1" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="burnt_forest"/>
 	</item>
-	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
+	<!-- <item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="desert"/>
 	</item>
 	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
@@ -2418,7 +2451,7 @@
 	</item>
 	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="wasteland"/>
-	</item>
+	</item> -->
 </lootgroup>
 
 <lootgroup name="groupformerCommandoloot" count="all">

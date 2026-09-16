@@ -447,6 +447,63 @@
       <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="@.insulationT2Total" />
       <triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="@.insulationT3Total" />
     </effect_group>
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="0.2">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="0.4">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="2"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="0.6">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="3"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="0.8">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="4"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="1.0">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="5"/></triggered_effect>
+	</effect_group>
+	<!-- Hardened Survivor books -->
+	<effect_group>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="smell" operation="add" value="-5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalSmell" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".insulationTotal" operation="add" value="0.5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalStorm" operation="Equals" value="1"/></triggered_effect>
+		
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="0">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-2">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-4">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="2"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-4">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="3"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-6">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="4"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-6">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="5"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/></triggered_effect>
+			
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-2">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="0"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-4">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="1"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-6">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="2"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-6">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="3"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-8">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="4"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="-8">
+			<requirement name="ProgressionLevel" progression_name="perkStrengthenedConstitution" operation="Equals" value="5"/>
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect>
+	</effect_group>
 	</buff>
 </insertafter>
 	
@@ -465,6 +522,7 @@
     </buff>
 </append>
 
+<setattribute xpath="/buffs/buff[@name='buffElementWet']" name="icon">waterDroplets</setattribute>
 <setattribute xpath="/buffs/buff[@name='buffBeer']" name="icon">drinkJarBeer</setattribute>
 <setattribute xpath="/buffs/buff[@name='buffDysenteryCureDisplay']" name="icon">drinkJarGoldenRodTea</setattribute>
 <setattribute xpath="/buffs/buff[@name='buffHealWaterMax']" name="icon">drinkJarBoiledWater</setattribute>
@@ -613,6 +671,11 @@
 	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[3]//passive_effect[1]/@value">20,20</set>
 	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[3]//passive_effect[2]/@value">20,20</set>
 	<set xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[3]//passive_effect[3]/@duration">0,0</set>
+	<insertafter xpath="/buffs/buff[@name='buffNewbieCoat']/effect_group[3]">
+		<effect_group>
+			<passive_effect name="PerkLevel" tags="perkAmmoScrounger" operation="base_add" value="1"/>
+		</effect_group>
+	</insertafter>
 	
 	<set xpath="/buffs/buff[@name='buffInfection02Untreated']/effect_group[2]//passive_effect[1]/@value">0</set>
 	<set xpath="/buffs/buff[@name='buffInfection02GetBetter']/effect_group[2]//passive_effect[1]/@value">0</set>
@@ -760,6 +823,7 @@
 			<passive_effect name="HealthChangeOT" operation="base_add" value=".0167"/>
 			<passive_effect name="BuffResistance" operation="base_add" value="5" tags="buffInfectionCatch,buffInfectionMain"/>
 			<passive_effect name="GeneralDamageResist" operation="base_add" value="0.1"/>
+			<passive_effect name="PerkLevel" tags="perkAmmoScrounger" operation="base_add" value="1"/>
 			<!-- <triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" target="self" stat="Stamina" operation="add" value="1">
 				<requirement name="CVarCompare" target="self" cvar="armourType" operation="Equals" value="1"/></triggered_effect>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" target="self" stat="Stamina" operation="add" value="1">
@@ -2238,7 +2302,7 @@
 <remove xpath="/buffs/buff[@name='buffWasteland_Storm_Recover01']/effect_group[3]/passive_effect[@name='StaminaMaxBlockage']"/>
 <remove xpath="/buffs/buff[@name='buffWasteland_Storm_Recover01']/effect_group[3]/passive_effect[@name='HealthMaxBlockage']"/>
 
-<set xpath="/buffs/buff[@name='buffBurnt_Storm_Stage02']/update_rate/@value">2</set>
+<set xpath="/buffs/buff[@name='buffBurnt_Hazard02']/update_rate/@value">2</set>
 <set xpath="/buffs/buff[@name='buffDesert_Hazard02']/update_rate/@value">2</set>
 <set xpath="/buffs/buff[@name='buffSnow_Hazard02']/update_rate/@value">2</set>
 <set xpath="/buffs/buff[@name='buffWasteland_Hazard02']/update_rate/@value">.5</set>
@@ -2276,6 +2340,11 @@
 		<requirement name="CVarCompare" cvar="armourTypeBlue" operation="Equals" value="1"/>
 	</triggered_effect>
 </insertafter>
+
+<set xpath="/buffs/buff[@name='buffBurnt_Storm_Stage02']/update_rate/@value">1.25</set>
+<set xpath="/buffs/buff[@name='buffDesert_Storm_Stage02']/update_rate/@value">1.25</set>
+<set xpath="/buffs/buff[@name='buffSnow_Storm_Stage02']/update_rate/@value">1.25</set>
+<set xpath="/buffs/buff[@name='buffWasteland_Storm_Stage02']/update_rate/@value">1.25</set>
 
 <insertafter xpath="/buffs/buff[@name='buffSnow_Storm_Stage02']/effect_group[2]/triggered_effect[3]">
 	<triggered_effect trigger="onSelfBuffUpdate" action="AddHealth" health="1">

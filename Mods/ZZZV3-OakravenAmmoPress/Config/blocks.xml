@@ -41,7 +41,7 @@
 	<property name="HeatMapFrequency" value="100"/> <!-- Default comparable 1000 -->
 	<property name="OpenSound" value="open_workbench"/>
 	<property name="CloseSound" value="close_workbench"/>
-	<property name="TakeDelay" value="5"/>
+	<property name="TakeDelay" value="3"/>
 	<property class="RepairItems">
 		<property name="resourceForgedIron" value="25"/>
 		<property name="resourceMechanicalParts" value="20"/>

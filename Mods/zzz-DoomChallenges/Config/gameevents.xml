@@ -19,6 +19,9 @@
 		<action class="AddBuff">
 			<property name="buff_name" value="buffNutrientGracePeriod" />
 		</action>
+		<action class="AddBuff">
+			<property name="buff_name" value="buffFirstSpawnArmour" />
+		</action>
 		<action class="AddSkillPoints">
 			<property name="skill_points" value="{sandbox.StarterSkillPoints}" />
 		</action>

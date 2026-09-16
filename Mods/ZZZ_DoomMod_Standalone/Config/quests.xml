@@ -34,5 +34,6 @@
 	</append>
 	
 <remove xpath="/quests/quest[@id='treasure_taylor']/objective/property[@name='explosion_event']"/>
+<set xpath="/quests/quest[@id='treasure_taylor']/objective/property[@name='distance']/@value">500-850</set>
 	
 </FranticDan>

@@ -67,8 +67,9 @@
 		<property name="ExperienceGain" value="30"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='Tags']/@value">entity,animal,zombie,zombieAnimal,hostile,vulture,FormerHumanVanillaDamage</set>
+<set xpath="/entity_classes/entity_class[@name='animalZombieVulture']/effect_group/passive_effect[@name='HealthMax']/@value">20</set>
 <insertafter xpath="/entity_classes/entity_class[@name='animalZombieVulture']/property[@name='HandItem']">
-		<property name="ExperienceGain" value="15"/>
+		<property name="ExperienceGain" value="16"/>
 </insertafter>
 <set xpath="/entity_classes/entity_class[@name='animalBoar']//effect_group/passive_effect[@name='HealthMax']/@value">120</set>
 <set xpath="/entity_classes/entity_class[@name='animalBoar']/property[@name='HandItem']/@value">meleeHandVanillaMedium</set>
@@ -135,6 +136,7 @@
 
 <set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='MoveSpeedRand']/@value">0, 0</set>
 <set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightRange']/@value">60</set>
+<set xpath="/entity_classes/entity_class[@name='zombieTemplateMale']/property[@name='SightLightThreshold']/@value">-30,150</set>
 
 <set xpath="//entity_class//property[@name='LootDropProb']/@value">0</set>
 
@@ -459,7 +461,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="40"/>
+			<passive_effect name="HealthMax" operation="base_set" value="30"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
 		</effect_group>
@@ -518,7 +520,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<passive_effect name="HealthMax" operation="base_set" value="50"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
 		</effect_group>
@@ -579,7 +581,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<passive_effect name="HealthMax" operation="base_set" value="70"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
 		</effect_group>
@@ -638,7 +640,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="40"/>
+			<passive_effect name="HealthMax" operation="base_set" value="30"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
 		</effect_group>
@@ -697,7 +699,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<passive_effect name="HealthMax" operation="base_set" value="50"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
 		</effect_group>
@@ -758,7 +760,7 @@
 		<property name="TimeStayAfterDeath" value="30"/>
 
 		<effect_group name="Base Effects">
-			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<passive_effect name="HealthMax" operation="base_set" value="70"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
 		</effect_group>

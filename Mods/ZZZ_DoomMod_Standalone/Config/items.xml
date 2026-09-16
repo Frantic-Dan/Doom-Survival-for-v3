@@ -480,6 +480,136 @@
 		<property name="Tags" value="bookArtOfMiningDamage"/>
 	</insertafter>
 	
+<insertafter xpath="/items/item[@name='bookArtOfMiningDamage']">
+<item name="bookHardenedSurvivalFoodHeal">
+	<property name="Extends" value="bookFiremansAlmanacHeat"/>
+	<property name="CustomIcon" value="bookUrbanCombatLanding"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalFoodHealLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalFoodHeal"/>
+	<property name="Tags" value="books,bookHardenedSurvivalFoodHeal"/>
+	<property name="Group" value="Books,BooksOnly,TCReading"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalStorm">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalStormDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalStorm"/>
+	<property name="Tags" value="books,bookHardenedSurvivalStorm"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalStorm" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalStorm" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalBreathing">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalBreathingLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalBreathing"/>
+	<property name="Tags" value="books,bookHardenedSurvivalBreathing"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalBreathing" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalInsulation">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalInsulationLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalInsulation"/>
+	<property name="Tags" value="books,bookHardenedSurvivalInsulation"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalInsulation" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalInsulation" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalIronGut">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalIronGutLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalIronGut"/>
+	<property name="Tags" value="books,bookHardenedSurvivalIronGut"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalIronGut" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalSlowMetabolism">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalSlowMetabolismLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalSlowMetabolism"/>
+	<property name="Tags" value="books,bookHardenedSurvivalSlowMetabolism"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalSlowMetabolism" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalSlowMetabolism" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+
+<item name="bookHardenedSurvivalJars">
+	<property name="Extends" value="bookHardenedSurvivalFoodHeal"/>
+	<property name="DescriptionKey" value="perkHardenedSurvivalJarsLongDesc"/>
+	<property name="Unlocks" value="perkHardenedSurvivalJars"/>
+	<property name="Tags" value="books,bookHardenedSurvivalJars"/>
+	<effect_group tiered="false">
+		<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalJars" level="-1"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkHardenedSurvivalComplete" level="-1">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="PlaySound" sound="read_skillbook_final" play_in_head="true">
+			<requirement name="PerksUnlocked" skill_name="skillHardenedSurvival" operation="GTE" value="7"/></triggered_effect>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="0"/>
+	</effect_group>
+</item>
+</insertafter>	
+	
 	<set xpath="/items/item[@name='bookAutoWeaponsDamage']/property[@name='Tags']/@value">bookAutoWeaponsDamage</set>
 	<insertafter xpath="/items/item[@name='bookAutoWeaponsMaintenance']/property[@name='Unlocks']">
 		<property name="Tags" value="bookAutoWeaponsMaintenance"/>
@@ -668,10 +798,16 @@
 	<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" target="self" event="RefundIron" allow_client_call="true"/>
 </insertafter>
 <insertafter xpath="/items/item[contains (@name,'drink')]/effect_group[1]/requirement">
-	<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+	<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[contains (@name,'drink')]/effect_group[2]/requirement">
-	<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+	<triggered_effect trigger="onSelfPrimaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 
 <set xpath="/items/item[contains (@name,'foodCrop')]/property[@name='Stacknumber']/@value">100</set>
@@ -976,7 +1112,7 @@
 <set xpath="/items/item[@name='drinkJarBeer']/effect_group/display_value[@name='dEntityDamageBrawling']/@value">0</set>
 <set xpath="/items/item[contains (@name,'resourceCrop')]/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//property[@name='EconomicValue']/@value">10000</set>
-<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//effect_group/triggered_effect[3]/@value">0</set>
+<set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//effect_group/triggered_effect[@stat='Health']/@value">0</set>
 <!-- <set xpath="/items/item[@name='drugHealthBar']//effect_group/display_value[@name='dMaxHealthBonus']/@value">50</set>
 <set xpath="/items/item[@name='drugHealthBar']//effect_group/display_value[@name='dDuration']/@value">600</set>
 <set xpath="/items/item[@name='drugHealthBar']//effect_group/triggered_effect[1]/@value">603</set>
@@ -1031,7 +1167,7 @@
 <set xpath="/items/item[@name='foodCornOnTheCob']/effect_group/display_value[@name='$waterAmountAdd']/@value">0</set>
 <set xpath="/items/item[@name='foodVegetableStew']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">36</set>
 <set xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group/triggered_effect[@cvar='$waterAmountAdd']/@value">50</set>
-<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">17</set>
+<set xpath="/items/item[@name='foodPumpkinBread']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">24</set>
 
 <set xpath="/items/item[@name='foodSteakAndPotato']/property[@name='DisplayType']/@value">foodWaterNegative</set>
 <insertafter xpath="/items/item[@name='foodSteakAndPotato']/effect_group/triggered_effect[1]">
@@ -1111,90 +1247,148 @@
 
 <insertafter xpath="/items/item[@name='foodCornOnTheCob']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodCornBread']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodCharredMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="6"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodGrilledMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBoiledMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="23"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChickenWings']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="137"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChickenNuggets']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="26"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodAshChickenStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="90"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodRoadrunnerChickenJerky']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="36"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodMeatStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="84"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodSteakAndPotato']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoneyGlazedSham']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="137"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoneyBrisket']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="225"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="14">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodShamChowder']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="88"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoboStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="109"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodFishTacos']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="64"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChiliDog']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="74"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBakedPotato']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBlueberryPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="72"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="74"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinBread']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
-	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="20"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="28"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodGumboStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="211"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="11">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodShepardsPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="166"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodSpaghetti']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="195"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodTunaFishGravyToast']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="126"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodEggBoiled']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBaconAndEggs']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="36"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodVegetableStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="67"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
@@ -1213,6 +1407,8 @@
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="133"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 </insertafter>
 <insertafter xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group[1]/triggered_effect[@cvar='$buffInfectionAddCurePerc']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="100"/>
@@ -1294,6 +1490,8 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="15"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="15"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	</effect_group>
 </item>
@@ -1436,40 +1634,40 @@
 <set xpath="/items/item[@name='clothingFeetT3']/effect_group/passive_effect[@name='HyperthermalResist']/@value">3.0,3.2,3.4,3.6,3.8,4</set>
 
 <insertafter xpath="/items/item[@name='clothingHeadT1']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="5"/>
+	<display_value name="dDuration" value="6"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingOutfitT1']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="5"/>
+	<display_value name="dDuration" value="6"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingHandsT1']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="5"/>
+	<display_value name="dDuration" value="6"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingFeetT1']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="5"/>
+	<display_value name="dDuration" value="6"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingHeadT2']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="10"/>
+	<display_value name="dDuration" value="12"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingOutfitT2']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="10"/>
+	<display_value name="dDuration" value="12"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingHandsT2']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="10"/>
+	<display_value name="dDuration" value="12"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingFeetT2']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="10"/>
+	<display_value name="dDuration" value="12"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingHeadT3']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="15"/>
+	<display_value name="dDuration" value="18"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingOutfitT3']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="15"/>
+	<display_value name="dDuration" value="18"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingHandsT3']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="15"/>
+	<display_value name="dDuration" value="18"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='clothingFeetT3']/effect_group/passive_effect[@name='HyperthermalResist']">
-	<display_value name="dDuration" value="15"/>
+	<display_value name="dDuration" value="18"/>
 </insertafter>
 
 <insertafter xpath="/items/item[contains (@name,'armor')]/property[@name='SoundPlace']">
@@ -1955,13 +2153,19 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="603">
 			<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="603"/></triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 
 	<effect_group tiered="false">
 		<requirement name="HasBuff" buff="buffIsOnFire"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2000,13 +2204,19 @@
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="1083">
 				<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="1083"/></triggered_effect>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffRedTea"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 
 	<effect_group tiered="false">
 		<requirement name="HasBuff" buff="buffIsOnFire"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2042,13 +2252,19 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="603">
 			<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="603"/></triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffCoffee"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 
 	<effect_group tiered="false">
 		<requirement name="HasBuff" buff="buffIsOnFire"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 </insertafter>
@@ -2073,13 +2289,19 @@
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeBlackStrapDuration" operation="set" value="1203">
 			<requirement name="CVarCompare" cvar="$buffCoffeeBlackStrapDuration" operation="GT" value="1203"/></triggered_effect>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffBlackstrapCoffee"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 
 	<effect_group tiered="false">
 		<requirement name="HasBuff" buff="buffIsOnFire"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffExtinguishFire"/>
-			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+			<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 </insertafter>
@@ -2823,7 +3045,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2846,7 +3071,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2870,7 +3098,10 @@
 		<property name="Create_item_count" value="2" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2894,7 +3125,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2918,7 +3152,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2943,7 +3180,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2968,7 +3208,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -2993,7 +3236,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3003,9 +3249,8 @@
     <property name="CustomIcon" value="foodPumpkinBread" />
     <property name="CustomIconTint" value="FFFFFF" />
     <property name="ItemTypeIcon" value="fork" />
-	<property name="Smell" value="1"/>
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
-	<property name="Stacknumber" value="5"/>
+	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Cooking"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 	<property name="SoundPickup" value="bread_pumpkin_grab"/>
@@ -3015,10 +3260,13 @@
 		<property name="Sound_start" value=""/>
 		<property name="UseAnimation" value="true"/>
 		<property name="Create_item" value="foodPumpkinBread" />
-		<property name="Create_item_count" value="2" />
+		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3043,7 +3291,10 @@
 		<property name="Create_item_count" value="2" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3067,7 +3318,10 @@
 		<property name="Create_item_count" value="2" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3091,7 +3345,10 @@
 		<property name="Create_item_count" value="2" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3116,7 +3373,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3141,7 +3401,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3165,7 +3428,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3190,7 +3456,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3215,7 +3484,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3240,7 +3512,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3265,7 +3540,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3289,7 +3567,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3313,7 +3594,10 @@
 		<property name="Create_item_count" value="3" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3337,7 +3621,10 @@
 		<property name="Create_item_count" value="6" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3361,7 +3648,10 @@
 		<property name="Create_item_count" value="3" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3385,7 +3675,10 @@
 		<property name="Create_item_count" value="6" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3409,9 +3702,18 @@
 		<property name="Create_item_count" value="25" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3435,7 +3737,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3478,7 +3783,10 @@
 		<property name="Create_item_count" value="1" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3501,7 +3809,10 @@
 		<property name="Create_item_count" value="20" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -3524,7 +3835,10 @@
 		<property name="Create_item_count" value="200" />
     </property>
 	<effect_group tiered="false">
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJar" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/></triggered_effect>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="CallGameEvent" target="self" event="RefundJarBook" allow_client_call="true">
+			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/></triggered_effect>
 	</effect_group>
 </item>
 
@@ -14277,7 +14591,7 @@
 			<property name="BlockDamage" value="20"/>
 			<property name="EntityDamage" value="100"/>
 			<property name="ParticleIndex" value="11"/> <!-- which Prefab/particle is used -->
-			<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+			<property name="RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
 			<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 			<property class="DamageBonus">
 				<property name="water" value="0"/>
@@ -14322,7 +14636,7 @@
 			<property name="BlockDamage" value="20"/>
 			<property name="EntityDamage" value="100"/>
 			<property name="ParticleIndex" value="11"/> <!-- which Prefab/particle is used -->
-			<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+			<property name="RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
 			<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 			<property class="DamageBonus">
 				<property name="stone" value=".3"/>
@@ -14376,7 +14690,7 @@
 			<property name="BlockDamage" value="20"/>
 			<property name="EntityDamage" value="100"/>
 			<property name="ParticleIndex" value="11"/> <!-- which Prefab/particle is used -->
-			<property name="RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
+			<property name="RadiusBlocks" value="4"/> <!-- damage radius for blocks -->
 			<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
 			<property class="DamageBonus">
 				<property name="stone" value=".3"/>
@@ -16476,7 +16790,7 @@
 	<property name="Tags" value="ammo,ranged,attAgility,perkArchery,ScroungerCells,RemoveCell"/>
 	<property name="Material" value="Mcloth"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_PlasmaBlue"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_PlasmaBlue"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="PlasmaCellDMdesc"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
@@ -16513,7 +16827,7 @@
 	<property name="Material" value="Morganic"/>
 	<property name="Weight" value="0"/>
 	<property name="Group" value="Ammo/Weapons,Ammo,Ranged Weapons"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_PlasmaBlue"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_PlasmaBlue"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyCellDMdesc"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
@@ -20647,7 +20961,7 @@
 	<property name="Tags" value="ammo,perkBFGExpert,corpseRemoval"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
 	<property name="CustomIconTint" value="0000FF"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BFGGreen"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BFGGreen"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyBFGCellEntitydesc"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -20701,7 +21015,7 @@
 	<property name="Tags" value="ammo,perkBFGExpert,corpseRemoval"/>
 	<property name="CustomIcon" value="PlasmaCellBattery"/>
 	<property name="CustomIconTint" value="FF0000"/>
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BFGGreen"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BFGGreen"/>
 	<property name="HoldType" value="45"/>
 	<property name="DescriptionKey" value="DummyBFGCellBlockdesc"/>
 	<property name="HandMeshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
@@ -20754,24 +21068,6 @@
 </append>
 
 <append xpath="/items">
-<item name="meleeHandBarrel">
-	<property name="Extends" value="meleeHandMaster"/>
-	<property name="CreativeMode" value="None"/>
-	<property class="Action0">
-		<property name="DamageEntity" value="0"/>
-		<property name="DamageBlock" value="0"/>
-		<property name="Range" value="0.01"/>
-	</property>
-	<effect_group name="meleeHandBarrel" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-	</effect_group>
-
-	<effect_group name="meleeHandBarrel" tiered="false">
-		<passive_effect name="ModSlots" operation="base_set" value="0"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
-	</effect_group>
-</item>
-
 <item name="meleeHandVanillaWeak">
 	<property name="Extends" value="meleeHandMaster"/>
 	<property name="CreativeMode" value="None"/>
@@ -21064,7 +21360,7 @@
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="4.5"/>
 		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="4.5"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value=".01"/>
@@ -21153,7 +21449,7 @@
 </item>
 
 <item name="meleeHandDemonImpProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_ImpFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_ImpFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21163,7 +21459,7 @@
 		<property name="DamageBlock" value="15"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_ImpFireball$ImpImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="30"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21237,7 +21533,7 @@
 </item>
 
 <item name="meleeHandDemonNightmareImpProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_NightmareFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_NightmareFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21247,7 +21543,7 @@
 		<property name="DamageBlock" value="20"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_NightmareFireball$NightmareImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="30"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21376,7 +21672,7 @@
 </item>
 
 <item name="meleeHandDemonBabyCacoProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_CacoBall"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_CacoBall"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21386,7 +21682,7 @@
 		<property name="DamageBlock" value="20"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_CacoFireball$BabyCacoImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="40"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21461,7 +21757,7 @@
 </item>
 
 <item name="meleeHandDemonCacodemonProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_CacoBall"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_CacoBall"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21471,7 +21767,7 @@
 		<property name="DamageBlock" value="25"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_CacoFireball$CacodemonImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="50"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21544,7 +21840,7 @@
 </item>
 
 <item name="meleeHandDemonHellKnightProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_KnightFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_KnightFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21554,7 +21850,7 @@
 		<property name="DamageBlock" value="35"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_KnightFireball$KnightImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="70"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21626,7 +21922,7 @@
 </item>
 
 <item name="meleeHandDemonBaronHellProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_BaronFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_BaronFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21636,7 +21932,7 @@
 		<property name="DamageBlock" value="40"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_BaronFireball$BaronImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="80"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21781,7 +22077,7 @@
 </item>
 
 <item name="meleeHandDemonRevenantProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_RevenantFireball"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_RevenantFireball"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21791,7 +22087,7 @@
 		<property name="DamageBlock" value="50"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="11"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="100"/>
 			<property class="DamageBonus">
@@ -21866,7 +22162,7 @@
 </item>
 
 <item name="meleeHandDemonMancubusProjectile">
-	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles2.unity3d?Projectile_Mancubus"/>
+	<property name="Meshfile" value="#@modfolder:Resources/HDprojectiles.unity3d?Projectile_Mancubus"/>
 	<property name="Material" value="Morganic"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="CustomIcon" value="missingIcon"/>
@@ -21876,7 +22172,7 @@
 		<property name="DamageBlock" value="35"/>
 		<property class="Explosion">
 			<property name="ParticleIndex" value="#@modfolder:Resources/HDimpacts.unity3d?Hit_Mancubus$MancubusImpact"/>
-			<property name="RadiusBlocks" value="1"/>
+			<property name="RadiusBlocks" value="0.5"/>
 			<property name="Duration" value="2"/>
 			<property name="BlockDamage" value="70"/>
 			<property name="AudioName" value="ProjectileImpactAudio"/>
@@ -21963,7 +22259,7 @@
 		<property class="Explosion">
 			<property name="DamageType" value="Heat"/>
 			<property name="ParticleIndex" value="11"/>
-			<property name="RadiusBlocks" value="5"/>
+			<property name="RadiusBlocks" value="4"/>
 			<property name="RadiusEntities" value="5"/>
 			<property name="Duration" value="2"/>
 			<property name="EntityDamage" value="50">

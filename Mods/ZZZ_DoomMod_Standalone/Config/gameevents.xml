@@ -1,6 +1,6 @@
 <FranticDan>
 	
-	<set xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddBuff']/property[@name='buff_name']/@value">buffFirstSpawnArmour</set>
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']/action[@class='AddBuff']/property[@value='buffDukeNote']"/>
 	<set xpath="/gameevents/action_sequence[@name='block_car_alarm_start']/action[1]/property[@name='entity_names']/@value">demonBaronOfHell</set>
 	<set xpath="/gameevents/action_sequence[@name='challenge_group_reward_basics']/action[@class='AddSkillPoints']/property[@name='skill_points']/@value">1</set>
 	<set xpath="/gameevents/action_sequence[@name='action_give_points']/action[@class='AddSkillPoints']/property[@name='skill_points']/@value">1</set>
@@ -338,6 +338,24 @@
             </action>
 	</action_sequence>
 	
+	<action_sequence name="TakeLandClaimBack">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+		<property name="target_type" value="Block" />
+		
+		<action class="PlaySound">
+			<property name="sound" value="keystone_destroyed" />
+			<property name="max_distance" value="15" />
+		</action>
+		<action class="BlockReplace">
+			<property name="block_to" value="air" />
+		</action>
+		<action class="AddItems">
+			<property name="added_items" value="keystoneBlock"/>
+			<property name="added_item_counts" value="1"/>
+		</action>
+	</action_sequence>
+	
 	<action_sequence name="FillJar">
 		<property name="allow_user_trigger" value="false" />
 		<property name="action_type" value="Game" />
@@ -447,6 +465,50 @@
 				<property name="operation" value="GTE"/>
 				<property name="var_name" value="jar_chance"/>
 				<property name="value" value="21"/>
+			</requirement>
+			
+			<action class="AddItems">
+				<property name="added_items" value="drinkJarEmpty"/>
+				<property name="added_item_counts" value="1"/>
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="jars_empty_place"/>
+			</action>
+		</decision>
+	</action_sequence>
+	
+	<action_sequence name="RefundJarBook">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+	
+		<action class="ModifyVarInt">
+			<property name="var_name" value="jar_chance"/>
+			<property name="value" value="1-100"/>
+		</action>
+		
+		<decision class="If">
+			<property name="phase" value="1"/>
+			<requirement class="VarInt">
+				<property name="operation" value="LT"/>
+				<property name="var_name" value="jar_chance"/>
+				<property name="value" value="18"/>
+			</requirement>
+			
+			<action class="AddItems">
+				<property name="added_items" value="resourceBrokenGlass"/>
+				<property name="added_item_counts" value="2"/>
+			</action>
+			<action class="PlaySound">
+				<property name="sound" value="glassdestroy"/>
+			</action>
+		</decision>
+		
+		<decision class="If">
+			<property name="phase" value="1"/>
+			<requirement class="VarInt">
+				<property name="operation" value="GTE"/>
+				<property name="var_name" value="jar_chance"/>
+				<property name="value" value="18"/>
 			</requirement>
 			
 			<action class="AddItems">

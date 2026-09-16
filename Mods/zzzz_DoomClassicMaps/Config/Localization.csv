@@ -16,7 +16,7 @@ challengeAdvancedSurvivalRewardTeleporter,challenges,Quest,,,,3x Teleport
 challengeExplorationRewardTeleporter,challenges,Quest,,,,4x Teleport
 challengeRewardSkillPoint,challenges,Quest,,,,1x Perk Point
 doomNoteSelector,items,Item,,,,Teleporter (Selector)
-doomNoteSelectorDesc,items,Item,,,,"This allows you to select the teleportation destination of your choice to a Classic Doom Level.\n\nWhile in a Classic Doom Level, you'll have increased movement speed but your jump height will be reduced."
+doomNoteSelectorDesc,items,Item,,,,"This allows you to select the destination of your choice to a Classic Doom Level.\n\nWhile in a Classic Doom Level, you'll have increased movement speed but your jump height will be reduced."
 doomNoteE1M1Tutorial,items,Item,,,,E1M1 Teleporter
 doomNoteE1M1TutorialDesc,items,Item,,,,A teleporter pad that takes you into E1M1: Hangar.
 doomNoteE1M1,items,Item,,,,E1M1 Teleporter

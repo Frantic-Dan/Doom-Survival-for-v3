@@ -16,6 +16,8 @@ loadingTipDM3,"'Story in a game is like a story in a p*rn movie. It's expected t
 loadingTipDM3_title,Discover things on your own
 loadingTipDM4,"You will be held solely responsible for any and all permanently lost items if you don't have 'drop nothing on death' for your server."
 loadingTipDM4_title,Attention: Server Admins
+loadingTipDM5,"[FF4F00]1: Peer-to-peer multiplayer: The Host's armour breaks every time a player exits a Classic Level, use a dedicated server through steam instead.\n2: Demon's projectiles now have an occasional visual bug, due to fixing a gameplay issue they had.[-]"
+loadingTipDM5_title,Known Issues
 Mod Not Installed Correctly,[FF4F00]Mod Not Installed Correctly[-]
 ModNotInstalledCorrectlyText,"[FF4F00]This mod hasn't been installed correctly and is missing critical files required for the mod to be 100% functional.[-]"
 
@@ -26,6 +28,7 @@ ttCraftingSkillUnlockQuality,You have unlocked {0} - {1}
 buffCampfireAOEEffectDescDM,You are warmed by the fire.\n\nCold Resist +20\nHeat Resist -10
 cntWoodenChestPlayer,Storage Chest Box
 statStormDuration,Extended Storm Protection
+Take_LandClaim,Pick up Land Claim Block
 utilitySinkDMwater,[57B9FF]Hold Jar to collect Water[-]
 sinkKitchenDMwater,[57B9FF]Hold Jar to collect Water[-]
 pedestalSinkDMwater,[57B9FF]Hold Jar to collect Water[-]
@@ -146,7 +149,7 @@ StimPackBlueDesc,Recovers 10 health points.\nCures bleeding.\n\nCosts 2 food.
 mediKitBlue,Blue Medikit
 MediKitBlueDesc,"Recovers 25 health points.\n\nCures Lacerations, Concussions and Bleeding.\n\nCosts 4 food."
 berserkPack,Berserk Pack ([42C234]Power Up[-])
-berserkPackDesc,"Will recover all health, up to 50%.\n\nIncreases damage with knuckles and knives by x5 for 150 seconds.\n\nYou shrug off 20% damage, this makes you thirsty."
+berserkPackDesc,"Will recover all health, up to 50%.\n\nIncreases damage with knuckles and knives to x5 for 150 seconds.\n\nYou shrug off 20% damage, this makes you thirsty."
 LightAmplificationPowerup,Light Amplification Goggles
 LightAmplificationPowerupDesc,Will provide 5 minutes of full visibility to overcome the darkness.\n\nCan stack up to 3 uses.
 buffLightAmplificationName,Light Amplification Goggles
@@ -197,11 +200,11 @@ buffStatusHungry03TooltipDM,"[FF4F00]You're starving, max health has critically 
 buffStatusThirsty01TooltipDM,"You're parched, max health is reducing"
 buffStatusThirsty02TooltipDM,"You're thirsty, max health has drastically reduced"
 buffStatusThirsty03TooltipDM,"[FF4F00]You're dehydrated, max health has critically reduced, you're dying!![-]"
-
+drinkJarEmpty,Empty Glass Jar
 JarCoffeeDescDM,"Coffee is life, coffee is love.\nSlowly recovers health.\n\nUp to 60% max health."
 drinkJarCoffeeDescDM,"The caffeine is revitalising, slowly healing you and warming you up!."
 JarHoneyCoffeeDescDM,"Coffee sweetened with honey, provides some nutrients and healing.\nCoffee is life, coffee is love.\nSlowly recovers health."
-buffRedTeaDMDesc,Red tea temporarily slows down your metabolism.\n\nYour hunger and hydration has slowed down by 25%.
+buffRedTeaDMDesc,Red tea temporarily slows down your metabolism.\n\nYour hunger and dehydration has slowed down by 25%.
 drinkJarRedHoneyTea,Red Honey Tea
 drinkJarRedHoneyTeaDesc,"Provides efficient digestion, fills you up and makes you feel rejuvinated."
 drinkJarHoneyCoffee,Honey Coffee
@@ -979,11 +982,11 @@ perkCardioNameRank3LongDesc,Walk 30% faster.\nRun 21% faster.
 perkCardioNameRank4LongDesc,Walk 40% faster.\nRun 28% faster.
 perkCardioNameRank5LongDesc,Walk 50% faster.\nRun 35% faster.
 
-perkTreasureHunterDMRank1LongDesc,"Treasure radius decreases 1m for every 9 blocks dug instead of 10.\nDo 10% more damage to dirt.\nFind 10% more items in buried chests."
-perkTreasureHunterDMRank2LongDesc,"Treasure radius decreases 1m for every 8 blocks dug.\nDo 20% more damage to dirt.\nFind 20% more items in buried chests."
-perkTreasureHunterDMRank3LongDesc,"Treasure radius decreases 1m for every 7 blocks dug.\nDo 30% more damage to dirt.\nFind 30% more items in buried chests."
-perkTreasureHunterDMRank4LongDesc,"Treasure radius decreases 1m for every 6 blocks dug.\nDo 40% more damage to dirt.\nFind 40% more items in buried chests.\n\nAdds extra cash to all buried chests."
-perkTreasureHunterDMRank5LongDesc,"Treasure radius decreases 1m for every 5 blocks dug.\nDo 50% more damage to dirt.\nFind 50% more items in buried chests.\n\nAdds extra weapon, armor, and rare item to all buried chests."
+perkTreasureHunterDMRank1LongDesc,"Treasure radius decreases 1m for every 9 blocks dug instead of 10.\nDo 10% more damage to dirt.\nFind 10% more items in buried chests.\n\nIncreases chance to find treasure maps by 5%."
+perkTreasureHunterDMRank2LongDesc,"Treasure radius decreases 1m for every 8 blocks dug.\nDo 20% more damage to dirt.\nFind 20% more items in buried chests.\n\nIncreases chance to find treasure maps by 10%."
+perkTreasureHunterDMRank3LongDesc,"Treasure radius decreases 1m for every 7 blocks dug.\nDo 30% more damage to dirt.\nFind 30% more items in buried chests.\n\nIncreases chance to find treasure maps by 15%."
+perkTreasureHunterDMRank4LongDesc,"Treasure radius decreases 1m for every 6 blocks dug.\nDo 40% more damage to dirt.\nFind 40% more items in buried chests.\n\nIncreases chance to find treasure maps by 20%.\nAdds extra cash to all buried chests."
+perkTreasureHunterDMRank5LongDesc,"Treasure radius decreases 1m for every 5 blocks dug.\nDo 50% more damage to dirt.\nFind 50% more items in buried chests.\n\nIncreases chance to find treasure maps by 25%.\nAdds extra weapon, armor, and rare item to all buried chests."
 
 perkChemistExpertName,Chemist Expert
 perkChemistExpertDesc,"When crafting ammo, you require less gunpowder or petrol.\nWhen crafting gunpowder or petrol, you require less nitrate, coal and fertiliser, or oil Shale."
@@ -1035,13 +1038,13 @@ perkBookWormRank4LongDesc,Have a 12% chance to find books in general looting and
 perkBookWormRank5LongDesc,Have a 15% chance to find books in general looting and a 30% chance to get 2 skill points when reading magazines.
 
 perkAmmoScroungerName,Ammo Scrounger
-perkAmmoScroungerDesc,Find more ammo in loot.\n\nDoesn't affect ammo dropped by former humans.
+perkAmmoScroungerDesc,Find more ammo in loot.\n\n[FF4F00]Doesn't affect ammo dropped by former humans or in classic levels.[-]
 perkAmmoScroungerRank1Desc,"Ooooo, shiny!"
 perkAmmoScroungerRank2Desc,Mags loaded!
 perkAmmoScroungerRank3Desc,Swimming in ammo!
-perkAmmoScroungerRank1LongDesc,"When looting ammo, you find more quantity.\n\n+2 Shotgun Shells, Plasma Cells.\n+4 Handgun Ammo and Chaingun Ammo.\n+6  Fuel.\n+1  Crossbow Bolt."
-perkAmmoScroungerRank2LongDesc,"When looting ammo, you find more quantity.\n\n+4 Shotgun Shells, Plasma Cells.\n+8 Handgun Ammo and Chaingun Ammo.\n+12  Fuel.\n+2  Crossbow Bolts.\n+1  Rocket."
-perkAmmoScroungerRank3LongDesc,"When looting ammo, you find more quantity.\n\n+6 Shotgun Shells, Plasma Cells.\n+12 Handgun Ammo and Chaingun Ammo.\n+18  Fuel.\n+3  Crossbow Bolts.\n+2  Rockets."
+perkAmmoScroungerRank1LongDesc,"When looting vanilla ammo loot containers, you find 20% more Handgun Ammo, Shotgun Shells, Crossbow Bolts, Chaingun Ammo, Petrol and Plasma Cells."
+perkAmmoScroungerRank2LongDesc,"When looting vanilla ammo loot containers, you find 40% more Handgun Ammo, Shotgun Shells, Crossbow Bolts, Chaingun Ammo, Petrol, Plasma Cells and +1  Rocket."
+perkAmmoScroungerRank3LongDesc,"When looting vanilla ammo loot containers, you find 60% more Handgun Ammo, Shotgun Shells, Crossbow Bolts, Chaingun Ammo, Petrol, Plasma Cells and +2  Rockets."
 
 perkStrongArmName,Strong Arm
 perkStrongArmDesc,Deal more damage with knuckles and knives.
@@ -1176,11 +1179,11 @@ perkStrengthenedConstitutionRank2Des,
 perkStrengthenedConstitutionRank3Des,
 perkStrengthenedConstitutionRank4Des,
 perkStrengthenedConstitutionRank5Des,
-perkStrengthenedConstitutionRank1LongDesc,Max Health +20\nMax Armour +20.\n\nYou recover from biome hazards 25% faster.\n\nReduces chance to get dysentery by 2%.
-perkStrengthenedConstitutionRank2LongDesc,Max Health +40\nMax Armour +40.\n\nReduces chance to get dysentery by 4%.
-perkStrengthenedConstitutionRank3LongDesc,Max Health +60\nMax Armour +60.\n\nYou recover from biome hazards 50% faster.
-perkStrengthenedConstitutionRank4LongDesc,Max Health +80\nMax Armour +80.\n\nReduces chance to get dysentery by 6%.
-perkStrengthenedConstitutionRank5LongDesc,Max Health +100\nMax Armour +100.\n\nYou recover from biome hazards 75% faster.
+perkStrengthenedConstitutionRank1LongDesc,Max Health +20\nMax Armour +20.\n\nYou recover from biome hazards 25% faster.\nExtends storm protection time by 6 seconds.\nReduces chance to get dysentery by 2%.
+perkStrengthenedConstitutionRank2LongDesc,Max Health +40\nMax Armour +40.\n\nExtends storm protection time by 12 seconds.\n\nReduces chance to get dysentery by 4%.
+perkStrengthenedConstitutionRank3LongDesc,Max Health +60\nMax Armour +60.\n\nExtends storm protection time by 18 seconds.\n\nYou recover from biome hazards 50% faster.
+perkStrengthenedConstitutionRank4LongDesc,Max Health +80\nMax Armour +80.\n\nExtends storm protection time by 24 seconds.\n\nReduces chance to get dysentery by 6%.
+perkStrengthenedConstitutionRank5LongDesc,Max Health +100\nMax Armour +100.\n\nExtends storm protection time by 30 seconds.\n\nYou recover from biome hazards 75% faster.
 
 perkSturdyBodyName,Sturdy Body
 perkSturdyBodyDesc,Increase resistance to critical injuries.
@@ -1204,7 +1207,7 @@ perkKnowThyEnemyRank1LongDesc,You know the name of your enemies.
 perkKnowThyEnemyRank2LongDesc,You know how healthy or injured your enemies are.
 perkKnowThyEnemyRank3LongDesc,"You know your enemies weakness, all of your ranged attacks inflict more damage.\n\nHandgun damage +1.\nShotgun damage +1.\nChaingun damage +1.\nCrossbow damage +4.\nRocket Launcher damage +10.\nPlasma Rifle damage +2.\nBFG9001 damage +60."
 
-perkFiremansAlmanacAxesDescDM,Your naturally have an extra 2 heat resist.
+perkFiremansAlmanacAxesDescDM,You naturally have an extra 2 heat resist.
 perkFiremansAlmanacAxesLongDescDM,"After dealing with so many fires, you have gained a tolerance to high temperature."
 perkFiremansAlmanacMolotovDescDM,Flamethrower deals 1 extra damage.
 perkFiremansAlmanacMolotovLongDescDM,"Each 'hit' with the flamethrower deals 1 extra damage."
@@ -1218,6 +1221,32 @@ perkHuntingJournalSelfDefenseDescDM,Deal extra damage to humans and ground-based
 perkHuntingJournalSelfDefenseLongDescDM,Deal extra damage to humans and ground-based demons.
 perkArtOfMiningDiamondToolsDescDM,"Swing your stone axe, pickaxes and shovels 10% faster."
 perkArtOfMiningDiamondToolsLongDescDM,"Swing your stone axe, pickaxes and shovels 10% faster."
+perkskillHardenedSurvival0Name,Hardened Survivor
+perkskillHardenedSurvival0Desc,This book series will teach you how to survive longer during the demon invasion.
+perkskillHardenedSurvivalLongDesc,This book series will teach you how to survive longer during the demon invasion.
+bookHardenedSurvivalFoodHeal,Hardened Survival Vol 1
+perkHardenedSurvivalFoodHealDesc,"Eating cooked food provides minor healing equal to 10% of the 'food' value."
+perkHardenedSurvivalFoodHealLongDesc,"Eating cooked food provides minor healing equal to 10% of the 'food' value."
+bookHardenedSurvivalStorm,Hardened Survival Vol 2
+perkHardenedSurvivalStormDesc,"You can endure storms for 15 seconds longer."
+perkHardenedSurvivalStormLongDesc,"You can endure storms for 15 seconds longer."
+bookHardenedSurvivalBreathing,Hardened Survival Vol 3
+perkHardenedSurvivalBreathingDesc,"You're able to breath in the burnt, desert and snow biomes for a minute longer."
+perkHardenedSurvivalBreathingLongDesc,"You're able to breath in the burnt, desert and snow biomes for a minute longer."
+bookHardenedSurvivalInsulation,Hardened Survival Vol 4
+perkHardenedSurvivalInsulationDesc,"You naturally have an extra 4 cold resist."
+perkHardenedSurvivalInsulationLongDesc,"You naturally have an extra 4 cold resist."
+bookHardenedSurvivalIronGut,Hardened Survival Vol 5
+perkHardenedSurvivalIronGutDesc,"You're 2% less likely to get dysentery."
+perkHardenedSurvivalIronGutLongDesc,"You're 2% less likely to get dysentery."
+bookHardenedSurvivalSlowMetabolism,Hardened Survival Vol 6
+perkHardenedSurvivalSlowMetabolismDesc,"Your natural hunger and dehydration has slowed down by 5%."
+perkHardenedSurvivalSlowMetabolismLongDesc,"Your natural hunger and dehydration has slowed down by 5%."
+bookHardenedSurvivalJars,Hardened Survival Vol 7
+perkHardenedSurvivalJarsDesc,"You're 15% less likely to smash your jars."
+perkHardenedSurvivalJarsLongDesc,"You're 15% less likely to smash your jars."
+perkHardenedSurvivalCompleteDesc,"After all the beatings you've endured, you now take 5% less damage."
+perkHardenedSurvivalCompleteLongDesc,"After all the beatings you've endured, you now take 5% less damage."
 perkRangersExplodingBoltsLongDescDM,Deal 6 more damage with the crossbow.
 perkRangersExplodingBoltsDescDM,Deal 6 more damage with the crossbow.
 perkRangersExplodingBoltsLongDescDM,Deal 6 more damage with the crossbow.
@@ -1512,11 +1541,11 @@ demonLostSoul,Lost Soul
 demonCacodemon,Cacodemon
 demonBabyCacodemon,Baby Cacodemon
 demonCacodemonSpectre,Cacodemon Spectre
-demonHellKnight,Hell Knight
-demonBaronOfHell,Baron of Hell
+demonHellKnight,Hell Knight (Green Guy)
+demonBaronOfHell,Baron of Hell (Red Green Guy)
 demonPainElemental,Pain Elemental
 demonPainElementalSpectre,Pain Elemental Spectre
-demonMancubus,Mancubus
+demonMancubus,Mancubus (Mankipuss)
 demonArchvile,Archvile
 demonRevenant,Revenant
 demonCyber,Cyberdemon

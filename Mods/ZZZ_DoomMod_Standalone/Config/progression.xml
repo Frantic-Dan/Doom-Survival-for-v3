@@ -36,9 +36,10 @@
 	<book_group name="skillTechJunkie" parent="attBooks" name_key="perkTechJunkie0Name" desc_key="perkTechJunkie0Desc" long_desc_key="perkBookGroupLongDesc" icon="gunBotT2JunkTurret"><effect_group/></book_group>
 	<book_group name="skillShotguns" parent="attBooks" name_key="perkShotgunMessiah0Name" desc_key="perkShotgunMessiah0Desc" long_desc_key="perkBookGroupLongDesc" icon="IZYgunShotgunT2PumpShotgun"><effect_group/></book_group>
 	<book_group name="skillAutoWeapons" parent="attBooks" name_key="perkAutoWeapons0Name" desc_key="perkAutoWeapons0Desc" long_desc_key="perkBookGroupLongDesc" icon="IZYgunT5HeavyWeaponM134MinigunGatling"><effect_group/></book_group>
-	<book_group name="skillRocketLauncher" parent="attBooks" name_key="perkRocketLauncher0NameDM" desc_key="perkRocketLauncher0DescDM" long_desc_key="perkBookGroupLongDesc" icon="gunchinalake"><effect_group/></book_group>
+	<book_group name="skillRocketLauncher" parent="attBooks" name_key="perkRocketLauncher0NameDM" desc_key="perkRocketLauncher0DescDM" long_desc_key="perkBookGroupLongDesc" icon="IZYgunT2LGLChinalakeGrenadeLauncher"><effect_group/></book_group>
 	<book_group name="skillSniper" parent="attBooks" name_key="perkSniper0NameDM" desc_key="perkSniper0DescDM" long_desc_key="perkBookGroupLongDesc" icon="UACPlasmaRifle"><effect_group/></book_group>
 	<book_group name="skillArtOfMining" parent="attBooks" name_key="perkArtOfMining0Name" desc_key="perkArtOfMining0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_mining"><effect_group/></book_group>
+	<book_group name="skillHardenedSurvival" parent="attBooks" name_key="perkskillHardenedSurvival0Name" desc_key="perkskillHardenedSurvival0Desc" long_desc_key="perkskillHardenedSurvivalLongDesc" icon="ui_game_symbol_survival"><effect_group/></book_group>
 	<book_group name="skillFiremansAlmanac" parent="attBooks" name_key="perkFiremansAlmanac0Name" desc_key="perkFiremansAlmanac0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_fire"><effect_group/></book_group>
 	<book_group name="skillHuntingJournal" parent="attBooks" name_key="perkHuntingJournal0Name" desc_key="perkHuntingJournal0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_armor_leather"><effect_group/></book_group>
 	<book_group name="skillLuckyLooter" parent="attBooks" name_key="perkLuckyLooter0Name" desc_key="perkLuckyLooter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></book_group>
@@ -693,6 +694,9 @@
 			<!-- Find more stuff in buried chests -->
 			<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" tags="buriedTreasure"/>
 			
+			<!-- find more treasure maps in loot -->
+			<passive_effect name="LootProb" operation="perc_add" level="1,2,3,4,5" value=".05,.1,.15,.2,.25" tags="treasureMap"/>
+			
 			<!-- Do more damage to dirt -->
 			<passive_effect name="BlockDamage" operation="perc_add" level="1,2,3,4,5" value=".1,.2,.3,.4,.5" tags="treasureHunter"/>
 			
@@ -859,14 +863,7 @@
 	<perk name="perkAmmoScrounger" max_level="3" parent="skillGeneralPerks" name_key="perkAmmoScroungerName" desc_key="perkAmmoScroungerDesc" icon="ui_game_symbol_shape_ammo" override_cost="2,2,2">
 	
 		<effect_group>
-			
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="0,1,2" tags="ScroungerRocket"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="1,2,3" tags="ScroungerBolt"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="2,4,6" tags="ScroungerShells"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="4,8,12" tags="ScroungerChaingun"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="2,4,6" tags="ScroungerCells"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="4,8,12" tags="ScroungerHandgun"/>
-			<passive_effect name="LootQuantity" operation="base_add" level="1,2,3" value="6,12,18" tags="gasoline"/>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1,2,3" value=".2,.4,.6" tags="ScroungerHandgun,ScroungerBolt,ScroungerShells,ScroungerChaingun,gasoline,ScroungerRocket,ScroungerCells"/>
 		</effect_group>
 		
 		<effect_group>
@@ -1068,7 +1065,10 @@
 			<passive_effect name="HealthMax" operation="base_add" level="1,2,3,4,5" value="10,20,30,40,50" />
 			<passive_effect name="StaminaMax" operation="base_add" level="1,2,3,4,5" value="10,20,30,40,50" />
 			
-			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="0,-2,-4,-4,-6,-6"/>
+			<!-- <triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$MetabolismResist" operation="set" value="0,-2,-4,-4,-6,-6"/>
+			
+			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$MetabolismResist" operation="add" value="-2">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/></triggered_effect> -->
 			
 			<effect_description level="1" desc_key="perkStrengthenedConstitutionRank1Desc" long_desc_key="perkStrengthenedConstitutionRank1LongDesc"/>
 			<effect_description level="2" desc_key="perkStrengthenedConstitutionRank2Desc" long_desc_key="perkStrengthenedConstitutionRank2LongDesc"/>
@@ -1085,90 +1085,77 @@
 			<passive_effect name="BuffResistance" operation="base_add" level="0,1,2,3,4,5" value=".8,.84,.88,.92,.96,99" tags="buff2ndDegreeBurn"/>
 			<passive_effect name="BuffResistance" operation="base_add" level="0,1,2,3,4,5" value=".6,.6,.6,.6,.6,.6" tags="buffInfectionMain"/>
 			
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="300">
 				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="$BurntHazardTimerMax" operation="GT" value="300"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$SnowHazardTimerMax" operation="GT" value="360"/></triggered_effect>
 			
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="300">
 				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="$DesertHazardTimerMax" operation="GT" value="300"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$SnowHazardTimerMax" operation="GT" value="360"/></triggered_effect>
 				
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/></triggered_effect>
 			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="300">
 				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/>
 				<requirement name="CVarCompare" cvar="$SnowHazardTimerMax" operation="GT" value="300"/></triggered_effect>
-				
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimer" operation="set" value="300">
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="360">
 				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
-				<requirement name="CVarCompare" cvar="$BurntHazardTimer" operation="GT" value="300"/></triggered_effect>
-			
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimer" operation="set" value="300">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
-				<requirement name="CVarCompare" cvar="$DesertHazardTimer" operation="GT" value="300"/></triggered_effect>
-				
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="360">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="420">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="480">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="540">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/></triggered_effect>
-			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="600">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/></triggered_effect>
-			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimer" operation="set" value="300">
-				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
-				<requirement name="CVarCompare" cvar="$SnowHazardTimer" operation="GT" value="300"/></triggered_effect>
-				
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="$SnowHazardTimerMax" operation="GT" value="360"/></triggered_effect>
 			
 			<effect_description level="1" desc_key="perkSturdyBodyRank1Desc" long_desc_key="perkSturdyBodyRank1LongDesc"/>
 			<effect_description level="2" desc_key="perkSturdyBodyRank2Desc" long_desc_key="perkSturdyBodyRank2LongDesc"/>
@@ -1270,7 +1257,7 @@
 		<!-- Adds a chance to loot more water -->
 		<effect_group>
 			<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
-				<passive_effect name="LootQuantity" operation="perc_add" level="1" value="1" tags="riverWater"/>
+				<passive_effect name="LootQuantity" operation="base_add" level="1" value="1" tags="riverWater"/>
 		</effect_group>
 		<effect_group>
 			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookFiremansAlmanacHeat">
@@ -2038,6 +2025,159 @@
 		<effect_group>
 			<requirement name="ItemHasTags" tags="miningTool"/>
 				<passive_effect name="HarvestCount" operation="perc_add" level="1" value=".2" tags="oreWoodHarvest"/>
+		</effect_group>
+	</book>
+	
+	<!-- *** 1 -->
+	<book name="perkHardenedSurvivalFoodHeal" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalFoodHeal" desc_key="perkHardenedSurvivalFoodHealDesc" long_desc_key="perkHardenedSurvivalFoodHealLongDesc">
+			<!-- effects in items -->
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalFoodHeal">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalFoodHeal">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 2 -->
+	<book name="perkHardenedSurvivalStorm" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalStorm" desc_key="perkHardenedSurvivalStormDesc" long_desc_key="perkHardenedSurvivalStormLongDesc">
+		<!-- effects in buffs -->
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalStorm">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalStorm" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalStorm">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalStorm" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 3 -->
+	<book name="perkHardenedSurvivalBreathing" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalBreathing" desc_key="perkHardenedSurvivalBreathingDesc" long_desc_key="perkHardenedSurvivalBreathingLongDesc">
+		<effect_group>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$BurntHazardTimerMax" operation="set" value="660">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+				
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$DesertHazardTimerMax" operation="set" value="660">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+				
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="360">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="0"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="420">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="1"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="480">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="2"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="540">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="3"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="600">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="4"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+			<triggered_effect trigger="onSelfProgressionUpdate" action="ModifyCVar" cvar="$SnowHazardTimerMax" operation="set" value="660">
+				<requirement name="ProgressionLevel" progression_name="perkSturdyBody" operation="Equals" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/></triggered_effect>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalBreathing">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalBreathing">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalBreathing" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 4 -->
+	<book name="perkHardenedSurvivalInsulation" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalInsulation" desc_key="perkHardenedSurvivalInsulationDesc" long_desc_key="perkHardenedSurvivalInsulationLongDesc">
+		<effect_group>
+			<passive_effect name="HypothermalResist" operation="base_add" level="1" value="4" />
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalInsulation">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalInsulation" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalInsulation">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalInsulation" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 5 -->
+	<book name="perkHardenedSurvivalIronGut" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalIronGut" desc_key="perkHardenedSurvivalIronGutDesc" long_desc_key="perkHardenedSurvivalIronGutLongDesc">
+			<!-- effect in buffs -->
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalIronGut">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalIronGut">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalIronGut" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 6 -->
+	<book name="perkHardenedSurvivalSlowMetabolism" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalSlowMetabolism" desc_key="perkHardenedSurvivalSlowMetabolismDesc" long_desc_key="perkHardenedSurvivalSlowMetabolismLongDesc">
+		<effect_group>
+			<passive_effect name="FoodChangeOT" operation="base_add" level="1" value=".00125"/>
+			<passive_effect name="WaterChangeOT" operation="base_add" level="1" value=".00167"/>
+		</effect_group>
+		<effect_group>
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalSlowMetabolism">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalSlowMetabolism" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalSlowMetabolism">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalSlowMetabolism" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** 7 -->
+	<book name="perkHardenedSurvivalJars" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" name_key="bookHardenedSurvivalJars" desc_key="perkHardenedSurvivalJarsDesc" long_desc_key="perkHardenedSurvivalJarsLongDesc">
+		<effect_group>
+			<!-- effect in items -->
+			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookHardenedSurvivalJars">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="0"/>
+			</passive_effect>
+			<passive_effect name="LootProb" operation="base_set" value="1" tags="bookHardenedSurvivalJars">
+				<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalJars" operation="Equals" value="1"/>
+			</passive_effect>
+		</effect_group>
+	</book>
+	<!-- *** Completion -->
+	<book name="perkHardenedSurvivalComplete" parent="skillHardenedSurvival" max_level="1" base_skill_point_cost="0" desc_key="perkHardenedSurvivalCompleteDesc" long_desc_key="perkHardenedSurvivalCompleteLongDesc">
+		<effect_group>
+			<passive_effect name="GeneralDamageResist" operation="base_add" level="1" value="0.05"/>
 		</effect_group>
 	</book>
 	

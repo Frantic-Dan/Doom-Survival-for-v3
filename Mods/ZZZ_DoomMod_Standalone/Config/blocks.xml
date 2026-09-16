@@ -747,10 +747,6 @@
 <set xpath="/blocks/block[@name='signPosterMovie2159']/property[@name='Material']/@value">Mpaper</set>
 <set xpath="/blocks/block[@name='signPosterMovieTheater2159']/property[@name='Material']/@value">Mpaper</set>
 
-<set xpath="/blocks/block[@name='forge']//property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,steel,carbon</set>
-<set xpath="/blocks/block[@name='campfire']/property[@name='MaxDamage']/@value">1000</set>
-<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxDamage']/@value">2000</set>
-<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MultiBlockDim']/@value">2,3,2</set>
 <set xpath="/blocks/block[@name='cntApiary']/property[@name='MultiBlockDim']/@value">2,2,1</set>
 <set xpath="/blocks/block[@name='cntApiary']/property[@name='Material']/@value">Mwood</set>
 <set xpath="/blocks/block[@name='cntApiary']/property[@name='MaxDamage']/@value">2000</set>
@@ -763,15 +759,17 @@
 <!-- <set xpath="/blocks/block[@name='cntApiary']/property[@name='ConvertToItem']/@value">foodHoneycomb</set>
 <set xpath="/blocks/block[@name='cntApiary']/property[@name='ModdedConvertToItem']/@value">foodHoneycomb</set> -->
 <!-- <set xpath="/blocks/block[@name='cntApiary']/property[@name='FuelTypes']/@value">5,5,resourceCropChrysanthemumPlant,resourceCropGoldenrodPlant,resourceCropCottonPlant</set> -->
-<set xpath="/blocks/block[@name='forge']/property[@name='MaxDamage']/@value">5000</set>
-<set xpath="/blocks/block[@name='workbench']/property[@name='MaxDamage']/@value">5000</set>
-<set xpath="/blocks/block[@name='cementMixer']/property[@name='MaxDamage']/@value">5000</set>
+
 <insertafter xpath="/blocks/block[@name='tableSaw']/property[@name='CreativeMode']">
 	<property name="MaxDamage" value="800"/>
 </insertafter>
-<set xpath="/blocks/block[@name='chemistryStation']/property[@name='MaxDamage']/@value">5000</set>
 <set xpath="/blocks/block[@name='keystoneBlock']/property[@name='MaxDamage']/@value">30000</set>
-<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='OutputTypes']/@value">{water,jar,0,0,0,drinkJarRiverWaterDew,drinkJarBoiledWaterDew,2,2,18000,18000,collector_complete_item}</set>
+<insertafter xpath="/blocks/block[@name='keystoneBlock']/property[@name='SoundPlace']">
+	<property name="CustomCommandName1" value="Take_LandClaim"/>
+	<property name="CustomCommandIcon1" value="ui_game_symbol_hand"/>
+	<property name="CustomCommandIconColor1" value="FF4F00"/>
+	<property name="CustomCommandEvent1" value="TakeLandClaimBack"/>
+</insertafter>
 <!-- <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MinConvertTime']/@value">64800</set>
 <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxConvertTime']/@value">64800</set>
 <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='ConvertToItem']/@value">drinkJarRiverWaterDew</set>
@@ -784,18 +782,29 @@
 <set xpath="/blocks/block[@name='candleWallLightPlayer']/property[@name='HeatMapTime']/@value">0</set>
 <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapStrength']/@value">0</set>
 <set xpath="/blocks/block[@name='burningBarrelPlayer']/property[@name='HeatMapTime']/@value">0</set>
+<set xpath="/blocks/block[@name='campfire']/property[@name='MaxDamage']/@value">1000</set>
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapStrength']/@value">2.5</set>
 <set xpath="/blocks/block[@name='campfire']/property[@name='HeatMapTime']/@value">2500</set>
 <set xpath="/blocks/block[@name='cntDewCollector']/property[@name='HeatMapTime']/@value">2500</set>
+<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MaxDamage']/@value">2000</set>
+<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='MultiBlockDim']/@value">2,3,2</set>
+<set xpath="/blocks/block[@name='cntDewCollector']/property[@name='OutputTypes']/@value">{water,jar,0,0,0,drinkJarRiverWaterDew,drinkJarBoiledWaterDew,2,2,18000,18000,collector_complete_item}</set>
+<set xpath="/blocks/block[@name='forge']/property[@name='MaxDamage']/@value">5000</set>
+<set xpath="/blocks/block[@name='forge']//property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,steel,carbon</set>
 <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapStrength']/@value">3</set>
 <set xpath="/blocks/block[@name='forge']/property[@name='HeatMapTime']/@value">2500</set>
+<set xpath="/blocks/block[@name='forge']/property[@name='TakeDelay']/@value">3</set>
 <insertafter xpath="/blocks/block[@name='cntForgeWorkstationBroken']/drop[@event='Harvest' and @name='resourceClayLump']">
 	<drop event="Harvest" name="resourceLeather" count="1" tag="allHarvest,perkJunkMiner"/>
 </insertafter>
+<set xpath="/blocks/block[@name='workbench']/property[@name='MaxDamage']/@value">5000</set>
 <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapStrength']/@value">2.5</set>
 <set xpath="/blocks/block[@name='workbench']/property[@name='HeatMapTime']/@value">2500</set>
+<set xpath="/blocks/block[@name='workbench']/property[@name='TakeDelay']/@value">3</set>
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='MaxDamage']/@value">5000</set>
 <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapStrength']/@value">2.5</set>
 <set xpath="/blocks/block[@name='cementMixer']/property[@name='HeatMapTime']/@value">2500</set>
+<set xpath="/blocks/block[@name='cementMixer']/property[@name='TakeDelay']/@value">3</set>
 <insertafter xpath="/blocks/block[@name='cementMixer']/drop[@event='Harvest' and @name='resourceMechanicalParts']">
 	<drop event="Harvest" name="smallEngine" count="1" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceGoldNugget" count="1" tag="salvageHarvest"/>
@@ -806,8 +815,10 @@
 	<drop event="Harvest" name="resourceGoldNugget" count="0" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceElectricParts" count="0" tag="salvageHarvest"/>
 </insertafter>
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='MaxDamage']/@value">5000</set>
 <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapStrength']/@value">2.5</set>
 <set xpath="/blocks/block[@name='chemistryStation']/property[@name='HeatMapTime']/@value">2500</set>
+<set xpath="/blocks/block[@name='chemistryStation']/property[@name='TakeDelay']/@value">3</set>
 <insertafter xpath="/blocks/block[@name='cntCollapsedChemistryStation']/drop[@event='Harvest' and @name='resourceMetalPipe']">
 	<drop event="Harvest" name="resourceAcid" count="1" tag="salvageHarvest"/>
 </insertafter>
@@ -987,9 +998,6 @@
 	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
 </insertafter>
 
-<insertafter xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']/drop[@name='resourceElectricParts']">
-	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
-</insertafter>
 <insertafter xpath="/blocks/block[@name='cntStoreElectronicsPalletTvFallen']/drop[@name='resourceElectricParts']">
 	<drop event="Destroy" name="resourceNail" count="1" tag="allHarvest,perkJunkMiner"/>
 </insertafter>
@@ -2703,6 +2711,8 @@
 	<property name="SortOrder2" value="0001"/>
 </block>
 </insertafter>
+
+<set xpath="/blocks/block[@name='treeGrassMaster']/drop[@name='resourceYuccaFibers']/@count">2</set>
 
 <insertafter xpath="/blocks/block[@name='plantedSnowberry2']">
 <block name="plantedSnowberry3Harvest">

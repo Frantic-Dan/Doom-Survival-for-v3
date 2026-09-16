@@ -11,7 +11,7 @@
 	<insertafter xpath="//window[@name='ingameMenu']/label">
 		<rect>
 			<texture depth="3" anchor="CenterCenter" pos="0,0" color="[white]" texture="@modfolder:UIAtlases/ItemIconAtlas/logo.png" name="gameLogo" foregroundlayer="true" anchor_left="#cam,0.51,-20" anchor_bottom="#cam,0.5,-30" anchor_right="#cam,0.51,-20" anchor_top="#cam,0.5,440" pivot="center" keep_aspect_ratio="BasedOnHeight" aspect_ratio="2.3" />
-			<label depth="7" name="TextContent" pos="280,-10" font_size="32" color="[green]" text="Version 2.0.1" width="135" height="35"/>
+			<label depth="7" name="TextContent" pos="280,-10" font_size="32" color="[green]" text="Version 2.0.2" width="135" height="35"/>
 			<sprite depth="1" name="backgroundMain" pos="275,-5" sprite="menu_empty3px" color="[darkestGrey]" type="sliced" fillcenter="true" width="140" height="40"/>
 		</rect>
 		<rect controller="NewsWindow" pos="275,-50" sources="@modfolder:Links/DanDoomDiscord.txt">
@@ -214,9 +214,9 @@
 				</rect>
 				
 			<!--XP Bar-->
-				<sprite depth="1" pos="0,10" height="12" width="988" color="0,0,0,140" sprite="menu_empty2px" globalopacity="false" type="sliced" />
-				<sprite depth="9" pos="0,10" height="12" width="988" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" />
-				<sprite depth="4" pos="1,10" height="12" width="986" color="{xpcolor}" globalopacity="false" type="filled" fill="{xp}" />
+				<sprite depth="1" pos="0,10" height="12" width="988" color="0,0,0,140" sprite="menu_empty2px" globalopacity="false" type="sliced" visible="{showxp}" />
+				<sprite depth="9" pos="0,10" height="12" width="988" color="[black]" sprite="menu_empty2px" globalopacity="false" type="sliced" fillcenter="false" visible="{showxp}" />
+				<sprite depth="4" pos="1,10" height="12" width="986" color="{xpcolor}" globalopacity="false" type="filled" fill="{xp}" visible="{showxp}" />
 
 
 			</rect>
