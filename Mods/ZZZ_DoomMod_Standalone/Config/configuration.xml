@@ -24,8 +24,11 @@ Features:
 
 
 - For those playing multiplayer!
-The new v2.0.0 has optional content, 7 days to die has a spawn limit of 64, and this optional content will use up this limit for a single player if they play with this content, this means there will be no spawns for anyone else.
+1: The new v2.0.0 has optional content, 7 days to die has a spawn limit of 64, and this optional content will use up this limit for a single player if they play with this content, this means there will be no spawns for anyone else.
+
 In the future there may be an update that increases this limit so the optional content is more multiplayer friendly.
+
+2: There's a known issue with peer-to-peer, the host's armour always breaks when a player exits a Classic Level. It's recommended to use steam's 7DTD dedicated server or use a server service, or the host uses an armour shard each time to re-equip their armour.
 
 - Sandbox settings!
 Doom Survival has it's own custom sandbox settings, so your saved vanilla codes ARE NOT supported. Create a new one to ensure you're playing with the intended available options.
