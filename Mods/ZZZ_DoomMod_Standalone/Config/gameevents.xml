@@ -372,26 +372,9 @@
 		<property name="action_type" value="Game" />
 		<property name="target_type" value="Block" />
 		
-		<requirement class="HasBuff">
-			<property name="buff_name" value="buffFillJar" />
-		</requirement>
-		
-		<action class="RemoveItems">
-			<property name="items_location" value="Toolbelt,Backpack" />
-			<property name="items_tags" value="EmptyJar" />
-			<property name="count_type" value="Items"/>
-			<property name="count" value="1" />
-		</action>
-		
 		<action class="AddItems">
 			<property name="added_items" value="drinkJarBoiledWater"/>
 			<property name="added_item_counts" value="1"/>
-		</action>
-		
-		<action class="BlockDowngrade"/>
-		
-		<action class="PlaySound">
-			<property name="sound" value="bucketfill_water" />
 		</action>
 	</action_sequence>
 	
@@ -534,7 +517,7 @@
 		
 		<action class="AddItems">
 			<property name="added_items" value="9mmBulletDM"/>
-			<property name="added_item_counts" value="5"/>
+			<property name="added_item_counts" value="10"/>
 		</action>
 	</action_sequence>
 	
@@ -551,7 +534,7 @@
 		
 		<action class="AddItems">
 			<property name="added_items" value="ShotgunShellDM"/>
-			<property name="added_item_counts" value="2"/>
+			<property name="added_item_counts" value="4"/>
 		</action>
 	</action_sequence>
 	
@@ -568,7 +551,7 @@
 		
 		<action class="AddItems">
 			<property name="added_items" value="762mmBulletDM"/>
-			<property name="added_item_counts" value="7"/>
+			<property name="added_item_counts" value="15"/>
 		</action>
 	</action_sequence>
 	

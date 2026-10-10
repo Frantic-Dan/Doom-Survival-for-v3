@@ -1,0 +1,11 @@
+<configs>
+	<insertbefore xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/display_entry[@name_key='vehiclesT3']">
+		<display_entry icon="vehicleLawnTractorPlaceable" name_key="vehicleLawnTractor" has_quality="false" unlock_level="10">
+			<unlock_entry item="vehicleLawnTractorChassis,vehicleLawnTractorAccessories" unlock_tier="1"/>
+		</display_entry>
+	</insertbefore>
+
+	<append xpath="/progression/crafting_skills/crafting_skill[@name='craftingVehicles']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,150" value="1" tags="vehicleLawnTractorChassis,vehicleLawnTractorAccessories"/>
+	</append>
+</configs>

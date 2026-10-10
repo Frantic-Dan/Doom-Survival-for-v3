@@ -120,13 +120,13 @@
 	<challenge name="huntAnimals" title_key="challengeHuntAnimals"  icon="ui_game_symbol_challenge_adv_survival_kill_animals" group="BasicSurvival"
 		short_description_key="challengeHuntAnimalsShort" description_key="challengeHuntAnimalsDesc"
 		reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-		<objective type="KillByTag" entity_tags="animal" target_name_key="xuiAnimals" count="5"/>
+		<objective type="KillByTag" entity_tags="animal" target_name_key="xuiAnimals" count="5" is_enemy="false"/>
 	</challenge>
 	
 	<challenge name="placeAnimalHide" title_key="challengePlaceAnimalHide" icon="ui_game_symbol_armor_leather" group="BasicSurvival"
 		short_description_key="challengeAnimalHideShort" description_key="challengeAnimalHideDesc"
 		reward_text_key="challenge_reward_500xp" reward_event="challenge_reward_500">
-		<objective type="BlockPlace" block="resourceAnimalHide" count="5"/>
+		<objective type="BlockPlace" block="resourceAnimalHide" count="5" show_requirements="false"/>
 	</challenge>
 	
 	<challenge name="placeDewCollector" title_key="challengePlaceDewCollector" icon="ui_game_symbol_water" group="BasicSurvival"
@@ -199,13 +199,13 @@
 	<!-- *** Exploration_CHALLENGES -->
 	<challenge name="gatherCash" title_key="challengegatherCash" icon="ui_game_symbol_coin" group="Exploration"
 		short_description_key="challengegatherCashShort" description_key="challengegatherCashDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Gather" item="oldCash" count="30000"/>
 	</challenge>
 	
 	<challenge name="burntSurvivalLoot" title_key="challengeWeaponCollector" icon="ui_game_symbol_loot_sack" group="Exploration"
 		short_description_key="challengeWeaponCollectorShort" description_key="challengeWeaponCollectorDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Craft" item="FlameThrowerQ2" count="1" />
 		<objective type="Craft" item="ChaingunQ2" count="1" />
 		<objective type="Craft" item="SuperShotgunQ2" count="1" />
@@ -220,31 +220,31 @@
 
 	<challenge name="questTreasure" title_key="challengeQuestTreasure" icon="ui_game_symbol_treasure" group="Exploration"
 		short_description_key="challengeQuestTreasureShort" description_key="challengeQuestTreasureDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
-		<objective type="QuestComplete" count="5"/>
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
+		<objective type="QuestComplete" quest_tag="MapTreasure" count="5"/>
 	</challenge>
 
 	<challenge name="burntExploreMinutes" title_key="challengeBurntExploreMinutes" icon="ui_game_symbol_oxygen" group="Exploration"
 		short_description_key="challengeBurntExploreMinutesShort" description_key="challengeBurntExploreMinutesDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Time" max_time="3600" biome="burnt_forest"/>
 	</challenge>
 	
 	<challenge name="desertExploreMinutes" title_key="challengeDesertExploreMinutes" icon="ui_game_symbol_hot" group="Exploration"
 		short_description_key="challengeDesertExploreMinutesShort" description_key="challengeDesertExploreMinutesDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Time" max_time="3600" biome="desert"/>
 	</challenge>
 	
 	<challenge name="snowExploreMinutes" title_key="challengeSnowExploreMinutes" icon="ui_game_symbol_cold" group="Exploration"
 		short_description_key="challengeSnowExploreMinutesShort" description_key="challengeSnowExploreMinutesDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Time" max_time="3600" biome="snow"/>
 	</challenge>
 	
 	<challenge name="wastelandExploreMinutes" title_key="challengeWastelandExploreMinutes" icon="ui_game_symbol_radiation" group="Exploration"
 		short_description_key="challengeWastelandExploreMinutesShort" description_key="challengeWastelandExploreMinutesDesc"
-		reward_text_key="challenge_reward_1000xp" reward_event="challenge_reward_1000">
+		reward_text_key="challengeRewardBackpack" reward_event="challenge_group_BackpackReward">
 		<objective type="Time" max_time="3600" biome="wasteland"/>
 	</challenge>
 	

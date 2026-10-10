@@ -1,5 +1,13 @@
 <Frantic_Dan>		
 	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='cureInfection']/display_entry[@name='dCureInfection']">
+		<display_entry name="dMedicalXP" title_key="statMedicalXP" />
+	</insertafter>
+	
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='medical']/display_entry[@name='dStopsBleeding']">
+		<display_entry name="dMedicalXP" title_key="statMedicalXP" />
+	</insertafter>
+	
 	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkYuccaSmoothie']/display_entry[@name='dHyperthermalResist']">
 		<display_entry name="dHypothermalResist" title_key="statHypothermalResist"/>
 	</insertafter>
@@ -8,20 +16,84 @@
 		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
 	</insertafter>
 	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='food']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='food']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWater']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWater']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterNegative']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterNegative']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkWithHoney']/display_entry[@name='dStaminaRegen']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkWithHoney']/display_entry[@name='dCureInfection']"/>
 	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkWithHoney']/display_entry[@name='$waterAmountAdd']">
 		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
 	</insertafter>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='drinkWithHoney']/display_entry[@name='dCureDysentery']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
 	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRaw']/display_entry[@name='ddummyNoBonus']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRawMeat']/display_entry[@name='ddummyNoBonus']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWaterRaw']/display_entry[@name='ddummyNoBonus']"/>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWithHoney']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWithHoney']/display_entry[@name='dCureInfection']"/>
 	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWithHoney']/display_entry[@name='$foodAmountAdd']">
 		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 	</insertafter>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodWithHoney']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
 	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='waterDysentery']/display_entry[@name='dStaminaRegen']"/>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrod']/display_entry[@name='dStaminaRegen']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrod']/display_entry[@name='dCureDysentery']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='waterRedTea']/display_entry[@name='dStaminaRegen']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='waterRedTea']/display_entry[@name='dDuration']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrodRedTea']/display_entry[@name='dStaminaRegen']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='waterGoldenrodRedTea']/display_entry[@name='dDuration']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='dInfectionImmunity']"/>
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='dEntityDamage']"/>
 	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='$foodAmountAdd']">
 		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 	</insertafter>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='foodHealthAmount']">
+		<display_entry name="dEntityDamage" title_key="statEntityDamageMelee"/>
+	</insertafter>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenWings']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
 	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRoadrunnerChickenJerky']/display_entry[@name='.foodStaminaBonusAdd']"/>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodRoadrunnerChickenJerky']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
+	</insertafter>
+	
+	<remove xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='.foodStaminaBonusAdd']"/>
 	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='$foodAmountAdd']">
 		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
+	</insertafter>
+	<insertafter xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='dSmellUse']">
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
 	</insertafter>
 	<set xpath="/ui_display_info/item_display/item_display_info[@display_type='foodChickenNuggets']/display_entry[@name='dCarryCapacity']/@title_key">statJumpStrength</set>
 	
@@ -38,19 +110,19 @@
 		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 		<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-		<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
 		<display_entry name="dEfficientDigestion" title_key="statEfficientDigestion" display_type="Percent" display_leading_plus="true"/>
 		<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
 	</item_display_info>
 	
 	<item_display_info display_type="waterHoneyCoffee" display_group="groupConsumables">
 		<display_entry name="$waterAmountAdd" title_key="statWaterAmount"/>
 		<display_entry name="$foodAmountAdd" title_key="statFoodAmount"/>
 		<display_entry name="foodHealthAmount" title_key="statHealthAmount"/>
-		<display_entry name="dCureInfection" title_key="statCureInfection" display_type="Percent"/>
 		<display_entry name="dHypothermalResist" title_key="statHypothermalResist"/>
 		<display_entry name="dHyperthermalResist" title_key="statHyperthermalResist"/>
 		<display_entry name="dDuration" title_key="statDuration" display_type="Time"/>
+		<display_entry name="dCookingXP" title_key="statCookingXP" />
 	</item_display_info>
 	
 	</append>

@@ -1,0 +1,60 @@
+<configs>
+	<append xpath="/recipes">
+		<!-- ACCESSORIES -->
+
+		 <recipe name="vehicleLawnTractorAccessories" craft_time="240" craft_area="workbench" craft_exp_gain="0" tags="learnable,workbenchCrafting,packMuleCrafting">
+			<ingredient name="resourceHeadlight" count="2"/>
+			<ingredient name="resourceRadiator" count="2"/>
+			<ingredient name="resourceLeather" count="20"/>
+			<ingredient name="resourceElectricParts" count="32"/>
+			<ingredient name="resourceMetalPipe" count="50"/>
+		</recipe> 
+
+		<!-- CHASSIS -->
+
+		 <recipe name="vehicleLawnTractorChassis" craft_time="240" craft_area="workbench" craft_exp_gain="0" tags="learnable,workbenchCrafting,packMuleCrafting">
+			<ingredient name="resourceForgedIron" count="17"/>
+			<ingredient name="resourceForgedSteel" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="42"/>
+			<ingredient name="resourceElectricParts" count="15"/>
+			<ingredient name="resourceOil" count="5"/>
+			<ingredient name="resourceScrapPolymers" count="90"/>
+			<ingredient name="resourceDuctTape" count="8"/>
+			<ingredient name="resourceAcid" count="1"/>
+		</recipe> 
+
+		<!-- LAWN MOWER -->
+
+		 <recipe name="vehicleLawnTractorPlaceable" craft_time="240" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+			<ingredient name="vehicleWheels" count="4"/>
+			<ingredient name="vehicleLawnTractorChassis" count="1"/>
+			<ingredient name="vehicleLawnTractorAccessories" count="1"/>
+			<ingredient name="smallEngine" count="1"/>
+			<ingredient name="carBattery" count="1"/>
+		</recipe> 
+
+		<!-- GRASS COLLECTOR -->
+
+		 <recipe name="modVehicleLawnTractorGrassCollector" craft_time="90" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting">
+			<ingredient name="resourceCloth" count="20"/>
+			<ingredient name="resourceLeather" count="10"/>
+			<ingredient name="resourceDuctTape" count="6"/>
+			<ingredient name="resourceSpring" count="16"/>
+		</recipe> 
+		
+		<!-- Dismantle -->
+		
+		<recipe name="DismantleLawnTractorAccessories" count="1" craft_time="180" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+			<ingredient name="vehicleLawnTractorAccessories" count="1"/>
+		</recipe>
+		
+		<recipe name="DismantleLawnTractorChassis" count="1" craft_time="180" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+			<ingredient name="vehicleLawnTractorChassis" count="1"/>
+		</recipe>
+		
+		<recipe name="DismantleLawnTractorGrassCollector" count="1" craft_time="180" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+			<ingredient name="modVehicleLawnTractorGrassCollector" count="1"/>
+		</recipe>
+
+	</append>
+</configs>

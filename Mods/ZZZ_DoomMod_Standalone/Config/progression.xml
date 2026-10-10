@@ -45,76 +45,7 @@
 	<book_group name="skillLuckyLooter" parent="attBooks" name_key="perkLuckyLooter0Name" desc_key="perkLuckyLooter0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_shopping_cart"><effect_group/></book_group>
 	<book_group name="skillWasteTreasures" parent="attBooks" name_key="perkWasteTreasures0Name" desc_key="perkWasteTreasures0Desc" long_desc_key="perkBookGroupLongDesc" icon="ui_game_symbol_treasure"><effect_group/></book_group>
 	
-	<!-- <skill name="skillAmmoBackpacks" parent="attAmmoBackpacks" name_key="AmmoBackpacks_TestKey" desc_key="AmmoBackpacks_TestDesc" long_desc_key="General_TestLongDesc" icon="ui_game_symbol_backpack" hidden="true"><effect_group/></skill> -->
-	
 </skills>
-
-<ammo_pouches min_level="0" complete_sound="levelupplayer">
-
-	<!-- <ammo_pouch name="perkHandgunAmmoPouch" max_level="40" parent="attCrafting" name_key="perkHandgunAmmoPouchName" desc_key="perkHandgunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</ammo_pouch> -->
-	
-	<!-- <crafting_skill name="perkCrossbowAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkCrossbowAmmoPouchName" desc_key="perkCrossbowAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill>
-	
-	<crafting_skill name="perkTurretAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkTurretAmmoPouchName" desc_key="perkTurretAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill>
-	
-	<crafting_skill name="perkShotgunAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkShotgunAmmoPouchName" desc_key="perkShotgunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill>
-	
-	<crafting_skill name="perkChaingunAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkChaingunAmmoPouchName" desc_key="perkChaingunAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill>
-	
-	<crafting_skill name="perkFuelAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkFuelAmmoPouchName" desc_key="perkFuelAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill>
-	
-	<crafting_skill name="perkRocketAmmoPouch" max_level="40" parent="attAmmoBackpacks" name_key="perkRocketAmmoPouchName" desc_key="perkRocketAmmoPouchDesc" icon="ui_game_symbol_backpack" >
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill> -->
-
-</ammo_pouches>
 
 <crafting_skills min_level="0" complete_sound="ui_mag_read_set">
 		<!-- *** HARVESTING_TOOL_SKILLS -->
@@ -219,223 +150,6 @@
 		</effect_group>
 	</crafting_skill>
 
-		<!-- *** BOW_SKILLS -->
-	<!-- <crafting_skill name="craftingBows" max_level="50" parent="attCrafting" name_key="craftingBowsName" desc_key="craftingBowsDesc" long_desc_key="craftingBowsLongDesc" icon="ui_game_symbol_archery">
-
-		<display_entry item="CompoundCrossbowQ2" unlock_level="10"/>
-		<display_entry item="CompoundCrossbowQ3" unlock_level="20"/>
-		<display_entry item="CompoundCrossbowQ4" unlock_level="30"/>
-		<display_entry item="CompoundCrossbowQ5" unlock_level="40"/>
-		<display_entry item="CompoundCrossbowQ6" unlock_level="50"/>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="CompoundCrossbowQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="CompoundCrossbowQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="CompoundCrossbowQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="CompoundCrossbowQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="CompoundCrossbowQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** HANDGUN_SKILLS -->
-	<!-- <crafting_skill name="craftingHandguns" max_level="50" parent="attCrafting" name_key="craftingHandgunsName" desc_key="craftingHandgunsDesc" long_desc_key="craftingHandgunsLongDesc" icon="ui_game_symbol_pistol">
-
-		<display_entry item="HandgunQ2" unlock_level="10"/>
-		<display_entry item="HandgunQ3" unlock_level="20"/>
-		<display_entry item="HandgunQ4" unlock_level="30"/>
-		<display_entry item="HandgunQ5" unlock_level="40"/>
-		<display_entry item="HandgunQ6" unlock_level="50"/>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="HandgunQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="HandgunQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="HandgunQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="HandgunQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="HandgunQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** SHOTGUN_SKILLS -->
-	<!-- <crafting_skill name="craftingShotguns" max_level="50" parent="attCrafting" name_key="craftingShotgunsName" desc_key="craftingShotgunsDesc" long_desc_key="craftingShotgunsLongDesc" icon="ui_game_symbol_shotgun">
-		
-		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ2" has_quality="false" unlock_level="10" >
-			<unlock_entry item="PumpShotgunQ2,SuperShotgunQ2" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ3" has_quality="false" unlock_level="20" >
-			<unlock_entry item="PumpShotgunQ3,SuperShotgunQ3" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ4" has_quality="false" unlock_level="30" >
-			<unlock_entry item="PumpShotgunQ4,SuperShotgunQ4" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ5" has_quality="false" unlock_level="40" >
-			<unlock_entry item="PumpShotgunQ5,SuperShotgunQ5" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="IZYgunShotgunT2PumpShotgun" name_key="ShotgunsQ6" has_quality="false" unlock_level="50" >
-			<unlock_entry item="PumpShotgunQ6,SuperShotgunQ6" unlock_tier="1"/>
-		</display_entry>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="PumpShotgunQ2,SuperShotgunQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="PumpShotgunQ3,SuperShotgunQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="PumpShotgunQ4,SuperShotgunQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="PumpShotgunQ5,SuperShotgunQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="PumpShotgunQ6,SuperShotgunQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** MACHINE_GUN_SKILLS -->
-	<!-- <crafting_skill name="craftingMachineGuns" max_level="50" parent="attCrafting" name_key="craftingMachineGunsName" desc_key="craftingMachineGunsDesc" long_desc_key="craftingMachineGunsLongDesc" icon="ui_game_symbol_rifle">
-
-		<display_entry item="ChaingunQ2" unlock_level="10"/>
-		<display_entry item="ChaingunQ3" unlock_level="20"/>
-		<display_entry item="ChaingunQ4" unlock_level="30"/>
-		<display_entry item="ChaingunQ5" unlock_level="40"/>
-		<display_entry item="ChaingunQ6" unlock_level="50"/>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="ChaingunQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="ChaingunQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="ChaingunQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="ChaingunQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="ChaingunQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** EXPLOSIVE_SKILLS -->
-	<!-- <crafting_skill name="craftingExplosives" max_level="50" parent="attCrafting" name_key="craftingExplosivesName" desc_key="craftingExplosivesDesc" long_desc_key="craftingExplosivesLongDesc" icon="ui_game_symbol_explosion">
-		
-		<display_entry icon="FlameThrowerQ2" name_key="ExplosivesQ2" has_quality="false" unlock_level="10" >
-			<unlock_entry item="RocketLauncherQ2,FlameThrowerQ2" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="FlameThrowerQ3" name_key="ExplosivesQ3" has_quality="false" unlock_level="20" >
-			<unlock_entry item="RocketLauncherQ3,FlameThrowerQ3" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="RocketLauncherQ4" name_key="ExplosivesQ4" has_quality="false" unlock_level="30" >
-			<unlock_entry item="RocketLauncherQ4,FlameThrowerQ4" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="RocketLauncherQ5" name_key="ExplosivesQ5" has_quality="false" unlock_level="40" >
-			<unlock_entry item="RocketLauncherQ5,FlameThrowerQ5" unlock_tier="1"/>
-		</display_entry>
-		<display_entry icon="RocketLauncherQ6" name_key="ExplosivesQ6" has_quality="false" unlock_level="50" >
-			<unlock_entry item="RocketLauncherQ6,FlameThrowerQ6" unlock_tier="1"/>
-		</display_entry>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="RocketLauncherQ2,FlameThrowerQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="RocketLauncherQ3,FlameThrowerQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="RocketLauncherQ4,FlameThrowerQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="RocketLauncherQ5,FlameThrowerQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="RocketLauncherQ6,FlameThrowerQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** ROBOTIC_SKILLS -->
-	<!-- <crafting_skill name="craftingRobotics" max_level="50" parent="attCrafting" name_key="craftingRoboticsName" desc_key="craftingRoboticsDesc" long_desc_key="craftingRoboticsLongDesc" icon="ui_game_symbol_junk_turret">
-
-		<display_entry item="JunkTurretQ2" unlock_level="10"/>
-		<display_entry item="JunkTurretQ3" unlock_level="20"/>
-		<display_entry item="JunkTurretQ4" unlock_level="30"/>
-		<display_entry item="JunkTurretQ5" unlock_level="40"/>
-		<display_entry item="JunkTurretQ6" unlock_level="50"/>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,50" value="1" tags="JunkTurretQ2"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="20,50" value="1" tags="JunkTurretQ3"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="30,50" value="1" tags="JunkTurretQ4"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,50" value="1" tags="JunkTurretQ5"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="50" value="1" tags="JunkTurretQ6"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** MEDICAL_SKILLS -->
-	<!-- <crafting_skill name="craftingMedical" max_level="100" parent="attCrafting" name_key="craftingMedicalName" desc_key="craftingMedicalDesc" long_desc_key="craftingMedicalLongDesc" icon="ui_game_symbol_medical">
-
-		<display_entry icon="drugHerbalAntibiotics,stimPack" name_key="medicalT2-2,medicalT1-1DM" has_quality="false" unlock_level="10,25" >
-			<unlock_entry item="drugHerbalAntibioticsBundle" unlock_tier="1"/>
-			<unlock_entry item="stimPackBundle" unlock_tier="2"/>
-		</display_entry>
-		<display_entry icon="medicalPlasterCast,mediKit,stimPackBlue,drugAntibiotics" name_key="medicalT2-1,medicalT2-2DM,medicalT2-3DM" has_quality="false" unlock_level="40,55,70" >
-			<unlock_entry item="medicalPlasterCastBundle" unlock_tier="1"/>
-			<unlock_entry item="mediKitBundle" unlock_tier="2"/>
-			<unlock_entry item="stimPackBlueBundle,drugAntibioticsBundle" unlock_tier="3"/>
-		</display_entry>
-		<display_entry icon="MedikitBlue,healthPotion" name_key="medicalT3-1DM,medicalT3-2DM,medicalT3-3" has_quality="false" unlock_level="85,100" >
-			<unlock_entry item="mediKitBlueBundle" unlock_tier="1"/>
-			<unlock_entry item="healthPotionBundle" unlock_tier="2"/>
-		</display_entry>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="drugHerbalAntibioticsBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="25,100" value="1" tags="stimPackBundle"/>
-
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="40,100" value="1" tags="medicalPlasterCastBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="55,100" value="1" tags="mediKitBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="stimPackBlueBundle,drugAntibioticsBundle"/>
-
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="85,100" value="1" tags="mediKitBlueBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100" value="1" tags="healthPotionBundle"/>
-		</effect_group>
-	</crafting_skill> -->
-
-		<!-- *** FOOD_SKILLS -->
-	<!-- <crafting_skill name="craftingFood" max_level="100" parent="attCrafting" name_key="craftingFoodName" desc_key="craftingFoodDesc" long_desc_key="craftingFoodLongDesc" icon="ui_game_symbol_fork">
-
-		<display_entry icon="foodCornOnTheCob,foodCornBread,foodGrilledMeat,foodBoiledMeat,foodBaconAndEggs" name_key="foodT1-2,foodT1-3,foodT1-4,foodT1-5" has_quality="false" unlock_level="4,6,8,10" >
-			<unlock_entry item="foodCornOnTheCob,foodBakedPotato" unlock_tier="1"/>
-			<unlock_entry item="foodCornBreadBundle,drinkJarGoldenRodTea" unlock_tier="1"/>
-			<unlock_entry item="foodGrilledMeat,drinkJarRedTea" unlock_tier="2"/>
-			<unlock_entry item="foodBoiledMeatBundle,drinkJarYuccaJuice" unlock_tier="3"/>
-			<unlock_entry item="foodBaconAndEggs,drinkJarCoffee" unlock_tier="4"/>
-		</display_entry>
-		<display_entry icon="foodPumpkinBread,foodPumpkinPie,foodPumpkinCheesecake,foodMeatStew,foodSteakAndPotato" name_key="foodT2-1,foodT2-2,foodT2-3,foodT2-4,foodT2-5DM" has_quality="false" unlock_level="11,14,18,22,26" >
-			<unlock_entry item="foodPumpkinBreadBundle,foodBlueberryPieBundle,foodChickenNuggets" unlock_tier="1"/>
-			<unlock_entry item="foodPumpkinPieBundle,drinkJarHoneyTea" unlock_tier="2"/>
-			<unlock_entry item="foodPumpkinCheesecakeBundle,foodRoadrunnerChickenJerkyBundle" unlock_tier="3"/>
-			<unlock_entry item="foodVegetableStewBundle,foodMeatStewBundle" unlock_tier="4"/>
-			<unlock_entry item="foodSteakAndPotato,drinkJarRedHoneyTea,foodAshChickenStewBundle" unlock_tier="5"/>
-		</display_entry>
-		<display_entry icon="drinkYuccaJuiceSmoothie,foodHoboStewBundle,foodFishTacos,foodChiliDog,foodShamChowder" name_key="foodT3-1,foodT3-2,foodT3-3,foodT3-4DM,foodT3-5" has_quality="false" unlock_level="27,35,43,51,59" >
-			<unlock_entry item="drinkYuccaJuiceSmoothie,drinkJarBeer" unlock_tier="1"/>
-			<unlock_entry item="foodHoboStewBundle,drinkJarHoneyCoffee" unlock_tier="2"/>
-			<unlock_entry item="foodFishTacos" unlock_tier="3"/>
-			<unlock_entry item="foodChiliDog,foodChickenWings" unlock_tier="4"/>
-			<unlock_entry item="foodShamChowderBundle,foodHoneyGlazedSham" unlock_tier="5"/>
-		</display_entry>
-		<display_entry icon="foodTunaFishGravyToast,foodShepardsPie,foodSpaghetti,foodHoneyBrisket,foodGumboStew" name_key="foodT4-1DM,foodT4-2DM,foodT4-3DM,foodT4-4,foodT4-5" has_quality="false" unlock_level="60,70,80,90,100" >
-			<unlock_entry item="foodTunaFishGravyToast" unlock_tier="1"/>
-			<unlock_entry item="foodShepardsPie" unlock_tier="2"/>
-			<unlock_entry item="foodHoneyBrisket" unlock_tier="3"/>
-			<unlock_entry item="foodSpaghettiBundle" unlock_tier="4"/>
-			<unlock_entry item="foodGumboStewBundle" unlock_tier="5"/>
-		</display_entry>
-
-		<effect_group>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,100" value="1" tags="foodCornOnTheCob,foodBakedPotato"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,100" value="1" tags="foodCornBreadBundle,drinkJarGoldenRodTea"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="6,100" value="1" tags="foodGrilledMeat,drinkJarRedTea"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="8,100" value="1" tags="foodBoiledMeatBundle,drinkJarYuccaJuice"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="10,100" value="1" tags="foodBaconAndEggs,drinkJarCoffee"/>
-
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="11,100" value="1" tags="foodPumpkinBreadBundle,foodBlueberryPieBundle,foodChickenNuggets"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="14,100" value="1" tags="foodPumpkinPieBundle,drinkJarHoneyTea"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="18,100" value="1" tags="foodPumpkinCheesecakeBundle,foodRoadrunnerChickenJerkyBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="22,100" value="1" tags="foodVegetableStewBundle,foodMeatStewBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="26,100" value="1" tags="foodSteakAndPotato,drinkJarRedHoneyTea,foodAshChickenStewBundle"/>
-
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="27,100" value="1" tags="drinkYuccaJuiceSmoothie,drinkJarBeer"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="35,100" value="1" tags="foodHoboStewBundle,drinkJarHoneyCoffee"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="43,100" value="1" tags="foodFishTacos"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="51,100" value="1" tags="foodChiliDog,foodChickenWings"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="59,100" value="1" tags="foodShamChowderBundle,foodHoneyGlazedSham"/>
-
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="60,100" value="1" tags="foodTunaFishGravyToast"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="70,100" value="1" tags="foodShepardsPie"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="80,100" value="1" tags="foodHoneyBrisket"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="90,100" value="1" tags="foodSpaghettiBundle"/>
-			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="100,100" value="1" tags="foodGumboStewBundle"/>
-		</effect_group>
-	</crafting_skill> -->
-
 		<!-- *** ELECTRICIAN_SKILLS -->
 	<crafting_skill name="craftingElectrician" max_level="120" parent="attCrafting" name_key="craftingElectricianName" desc_key="craftingElectricianDesc" long_desc_key="craftingElectricianLongDesc" icon="ui_game_symbol_electric_generator">
 
@@ -535,17 +249,6 @@
 			<effect_description level="1" desc_key="" long_desc_key=""/>
 		</effect_group>
 	</crafting_skill>
-	
-	<!-- <crafting_skill name="perkInventoryPouch" max_level="4" parent="attCrafting" name_key="perkInventoryPouchName" desc_key="perkInventoryPouchDesc" icon="HandgunAmmoMagazine" >
-
-		<effect_group>
-			
-			<passive_effect name="CarryCapacity" operation="base_add" level="1,2,3,4" value="5,10,15,20"/>
-			<passive_effect name="BagSize" operation="base_add" level="1,2,3,4" value="5,10,15,20"/>
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</crafting_skill> -->
 </crafting_skills>
 
 <perks min_level="0" max_level="5" base_skill_point_cost="1" cost_multiplier_per_level="1" max_level_ratio_to_parent="5">
@@ -799,12 +502,6 @@
 		</effect_group>
 		
 		<effect_group>
-		<!-- Set the flag to 1 if the flag is not set and progression is enabled -->
-			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$pointChanceFlag" operation="set" value="1">
-				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="LT" value="1"/>
-				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
-			</triggered_effect> -->
-
 			<!-- Adds a chance to gain 2 skill points when reading magazines -->
 			<triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$perkIntellectMasteryPointChance" operation="set" value="6">
 				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
@@ -830,17 +527,6 @@
 				<!-- <requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/> -->
 				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="Equals" value="5"/>
 			</triggered_effect>
-			
-			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$nerdOutfitSkillPointChance" operation="add" value="@$perkIntellectMasteryPointChance">
-				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
-				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/>
-			</triggered_effect> -->
-
-			<!-- Set the flag to 2 to stop adding -->
-			<!-- <triggered_effect trigger="onPerkLevelChanged" action="ModifyCVar" cvar="$pointChanceFlag" operation="add" value="1">
-				<requirement name="CVarCompare" cvar="$pointChanceFlag" operation="EQ" value="1"/>
-				<requirement name="ProgressionLevel" progression_name="perkBookWorm" operation="GTE" value="1"/>
-			</triggered_effect> -->
 		</effect_group>
 
 		<effect_group>
@@ -1188,69 +874,6 @@
 			<effect_description level="3" desc_key="perkKnowThyEnemyRank3Desc" long_desc_key="perkKnowThyEnemyRank3LongDesc"/>
 		</effect_group>
 	</perk>
-	
-	<!-- <perk name="perkHandgunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkHandgunAmmoPouchName" desc_key="perkHandgunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkCrossbowAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkCrossbowAmmoPouchName" desc_key="perkCrossbowAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkTurretAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkTurretAmmoPouchName" desc_key="perkTurretAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkShotgunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkShotgunAmmoPouchName" desc_key="perkShotgunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkChaingunAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkChaingunAmmoPouchName" desc_key="perkChaingunAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkFuelAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkFuelAmmoPouchName" desc_key="perkFuelAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk>
-	
-	<perk name="perkRocketAmmoPouch" max_level="40" parent="skillAmmoBackpacks" name_key="perkRocketAmmoPouchName" desc_key="perkRocketAmmoPouchDesc" icon="ui_game_symbol_backpack" override_cost="0">
-
-		<effect_group>
-
-			<effect_description level="1" desc_key="" long_desc_key=""/>
-
-		</effect_group>
-	</perk> -->
 
 <!-- *** THE_FIREMAN'S_ALMANAC_VOLUME_01_WATER -->
 	<book name="perkFiremansAlmanacHeat" parent="skillFiremansAlmanac" max_level="1" base_skill_point_cost="0" desc_key="perkFiremansAlmanacHeatDesc" long_desc_key="perkFiremansAlmanacHeatLongDesc">
@@ -1377,7 +1000,7 @@
 	<!-- *** LUCKY_LOOTER_VOLUME_02_AMMUNITION -->
 	<book name="perkLuckyLooterAmmunition" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterAmmoDesc" long_desc_key="perkLuckyLooterAmmoLongDesc">
 		<effect_group>
-			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".2" tags="ammo"/>
+			<passive_effect name="LootQuantity" operation="perc_add" level="1" value=".1" tags="ammo"/>
 		</effect_group>
 		<effect_group>
 			<passive_effect name="LootProb" operation="perc_add" value=".5" tags="bookLuckyLooterAmmunition">
@@ -1461,7 +1084,7 @@
 	<!-- *** 7/7 LUCKY_LOOTER_COMPLETE -->
 	<book name="perkLuckyLooterComplete" parent="skillLuckyLooter" max_level="1" base_skill_point_cost="0" desc_key="perkLuckyLooterCompleteDescDM" long_desc_key="perkLuckyLooterCompleteLongDescDM">
 		<effect_group>
-			<passive_effect name="LootProb" operation="perc_add" level="1" value=".2" tags="itembonus"/>
+			<passive_effect name="LootQuantity" operation="base_add" level="1" value="1" tags="itembonus"/>
 		</effect_group>
 	</book>
 	

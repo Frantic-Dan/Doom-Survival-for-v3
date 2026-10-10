@@ -1,5 +1,14 @@
 <configs>
 
+<!-- Forge reserve rows: Smelting Plus column widths + black outline on name and count -->
+<setattribute xpath="/templates/forge_material/table/label[@name='material']" name="effect">Outline8</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='material']" name="effect_color">0,0,0,255</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='material']" name="effect_distance">1,1</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='weight']" name="effect">Outline8</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='weight']" name="effect_color">0,0,0,255</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='weight']" name="effect_distance">1,1</setattribute>
+<setattribute xpath="/templates/forge_material/table/label[@name='weight']" name="justify">right</setattribute>
+
 <!-- Doom-specific: weather equipment not removable -->
 <set xpath="//templates/equipment_weather_stack/rect[@allow_remove_item='true']/@allow_remove_item">false</set>
 
@@ -57,6 +66,24 @@
 <set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='304']/@width">383</set>
 <set xpath="/templates/unlocked_by_row/rect[@name='row']/rect/sprite[@name='backgroundMain']/@height">52</set>
 <set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='82']/@pos">443,0</set>
+<setattribute xpath="/templates/unlocked_by_row/rect[@name='row']/rect/label[@text='{name}']" name="max_line_count">1</setattribute>
+<setattribute xpath="/templates/unlocked_by_row/rect[@name='row']/rect/label[@text='{name}']" name="overflow">clampcontent</setattribute>
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+		<!-- 3.3 panel frame ends at 661. Level frame was still ending at 677. -->
+		<set xpath="/templates/unlocked_by_header/rect[@name='header']/@width">508</set>
+		<set xpath="/templates/unlocked_by_header/rect[@name='header']/rect[@width='383']/sprite[@name='backgroundMain']/@width">368</set>
+		<set xpath="/templates/unlocked_by_header/rect[@name='header']/rect[@width='383']/@width">367</set>
+		<set xpath="/templates/unlocked_by_header/rect[@name='header']/rect[@width='82']/@pos">427,0</set>
+		<!-- Grey fill was 82 wide and the black frame ends at 81, so one pixel sat past the border. -->
+		<set xpath="/templates/unlocked_by_header/rect[@name='header']/rect[@width='82']/@width">81</set>
+		<set xpath="/templates/unlocked_by_row/rect[@name='row']/@width">508</set>
+		<set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='383']/sprite[@name='backgroundMain']/@width">368</set>
+		<set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='383']/@width">367</set>
+		<set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='82']/@pos">427,0</set>
+		<set xpath="/templates/unlocked_by_row/rect[@name='row']/rect[@width='82']/@width">81</set>
+	</if>
+</conditional>
 
 <!-- Doom crafting list entries -->
 <remove xpath="/templates/recipe_entry"/>
@@ -82,6 +109,23 @@
 		</rect>
 	</ingredient_entryAGF>
 </append>
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+		<!-- Same card size on every ingredient. Frame stays offset -3,3 so neighbors share one divider. -->
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/@width">130</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/@height">155</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/sprite[@name='backgroundMain']/@width">130</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/sprite[@name='backgroundMain']/@height">155</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/sprite[@name='background']/@width">126</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/sprite[@name='background']/@height">153</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='name']/@pos">65,-94</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='name']/@width">124</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='name']/@font_size">26</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='needCount']/@pos">65,-124</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='needCount']/@width">124</set>
+		<set xpath="/templates/ingredient_entryAGF/rect[@name='row']/label[@name='needCount']/@font_size">24</set>
+	</if>
+</conditional>
 
 <!-- Party entry (Doom HUD) -->
 <remove xpath="/templates/party_entry"/>
@@ -93,18 +137,20 @@
 			<filledsprite depth="3" name="BarHealthModifiedMax" color="110,110,110,128" height="19" type="filled" fill="{healthmodifiedmax}" />
 			<filledsprite depth="3" pos="0,-19" name="BarArmourModifiedMax" color="110,110,110,128" height="19" type="filled" fill="1" />
 			<filledsprite depth="5" name="BarHealth" color="255,0,0,255" width="197" height="19" type="filled" fill="{healthfill}" />
-			<rect depth="5" pos="0,-19" width="197" height="19" controller="DoomArmour.DoomArmourBar, DoomArmour">
-				<filledsprite depth="5" name="BarArmour" color="255,100,0,255" width="197" height="19" type="filled" fill="{armourfill}" />
+			<rect depth="5" pos="0,-19" width="197" height="19">
+				<filledsprite depth="4" name="BarArmour" color="255,100,0,255" width="197" height="19" type="filled" fill="0" />
 			</rect>
-			<sprite depth="1" name="border" color="0,0,0,255" width="200" height="38" type="sliced" fillcenter="false"/>
+			<sprite depth="10" name="border" color="0,0,0,255" width="200" height="38" type="sliced" fillcenter="false"/>
 			<filledsprite depth="8" name="BarHealthModifiedMax" color="0,0,0,255" width="199" fillcenter="false" type="filled" fill="{healthmodifiedmax}" />
 			<filledsprite depth="3" name="BarHealthModifiedMax" color="0,0,0,255" width="199" fillcenter="false" type="filled" fill="{healthmodifiedmax}" />
-			<label depth="6" name="TextContent" pos="30, -6" font_size="26" color="[white]" justify="left" pivot="topleft" text="{name}" height="30" width="100"/>
-			<label depth="6" name="TextContent" pos="232,-6" font_size="26" color="{distancecolor}" pivot="topleft" text="{distance}" height="30" effect="outline"/>
-			<sprite pos="135,-3" depth="8" name="icon2" style="icon30px" sprite="{icon2}" visible="{showicon2}" />
-			<sprite pos="167,-3" depth="8" name="icon1" style="icon30px" sprite="{icon1}" visible="{showicon1}" />
-			<sprite depth="8" name="arrowContent" style="icon22px" pos="216,-18" sprite="ui_game_symbol_map_player_arrow" visible="{showarrow}" pivot="center" color="{arrowcolor}" />
-			<sprite depth="8" name="voiceStatus" style="icon22px" pos="15,-18" sprite="ui_game_symbol_talk" visible="{voicevisible}" pivot="center" color="{# voicemuted ? '200,0,0,255' : (voiceactive ? '255,255,255,255' : '128,128,128,255') }" />
+			<label depth="12" name="TextContent" pos="30,-19" font_size="26" color="[white]" justify="left" pivot="left" text="{name}" height="26" width="130" effect="outline" effect_color="0,0,0,255" effect_distance="1,1"/>
+			<label depth="12" name="TextContent" pos="232,-19" font_size="26" color="{distancecolor}" pivot="left" text="{distance}" height="26" effect="outline" effect_color="0,0,0,255" effect_distance="1,1"/>
+			<sprite pos="135,-3" depth="12" name="icon2" style="icon30px" sprite="{icon2}" visible="{showicon2}" foregroundlayer="true" />
+			<sprite pos="167,-3" depth="12" name="icon1" style="icon30px" sprite="{icon1}" visible="{showicon1}" foregroundlayer="true" />
+			<sprite depth="12" name="arrowBack" pos="216,-18" width="26" height="26" sprite="menu_empty3px" type="sliced" pivot="center" visible="false" />
+			<sprite depth="13" name="doomLevelIcon" pos="216,-18" width="22" height="22" atlas="ItemIconAtlas" sprite="DoomTeleporterHD" pivot="center" color="255,255,255,255" foregroundlayer="true" visible="false" />
+			<sprite depth="12" name="arrowContent" style="icon22px" pos="216,-18" sprite="ui_game_symbol_map_player_arrow" visible="{showarrow}" pivot="center" color="{arrowcolor}" foregroundlayer="true" />
+			<sprite depth="12" name="voiceStatus" style="icon22px" pos="15,-18" sprite="ui_game_symbol_talk" visible="{voicevisible}" pivot="center" color="{# voicemuted ? '200,0,0,255' : (voiceactive ? '255,255,255,255' : '128,128,128,255') }" foregroundlayer="true" />
 		</rect>
 	</party_entry>
 </append>

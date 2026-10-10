@@ -55,3 +55,16 @@ Doom Armour dll												ZehMatt
 Screen FX													ZehMatt
 Removed unused assets										ZehMatt
 Classic doom HD textures									vasyan777 and Alchee66
+DyesPlus													AuroraGiggleFairy
+MapsPlus													AuroraGiggleFairy
+GyroFlightModes												AuroraGiggleFairy
+SmeltTimerOption											AuroraGiggleFairy
+SortingCart													AuroraGiggleFairy
+FuelAutoShutOff												AuroraGiggleFairy
+LootTimerHolds												AuroraGiggleFairy
+Lawn Tractor Patch											AuroraGiggleFairy
+PurpleBook (Knowledge)										AuroraGiggleFairy
+FuelBurnPlus												AuroraGiggleFairy
+AutoRun														AuroraGiggleFairy
+Fix4DestroyBiomeBadge										AuroraGiggleFairy
+Multiplayer bug fixes										AuroraGiggleFairy

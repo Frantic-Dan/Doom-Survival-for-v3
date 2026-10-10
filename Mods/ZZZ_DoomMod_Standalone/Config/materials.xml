@@ -13,7 +13,7 @@
 <set xpath="/materials/material[@id='Mcloth']//property[@name='Experience']/@value">0</set>
 <set xpath="/materials/material[@id='Mmetal_shapes']//property[@name='Experience']/@value">.5</set>
 <set xpath="/materials/material[@id='MtrapSpikesIron']//property[@name='Experience']/@value">10</set>
-<set xpath="/materials/material[@id='Mwood_regular']//property[@name='MaxDamage']/@value">224</set>
+<set xpath="/materials/material[@id='Mwood_regular']//property[@name='MaxDamage']/@value">200</set>
 <set xpath="/materials/material[@id='Mstone']//property[@name='MaxDamage']/@value">1000</set>
 <set xpath="/materials/material[@id='Mboulder']//property[@name='MaxDamage']/@value">1200</set>
 <set xpath="/materials/material[@id='Mcobblestone']//property[@name='MaxDamage']/@value">2500</set>

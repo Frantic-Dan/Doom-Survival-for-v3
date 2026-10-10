@@ -1,0 +1,123 @@
+<configs>
+	<insertafter xpath="/items/item[@name='vehicleMinibikePlaceable']">
+		<item name="vehicleLawnTractorChassis">
+			<property name="Extends" value="vehicleWheels" param1="DescriptionKey"/>
+			<property name="DescriptionKey" value="vehicleLawnTractorChassisDesc"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleLawnTractorAccessories">
+			<property name="Extends" value="vehicleWheels" param1="DescriptionKey"/>
+			<property name="DescriptionKey" value="vehicleLawnTractorAccessoriesDesc"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="UnlockedBy" value="craftingVehicles"/>
+			<property name="SoundPickup" value="chassis_grab"/>
+			<property name="SoundPlace" value="chassis_place"/>
+		</item>
+
+		<item name="vehicleLawnTractorPlaceable">
+			<property name="TintColor" value="229,110,0"/>
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="Tags" value="vehicle,vengine,vfuel,vmower,vlight,vstorage,canHaveCosmetic"/>
+			<property name="Meshfile" value="#@modfolder:Resources/LawnMowers.unity3d?LawnMowerDriveable.prefab"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Group" value="Science,TCScience"/>
+			<property class="Action1">
+				<property name="Class" value="SpawnVehicle"/>
+				<property name="Vehicle" value="vehicleLawnTractor"/>
+				<property name="VehicleSize" value="2.5, 2.1, 5"/>
+			</property>
+			<effect_group name="vehicleLawnTractorPlaceable" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="3"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="5000"/>
+			</effect_group>
+			<property name="SoundPickup" value="minibike_grab"/>
+			<property name="SoundPlace" value="minibike_place"/>
+		</item>
+	</insertafter>
+	
+<append xpath="/items">
+<item name="DismantleLawnTractorChassis">
+	<!-- <property name="CreativeMode" value="None"/> -->
+	<property name="Tags" value="ammo"/>
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="DismantleVehicledesc"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="vehicleLawnTractorChassis"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="SoundPickup" value="chassis_grab"/>
+	<property name="SoundPlace" value="chassis_place"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="close_garbage"/>
+		<property name="Create_item" value="resourceForgedIron,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil,resourceScrapPolymers,resourceDuctTape"/>
+		<property name="Create_item_count" value="4,2,9,3,1,18,2"/>
+	</property>
+</item>
+
+<item name="DismantleLawnTractorAccessories">
+	<!-- <property name="CreativeMode" value="None"/> -->
+	<property name="Tags" value="ammo"/>
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="DismantleVehicledesc"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="vehicleLawnTractorAccessories"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="SoundPickup" value="chassis_grab"/>
+	<property name="SoundPlace" value="chassis_place"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="close_garbage"/>
+		<property name="Create_item" value="resourceHeadlight,resourceRadiator,resourceLeather,resourceElectricParts,resourceMetalPipe"/>
+		<property name="Create_item_count" value="1,1,4,6,10"/>
+	</property>
+</item>
+
+<item name="DismantleLawnTractorGrassCollector">
+	<!-- <property name="CreativeMode" value="None"/> -->
+	<property name="Tags" value="ammo"/>
+	<property name="HoldType" value="45"/>
+	<property name="DescriptionKey" value="DismantleVehicledesc"/>
+	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
+	<property name="CustomIcon" value="modVehicleLawnTractorGrassCollector"/>
+	<property name="ItemTypeIcon" value="bundle"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="0"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="SoundPickup" value="chassis_grab"/>
+	<property name="SoundPlace" value="chassis_place"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="close_garbage"/>
+		<property name="Create_item" value="resourceCloth,resourceLeather,resourceSpring"/>
+		<property name="Create_item_count" value="4,2,3"/>
+	</property>
+</item>
+</append>
+
+</configs>

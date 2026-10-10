@@ -77,6 +77,27 @@
 		</action>
 </action_sequence>
 
+<action_sequence name="challenge_reward_DoomLevelComplete">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="ModifyCVar">
+			<property name="cvar" value="CompletedDoomLevels" />
+			<property name="operation" value="add" />
+			<property name="value" value="1" />
+		</action>
+</action_sequence>
+
+<action_sequence name="challenge_reward_BossTrophy">
+		<property name="allow_user_trigger" value="false" />
+		<property name="action_type" value="Game" />
+
+		<action class="AddItems">
+			<property name="added_items" value="doomBossBrain_reward" />
+			<property name="added_item_counts" value="1" />
+		</action>
+</action_sequence>
+
 </append>
 
 

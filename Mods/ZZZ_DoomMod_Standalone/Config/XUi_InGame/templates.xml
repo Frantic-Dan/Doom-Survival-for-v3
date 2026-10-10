@@ -1,0 +1,13 @@
+<configs>
+	<!-- Party HUD: colored backing + real Doom teleporter icon (DLL toggles visibility). -->
+	<insertbefore xpath="/templates/party_entry/rect/sprite[@name='arrowContent']">
+		<sprite depth="12" name="arrowBack" pos="176,-19" width="32" height="32" sprite="menu_empty3px" type="sliced" pivot="center" visible="false" />
+		<sprite depth="13" name="doomLevelIcon" pos="176,-19" width="24" height="24" atlas="ItemIconAtlas" sprite="DoomTeleporterHD" pivot="center" color="255,255,255,255" foregroundlayer="true" visible="false" />
+	</insertbefore>
+
+	<!-- Players window Map column: same backing + teleporter. -->
+	<append xpath="/templates/players_entry/rect/rect[@name='map']">
+		<sprite depth="0" name="doomLevelBack" pos="40,-16" width="34" height="34" sprite="menu_empty3px" type="sliced" pivot="center" visible="false" />
+		<sprite depth="2" name="doomLevelIcon" pos="40,-16" width="28" height="28" atlas="ItemIconAtlas" sprite="DoomTeleporterHD" pivot="center" color="255,255,255,255" foregroundlayer="true" visible="false" />
+	</append>
+</configs>

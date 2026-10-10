@@ -13,7 +13,7 @@
 	<property name="damage_category" value="organic"/>
 	<property name="surface_category" value="organic"/>
 	<property name="particle_category" value="organic"/>
-	<property name="Hardness" type="float" value="15"/>
+	<property name="Hardness" type="float" value="5"/>
 	<property name="stepsound" value="organic"/>
 	<property name="stability_glue" value="0"/>
 	<property name="Mass" type="int" value="1"/>

@@ -1,0 +1,11 @@
+<config>
+
+	<append xpath="//lootgroup[@name='minibikeParts']">
+		<item name="vehicleLawnTractorChassis"/>
+		<item name="vehicleLawnTractorAccessories"/>
+	</append>
+
+	<append xpath="//lootgroup[@name='vehicleMods']">
+		<item name="modVehicleLawnTractorGrassCollector" loot_prob_template="ProbT1Cap"/>
+	</append>
+</config>

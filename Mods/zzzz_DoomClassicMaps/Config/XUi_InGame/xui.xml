@@ -1,4 +1,7 @@
 <configs>
+  <append xpath="/xui/window_group[@name='toolbelt']">
+    <window name="windowDoomTracker" />
+  </append>
   <append xpath="/xui">
     <window_group name="doomIntermission" controller="DoomLevels.XUiC_Intermission, DoomLevels"
                   close_compass_on_open="true">

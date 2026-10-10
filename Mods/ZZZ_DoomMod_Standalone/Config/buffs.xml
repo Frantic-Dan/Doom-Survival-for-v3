@@ -7,6 +7,15 @@
 </insertafter>
 <remove xpath="/buffs/buff[@name='buffInjuryBleeding']/effect_group[1]/passive_effect[1]"/>
 <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]/passive_effect[@name='BuffResistance']"></remove>
+<!-- Join/respawn can leave the Greyscale camera effect on with no invuln icon (vanilla twitch remove is the same shader). Clear it unless invuln is actually on. -->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]">
+	<triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" intensity="0" fade="0" effect_name="Greyscale">
+		<requirement name="!HasBuff" buff="buffInvulnerability"/>
+	</triggered_effect>
+	<triggered_effect trigger="onSelfRespawn" action="ModifyScreenEffect" intensity="0" fade="0" effect_name="Greyscale">
+		<requirement name="!HasBuff" buff="buffInvulnerability"/>
+	</triggered_effect>
+</append>
 <remove xpath="/buffs/buff[@name='buffBeer']/effect_group[3]/passive_effect[@name='EntityDamage']"></remove>
 <!-- <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]/passive_effect[2]"></remove>
 <remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group[1]/passive_effect[3]"></remove>
@@ -107,6 +116,10 @@
 <set xpath="/buffs/buff[@name='buffChickenWings']/effect_group[3]/passive_effect[@name='EntityDamage']/@operation">base_add</set>
 <set xpath="/buffs/buff[@name='buffChickenWings']/effect_group[3]/passive_effect[@name='EntityDamage']/@value">1</set>
 <set xpath="/buffs/buff[@name='buffChickenWings']/effect_group[3]/passive_effect[@name='BuffResistance']/@tags">buffInfectionMain</set>
+
+<set xpath="/buffs/buff[@name='buffHealHealth']/update_rate[@value='1']/@value">3</set>
+<set xpath="/buffs/buff[@name='buffHealFood']/update_rate[@value='.1']/@value">.3</set>
+<set xpath="/buffs/buff[@name='buffHealWaterMax']/update_rate[@value='.1']/@value">.3</set>
 
 <remove xpath="/buffs/buff[@name='buffStatusHungry01']"></remove>
 <remove xpath="/buffs/buff[@name='buffStatusHungry02']"></remove>
@@ -1320,6 +1333,7 @@
 		<stack_type value="ignore"/>
 		<update_rate value="3"/>
 		<effect_group>
+			<requirement name="CVarCompare" cvar="ArmourNote" operation="Equals" value="0"/>
 			<triggered_effect trigger="onSelfBuffUpdate" action="PinToolbeltMessage" message_key="EquipArmourToolTip">
 				<requirement name="NotHasBuff" buff="buffEquippedArmour"/>
 			</triggered_effect>
@@ -1327,12 +1341,17 @@
 				<requirement name="HasBuff" buff="buffEquippedArmour"/>
 			</triggered_effect>
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveToolbeltMessage" message_key="EquipArmourToolTip"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="ArmourNote" operation="set" value="1"/>
+		</effect_group>
+		<effect_group>
+			<requirement name="CVarCompare" cvar="ArmourNote" operation="Equals" value="1"/>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffEquipArmourNote"/>
 		</effect_group>
 	</buff>
 	
 	<buff name="buffFirstSpawnArmour" hidden="true" >
         <stack_type value="ignore"/>
-        <duration value="2.5"/>
+        <duration value="3"/>
 
 		<effect_group>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyStats" stat="Health" operation="set" value="100"/>
@@ -1471,9 +1490,15 @@
 			
 			<triggered_effect trigger="onOtherDamagedSelf" action="DoomArmour.Armour, DoomArmour" target="self" operation="subtract" value="0"/>
 			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyStats" target="self" stat="Health" operation="subtract" value="0"/>
-			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale"/>
-			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale"/>
+			<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale">
+				<requirement name="IsLocalPlayer"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyScreenEffect" intensity="1" fade="1" effect_name="Greyscale">
+				<requirement name="IsLocalPlayer"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Greyscale">
+				<requirement name="IsLocalPlayer"/>
+			</triggered_effect>
 			<passive_effect name="BuffResistance" operation="base_add" value="5" tags="buffInjuryStunned00,buffInjuryStunned01,buffInjuryStunned01Shotgun,buffInjuryStunned02,buffInjuryStunned02Shotgun,buffInjuryStunned03,buffInjuryStunned03Shotgun"/>
 
 			<triggered_effect trigger="onSelfBuffRemove" action="RemoveCVar" cvar=".buffInvulnerabilityDisplay,$buffInvulnerabilityDuration"/>
@@ -1552,7 +1577,7 @@
 			<requirement name="ItemHasTags" tags="IZYHVW"/>
 			<triggered_effect trigger="onSelfAimingGunStop" action="RemoveBuff" buff="IsAimingHVW">
 			</triggered_effect>
-			<passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
+			<!-- <passive_effect name="WalkSpeed" operation="perc_add" value=".2"/> -->
 		</effect_group>
 	</buff>
 		
@@ -2255,6 +2280,11 @@
 	</buff>
 	
 </append>
+IsAimingHVW
+<set xpath="/buffs/buff[@name='buffHoldBreathAiming01']/effect_group[1]/passive_effect[@name='StaminaChangeOT']/@value">0</set>
+<insertafter xpath="/buffs/buff[@name='buffHoldBreathAiming01']/effect_group[1]/passive_effect[2]">
+	<passive_effect name="WalkSpeed" operation="perc_add" value=".2"/>
+</insertafter>
 
 <remove xpath="/buffs/buff[@name='buffBiomeProgressionCheck']"/>
 <insertafter xpath="/buffs/buff[@name='buffWasteland_Storm']">
@@ -2682,6 +2712,7 @@
 <set xpath="/buffs/buff[@name='buffLegSprained']/effect_group//requirement[@progression_name='perkMedic']/@value">2</set>
 <set xpath="/buffs/buff[@name='buffLegBroken']/effect_group//requirement[@progression_name='perkPhysician']/@progression_name">perkMedic</set>
 <set xpath="/buffs/buff[@name='buffLegBroken']/effect_group//requirement[@progression_name='perkMedic']/@value">5</set>
+<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group[5]/passive_effect[@name='Mobility']/@value">-.3</set>
 <set xpath="/buffs/buff[@name='buffLegSplinted']/effect_group//requirement[@progression_name='perkPhysician']/@progression_name">perkMedic</set>
 <set xpath="/buffs/buff[@name='buffLegSplinted']/effect_group[3]//requirement[@progression_name='perkMedic']/@value">5</set>
 <set xpath="/buffs/buff[@name='buffLegCast']/effect_group//requirement[@progression_name='perkPhysician']/@progression_name">perkMedic</set>

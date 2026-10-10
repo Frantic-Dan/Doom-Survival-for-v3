@@ -118,33 +118,39 @@
 	<remove xpath="/items/item[@name='toolAnvil']/effect_group[2]"/>
 	<insertafter xpath="/items/item[@name='toolAnvil']/effect_group[1]">
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="0"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.2,-.3,-.4,-.5,-.6,-.7" tier="1,2,3,4,5,6"/>
 				<display_value name="dCraftingTime" value=".2,.3,.4,.5,.6,.7" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="1"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.17,-.255,-.34,-.425,-.51,-.595" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="2"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.14,-.21,-.28,-.35,-.42,-.49" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="3"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.11,-.165,-.22,-.275,-.33,-.385" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="4"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.08,-.12,-.16,-.2,-.24,-.28" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolAnvil"/>
+			<requirement name="ItemHasTags" tags="toolAnvil"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="5"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="-.05,-.075,-.1,-.125,-.15,-.175" tier="1,2,3,4,5,6"/>
 		</effect_group>
@@ -153,33 +159,39 @@
 	<remove xpath="/items/item[@name='toolCookingGrill']/effect_group[2]"/>
 	<insertafter xpath="/items/item[@name='toolCookingGrill']/effect_group[1]">
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="0"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.5,-1,-1.5,-2,-2.5" tier="1,2,3,4,5,6" tags="grill"/>
 				<display_value name="dCraftingTime" value="0,.1,.2,.3,.4,.5" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="1"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.425,-.85,-1.275,-1.7,-2.125" tier="1,2,3,4,5,6" tags="grill"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="2"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.35,-.7,-1.05,-1.40,-1.75" tier="1,2,3,4,5,6" tags="grill"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="3"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.275,-.55,-.825,-1.1,-1.375" tier="1,2,3,4,5,6" tags="grill"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="4"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.2,-.4,-.6,-.8,-1" tier="1,2,3,4,5,6" tags="grill"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="ItemHasTags" tags="toolCookingGrill"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="5"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.125,-.25,-.375,-.5,-.625" tier="1,2,3,4,5,6" tags="grill"/>
 		</effect_group>
@@ -188,33 +200,39 @@
 	<remove xpath="/items/item[@name='toolCookingPot']/effect_group[2]"/>
 	<insertafter xpath="/items/item[@name='toolCookingPot']/effect_group[1]">
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="0"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.5,-1,-1.5,-2,-2.5" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 				<display_value name="dCraftingTime" value="0,.1,.2,.3,.4,.5" tier="1,2,3,4,5,6"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="1"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.425,-.85,-1.275,-1.7,-2.125" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="2"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.35,-.7,-1.05,-1.40,-1.75" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="3"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.275,-.55,-.825,-1.1,-1.375" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="4"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.2,-.4,-.6,-.8,-1" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 		</effect_group>
 		<effect_group tiered="false">
-			<requirement name="!HoldingItemHasTags" tags="toolCookingPot"/>
+			<requirement name="ItemHasTags" tags="toolCookingPot"/>
+			<requirement name="!IsHeldItem"/>
 			<requirement name="ProgressionLevel" progression_name="perkQuickerCrafting" operation="Equals" value="5"/>
 				<passive_effect name="CraftingTime" operation="perc_add" value="0,-.125,-.25,-.375,-.5,-.625" tier="1,2,3,4,5,6" tags="cookingPotFood"/>
 		</effect_group>
@@ -379,6 +397,7 @@
 	<set xpath="/items/item[@name='bookSniperHPAmmo']/property[@name='DescriptionKey']/@value">perkSniperHPAmmoLongDescDM</set>
 	<set xpath="/items/item[@name='bookArtOfMiningDiamondTools']/property[@name='DescriptionKey']/@value">perkArtOfMiningDiamondToolsLongDescDM</set>
 	<set xpath="/items/item[@name='bookFiremansAlmanacAxes']/property[@name='DescriptionKey']/@value">perkFiremansAlmanacAxesLongDescDM</set>
+	<set xpath="/items/item[@name='bookHuntingJournalVultures']/property[@name='DescriptionKey']/@value">perkHuntingJournalVulturesLongDescDM</set>
 	
 	<set xpath="/items/item[@name='bookFiremansAlmanacHeat']/property[@name='Tags']/@value">bookFiremansAlmanacHeat</set>
 	<insertafter xpath="/items/item[@name='bookFiremansAlmanacAxes']/property[@name='Unlocks']">
@@ -917,6 +936,7 @@
 	<property name="Smell" value="2"/>
 </insertafter>
 
+<set xpath="/items/item[@name='foodChickenWings']/effect_group/display_value[@name='dEntityDamage']/@value">1</set>
 <set xpath="/items/item[@name='foodChickenWings']/property/property[@name='SmellUse']/@value">20</set>
 <set xpath="/items/item[@name='foodChickenWings']/effect_group/display_value[@name='dSmellUse']/@value">20</set>
 <set xpath="/items/item[@name='foodChickenWings']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">10</set>
@@ -1020,6 +1040,7 @@
 <insertafter xpath="/items/item[@name='foodPumpkinPie']/property[@class='Action0']">
 	<property name="Smell" value="1"/>
 </insertafter>
+<set xpath="/items/item[@name='foodPumpkinCheesecake']/property[@name='DisplayType']/@value">foodWithHoney</set>
 <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='$foodAmountAdd']/@value">62</set>
 <set xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group/triggered_effect[@cvar='foodHealthAmount']/@value">10</set>
 <set xpath="/items/item[@name='foodPumpkinCheesecake']/property/property[@name='SmellUse']/@value">5</set>
@@ -1072,12 +1093,6 @@
 <insertafter xpath="/items/item[@name='foodRottingFlesh']/property[@class='Action0']">
 	<property name="Smell" value="-.5"/>
 </insertafter>
-<insertafter xpath="/items/item[@name='resourceAnimalFat']/property[@class='Action0']">
-	<property name="Smell" value="2"/>
-</insertafter>
-<insertafter xpath="/items/item[@name='resourceAnimalFat']/effect_group/display_value">
-	<display_value name="dSmellUse" value="4"/>
-</insertafter>
 <set xpath="/items/item[@name='foodRottingFlesh']/effect_group/triggered_effect[5]/@value">35</set>
 <set xpath="/items/item[@name='foodRottingFlesh']/effect_group/display_value[2]/@value">.35</set>
 <set xpath="/items/item[@name='foodRottingFlesh']//property[@name='Stacknumber']/@value">50</set>
@@ -1085,10 +1100,19 @@
 	<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionMain"/>
 	<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="infectionCounter" operation="add" value="1200"/>
 </insertafter>
+<insertafter xpath="/items/item[@name='resourceAnimalFat']/property[@class='Action0']">
+	<property name="Smell" value="2"/>
+</insertafter>
+<insertafter xpath="/items/item[@name='resourceAnimalFat']/effect_group/display_value">
+	<display_value name="dSmellUse" value="4"/>
+</insertafter>
+<remove xpath="/items/item[@name='resourceAnimalFat']/effect_group/triggered_effect[@cvar='foodHealthAmount']"/>
+<remove xpath="/items/item[@name='resourceAnimalFat']/effect_group/triggered_effect[@stat='Health']"/>
+<remove xpath="/items/item[@name='resourceAnimalFat']/effect_group/display_value[@name='foodHealthAmount']"/>
 <set xpath="/items/item[@name='foodEgg']//property[@name='Stacknumber']/@value">50</set>
 <set xpath="/items/item[@name='foodEgg']/property/property[@name='SmellUse']/@value">5</set>
 <set xpath="/items/item[@name='foodEgg']/effect_group/display_value[@name='dSmellUse']/@value">5</set>
-<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='DisplayType']/@value">drinkYuccaSmoothie</set>
+<set xpath="/items/item[@name='drinkJarYuccaJuice']/property[@name='DisplayType']/@value">waterHoneyCoffee</set>
 <insertafter xpath="/items/item[@name='drinkJarYuccaJuice']/effect_group[1]/triggered_effect[2]">
 	<display_value name="dDuration" value="180"/>
 	<display_value name="dHyperthermalResist" value="5"/>
@@ -1098,6 +1122,7 @@
 		<requirement name="CVarCompare" cvar="$buffYuccaJuiceDuration" operation="GT" value="543"/></triggered_effect>
 	<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffYuccaJuice"/>
 </insertafter>
+<set xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='DisplayType']/@value">waterHoneyCoffee</set>
 <insertafter xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/property[@name='DisplayType']">
 	<property name="DescriptionKey" value="drinkYuccaJuiceSmoothieDMdesc"/>
 </insertafter>
@@ -1110,6 +1135,10 @@
 <set xpath="/items/item[@name='drinkJarHoneyTea']/effect_group/triggered_effect[@buff='buffInfectionAddCure,buffDysenteryAddCure']/@buff">buffDysenteryAddCure</set>
 <set xpath="/items/item[@name='drinkJarHoneyTea']/effect_group/display_value[@name='dCureInfection']/@value">0</set>
 <set xpath="/items/item[@name='drinkJarBeer']/effect_group/display_value[@name='dEntityDamageBrawling']/@value">0</set>
+<set xpath="/items/item[@name='drinkJarBeer']/effect_group/display_value[@name='dDuration']/@value">600</set>
+<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration'][@value='63']/@value">603</set>
+<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration'][@value='183']/@value">1803</set>
+<set xpath="/items/item[@name='drinkJarBeer']/effect_group/triggered_effect[@cvar='$buffBeerDuration'][@value='1803']/requirement[@name='CVarCompare']/@value">1803</set>
 <set xpath="/items/item[contains (@name,'resourceCrop')]/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//property[@name='EconomicValue']/@value">10000</set>
 <set xpath="/items/item[@name='drinkJarGrandpasForgettingElixir']//effect_group/triggered_effect[@stat='Health']/@value">0</set>
@@ -1249,172 +1278,210 @@
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="10"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodCornBread']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="10"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodCharredMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="6"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="6"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodGrilledMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="10"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBoiledMeat']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="23"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="23"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChickenWings']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="137"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="137"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChickenNuggets']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="26"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="26"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodAshChickenStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="90"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="7">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="90"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodRoadrunnerChickenJerky']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="36"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="36"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodMeatStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="84"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="84"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodSteakAndPotato']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="60"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoneyGlazedSham']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="137"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="137"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoneyBrisket']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="225"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="14">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="225"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodShamChowder']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="88"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="88"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodHoboStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="109"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="109"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodFishTacos']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="64"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="4">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="64"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodChiliDog']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="74"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="74"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBakedPotato']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="10"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBlueberryPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="72"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="72"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="60"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinCheesecake']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="74"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="74"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodPumpkinBread']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="28"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="28"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodGumboStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="211"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="11">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="211"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodShepardsPie']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="166"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="166"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodSpaghetti']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="195"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="12">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="195"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodTunaFishGravyToast']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="126"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="9">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="126"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodEggBoiled']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="10"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="10"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodBaconAndEggs']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="36"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="36"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='foodVegetableStew']/effect_group[1]/triggered_effect[@cvar='$foodAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="67"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="67"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarPureMineralWater']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="60"/>
+	<display_value name="dCookingXP" value="60"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarYuccaJuice']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
-	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="34"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="39"/>
+	<display_value name="dCookingXP" value="39"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarGoldenRodTea']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="24"/>
+	<display_value name="dCookingXP" value="24"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarHoneyTea']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
-	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="59"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="49"/>
+	<display_value name="dCookingXP" value="49"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkJarRedTea']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="24"/>
+	<display_value name="dCookingXP" value="24"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drinkYuccaJuiceSmoothie']/effect_group[1]/triggered_effect[@cvar='$waterAmountAdd']">
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="133"/>
 	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
+	<display_value name="dCookingXP" value="133"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drugHerbalAntibiotics']/effect_group[1]/triggered_effect[@cvar='$buffInfectionAddCurePerc']">
-	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="100"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="50"/>
+	<display_value name="dMedicalXP" value="50"/>
 </insertafter>
 <insertafter xpath="/items/item[@name='drugAntibiotics']/effect_group[1]/triggered_effect[@cvar='$buffInfectionAddCurePerc']">
-	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="250"/>
+	<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="100"/>
+	<display_value name="dMedicalXP" value="100"/>
 </insertafter>
 <setattribute xpath="/items/item[@name='foodSkillMagazine']/property[@name='Extends']" name="param1">Action0</setattribute>
 <insertafter xpath="/items/item[@name='foodSkillMagazine']/property[@name='Unlocks']">
@@ -1493,6 +1560,7 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="1">
 			<requirement name="ProgressionLevel" progression_name="perkHardenedSurvivalFoodHeal" operation="Equals" value="1"/></triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<display_value name="dCookingXP" value="15"/>
 	</effect_group>
 </item>
 </insertafter>
@@ -1530,6 +1598,7 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="10"/>
 		<display_value name="foodHealthAmount" value="5"/>
+		<display_value name="dMedicalXP" value="10"/>
 	</effect_group>
 	<effect_group tiered="false" name="medicalAloeCream">
 		<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="GTE" value="0.5"/>
@@ -1880,7 +1949,7 @@
 		<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0" />
 		<passive_effect name="EntityDamage" operation="base_set" value="8" tags="perkMiner69r"/>
-		<passive_effect name="BlockDamage" operation="base_set" value="30" tags="perkMiner69r"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="34" tags="perkMiner69r"/>
 		<passive_effect name="PlayerExpGain" operation="base_set" value="0" tags="Harvesting"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
@@ -2126,7 +2195,7 @@
 <item name="drinkJarCoffee">
 	<property name="Tags" value="drinks,foodSkill,fitness"/>
 	<property name="HoldType" value="3"/>
-	<property name="DisplayType" value="waterCoffee"/>
+	<property name="DisplayType" value="waterHoneyCoffee"/>
 	<property name="DescriptionKey" value="JarCoffeeDescDM"/>
 	<property name="Meshfile" value="@:Other/Items/Food/masonJarCoffeePrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
@@ -2149,6 +2218,7 @@
 		<display_value name="dDuration" value="201"/>
 		<display_value name="dHyperthermalResist" value="-5"/>
 		<display_value name="dHypothermalResist" value="5"/>
+		<display_value name="dCookingXP" value="24"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="201"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="603">
 			<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="603"/></triggered_effect>
@@ -2200,6 +2270,7 @@
 			<display_value name="dStaminaRegen" value="0"/>
 			<display_value name="dEfficientDigestion" value=".15"/>
 			<display_value name="dDuration" value="360"/>
+			<display_value name="dCookingXP" value="59"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="add" value="363"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffRedTeaDuration" operation="set" value="1083">
 				<requirement name="CVarCompare" cvar="$buffRedTeaDuration" operation="GT" value="1083"/></triggered_effect>
@@ -2248,6 +2319,7 @@
 		<display_value name="dDuration" value="201"/>
 		<display_value name="dHyperthermalResist" value="-5"/>
 		<display_value name="dHypothermalResist" value="5"/>
+		<display_value name="dCookingXP" value="59"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="add" value="201"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeDuration" operation="set" value="603">
 			<requirement name="CVarCompare" cvar="$buffCoffeeDuration" operation="GT" value="603"/></triggered_effect>
@@ -2285,6 +2357,7 @@
 			<display_value name="dDuration" value="401"/>
 			<display_value name="dHyperthermalResist" value="-10"/>
 			<display_value name="dHypothermalResist" value="10"/>
+			<display_value name="dCookingXP" value="36"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeBlackStrapDuration" operation="add" value="401"/>
 			<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$buffCoffeeBlackStrapDuration" operation="set" value="1203">
 			<requirement name="CVarCompare" cvar="$buffCoffeeBlackStrapDuration" operation="GT" value="1203"/></triggered_effect>
@@ -2424,6 +2497,7 @@
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="5"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="add" value="3"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
+		<display_value name="dCookingXP" value="3"/>
 	</effect_group>
 </item>
 
@@ -2733,8 +2807,8 @@
 
 	<effect_group tiered="false">
 		<!-- medical XP gains -->
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="100"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="100"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="30"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="30"/>
 	</effect_group>
 </item>
 </insertafter>
@@ -2798,8 +2872,8 @@
 
 	<effect_group tiered="false">
 		<!-- medical XP gains -->
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="200"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="200"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="GiveExp" exp="100"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="lbu_Medical_XP" operation="add" value="100"/>
 	</effect_group>
 </item>
 </insertafter>
@@ -2882,7 +2956,7 @@
 			<requirement name="!HasBuff" buff="buffWaterPurifier"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionMain"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="infectionCounter" operation="add" value="10000"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="infectionCounter" operation="add" value="3000"/>
 	</effect_group>
 
 	<effect_group tiered="false">
@@ -2915,7 +2989,7 @@
 	<effect_group tiered="false" name="Drink Tier 0">
 		<requirement name="!HasBuff" buff="buffIsOnFire"/>
 
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="100"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="150"/>
 		<display_value name="dStaminaRegen" value=".15"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-15"/>
@@ -2930,7 +3004,7 @@
 			<requirement name="!HasBuff" buff="buffWaterPurifier"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" buff="buffInfectionMain"/>
-		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="infectionCounter" operation="add" value="2000"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" cvar="infectionCounter" operation="add" value="1500"/>
 	</effect_group>
 
 	<effect_group tiered="false">
@@ -3031,7 +3105,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodBoneBroth" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
@@ -3057,7 +3131,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="farmPlotBlock" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="crops" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="20"/>
 	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
@@ -3083,7 +3157,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="drinkJarPureMineralWater" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="water" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="5"/>
 	<property name="UnlockedBy" value="perkWasteTreasuresWater"/>
@@ -3110,7 +3184,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="drugAntibiotics" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3137,7 +3211,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="drugHerbalAntibiotics" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3164,7 +3238,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodBlueberryPie" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
 	<property name="Smell" value="1"/>
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
@@ -3192,7 +3266,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodPumpkinPie" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
 	<property name="Smell" value="1"/>
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
@@ -3220,7 +3294,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodPumpkinCheesecake" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
 	<property name="Smell" value="1"/>
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
@@ -3248,7 +3322,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodPumpkinBread" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Cooking"/>
@@ -3275,7 +3349,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodBoiledMeat" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
 	<property name="Smell" value="4"/>
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="5"/>
@@ -3303,7 +3377,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodCornBread" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="5"/>
 	<property name="UnlockedBy" value="lbu_Cooking"/>
@@ -3330,7 +3404,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodEggBoiled" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="2"/>
 	<property name="Stacknumber" value="5"/>
@@ -3357,7 +3431,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodAshChickenStew" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="0"/>
 	<property name="Stacknumber" value="10"/>
@@ -3385,7 +3459,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodRoadrunnerChickenJerky" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="2"/>
 	<property name="Stacknumber" value="10"/>
@@ -3413,7 +3487,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodHoboStew" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Cooking"/>
@@ -3440,7 +3514,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodMeatStew" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="3"/>
 	<property name="Stacknumber" value="10"/>
@@ -3468,7 +3542,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodGumboStew" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="3"/>
 	<property name="Stacknumber" value="10"/>
@@ -3496,7 +3570,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodSpaghetti" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="3"/>
 	<property name="Stacknumber" value="10"/>
@@ -3524,7 +3598,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodShamChowder" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Smell" value="0"/>
 	<property name="Stacknumber" value="10"/>
@@ -3552,7 +3626,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="foodVegetableStew" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="fork" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Cooking"/>
@@ -3579,7 +3653,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="stimpack" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="16"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3606,7 +3680,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="stimpackBlue" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3633,7 +3707,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="Medikit" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="8"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3660,7 +3734,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="MedikitBlue" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="4"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3687,7 +3761,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="health-potion" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="2"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3722,7 +3796,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="medicalPlasterCast" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="medical" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="5"/>
 	<property name="UnlockedBy" value="lbu_Medical"/>
@@ -3749,7 +3823,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="resourceConcreteMix" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="resource" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="resourceConcreteMixBundleDesc" />
 	<property name="Stacknumber" value="10"/>
 	<property name="Group" value="Resources"/>
@@ -3769,7 +3843,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="resourceGlue" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="resource" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="100"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
@@ -3795,7 +3869,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="resourcePaper" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="resource" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="25"/>
 	<property name="Group" value="Resources,Chemicals,CFChemicals"/>
@@ -3821,7 +3895,7 @@
     <property name="CreativeMode" value="Player" />
     <property name="CustomIcon" value="resourceFertiliser" />
     <property name="CustomIconTint" value="FFFFFF" />
-    <property name="ItemTypeIcon" value="resource" />
+    <property name="ItemTypeIcon" value="bundle" />
     <property name="DescriptionKey" value="CraftedItemJarRefundDesc" />
 	<property name="Stacknumber" value="5"/>
 	<property name="Group" value="Food/Cooking,Building,advBuilding"/>
@@ -6887,6 +6961,7 @@
         <passive_effect name="ModSlots" operation="base_set" value="0"/>
     </effect_group>
     <effect_group>
+		<requirement name="CVarCompare" cvar="_equipReload" operation="LT" value="1"/>
 			<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffEquippedArmour"/>
             <triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" cvar="armourType" operation="set" value="1"/>
             <triggered_effect trigger="onSelfEquipStop" action="ModifyCVar" cvar="armourType" operation="set" value="0"/>
@@ -7683,7 +7758,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="ItemTypeIcon" value="bundle"/>
 	<property name="DescriptionKey" value="BackpackFullAmmoDesc"/>
 	<property name="Material" value="Mcloth"/>
@@ -7709,7 +7784,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="AmmoStackPouchDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="10"/> <!-- STK drink -->
@@ -7726,7 +7801,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackHandgunAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7754,7 +7829,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackCrossbowAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7782,7 +7857,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackTurretAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7810,7 +7885,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackShotgunAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7838,7 +7913,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackChaingunAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7866,7 +7941,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackFuelAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7894,7 +7969,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackRocketAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7922,7 +7997,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackPlasmaAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/> <!-- STK drink -->
@@ -7950,7 +8025,7 @@
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
-	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="CustomIcon" value="backpackDoom"/>
 	<property name="DescriptionKey" value="backpackHandgunAmmoDesc"/>
 	<property name="Material" value="MAmmoStackPouch"/>
 	<property name="Stacknumber" value="1"/>
@@ -7973,6 +8048,580 @@
 		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="perkInventoryPouch" level="1"/>
 	</effect_group>
 </item> -->
+
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+<item name="SmallBackbackLv1">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv1Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="1"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="1"/>
+		<display_value name="dSlotCount" value="1"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv2">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv2Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="2"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="2"/>
+		<display_value name="dSlotCount" value="2"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv3">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv3Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="3"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="3"/>
+		<display_value name="dSlotCount" value="3"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv4">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv4Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="4"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="4"/>
+		<display_value name="dSlotCount" value="4"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv5">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv5Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="5"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="5"/>
+		<display_value name="dSlotCount" value="5"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv6">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv6Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="6"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="6"/>
+		<display_value name="dSlotCount" value="6"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv7">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv7Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="7"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="7"/>
+		<display_value name="dSlotCount" value="7"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv8">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv8Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="8"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="8"/>
+		<display_value name="dSlotCount" value="8"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv9">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv9Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="9"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="9"/>
+		<display_value name="dSlotCount" value="9"/>
+	</effect_group>
+</item>
+
+<item name="SmallBackbackLv10">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="SmallBackbackLv10Desc"/>
+	<property name="CustomIcon" value="backpackSmall"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_sm_grab"/>
+	<property name="SoundPlace" value="backpack_sm_place"/>
+	<property name="Tags" value="backpackT1"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="10"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="10"/>
+		<display_value name="dSlotCount" value="10"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv1">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv1Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="11"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="11"/>
+		<display_value name="dSlotCount" value="11"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv2">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv2Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="12"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="12"/>
+		<display_value name="dSlotCount" value="12"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv3">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv3Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="13"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="13"/>
+		<display_value name="dSlotCount" value="13"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv4">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv4Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="14"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="14"/>
+		<display_value name="dSlotCount" value="14"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv5">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv5Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="15"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="15"/>
+		<display_value name="dSlotCount" value="15"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv6">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv6Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="16"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="16"/>
+		<display_value name="dSlotCount" value="16"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv7">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv7Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="17"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="17"/>
+		<display_value name="dSlotCount" value="17"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv8">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv8Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="18"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="18"/>
+		<display_value name="dSlotCount" value="18"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv9">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv9Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="19"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="19"/>
+		<display_value name="dSlotCount" value="19"/>
+	</effect_group>
+</item>
+
+<item name="MediumBackbackLv10">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="MediumBackbackLv10Desc"/>
+	<property name="CustomIcon" value="backpackMedium"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_md_grab"/>
+	<property name="SoundPlace" value="backpack_md_place"/>
+	<property name="Tags" value="backpackT2"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="20"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="20"/>
+		<display_value name="dSlotCount" value="20"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv1">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv1Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="21"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="21"/>
+		<display_value name="dSlotCount" value="21"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv2">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv2Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="22"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="22"/>
+		<display_value name="dSlotCount" value="22"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv3">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv3Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="23"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="23"/>
+		<display_value name="dSlotCount" value="23"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv4">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv4Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="24"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="24"/>
+		<display_value name="dSlotCount" value="24"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv5">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv5Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="25"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="25"/>
+		<display_value name="dSlotCount" value="25"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv6">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv6Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="26"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="26"/>
+		<display_value name="dSlotCount" value="26"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv7">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv7Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="27"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="27"/>
+		<display_value name="dSlotCount" value="27"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv8">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv8Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="28"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="28"/>
+		<display_value name="dSlotCount" value="28"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv9">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv9Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="29"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="29"/>
+		<display_value name="dSlotCount" value="29"/>
+	</effect_group>
+</item>
+
+<item name="LargeBackbackLv10">
+	<property name="Extends" value="backpackMaster" param1="CustomIcon"/>
+	<property name="DescriptionKey" value="LargeBackbackLv10Desc"/>
+	<property name="CustomIcon" value="backpackLarge"/>
+	<property name="EquipSlot" value="Backpack"/>
+	<property name="SoundPickup" value="backpack_lrg_grab"/>
+	<property name="SoundPlace" value="backpack_lrg_place"/>
+	<property name="Tags" value="backpackT3"/>
+	<property name="NoScrapping" value="true"/>
+	<property name="ShowQuality" value="false"/>
+	<property name="CreativeMode" value="Player"/>
+	<effect_group>
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="BagSize" operation="base_add" value="30"/>
+		<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+		<display_value name="dSlotCount" value="30"/>
+	</effect_group>
+</item>
+	</if>
+</conditional>
 
 <item name="BrassKnucklesQ1">
 	<property name="Tags" value="blunt,melee,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,knuckleSkill,corpseRemoval"/>
@@ -8043,12 +8692,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="100" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -8141,12 +8790,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="110" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="132" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="0"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -8239,12 +8888,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="120" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="144" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -8337,12 +8986,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="130" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="156" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -8435,12 +9084,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="140" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="168" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="1"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -8533,12 +9182,12 @@
 		</property>
 	</property>
 	<effect_group name="BrassKnuckles" >
-		<passive_effect name="AttacksPerMinute" operation="base_set" value="150" tags="perkBrawler,perkFlurryOfFortitude"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="180" tags="perkBrawler,perkFlurryOfFortitude"/>
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value=".1334"/>
 		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
 		<passive_effect name="DegradationMax" operation="base_set" value="0" tags="perkBrawler"/>
 		<passive_effect name="DegradationPerUse" operation="base_set" value="0" tags="perkBrawler"/>
-		<passive_effect name="MaxRange" operation="base_set" value="2.0" tags="perkBrawler"/>
+		<passive_effect name="MaxRange" operation="base_set" value="2.25" tags="perkBrawler"/>
 		<passive_effect name="BlockRange" operation="base_set" value="2.5" tags="perkBrawler"/>
 		<passive_effect name="ModSlots" operation="base_set" value="2"/>
 		<passive_effect name="ModPowerBonus" operation="base_add" value="0" tags="EntityDamage"/>
@@ -9741,7 +10390,7 @@
 </item>
 
 <item name="CompoundCrossbowQ1">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -9821,7 +10470,7 @@
 </item>
 
 <item name="CompoundCrossbowQ2">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -9903,7 +10552,7 @@
 </item>
 
 <item name="CompoundCrossbowQ3">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -9985,7 +10634,7 @@
 </item>
 
 <item name="CompoundCrossbowQ4">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -10067,7 +10716,7 @@
 </item>
 
 <item name="CompoundCrossbowQ5">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -10149,7 +10798,7 @@
 </item>
 
 <item name="CompoundCrossbowQ6">
-	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="weapon,ranged,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,bow,attachmentsIncluded,bowSkill,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="69"/>
 	<property name="Meshfile" value="@:Other/Items/Weapons/Ranged/Bows/advancedBow/advancedCompoundCrossbow/advancedCompoundCrossbowPrefab.prefab"/>
 	<property name="Material" value="MBowCrossbowParts"/>
@@ -10309,7 +10958,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ1desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="9C8867"/>
@@ -10527,7 +11176,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ2desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="CF7F29"/>
@@ -10748,7 +11397,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ3desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="A2A41B"/>
@@ -10969,7 +11618,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ4desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="42C234"/>
@@ -11190,7 +11839,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ5desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="315DCE"/>
@@ -11411,7 +12060,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shortRange,ammoEft919mm,nobipod,scopemount,magazine,sideAttachments,barrelAttachments,m9a3only,attAgility,perkGunslinger,firingMode,9mmGun,attachmentsIncluded,nooffsetscope,nom203,handgunSkill,pistol,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="1"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_PISTOL_M9.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="HandgunQ6desc"/>
 	<property name="CustomIcon" value="IZYgunHandgunT1Pistol"/>
 	<property name="CustomIconTint" value="400073"/>
@@ -11702,7 +12351,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ1desc"/>
 	<property name="CustomIconTint" value="9C8867"/>
 	<property name="TintColor" value="156,136,103"/>
@@ -11959,7 +12608,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ2desc"/>
 	<property name="CustomIconTint" value="CF7F29"/>
 	<property name="TintColor" value="207, 127, 41"/>
@@ -12216,7 +12865,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ3desc"/>
 	<property name="CustomIconTint" value="A2A41B"/>
 	<property name="TintColor" value="162,164,27"/>
@@ -12473,7 +13122,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ4desc"/>
 	<property name="CustomIconTint" value="42C234"/>
 	<property name="TintColor" value="66,194,52"/>
@@ -12730,7 +13379,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ5desc"/>
 	<property name="CustomIconTint" value="315DCE"/>
 	<property name="TintColor" value="49,93,206"/>
@@ -12987,7 +13636,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,gun,shotgun,shortRange,attStrength,modGunShotgunTubeExtenderMagazine,barrelAttachments,sideAttachments,stock,bottomAttachments,ks23only,perkBoomstick,attachmentsIncluded,shotgunSkill,pumpShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="5"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_SG_Pumpshotgun.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="PumpShotgunQ6desc"/>
 	<property name="CustomIconTint" value="400073"/>
 	<property name="TintColor" value="64,0,115"/>
@@ -13302,7 +13951,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ1desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="1"/>
 	<property name="ScrapTimeOverride" value="5.0"/>
@@ -13335,6 +13984,7 @@
 		<!-- <property name="ItemActionModules" value="InterruptReload,KFCommonUtilityLib;InvariableRPM,KFCommonUtilityLib;DynamicMuzzleFlash,KFCommonUtilityLib;Inspectable,KFCommonUtilityLib;AnimationLocked,KFCommonUtilityLib"/>
 		<property name="FiringStateFullName" value="Base Layer.Cancel"/>
 		<property name="InstantFiringCancel" value="true"/> -->
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocket"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/> <!-- ChinalakeGL_fire -->
@@ -13515,7 +14165,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ2desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -13544,6 +14194,7 @@
 		<requirement name="PlayerItemCount" item_name="RocketFragDM" operation="GTE" value="1"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="1000"/>
 		<property name="Class" value="Launcher"/>
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocket"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/>
@@ -13727,7 +14378,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ3desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -13756,6 +14407,7 @@
 		<requirement name="PlayerItemCount" item_name="RocketFragDM" operation="GTE" value="1"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="1000"/>
 		<property name="Class" value="Launcher"/>
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocket"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/>
@@ -13939,7 +14591,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ4desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -13968,6 +14620,7 @@
 		<requirement name="PlayerItemCount" item_name="RocketFragDM" operation="GTE" value="1"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="1000"/>
 		<property name="Class" value="Launcher"/>
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocket"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/>
@@ -14151,7 +14804,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ5desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -14180,6 +14833,7 @@
 		<requirement name="PlayerItemCount" item_name="RocketFragDM" operation="GTE" value="1"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="1000"/>
 		<property name="Class" value="Launcher"/>
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocket"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/>
@@ -14363,7 +15017,7 @@
 	<property name="CustomIcon" value="IZYgunT2LGLChinalakeGrenadeLauncher"/>
 	<property name="DescriptionKey" value="RocketLauncherQ6desc"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?IZY_LGL_Chinalake.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_Demolis_Pack_MainResource.unity3d?DROP_LGL_Chinalake.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MRocketLauncherParts"/>
 	<property name="Weight" value="0"/>
 	<property name="Stacknumber" value="1"/>
@@ -14392,6 +15046,7 @@
 		<requirement name="PlayerItemCount" item_name="RocketFragDM" operation="GTE" value="1"/>
 		<requirement name="RoundsInMagazine" operation="Equals" value="1000"/>
 		<property name="Class" value="Launcher"/>
+		<property name="VisibleInMag" value="false"/>
 		<property name="Magazine_items" value="DummyRocketQ6"/>
 		<property name="Reload_time" value="2.6"/>
 		<property name="Sound_start" value="RocketLaunched"/>
@@ -15263,7 +15918,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ1Desc"/>
@@ -15479,18 +16134,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ1" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ1">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ1">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="7" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="7" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -15509,7 +16164,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ2Desc"/>
@@ -15725,18 +16380,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ2" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ2">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ2">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="7.7" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="7.7" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -15755,7 +16410,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ3Desc"/>
@@ -15971,18 +16626,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ3" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ3">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ3">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="8.4" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="8.4" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -16001,7 +16656,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ4Desc"/>
@@ -16216,18 +16871,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ4" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ4">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ4">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="9.1" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="9.1" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -16246,7 +16901,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ5Desc"/>
@@ -16462,18 +17117,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ5" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ5">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ5">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="9.8" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="9.8" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -16492,7 +17147,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,flamethrower,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attIntellect,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="60"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_Technical_Flamethrower.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_FlameThrower_asset.unity3d?IZY_DROP_M2flamethrower.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MJunkTurretParts"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM2flameThrower"/>
 	<property name="DescriptionKey" value="FlameThrowerQ6Desc"/>
@@ -16708,18 +17363,18 @@
 		<triggered_effect trigger="onSelfHoldingItemCreated" action="AddBuff" buff="RefreshHand"/>
 	</effect_group>
 	<effect_group name="FlameThrowerQ6" >
-			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
+			<triggered_effect trigger="onSelfPrimaryActionRayHit" action="RangedExplosion, CustomParticleLoader" particle_index="#@modfolder(DoomMod_Standalone):Resources/IZY_FlameThrower_asset.unity3d?IZY_Flamethrowner_DOT.Prefab" explode_delay="0"/>	
 			
-			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ6">
+			<!-- <triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffflamethrowerburnQ6">
 				<requirement name="CVarCompare" target="other" cvar="_underwater" operation="LT" value="0.3"/>
-			</triggered_effect>
+			</triggered_effect> -->
 			
 			<passive_effect name="EntityDamage" operation="base_set" value="0" />
 			<passive_effect name="BlockDamage" operation="base_set" value="0" />
 			<passive_effect name="RoundRayCount" operation="base_set" value="1" />
 			<passive_effect name="MaxRange" operation="base_set" value="10.5" />
 			<passive_effect name="DamageFalloffRange" operation="base_set" value="10.5" />
-			<passive_effect name="EntityPenetrationCount" operation="base_set" value="5" />
+			<passive_effect name="EntityPenetrationCount" operation="base_add" value="5"/>
 			<passive_effect name="BlockPenetrationFactor" operation="base_set" value="51" />
 			<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".2" />
 			<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value=".2" />
@@ -16771,6 +17426,7 @@
 				<property name="Duration" value="2"/>
 				<property name="RadiusBlocks" value="1"/>
 				<property name="RadiusEntities" value="1"/>
+				<property name="EntityDamage" value="0"/>
 				<property name="BlastPower" value="1"/>
 				<property class="DamageBonus">
 					<property name="stone" value="0"/>
@@ -16783,6 +17439,9 @@
 			<property name="ExplodeOnHit" value="true"/>
 			<property name="StickPercent" value=".5"/>	
 	</property>
+	<effect_group name="DummyFuel" tiered="false">
+		<passive_effect name="EntityPenetrationCount" operation="base_set" value="0"/>
+	</effect_group>
 </item>
 	
 	
@@ -16891,7 +17550,7 @@
 	<property name="EconomicValue" value="0"/>
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
 	<property name="SoundHolster" value="weapon_holster"/>
@@ -16981,7 +17640,7 @@
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
 	<property name="UnlockedBy" value="lbu_Robotics"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="Candrop" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
@@ -17072,7 +17731,7 @@
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
 	<property name="UnlockedBy" value="lbu_Robotics"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="Candrop" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
@@ -17163,7 +17822,7 @@
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
 	<property name="UnlockedBy" value="lbu_Robotics"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="Candrop" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
@@ -17254,7 +17913,7 @@
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
 	<property name="UnlockedBy" value="lbu_Robotics"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="Candrop" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
@@ -17345,7 +18004,7 @@
 	<property name="SellableToTrader" value="false"/>
 	<property name="RequiredPower" value="15"/>
 	<property name="UnlockedBy" value="lbu_Robotics"/>
-	<property name="ShowQuality" value="true"/>
+	<property name="ShowQuality" value="false"/>
 	<property name="Candrop" value="false"/>
 	<property name="IgnoreKeystoneSound" value="true"/>
 	<property name="SoundUnholster" value="weapon_unholster"/>
@@ -17440,7 +18099,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ1desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="9C8867"/>
@@ -17701,7 +18360,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ2desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="CF7F29"/>
@@ -17963,7 +18622,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ3desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="A2A41B"/>
@@ -18225,7 +18884,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ4desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="42C234"/>
@@ -18487,7 +19146,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ5desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="315DCE"/>
@@ -18749,7 +19408,7 @@
 	<property name="Tags" value="IZY,overrideSounds,weapon,ranged,noSilencer,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,shotgunSkill,superShotgun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="82"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_Shotgun_ValDBSG.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_DBSG.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="DescriptionKey" value="SuperShotgunQ6desc"/>
 	<property name="Material" value="MShotgunParts"/>
 	<property name="CustomIconTint" value="400073"/>
@@ -19008,10 +19667,10 @@
 </item>
 
 <item name="ChaingunQ1">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ1desc"/>
 	<property name="CustomIconTint" value="9C8867"/>
@@ -19038,7 +19697,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -19234,34 +19893,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -19305,10 +19964,10 @@
 </item>
 
 <item name="ChaingunQ2">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ2desc"/>
 	<property name="CustomIconTint" value="CF7F29"/>
@@ -19335,7 +19994,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -19535,34 +20194,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -19606,10 +20265,10 @@
 </item>
 
 <item name="ChaingunQ3">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ3desc"/>
 	<property name="CustomIconTint" value="A2A41B"/>
@@ -19636,7 +20295,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -19837,34 +20496,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -19908,10 +20567,10 @@
 </item>
 
 <item name="ChaingunQ4">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ4desc"/>
 	<property name="CustomIconTint" value="42C234"/>
@@ -19938,7 +20597,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -20138,34 +20797,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -20209,10 +20868,10 @@
 </item>
 
 <item name="ChaingunQ5">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ5desc"/>
 	<property name="CustomIconTint" value="315DCE"/>
@@ -20239,7 +20898,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -20439,34 +21098,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -20510,10 +21169,10 @@
 </item>
 
 <item name="ChaingunQ6">
-	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
+	<property name="Tags" value="IZY,IZYHVW,IZYMINIGUN,chaingun,overrideSounds,weapon,ranged,holdBreathAiming,shortRange,gun,barrelAttachments,sideAttachments,stock,magazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,machinegunSkill,chainGun,corpseRemoval,canHaveCosmetic"/>
 	<property name="HoldType" value="19"/>
 	<property name="Meshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?IZY_HVW_M134.Prefab"/>
-	<property name="DropMeshfile" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
+	<property name="DropMeshfile" value="@:Other/Items/Misc/sack_droppedPrefab.prefab"/>
 	<property name="CustomIcon" value="IZYgunT5HeavyWeaponM134MinigunGatling"/>
 	<property name="DescriptionKey" value="ChaingunQ6desc"/>
 	<property name="CustomIconTint" value="400073"/>
@@ -20540,7 +21199,7 @@
 	<property name="SoundPickup" value="rifle_polymer_grab"/>
 	<property name="SoundPlace" value="rifle_polymer_place"/>
 	<property class="Action0">
-		<requirement name="HasBuff" buff="IsAimingHVW"/>
+		<requirement name="HasBuff" buff="buffHoldBreathAiming01"/>
 		<requirement name="PlayerItemCount" item_name="762mmBulletDM" operation="GTE" value="1"/>
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
@@ -20741,34 +21400,34 @@
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Fancy_shits2"/>
 		
 						<!--	MuzzleFlash FPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="Muzzleframes_B2"/>
 						<!--	MuzzleLightFPV -->		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV"/>
 		
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="IsFPV"/>
 		</triggered_effect>
-		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="true" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
+		<triggered_effect trigger="onSelfHoldingItemCreated" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2">
 			<requirement name="!IsFPV"/>
 		</triggered_effect>
 		<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="#HeldItemRoot" transform_path="MuzzleLightFPV2"/>
@@ -20996,7 +21655,7 @@
 		<property name="Gravity" value="-.01"/>
 		<property name="FlyTime" value=".2"/>
 		<property name="LifeTime" value="30"/>
-		<property name="CollisionRadius" value=".2"/>
+		<property name="CollisionRadius" value="1"/>
 	</property>
 	<effect_group name="DummyBFGCellEntity" tiered="false">
 		<passive_effect name="BlockDamage" operation="base_set" value="5" />
@@ -21050,7 +21709,7 @@
 		<property name="Gravity" value="-.01"/>
 		<property name="FlyTime" value=".2"/>
 		<property name="LifeTime" value="30"/>
-		<property name="CollisionRadius" value=".2"/>
+		<property name="CollisionRadius" value="1"/>
 	</property>
 	<effect_group name="DummyBFGCellBlock" tiered="false">
 		<passive_effect name="BlockDamage" operation="base_set" value="5" />
@@ -21634,7 +22293,7 @@
 		<property name="DamageEntity" value="0"/>
 		<property name="DamageBlock" value="40"/>
 		<property name="Range" value="1.7"/>
-		<property name="Delay" value=".2"/>
+		<property name="Delay" value="1"/>
 		<property class="HitSounds">
 		<property name="Override0" value="organic" param1="metalstaborganic"/></property>
 	</property>
@@ -21719,7 +22378,7 @@
 		<property name="DamageEntity" value="0"/>
 		<property name="DamageBlock" value="50"/>
 		<property name="Range" value="1.7"/>
-		<property name="Delay" value=".2"/>
+		<property name="Delay" value="1"/>
 		<property class="HitSounds">
 		<property name="Override0" value="organic" param1="metalstaborganic"/></property>
 	</property>
@@ -21971,7 +22630,8 @@
 	<property class="Action0">
 		<property name="DamageEntity" value="1"/>
 		<property name="DamageBlock" value="0"/>
-		<property name="Range" value="1.9"/>
+		<property name="Range" value="1.7"/>
+		<property name="Delay" value="1"/>
 	</property>
 	<!-- <property class="Action1"> 
 		<property name="Class" value="SpawnEntity"/>
@@ -22095,7 +22755,7 @@
 				<property name="water" value="0"/>
 			</property>
 		</property>
-		<property name="Velocity" value="10.0"/><!-- ballistic max distance for duration -->
+		<property name="Velocity" value="8"/><!-- ballistic max distance for duration -->
 		<property name="Gravity" value="-.01"/>
 		<property name="CollisionRadius" value=".1"/>
 		<property name="FlyTime" value="0"/>
@@ -22142,9 +22802,9 @@
 		<passive_effect name="DamageFalloffRange" operation="base_set" value="100"/>
 		<passive_effect name="MaxRange" operation="base_set" value="100"/>
 		<passive_effect name="MagazineSize" operation="base_set" value="2"/>
-		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="2"/>
 		<passive_effect name="SpreadDegreesVertical" operation="base_set" value=".01"/>
-		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="7"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="10"/>
 		<passive_effect name="SpreadMultiplierIdle" operation="base_set" value=".01"/>
 		<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" fireOneBuff="true"
 			buff="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain"
@@ -22272,7 +22932,7 @@
 		</property>
 		<property name="Velocity" value="20.0"/><!-- ballistic max distance for duration -->
 		<property name="Gravity" value="-1"/>
-		<property name="CollisionRadius" value=".1"/>
+		<property name="CollisionRadius" value=".15"/>
 		<property name="FlyTime" value="0"/>
 		<property name="LifeTime" value="20"/>
 	</property>
@@ -22282,4 +22942,28 @@
 	</effect_group>
 </item>
 </append>
+
+<!-- Hide unused vanilla weapons/tools/consumables from creative (Doom uses Q1 items instead). -->
+<append xpath="/items/item[@name='gunHandgunT0PipePistol' or @name='gunHandgunT1Pistol' or @name='gunHandgunT3SMG5' or @name='gunHandgunT2Magnum44' or @name='gunHandgunT3DesertVulture' or @name='gunShotgunT0PipeShotgun' or @name='gunShotgunT1DoubleBarrel' or @name='gunShotgunT2PumpShotgun' or @name='gunShotgunT3AutoShotgun' or @name='gunRifleT0PipeRifle' or @name='gunRifleT1HuntingRifle' or @name='gunRifleT2LeverActionRifle' or @name='gunRifleT3SniperRifle' or @name='gunMGT0PipeMachineGun' or @name='gunMGT1AK47' or @name='gunMGT2TacticalAR' or @name='gunMGT3M60' or @name='gunExplosivesT3RocketLauncher' or @name='gunBowT1WoodenBow' or @name='gunBowT3CompoundBow' or @name='gunBowT1IronCrossbow' or @name='gunBowT3CompoundCrossbow' or @name='gunBotT1JunkSledge' or @name='gunBotT2JunkTurret' or @name='gunBotT3JunkDrone' or @name='meleeWpnBladeT0BoneKnife' or @name='meleeWpnBladeT1HuntingKnife' or @name='meleeWpnBladeT1CandyKnife' or @name='meleeWpnBladeT3Machete' or @name='meleeWpnClubT0WoodenClub' or @name='meleeWpnClubT1BaseballBat' or @name='meleeWpnClubT1CandyClub' or @name='meleeWpnClubT3SteelClub' or @name='meleeWpnBatonT0PipeBaton' or @name='meleeWpnBatonT2StunBaton' or @name='meleeWpnBatonT3PlasmaBaton' or @name='meleeWpnSpearT0StoneSpear' or @name='meleeWpnSpearT1IronSpear' or @name='meleeWpnSpearT3SteelSpear' or @name='meleeWpnSledgeT0StoneSledgehammer' or @name='meleeWpnSledgeT1IronSledgehammer' or @name='meleeWpnSledgeT3SteelSledgehammer' or @name='meleeWpnKnucklesT0LeatherKnuckles' or @name='meleeWpnKnucklesT1IronKnuckles' or @name='meleeWpnKnucklesT3SteelKnuckles' or @name='meleeToolRepairT0TazasStoneAxe' or @name='meleeToolRepairT1ClawHammer' or @name='meleeToolRepairT3Nailgun' or @name='meleeToolAxeT1IronFireaxe' or @name='meleeToolAxeT2SteelAxe' or @name='meleeToolPickT1IronPickaxe' or @name='meleeToolPickT2SteelPickaxe' or @name='meleeToolShovelT1IronShovel' or @name='meleeToolShovelT2SteelShovel' or @name='meleeToolAxeT3Chainsaw' or @name='meleeToolPickT3Auger' or @name='meleeToolSalvageT1Wrench' or @name='meleeToolSalvageT2Ratchet' or @name='meleeToolSalvageT3ImpactDriver'][not(property[@name='CreativeMode'])]">
+	<property name="CreativeMode" value="None"/>
+</append>
+<append xpath="/items/item[@name='ammo9mmBulletBall' or @name='ammo9mmBulletHP' or @name='ammo9mmBulletAP' or @name='ammo44MagnumBulletBall' or @name='ammo44MagnumBulletHP' or @name='ammo44MagnumBulletAP' or @name='ammo762mmBulletBall' or @name='ammo762mmBulletHP' or @name='ammo762mmBulletAP' or @name='ammoShotgunShell' or @name='ammoShotgunSlug' or @name='ammoShotgunBreachingSlug' or @name='ammoJunkTurretRegular' or @name='ammoJunkTurretShell' or @name='ammoJunkTurretAP' or @name='ammoRocketHE' or @name='ammoRocketFrag' or @name='ammoArrowStone' or @name='ammoArrowIron' or @name='ammoArrowSteelAP' or @name='ammoArrowFlaming' or @name='ammoArrowExploding' or @name='ammoCrossbowBoltStone' or @name='ammoCrossbowBoltIron' or @name='ammoCrossbowBoltSteelAP' or @name='ammoCrossbowBoltFlaming' or @name='ammoCrossbowBoltExploding' or @name='ammoBundle9mmBulletBall' or @name='ammoBundle9mmBulletHP' or @name='ammoBundle9mmBulletAP' or @name='ammoBundle44MagnumBulletBall' or @name='ammoBundle44MagnumBulletHP' or @name='ammoBundle44MagnumBulletAP' or @name='ammoBundle762mmBulletBall' or @name='ammoBundle762mmBulletHP' or @name='ammoBundle762mmBulletAP' or @name='ammoBundleShotgunShell' or @name='ammoBundleShotgunSlug' or @name='ammoBundleShotgunBreachingSlug' or @name='ammoBundleJunkTurretRegular' or @name='ammoBundleJunkTurretShell' or @name='ammoBundleJunkTurretAP' or @name='ammoBundleArrowStone' or @name='ammoBundleArrowIron' or @name='ammoBundleArrowSteelAP' or @name='ammoBundleArrowFlaming' or @name='ammoBundleArrowExploding' or @name='ammoBundleCrossbowBoltStone' or @name='ammoBundleCrossbowBoltIron' or @name='ammoBundleCrossbowBoltSteelAP' or @name='ammoBundleCrossbowBoltFlaming' or @name='ammoBundleCrossbowBoltExploding'][not(property[@name='CreativeMode'])]">
+	<property name="CreativeMode" value="None"/>
+</append>
+<append xpath="/items/item[@name='medicalBandage' or @name='medicalFirstAidBandage' or @name='medicalFirstAidKit' or @name='drugVitamins' or @name='drugPainkillers' or @name='drugSteroids' or @name='drugRecog' or @name='drugFortBites' or @name='foodBurntSmoothie' or @name='foodOasisSmoothie' or @name='foodFrostbiteSmoothie' or @name='foodAtomicSmoothie' or @name='drugAtomJunkies' or @name='drugCovertCats' or @name='drugEyeKandy' or @name='drugHackers' or @name='drugJailBreakers' or @name='drugNerdTats' or @name='drugOhShitzDrops' or @name='drugRockBusters' or @name='drugSkullCrushers' or @name='drugSugarButts' or @name='foodHoney' or @name='drinkJarGrandpasMoonshine' or @name='drinkJarGrandpasAwesomeSauce' or @name='drinkJarGrandpasLearningElixir' or @name='thrownAmmoPipeBomb' or @name='thrownGrenadeContact' or @name='thrownGrenade' or @name='thrownAmmoMolotovCocktail'][not(property[@name='CreativeMode'])]">
+	<property name="CreativeMode" value="None"/>
+</append>
+<set xpath="/items/item[@name='modArmorHelmetLightSchematic']/property[@name='CreativeMode']/@value">None</set>
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+		<append xpath="/items/item[@name='backpackSmall' or @name='backpackMedium' or @name='backpackLarge'][not(property[@name='CreativeMode'])]">
+			<property name="CreativeMode" value="None"/>
+		</append>
+	</if>
+</conditional>
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+		<set xpath="/items/item[@name='AmmoStackPouch']/property[@name='DescriptionKey']/@value">AmmoStackPouchDesc33</set>
+	</if>
+</conditional>
 </FranticDan>

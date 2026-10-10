@@ -444,6 +444,7 @@
 	<item name="modGunBarrelExtender"/>
 	<item name="modGunRetractingStock"/>
 	<item name="modGunScopeMedium" loot_prob_template="low"/>
+	<item name="modGunFlashlight" />
 </lootgroup>
 </insertafter>
 
@@ -454,6 +455,7 @@
 	<item name="modGunScopeMedium" loot_prob_template="veryLow"/>
 	<item name="modGunTriggerGroupAutomatic"/>
 	<item name="modGunDrumMagazineExtender"/>
+	<item name="modGunFlashlight" />
 </lootgroup>
 </insertafter>
 
@@ -1170,147 +1172,147 @@
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupBirdNest']">
 <lootgroup name="group9mmSmall">
-	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group9mmSmall']">
 <lootgroup name="group9mmMedium">
-	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group9mmLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group9mmMedium']">
 <lootgroup name="group9mmLarge">
-	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="9mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group762mmSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group9mmLarge']">
 <lootgroup name="group762mmSmall">
-	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group762mmMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group762mmSmall']">
 <lootgroup name="group762mmMedium">
-	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group762mmLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group762mmMedium']">
 <lootgroup name="group762mmLarge">
-	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="762mmBulletDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group44MagnumSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group762mmLarge']">
 <lootgroup name="group44MagnumSmall">
-	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group44MagnumMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group44MagnumSmall']">
 <lootgroup name="group44MagnumMedium">
-	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='group44MagnumLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group44MagnumMedium']">
 <lootgroup name="group44MagnumLarge">
-	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.01"/>
+	<item name="PlasmaCellDM" count="8,10" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupShotgunShellSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='group44MagnumLarge']">
 <lootgroup name="groupShotgunShellSmall">
-	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupShotgunShellMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupShotgunShellSmall']">
 <lootgroup name="groupShotgunShellMedium">
-	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupShotgunShellLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupShotgunShellMedium']">
 <lootgroup name="groupShotgunShellLarge">
-	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="ShotgunShellDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupArrowSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupShotgunShellLarge']">
 <lootgroup name="groupArrowSmall">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupArrowMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupArrowSmall']">
 <lootgroup name="groupArrowMedium">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupArrowLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupArrowMedium']">
 <lootgroup name="groupArrowLarge">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupArrowLarge']">
 <lootgroup name="groupCrossbowBoltSmall">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltSmall']">
 <lootgroup name="groupCrossbowBoltMedium">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltMedium']">
 <lootgroup name="groupCrossbowBoltLarge">
-	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.01"/>
+	<item name="CrossbowBoltDM" count="4,5" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceGunPowderSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupCrossbowBoltLarge']">
 <lootgroup name="groupResourceGunPowderSmall">
-	<item name="resourceGunPowder" count="100,200" loot_stage_count_mod="0.01"/>
+	<item name="resourceGunPowder" count="100,200" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceGunPowderMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupResourceGunPowderSmall']">
 <lootgroup name="groupResourceGunPowderMedium">
-	<item name="resourceGunPowder" count="200,300" loot_stage_count_mod="0.01"/>
+	<item name="resourceGunPowder" count="200,300" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceGunPowderLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupResourceGunPowderMedium']">
 <lootgroup name="groupResourceGunPowderLarge">
-	<item name="resourceGunPowder" count="300,400" loot_stage_count_mod="0.01"/>
+	<item name="resourceGunPowder" count="300,400" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
@@ -1330,21 +1332,21 @@
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceArrowHeadSmall']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupResourceBuckshotLarge']">
 <lootgroup name="groupResourceArrowHeadSmall">
-	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.01"/>
+	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceArrowHeadMedium']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupResourceArrowHeadSmall']">
 <lootgroup name="groupResourceArrowHeadMedium">
-	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.01"/>
+	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupResourceArrowHeadLarge']"/>
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupResourceArrowHeadMedium']">
 <lootgroup name="groupResourceArrowHeadLarge">
-	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.01"/>
+	<item name="resourceArrowHeadSteelAP" count="6,8" loot_stage_count_mod="0.005"/>
 </lootgroup>
 </insertafter>
 
@@ -1734,7 +1736,7 @@
 <remove xpath="//lootcontainers/lootgroup[@name='groupMoPowerShelvesBooks']/item[@group='groupBotSchematics']"/>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupMoPowerShelves']/item[@group='groupMoPowerShelves01']">
-	<item name="PlasmaCellDM" count="12,18" loot_prob_template="low" loot_stage_count_mod="0.01"/>
+	<item name="PlasmaCellDM" count="12,18" loot_prob_template="low" loot_stage_count_mod="0.005"/>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupMoPower02']/item[@name='roboticsSkillMagazine']"/>
@@ -1746,7 +1748,7 @@
 <remove xpath="//lootcontainers/lootgroup[@name='groupMoPower04']/item[@group='groupBotSchematics']"/>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupMoPower']/item[@group='groupMoPowerA']">
-	<item name="PlasmaCellDM" count="12,18" loot_prob_template="med" force_prob="true" loot_stage_count_mod="0.01"/>
+	<item name="PlasmaCellDM" count="12,18" loot_prob_template="med" force_prob="true" loot_stage_count_mod="0.005"/>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupFireTruck03']"/>
@@ -1857,6 +1859,12 @@
 	<item name="gunBowT1WoodenBowParts" count="1" loot_prob_template="medLow"/>
 </lootgroup>
 </insertafter>
+
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+		<remove xpath="/lootcontainers/lootgroup[@name='groupSavageCountryCrate02']/item[@group='groupPlayerBackpacks']"/>
+	</if>
+</conditional>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupSavageCountryCrate']/item[@group='groupSavageCountryCrate03']">
 	<item name="AmmoStackPouch" loot_prob_template="high" force_prob="true"/>
@@ -2028,7 +2036,7 @@
 </insertafter>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupReinforcedChestT2']/item[@group='groupReinforcedChestT2_07']">
-	<item name="AmmoStackPouch" loot_prob_template="medLow" force_prob="true"/>
+	<item name="AmmoStackPouch" loot_prob_template="med" force_prob="true"/>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupReinforcedChestT3_02']"/>
@@ -2148,15 +2156,30 @@
 </insertafter>
 
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT1']/item[@group='groupAmmoMunitions']/@count">1</set>
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupInfestedT1']/item[@group='groupAmmoMunitions']">
+	<item name="AmmoStackPouch" prob=".15" force_prob="true"/>
+</insertafter>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT2']/item[@group='groupAmmoMunitions']/@count">2</set>
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupInfestedT2']/item[@group='groupAmmoMunitions']">
+	<item name="AmmoStackPouch" prob=".2" force_prob="true"/>
+</insertafter>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT3']/item[@group='groupAmmoMunitions']/@count">2</set>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT3']/item[@group='groupAmmoLarge']/@count">1</set>
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupInfestedT3']/item[@group='groupAmmoLarge']">
+	<item name="AmmoStackPouch" prob=".25" force_prob="true"/>
+</insertafter>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT4']/item[@group='groupAmmoMunitions']/@count">2</set>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT4']/item[@group='groupAmmoLarge']/@count">2</set>
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupInfestedT4']/item[@group='groupAmmoLarge']">
+	<item name="AmmoStackPouch" prob=".3" force_prob="true"/>
+</insertafter>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT5']/item[@group='groupAmmoMunitions']/@count">2</set>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT5']/item[@group='groupAmmoLarge']/@count">4</set>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT5']/item[@group='groupHardenedChestT5_05']/@count">1</set>
 <set xpath="//lootcontainers/lootgroup[@name='groupInfestedT5']/item[@group='groupHardenedChestT5_08']/@count">1</set>
+<insertafter xpath="//lootcontainers/lootgroup[@name='groupInfestedT5']/item[@group='groupHardenedChestT5_08']">
+	<item name="AmmoStackPouch" prob=".35" force_prob="true"/>
+</insertafter>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupHardenedChestT5']/item[@group='groupHardenedChestT5_08']">
 	<item name="AmmoStackPouch" loot_prob_template="guaranteed" force_prob="true"/>
@@ -2168,7 +2191,7 @@
 <set xpath="//lootcontainers/lootgroup[@name='groupNightstand02']/item[@name='gunHandgunT1Pistol']/@name">HandgunQ1</set>
 
 <insertafter xpath="//lootcontainers/lootgroup[@name='groupCloset']/item[@group='groupCloset02']">
-	<item name="AmmoStackPouch" loot_prob_template="veryLow" force_prob="true"/>
+	<item name="AmmoStackPouch" loot_prob_template="lower" force_prob="true"/>
 </insertafter>
 
 <remove xpath="//lootcontainers/lootgroup[@name='groupHiddenStash']"/>
@@ -2250,11 +2273,15 @@
 
 <set xpath="//lootcontainers/lootcontainer[@name='workingStiffsTruck']/@count">2</set>
 
+<set xpath="//lootcontainers/lootcontainer[@name='gasPump']/item[@name='ammoGasCan']/@count">100,150</set>
+<set xpath="//lootcontainers/lootcontainer[@name='gasBarrel']/item[@name='ammoGasCan']/@count">50,100</set>
+<set xpath="//lootcontainers/lootcontainer[@name='gasBarrelLarge']/item[@name='ammoGasCan']/@count">150,250</set>
+
 <remove xpath="//lootcontainers/lootcontainer[@name='cashRegister']"/>
 <insertafter xpath="//lootcontainers/lootcontainer[@name='shoppingCart']">
 <lootcontainer name="cashRegister" count="3" size="6,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="qualBaseTemplate" destroy_on_close="empty">
-	<item name="oldCash" count="20,40" loot_stage_count_mod="0.01" loot_prob_template="low"/>
-	<item name="oldCash" count="30,60" loot_stage_count_mod="0.01"/>
+	<item name="oldCash" count="20,40" loot_stage_count_mod="0.005" loot_prob_template="low"/>
+	<item name="oldCash" count="30,60" loot_stage_count_mod="0.005"/>
 </lootcontainer>
 </insertafter>
 
@@ -2402,7 +2429,46 @@
 
 <lootgroup name="groupformerSoldierloot" count="all">
 	<item group="groupformerSoldierlootWeaponPart" count="1"/>
-	<item name="HandgunDemonAmmo" count="2"/>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
 </lootgroup>
 
 <lootcontainer name="formerSoldierloot" size="5,1" sound_open="pistol_grab" sound_close="pistol_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
@@ -2416,20 +2482,26 @@
 	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="burnt_forest,desert,snow,wasteland"/>
 	</item>
-	<!-- <item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="desert"/>
-	</item>
-	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="snow"/>
-	</item>
-	<item name="gunShotgunT1DoubleBarrelParts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="wasteland"/>
-	</item> -->
 </lootgroup>
 
 <lootgroup name="groupformerSergeantloot" count="all">
 	<item group="groupformerSergeantlootWeaponPart" count="1"/>
-	<item name="ShotgunDemonAmmo" count="2"/>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
 </lootgroup>
 
 <lootcontainer name="formerSergeantloot" size="5,1" sound_open="shotgun_wood_grab" sound_close="shotgun_wood_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
@@ -2443,37 +2515,163 @@
 	<item name="ChaingunQ1" prob=".4" force_prob="true">
 	<requirement class="Biome" biomes="burnt_forest"/>
 	</item>
-	<!-- <item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="desert"/>
-	</item>
-	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="snow"/>
-	</item>
-	<item name="gunMGT1AK47Parts" prob=".4" force_prob="true">
-	<requirement class="Biome" biomes="wasteland"/>
-	</item> -->
 </lootgroup>
 
 <lootgroup name="groupformerCommandoloot" count="all">
 	<item group="groupformerCommandolootWeaponPart" count="1"/>
-	<item name="ChaingunDemonAmmo" count="2"/>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
 </lootgroup>
 
 <lootcontainer name="formerCommandoloot" size="5,1" sound_open="rifle_polymer_grab" sound_close="rifle_polymer_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
 	<item group="groupformerCommandoloot"/>
 </lootcontainer>
 
+<lootgroup name="groupformerSoldierlootBM" count="all">
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="9mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+</lootgroup>
+
 <lootcontainer name="formerSoldierlootBM" size="5,1" sound_open="pistol_grab" sound_close="pistol_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
-	<item name="HandgunDemonAmmo" count="1"/>
+	<item group="groupformerSoldierlootBM"/>
 </lootcontainer>
+
+<lootgroup name="groupformerSergeantlootBM" count="all">
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="ShotgunShellDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+</lootgroup>
 
 <lootcontainer name="formerSergeantlootBM" size="5,1" sound_open="shotgun_wood_grab" sound_close="shotgun_wood_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
-	<item name="ShotgunDemonAmmo" count="1"/>
-
+	<item group="groupformerSergeantlootBM"/>
 </lootcontainer>
 
+<lootgroup name="groupformerCommandolootBM" count="all">
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="0"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="1"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="2"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+	<item name="762mmBulletDM" count="1"><requirement class="Progression" name="perkAmmoScrounger" operation="Equals" value="3"/></item>
+</lootgroup>
+
 <lootcontainer name="formerCommandolootBM" size="5,1" sound_open="rifle_polymer_grab" sound_close="rifle_polymer_place" open_time="0" loot_quality_template="qualBaseTemplate" destroy_on_close="empty" ignore_loot_abundance="true">
-	<item name="ChaingunDemonAmmo" count="1"/>
+	<item group="groupformerCommandolootBM"/>
 </lootcontainer>
 
 <lootgroup name="groupCyberdemonloot" count="all">
@@ -2489,7 +2687,7 @@
 	<item name="cobweb"/>
 </lootcontainer>
 
-<lootcontainer name="buriedTreasureBFG" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template" destroy_on_close="empty" ignore_loot_abundance="true">
+<lootcontainer name="SecretBFGStash" count="1" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualPlus1Template" destroy_on_close="empty" ignore_loot_abundance="true">
 	<item name="BFG9001"/>
 </lootcontainer>
 

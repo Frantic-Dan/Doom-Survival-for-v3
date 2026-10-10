@@ -1076,6 +1076,7 @@
         <property name="Delay" value="0.5" />
         <property name="UseAnimation" value="false" />
         <requirement name="!HasBuff" buff="doomBuffInLevel" />
+		<requirement name="CVarCompare" cvar="CompletedDoomLevels" operation="GTE" value="50"/>
       </property>
     </item>
     <item name="doomNoteMAP31">

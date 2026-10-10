@@ -30,8 +30,8 @@
 			keepsourceaspectratio="false" foregroundlayer="true"/>
 	</set>
 
-	<!-- Hide FranticDan logo overlay (MainMenu1 already includes DOOM). -->
-	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@visible">false</set>
+	<!-- Hide the vanilla news logo. MainMenu1 already includes DOOM. Same node on pre-3.3 and 3.3; it has height but no visible attribute. -->
+	<setattribute xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']" name="visible">false</setattribute>
 	<set xpath="/windows/window[@name='mainMenu']/texture[@name='gameLogo']/@height">0</set>
 
 	<!-- Options: slight lower nudge (more-negative Y = lower) for visible flame tops. -->

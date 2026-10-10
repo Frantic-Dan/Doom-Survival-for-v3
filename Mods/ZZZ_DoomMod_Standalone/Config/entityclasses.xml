@@ -163,7 +163,7 @@
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[7]/@value">0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='WalkSpeed'and @value='1.53']/@value">2.0</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='RunSpeed'and @value='1.10']/@value">1.32</set>
-<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='StaminaChangeOT']/@value">0</set>
+<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[@name='StaminaChangeOT']/@value">1</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='WaterChangeOT']/@value">.0333</set>
 <set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='FoodChangeOT']/@value">.025</set>
 <remove xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[2]//passive_effect[@name='WaterChangeOT' and @tags='driving']"/>
@@ -361,51 +361,6 @@
 <set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxDistance']/@value">25</set>
 <set xpath="/entity_classes/entity_class[@name='junkTurretGun']/property[@name='MaxOwnerDistance']/@value">25</set>
 
-	<!-- <conditional>
-      <if cond="mod_loaded('TFP_Harmony') == false">
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
-		</if>
-	</conditional>
-	
-	<conditional>
-      <if cond="mod_loaded('PathSmoothing') == false">
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
-		</if>
-	</conditional>
-	
-	<conditional>
-      <if cond="mod_loaded('WMMPersistGameOptions') == false">
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
-		</if>
-	</conditional>
-	
-	<conditional>
-      <if cond="mod_loaded('CustomMenuMusic') == false">
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
-		</if>
-	</conditional>
-	
-	<conditional>
-      <if cond="mod_loaded('DifficultyMod') == false">
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[5]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[6]/@value">.6</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[23]/@value">.8</set>
-			<set xpath="/entity_classes/entity_class[@name='playerMale']/effect_group[1]//passive_effect[28]/@value">8</set>
-		</if>
-	</conditional> -->
-
 <append xpath="/entity_classes">
 	
 	<entity_class name="demonFormerSoldier" extends="zombieBoe">
@@ -462,6 +417,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="30"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
 		</effect_group>
@@ -521,6 +477,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="50"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
 		</effect_group>
@@ -582,6 +539,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="70"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
 		</effect_group>
@@ -641,6 +599,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="30"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab" local_offset=".03,-.12,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PistolM9" parent_transform="RightHand"/>
 		</effect_group>
@@ -700,6 +659,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="50"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab" local_offset=".03,-.2,-.04" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="IZY_DROP_PumpSG" parent_transform="RightHand"/>
 		</effect_group>
@@ -761,6 +721,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="70"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab" local_offset="-.05,-.36,-.05" local_rotation="85,180,50" local_scale="1.0,1.0,1.0" parent_transform="RightHand"/>
 			<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" prefab="DROP_HVW_M134" parent_transform="RightHand"/>
 		</effect_group>
@@ -819,6 +780,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -874,6 +836,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="180"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -929,6 +892,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -984,6 +948,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="60"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -1038,6 +1003,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 </entity_class>
 	
@@ -1091,6 +1057,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -1144,6 +1111,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="80"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachPrefabToEntity" prefab="@:Entities/OutdoorDecor/cowSkullPrefab.prefab" local_offset="0,.9,-.1" local_rotation="0,0,0" local_scale="2.7,2.7,1.7" parent_transform="Spine1"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_onFire" local_scale="5.0,5.0,5.0" />
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand" />
@@ -1155,7 +1123,7 @@
 	
 	<entity_class name="demonCacodemon" extends="animalTemplateHostile" param1="Tags">
 		<property name="EntityFlags" value="zombie,32"/>
-		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="DoomLevelsMpFix.EntityCacodemon, DoomCore"/>
 		<property name="UserSpawnType" value="Menu"/>
 		<property name="EntityType" value="Zombie"/>
 		<property name="Tags" value="entity,zombie,hostile,demon,revivable,PinkyCacoDamage,flyingdemon"/>
@@ -1173,7 +1141,7 @@
 		
 		<property name="AITask" value="
 		BreakBlock|
-		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		RangedAttackTarget itemType=1;cooldown=1;duration=1;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
 		Look|
 		Wander|
 		"/>
@@ -1211,12 +1179,13 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
 	<entity_class name="demonBabyCacodemon" extends="animalTemplateHostile" param1="Tags">
 		<property name="EntityFlags" value="zombie,32"/>
-		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="DoomLevelsMpFix.EntityCacodemon, DoomCore"/>
 		<property name="UserSpawnType" value="Menu"/>
 		<property name="EntityType" value="Zombie"/>
 		<property name="Tags" value="entity,zombie,hostile,demon,revivable,BabyCacoVanillaDamage,flyingdemon"/>
@@ -1234,7 +1203,7 @@
 		
 		<property name="AITask" value="
 		BreakBlock|
-		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		RangedAttackTarget itemType=1;cooldown=1;duration=1;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
 		Look|
 		Wander|
 		"/>
@@ -1271,12 +1240,13 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="150" />
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
 	<entity_class name="demonCacodemonSpectre" extends="animalTemplateHostile" param1="Tags">
 		<property name="EntityFlags" value="zombie,32"/>
-		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="DoomLevelsMpFix.EntityCacodemon, DoomCore"/>
 		<property name="UserSpawnType" value="Menu"/>
 		<property name="EntityType" value="Zombie"/>
 		<property name="Tags" value="entity,zombie,hostile,demon,revivable,PinkyCacoDamage,flyingdemon"/>
@@ -1294,7 +1264,7 @@
 		
 		<property name="AITask" value="
 		BreakBlock|
-		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		RangedAttackTarget itemType=1;cooldown=1;duration=1;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
 		Look|
 		Wander|
 		"/>
@@ -1331,6 +1301,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -1344,7 +1315,7 @@
 		<property name="AITask" value="
 		BreakBlock|
 		ApproachDistraction|
-		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		RangedAttackTarget itemType=1;cooldown=3;duration=2;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
 		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
 		ApproachSpot|
 		Look|
@@ -1386,6 +1357,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_left" parent_transform="LeftHand"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_radiation_right" parent_transform="RightHand"/>
 		</effect_group>
@@ -1402,7 +1374,7 @@
 		<property name="AITask" value="
 		BreakBlock|
 		ApproachDistraction|
-		RangedAttackTarget itemType=1;cooldown=3;duration=3;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
+		RangedAttackTarget itemType=1;cooldown=3;duration=2;minRange=2;maxRange=40;sndStart=DemonFireballThrown;sndRelease=DemonFireballThrown|
 		ApproachAndAttackTarget class=EntityPlayer,0,EntityZombie,0,EntityEnemyAnimal,0|
 		ApproachSpot|
 		Look|
@@ -1444,6 +1416,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="1000"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_left" parent_transform="LeftHand"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AttachParticleEffectToEntity" particle="p_twitch_zombie_fire_right" parent_transform="RightHand"/>
 		</effect_group>
@@ -1453,7 +1426,7 @@
 	
 	<entity_class name="demonPainElemental" extends="animalTemplateHostile">
 		<property name="EntityFlags" value="zombie"/>
-		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="DoomLevelsMpFix.EntityCacodemon, DoomCore"/>
 		<property name="UserSpawnType" value="Menu"/>
 		<property name="EntityType" value="Zombie"/>
 		<property name="Tags" value="entity,zombie,hostile,demon,flyingdemon"/>
@@ -1471,7 +1444,7 @@
 		<property name="AITask" value="
 		BreakBlock|
 		ApproachDistraction|
-		RangedAttackTarget itemType=1;cooldown=7;duration=5;minRange=1;maxRange=30|
+		RangedAttackTarget itemType=1;cooldown=4;duration=1;minRange=1;maxRange=30|
 		ApproachSpot|
 		Look|
 		Wander|
@@ -1509,6 +1482,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffLostSoulSpawner"/>
 			<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="0" entity_damage="0" entity_radius="0"/>
 		</effect_group>
@@ -1516,7 +1490,7 @@
 	
 	<entity_class name="demonPainElementalSpectre" extends="animalTemplateHostile">
 		<property name="EntityFlags" value="zombie"/>
-		<property name="Class" value="EntityVulture"/>
+		<property name="Class" value="DoomLevelsMpFix.EntityCacodemon, DoomCore"/>
 		<property name="UserSpawnType" value="Menu"/>
 		<property name="EntityType" value="Zombie"/>
 		<property name="Tags" value="entity,zombie,demon,hostile,flyingdemon"/>
@@ -1534,7 +1508,7 @@
 		<property name="AITask" value="
 		BreakBlock|
 		ApproachDistraction|
-		RangedAttackTarget itemType=1;cooldown=7;duration=5;minRange=1;maxRange=30|
+		RangedAttackTarget itemType=1;cooldown=4;duration=1;minRange=1;maxRange=30|
 		ApproachSpot|
 		Look|
 		Wander|
@@ -1571,6 +1545,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="400"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" buff="buffLostSoulSpawner"/>
 			<triggered_effect trigger="onSelfDied" action="Explode" blast_power="0" block_damage="0" block_radius="0" entity_damage="0" entity_radius="0"/>
 		</effect_group>
@@ -1632,6 +1607,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="300"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -1687,6 +1663,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="600"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 		</effect_group>
 	</entity_class>
 	
@@ -1746,6 +1723,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="700"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffArchvileAOEattack"/>
 			<triggered_effect trigger="onSelfFirstSpawn" action="AddBuff" target="self" buff="buffArchvileAOEreviveTrigger"/>
 			<triggered_effect trigger="onSelfDied" action="RemoveBuff" target="self" buff="buffArchvileAOEattack"/>
@@ -1807,6 +1785,7 @@
 
 		<effect_group name="Base Effects">
 			<passive_effect name="HealthMax" operation="base_set" value="4000"/>
+			<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInfectionMain,buff2ndDegreeBurn"/>
 			<passive_effect name="ElementalDamageResist" operation="base_add" value="100" tags="heat"/>
 		</effect_group>
 	</entity_class>
@@ -1859,7 +1838,6 @@
 	<entity_class name="EntityLootContainerFormerSoldierBM">
 		<property name="Class" value="EntityLootContainer"/>
 		<property name="UserSpawnType" value="Console"/>
-		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
 		<property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PistolM9.Prefab"/>
 		<property name="ModelType" value="Custom"/>
 		<property name="Prefab" value="Backpack"/>
@@ -1874,7 +1852,6 @@
 	<entity_class name="EntityLootContainerFormerSergeantBM">
 		<property name="Class" value="EntityLootContainer"/>
 		<property name="UserSpawnType" value="Console"/>
-		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
 		<property name="Mesh" value="#@modfolder:Resources/IZY_VanilaReplacer_Pack_MainResource.unity3d?IZY_DROP_PumpSG.Prefab"/>
 		<property name="ModelType" value="Custom"/>
 		<property name="Prefab" value="Backpack"/>
@@ -1889,7 +1866,6 @@
 	<entity_class name="EntityLootContainerFormerCommandoBM">
 		<property name="Class" value="EntityLootContainer"/>
 		<property name="UserSpawnType" value="Console"/>
-		<!-- <property name="Mesh" value="@:Entities/LootContainers/backpack03Prefab.prefab"/> -->
 		<property name="Mesh" value="#@modfolder:Resources/IZY_HVW_Pack_MainResource.unity3d?DROP_HVW_M134.Prefab"/>
 		<property name="ModelType" value="Custom"/>
 		<property name="Prefab" value="Backpack"/>

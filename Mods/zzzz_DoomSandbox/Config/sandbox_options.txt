@@ -1,6 +1,9 @@
+# DEV BLUEPRINT. Compiled into DoomSandbox.dll at build time.
+# The copy in the Mods folder is not loaded. Editing it does not change the game.
+# To change options, edit this project file and rebuild DoomSandbox.dll.
 Doom Sandbox Options Worksheet
 ==============================
-Edit this file. Whatever remains is what DoomSandbox should implement.
+Edit this project file, then rebuild the DLL. The Mods-folder copy is not loaded.
 
 - Delete a row = that option is removed
 - Change Name / Default / Choices / Does = that option is rewritten
@@ -64,7 +67,7 @@ Blood Moon Frequency | 7 days | Disabled, 1 day, 2 days, 3 days, 4 days, 5 days,
 Blood Moon Range | 0 days | 0 days, 1 day, 2 days, 3 days, 4 days, 7 days, 10 days, 14 days, 20 days | Random day variance around blood moon schedule
 Blood Moon Count | 16 | 10, 12, 16, 24, 32 | How many BM enemies per player/wave scaling base
 Blood Moon Warning | Morning | Disabled, Morning, Evening | When blood moon warning appears
-Air Drops | 4 | 0, 4, 5 | How often supply crates drop (day patterns)
+Air Drops | 3-7 | Disabled, 3-7, 7 | How often supply crates drop (day patterns)
 Air Drop Random Time | none | none, Morning, MidDay, Evening, Night, All Day, Any | Time-of-day window for airdrops
 Storm Frequency | 100% | 100%, 125%, 150%, 175%, 200%, 250%, 300%, 350%, 400%, 450%, 500% | How often storms occur
 Storm Warning | Yes | No, Yes | Show storm warnings
@@ -103,7 +106,7 @@ Mining Output | 100% | none, 25%, 35%, 50%, 65%, 75%, 85%, 100% | Yield from min
 Crop Output | 100% | none, 25%, 35%, 50%, 65%, 75%, 85%, 100% | Yield from harvested crops
 Seed Drop Output | 100% | none, 25%, 35%, 50%, 65%, 75%, 85%, 100% | Seed drop amount from harvesting
 Harvesting Output | 100% | none, 25%, 35%, 50%, 65%, 75%, 85%, 100% | General foraging/harvest yield
-Crop Growth | 100% | 100%, 150%, 200%, 300% | How fast planted crops grow
+Crop Growth | 100% | 100%, 125%, 150%, 200%, 300% | How fast planted crops grow
 
 ====================================================================================================
 TAB: Crafting

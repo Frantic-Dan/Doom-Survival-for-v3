@@ -1,0 +1,6 @@
+<configs>
+	<!-- Match Dan HUD Search/Use prompt blue (57B9FF). HUDPlus-1Main uses green for book_read. -->
+	<insertafter xpath="/items/item/property[@name='AltItemTypeIcon' and @value='book_read']">
+		<property name="AltItemTypeIconColor" value="87,185,255,180" />
+	</insertafter>
+</configs>

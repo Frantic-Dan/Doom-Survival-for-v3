@@ -15,6 +15,10 @@ challengeBasicSurvivalRewardDoubleTeleporter,challenges,Quest,,,,2x Teleport
 challengeAdvancedSurvivalRewardTeleporter,challenges,Quest,,,,3x Teleport
 challengeExplorationRewardTeleporter,challenges,Quest,,,,4x Teleport
 challengeRewardSkillPoint,challenges,Quest,,,,1x Perk Point
+challenge_reward_DoomComplete,challenges,Quest,,,,+1 Level Complete
+challenge_reward_BossKilled,challenges,Quest,,,,Boss Head Trophy
+doomBossBrain_reward,blocks,Block,,,,John Romero's Severed Head
+doomBossBrain_rewardDesc,blocks,Block,,,,Your reward to beating Doom Survival!\nThank you so much for playing!\n\nFrantic_Dan - Mod Author\nZehMatt - Put the Classic Levels into 7dtd\nAuroraGiggleFairy - Custom code and then some
 doomNoteSelector,items,Item,,,,Teleporter (Selector)
 doomNoteSelectorDesc,items,Item,,,,"This allows you to select the destination of your choice to a Classic Doom Level.\n\nWhile in a Classic Doom Level, you'll have increased movement speed but your jump height will be reduced."
 doomNoteE1M1Tutorial,items,Item,,,,E1M1 Teleporter
@@ -429,7 +433,7 @@ doom_map29_subtitle,quests,Quest,,,,MAP29: The Living End
 doom_map29_desc,quests,Quest,,,,Find a way into MAP29 and clear it out.
 doom_map29_offer,quests,Quest,,,,"You're about to embark on a dangerous mission.\n\nMake sure you have enough food, drink and supplies for your trip, as there's only two ways back, finding the exit, or dying.\n\n[42C234]It is recommended to have at least 2 rows of empty inventory.[-]"
 doomNoteMAP30,items,Item,,,,MAP30 Teleporter
-doomNoteMAP30Desc,items,Item,,,,A teleporter pad that takes you into MAP30: Icon of Sin.\n\n[FF4F00]Warning:\nRequires the Rocket Launcher.\nYou'll die if you run out of rockets.[-]
+doomNoteMAP30Desc,items,Item,,,,A teleporter pad that takes you into MAP30: Icon of Sin.\n\n[FF4F00]Warning:\nRequires the Rocket Launcher.\nYou'll die if you run out of rockets.[-]\n\nRequires 50 levels completed to access.
 doom_map30_name,quests,Quest,,,,MAP30: Icon of Sin
 doom_map30_subtitle,quests,Quest,,,,MAP30: Icon of Sin
 doom_map30_desc,quests,Quest,,,,Find a way into MAP30: Icon of Sin, and clear it out.

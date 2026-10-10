@@ -21,6 +21,9 @@
 			</style>
 		</append>
 
+	<set xpath="/styles/style[@name='workstation.reserve.name']/style_entry[@name='width']/@value">64</set>
+	<set xpath="/styles/style[@name='workstation.reserve.weight']/style_entry[@name='width']/@value">63</set>
+
 <set xpath="/styles/style[@name='itemStack']/style_entry[@name='background_color']/@value">[lightBrown]</set>
 <set xpath="/styles/style[@name='vehicleStack']/style_entry[@name='background_color']/@value">[lightBrown]</set>
 

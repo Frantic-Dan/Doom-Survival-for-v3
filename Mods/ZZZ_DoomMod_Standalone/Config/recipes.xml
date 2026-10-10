@@ -23,27 +23,27 @@
 <recipe name="AmmoStackPouch" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="armourShard" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <!-- * * * * * * * * * * * * forge-emptying recipes: use_ingredient_modifier defaults to true and can disable the CraftingIngredientCount passive * * * * * * * * * * * * -->
-<recipe name="resourceClayLump" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceClayLump" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_clay" count="5"/>
 </recipe>
 
-<recipe name="resourceCrushedSand" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".8" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceCrushedSand" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".16" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_glass" count="4"/>
 </recipe>
 
-<recipe name="resourceRockSmall" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceRockSmall" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_stone" count="5"/>
 </recipe>
 
-<recipe name="resourceScrapBrass" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapBrass" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".04" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_brass" count="1"/>
 </recipe>
 
-<recipe name="resourceScrapIron" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapIron" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".04" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_iron" count="1"/>
 </recipe>
 
-<recipe name="resourceScrapLead" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceScrapLead" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".04" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_lead" count="1"/>
 </recipe>
 
@@ -51,7 +51,7 @@
 	<ingredient name="unit_steel" count="10"/>
 </recipe>
 
-<recipe name="resourceCoal" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
+<recipe name="resourceCoal" count="1" material_based="true" is_trackable="false" craft_area="forge" craft_time=".2" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false" tags="packMuleCrafting">
 	<ingredient name="unit_carbon" count="1"/>
 </recipe>
 
@@ -73,7 +73,7 @@
 <recipe name="meleeToolAllSteelParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 <recipe name="armorParts" count="1" tooltip="ttScrapMetalBrass" always_unlocked="true" tags="salvageScrap"> <wildcard_forge_category /> </recipe>
 
-<recipe name="resourceScrapSteel" count="1" craft_time=".5" craft_exp_gain="0" material_based="true" craft_area="forge" is_trackable="false" tags="packMuleCrafting">
+<recipe name="resourceScrapSteel" count="1" craft_time=".1" craft_exp_gain="0" material_based="true" craft_area="forge" is_trackable="false" tags="packMuleCrafting">
 	<ingredient name="unit_steel" count="1"/>
 </recipe>
 
@@ -180,9 +180,6 @@
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="1,2,3" operation="base_add" value="-1,-2,-3" tags="resourceOilShale"/>
 	</effect_group>	
-</recipe>
-
-<recipe name="DummyFuel" count="3000" craft_time="2" craft_exp_gain="0">
 </recipe>
 
 <recipe name="autoTurret" count="1" craft_exp_gain="0" craft_area="workbench" tags="perkAdvancedEngineering,packMuleCrafting"> <!-- trap -->
@@ -539,7 +536,7 @@
 	<ingredient name="resourceForgedIron" count="50"/>
 	<ingredient name="resourceScrapPolymers" count="250"/>
 	<ingredient name="resourceWood" count="300"/>
-	<ingredient name="resourceYuccaFibers" count="1000"/>
+	<ingredient name="resourceYuccaFibers" count="1500"/>
 	<ingredient name="resourceNail" count="100"/>
 	<ingredient name="workstationSkillMagazine" count="3"/>
 </recipe>
@@ -550,7 +547,7 @@
 	<ingredient name="resourceNail" count="100"/>
 	<ingredient name="resourceMetalPipe" count="50"/>
 	<ingredient name="resourceCloth" count="250"/>
-	<ingredient name="resourceYuccaFibers" count="1000"/>
+	<ingredient name="resourceYuccaFibers" count="1500"/>
 	<ingredient name="workstationSkillMagazine" count="5"/>
 </recipe>
 
@@ -901,7 +898,7 @@ toolDewFilter
 
 <recipe name="foodChickenNuggets" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable,packMuleCrafting,grill">
 	<ingredient name="foodRawMeat" count="1"/>
-	<ingredient name="foodCornMeal" count="2"/>
+	<ingredient name="foodCornMeal" count="1"/>
 </recipe>
 
 <recipe name="foodAshChickenStewBundle" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable,packMuleCrafting,cookingPotFood">
@@ -1802,13 +1799,13 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="2"/>
 </recipe> -->
 
-<recipe name="resourceRocketCasing" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
-	<ingredient name="unit_iron" count="50"/>
-	<ingredient name="unit_clay" count="25"/>
+<recipe name="resourceRocketCasing" count="1" craft_time="15" material_based="true" craft_area="forge" is_trackable="false" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
+	<ingredient name="unit_iron" count="40"/>
+	<ingredient name="unit_clay" count="15"/>
 </recipe>
 
-<recipe name="resourceRocketTip" count="1" material_based="true" craft_area="forge" is_trackable="false" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
-	<ingredient name="unit_lead" count="25"/>
+<recipe name="resourceRocketTip" count="1" craft_time="15" material_based="true" craft_area="forge" is_trackable="false" craft_exp_gain="0" tags="perkAdvancedEngineering,packMuleCrafting">
+	<ingredient name="unit_lead" count="20"/>
 	<ingredient name="unit_clay" count="10"/>
 </recipe>
 
@@ -2187,7 +2184,7 @@ toolDewFilter
 <recipe name="vehicleMotorcycleChassis" count="1" craft_time="600" craft_area="workbench" craft_exp_gain="0" tags="perkGreaseMonkey,learnable,workbenchCrafting,packMuleCrafting">
 	<ingredient name="resourceForgedSteel" count="80"/>
 	<ingredient name="resourceMechanicalParts" count="30"/>
-	<ingredient name="resourceDuctTape" count="18"/>
+	<ingredient name="resourceDuctTape" count="14"/>
 	<ingredient name="resourceLeather" count="30"/>
 	<ingredient name="resourceElectricParts" count="50"/>
 	<effect_group>
@@ -2197,13 +2194,13 @@ toolDewFilter
 
 <recipe name="vehicleMotorcycleHandlebars" count="1" craft_time="600" craft_area="workbench" craft_exp_gain="0" tags="perkGreaseMonkey,learnable,workbenchCrafting,packMuleCrafting">
 	<ingredient name="resourceMechanicalParts" count="30"/>
-	<ingredient name="resourceDuctTape" count="10"/>
+	<ingredient name="resourceDuctTape" count="6"/>
 	<ingredient name="resourceHeadlight" count="4"/>
 	<ingredient name="resourceElectricParts" count="40"/>
-	<ingredient name="resourceForgedSteel" count="40"/>
+	<ingredient name="resourceForgedIron" count="40"/>
 	<ingredient name="resourceSilverNugget" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,2" value=".5,.5" tags="resourceSilverNugget,resourceMechanicalParts,resourceDuctTape,resourceElectricParts,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,2" value=".5,.5" tags="resourceSilverNugget,resourceMechanicalParts,resourceDuctTape,resourceElectricParts,resourceForgedIron"/>
 	</effect_group>
 </recipe>
 
@@ -2308,7 +2305,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="resourceDuctTape" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2320,7 +2317,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="15"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2333,7 +2330,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="8"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2346,7 +2343,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="10"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2359,7 +2356,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="12"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2371,7 +2368,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2383,7 +2380,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="18"/>
 	<ingredient name="resourceDuctTape" count="9"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2396,7 +2393,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="12"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2409,7 +2406,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="15"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2422,7 +2419,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="18"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2434,7 +2431,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="8"/>
 	<ingredient name="resourceDuctTape" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2446,7 +2443,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2459,7 +2456,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="8"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2472,7 +2469,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="10"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2485,7 +2482,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="12"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAllSteelParts,resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2496,7 +2493,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="resourceDuctTape" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2507,7 +2504,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="15"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2518,7 +2515,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="20"/>
 	<ingredient name="resourceDuctTape" count="8"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2529,7 +2526,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="25"/>
 	<ingredient name="resourceDuctTape" count="10"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2540,7 +2537,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="30"/>
 	<ingredient name="resourceDuctTape" count="12"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedSteel,resourceWood,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2553,7 +2550,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="6"/>
 	<ingredient name="resourceOil" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2566,7 +2563,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="9"/>
 	<ingredient name="resourceOil" count="3"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2579,7 +2576,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="resourceOil" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2592,7 +2589,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="15"/>
 	<ingredient name="resourceOil" count="5"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2605,7 +2602,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="18"/>
 	<ingredient name="resourceOil" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceSpring,resourceLeather,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2617,7 +2614,7 @@ toolDewFilter
 	<ingredient name="resourceElectricParts" count="34"/>
 	<ingredient name="resourceOil" count="16"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2629,7 +2626,7 @@ toolDewFilter
 	<ingredient name="resourceElectricParts" count="51"/>
 	<ingredient name="resourceOil" count="24"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2642,7 +2639,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="32"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2655,7 +2652,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="40"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2668,7 +2665,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="48"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceForgedSteel,resourceMechanicalParts,resourceElectricParts,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -2679,7 +2676,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="1"/>
 	<ingredient name="resourceDuctTape" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts"/>
 	</effect_group>
 </recipe>
 
@@ -2691,7 +2688,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="2"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2703,7 +2700,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="3"/>
 	<ingredient name="resourceDuctTape" count="3"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2715,7 +2712,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="4"/>
 	<ingredient name="resourceDuctTape" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2727,7 +2724,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="5"/>
 	<ingredient name="resourceDuctTape" count="5"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2739,7 +2736,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="6"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedSteel,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedSteel,resourceScrapBrass,resourceMechanicalParts,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2750,7 +2747,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="4"/>
 	<ingredient name="resourceDuctTape" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2761,7 +2758,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="6"/>
 	<ingredient name="resourceDuctTape" count="3"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2772,7 +2769,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="8"/>
 	<ingredient name="resourceDuctTape" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2783,7 +2780,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="10"/>
 	<ingredient name="resourceDuctTape" count="5"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedIron,resourceScrapLead,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2794,7 +2791,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="resourceDuctTape" count="6"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceForgedSteel,resourceScrapLead,resourceLeather,resourceDuctTape"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceForgedSteel,resourceScrapLead,resourceLeather,resourceDuctTape"/>
 	</effect_group>
 </recipe>
 
@@ -2805,7 +2802,7 @@ toolDewFilter
 	<ingredient name="resourceMetalPipe" count="16"/>
 	<ingredient name="resourceSpring" count="12"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2817,7 +2814,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="24"/>
 	<ingredient name="resourceForgedSteel" count="32"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
 	</effect_group>
 </recipe>
 
@@ -2828,7 +2825,7 @@ toolDewFilter
 	<ingredient name="resourceMetalPipe" count="24"/>
 	<ingredient name="resourceSpring" count="18"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2840,7 +2837,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="36"/>
 	<ingredient name="resourceForgedSteel" count="48"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
 	</effect_group>
 </recipe>
 
@@ -2851,7 +2848,7 @@ toolDewFilter
 	<ingredient name="resourceMetalPipe" count="32"/>
 	<ingredient name="resourceSpring" count="24"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2864,7 +2861,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="64"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
 	</effect_group>
 </recipe>
 
@@ -2875,7 +2872,7 @@ toolDewFilter
 	<ingredient name="resourceMetalPipe" count="40"/>
 	<ingredient name="resourceSpring" count="30"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2888,7 +2885,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="80"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
 	</effect_group>
 </recipe>
 
@@ -2899,7 +2896,7 @@ toolDewFilter
 	<ingredient name="resourceMetalPipe" count="48"/>
 	<ingredient name="resourceSpring" count="36"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="resourceDuctTape,resourceLeather,resourceElectricParts,resourceMetalPipe,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2912,7 +2909,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="96"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="meleeToolAxeT3ChainsawParts,resourceOil,resourceForgedSteel"/>
 	</effect_group>
 </recipe>
 
@@ -2924,7 +2921,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="12"/>
 	<ingredient name="resourceSpring" count="10"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2936,7 +2933,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="24"/>
 	<ingredient name="resourceSpring" count="20"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2949,7 +2946,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="30"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2962,7 +2959,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="40"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBowT1WoodenBowParts,resourceForgedIron,resourceDuctTape,resourceLeather,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -2975,7 +2972,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="50"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBowT1WoodenBowParts,resourceForgedSteel,resourceDuctTape,resourceLeather,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBowT1WoodenBowParts,resourceForgedSteel,resourceDuctTape,resourceLeather,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3002,7 +2999,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="5"/>
 	<ingredient name="resourceOil" count="5"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3015,7 +3012,7 @@ toolDewFilter
 	<ingredient name="resourceDuctTape" count="10"/>
 	<ingredient name="resourceOil" count="10"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3029,7 +3026,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="15"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3043,7 +3040,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="20"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedIron,resourceSpring,resourceDuctTape,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3057,7 +3054,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="25"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedSteel,resourceSpring,resourceDuctTape,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunHandgunT1PistolParts,resourceMechanicalParts,resourceForgedSteel,resourceSpring,resourceDuctTape,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3079,7 +3076,7 @@ toolDewFilter
 	<ingredient name="resourceForgedIron" count="40"/>
 	<ingredient name="resourceOil" count="10"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3092,7 +3089,7 @@ toolDewFilter
 	<ingredient name="resourceForgedIron" count="80"/>
 	<ingredient name="resourceOil" count="20"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3106,7 +3103,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="30"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3120,7 +3117,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="40"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedIron,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3134,7 +3131,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="50"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3147,7 +3144,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="40"/>
 	<ingredient name="resourceOil" count="20"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3160,7 +3157,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="80"/>
 	<ingredient name="resourceOil" count="40"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3174,7 +3171,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="60"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3188,7 +3185,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="80"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3202,7 +3199,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="100"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunShotgunT1DoubleBarrelParts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3225,7 +3222,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="35"/>
 	<ingredient name="resourceOil" count="20"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3238,7 +3235,7 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="70"/>
 	<ingredient name="resourceOil" count="40"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3252,7 +3249,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="60"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3266,7 +3263,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="80"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3280,7 +3277,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="100"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunMGT1AK47Parts,resourceMechanicalParts,resourceSpring,resourceDuctTape,resourceForgedSteel,resourceOil"/>
 	</effect_group>
 </recipe>
 
@@ -3293,7 +3290,7 @@ toolDewFilter
 	</effect_group>	
 </recipe> -->
 
-<recipe name="RocketLauncherQ2" count="1" craft_time="720" craft_area="workbench" craft_exp_gain="0" tags="perkResourcefulUpgrader,workbenchCrafting,packMuleCrafting,learnable">
+<recipe name="RocketLauncherQ2" count="1" craft_time="720" craft_exp_gain="0" tags="perkResourcefulUpgrader,packMuleCrafting,learnable">
 	<ingredient name="RocketLauncherQ1" count="1"/>
 	<ingredient name="gunExplosivesT3RocketLauncherParts" count="12"/>
 	<ingredient name="resourceElectricParts" count="120"/>
@@ -3302,7 +3299,7 @@ toolDewFilter
 	<ingredient name="resourceSilverNugget" count="6"/>
 	<ingredient name="resourceAcid" count="4"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
 	</effect_group>
 </recipe>
 
@@ -3315,7 +3312,7 @@ toolDewFilter
 	<ingredient name="resourceSilverNugget" count="12"/>
 	<ingredient name="resourceAcid" count="8"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
 	</effect_group>
 </recipe>
 
@@ -3329,7 +3326,7 @@ toolDewFilter
 	<ingredient name="resourceAcid" count="12"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
 	</effect_group>
 </recipe>
 
@@ -3343,7 +3340,7 @@ toolDewFilter
 	<ingredient name="resourceAcid" count="16"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
 	</effect_group>
 </recipe>
 
@@ -3357,7 +3354,7 @@ toolDewFilter
 	<ingredient name="resourceAcid" count="20"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunExplosivesT3RocketLauncherParts,resourceElectricParts,resourceDuctTape,resourceSpring,resourceSilverNugget,resourceAcid"/>
 	</effect_group>
 </recipe>
 
@@ -3373,12 +3370,6 @@ toolDewFilter
 	</effect_group>	
 </recipe> -->
 
-<recipe name="DummyRocket" count="1000" craft_time="2" craft_exp_gain="0">
-</recipe>
-
-<recipe name="DummyRocketQ6" count="1000" craft_time="2" craft_exp_gain="0">
-</recipe>
-
 <recipe name="PlasmaRifleQ2" count="1" craft_time="720" craft_exp_gain="0" tags="perkResourcefulUpgrader,packMuleCrafting,learnable">
 	<ingredient name="PlasmaRifleQ1" count="1"/>
 	<ingredient name="gunRifleT1HuntingRifleParts" count="20"/>
@@ -3389,7 +3380,7 @@ toolDewFilter
 	<ingredient name="resourceGoldNugget" count="4"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
 	</effect_group>
 </recipe>
 
@@ -3403,7 +3394,7 @@ toolDewFilter
 	<ingredient name="resourceGoldNugget" count="8"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
 	</effect_group>
 </recipe>
 
@@ -3417,7 +3408,7 @@ toolDewFilter
 	<ingredient name="resourceGoldNugget" count="12"/>
 	<ingredient name="resourceLegendaryParts" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
 	</effect_group>
 </recipe>
 
@@ -3431,7 +3422,7 @@ toolDewFilter
 	<ingredient name="resourceGoldNugget" count="16"/>
 	<ingredient name="resourceLegendaryParts" count="2"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
 	</effect_group>
 </recipe>
 
@@ -3445,7 +3436,7 @@ toolDewFilter
 	<ingredient name="resourceGoldNugget" count="20"/>
 	<ingredient name="resourceLegendaryParts" count="3"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunRifleT1HuntingRifleParts,resourceElectricParts,resourceMetalPipe,resourceScrapPolymers,resourceAcid,resourceGoldNugget"/>
 	</effect_group>
 </recipe>
 
@@ -3463,15 +3454,6 @@ toolDewFilter
 	</effect_group>	
 </recipe> -->
 
-<recipe name="DummyCell" count="10000" craft_time="2" craft_exp_gain="0">
-</recipe>
-
-<recipe name="DummyBFGCellEntity" count="100" craft_time="2" craft_exp_gain="0">
-</recipe>
-
-<recipe name="DummyBFGCellBlock" count="100" craft_time="2" craft_exp_gain="0">
-</recipe>
-
 <recipe name="JunkTurretQ2" count="1" craft_time="720" craft_exp_gain="0" tags="perkResourcefulUpgrader,packMuleCrafting">
 	<ingredient name="JunkTurretQ1" count="1"/>
 	<ingredient name="gunBotRoboticsParts" count="6"/>
@@ -3481,7 +3463,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="8"/>
 	<ingredient name="resourceSpring" count="12"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3494,7 +3476,7 @@ toolDewFilter
 	<ingredient name="resourceOil" count="16"/>
 	<ingredient name="resourceSpring" count="24"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3508,7 +3490,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="36"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3522,7 +3504,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="48"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceForgedIron,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3536,7 +3518,7 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="60"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceForgedSteel,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceForgedSteel,resourceElectricParts,resourceMechanicalParts,resourceOil,resourceSpring"/>
 	</effect_group>
 </recipe>
 
@@ -3560,7 +3542,7 @@ toolDewFilter
 	<ingredient name="resourceAcid" count="2"/>
 	<ingredient name="resourceLeather" count="15"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
 	</effect_group>
 </recipe>
 
@@ -3573,7 +3555,7 @@ toolDewFilter
 	<ingredient name="resourceAcid" count="4"/>
 	<ingredient name="resourceLeather" count="30"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
 	</effect_group>
 </recipe>
 
@@ -3587,7 +3569,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="45"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
 	</effect_group>
 </recipe>
 
@@ -3601,7 +3583,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="60"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
 	</effect_group>
 </recipe>
 
@@ -3615,7 +3597,7 @@ toolDewFilter
 	<ingredient name="resourceLeather" count="75"/>
 	<ingredient name="resourceLegendaryParts" count="1"/>
 	<effect_group>
-		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.04,-.08,-.12,-.16,-.2" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
+		<passive_effect name="CraftingIngredientCount" level="1,2,3,4,5" operation="perc_add" value="-.05,-.1,-.15,-.2,-.25" tags="gunBotRoboticsParts,resourceMetalPipe,resourceScrapPolymers,resourceDuctTape,resourceAcid,resourceLeather"/>
 	</effect_group>
 </recipe>
 
@@ -3730,6 +3712,219 @@ toolDewFilter
 <recipe name="armorParts" count="3" craft_time="10"  is_trackable="false" craft_exp_gain="0" >
 	<ingredient name="AmmoStackPouch" count="1"/>
 </recipe>
+
+<conditional>
+	<if cond="game_version() &gt;= version(1,3,30)">
+<recipe name="SmallBackbackLv1" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="10"/>
+</recipe>
+
+<recipe name="SmallBackbackLv2" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv1" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="11"/>
+</recipe>
+
+<recipe name="SmallBackbackLv3" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv2" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="12"/>
+</recipe>
+
+<recipe name="SmallBackbackLv4" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv3" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="13"/>
+</recipe>
+
+<recipe name="SmallBackbackLv5" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv4" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="14"/>
+</recipe>
+
+<recipe name="SmallBackbackLv6" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv5" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="15"/>
+</recipe>
+
+<recipe name="SmallBackbackLv7" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv6" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="16"/>
+</recipe>
+
+<recipe name="SmallBackbackLv8" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv7" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="17"/>
+</recipe>
+
+<recipe name="SmallBackbackLv9" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv8" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="18"/>
+</recipe>
+
+<recipe name="SmallBackbackLv10" count="1" craft_time="10" craft_exp_gain="0" tags="packMuleCrafting">
+	<ingredient name="SmallBackbackLv9" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="19"/>
+</recipe>
+
+<recipe name="MediumBackbackLv1" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="SmallBackbackLv10" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="20"/>
+</recipe>
+
+<recipe name="MediumBackbackLv2" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv1" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="21"/>
+</recipe>
+
+<recipe name="MediumBackbackLv3" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv2" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="22"/>
+</recipe>
+
+<recipe name="MediumBackbackLv4" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv3" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="23"/>
+</recipe>
+
+<recipe name="MediumBackbackLv5" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv4" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="24"/>
+</recipe>
+
+<recipe name="MediumBackbackLv6" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv5" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="25"/>
+</recipe>
+
+<recipe name="MediumBackbackLv7" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv6" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="26"/>
+</recipe>
+
+<recipe name="MediumBackbackLv8" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv7" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="27"/>
+</recipe>
+
+<recipe name="MediumBackbackLv9" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv8" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="28"/>
+</recipe>
+
+<recipe name="MediumBackbackLv10" count="1" craft_time="30" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv9" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="29"/>
+</recipe>
+
+<recipe name="LargeBackbackLv1" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="MediumBackbackLv10" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="30"/>
+</recipe>
+
+<recipe name="LargeBackbackLv2" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv1" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="31"/>
+</recipe>
+
+<recipe name="LargeBackbackLv3" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv2" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="32"/>
+</recipe>
+
+<recipe name="LargeBackbackLv4" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv3" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="33"/>
+</recipe>
+
+<recipe name="LargeBackbackLv5" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv4" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="34"/>
+</recipe>
+
+<recipe name="LargeBackbackLv6" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv5" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="35"/>
+</recipe>
+
+<recipe name="LargeBackbackLv7" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv6" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="36"/>
+</recipe>
+
+<recipe name="LargeBackbackLv8" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv7" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="37"/>
+</recipe>
+
+<recipe name="LargeBackbackLv9" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv8" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="38"/>
+</recipe>
+
+<recipe name="LargeBackbackLv10" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="LargeBackbackLv9" count="1"/>
+	<ingredient name="AmmoStackPouch" count="1"/>
+	<ingredient name="resourceSewingKit" count="1"/>
+	<ingredient name="resourceCloth" count="39"/>
+</recipe>
+</if>
+</conditional>
 
 <recipe name="modArmorHelmetLight" count="1" craft_time="60" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
 	<ingredient name="modGunFlashlight" count="5"/>
@@ -4222,60 +4417,6 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="5"/>
 </recipe>
 
-<!-- <recipe name="modGunMagazineExtenderQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunMagazineExtender" count="1"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-</recipe>
-
-<recipe name="modGunMagazineExtenderQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunMagazineExtenderQ2" count="1"/>
-	<ingredient name="modGunMagazineExtender" count="2"/>
-	<ingredient name="resourceLeather" count="6"/>
-	<ingredient name="resourceMechanicalParts" count="6"/>
-	<ingredient name="resourceOil" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="resourceForgedIron" count="6"/>
-</recipe>
-
-<recipe name="modGunMagazineExtenderQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunMagazineExtenderQ3" count="1"/>
-	<ingredient name="modGunMagazineExtender" count="3"/>
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="resourceMechanicalParts" count="8"/>
-	<ingredient name="resourceOil" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="resourceForgedSteel" count="3"/>
-</recipe>
-
-<recipe name="modGunMagazineExtenderQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunMagazineExtenderQ4" count="1"/>
-	<ingredient name="modGunMagazineExtender" count="4"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceOil" count="5"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceSpring" count="5"/>
-	<ingredient name="resourceForgedSteel" count="4"/>
-</recipe>
-
-<recipe name="modGunMagazineExtenderQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunMagazineExtenderQ5" count="1"/>
-	<ingredient name="modGunMagazineExtender" count="5"/>
-	<ingredient name="resourceLeather" count="12"/>
-	<ingredient name="resourceMechanicalParts" count="12"/>
-	<ingredient name="resourceOil" count="6"/>
-	<ingredient name="resourceDuctTape" count="6"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceForgedSteel" count="5"/>
-</recipe> -->
-
 <recipe name="modGunDrumMagazineExtenderQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
 	<ingredient name="modGunDrumMagazineExtender" count="1"/>
 	<ingredient name="resourceLeather" count="4"/>
@@ -4330,60 +4471,6 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="5"/>
 </recipe>
 
-<!-- <recipe name="modGunShotgunTubeExtenderMagazineQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunShotgunTubeExtenderMagazine" count="1"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-</recipe>
-
-<recipe name="modGunShotgunTubeExtenderMagazineQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunShotgunTubeExtenderMagazineQ2" count="1"/>
-	<ingredient name="modGunShotgunTubeExtenderMagazine" count="2"/>
-	<ingredient name="resourceLeather" count="6"/>
-	<ingredient name="resourceMechanicalParts" count="6"/>
-	<ingredient name="resourceOil" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="resourceForgedIron" count="6"/>
-</recipe>
-
-<recipe name="modGunShotgunTubeExtenderMagazineQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunShotgunTubeExtenderMagazineQ3" count="1"/>
-	<ingredient name="modGunShotgunTubeExtenderMagazine" count="3"/>
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="resourceMechanicalParts" count="8"/>
-	<ingredient name="resourceOil" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="resourceForgedSteel" count="3"/>
-</recipe>
-
-<recipe name="modGunShotgunTubeExtenderMagazineQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunShotgunTubeExtenderMagazineQ4" count="1"/>
-	<ingredient name="modGunShotgunTubeExtenderMagazine" count="4"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceOil" count="5"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceSpring" count="5"/>
-	<ingredient name="resourceForgedSteel" count="4"/>
-</recipe>
-
-<recipe name="modGunShotgunTubeExtenderMagazineQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modGunShotgunTubeExtenderMagazineQ5" count="1"/>
-	<ingredient name="modGunShotgunTubeExtenderMagazine" count="5"/>
-	<ingredient name="resourceLeather" count="12"/>
-	<ingredient name="resourceMechanicalParts" count="12"/>
-	<ingredient name="resourceOil" count="6"/>
-	<ingredient name="resourceDuctTape" count="6"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceForgedSteel" count="5"/>
-</recipe> -->
-
 <recipe name="modGunBowPolymerStringQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
 	<ingredient name="modGunBowPolymerString" count="1"/>
 	<ingredient name="resourceLeather" count="4"/>
@@ -4437,60 +4524,6 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="6"/>
 	<ingredient name="resourceForgedSteel" count="5"/>
 </recipe>
-
-<!-- <recipe name="modMeleeStructuralBraceQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeStructuralBrace" count="1"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-</recipe>
-
-<recipe name="modMeleeStructuralBraceQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeStructuralBraceQ2" count="1"/>
-	<ingredient name="modMeleeStructuralBrace" count="2"/>
-	<ingredient name="resourceLeather" count="6"/>
-	<ingredient name="resourceMechanicalParts" count="6"/>
-	<ingredient name="resourceOil" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="resourceForgedIron" count="6"/>
-</recipe>
-
-<recipe name="modMeleeStructuralBraceQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeStructuralBraceQ3" count="1"/>
-	<ingredient name="modMeleeStructuralBrace" count="3"/>
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="resourceMechanicalParts" count="8"/>
-	<ingredient name="resourceOil" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="resourceForgedSteel" count="3"/>
-</recipe>
-
-<recipe name="modMeleeStructuralBraceQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeStructuralBraceQ4" count="1"/>
-	<ingredient name="modMeleeStructuralBrace" count="4"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceOil" count="5"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceSpring" count="5"/>
-	<ingredient name="resourceForgedSteel" count="4"/>
-</recipe>
-
-<recipe name="modMeleeStructuralBraceQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeStructuralBraceQ5" count="1"/>
-	<ingredient name="modMeleeStructuralBrace" count="5"/>
-	<ingredient name="resourceLeather" count="12"/>
-	<ingredient name="resourceMechanicalParts" count="12"/>
-	<ingredient name="resourceOil" count="6"/>
-	<ingredient name="resourceDuctTape" count="6"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceForgedSteel" count="5"/>
-</recipe> -->
 
 <recipe name="modMeleeGraveDiggerQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
 	<ingredient name="modMeleeGraveDigger" count="1"/>
@@ -4707,114 +4740,6 @@ toolDewFilter
 	<ingredient name="resourceSpring" count="6"/>
 	<ingredient name="resourceForgedSteel" count="5"/>
 </recipe>
-
-<!-- <recipe name="modMeleeDiamondTipQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeDiamondTip" count="1"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceMechanicalParts" count="4"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-</recipe>
-
-<recipe name="modMeleeDiamondTipQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeDiamondTipQ2" count="1"/>
-	<ingredient name="modMeleeDiamondTip" count="2"/>
-	<ingredient name="resourceLeather" count="6"/>
-	<ingredient name="resourceMechanicalParts" count="6"/>
-	<ingredient name="resourceOil" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="resourceForgedIron" count="6"/>
-</recipe>
-
-<recipe name="modMeleeDiamondTipQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeDiamondTipQ3" count="1"/>
-	<ingredient name="modMeleeDiamondTip" count="3"/>
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="resourceMechanicalParts" count="8"/>
-	<ingredient name="resourceOil" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="resourceForgedSteel" count="3"/>
-</recipe>
-
-<recipe name="modMeleeDiamondTipQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeDiamondTipQ4" count="1"/>
-	<ingredient name="modMeleeDiamondTip" count="4"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceMechanicalParts" count="10"/>
-	<ingredient name="resourceOil" count="5"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceSpring" count="5"/>
-	<ingredient name="resourceForgedSteel" count="4"/>
-</recipe>
-
-<recipe name="modMeleeDiamondTipQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modMeleeDiamondTipQ5" count="1"/>
-	<ingredient name="modMeleeDiamondTip" count="5"/>
-	<ingredient name="resourceLeather" count="12"/>
-	<ingredient name="resourceMechanicalParts" count="12"/>
-	<ingredient name="resourceOil" count="6"/>
-	<ingredient name="resourceDuctTape" count="6"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceForgedSteel" count="5"/>
-</recipe> -->
-
-<!-- <recipe name="modFuelTankLargeQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modFuelTankLarge" count="1"/>
-	<ingredient name="resourceLeather" count="4"/>
-	<ingredient name="resourceScrapPolymers" count="8"/>
-	<ingredient name="resourceOil" count="2"/>
-	<ingredient name="resourceDuctTape" count="2"/>
-	<ingredient name="resourceSpring" count="2"/>
-	<ingredient name="resourceForgedIron" count="4"/>
-</recipe>
-
-<recipe name="modFuelTankLargeQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modFuelTankLargeQ2" count="1"/>
-	<ingredient name="modFuelTankLarge" count="2"/>
-	<ingredient name="resourceLeather" count="6"/>
-	<ingredient name="resourceScrapPolymers" count="12"/>
-	<ingredient name="resourceOil" count="3"/>
-	<ingredient name="resourceDuctTape" count="3"/>
-	<ingredient name="resourceSpring" count="3"/>
-	<ingredient name="resourceForgedIron" count="6"/>
-</recipe>
-
-<recipe name="modFuelTankLargeQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modFuelTankLargeQ3" count="1"/>
-	<ingredient name="modFuelTankLarge" count="3"/>
-	<ingredient name="resourceLeather" count="8"/>
-	<ingredient name="resourceScrapPolymers" count="16"/>
-	<ingredient name="resourceOil" count="4"/>
-	<ingredient name="resourceDuctTape" count="4"/>
-	<ingredient name="resourceSpring" count="4"/>
-	<ingredient name="resourceForgedSteel" count="3"/>
-</recipe>
-
-<recipe name="modFuelTankLargeQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modFuelTankLargeQ4" count="1"/>
-	<ingredient name="modFuelTankLarge" count="4"/>
-	<ingredient name="resourceLeather" count="10"/>
-	<ingredient name="resourceScrapPolymers" count="20"/>
-	<ingredient name="resourceOil" count="5"/>
-	<ingredient name="resourceDuctTape" count="5"/>
-	<ingredient name="resourceSpring" count="5"/>
-	<ingredient name="resourceForgedSteel" count="4"/>
-</recipe>
-
-<recipe name="modFuelTankLargeQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
-	<ingredient name="modFuelTankLargeQ5" count="1"/>
-	<ingredient name="modFuelTankLarge" count="5"/>
-	<ingredient name="resourceLeather" count="12"/>
-	<ingredient name="resourceScrapPolymers" count="24"/>
-	<ingredient name="resourceOil" count="6"/>
-	<ingredient name="resourceDuctTape" count="6"/>
-	<ingredient name="resourceSpring" count="6"/>
-	<ingredient name="resourceForgedSteel" count="5"/>
-</recipe> -->
 
 <recipe name="modVehicleFuelSaverQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
 	<ingredient name="modVehicleFuelSaver" count="1"/>
@@ -5086,6 +5011,59 @@ toolDewFilter
 	<ingredient name="resourceForgedSteel" count="5"/>
 </recipe>
 
+<recipe name="modArmorBandolierQ2" count="1" craft_time="80" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="modArmorBandolier" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceCloth" count="7"/>
+	<ingredient name="resourceSpring" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+</recipe>
+
+<recipe name="modArmorBandolierQ3" count="1" craft_time="100" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="modArmorBandolierQ2" count="1"/>
+	<ingredient name="modArmorBandolier" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceCloth" count="7"/>
+	<ingredient name="resourceSpring" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+</recipe>
+
+<recipe name="modArmorBandolierQ4" count="1" craft_time="120" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="modArmorBandolierQ3" count="1"/>
+	<ingredient name="modArmorBandolier" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceCloth" count="7"/>
+	<ingredient name="resourceSpring" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+</recipe>
+
+<recipe name="modArmorBandolierQ5" count="1" craft_time="140" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="modArmorBandolierQ4" count="1"/>
+	<ingredient name="modArmorBandolier" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceCloth" count="7"/>
+	<ingredient name="resourceSpring" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+</recipe>
+
+<recipe name="modArmorBandolierQ6" count="1" craft_time="160" craft_area="workbench" craft_exp_gain="0" tags="workbenchCrafting,packMuleCrafting">
+	<ingredient name="modArmorBandolierQ5" count="1"/>
+	<ingredient name="modArmorBandolier" count="1"/>
+	<ingredient name="resourceLeather" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceCloth" count="7"/>
+	<ingredient name="resourceSpring" count="1"/>
+	<ingredient name="resourceForgedIron" count="2"/>
+</recipe>
 
 <!-- <recipe name="DecorationPackKitchenMaster" craft_exp_gain="0" count="1">
 	<ingredient name="resourceWood" count="50"/>

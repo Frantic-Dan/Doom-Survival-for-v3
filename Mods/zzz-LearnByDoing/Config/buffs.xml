@@ -156,10 +156,10 @@
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Demolition_Kill_GXP_Base" operation="set" value="50"/> <!--grenades and other default: 30-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Demolition_Kill_MXP_Base" operation="set" value="0"/> <!--molotovs default: 22-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Boomstick_Kill_XP_Base" operation="set" value="4"/> <!--default: 12-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_Kill_XP_Base" operation="set" value="8"/> <!--default: 16-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_Kill_XP_Base" operation="set" value="9"/> <!--default: 16-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Archery_Kill_XP_Base" operation="set" value="50"/> <!--default: 24-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Gunslinger_Kill_XP_Base" operation="set" value="13"/> <!--default: 16-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_Kill_XP_Base" operation="set" value="7"/> <!--default: 16-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_Kill_XP_Base" operation="set" value="3"/> <!--default: 16-->
 			
 			<!--multiply each of the above vars by their respective INDIVIDUAL XP weight/percent increase (lbu_<PERKNAME>_Multiplier) from the config settings-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DeadEye_Kill_XP_Base" operation="multiply" value="@lbu_DeadEye_XP_Multiplier"/> <!--default: 1.0. Higher number==Quicker Progress-->
@@ -192,10 +192,10 @@
 			<!--not used-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Demolition_DMG_MXP" operation="set" value="0"/> <!--molotovs default: 8-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Boomstick_DMG_XP" operation="set" value="4"/> <!--default: 1-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_DMG_XP" operation="set" value="8"/> <!--default: 5-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_MachineGunner_DMG_XP" operation="set" value="9"/> <!--default: 5-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Archery_DMG_XP" operation="set" value="50"/> <!--default: 15-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Gunslinger_DMG_XP" operation="set" value="13"/> <!--default: 6-->
-			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_DMG_XP" operation="set" value="7"/> <!--default: 8-->
+			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_Robotics_DMG_XP" operation="set" value="3"/> <!--default: 8-->
 			
 			<!--multiply each of the above DAMAGE vars by their respective INDIVIDUAL XP weight/percent increase (lbu_<PERKNAME>_Multiplier) from the config settings-->
 			<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" cvar="lbu_DeadEye_DMG_XP" operation="multiply" value="@lbu_DeadEye_XP_Multiplier"/> <!--default: 1.0. Higher number==Quicker Progress-->
@@ -304,11 +304,11 @@
 		<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_Cooking_XP" operation="GTE" value="@lbu_Cooking_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_Cooking" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="subtract" value="@lbu_Cooking_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Cooking_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						
 						<requirement name="ProgressionLevel" progression_name="lbu_Cooking" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>    
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Cooking_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="lbu_Cooking" level="1"/> 
 					
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Cooking_Lvl" operation="add" value="1"/> 
@@ -440,11 +440,11 @@
 		<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_Medical_XP" operation="GTE" value="@lbu_Medical_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_Medical" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Medical_XP" operation="subtract" value="@lbu_Medical_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Medical_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						
 						<requirement name="ProgressionLevel" progression_name="lbu_Medical" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>    
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Medical_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="lbu_Medical" level="1"/> 
 					
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Medical_Lvl" operation="add" value="1"/> 
@@ -1325,11 +1325,11 @@
 				<!--Increase ProgressLevel if xp greater than value for next level-->
 				<requirement name="CVarCompare" cvar="lbu_HiddenStrike_XP" operation="GTE" value="@lbu_HiddenStrike_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_HiddenStrike_XP" operation="subtract" value="@lbu_HiddenStrike_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_HiddenStrike_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 						<requirement name="ProgressionLevel" progression_name="lbu_HiddenStrike" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>   
-					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_HiddenStrike_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffStart" action="AddProgressionLevel" progression_name="lbu_HiddenStrike" level="1"/>
 					<!--Upadate BCK var in line with ProgressionLevel progress-->
 					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="lbu_HiddenStrike_Lvl" operation="add" value="1"/> 
@@ -1394,11 +1394,11 @@
 				<requirement name="CVarCompare" cvar="$barterloopCounter" operation="Equals" value="60"/>
 				<requirement name="CVarCompare" cvar="lbu_Bartering_XP" operation="GTE" value="@lbu_Bartering_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Bartering_XP" operation="subtract" value="@lbu_Bartering_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Bartering_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 						<requirement name="ProgressionLevel" progression_name="lbu_Bartering" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>   
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Bartering_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="lbu_Bartering" level="1"/>
 					<!--Upadate BCK var in line with ProgressionLevel progress-->
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Bartering_Lvl" operation="add" value="1"/> 
@@ -1766,11 +1766,11 @@
 			<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_Demolition_XP" operation="GTE" value="@lbu_Demolition_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Demolition_XP" operation="subtract" value="@lbu_Demolition_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Demolition_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 						<requirement name="ProgressionLevel" progression_name="lbu_Demolition" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>     
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Demolition_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="lbu_Demolition" level="1"/> 
 					<!--Upadate BCK var in line with ProgressionLevel progress-->
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_Demolition_Lvl" operation="add" value="1"/> 
@@ -2047,12 +2047,11 @@
 			<effect_group>
 				<requirement name="CVarCompare" cvar="lbu_LuckyLooter_XP" operation="GTE" value="@lbu_LuckyLooter_XPIncrement"/>
 				<requirement name="ProgressionLevel" progression_name="lbu_LuckyLooter" operation="LT" value="50"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_LuckyLooter_XP" operation="subtract" value="@lbu_LuckyLooter_XPIncrement"/>
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_LuckyLooter_XPIncrement" operation="multiply" value="@lbu_DefaultIncrementIncrease"> 
 						<!--taper off level xp increase at level 47 (xxx_XPIncrement about 4000). xxx_XPIncrement will grow to 4700  without the cap-->
 						<requirement name="onSelfBuffUpdate" progression_name="lbu_LuckyLooter" operation="LTE" value="@lbu_DefaultLevelCap"/>
-					</triggered_effect>	
-					
-					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_LuckyLooter_XP" operation="set" value="0"/>
+					</triggered_effect>
 					<triggered_effect trigger="onSelfBuffUpdate" action="AddProgressionLevel" progression_name="lbu_LuckyLooter" level="1"/> 
 					<!--Upadate BCK var in line with ProgressionLevel progress-->
 					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="lbu_LuckyLooter_Lvl" operation="add" value="1"/> 

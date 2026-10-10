@@ -6,7 +6,6 @@
 	<window_group name="toolbelt" actionset="false">
 		<window name="windowToolbelt" />
 		<window name="HUDLeftStatBars" />
-		<window name="HUDCenterStatBars" />
 		<window name="HUDRightStatBars" />
 		<window name="windowQuestTracker" />
 		<window name="windowRecipeTracker" />

@@ -14,6 +14,17 @@
 		</passive_effect>
         <passive_effect name="PlayerExpGain" operation="perc_set" value=".5" />
       </effect_group>
+	  
+	  <effect_group>
+		<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="add" value="1">
+			<requirement name="HasBuff" buff="buffLegSprained"/></triggered_effect>
+		<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="add" value="1">
+			<requirement name="HasBuff" buff="buffLegBroken"/></triggered_effect>
+		<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="add" value="1">
+			<requirement name="HasBuff" buff="buffLegSplinted"/></triggered_effect>
+		<triggered_effect trigger="onSelfJump" action="ModifyStats" stat="Health" operation="add" value="1">
+			<requirement name="HasBuff" buff="buffLegCast"/></triggered_effect>
+	  </effect_group>
     </buff>
     <buff name="buffBlueKeyHeld" name_key="doomKeyBlue" icon="DoomBlueKeycard" remove_on_death="true">
       <stack_type value="ignore" />

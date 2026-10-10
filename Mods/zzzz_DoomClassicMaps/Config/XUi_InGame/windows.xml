@@ -10,40 +10,40 @@
                keepsourceaspectratio="false" />
 
       <label depth="3" pos="0,300" width="900" height="44" pivot="center" justify="center"
-             text="{levelname}" font_size="40" color="[white]" />
+             text="{levelname}" font_size="40" color="[white]" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
       <label depth="3" pos="0,256" width="900" height="40" pivot="center" justify="center"
-             text="{finished}" font_size="34" color="220,32,32,255" />
+             text="{finished}" font_size="34" color="220,32,32,255" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
       <rect depth="3" pos="-300,180" width="600" height="240">
         <label pos="0,0" width="300" height="40" justify="left" font_size="32"
-               color="220,32,32,255" text="{killslabel}" />
+               color="220,32,32,255" text="{killslabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,0" width="300" height="40" justify="right" font_size="32"
-               color="220,32,32,255" text="{kills}" />
+               color="220,32,32,255" text="{kills}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
         <label pos="0,-50" width="300" height="40" justify="left" font_size="32"
-               color="220,32,32,255" text="{itemslabel}" />
+               color="220,32,32,255" text="{itemslabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,-50" width="300" height="40" justify="right" font_size="32"
-               color="220,32,32,255" text="{items}" />
+               color="220,32,32,255" text="{items}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
         <label pos="0,-100" width="300" height="40" justify="left" font_size="32"
-               color="220,32,32,255" text="{secretslabel}" />
+               color="220,32,32,255" text="{secretslabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,-100" width="300" height="40" justify="right" font_size="32"
-               color="220,32,32,255" text="{secrets}" />
+               color="220,32,32,255" text="{secrets}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
         <label pos="0,-180" width="300" height="40" justify="left" font_size="32"
-               color="220,32,32,255" text="{timelabel}" />
+               color="220,32,32,255" text="{timelabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,-180" width="300" height="40" justify="right" font_size="32"
-               color="220,32,32,255" text="{time}" />
+               color="220,32,32,255" text="{time}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
         <label pos="0,-230" width="300" height="40" justify="left" font_size="32"
-               color="220,32,32,255" text="{parlabel}" />
+               color="220,32,32,255" text="{parlabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,-230" width="300" height="40" justify="right" font_size="32"
-               color="220,32,32,255" text="{par}" />
+               color="220,32,32,255" text="{par}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
 
         <label pos="0,-290" width="300" height="40" justify="left" font_size="32"
-               color="255,180,32,255" text="{clearedlabel}" />
+               color="255,180,32,255" text="{clearedlabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
         <label pos="300,-290" width="300" height="40" justify="right" font_size="32"
-               color="255,180,32,255" text="{cleared}" />
+               color="255,180,32,255" text="{cleared}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
       </rect>
 
       <rect name="btnContinue" depth="4" pos="-100,-300" width="200" height="46"
@@ -51,8 +51,9 @@
         <button depth="1" name="clickable" sprite="menu_empty" type="sliced"
                 defaultcolor="0,0,0,200" hovercolor="[white]" hoversprite="ui_game_select_row"
                 hoverscale="1.0" sound="[default_click]" sound_play_on_hover="[default_hover]" />
-        <label depth="2" name="btnLabel" width="200" height="46" justify="center"
-               font_size="30" color="[white]" text="{continue}" />
+        <sprite depth="3" name="border" sprite="menu_empty2px" type="sliced" color="0,0,0,255" fillcenter="false" />
+        <label depth="4" name="btnLabel" pos="100,-23" width="200" height="44" justify="center" pivot="center"
+               font_size="30" color="[white]" text="{continue}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
       </rect>
 
       <rect name="btnNext" depth="4" pos="120,-300" width="200" height="46"
@@ -60,9 +61,72 @@
         <button depth="1" name="clickable" sprite="menu_empty" type="sliced"
                 defaultcolor="0,0,0,200" hovercolor="[white]" hoversprite="ui_game_select_row"
                 hoverscale="1.0" sound="[default_click]" sound_play_on_hover="[default_hover]" />
-        <label depth="2" name="btnLabel" width="200" height="46" justify="center"
-               font_size="30" color="255,180,32,255" text="{nextlabel}" />
+        <sprite depth="3" name="border" sprite="menu_empty2px" type="sliced" color="0,0,0,255" fillcenter="false" />
+        <label depth="4" name="btnLabel" pos="100,-23" width="200" height="44" justify="center" pivot="center"
+               font_size="30" color="255,180,32,255" text="{nextlabel}" effect="Outline8" effect_color="0,0,0,255" effect_distance="2,2" />
       </rect>
     </window>
+  </append>
+
+  <append xpath="/windows">
+    <window name="windowDoomTracker" pos="-296,-88" width="280" height="214" anchor="TopRight" depth="12"
+            controller="DoomLevelsMpFix.XUiC_DoomMapTally, DoomCore" visible="false">
+      <sprite depth="0" name="background" sprite="menu_empty" type="sliced" color="0,0,0,120" width="280" height="214" />
+      <label depth="2" name="levelName" pos="8,-6" width="264" height="32" font_size="26" justify="center"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="nameKills" pos="16,-42" width="108" height="28" font_size="26" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="numKills" pos="132,-42" width="132" height="28" font_size="26" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="nameItems" pos="16,-72" width="108" height="28" font_size="26" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="numItems" pos="132,-72" width="132" height="28" font_size="26" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="nameSecrets" pos="16,-102" width="108" height="28" font_size="26" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="numSecrets" pos="132,-102" width="132" height="28" font_size="26" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="nameTime" pos="16,-148" width="108" height="28" font_size="26" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="numTime" pos="132,-148" width="132" height="28" font_size="26" justify="left"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="namePar" pos="16,-178" width="108" height="28" font_size="26" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+      <label depth="2" name="numPar" pos="132,-178" width="132" height="28" font_size="26" justify="left"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" />
+    </window>
+  </append>
+
+  <append xpath="/windows/window[@name='mapArea']/rect[@name='content']/rect[@name='mapDoomSide']">
+    <panel name="doomMapTally" depth="12" pos="0,-475" width="260" height="166" disableautobackground="true"
+           controller="DoomLevelsMpFix.XUiC_DoomMapTally, DoomCore" visible="false">
+      <label depth="2" name="levelName" pos="8,0" width="244" height="30" font_size="24" justify="center"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+
+      <label depth="2" name="nameKills" pos="28,-34" width="84" height="22" font_size="20" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+      <label depth="2" name="numKills" pos="120,-34" width="112" height="22" font_size="20" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+
+      <label depth="2" name="nameItems" pos="28,-56" width="84" height="22" font_size="20" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+      <label depth="2" name="numItems" pos="120,-56" width="112" height="22" font_size="20" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+
+      <label depth="2" name="nameSecrets" pos="28,-78" width="84" height="22" font_size="20" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+      <label depth="2" name="numSecrets" pos="120,-78" width="112" height="22" font_size="20" justify="left"
+             support_bb_code="true" color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+
+      <label depth="2" name="nameTime" pos="28,-122" width="84" height="22" font_size="20" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+      <label depth="2" name="numTime" pos="120,-122" width="112" height="22" font_size="20" justify="left"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+
+      <label depth="2" name="namePar" pos="28,-144" width="84" height="22" font_size="20" justify="right"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+      <label depth="2" name="numPar" pos="120,-144" width="112" height="22" font_size="20" justify="left"
+             color="230,220,200,255" effect="outline" effect_color="0,0,0,220" effect_distance="1,1" foregroundlayer="true" />
+    </panel>
   </append>
 </configs>

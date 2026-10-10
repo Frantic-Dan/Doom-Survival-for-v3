@@ -1,3 +1,7 @@
 <FranticDan>
 
+<insertafter xpath="/quests/quest[@id='treasure_taylor']/property[@name='icon']">
+	<property name="extra_tags" value="MapTreasure" />
+</insertafter>
+
 </FranticDan>

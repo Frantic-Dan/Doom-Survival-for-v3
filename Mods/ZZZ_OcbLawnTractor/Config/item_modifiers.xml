@@ -1,0 +1,18 @@
+<configs>
+	<append xpath="/item_modifiers">
+		<!-- First basic attachment that will harvest grass and bushes -->
+
+		<item_modifier name="modVehicleLawnTractorGrassCollector" installable_tags="vmower" modifier_tags="mowerGrass" type="attachment" blocked_tags="mowerGrass">
+			<property name="Extends" value="modGeneralMaster"/>
+			<!-- <property name="UnlockedBy" value="perkLivingOffTheLand,modVehicleLawnTractorGrassCollectorSchematic"/> -->
+			<property name="CustomIcon" value="modVehicleLawnTractorGrassCollector"/>
+			<property name="ShowTransforms" value="mower_bag"/>
+			<property name="EnablePhysics" value="p_mower_bag"/>
+			<!-- harvest everything that is marked for grass mowing -->
+			<!-- this way we can easily adjust and nerf probabilities -->
+			<property name="MowerHarvestTags" value="lawnMowing,stoneMowing"/>
+			<property name="MowerHarvestTools" value="GrassCollector,StoneCollector"/>
+			<!-- <property name="UnlockForPerklivingofftheland" value="1"/> -->
+		</item_modifier>
+	</append>
+</configs>

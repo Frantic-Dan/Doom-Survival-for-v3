@@ -291,6 +291,61 @@
 		<block name="cntTrashPile09" prob=".4"/>
 	</placeholder>
 	
+	<placeholder name="waterHeaterWhite">
+		<block name="waterHeaterWhiteDMdry" prob=".2"/>
+		<block name="waterHeaterWhiteDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterBrown">
+		<block name="waterHeaterBrownDMdry" prob=".2"/>
+		<block name="waterHeaterBrownDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterRed">
+		<block name="waterHeaterRedDMdry" prob=".2"/>
+		<block name="waterHeaterRedDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterYellow">
+		<block name="waterHeaterYellowDMdry" prob=".2"/>
+		<block name="waterHeaterYellowDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterGreen">
+		<block name="waterHeaterGreenDMdry" prob=".2"/>
+		<block name="waterHeaterGreenDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterBlue">
+		<block name="waterHeaterBlueDMdry" prob=".2"/>
+		<block name="waterHeaterBlueDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterGrey">
+		<block name="waterHeaterGreyDMdry" prob=".2"/>
+		<block name="waterHeaterGreyDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="waterHeaterBlack">
+		<block name="waterHeaterBlackDMdry" prob=".2"/>
+		<block name="waterHeaterBlackDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="decoClawFootBathTub">
+		<block name="decoClawFootBathTubDMdry" prob=".2"/>
+		<block name="decoClawFootBathTubDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="drinkingfountainSingle">
+		<block name="drinkingfountainSingleDMdry" prob=".2"/>
+		<block name="drinkingfountainSingleDMwater" prob=".8"/>
+	</placeholder>
+	
+	<placeholder name="drinkingfountainDouble">
+		<block name="drinkingfountainDoubleDMdry" prob=".2"/>
+		<block name="drinkingfountainDoubleDMwater" prob=".8"/>
+	</placeholder>
+	
 	<placeholder name="utilitySink">
 		<block name="utilitySinkDMdry" prob=".2"/>
 		<block name="utilitySinkDMwater" prob=".8"/>
